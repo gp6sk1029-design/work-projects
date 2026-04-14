@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- 背景グラデーション -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#1a2d4a"/>
+    </linearGradient>
+    <!-- AIノードのグロー効果 -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#00ff88" flood-opacity="0.6" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glowColor"/>
+      <feMerge>
+        <feMergeNode in="glowColor"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="64" height="64" rx="12" ry="12" fill="url(#bgGrad)"/>
+
+  <!-- 左パワーレール -->
+  <line x1="12" y1="10" x2="12" y2="54" stroke="#00aaff" stroke-width="3" stroke-linecap="round"/>
+  <!-- 右パワーレール -->
+  <line x1="52" y1="10" x2="52" y2="54" stroke="#00aaff" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 上段：NO接点記号 -->
+  <!-- 横ワイヤー左側 -->
+  <line x1="12" y1="20" x2="28" y2="20" stroke="#00aaff" stroke-width="1.5"/>
+  <!-- 横ワイヤー右側 -->
+  <line x1="36" y1="20" x2="52" y2="20" stroke="#00aaff" stroke-width="1.5"/>
+  <!-- 接点の2本の縦線 -->
+  <line x1="28" y1="14" x2="28" y2="26" stroke="#ffffff" stroke-width="2.5"/>
+  <line x1="36" y1="14" x2="36" y2="26" stroke="#ffffff" stroke-width="2.5"/>
+
+  <!-- 中段：AIノード（ニューラルネットワーク風） -->
+  <!-- 左右ワイヤー接続 -->
+  <line x1="12" y1="36" x2="27" y2="36" stroke="#00aaff" stroke-width="1.5"/>
+  <line x1="37" y1="36" x2="52" y2="36" stroke="#00aaff" stroke-width="1.5"/>
+  <!-- 放射状の線（4方向、斜め） -->
+  <line x1="28" y1="32" x2="23" y2="28" stroke="#00ff88" stroke-width="1" stroke-linecap="round"/>
+  <line x1="36" y1="32" x2="41" y2="28" stroke="#00ff88" stroke-width="1" stroke-linecap="round"/>
+  <line x1="28" y1="40" x2="23" y2="44" stroke="#00ff88" stroke-width="1" stroke-linecap="round"/>
+  <line x1="36" y1="40" x2="41" y2="44" stroke="#00ff88" stroke-width="1" stroke-linecap="round"/>
+  <!-- 小さなノード点（放射先） -->
+  <circle cx="23" cy="28" r="1.2" fill="#00ff88"/>
+  <circle cx="41" cy="28" r="1.2" fill="#00ff88"/>
+  <circle cx="23" cy="44" r="1.2" fill="#00ff88"/>
+  <circle cx="41" cy="44" r="1.2" fill="#00ff88"/>
+  <!-- 中央のAIノード（グロー付き） -->
+  <circle cx="32" cy="36" r="5" fill="#00ff88" filter="url(#glow)"/>
+
+  <!-- 下段：コイル記号 -->
+  <!-- 横ワイヤー左側 -->
+  <line x1="12" y1="50" x2="26" y2="50" stroke="#00aaff" stroke-width="1.5"/>
+  <!-- 横ワイヤー右側 -->
+  <line x1="38" y1="50" x2="52" y2="50" stroke="#00aaff" stroke-width="1.5"/>
+  <!-- コイルの丸括弧 -->
+  <circle cx="32" cy="50" r="6" stroke="#ff8800" stroke-width="2" fill="none"/>
+</svg>

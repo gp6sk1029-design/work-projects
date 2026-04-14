@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"$(git rev-parse --show-toplevel)\" && if [ -f .claude/.push_failed ]; then echo '⚠️ 前回のpushが失敗しています：' && cat .claude/.push_failed && echo '---' && echo '対処法: git pull origin main してから git push origin main'; fi && git pull origin main 2>/dev/null || true",
+            "statusMessage": "GitHubから最新設定を取得中...",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"$(git rev-parse --show-toplevel)\" && git add -A && if ! git diff --cached --quiet; then git commit -m \"auto-sync: $(date '+%Y-%m-%d %H:%M')\"; fi && if ! git push origin main 2>.claude/.push_error; then cp .claude/.push_error .claude/.push_failed && echo 'PUSH失敗: 次回起動時に通知します'; else rm -f .claude/.push_failed .claude/.push_error; fi",
+            "statusMessage": "変更をGitHubに自動同期中...",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

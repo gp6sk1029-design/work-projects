@@ -1,0 +1,21 @@
+{
+  "手動キーワード": [
+    "no.?reply",
+    "noreply",
+    "newsletter",
+    "unsubscribe",
+    "配信停止",
+    "メルマガ",
+    "marketing",
+    "promo",
+    "iweb_search",
+    "mail-news",
+    "bounce",
+    "mailer-daemon",
+    "自動送信",
+    "do.not.reply",
+    "BULK"
+  ],
+  "除外送信者": [],
+  "自動学習": []
+}

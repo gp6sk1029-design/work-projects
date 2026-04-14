@@ -1,0 +1,35 @@
+# 認証情報・秘密鍵（絶対にアップロード禁止）
+.env
+.env.local
+*.secret
+*.pickle
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Node.js
+node_modules/
+
+# ビルド成果物
+*/client/dist/
+
+# データベース
+*.db
+
+# 一時ファイル
+*.tmp
+*.log
+
+# Git同期エラー通知用
+.claude/.push_failed
+.claude/.push_error
+
+# アップロードされたメディアファイル
+media-transcriber/server/uploads/*
+!media-transcriber/server/uploads/.gitkeep
