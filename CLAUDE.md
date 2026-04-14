@@ -137,7 +137,18 @@ MEMORY.md（学習・経験の蓄積）
 ```
 
 ### 現在のプロジェクト一覧
-- ブログ部隊 → seisan-gijutsu-blog/SKILL.md
+
+**副業（my-ai-companyリポジトリ）**
+- ブログ部隊 → blog/SKILL.md
+- EC物販部隊 → ec/SKILL.md
+
+**本業（work-projectsリポジトリ）**
+- メール秘書 → email-assistant/SKILL.md
+- PLCデバッガ → plc-debugger/SKILL.md
+- 文字起こしツール → media-transcriber/SKILL.md
+- 巻線レポート → winding-report/SKILL.md
+- 送別会書類 → farewell-docs/SKILL.md
+
 - （今後追加されるプロジェクトをここに記載）
 
 ---
