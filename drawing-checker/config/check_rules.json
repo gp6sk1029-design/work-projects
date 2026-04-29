@@ -1,0 +1,35 @@
+{
+  "_comment": "汎用フォールバックルール。jis_rules.jsonとlearned_rules.jsonの両方に該当がないときの最終手段。",
+  "version": "1.0",
+  "rules": [
+    {
+      "id": "FALLBACK-001",
+      "name": "空白ページ検出",
+      "category": "general",
+      "checker": "title_block_checker",
+      "severity": "error",
+      "override_by_sample": true,
+      "description": "ページ内にエンティティがほとんどない（空白図面）"
+    },
+    {
+      "id": "FALLBACK-002",
+      "name": "文字化け検出",
+      "category": "general",
+      "checker": "title_block_checker",
+      "severity": "warning",
+      "override_by_sample": true,
+      "description": "一般的でない特殊文字（□や????）が多い → 文字化けの可能性",
+      "garbled_pattern": "[\\ufffd\\u25a1]{3,}"
+    }
+  ],
+  "settings": {
+    "min_entities_per_page": 5,
+    "max_findings_per_drawing": 50,
+    "annotation_colors": {
+      "error": "#FF0000",
+      "warning": "#FFA500",
+      "info": "#0080FF"
+    },
+    "annotation_marker_radius_pt": 12
+  }
+}

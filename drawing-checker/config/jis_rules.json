@@ -1,0 +1,224 @@
+{
+  "_comment": "JIS規格ベースの検図ルール。各チェッカーが参照し、findingsに根拠として付加される。検査ロジックはcheckers/*.pyで実装（誤検知が多かったチェックは無効化済み）。",
+  "version": "2.1",
+  "rules": [
+    {
+      "id": "JIS-Z-8310-001",
+      "name": "図面の基本原則",
+      "jis_reference": "JIS Z 8310",
+      "category": "general",
+      "checker": "title_block_checker",
+      "severity": "warning",
+      "override_by_sample": true,
+      "description": "製図通則に則ること。用紙サイズ・尺度・投影法の明示が必要。"
+    },
+    {
+      "id": "JIS-Z-8311-001",
+      "name": "図面サイズ",
+      "jis_reference": "JIS Z 8311",
+      "category": "sheet_size",
+      "checker": "title_block_checker",
+      "severity": "warning",
+      "override_by_sample": true,
+      "description": "用紙サイズはA0〜A4いずれかとする",
+      "allowed_sizes": ["A0", "A1", "A2", "A3", "A4"]
+    },
+    {
+      "id": "JIS-Z-8316-001",
+      "name": "第三角法マーク必須",
+      "jis_reference": "JIS Z 8316",
+      "category": "projection",
+      "checker": "title_block_checker",
+      "severity": "info",
+      "override_by_sample": true,
+      "description": "第三角法または第一角法の投影法マークを図面に記入すること"
+    },
+    {
+      "id": "JIS-Z-8114-001",
+      "name": "外形線：太い実線",
+      "jis_reference": "JIS Z 8114",
+      "category": "line_style",
+      "checker": "line_style_checker",
+      "severity": "warning",
+      "override_by_sample": true,
+      "description": "外形線は太い実線（0.5〜0.7mm）で描く"
+    },
+    {
+      "id": "JIS-Z-8114-002",
+      "name": "隠れ線：細い破線",
+      "jis_reference": "JIS Z 8114",
+      "category": "line_style",
+      "checker": "line_style_checker",
+      "severity": "warning",
+      "override_by_sample": true,
+      "description": "隠れ線は細い破線で描く"
+    },
+    {
+      "id": "JIS-Z-8114-003",
+      "name": "中心線：細い一点鎖線",
+      "jis_reference": "JIS Z 8114",
+      "category": "line_style",
+      "checker": "line_style_checker",
+      "severity": "warning",
+      "override_by_sample": true,
+      "description": "中心線は細い一点鎖線で描く"
+    },
+    {
+      "id": "JIS-Z-8317-001",
+      "name": "寸法記入漏れ禁止",
+      "jis_reference": "JIS Z 8317",
+      "category": "dimension",
+      "checker": "dimension_checker",
+      "severity": "error",
+      "override_by_sample": false,
+      "description": "形状特徴（直径・長さ・角度・ピッチ等）には必ず寸法を記入する"
+    },
+    {
+      "id": "JIS-Z-8317-002",
+      "name": "寸法の重複禁止",
+      "jis_reference": "JIS Z 8317",
+      "category": "dimension",
+      "checker": "dimension_checker",
+      "severity": "warning",
+      "override_by_sample": true,
+      "description": "同じ形状特徴に対する寸法の重複記入を避ける"
+    },
+    {
+      "id": "JIS-B-0401-001",
+      "name": "はめあい公差（IT等級）",
+      "jis_reference": "JIS B 0401",
+      "category": "tolerance",
+      "checker": "dimension_checker",
+      "severity": "warning",
+      "override_by_sample": true,
+      "description": "はめあいが必要な寸法にはIT等級（H7, h6等）を記入"
+    },
+    {
+      "id": "JIS-B-0405-001",
+      "name": "普通公差（中級）",
+      "jis_reference": "JIS B 0405",
+      "category": "tolerance",
+      "checker": "dimension_checker",
+      "severity": "info",
+      "override_by_sample": true,
+      "description": "普通公差（JIS B 0405中級）を図面全体に適用。タイトルブロック等に明示推奨"
+    },
+    {
+      "id": "JIS-B-0021-001",
+      "name": "幾何公差の3要素必須",
+      "jis_reference": "JIS B 0021",
+      "category": "geometric_tolerance",
+      "checker": "symbol_checker",
+      "severity": "error",
+      "override_by_sample": false,
+      "description": "幾何公差フレームには「記号｜公差値｜データム」の3要素が必要"
+    },
+    {
+      "id": "JIS-B-0021-002",
+      "name": "データム参照の整合性",
+      "jis_reference": "JIS B 0021",
+      "category": "geometric_tolerance",
+      "checker": "symbol_checker",
+      "severity": "error",
+      "override_by_sample": false,
+      "description": "幾何公差で参照されるデータム記号が図面上に定義されていること"
+    },
+    {
+      "id": "JIS-B-0601-001",
+      "name": "表面性状記号",
+      "jis_reference": "JIS B 0601",
+      "category": "surface",
+      "checker": "symbol_checker",
+      "severity": "warning",
+      "override_by_sample": true,
+      "description": "表面性状はRa値（算術平均粗さ）で指示する"
+    },
+    {
+      "id": "JIS-Z-3021-001",
+      "name": "溶接記号の基本形",
+      "jis_reference": "JIS Z 3021",
+      "category": "welding",
+      "checker": "symbol_checker",
+      "severity": "warning",
+      "override_by_sample": true,
+      "description": "溶接記号は基本記号（すみ肉・突合せ等）＋寸法で構成"
+    },
+    {
+      "id": "TITLE-BLOCK-001",
+      "name": "図番",
+      "jis_reference": "JIS Z 8310",
+      "category": "title_block",
+      "checker": "title_block_checker",
+      "severity": "error",
+      "override_by_sample": false,
+      "description": "タイトルブロックに図番が記入されていること",
+      "field_key": "drawing_number"
+    },
+    {
+      "id": "TITLE-BLOCK-002",
+      "name": "品名",
+      "jis_reference": "JIS Z 8310",
+      "category": "title_block",
+      "checker": "title_block_checker",
+      "severity": "error",
+      "override_by_sample": false,
+      "description": "タイトルブロックに品名・部品名が記入されていること",
+      "field_key": "part_name"
+    },
+    {
+      "id": "TITLE-BLOCK-003",
+      "name": "材質",
+      "jis_reference": "JIS Z 8310",
+      "category": "title_block",
+      "checker": "title_block_checker",
+      "severity": "error",
+      "override_by_sample": true,
+      "description": "タイトルブロックに材質が記入されていること",
+      "field_key": "material"
+    },
+    {
+      "id": "TITLE-BLOCK-004",
+      "name": "尺度",
+      "jis_reference": "JIS Z 8310",
+      "category": "title_block",
+      "checker": "title_block_checker",
+      "severity": "error",
+      "override_by_sample": false,
+      "description": "タイトルブロックに尺度が記入されていること",
+      "field_key": "scale",
+      "pattern": "\\d+\\s*:\\s*\\d+|FULL"
+    },
+    {
+      "id": "TITLE-BLOCK-005",
+      "name": "設計者・承認者",
+      "jis_reference": "JIS Z 8310",
+      "category": "title_block",
+      "checker": "title_block_checker",
+      "severity": "warning",
+      "override_by_sample": true,
+      "description": "タイトルブロックに設計者・承認者の記入欄があること",
+      "field_key": "designer"
+    },
+    {
+      "id": "TITLE-BLOCK-006",
+      "name": "日付",
+      "jis_reference": "JIS Z 8310",
+      "category": "title_block",
+      "checker": "title_block_checker",
+      "severity": "warning",
+      "override_by_sample": true,
+      "description": "タイトルブロックに日付が記入されていること",
+      "field_key": "date"
+    },
+    {
+      "id": "TITLE-BLOCK-EMPTY",
+      "name": "タイトルブロックほぼ空白",
+      "jis_reference": "JIS Z 8310",
+      "category": "title_block",
+      "checker": "title_block_checker",
+      "severity": "error",
+      "override_by_sample": true,
+      "description": "タイトルブロックの主要フィールドが3つ以上欠落している"
+    }
+  ]
+}

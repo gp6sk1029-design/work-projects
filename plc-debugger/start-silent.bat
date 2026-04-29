@@ -14,11 +14,15 @@ timeout /t 1 /nobreak > nul
 :: バックエンド起動（最小化）
 start /min "PLC Craft AI - Backend" cmd /k "cd /d "%ROOT%server" && npx tsx src/index.ts"
 
-:: バックエンド起動待機
+:: バックエンド起動待機（最大30秒）
+set /a be_count=0
 :wait_backend
 timeout /t 2 /nobreak > nul
 powershell -Command "try { Invoke-WebRequest -Uri 'http://localhost:3001/api/health' -UseBasicParsing -TimeoutSec 2 | Out-Null; exit 0 } catch { exit 1 }" >nul 2>&1
-if errorlevel 1 goto :wait_backend
+if not errorlevel 1 goto :backend_ok
+set /a be_count+=1
+if %be_count% lss 15 goto :wait_backend
+:backend_ok
 
 :: フロントエンド起動（最小化）
 start /min "PLC Craft AI - Frontend" cmd /k "cd /d "%ROOT%client" && npx vite --host"
