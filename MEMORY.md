@@ -109,6 +109,13 @@
 - push失敗時は.claude/.push_failedに記録、次回起動時に警告
 - 本業（work-projects）と副業（my-ai-company）はリポジトリを分離
 
+### セッション健康診断（2026-07-07 my-ai-companyから展開）
+- `tools/session_health.py`：コンテキスト使用率 WARN=70% / CRIT=85%、画像 WARN=25枚 / CRIT=40枚
+- SessionStart＋Stop両hookで自動実行（`.claude/settings.json`）。正常時は無表示、閾値超過時のみ警告
+- 警告が出たらClaudeは作業前に「/compactで圧縮 or 引き継ぎ準備」の2択を提案する（my-ai-company/CLAUDE.mdの容量管理プロトコル準拠）
+- 🔴 正本は my-ai-company/tools/session_health.py。改修はそちらで行い、このコピーへ再展開する（二重メンテ禁止）
+- 🔴 判定は「実測コンテキスト方式＋transcript_path方式」。旧方式（累計サイズ/入力回数・mtime推測）に戻すと誤報が再発するので戻さない
+
 ### MacBookセットアップ
 - `bash <(curl -s https://raw.githubusercontent.com/.../setup_mac.sh)` で1行クローン
 - .claude/settings.jsonがcloneに含まれるので追加設定不要
