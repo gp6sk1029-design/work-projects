@@ -176,6 +176,7 @@ MEMORY.md（学習・経験の蓄積）
 - 文字起こしツール → media-transcriber/SKILL.md
 - 巻線レポート → winding-report/SKILL.md
 - 送別会書類 → farewell-docs/SKILL.md
+- 図面検図ツール → drawing-checker/SKILL.md
 
 - （今後追加されるプロジェクトをここに記載）
 
@@ -198,6 +199,236 @@ MEMORY.md（学習・経験の蓄積）
 SKILL.mdとMEMORY.mdを更新し続ける。
 ROI評価を毎回行い、費用対効果を最大化する。
 ```
+
+---
+
+## 【最重要】ツール・アプリ開発の標準パターン（全プロジェクト共通）
+
+**このセクションは全業務・全ツール・全エージェントに適用される不変のルール。**  
+**新しいツール/アプリを作るときは必ずこの章を最初に読むこと。**  
+**既存プロジェクトで新たに発見したノウハウは、汎用性があれば必ずここに追加する。**
+
+### A. プロジェクト構成の鉄則
+
+#### ブラウザツール（React + Express）
+```
+project-name/
+├── SKILL.md / MEMORY.md / README.md
+├── start.bat / stop.bat         # 必須：ワンクリック起動
+├── .env.example / .gitignore
+├── server/                      # Node.js + Express
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── src/
+│       ├── index.ts
+│       └── routes/
+└── client/                      # React + Vite + Tailwind
+    ├── package.json
+    ├── vite.config.ts
+    ├── tailwind.config.js
+    ├── tsconfig.json
+    ├── index.html               # ★favicon必須
+    ├── public/
+    │   └── favicon.svg          # ★必須
+    └── src/
+        ├── App.tsx / main.tsx / index.css
+        ├── components/
+        └── types/
+```
+
+#### Pythonスクリプト/デーモン
+```
+project-name/
+├── SKILL.md / MEMORY.md
+├── requirements.txt
+├── .env.example / .gitignore
+├── src/
+├── launcher.bat                 # VBSまたはBATで日本語パス回避
+└── launcher.pyw                 # tkinter GUI（必要なら）
+```
+
+### B. ブラウザツールの必須要件（例外なし）
+
+| # | 項目 | 必須内容 | 理由 |
+|---|---|---|---|
+| 1 | **favicon.svg** | `client/public/favicon.svg`＋`<link rel="icon">` | タブ識別・プロらしさ |
+| 2 | **タイトル** | `<title>ツール名 - English Name</title>` | 日英併記で検索性UP |
+| 3 | **ダークモード** | `<html class="dark">`＋Tailwind `darkMode:'class'` | 目の疲労軽減 |
+| 4 | **アクセントカラー** | Tailwind設定で `accent` 定義（ツールごと識別色） | 複数ツール併用時の混乱防止 |
+| 5 | **start.bat** | 依存自動インストール・ポート競合クリア・ヘルスチェック待機・ブラウザ自動起動 | 非エンジニアでも起動可能に |
+| 6 | **stop.bat** | ポート指定でプロセスkill | 強制終了の安全策 |
+| 7 | **proxy設定** | `vite.config.ts` で `/api` → `localhost:3001` | CORS回避 |
+| 8 | **.gitignore** | `node_modules/` `dist/` `.env` `uploads/` `*.db` `.vite/` | 大容量・秘匿情報流出防止 |
+
+**ファビコンデザインの指針：**
+- SVG 64×64 ベクター（軽量・全解像度で綺麗）
+- 背景色はダーク `#0f172a` 推奨
+- ツールの機能を1目で伝える絵柄（例: drawing-checker=赤ペン×定規、plc-debugger=歯車×電気記号、email-assistant=封筒×AI）
+- 最低2色使用（主役＋差し色）
+
+### C. Python ⇄ Express ブリッジのパターン
+
+**既存のPython CLIがあるなら、Python側をほぼ書き換えずにWeb化**できる。drawing-checkerで実証。
+
+```python
+# Python CLI に --json オプションを追加するだけ
+parser.add_argument("--json", action="store_true")
+parser.add_argument("--output-dir", type=Path, default=None)
+
+# JSON出力はUTF-8バイトで直接stdoutへ（Windows cp932対策）
+sys.stdout.buffer.write(json.dumps(data, ensure_ascii=False).encode("utf-8"))
+
+# ログはstderrへ分離（超重要：ここをstdoutにするとJSON壊れる）
+handler = logging.StreamHandler(sys.stderr)
+```
+
+```typescript
+// Express 側（server/src/pythonRunner.ts）
+const proc = spawn('python', ['-m', 'your_module', ...args], {
+  env: { ...process.env, PYTHONIOENCODING: 'utf-8', PYTHONPATH: SRC_DIR },
+  windowsHide: true,
+});
+// stdoutはJSONとしてパース、stderrはログとしてキャプチャ
+```
+
+### D. AI API の選定基準（実績ベース）
+
+| 用途 | 推奨モデル | 理由 |
+|---|---|---|
+| テキスト処理・要約・単純タスク | **Gemini 2.5 Flash** | 安い・速い（email-assistantで実証） |
+| 複雑な分析・コード生成 | **Claude Sonnet** | 精度最高（plc-debuggerで使用） |
+| 画像＋テキスト（図面認識等） | **Gemini 2.5 Flash** | マルチモーダル対応・安い |
+| ローカル実行（機密データ） | **Ollama + Llama3** | API代なし・ネット不要 |
+
+**APIコスト抑制の鉄則：**
+- デフォルトOFF、`--ai` フラグでオプトイン
+- 失敗時フォールバック処理必須（AIは不正JSONを返すことがある）
+- JSONパースエラー時は部分的にでも動作継続できる設計
+
+### E. Windows環境の落とし穴（毎回引っかかる）
+
+| 落とし穴 | 対策 |
+|---|---|
+| 日本語パスで起動失敗 | `.bat/.vbs` で英語パス経由起動 |
+| multerの`originalname`がlatin1 | `Buffer.from(name, 'latin1').toString('utf-8')` |
+| Python stdout の cp932 文字化け | `sys.stdout.buffer.write(data.encode('utf-8'))` |
+| `console.log` / `print` の文字化け | `sys.stdout.reconfigure(encoding='utf-8')` |
+| CRLF / LF の混在警告 | `git config core.autocrlf true` |
+| タスクスケジューラからの起動 | 動作ディレクトリを絶対パスで指定 |
+| 孤児プロセスが残る | Windows Job Object で親プロセスと連動（email-assistantで実証） |
+| ポート競合（再起動時） | `netstat`＋`taskkill`でクリアしてから起動 |
+
+### F. .gitignore の標準テンプレート
+
+全プロジェクトで以下を基本形として採用：
+
+```gitignore
+# 秘匿情報（絶対にコミットしない）
+.env
+*.secret
+*.pickle
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node.js
+node_modules/
+dist/
+.vite/
+
+# ビルド成果物・大容量・機密
+*/client/dist/
+server/uploads/
+server/results/
+*.db
+*.log
+
+# 機密データ（学習結果・個人情報・顧客図面など）
+config/learned_rules.json
+*_checked.pdf
+samples/*
+!samples/.gitkeep
+
+# OS / エディタ
+.DS_Store
+Thumbs.db
+.vscode/
+```
+
+### G. start.bat / stop.bat の標準パターン
+
+参考実装：`work-projects/drawing-checker/start.bat` または `work-projects/plc-debugger/start.bat`
+
+`start.bat`の役割（順番通り）：
+1. Node.js/Python の存在確認
+2. `.env` の存在確認
+3. `node_modules/` が無ければ `npm install` 自動実行
+4. 既存プロセスの `taskkill`（ポート競合クリア）
+5. バックエンド起動（バックグラウンド）
+6. `/api/health` へヘルスチェック（最大30秒）
+7. フロントエンド起動
+8. ブラウザ自動オープン（`start "" "http://localhost:xxxx"`）
+
+### H. ファイルアップロード（multer）の標準パターン
+
+```typescript
+const storage = multer.diskStorage({
+  destination: (_req, _file, cb) => cb(null, UPLOADS_DIR),
+  filename: (_req, file, cb) => {
+    // ★latin1 → UTF-8 デコード必須
+    const original = Buffer.from(file.originalname, 'latin1').toString('utf-8');
+    const id = crypto.randomBytes(6).toString('hex');
+    const ext = path.extname(original);
+    const base = path.basename(original, ext);
+    // タイムスタンプ+ハッシュで一意化（同名上書き防止）
+    cb(null, `${Date.now()}_${id}_${base}${ext}`);
+  },
+});
+```
+
+### I. データ移行のベストプラクティス
+
+- エクスポート/インポート機能を **初版から組み込む**（media-transcriberで実証）
+- SQLite を使う場合はDBファイル自体をバックアップ対象に
+- 2台PC間の同期は GitHub + SessionStart/Stop フックで自動化
+
+---
+
+## ノウハウのエスカレーションルール
+
+**誰かが学んだことは、全プロジェクトで共有される仕組み。**
+
+```
+プロジェクト固有の学び
+  ↓
+プロジェクトの SKILL.md / MEMORY.md に記録
+  ↓
+他プロジェクトでも使えそうか判定
+  ↓ Yes
+work-projects/MEMORY.md の「共通パターン」に昇格
+  ↓
+さらに汎用性が高い（全ツールに適用すべき）
+  ↓ Yes
+CLAUDE.md の「ツール・アプリ開発の標準パターン」に昇格
+  ↓
+以降、新プロジェクトは自動でこのノウハウを継承
+```
+
+### 判定基準
+| 汎用度 | 置き場所 |
+|---|---|
+| 単一プロジェクトのみ | プロジェクト/MEMORY.md |
+| 複数の類似プロジェクトに適用可 | work-projects/MEMORY.md 共通パターン |
+| すべてのツール/アプリに適用すべき | CLAUDE.md 標準パターン |
+| すべての業務（副業含む）に適用すべき | CLAUDE.md（両リポジトリに同期） |
+
+### エスカレーションのタイミング
+- 同じ失敗が2回以上起きた → 即座に禁止事項に追加＋上位へ昇格検討
+- 特に効果的な手法を発見した → 成功パターンに追加＋上位へ昇格検討
+- プロジェクト完了時の振り返りで「他でも使える」と判断した項目
 
 ---
 

@@ -1,0 +1,56 @@
+{
+  "_comment": "JIS B 0401 (はめあい) と JIS B 0405 (普通公差) の抜粋。寸法ごとの公差値を引き当てるためのテーブル。",
+  "version": "1.0",
+  "general_tolerance": {
+    "_comment": "JIS B 0405 中級（m級）の普通公差（長さ寸法）",
+    "standard": "JIS B 0405-m",
+    "ranges": [
+      {"size_min": 0.5,   "size_max": 3,     "tolerance": 0.1},
+      {"size_min": 3,     "size_max": 6,     "tolerance": 0.1},
+      {"size_min": 6,     "size_max": 30,    "tolerance": 0.2},
+      {"size_min": 30,    "size_max": 120,   "tolerance": 0.3},
+      {"size_min": 120,   "size_max": 400,   "tolerance": 0.5},
+      {"size_min": 400,   "size_max": 1000,  "tolerance": 0.8},
+      {"size_min": 1000,  "size_max": 2000,  "tolerance": 1.2},
+      {"size_min": 2000,  "size_max": 4000,  "tolerance": 2.0}
+    ]
+  },
+  "it_grades": {
+    "_comment": "IT等級の公差値（μm）。基本寸法範囲ごと",
+    "standard": "JIS B 0401",
+    "grades": ["IT01","IT0","IT1","IT2","IT3","IT4","IT5","IT6","IT7","IT8","IT9","IT10","IT11","IT12","IT13","IT14","IT15","IT16"],
+    "ranges": [
+      {"size_min": 0,   "size_max": 3,    "values": {"IT5":4,"IT6":6,"IT7":10,"IT8":14,"IT9":25,"IT10":40,"IT11":60,"IT12":100}},
+      {"size_min": 3,   "size_max": 6,    "values": {"IT5":5,"IT6":8,"IT7":12,"IT8":18,"IT9":30,"IT10":48,"IT11":75,"IT12":120}},
+      {"size_min": 6,   "size_max": 10,   "values": {"IT5":6,"IT6":9,"IT7":15,"IT8":22,"IT9":36,"IT10":58,"IT11":90,"IT12":150}},
+      {"size_min": 10,  "size_max": 18,   "values": {"IT5":8,"IT6":11,"IT7":18,"IT8":27,"IT9":43,"IT10":70,"IT11":110,"IT12":180}},
+      {"size_min": 18,  "size_max": 30,   "values": {"IT5":9,"IT6":13,"IT7":21,"IT8":33,"IT9":52,"IT10":84,"IT11":130,"IT12":210}},
+      {"size_min": 30,  "size_max": 50,   "values": {"IT5":11,"IT6":16,"IT7":25,"IT8":39,"IT9":62,"IT10":100,"IT11":160,"IT12":250}},
+      {"size_min": 50,  "size_max": 80,   "values": {"IT5":13,"IT6":19,"IT7":30,"IT8":46,"IT9":74,"IT10":120,"IT11":190,"IT12":300}},
+      {"size_min": 80,  "size_max": 120,  "values": {"IT5":15,"IT6":22,"IT7":35,"IT8":54,"IT9":87,"IT10":140,"IT11":220,"IT12":350}},
+      {"size_min": 120, "size_max": 180,  "values": {"IT5":18,"IT6":25,"IT7":40,"IT8":63,"IT9":100,"IT10":160,"IT11":250,"IT12":400}},
+      {"size_min": 180, "size_max": 250,  "values": {"IT5":20,"IT6":29,"IT7":46,"IT8":72,"IT9":115,"IT10":185,"IT11":290,"IT12":460}},
+      {"size_min": 250, "size_max": 315,  "values": {"IT5":23,"IT6":32,"IT7":52,"IT8":81,"IT9":130,"IT10":210,"IT11":320,"IT12":520}},
+      {"size_min": 315, "size_max": 400,  "values": {"IT5":25,"IT6":36,"IT7":57,"IT8":89,"IT9":140,"IT10":230,"IT11":360,"IT12":570}},
+      {"size_min": 400, "size_max": 500,  "values": {"IT5":27,"IT6":40,"IT7":63,"IT8":97,"IT9":155,"IT10":250,"IT11":400,"IT12":630}}
+    ]
+  },
+  "common_fits": {
+    "_comment": "よく使われるはめあい記号（用途の目安）",
+    "hole_base": {
+      "H7": "しまりばめ基準（精密）",
+      "H8": "すきまばめ基準（中程度）",
+      "H9": "すきまばめ基準（粗）",
+      "H11": "鋳抜き穴・並み仕上げ",
+      "JS7": "中間ばめ"
+    },
+    "shaft_base": {
+      "h6": "精密軸基準",
+      "h7": "中程度軸基準",
+      "h9": "粗軸基準",
+      "g6": "すきまばめ（潤滑軸）",
+      "f7": "すきまばめ（一般的な回転）",
+      "e8": "大きなすきまばめ（高速回転）"
+    }
+  }
+}

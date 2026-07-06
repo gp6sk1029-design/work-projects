@@ -1,0 +1,101 @@
+{
+  "_comment": "JIS Z 8311準拠の図面サイズと、タイトルブロックの標準配置。座標はPDF座標系（pt、左下原点）でページ右下からの相対位置。",
+  "version": "1.0",
+  "sheet_sizes": {
+    "A0": {"width_mm": 841, "height_mm": 1189, "width_pt": 2384, "height_pt": 3370},
+    "A1": {"width_mm": 594, "height_mm": 841,  "width_pt": 1684, "height_pt": 2384},
+    "A2": {"width_mm": 420, "height_mm": 594,  "width_pt": 1191, "height_pt": 1684},
+    "A3": {"width_mm": 297, "height_mm": 420,  "width_pt": 842,  "height_pt": 1191},
+    "A4": {"width_mm": 210, "height_mm": 297,  "width_pt": 595,  "height_pt": 842}
+  },
+  "title_block_default": {
+    "_comment": "一般的なJIS準拠のタイトルブロック。図面の右下隅に配置。サイズはA3基準（pt）。他サイズでは比例拡縮。",
+    "position_from_bottom_right": {
+      "margin_right_mm": 10,
+      "margin_bottom_mm": 10,
+      "width_mm": 180,
+      "height_mm": 60
+    },
+    "fields": [
+      {
+        "key": "drawing_number",
+        "label": "図番",
+        "required": true,
+        "position": {"row": 0, "col": 2, "col_span": 1, "row_span": 2},
+        "keywords_ja": ["図番", "図面番号", "Drawing No", "DWG NO"]
+      },
+      {
+        "key": "part_name",
+        "label": "品名",
+        "required": true,
+        "position": {"row": 0, "col": 0, "col_span": 2, "row_span": 1},
+        "keywords_ja": ["品名", "部品名", "名称", "TITLE", "Part Name"]
+      },
+      {
+        "key": "material",
+        "label": "材質",
+        "required": true,
+        "position": {"row": 1, "col": 0, "col_span": 1, "row_span": 1},
+        "keywords_ja": ["材質", "Material", "MATERIAL"]
+      },
+      {
+        "key": "scale",
+        "label": "尺度",
+        "required": true,
+        "position": {"row": 1, "col": 1, "col_span": 1, "row_span": 1},
+        "keywords_ja": ["尺度", "Scale", "SCALE"],
+        "pattern": "\\d+\\s*:\\s*\\d+|FULL"
+      },
+      {
+        "key": "projection",
+        "label": "投影法",
+        "required": true,
+        "position": {"row": 2, "col": 0, "col_span": 1, "row_span": 1},
+        "keywords_ja": ["第三角法", "第一角法", "投影法", "Projection"]
+      },
+      {
+        "key": "general_tolerance",
+        "label": "普通公差",
+        "required": true,
+        "position": {"row": 2, "col": 1, "col_span": 2, "row_span": 1},
+        "keywords_ja": ["普通公差", "公差", "JIS B 0405"]
+      },
+      {
+        "key": "designer",
+        "label": "設計者",
+        "required": true,
+        "position": {"row": 3, "col": 0, "col_span": 1, "row_span": 1},
+        "keywords_ja": ["設計", "Designer", "DESIGN"]
+      },
+      {
+        "key": "checker",
+        "label": "検図者",
+        "required": false,
+        "position": {"row": 3, "col": 1, "col_span": 1, "row_span": 1},
+        "keywords_ja": ["検図", "Checker", "CHECK"]
+      },
+      {
+        "key": "approver",
+        "label": "承認者",
+        "required": false,
+        "position": {"row": 3, "col": 2, "col_span": 1, "row_span": 1},
+        "keywords_ja": ["承認", "Approver", "APPROVE"]
+      },
+      {
+        "key": "date",
+        "label": "日付",
+        "required": true,
+        "position": {"row": 4, "col": 0, "col_span": 3, "row_span": 1},
+        "keywords_ja": ["日付", "Date", "DATE"],
+        "pattern": "\\d{4}[-/]\\d{1,2}[-/]\\d{1,2}|\\d{1,2}[-/]\\d{1,2}[-/]\\d{2,4}"
+      },
+      {
+        "key": "revision",
+        "label": "改訂",
+        "required": false,
+        "position": {"row": 5, "col": 0, "col_span": 3, "row_span": 1},
+        "keywords_ja": ["改訂", "Rev", "REV", "Revision"]
+      }
+    ]
+  }
+}

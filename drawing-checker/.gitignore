@@ -1,0 +1,37 @@
+# APIキー・秘匿情報
+.env
+*.secret
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+*.egg-info/
+
+# Node.js
+node_modules/
+dist/
+*.log
+.vite/
+
+# アップロード・結果（機密図面の漏洩防止）
+server/uploads/
+server/results/
+config/learned_rules.json
+*_checked.pdf
+report.html
+tests/samples/*
+!tests/samples/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 一時ファイル
+*.tmp
+temp/
+tmp/

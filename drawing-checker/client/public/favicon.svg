@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- 背景：濃紺の角丸 -->
+  <rect width="64" height="64" rx="12" fill="#0f172a"/>
+  <!-- 製図用三角定規（シアン） -->
+  <path d="M 12 48 L 44 48 L 12 16 Z"
+        fill="none" stroke="#22d3ee" stroke-width="3" stroke-linejoin="round"/>
+  <!-- 目盛り -->
+  <line x1="18" y1="48" x2="18" y2="44" stroke="#22d3ee" stroke-width="1.5"/>
+  <line x1="26" y1="48" x2="26" y2="42" stroke="#22d3ee" stroke-width="1.5"/>
+  <line x1="34" y1="48" x2="34" y2="44" stroke="#22d3ee" stroke-width="1.5"/>
+  <!-- 赤ペン検図マーク（右上の赤丸） -->
+  <circle cx="46" cy="20" r="11" fill="#ef4444"/>
+  <path d="M 41 20 L 45 24 L 52 16"
+        fill="none" stroke="white" stroke-width="3"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
