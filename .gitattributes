@@ -1,0 +1,5 @@
+# Windows scripts must keep CRLF line endings (LF breaks cmd.exe)
+*.bat -text
+*.cmd -text
+*.vbs -text
+*.ps1 -text
