@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar';
 import FileUpload from './components/FileUpload';
 import AnalysisResult from './components/AnalysisResult';
 import ProgramGenerateTab from './components/ProgramGenerateTab';
+import TranslationTab from './components/TranslationTab';
 import TroubleshootChat from './components/TroubleshootChat';
 import HelpGuide from './components/HelpGuide';
 import DiagnosisModal from './components/DiagnosisModal';
@@ -180,7 +181,7 @@ ${issue.relatedVariables?.length ? `■ 関連変数: ${issue.relatedVariables.j
               <button
                 onClick={() => setActiveTab('plc')}
                 className={`px-4 py-3 text-sm font-medium border-b-2 transition ${
-                  activeTab !== 'generate' ? 'text-plc border-plc' : 'text-gray-400 border-transparent hover:text-gray-200'
+                  activeTab !== 'generate' && activeTab !== 'translation' ? 'text-plc border-plc' : 'text-gray-400 border-transparent hover:text-gray-200'
                 }`}
               >
                 ファイル解析
@@ -193,12 +194,22 @@ ${issue.relatedVariables?.length ? `■ 関連変数: ${issue.relatedVariables.j
               >
                 プログラム生成
               </button>
+              <button
+                onClick={() => setActiveTab('translation')}
+                className={`px-4 py-3 text-sm font-medium border-b-2 transition ${
+                  activeTab === 'translation' ? 'text-cyan-400 border-cyan-400' : 'text-gray-400 border-transparent hover:text-gray-200'
+                }`}
+              >
+                🌐 設備翻訳
+              </button>
             </div>
             <div className="flex-1 overflow-y-auto">
               {activeTab === 'generate' ? (
                 <div className="p-4">
                   <ProgramGenerateTab />
                 </div>
+              ) : activeTab === 'translation' ? (
+                <TranslationTab />
               ) : (
                 <FileUpload onFilesUploaded={handleFilesUploaded} isUploading={isAnalyzing} />
               )}

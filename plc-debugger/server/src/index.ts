@@ -9,6 +9,7 @@ import hmiAnalyzeRouter from './routes/hmiAnalyze';
 import generateRouter from './routes/generate';
 import analyzeProgramRouter from './routes/analyzeProgram';
 import diagnosisRouter from './routes/diagnosis';
+import translateRouter from './routes/translate';
 import { getAnalysisHistory, getAnalysisById } from './db/sqlite';
 
 // 複数パスで .env を読み込む
@@ -32,6 +33,7 @@ app.use('/api/hmi-analyze', hmiAnalyzeRouter);
 app.use('/api/generate', generateRouter);
 app.use('/api/analyze-program', analyzeProgramRouter);
 app.use('/api/diagnosis', diagnosisRouter);
+app.use('/api/translate', translateRouter);
 
 // 分析履歴
 app.get('/api/history', async (_req, res) => {

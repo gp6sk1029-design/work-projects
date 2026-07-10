@@ -7,6 +7,7 @@ import ScreenshotAnalysisTab from './ScreenshotAnalysisTab';
 import ProgramGenerateTab from './ProgramGenerateTab';
 import ProgramAnalysisTab from './ProgramAnalysisTab';
 import DiagnosisResultTab from './DiagnosisResultTab';
+import TranslationTab from './TranslationTab';
 import { exportIssuesToCsv } from '../hooks/useAnalysis';
 
 interface Props {
@@ -27,6 +28,7 @@ const TABS: { id: TabId; label: string; color: string }[] = [
   { id: 'diagnosis', label: '総合診断', color: 'text-purple-400 border-purple-400' },
   { id: 'screenshot', label: 'スクリーンショット', color: 'text-purple-300 border-purple-300' },
   { id: 'generate', label: 'プログラム生成', color: 'text-green-400 border-green-400' },
+  { id: 'translation', label: '🌐 設備翻訳', color: 'text-cyan-400 border-cyan-400' },
 ];
 
 export default function AnalysisResult({ projectData, activeTab, onTabChange, isAnalyzing, onConsult, onConsultMessage }: Props) {
@@ -96,6 +98,8 @@ export default function AnalysisResult({ projectData, activeTab, onTabChange, is
           </div>
         ) : activeTab === 'generate' ? (
           <ProgramGenerateTab />
+        ) : activeTab === 'translation' ? (
+          <TranslationTab />
         ) : isAnalyzing ? (
           <div className="flex items-center justify-center h-full">
             <div className="text-center">

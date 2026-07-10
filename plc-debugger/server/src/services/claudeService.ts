@@ -1,5 +1,6 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import type { Smc2Project } from './smc2Parser';
+import { safeParseGeminiJson } from './jsonRepair';
 
 const MODEL = 'gemini-2.5-flash';
 
@@ -219,17 +220,8 @@ JSONのみ出力してください。`;
     const result = await model.generateContent(prompt);
     const text = result.response.text();
 
-    try {
-      let cleaned = text.replace(/^```json\s*/i, '').replace(/\s*```\s*$/i, '');
-      const jsonMatch = cleaned.match(/\{[\s\S]*\}/);
-      if (jsonMatch) {
-        let jsonStr = jsonMatch[0];
-        jsonStr = jsonStr.replace(/\\([^"\\\/bfnrtu])/g, '\\\\$1');
-        return JSON.parse(jsonStr);
-      }
-    } catch (err) {
-      console.error('Gemini API レスポンスのJSONパース失敗:', err);
-    }
+    const parsed = safeParseGeminiJson(text, 'バグ分析');
+    if (parsed) return parsed;
 
     return {
       projectSummary: {
@@ -289,17 +281,8 @@ JSONのみ出力してください。`;
     const result = await model.generateContent(prompt);
     const text = result.response.text();
 
-    try {
-      let cleaned = text.replace(/^```json\s*/i, '').replace(/\s*```\s*$/i, '');
-      const jsonMatch = cleaned.match(/\{[\s\S]*\}/);
-      if (jsonMatch) {
-        let jsonStr = jsonMatch[0];
-        jsonStr = jsonStr.replace(/\\([^"\\\/bfnrtu])/g, '\\\\$1');
-        return JSON.parse(jsonStr);
-      }
-    } catch (err) {
-      console.error('Gemini API レスポンスのJSONパース失敗（プログラム解析）:', err);
-    }
+    const parsed = safeParseGeminiJson(text, 'プログラム解析');
+    if (parsed) return parsed;
 
     return {
       overview: 'プログラム解析結果の取得に失敗しました。',
@@ -482,43 +465,12 @@ JSONのみ出力してください。`;
     const result = await model.generateContent(prompt);
     const text = result.response.text();
 
-    try {
-      // ```json ... ``` ラッパーを除去
-      let cleaned = text.replace(/^```json\s*/i, '').replace(/\s*```\s*$/i, '');
-      const jsonMatch = cleaned.match(/\{[\s\S]*\}/);
-      if (jsonMatch) {
-        let jsonStr = jsonMatch[0];
-        // Geminiが生成する不正なエスケープシーケンスを修復
-        // \* \/ \# 等のJSON無効エスケープを修正
-        jsonStr = jsonStr.replace(/\\([^"\\\/bfnrtu])/g, '\\\\$1');
-        const parsed = JSON.parse(jsonStr);
-        // LD言語の場合、ladderRungs と flowchart がレスポンスに含まれているか確認
-        if (language === 'LD') {
-          console.log('LD生成結果チェック — ladderRungs:', !!parsed.ladderRungs, 'flowchartSteps:', !!parsed.flowchartSteps, 'flowchart:', !!parsed.flowchart);
-        }
-        return parsed;
+    const parsed = safeParseGeminiJson(text, 'プログラム生成');
+    if (parsed) {
+      if (language === 'LD') {
+        console.log('LD生成結果チェック — ladderRungs:', !!parsed.ladderRungs, 'flowchartSteps:', !!parsed.flowchartSteps, 'flowchart:', !!parsed.flowchart);
       }
-    } catch (err) {
-      console.error('Gemini API レスポンスのJSONパース失敗（プログラム生成）:', err);
-      console.error('レスポンステキスト（先頭500文字）:', text.substring(0, 500));
-      // 2回目の試行: より積極的な修復
-      try {
-        let cleaned = text.replace(/^```json\s*/i, '').replace(/\s*```\s*$/i, '');
-        const jsonMatch = cleaned.match(/\{[\s\S]*\}/);
-        if (jsonMatch) {
-          // すべての不正バックスラッシュをダブルバックスラッシュに
-          let jsonStr = jsonMatch[0];
-          // 文字列値内の改行をエスケープ
-          jsonStr = jsonStr.replace(/(?<=: "(?:[^"\\]|\\.)*)\\(?!["\\/bfnrtu])/g, '\\\\');
-          const parsed = JSON.parse(jsonStr);
-          if (language === 'LD') {
-            console.log('LD生成結果チェック（2回目試行）— ladderRungs:', !!parsed.ladderRungs, 'flowchart:', !!parsed.flowchart);
-          }
-          return parsed;
-        }
-      } catch (err2) {
-        console.error('2回目のJSONパースも失敗:', err2);
-      }
+      return parsed;
     }
 
     // パース失敗時のフォールバック
@@ -614,17 +566,8 @@ JSONのみ出力してください。`,
     const result = await model.generateContent(parts);
     const text = result.response.text();
 
-    try {
-      let cleaned = text.replace(/^```json\s*/i, '').replace(/\s*```\s*$/i, '');
-      const jsonMatch = cleaned.match(/\{[\s\S]*\}/);
-      if (jsonMatch) {
-        let jsonStr = jsonMatch[0];
-        jsonStr = jsonStr.replace(/\\([^"\\\/bfnrtu])/g, '\\\\$1');
-        return JSON.parse(jsonStr);
-      }
-    } catch (err) {
-      console.error('Gemini API レスポンスのJSONパース失敗（総合診断）:', err);
-    }
+    const parsed = safeParseGeminiJson(text, '総合診断');
+    if (parsed) return parsed;
 
     // フォールバック
     return {

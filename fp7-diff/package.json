@@ -1,0 +1,11 @@
+{
+  "name": "fp7-diff",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Panasonic FP7 (FPWIN GR7) プログラム比較・分析ツール",
+  "scripts": {
+    "dev:server": "cd server && npx tsx src/index.ts",
+    "dev:client": "cd client && npx vite --host",
+    "build": "cd client && npx vite build"
+  }
+}

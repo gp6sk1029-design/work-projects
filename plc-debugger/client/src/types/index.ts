@@ -342,4 +342,41 @@ export interface Countermeasure {
 }
 
 // === タブ ===
-export type TabId = 'plc' | 'hmi' | 'crossref' | 'transition' | 'screenshot' | 'generate' | 'programAnalysis' | 'diagnosis';
+export type TabId = 'plc' | 'hmi' | 'crossref' | 'transition' | 'screenshot' | 'generate' | 'programAnalysis' | 'diagnosis' | 'translation';
+
+// === 設備翻訳 ===
+export type TranslationDirection = 'ja-en' | 'en-ja' | 'auto';
+export type TranslationMode = 'sentence' | 'variable' | 'abbr-lookup';
+
+export interface AbbreviationCandidate {
+  abbr: string;
+  expansion: string;
+  reason: string;
+}
+
+export interface VariableNameCandidate {
+  name: string;
+  style: string;
+  reason: string;
+}
+
+export interface TranslationResult {
+  translation: string;
+  alternatives: string[];
+  abbreviations: AbbreviationCandidate[];
+  variableNames: VariableNameCandidate[];
+  contextNote: string;
+  detectedLanguage: 'ja' | 'en';
+}
+
+export interface GlossaryEntry {
+  id: number;
+  term_ja: string;
+  term_en: string;
+  abbr: string;
+  category: string;
+  note: string;
+  hit_count: number;
+  created_at: string;
+  updated_at: string;
+}

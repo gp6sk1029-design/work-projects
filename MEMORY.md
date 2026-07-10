@@ -207,3 +207,37 @@
 | 2026-04-14 | Claude | 2026/03/30〜04/14の全開発履歴を遡及記録 |
 | 2026-04-15 | Claude | drawing-checker（図面検図ツール）プロジェクト初版実装・振り返り記録 |
 | 2026-04-17 | Claude | winding-report: AISIN軌跡計算Excelに SLM8000方式シート追加（append_slm8000_method.py）・ノウハウ追記 |
+| 2026-05-29 | 生産技術主任補佐PDM | ブラウザツール常駐化の恒久対策パターンを確立（下記） |
+
+---
+
+## ローカルWebツールの「常駐起動」恒久対策（2026-05-29 確立）
+
+### 問題
+開発サーバ（vite）を起動して使うツールは、起動したセッション（ターミナル/AIセッション）が
+終わるとサーバも一緒に落ちる。「いちいち止まる」と感じる原因。
+
+### 恒久対策（plc-debugger / fp7-diff で実装）
+1. **フロントをビルドして固める**: `vite build` → `client/dist`
+2. **Express単体で配信**: `NODE_ENV=production` で `client/dist` を静的配信
+   ```ts
+   if (process.env.NODE_ENV === 'production') {
+     app.use(express.static(path.join(__dirname, '../../client/dist')));
+     app.get('*', (_req, res) => res.sendFile(path.join(clientDist, 'index.html')));
+   }
+   ```
+   → vite開発サーバが不要になり、プロセスが2個→1個に。ポートも1つで完結（3001 or 3002）
+3. **start-production.bat**: `NODE_ENV=production` + `PORT` を設定して `npx tsx src/index.ts`
+4. **start-hidden.vbs**: batをウィンドウ非表示で起動（`WshShell.Run "...bat", 0, False`）
+5. **スタートアップフォルダにVBSショートカット**: 管理者権限不要でログオン時自動起動
+   （タスクスケジューラは管理者権限が必要で `Access denied` になる → スタートアップフォルダが正解）
+6. **スマート起動bat（open-*.bat）**: ヘルスチェック→生きてればブラウザを開くだけ／死んでればVBS起動
+
+### 重要な落とし穴
+- **batの `timeout /t N` は非対話（非表示）環境で失敗する** → `ping -n N 127.0.0.1 >nul` で代替
+- タスクスケジューラ登録は管理者権限必須 → ユーザー権限ならスタートアップフォルダを使う
+- ポート設計を分離（plc-debugger=3001 / fp7-diff=3002）すれば複数ツール同時常駐OK
+
+### ポート/URL（本番運用）
+- PLC Craft AI: http://localhost:3001
+- FP7 Diff: http://localhost:3002

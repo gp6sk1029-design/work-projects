@@ -1,0 +1,23 @@
+.env
+*.secret
+
+# Python
+__pycache__/
+*.pyc
+
+# Node.js
+node_modules/
+dist/
+.vite/
+
+# Build artifacts
+*/client/dist/
+server/uploads/
+server/results/
+*.db
+*.log
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
