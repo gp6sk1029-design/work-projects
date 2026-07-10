@@ -7,28 +7,36 @@ echo   PLC Craft AI 自動起動セットアップ
 echo ========================================
 echo.
 echo Windows ログイン時に自動起動するよう設定します。
+echo （スタートアップフォルダ方式・管理者権限は不要です）
 echo.
 
-:: タスクスケジューラに登録（ログオン時に最小化で起動）
-schtasks /create /tn "PLC Craft AI" /tr "\"%~dp0start-silent.bat\"" /sc onlogon /rl highest /f >nul 2>&1
+:: スタートアップフォルダにショートカットを作成
+:: ※タスクスケジューラ方式は管理者権限が必要で失敗するため使わない（2026-05-29確立の恒久対策）
+set SHORTCUT=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\PLC Craft AI (Auto).lnk
+
+powershell -NoProfile -Command ^
+  "$sh = New-Object -ComObject WScript.Shell;" ^
+  "$lnk = $sh.CreateShortcut('%SHORTCUT%');" ^
+  "$lnk.TargetPath = 'C:\WINDOWS\system32\wscript.exe';" ^
+  "$lnk.Arguments = '\"%~dp0start-hidden.vbs\"';" ^
+  "$lnk.WorkingDirectory = '%~dp0.';" ^
+  "$lnk.Save()"
 
 if errorlevel 1 (
-    echo [ERROR] タスクの登録に失敗しました。
-    echo 管理者として実行してください。
-    echo （このファイルを右クリック → 管理者として実行）
+    echo [ERROR] ショートカットの作成に失敗しました。
     pause
     exit /b 1
 )
 
-echo [OK] タスクスケジューラに登録しました。
+echo [OK] スタートアップフォルダに登録しました。
 echo.
 echo 次回 Windows ログイン時から自動で起動します。
 echo.
 echo 今すぐ起動しますか？ (Y/N)
 set /p ans=
 if /i "%ans%"=="Y" (
-    start "" "%~dp0start-silent.bat"
-    echo 起動しました。しばらくするとブラウザが開きます。
+    wscript.exe "%~dp0start-hidden.vbs"
+    echo 起動しました。http://localhost:3001 を開いてください。
 )
 
 echo.

@@ -179,6 +179,7 @@
 | 2026/04/13 | 文字起こしのJSONパースエラー | AIが不正なJSON返却 | フォールバック処理を追加 |
 | 2026/04/14 | 動画ファイルがgitに入ってpush失敗 | .gitignore漏れ | uploads/を.gitignoreに追加 |
 | 2026/04/15 | drawing-checkerブラウザ版でfavicon未設置のまま完成させた | Viteテンプレの既定faviconが無いことに気づかなかった | **今後、ブラウザツールは初期構築時にfavicon.svg設置を必須化**（CLAUDE.mdに明文化） |
+| 2026/07/10 | plc-debuggerが「また開かない」（2回目の起動不能） | このPCのスタートアップフォルダに自動起動ショートカット未登録（FP7 Diffのみ登録されていた）。install-autostart.batが旧タスクスケジューラ方式のままで、恒久対策（スタートアップフォルダ方式）と矛盾していた | install/uninstall-autostart.batをスタートアップフォルダ方式に書き換え済み。**新PCセットアップ時は各ツールのinstall-autostart.bat実行を必須化** |
 
 ---
 
