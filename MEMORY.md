@@ -143,6 +143,8 @@
   - **役職を2グループで管理**: 一律返金グループ（社員・技師・主任＝設定シートB14:B16・ご支援金0）と役職者グループ（係長〜社長＝B17:B24・ご支援金あり・按分返金）
   - グループ人数カウントは `SUMPRODUCT(COUNTIF(D7:D46,設定!$B$14:$B$16))`（一般）/ `SUMPRODUCT(COUNTIF(D7:D46,設定!$B$17:$B$24))`（役職者）。役職を増減するときは①設定シートの役職テーブル行、②この2つのカウント範囲、③会費/支援金のINDEX/MATCH範囲、④注記・返金設定の行番号、の4点を必ず同時に更新
   - 生成スクリプト: scratchの `rebuild_v3.py`。役職リストは `RANKS` と `FLAT_GROUP`（一律返金グループ）の2定数で制御
+  - 2026-07-14 さらに変更: 係長も一般（一律返金）グループへ移動。現在 `FLAT_GROUP=[社員,技師,主任,係長]`（B14:B17）、役職者＝課長以上（B18:B24）。**グループ境界を動かすときはFLAT_GROUPとCNT_SHAIN/CNT_YAKUのセル範囲を必ずセットで直す**
+  - **⚠️やらかし**: テンプレート再生成時、`set_date_com.py`（Excel COMでの日付書式焼き込み＆再計算）を本体に流し忘れて納品→openpyxl保存のまま（サイズが小さいのが兆候）で日付書式がExcelで化ける状態だった。**再生成フローは必ず rebuild→make_test→set_date_com（本体にも）→検証→納品 の順を守る**
 - **学び**:
   - **Windows環境ではxlsxスキルのrecalc.py（LibreOffice方式）が動かない**（`socket has no attribute AF_UNIX`エラー）→ **Excel COM（win32com）方式の再計算スクリプトを自作**。`excel.CalculateFullRebuild()` → `wb.Save()`。scratchに `recalc_excel.py` として保存済み。**tools/へ共通化すると再利用性UP（次回TODO）**
   - **見た目確認**: Excel COMの `ExportAsFixedFormat(0, pdf)` でPDF化 → **PyMuPDF(fitz)で `get_pixmap(dpi=110).save(png)`** して画像化しRead。CopyPicture→Chart.Paste方式は空白になりやすい（クリップボードのタイミング）ので非推奨
