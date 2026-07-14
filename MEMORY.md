@@ -147,6 +147,13 @@
   - **SUMPRODUCTの空文字エラー**: `=IF(...,"",数値)` を含む列を `SUMPRODUCT((条件)*範囲)` すると文字列×数値で#VALUE!。単純な `SUM()` は文字列を無視するので `=SUM(E7:E46)` が安全
   - **役職別金額はINDEX/MATCH参照**: `=INDEX(設定!$C$14:$C$22,MATCH(D7,設定!$B$14:$B$22,0))` で役職名から金額を引く。IFERRORでフォールバック
   - 元ファイルは上書きせず新バージョン名（_20260714B）で納品。NAS運用ファイルの事故防止
+- **2026-07-14 追加：日付セルが数値（シリアル値）で表示される問題と対処**:
+  - **原因**: テンプレート再構築時、入力欄を一律同一スタイル（金額用 `#,##0`）でコピーしたため、開催日セルまで金額書式になり日付が `46233` 等のシリアル値で表示された。**入力欄は用途別に書式を分ける**（日付欄・文字欄・金額欄）
+  - **落とし穴①**: openpyxlで `cell.number_format='yyyy/m/d'` を設定しても、**その後Excel COMで再計算保存すると書式が `General` や `mm-dd-yy`（米国式）に化ける**。openpyxl経由の日付書式は信頼できない
+  - **正解**: **Excel COMの `Range.NumberFormatLocal` で、`CalculateFullRebuild()` の後・`Save()` の直前に設定**すると日本語カスタム書式 `yyyy"年"m"月"d"日"` が確実に保持される（scratchの `set_date_com.py`）。結合セルは範囲全体（`C6:E6`）で指定
+  - **落とし穴②**: 日本語Excelで `Range.NumberFormat="General"` はCOM例外（「NumberFormatプロパティを設定できません」）→ `NumberFormatLocal="G/標準"` を使う
+  - **落とし穴③**: openpyxlはExcel COMが設定した日本語カスタム書式を読めず `General` と誤表示する。**実表示の検証はExcel COMの `Range.Text` かPDF/PNG目視で行う**（openpyxlのnumber_format読みを信用しない）
+  - 運用中ファイルの書式のみ修正するときは、openpyxl保存だと数式キャッシュが消える → **Excel COMで開く→再計算→書式設定→保存**の一連でデータ・キャッシュ・書式すべて保持
 
 ### farewell-docs（送別会書類）
 - 技術: Python + openpyxl / HTML
