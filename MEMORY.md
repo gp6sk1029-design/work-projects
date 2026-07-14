@@ -146,6 +146,7 @@
   - 2026-07-14 さらに変更: 係長も一般（一律返金）グループへ移動。現在 `FLAT_GROUP=[社員,技師,主任,係長]`（B14:B17）、役職者＝課長以上（B18:B24）。**グループ境界を動かすときはFLAT_GROUPとCNT_SHAIN/CNT_YAKUのセル範囲を必ずセットで直す**
   - **⚠️やらかし**: テンプレート再生成時、`set_date_com.py`（Excel COMでの日付書式焼き込み＆再計算）を本体に流し忘れて納品→openpyxl保存のまま（サイズが小さいのが兆候）で日付書式がExcelで化ける状態だった。**再生成フローは必ず rebuild→make_test→set_date_com（本体にも）→検証→納品 の順を守る**
   - 2026-07-14 追加: 固定費・変動費の各項目＋合計に「1人当たり」列（I列）を追加。頭割りの分母 `PAX=(CNT_SHAIN+CNT_YAKU)`＝会費負担者（招待・欠席を除く実参加者）。式は `=IF(OR(F{r}="",{PAX}=0),"",ROUND(F{r}/{PAX},0))`。I列幅は11→13に拡張（参加者テーブルの食事制限列と共用）
+  - 2026-07-14 追加: 一般返金額を「設定額が上限・余剰金が足りなければ自動減額」に改善。`F101=IF(OR(F98<=0,一般人数=0),0,MIN(設定額,ROUNDDOWN(余剰金/一般人数,0)))`。減額時は説明セルに「※余剰金が不足のため設定額○円から自動減額」と理由を自動表示。**旧版の穴（固定額返金が余剰金を超えて赤字化）を解消**。不足/潤沢の両ケースでテスト検証済み
 - **学び**:
   - **Windows環境ではxlsxスキルのrecalc.py（LibreOffice方式）が動かない**（`socket has no attribute AF_UNIX`エラー）→ **Excel COM（win32com）方式の再計算スクリプトを自作**。`excel.CalculateFullRebuild()` → `wb.Save()`。scratchに `recalc_excel.py` として保存済み。**tools/へ共通化すると再利用性UP（次回TODO）**
   - **見た目確認**: Excel COMの `ExportAsFixedFormat(0, pdf)` でPDF化 → **PyMuPDF(fitz)で `get_pixmap(dpi=110).save(png)`** して画像化しRead。CopyPicture→Chart.Paste方式は空白になりやすい（クリップボードのタイミング）ので非推奨
