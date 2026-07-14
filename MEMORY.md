@@ -136,6 +136,18 @@
   - 左右軸(S/U)対応は列を ABCDEFGHIJ (左) + L〜U (右) に分割、右側はLZを `=E列参照` で左に追従させると運用が楽
   - `chart.legend.position = 'b'` で凡例を下に配置するとグラフエリアが広く使える
 
+### 会費収支管理テンプレート（歓送迎会・farewell-docs関連）
+- 場所: `\\nas-ime5\現場_生産技術部\10.歓送迎会 会費\`（NAS上で運用。gitには入れない＝機密分離）
+- 2026-07-14 改修: ①役職別会費・ご支援金（社員/係長/課長/次長/部長/専務/常務/顧問/社長）②最大40名化 ③状況欄（アルコール/食事制限/送迎のドロップダウン＋自動集計）④開催店舗/住所/URL欄 ⑤固定費に送迎バス代
+- **学び**:
+  - **Windows環境ではxlsxスキルのrecalc.py（LibreOffice方式）が動かない**（`socket has no attribute AF_UNIX`エラー）→ **Excel COM（win32com）方式の再計算スクリプトを自作**。`excel.CalculateFullRebuild()` → `wb.Save()`。scratchに `recalc_excel.py` として保存済み。**tools/へ共通化すると再利用性UP（次回TODO）**
+  - **見た目確認**: Excel COMの `ExportAsFixedFormat(0, pdf)` でPDF化 → **PyMuPDF(fitz)で `get_pixmap(dpi=110).save(png)`** して画像化しRead。CopyPicture→Chart.Paste方式は空白になりやすい（クリップボードのタイミング）ので非推奨
+  - **既存書式を保った再構築**: 行・列を大幅に増やす改修は、insert_rows/colsより「_styleプロキシを既存代表セルから`copy()`採取 → 旧シート削除 → 同名同indexで再作成 → 採取スタイルで再構築」が確実。**_styleコピーは罫線・塗り・フォント・整形すべて含む。ただし同一wb内でのみ有効**（別wb間はスタイルインデックスがずれてNG）
+  - **落とし穴**: スタイル採取元セルの座標を間違えると色が総崩れ（ヘッダー行のセルを入力欄スタイルとして採取してしまい入力欄が青くなった）。**採取元は必ず改修後の最新レイアウトの実セルを指定し、PNG目視で確認**
+  - **SUMPRODUCTの空文字エラー**: `=IF(...,"",数値)` を含む列を `SUMPRODUCT((条件)*範囲)` すると文字列×数値で#VALUE!。単純な `SUM()` は文字列を無視するので `=SUM(E7:E46)` が安全
+  - **役職別金額はINDEX/MATCH参照**: `=INDEX(設定!$C$14:$C$22,MATCH(D7,設定!$B$14:$B$22,0))` で役職名から金額を引く。IFERRORでフォールバック
+  - 元ファイルは上書きせず新バージョン名（_20260714B）で納品。NAS運用ファイルの事故防止
+
 ### farewell-docs（送別会書類）
 - 技術: Python + openpyxl / HTML
 - Excel版とHTML版の両方を自動生成
