@@ -279,3 +279,19 @@
 ### ポート/URL（本番運用）
 - PLC Craft AI: http://localhost:3001
 - FP7 Diff: http://localhost:3002
+
+---
+
+## farewell-reception（歓送迎会 当日受付アプリ）2026-07-21 新規作成
+
+- 目的：当日の受付・集金消し込みをスマホで。会費収支Excel（テンプレv3）の参加者33名をD1に取り込んで使用
+- 構成：Next.js 16 + @opennextjs/cloudflare + D1 + Cloudflare Access（社内ルール準拠・`preview_urls:false`）
+- **学び**：
+  - **Next.js 16 は破壊的変更あり**。`node_modules/next/dist/docs/` に**同梱ドキュメント**があり、プロジェクトのAGENTS.mdが「コードを書く前に読め」と指示している。**必ず従う**（Route Handlerは `RouteContext<"/api/xxx/[id]">` 型、`params` は Promise）
+  - `npm create cloudflare` の `--framework=next` は **Unsupported でWindowsでクラッシュ**（C3 v2.70.12）→ `create-next-app` で作ってから `@opennextjs/cloudflare` を追加する公式手順が安定
+  - `next.config.ts` に `initOpenNextCloudflareForDev()` を書くと `next dev` でもD1バインディングが使える
+  - ローカルD1は `wrangler d1 execute <name> --local --file=xxx.sql`。database_id がプレースホルダのままでもローカルは動く
+  - **PowerShellツールが EPERM で全滅する事象**が発生（バックグラウンド起動の試行後）。**Bashツールに切り替えれば継続可能**
+  - ブラウザ検証で `computer` のクリック座標がずれる／screenshotがタイムアウトする場合、**`javascript_tool` で要素を直接クリックして検証**すると確実
+  - 個人情報（氏名・金額）は `.gitignore` に `seed_attendees.sql` `members.json` を追加してコミット防止。**git add後に `git status` で混入チェックする手順を徹底**
+- **残作業**：`wrangler login`（人が実行）→ `d1 create` → database_id記入 → `npm run deploy` → **Cloudflareダッシュボードで Access 設定**（未設定だと社外公開になる）
