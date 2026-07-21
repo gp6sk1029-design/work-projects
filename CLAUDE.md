@@ -177,6 +177,7 @@ MEMORY.md（学習・経験の蓄積）
 - 巻線レポート → winding-report/SKILL.md
 - 送別会書類 → farewell-docs/SKILL.md
 - 図面検図ツール → drawing-checker/SKILL.md
+- 歓送迎会 当日受付アプリ → farewell-reception/SKILL.md（Next.js+Cloudflare Workers+D1+Access）
 
 - （今後追加されるプロジェクトをここに記載）
 

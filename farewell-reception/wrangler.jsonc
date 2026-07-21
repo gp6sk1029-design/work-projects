@@ -1,0 +1,25 @@
+{
+  // 歓送迎会 当日受付アプリ（Cloudflare Workers + D1）
+  "name": "farewell-reception",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-07-21",
+  "compatibility_flags": ["nodejs_compat"],
+
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+
+  // ★社内ルール：プレビューURLは無効（Cloudflare Access のバイパス防止）
+  "preview_urls": false,
+
+  // D1データベース（参加者・受付状況）
+  // database_id は `npx wrangler d1 create farewell-reception` 実行後に差し替える
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "farewell-reception",
+      "database_id": "PLACEHOLDER_SET_AFTER_D1_CREATE"
+    }
+  ]
+}
