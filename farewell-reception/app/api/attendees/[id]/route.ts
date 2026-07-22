@@ -14,7 +14,11 @@ export async function PATCH(
     return Response.json({ error: "invalid id" }, { status: 400 });
   }
 
-  const body = (await req.json()) as { arrived?: boolean; paid?: boolean };
+  const body = (await req.json()) as {
+    arrived?: boolean;
+    paid?: boolean;
+    due?: number;
+  };
   const sets: string[] = [];
   const values: (number | string)[] = [];
 
@@ -25,6 +29,10 @@ export async function PATCH(
   if (typeof body.paid === "boolean") {
     sets.push("paid = ?");
     values.push(body.paid ? 1 : 0);
+  }
+  if (typeof body.due === "number" && Number.isFinite(body.due) && body.due >= 0) {
+    sets.push("due = ?");
+    values.push(Math.round(body.due));
   }
   if (sets.length === 0) {
     return Response.json({ error: "nothing to update" }, { status: 400 });
@@ -40,7 +48,7 @@ export async function PATCH(
     .run();
 
   const row = await env.DB.prepare(
-    "SELECT id, arrived, paid FROM attendees WHERE id = ?"
+    "SELECT id, arrived, paid, due FROM attendees WHERE id = ?"
   )
     .bind(attendeeId)
     .first();

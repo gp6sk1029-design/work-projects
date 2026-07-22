@@ -53,6 +53,39 @@ export default function ReceptionClient({ initial }: { initial: Attendee[] }) {
     }
   }
 
+  // 料金（徴収額）を変更する
+  async function editDue(a: Attendee) {
+    const input = window.prompt(
+      `${a.dept ? a.dept + " " : ""}${a.name} さんの徴収額（円）を入力`,
+      String(a.due)
+    );
+    if (input === null) return; // キャンセル
+    const value = Number(input.replace(/[^0-9]/g, ""));
+    if (!Number.isFinite(value) || value < 0) {
+      alert("金額は0以上の数字で入力してください。");
+      return;
+    }
+    if (value === a.due) return;
+
+    const prevDue = a.due;
+    setList((prev) =>
+      prev.map((x) => (x.id === a.id ? { ...x, due: value } : x))
+    );
+    try {
+      const res = await fetch(`/api/attendees/${a.id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ due: value }),
+      });
+      if (!res.ok) throw new Error("update failed");
+    } catch {
+      setList((prev) =>
+        prev.map((x) => (x.id === a.id ? { ...x, due: prevDue } : x))
+      );
+      alert("金額の変更に失敗しました。通信状況を確認してください。");
+    }
+  }
+
   return (
     <div className="min-h-dvh bg-slate-950 text-slate-100">
       {/* 集計バー（常時表示） */}
@@ -160,6 +193,15 @@ export default function ReceptionClient({ initial }: { initial: Attendee[] }) {
                 招待
               </span>
             )}
+
+            {/* 料金変更 */}
+            <button
+              onClick={() => editDue(a)}
+              aria-label={`${a.name}さんの金額を変更`}
+              className="flex h-11 w-9 shrink-0 items-center justify-center rounded-lg bg-slate-800 text-slate-400 active:bg-slate-700"
+            >
+              ✏️
+            </button>
           </li>
         ))}
         {shown.length === 0 && (
@@ -170,7 +212,7 @@ export default function ReceptionClient({ initial }: { initial: Attendee[] }) {
       </ul>
 
       <p className="px-4 py-6 text-center text-[10px] text-slate-600">
-        タップで「来場」／金額をタップで「集金済」。変更は自動保存されます。
+        氏名をタップで「来場」／金額をタップで「集金済」／✏️で金額を変更。変更は自動保存されます。
       </p>
     </div>
   );
