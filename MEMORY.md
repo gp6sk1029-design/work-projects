@@ -295,3 +295,16 @@
   - ブラウザ検証で `computer` のクリック座標がずれる／screenshotがタイムアウトする場合、**`javascript_tool` で要素を直接クリックして検証**すると確実
   - 個人情報（氏名・金額）は `.gitignore` に `seed_attendees.sql` `members.json` を追加してコミット防止。**git add後に `git status` で混入チェックする手順を徹底**
 - **残作業**：`wrangler login`（人が実行）→ `d1 create` → database_id記入 → `npm run deploy` → **Cloudflareダッシュボードで Access 設定**（未設定だと社外公開になる）
+
+### farewell-reception デプロイ＋Access設定完了（2026-07-22）
+- 本番URL: `https://farewell-reception.gp6sk1029.workers.dev`（Cloudflare Workers、D1: c35edf65-...）
+- **workers.dev への Cloudflare Access 適用手順**（ブラウザ代行で実施）:
+  1. Zero Trust ダッシュ（one.dash.cloudflare.com）→ Access controls → Applications → Create new application
+  2. **Self-hosted and private → 「Workers」サブタブ** を選ぶ（workers.dev対応。独自ドメイン不要）
+  3. Destinations の Public hostnames で Subdomain=farewell-reception / Domain=gp6sk1029.workers.dev を選択
+  4. Access policies → Create new policy → Include: Emails = 許可アドレス、Action=Allow、名前を付けてSave policy
+  5. Create でアプリ作成 → 反映後、未認証アクセスは `*.cloudflareaccess.com/cdn-cgi/access/login` へ302
+- **検証**: `curl -I <URL>` で 302 + Location が cloudflareaccess.com なら認証OK。アプリHTML（"送別会 受付"等）が見えたら未反映
+- **落とし穴**: Cloudфлareダッシュのレンダラが重く、computer screenshotが度々30秒タイムアウト → `wait 3-4秒` 後に再取得、または `read_page`/`find`/`get_page_text` で要素特定すると安定
+- ログイン方式は One-time PIN（指定メールにコード送信）。identity provider未設定でもZero Trust Freeで利用可
+- **人にしかできない工程**: `wrangler login`（対話）と、実機での初回ログイン（メールOTP入力）は代行不可
