@@ -42,7 +42,7 @@ export async function PATCH(
   values.push(new Date().toISOString());
   values.push(attendeeId);
 
-  const { env } = await getCloudflareContext({ async: true });
+  const { env } = getCloudflareContext();
   await env.DB.prepare(`UPDATE attendees SET ${sets.join(", ")} WHERE id = ?`)
     .bind(...values)
     .run();

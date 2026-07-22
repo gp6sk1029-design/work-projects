@@ -13,6 +13,9 @@
   // ★社内ルール：プレビューURLは無効（Cloudflare Access のバイパス防止）
   "preview_urls": false,
 
+  // エラー調査用にログ収集を有効化
+  "observability": { "enabled": true },
+
   // D1データベース（参加者・受付状況）
   // database_id は `npx wrangler d1 create farewell-reception` 実行後に差し替える
   "d1_databases": [
