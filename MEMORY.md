@@ -308,3 +308,12 @@
 - **落とし穴**: Cloudфлareダッシュのレンダラが重く、computer screenshotが度々30秒タイムアウト → `wait 3-4秒` 後に再取得、または `read_page`/`find`/`get_page_text` で要素特定すると安定
 - ログイン方式は One-time PIN（指定メールにコード送信）。identity provider未設定でもZero Trust Freeで利用可
 - **人にしかできない工程**: `wrangler login`（対話）と、実機での初回ログイン（メールOTP入力）は代行不可
+
+### ⚠️farewell-reception 本番500の真因＝Turbopackビルド（2026-07-22・重要）
+- **症状**: opennext本番デプロイで全ルート500、エラーは握りつぶされスタックも出ない。`next dev`（ローカル）では正常に動く
+- **真因**: Next.js 16 の `next build` はデフォルトTurbopack。これが @opennextjs/cloudflare 1.20.1 と噛み合わず本番ランタイムで500（opennext Troubleshootingの「Turbopackビルドでチャンクロード失敗」に該当）
+- **解決**: package.json の build を **`next build --webpack`** に変更（Webpackビルド）。これだけで解決
+- **教訓: opennext + Next.js 16 では最初から `next build --webpack` にする**。C3の`--framework=next`が使えずcreate-next-app経由で作る場合、buildスクリプトのTurbopack→Webpack切替を忘れない
+- デバッグ術: 500が握りつぶされて見えないときは、APIルートに `try/catch` で `{error, stack}` をJSONで返す一時コードを入れて可視化。**ただしWebpackビルドでないとtry/catchすら効かない**（Turbopackビルドはコード自体が起動しない）→ まずWebpackビルドにしてからデバッグ
+- 副次学び: `getCloudflareContext()` はリクエスト内（Server Component/Route Handler）では**同期版**を使う。`{async:true}` はnext dev/static generation用
+- 副次学び: ローカルpreview用D1は本番D1と別。`wrangler d1 execute <name> --local --file=schema.sql` でローカルにも別途スキーマ投入が必要
