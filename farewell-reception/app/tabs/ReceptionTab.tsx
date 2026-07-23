@@ -1,43 +1,50 @@
 "use client";
 
+// 当日受付タブ（従来のReceptionClientと同機能。欠席者は表示しない）
 import { useMemo, useState } from "react";
-import type { Attendee } from "./types";
+import type { Attendee, EventRow } from "../types";
+import { yen } from "../calc";
 
-const yen = (n: number) => n.toLocaleString("ja-JP");
-
-export default function ReceptionClient({ initial }: { initial: Attendee[] }) {
-  const [list, setList] = useState<Attendee[]>(initial);
+export default function ReceptionTab({
+  event,
+  list,
+  setList,
+}: {
+  event: EventRow | null;
+  list: Attendee[];
+  setList: (v: Attendee[]) => void;
+}) {
   const [onlyUnpaid, setOnlyUnpaid] = useState(false);
   const [q, setQ] = useState("");
 
+  const present = useMemo(() => list.filter((a) => a.rank !== "欠席"), [list]);
+
   const stats = useMemo(() => {
-    const billable = list.filter((a) => a.due > 0);
+    const billable = present.filter((a) => a.due > 0);
     return {
-      total: list.length,
-      arrived: list.filter((a) => a.arrived).length,
+      total: present.length,
+      arrived: present.filter((a) => a.arrived).length,
       dueTotal: billable.reduce((s, a) => s + a.due, 0),
       paidTotal: billable.filter((a) => a.paid).reduce((s, a) => s + a.due, 0),
       unpaidCount: billable.filter((a) => !a.paid).length,
     };
-  }, [list]);
+  }, [present]);
 
   const shown = useMemo(() => {
     const key = q.trim();
-    return list.filter((a) => {
+    return present.filter((a) => {
       if (onlyUnpaid && (a.paid === 1 || a.due === 0)) return false;
       if (key && !`${a.dept}${a.name}${a.rank}`.includes(key)) return false;
       return true;
     });
-  }, [list, onlyUnpaid, q]);
+  }, [present, onlyUnpaid, q]);
 
   // 楽観更新 → サーバー反映。失敗したら元に戻す
   async function toggle(id: number, field: "arrived" | "paid") {
     const target = list.find((a) => a.id === id);
     if (!target) return;
     const next = target[field] ? 0 : 1;
-    setList((prev) =>
-      prev.map((a) => (a.id === id ? { ...a, [field]: next } : a))
-    );
+    setList(list.map((a) => (a.id === id ? { ...a, [field]: next } : a)));
     try {
       const res = await fetch(`/api/attendees/${id}`, {
         method: "PATCH",
@@ -46,9 +53,7 @@ export default function ReceptionClient({ initial }: { initial: Attendee[] }) {
       });
       if (!res.ok) throw new Error("update failed");
     } catch {
-      setList((prev) =>
-        prev.map((a) => (a.id === id ? { ...a, [field]: target[field] } : a))
-      );
+      setList(list.map((a) => (a.id === id ? { ...a, [field]: target[field] } : a)));
       alert("更新に失敗しました。通信状況を確認してください。");
     }
   }
@@ -59,7 +64,7 @@ export default function ReceptionClient({ initial }: { initial: Attendee[] }) {
       `${a.dept ? a.dept + " " : ""}${a.name} さんの徴収額（円）を入力`,
       String(a.due)
     );
-    if (input === null) return; // キャンセル
+    if (input === null) return;
     const value = Number(input.replace(/[^0-9]/g, ""));
     if (!Number.isFinite(value) || value < 0) {
       alert("金額は0以上の数字で入力してください。");
@@ -68,9 +73,7 @@ export default function ReceptionClient({ initial }: { initial: Attendee[] }) {
     if (value === a.due) return;
 
     const prevDue = a.due;
-    setList((prev) =>
-      prev.map((x) => (x.id === a.id ? { ...x, due: value } : x))
-    );
+    setList(list.map((x) => (x.id === a.id ? { ...x, due: value } : x)));
     try {
       const res = await fetch(`/api/attendees/${a.id}`, {
         method: "PATCH",
@@ -79,18 +82,18 @@ export default function ReceptionClient({ initial }: { initial: Attendee[] }) {
       });
       if (!res.ok) throw new Error("update failed");
     } catch {
-      setList((prev) =>
-        prev.map((x) => (x.id === a.id ? { ...x, due: prevDue } : x))
-      );
+      setList(list.map((x) => (x.id === a.id ? { ...x, due: prevDue } : x)));
       alert("金額の変更に失敗しました。通信状況を確認してください。");
     }
   }
 
   return (
-    <div className="min-h-dvh bg-slate-950 text-slate-100">
+    <div>
       {/* 集計バー（常時表示） */}
       <header className="sticky top-0 z-10 border-b border-slate-700 bg-slate-900/95 px-4 py-3 backdrop-blur">
-        <h1 className="text-sm font-bold text-amber-400">宮元さん 送別会 受付</h1>
+        <h1 className="text-sm font-bold text-amber-400">
+          {event ? `${event.title} 受付` : "受付"}
+        </h1>
         <div className="mt-2 grid grid-cols-3 gap-2 text-center">
           <div className="rounded-lg bg-slate-800 py-2">
             <div className="text-[10px] text-slate-400">来場</div>
@@ -120,7 +123,7 @@ export default function ReceptionClient({ initial }: { initial: Attendee[] }) {
         </div>
         <div className="mt-2 flex gap-2">
           <button
-            onClick={() => setOnlyUnpaid((v) => !v)}
+            onClick={() => setOnlyUnpaid(!onlyUnpaid)}
             className={`shrink-0 rounded-lg px-3 py-2 text-xs font-bold ${
               onlyUnpaid ? "bg-rose-500 text-white" : "bg-slate-800 text-slate-300"
             }`}
@@ -190,7 +193,7 @@ export default function ReceptionClient({ initial }: { initial: Attendee[] }) {
               </button>
             ) : (
               <span className="w-24 shrink-0 text-center text-xs text-slate-500">
-                招待
+                {a.rank === "招待" ? "招待" : "―"}
               </span>
             )}
 
