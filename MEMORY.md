@@ -309,6 +309,19 @@
 - ログイン方式は One-time PIN（指定メールにコード送信）。identity provider未設定でもZero Trust Freeで利用可
 - **人にしかできない工程**: `wrangler login`（対話）と、実機での初回ログイン（メールOTP入力）は代行不可
 
+### farewell-reception v2＝Excel同等の会費収支アプリ化（2026-07-23）
+- 5タブ構成（受付/参加者/費用/収支/設定）・複数イベント対応。スキーマv2: events/ranks/expenses + attendees.event_id
+- **移行SQLは役職ベースの一括UPDATEにすると個人情報ゼロでリポジトリにコミットできる**（migrations/001_multi_event.sql）
+- 会費テーブル（2026-07時点）: 一般(社員技師主任係長)=6,600 / 課長次長=6,600+3,400 / 部長顧問=6,600+13,400 / 社長=5,000
+- 返金ロジック: 一般=設定額上限で一律（余剰不足は自動減額）→ 残額を役職者(課長以上)で按分切捨て。予算/実績2本立て
+- **学び**:
+  - `RouteContext<"/api/xxx/[id]">` 型は `npx next typegen` で生成される。新ルート追加後にtscが通らないときはまずtypegen
+  - **開いているExcelの未保存状態は `win32com.GetObject(path)` で読める**（保存済みファイルとの差分検出に有効）。Excelを閉じるとGetObjectは失敗→openpyxlにフォールバック
+  - **`npm run deploy` の .open-next 削除がEPERM**になったら、動いているdevサーバ/wranglerを止めてから `rm -rf .open-next` → 再実行
+  - D1本番変更の前に `wrangler d1 export --remote --output=backup.sql` でバックアップ（scratchpad等リポジトリ外へ）
+  - ブラウザ検証はscreenshot不可環境でも `read_page`＋`javascript_tool`（fetchでAPI直叩き）でCRUD一通り検証できる
+  - ExcelとD1の突き合わせで名前は「部署 名前」形式の揺れがある → `name.split()[-1]` で名寄せ
+
 ### ⚠️farewell-reception 本番500の真因＝Turbopackビルド（2026-07-22・重要）
 - **症状**: opennext本番デプロイで全ルート500、エラーは握りつぶされスタックも出ない。`next dev`（ローカル）では正常に動く
 - **真因**: Next.js 16 の `next build` はデフォルトTurbopack。これが @opennextjs/cloudflare 1.20.1 と噛み合わず本番ランタイムで500（opennext Troubleshootingの「Turbopackビルドでチャンクロード失敗」に該当）
