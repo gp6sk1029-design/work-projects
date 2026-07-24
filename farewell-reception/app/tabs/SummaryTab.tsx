@@ -155,7 +155,9 @@ export default function SummaryTab({
             return (
               <li
                 key={r.id}
-                className="grid grid-cols-[1fr_4.5rem_6rem] items-center gap-2 px-4 py-1.5"
+                className={`grid grid-cols-[1fr_4.5rem_6rem] items-center gap-2 px-4 py-1.5 ${
+                  count === 0 ? "opacity-50" : ""
+                }`}
               >
                 <span className="text-xs">
                   {r.name}
@@ -163,12 +165,20 @@ export default function SummaryTab({
                     （{r.grp === "flat" ? "一般" : "役職者"}・{count}名）
                   </span>
                 </span>
-                <span className="text-right text-[10px] tabular-nums text-slate-500">
-                  {refund > 0 ? `返金${yen(refund)}` : ""}
-                </span>
-                <span className="text-right text-sm font-bold tabular-nums">
-                  {yen(burden)}円
-                </span>
+                {count === 0 ? (
+                  <span className="col-span-2 text-right text-[10px] text-slate-500">
+                    対象者なし（返金なし）
+                  </span>
+                ) : (
+                  <>
+                    <span className="text-right text-[10px] tabular-nums text-slate-500">
+                      {refund > 0 ? `返金${yen(refund)}` : ""}
+                    </span>
+                    <span className="text-right text-sm font-bold tabular-nums">
+                      {yen(burden)}円
+                    </span>
+                  </>
+                )}
               </li>
             );
           })}
