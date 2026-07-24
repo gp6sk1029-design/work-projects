@@ -102,37 +102,37 @@ export default function ReceptionTab({
   return (
     <div>
       {/* 集計バー（常時表示） */}
-      <header className="sticky top-0 z-10 border-b border-slate-700 bg-slate-900/95 px-4 py-3 backdrop-blur">
-        <h1 className="text-sm font-bold text-amber-400">
+      <header className="sticky top-0 z-10 border-b border-slate-300 dark:border-slate-600 bg-white/95 dark:bg-slate-800/95 px-4 py-3 backdrop-blur">
+        <h1 className="text-sm font-bold text-amber-600 dark:text-amber-400">
           {event ? `${event.title} 受付` : "受付"}
         </h1>
         <div className="mt-2 grid grid-cols-3 gap-2 text-center">
           {/* 来場と未収を隣同士に（どちらも人数の進捗） */}
-          <div className="rounded-lg bg-slate-800 py-2">
-            <div className="text-[10px] text-slate-400">来場</div>
+          <div className="rounded-lg bg-white dark:bg-slate-700 py-2">
+            <div className="text-[10px] text-slate-500 dark:text-slate-400">来場</div>
             <div className="text-lg font-bold tabular-nums">
               {stats.arrived}
-              <span className="text-xs text-slate-400">/{stats.total}名</span>
+              <span className="text-xs text-slate-500 dark:text-slate-400">/{stats.total}名</span>
             </div>
           </div>
-          <div className="rounded-lg bg-slate-800 py-2">
-            <div className="text-[10px] text-slate-400">未収</div>
+          <div className="rounded-lg bg-white dark:bg-slate-700 py-2">
+            <div className="text-[10px] text-slate-500 dark:text-slate-400">未収</div>
             <div
               className={`text-lg font-bold tabular-nums ${
-                stats.unpaidCount ? "text-rose-400" : "text-emerald-400"
+                stats.unpaidCount ? "text-rose-600 dark:text-rose-400" : "text-emerald-600 dark:text-emerald-400"
               }`}
             >
               {stats.unpaidCount}
-              <span className="text-xs text-slate-400">名</span>
+              <span className="text-xs text-slate-500 dark:text-slate-400">名</span>
             </div>
           </div>
-          <div className="rounded-lg bg-slate-800 py-2">
-            <div className="text-[10px] text-slate-400">集金</div>
-            <div className="text-lg font-bold tabular-nums text-emerald-400">
+          <div className="rounded-lg bg-white dark:bg-slate-700 py-2">
+            <div className="text-[10px] text-slate-500 dark:text-slate-400">集金</div>
+            <div className="text-lg font-bold tabular-nums text-emerald-600 dark:text-emerald-400">
               {stats.paidCount}
-              <span className="text-xs text-slate-400">/{stats.billableCount}名</span>
+              <span className="text-xs text-slate-500 dark:text-slate-400">/{stats.billableCount}名</span>
             </div>
-            <div className="text-[10px] text-slate-500">
+            <div className="text-[10px] text-slate-500 dark:text-slate-400">
               {yen(stats.paidTotal)}/{yen(stats.dueTotal)}円
             </div>
           </div>
@@ -141,7 +141,7 @@ export default function ReceptionTab({
           <button
             onClick={() => setOnlyUnpaid(!onlyUnpaid)}
             className={`shrink-0 rounded-lg px-3 py-2 text-xs font-bold ${
-              onlyUnpaid ? "bg-rose-500 text-white" : "bg-slate-800 text-slate-300"
+              onlyUnpaid ? "bg-rose-500 text-white" : "bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300"
             }`}
           >
             未収のみ
@@ -150,18 +150,18 @@ export default function ReceptionTab({
             value={q}
             onChange={(e) => setQ(e.target.value)}
             placeholder="氏名・部署で検索"
-            className="w-full rounded-lg bg-slate-800 px-3 py-2 text-sm outline-none placeholder:text-slate-500"
+            className="w-full rounded-lg bg-white dark:bg-slate-700 px-3 py-2 text-sm outline-none placeholder:text-slate-500"
           />
         </div>
         {/* 操作ガイド＋列見出し */}
         <div className="mt-2 flex items-center gap-2">
-          <p className="min-w-0 flex-1 text-[10px] text-slate-500">
+          <p className="min-w-0 flex-1 text-[10px] text-slate-500 dark:text-slate-400">
             👉 各行の右にある2つのボタンをタップしてチェック
           </p>
-          <span className="w-16 shrink-0 text-center text-[10px] font-bold text-emerald-400">
+          <span className="w-16 shrink-0 text-center text-[10px] font-bold text-emerald-600 dark:text-emerald-400">
             来場
           </span>
-          <span className="w-[4.5rem] shrink-0 text-center text-[10px] font-bold text-amber-400">
+          <span className="w-[4.5rem] shrink-0 text-center text-[10px] font-bold text-amber-600 dark:text-amber-400">
             集金
           </span>
           <span className="w-8 shrink-0" />
@@ -169,20 +169,21 @@ export default function ReceptionTab({
       </header>
 
       {/* 参加者リスト */}
-      <ul className="divide-y divide-slate-800">
+      <ul className="divide-y divide-slate-200 dark:divide-slate-700">
         {shown.map((a) => {
           const needsPay = a.due > 0;
           // 4状態で色分け
           // 完了(来場＆集金)＝濃い緑 / 集金済のみ＝薄緑 / 来場したのに未集金＝警告(赤) / それ以外＝通常
-          const done = a.arrived && (a.paid || !needsPay);
-          const warn = a.arrived && needsPay && !a.paid; // 来場したのに未集金
-          const paidOnly = a.paid && !a.arrived;
+          // ※ boolean化しないと 0（数値）が {done && …} で "0" として表示される
+          const done = !!(a.arrived && (a.paid || !needsPay));
+          const warn = !!(a.arrived && needsPay && !a.paid); // 来場したのに未集金
+          const paidOnly = !!(a.paid && !a.arrived);
           const rowClass = done
-            ? "bg-emerald-500/25"
+            ? "bg-emerald-200 dark:bg-emerald-500/30"
             : warn
-              ? "bg-rose-500/20 ring-1 ring-inset ring-rose-500/50"
+              ? "bg-rose-100 dark:bg-rose-500/30 ring-1 ring-inset ring-rose-400 dark:ring-rose-500/60"
               : paidOnly
-                ? "bg-emerald-500/10"
+                ? "bg-emerald-100 dark:bg-emerald-500/20"
                 : "";
           return (
           <li
@@ -193,22 +194,22 @@ export default function ReceptionTab({
             <div className="min-w-0 flex-1">
               <span className="block truncate text-sm font-bold">
                 {a.dept && (
-                  <span className="mr-1 text-[10px] text-slate-400">{a.dept}</span>
+                  <span className="mr-1 text-[10px] text-slate-500 dark:text-slate-400">{a.dept}</span>
                 )}
                 {a.name}
-                {done && <span className="ml-1 text-[10px] text-emerald-400">✓完了</span>}
+                {done && <span className="ml-1 text-[10px] text-emerald-600 dark:text-emerald-400">✓完了</span>}
                 {warn && (
                   <span className="ml-1 rounded bg-rose-500 px-1 text-[10px] font-bold text-white">
                     ⚠️未集金
                   </span>
                 )}
               </span>
-              <span className="block text-[10px] text-slate-400">
+              <span className="block text-[10px] text-slate-500 dark:text-slate-400">
                 {a.rank}
                 {a.alcohol === "あり" && " ・🍺"}
                 {a.shuttle === "あり" && " ・🚐"}
                 {a.adjust !== 0 && (
-                  <span className="ml-1 font-bold text-amber-400">
+                  <span className="ml-1 font-bold text-amber-600 dark:text-amber-400">
                     {a.adjust > 0 ? "＋" : "−"}
                     {yen(Math.abs(a.adjust))}
                   </span>
@@ -223,7 +224,7 @@ export default function ReceptionTab({
               className={`flex h-14 w-16 shrink-0 flex-col items-center justify-center gap-1 rounded-lg border-2 transition-colors ${
                 a.arrived
                   ? "border-emerald-500 bg-emerald-500 text-white"
-                  : "border-slate-600 bg-slate-800/60 text-slate-400"
+                  : "border-slate-400 dark:border-slate-500 bg-slate-100 dark:bg-slate-700/60 text-slate-500 dark:text-slate-400"
               }`}
             >
               <span
@@ -244,7 +245,7 @@ export default function ReceptionTab({
                 className={`flex h-14 w-[4.5rem] shrink-0 flex-col items-center justify-center gap-0.5 rounded-lg border-2 transition-colors ${
                   a.paid
                     ? "border-emerald-500 bg-emerald-500 text-white"
-                    : "border-amber-500/60 bg-amber-500/15 text-amber-300"
+                    : "border-amber-400 dark:border-amber-500/70 bg-amber-100 dark:bg-amber-500/25 text-amber-700 dark:text-amber-300"
                 }`}
               >
                 {a.paid ? (
@@ -267,7 +268,7 @@ export default function ReceptionTab({
                 )}
               </button>
             ) : (
-              <span className="flex h-14 w-[4.5rem] shrink-0 items-center justify-center text-xs text-slate-500">
+              <span className="flex h-14 w-[4.5rem] shrink-0 items-center justify-center text-xs text-slate-500 dark:text-slate-400">
                 {a.rank === "招待" ? "招待" : "―"}
               </span>
             )}
@@ -276,7 +277,7 @@ export default function ReceptionTab({
             <button
               onClick={() => editDue(a)}
               aria-label={`${a.name}さんの金額を変更`}
-              className="flex h-14 w-8 shrink-0 items-center justify-center rounded-lg bg-slate-800 text-slate-400 active:bg-slate-700"
+              className="flex h-14 w-8 shrink-0 items-center justify-center rounded-lg bg-white dark:bg-slate-700 text-slate-500 dark:text-slate-400 active:bg-slate-700"
             >
               ✏️
             </button>
@@ -284,16 +285,16 @@ export default function ReceptionTab({
           );
         })}
         {shown.length === 0 && (
-          <li className="px-4 py-10 text-center text-sm text-slate-500">
+          <li className="px-4 py-10 text-center text-sm text-slate-500 dark:text-slate-400">
             該当する参加者がいません
           </li>
         )}
       </ul>
 
-      <p className="px-4 py-6 text-center text-[10px] text-slate-600">
-        行の色：<span className="text-emerald-400">濃い緑＝来場＆集金の完了</span>／
-        <span className="text-emerald-300">薄い緑＝集金済み（未来場）</span>／
-        <span className="text-rose-400">赤＝来場したのに未集金（要集金）</span>。
+      <p className="px-4 py-6 text-center text-[10px] text-slate-400 dark:text-slate-500">
+        行の色：<span className="text-emerald-600 dark:text-emerald-400">濃い緑＝来場＆集金の完了</span>／
+        <span className="text-emerald-700 dark:text-emerald-300">薄い緑＝集金済み（未来場）</span>／
+        <span className="text-rose-600 dark:text-rose-400">赤＝来場したのに未集金（要集金）</span>。
         「来場」「集金」ボタンはもう一度タップで取り消し。✏️で金額変更。自動保存されます。
       </p>
     </div>

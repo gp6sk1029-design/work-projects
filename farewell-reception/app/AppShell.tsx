@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Attendee, EventRow, Expense, Rank } from "./types";
 import ReceptionTab from "./tabs/ReceptionTab";
 import AttendeesTab from "./tabs/AttendeesTab";
@@ -29,6 +29,22 @@ export default function AppShell({ initial }: { initial: Store }) {
   const [store, setStore] = useState<Store>(initial);
   const [tab, setTab] = useState<TabKey>("reception");
 
+  // 表示テーマ（ライト/ダーク）。初期値はlayoutのスクリプトが付けた .dark を読む
+  const [dark, setDark] = useState(false);
+  useEffect(() => {
+    setDark(document.documentElement.classList.contains("dark"));
+  }, []);
+  function toggleTheme() {
+    const next = !dark;
+    setDark(next);
+    document.documentElement.classList.toggle("dark", next);
+    try {
+      localStorage.setItem("theme", next ? "dark" : "light");
+    } catch {
+      /* localStorage不可でも動作継続 */
+    }
+  }
+
   // アクティブイベント切替・作成後に全データを読み直す
   async function reloadAll() {
     const [ev, at, rk, ex] = await Promise.all([
@@ -50,7 +66,7 @@ export default function AppShell({ initial }: { initial: Store }) {
     setStore((prev) => ({ ...prev, [key]: value }));
 
   return (
-    <div className="min-h-dvh bg-slate-950 pb-20 text-slate-100">
+    <div className="min-h-dvh bg-slate-100 dark:bg-slate-900 pb-20 text-slate-900 dark:text-slate-100">
       {tab === "reception" && (
         <ReceptionTab
           event={store.event}
@@ -90,15 +106,24 @@ export default function AppShell({ initial }: { initial: Store }) {
         />
       )}
 
+      {/* テーマ切替（右下フローティング） */}
+      <button
+        onClick={toggleTheme}
+        aria-label="表示テーマを切り替え"
+        className="fixed bottom-20 right-3 z-30 flex h-11 w-11 items-center justify-center rounded-full border border-slate-300 bg-white text-lg shadow-lg dark:border-slate-600 dark:bg-slate-800"
+      >
+        {dark ? "☀️" : "🌙"}
+      </button>
+
       {/* 下部タブバー */}
-      <nav className="fixed inset-x-0 bottom-0 z-20 border-t border-slate-700 bg-slate-900/95 backdrop-blur">
+      <nav className="fixed inset-x-0 bottom-0 z-20 border-t border-slate-300 dark:border-slate-600 bg-white/95 dark:bg-slate-800/95 backdrop-blur">
         <div className="mx-auto flex max-w-xl">
           {TABS.map((t) => (
             <button
               key={t.key}
               onClick={() => setTab(t.key)}
               className={`flex-1 py-2 text-center text-[10px] ${
-                tab === t.key ? "text-amber-400" : "text-slate-500"
+                tab === t.key ? "text-amber-600 dark:text-amber-400" : "text-slate-500 dark:text-slate-400"
               }`}
             >
               <span className="block text-lg leading-6">{t.icon}</span>

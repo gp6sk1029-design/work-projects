@@ -287,24 +287,24 @@ export default function SettingsTab({
       onClick={onEdit}
       className="flex w-full items-center justify-between gap-2 px-4 py-2.5 text-left active:bg-slate-900"
     >
-      <span className="shrink-0 text-xs text-slate-400">{label}</span>
+      <span className="shrink-0 text-xs text-slate-500 dark:text-slate-400">{label}</span>
       <span className="min-w-0 flex-1 truncate text-right text-sm">{value || "―"}</span>
-      <span className="shrink-0 text-slate-600">›</span>
+      <span className="shrink-0 text-slate-400 dark:text-slate-500">›</span>
     </button>
   );
 
   return (
     <div className={busy ? "pointer-events-none opacity-60" : ""}>
-      <header className="sticky top-0 z-10 border-b border-slate-700 bg-slate-900/95 px-4 py-3 backdrop-blur">
-        <h1 className="text-sm font-bold text-amber-400">設定</h1>
+      <header className="sticky top-0 z-10 border-b border-slate-300 dark:border-slate-600 bg-white/95 dark:bg-slate-800/95 px-4 py-3 backdrop-blur">
+        <h1 className="text-sm font-bold text-amber-600 dark:text-amber-400">設定</h1>
       </header>
 
       {event ? (
         <>
           {/* イベント情報 */}
-          <section className="border-b border-slate-800 py-1">
-            <div className="px-4 py-1 text-[10px] text-slate-500">■ イベント情報（タップで編集）</div>
-            <div className="divide-y divide-slate-800/60">
+          <section className="border-b border-slate-200 dark:border-slate-700 py-1">
+            <div className="px-4 py-1 text-[10px] text-slate-500 dark:text-slate-400">■ イベント情報（タップで編集）</div>
+            <div className="divide-y divide-slate-200 dark:divide-slate-700">
               <InfoRow label="イベント名" value={event.title} onEdit={() => editText("title", "イベント名")} />
               <InfoRow label="種別" value={event.event_type} onEdit={() => editText("event_type", "種別（居酒屋/バーベキュー など）")} />
               <InfoRow label="開催日" value={event.event_date} onEdit={() => editText("event_date", "開催日（例：2026-07-30）")} />
@@ -316,37 +316,37 @@ export default function SettingsTab({
           </section>
 
           {/* 役職別会費テーブル */}
-          <section className="border-b border-slate-800 py-1">
+          <section className="border-b border-slate-200 dark:border-slate-700 py-1">
             <div className="flex items-center justify-between px-4 py-1">
-              <span className="text-[10px] text-slate-500">
+              <span className="text-[10px] text-slate-500 dark:text-slate-400">
                 ■ 役職別 会費・ご支援金（タップで金額編集／グループ名タップで一般⇔役職者切替）
               </span>
-              <button onClick={addRank} className="rounded bg-slate-800 px-2 py-1 text-[10px] font-bold text-amber-400">
+              <button onClick={addRank} className="rounded bg-white dark:bg-slate-700 px-2 py-1 text-[10px] font-bold text-amber-600 dark:text-amber-400">
                 ＋ 役職追加
               </button>
             </div>
-            <ul className="divide-y divide-slate-800/60">
+            <ul className="divide-y divide-slate-200 dark:divide-slate-700">
               {ranks.map((r) => (
                 <li key={r.id} className="flex items-center gap-1 px-4 py-1.5">
                   <button onClick={() => editRank(r)} className="flex min-w-0 flex-1 items-center gap-2 text-left">
                     <span className="w-12 shrink-0 text-sm">{r.name}</span>
-                    <span className="flex-1 text-right text-xs tabular-nums text-slate-300">
+                    <span className="flex-1 text-right text-xs tabular-nums text-slate-700 dark:text-slate-300">
                       会費 {yen(r.fee)}
-                      {r.support > 0 && <span className="text-slate-500"> ＋支援 {yen(r.support)}</span>}
+                      {r.support > 0 && <span className="text-slate-500 dark:text-slate-400"> ＋支援 {yen(r.support)}</span>}
                       <span className="ml-1 font-bold">＝{yen(r.fee + r.support)}円</span>
                     </span>
                   </button>
                   <button
                     onClick={() => toggleGrp(r)}
                     className={`w-14 shrink-0 rounded px-1 py-1 text-center text-[10px] font-bold ${
-                      r.grp === "flat" ? "bg-sky-500/20 text-sky-300" : "bg-purple-500/20 text-purple-300"
+                      r.grp === "flat" ? "bg-sky-100 dark:bg-sky-500/25 text-sky-600 dark:text-sky-400" : "bg-purple-100 dark:bg-purple-500/25 text-purple-700 dark:text-purple-400"
                     }`}
                   >
                     {r.grp === "flat" ? "一般" : "役職者"}
                   </button>
                   <button
                     onClick={() => removeRank(r)}
-                    className="w-7 shrink-0 text-center text-xs text-slate-600 active:text-rose-400"
+                    className="w-7 shrink-0 text-center text-xs text-slate-400 dark:text-slate-500 active:text-rose-400"
                   >
                     ✕
                   </button>
@@ -356,31 +356,31 @@ export default function SettingsTab({
           </section>
 
           {/* 返金設定 */}
-          <section className="border-b border-slate-800 py-1">
-            <div className="px-4 py-1 text-[10px] text-slate-500">■ 返金設定</div>
+          <section className="border-b border-slate-200 dark:border-slate-700 py-1">
+            <div className="px-4 py-1 text-[10px] text-slate-500 dark:text-slate-400">■ 返金設定</div>
             <InfoRow
               label="一般 1人あたり返金（上限）"
               value={`${yen(event.refund_flat)}円`}
               onEdit={editRefundFlat}
             />
-            <p className="px-4 pb-2 text-[10px] text-slate-600">
+            <p className="px-4 pb-2 text-[10px] text-slate-400 dark:text-slate-500">
               余剰金からこの金額を一般（一律返金グループ）に返金し、残額を役職者で按分します。不足時は自動減額。
             </p>
           </section>
         </>
       ) : (
-        <p className="px-4 py-6 text-center text-sm text-slate-500">アクティブなイベントがありません</p>
+        <p className="px-4 py-6 text-center text-sm text-slate-500 dark:text-slate-400">アクティブなイベントがありません</p>
       )}
 
       {/* イベント一覧・切替・新規作成 */}
       <section className="py-1">
         <div className="flex items-center justify-between px-4 py-1">
-          <span className="text-[10px] text-slate-500">■ イベント一覧（タップで切替）</span>
+          <span className="text-[10px] text-slate-500 dark:text-slate-400">■ イベント一覧（タップで切替）</span>
           <button onClick={createEvent} className="rounded bg-amber-500 px-2 py-1 text-[10px] font-bold text-slate-900">
             ＋ 新しいイベント
           </button>
         </div>
-        <ul className="divide-y divide-slate-800/60">
+        <ul className="divide-y divide-slate-200 dark:divide-slate-700">
           {events.map((ev) => (
             <li key={ev.id} className="flex items-center">
               <button
@@ -389,21 +389,21 @@ export default function SettingsTab({
               >
                 <span className="min-w-0 flex-1">
                   <span className="block truncate text-sm">{ev.title}</span>
-                  <span className="block text-[10px] text-slate-500">{ev.event_date || "日付未設定"}</span>
+                  <span className="block text-[10px] text-slate-500 dark:text-slate-400">{ev.event_date || "日付未設定"}</span>
                 </span>
                 {ev.is_active === 1 ? (
-                  <span className="shrink-0 rounded bg-emerald-500/20 px-2 py-0.5 text-[10px] font-bold text-emerald-300">
+                  <span className="shrink-0 rounded bg-emerald-200 dark:bg-emerald-500/30 px-2 py-0.5 text-[10px] font-bold text-emerald-700 dark:text-emerald-300">
                     運用中
                   </span>
                 ) : (
-                  <span className="shrink-0 text-[10px] text-slate-600">切替 ›</span>
+                  <span className="shrink-0 text-[10px] text-slate-400 dark:text-slate-500">切替 ›</span>
                 )}
               </button>
               {events.length > 1 && (
                 <button
                   onClick={() => deleteEvent(ev)}
                   aria-label={`${ev.title}を削除`}
-                  className="mr-2 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-slate-500 active:bg-rose-500/20 active:text-rose-300"
+                  className="mr-2 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-slate-500 dark:text-slate-400 active:bg-rose-500/20 active:text-rose-300"
                 >
                   🗑
                 </button>
@@ -411,23 +411,23 @@ export default function SettingsTab({
             </li>
           ))}
         </ul>
-        <p className="px-4 py-4 text-center text-[10px] text-slate-600">
+        <p className="px-4 py-4 text-center text-[10px] text-slate-400 dark:text-slate-500">
           切替でいつでも戻れます。🗑で不要なイベントを削除（参加者・費用ごと消えます／取り消し不可）。
           次回の歓送迎会は「＋新しいイベント」から。
         </p>
       </section>
 
       {/* データの保存・読み込み（バックアップ／過去イベントの振り返り） */}
-      <section className="border-t border-slate-800 py-1">
-        <div className="px-4 py-1 text-[10px] text-slate-500">■ データの保存・読み込み</div>
+      <section className="border-t border-slate-200 dark:border-slate-700 py-1">
+        <div className="px-4 py-1 text-[10px] text-slate-500 dark:text-slate-400">■ データの保存・読み込み</div>
         <div className="flex gap-2 px-4 py-2">
           <button
             onClick={exportEvent}
-            className="flex-1 rounded-lg bg-slate-800 py-2.5 text-xs font-bold text-sky-300"
+            className="flex-1 rounded-lg bg-white dark:bg-slate-700 py-2.5 text-xs font-bold text-sky-600 dark:text-sky-400"
           >
             💾 このイベントを保存（ファイル）
           </button>
-          <label className="flex-1 cursor-pointer rounded-lg bg-slate-800 py-2.5 text-center text-xs font-bold text-emerald-300">
+          <label className="flex-1 cursor-pointer rounded-lg bg-white dark:bg-slate-700 py-2.5 text-center text-xs font-bold text-emerald-700 dark:text-emerald-300">
             📂 ファイルを読み込み
             <input
               type="file"
@@ -441,40 +441,40 @@ export default function SettingsTab({
             />
           </label>
         </div>
-        <p className="px-4 pb-2 text-[10px] text-slate-600">
+        <p className="px-4 pb-2 text-[10px] text-slate-400 dark:text-slate-500">
           「保存」でイベント一式（参加者・費用・受付結果）をファイルに書き出します。別PCへの移動や
           バックアップ、過去イベントの振り返りに。読み込むと新しいイベントとして復元します（現在のデータは消えません）。
         </p>
       </section>
 
       {/* データのリセット（次のイベント準備・使い回し） */}
-      <section className="border-t border-slate-800 py-1">
-        <div className="px-4 py-1 text-[10px] text-slate-500">
+      <section className="border-t border-slate-200 dark:border-slate-700 py-1">
+        <div className="px-4 py-1 text-[10px] text-slate-500 dark:text-slate-400">
           ■ データのリセット（次のイベント準備）
         </div>
         <div className="space-y-2 px-4 py-2">
           <button
             onClick={() => resetData("attendance")}
-            className="w-full rounded-lg bg-slate-800 py-2.5 text-xs font-bold text-slate-200"
+            className="w-full rounded-lg bg-slate-200 dark:bg-slate-600 py-2.5 text-xs font-bold text-slate-700 dark:text-slate-200"
           >
             受付状況だけリセット（来場・集金を全部クリア／参加者は残す）
           </button>
           <div className="flex gap-2">
             <button
               onClick={() => resetData("attendees")}
-              className="flex-1 rounded-lg bg-rose-500/15 py-2.5 text-xs font-bold text-rose-300"
+              className="flex-1 rounded-lg bg-rose-100 dark:bg-rose-500/25 py-2.5 text-xs font-bold text-rose-700 dark:text-rose-300"
             >
               参加者を全削除
             </button>
             <button
               onClick={() => resetData("expenses")}
-              className="flex-1 rounded-lg bg-rose-500/15 py-2.5 text-xs font-bold text-rose-300"
+              className="flex-1 rounded-lg bg-rose-100 dark:bg-rose-500/25 py-2.5 text-xs font-bold text-rose-700 dark:text-rose-300"
             >
               費用を全削除
             </button>
           </div>
         </div>
-        <p className="px-4 pb-4 text-[10px] text-slate-600">
+        <p className="px-4 pb-4 text-[10px] text-slate-400 dark:text-slate-500">
           ⚠️ 削除は取り消せません。心配な場合は先に「💾 保存」でバックアップを取ってから実行してください。
           まったく新しい会でゼロから始めるなら「＋新しいイベント」がおすすめです。
         </p>
@@ -483,27 +483,27 @@ export default function SettingsTab({
       {/* 役職 編集モーダル（会費・ご支援金・グループを1画面で） */}
       {rankDraft && (
         <div className="fixed inset-0 z-30 flex items-end justify-center bg-black/60 sm:items-center">
-          <div className="w-full max-w-md rounded-t-2xl bg-slate-900 p-4 sm:rounded-2xl">
+          <div className="w-full max-w-md rounded-t-2xl bg-white dark:bg-slate-800 p-4 sm:rounded-2xl">
             <div className="mb-3 flex items-center justify-between">
               <h2 className="text-sm font-bold">役職の金額を編集</h2>
-              <button onClick={() => setRankDraft(null)} className="px-2 text-slate-400">
+              <button onClick={() => setRankDraft(null)} className="px-2 text-slate-500 dark:text-slate-400">
                 ✕
               </button>
             </div>
 
             <div className="space-y-3">
               <label className="block">
-                <span className="text-[10px] text-slate-400">役職名</span>
+                <span className="text-[10px] text-slate-500 dark:text-slate-400">役職名</span>
                 <input
                   value={rankDraft.name}
                   onChange={(e) => setRankDraft({ ...rankDraft, name: e.target.value })}
-                  className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                  className="w-full rounded-lg bg-white dark:bg-slate-700 px-2 py-2 text-sm outline-none"
                 />
               </label>
 
               <div className="flex items-end gap-2">
                 <label className="flex-1">
-                  <span className="text-[10px] text-slate-400">会費（円）</span>
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400">会費（円）</span>
                   <input
                     type="number"
                     inputMode="numeric"
@@ -511,11 +511,11 @@ export default function SettingsTab({
                     onChange={(e) =>
                       setRankDraft({ ...rankDraft, fee: Math.max(0, Number(e.target.value) || 0) })
                     }
-                    className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                    className="w-full rounded-lg bg-white dark:bg-slate-700 px-2 py-2 text-sm outline-none"
                   />
                 </label>
                 <label className="flex-1">
-                  <span className="text-[10px] text-slate-400">ご支援金（円）</span>
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400">ご支援金（円）</span>
                   <input
                     type="number"
                     inputMode="numeric"
@@ -526,19 +526,19 @@ export default function SettingsTab({
                         support: Math.max(0, Number(e.target.value) || 0),
                       })
                     }
-                    className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                    className="w-full rounded-lg bg-white dark:bg-slate-700 px-2 py-2 text-sm outline-none"
                   />
                 </label>
                 <div className="flex-1">
-                  <span className="text-[10px] text-slate-400">負担額（自動）</span>
-                  <div className="rounded-lg bg-slate-800/50 px-2 py-2 text-sm font-bold tabular-nums">
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400">負担額（自動）</span>
+                  <div className="rounded-lg bg-slate-100 dark:bg-slate-700/50 px-2 py-2 text-sm font-bold tabular-nums">
                     {yen(rankDraft.fee + rankDraft.support)}円
                   </div>
                 </div>
               </div>
 
               <label className="block">
-                <span className="text-[10px] text-slate-400">返金グループ</span>
+                <span className="text-[10px] text-slate-500 dark:text-slate-400">返金グループ</span>
                 <div className="mt-1 flex gap-2">
                   {(["flat", "exec"] as const).map((g) => (
                     <button
@@ -549,7 +549,7 @@ export default function SettingsTab({
                           ? g === "flat"
                             ? "bg-sky-500 text-white"
                             : "bg-purple-500 text-white"
-                          : "bg-slate-800 text-slate-400"
+                          : "bg-white dark:bg-slate-700 text-slate-500 dark:text-slate-400"
                       }`}
                     >
                       {g === "flat" ? "一般（一律返金）" : "役職者（按分返金）"}
@@ -569,7 +569,7 @@ export default function SettingsTab({
                 <button
                   onClick={() => saveRank(false)}
                   disabled={busy}
-                  className="w-full rounded-lg bg-slate-800 py-2 text-xs font-bold text-slate-300 disabled:opacity-50"
+                  className="w-full rounded-lg bg-white dark:bg-slate-700 py-2 text-xs font-bold text-slate-700 dark:text-slate-300 disabled:opacity-50"
                 >
                   テーブルのみ保存（参加者は変えない）
                 </button>

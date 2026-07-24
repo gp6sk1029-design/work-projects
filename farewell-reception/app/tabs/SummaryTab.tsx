@@ -36,10 +36,10 @@ export default function SummaryTab({
   }) => (
     <div
       className={`grid grid-cols-[1fr_5.5rem_5.5rem] items-center gap-2 px-4 py-2 ${
-        strong ? "bg-slate-900 font-bold" : ""
+        strong ? "bg-white dark:bg-slate-800 font-bold" : ""
       }`}
     >
-      <span className="text-xs text-slate-300">{label}</span>
+      <span className="text-xs text-slate-700 dark:text-slate-300">{label}</span>
       <span className={`text-right text-sm tabular-nums ${color ?? ""}`}>{budget}</span>
       <span className={`text-right text-sm tabular-nums ${color ?? ""}`}>{actual}</span>
     </div>
@@ -54,30 +54,30 @@ export default function SummaryTab({
 
   return (
     <div>
-      <header className="sticky top-0 z-10 border-b border-slate-700 bg-slate-900/95 px-4 py-3 backdrop-blur">
-        <h1 className="text-sm font-bold text-amber-400">収支サマリー</h1>
-        <p className="mt-0.5 text-[10px] text-slate-500">
+      <header className="sticky top-0 z-10 border-b border-slate-300 dark:border-slate-600 bg-white/95 dark:bg-slate-800/95 px-4 py-3 backdrop-blur">
+        <h1 className="text-sm font-bold text-amber-600 dark:text-amber-400">収支サマリー</h1>
+        <p className="mt-0.5 text-[10px] text-slate-500 dark:text-slate-400">
           会費負担{s.payerCount}名（一般{s.flatCount}・役職者{s.execCount}）／出席{s.budgetPax}名（招待含む）
         </p>
       </header>
 
       {/* 集金の進捗 */}
-      <section className="border-b border-slate-800 px-4 py-3">
+      <section className="border-b border-slate-200 dark:border-slate-700 px-4 py-3">
         <div className="flex items-baseline justify-between">
-          <span className="text-xs text-slate-400">当日集金の進捗</span>
+          <span className="text-xs text-slate-500 dark:text-slate-400">当日集金の進捗</span>
           <span className="text-sm font-bold tabular-nums">
-            <span className="text-emerald-400">{yen(s.collected)}</span>
-            <span className="text-slate-500"> / {yen(s.income)}円</span>
+            <span className="text-emerald-600 dark:text-emerald-400">{yen(s.collected)}</span>
+            <span className="text-slate-500 dark:text-slate-400"> / {yen(s.income)}円</span>
           </span>
         </div>
-        <div className="mt-2 h-2 overflow-hidden rounded-full bg-slate-800">
+        <div className="mt-2 h-2 overflow-hidden rounded-full bg-white dark:bg-slate-700">
           <div
             className="h-full rounded-full bg-emerald-500 transition-all"
             style={{ width: s.income > 0 ? `${(s.collected / s.income) * 100}%` : "0%" }}
           />
         </div>
         {s.adjustCount > 0 && (
-          <p className="mt-2 text-[10px] text-amber-400">
+          <p className="mt-2 text-[10px] text-amber-600 dark:text-amber-400">
             ※イレギュラー支払い {s.adjustCount}名・純増減 {s.adjustTotal >= 0 ? "＋" : "−"}
             {yen(Math.abs(s.adjustTotal))}円（規定額との差。収入合計に反映済み）
           </p>
@@ -85,8 +85,8 @@ export default function SummaryTab({
       </section>
 
       {/* 収支表（予算／実績） */}
-      <section className="border-b border-slate-800 py-2">
-        <div className="grid grid-cols-[1fr_5.5rem_5.5rem] gap-2 px-4 py-1 text-[10px] text-slate-500">
+      <section className="border-b border-slate-200 dark:border-slate-700 py-2">
+        <div className="grid grid-cols-[1fr_5.5rem_5.5rem] gap-2 px-4 py-1 text-[10px] text-slate-500 dark:text-slate-400">
           <span>■ 収支（円）</span>
           <span className="text-right">予算（見込）</span>
           <span className="text-right">実績（確定）</span>
@@ -108,32 +108,32 @@ export default function SummaryTab({
           actual={s.surplusActual !== null ? yen(s.surplusActual) : "―"}
           strong
           color={
-            (s.surplusActual ?? s.surplusBudget) < 0 ? "text-rose-400" : "text-emerald-400"
+            (s.surplusActual ?? s.surplusBudget) < 0 ? "text-rose-600 dark:text-rose-400" : "text-emerald-600 dark:text-emerald-400"
           }
         />
       </section>
 
       {/* 返金配分 */}
-      <section className="border-b border-slate-800 py-2">
-        <div className="px-4 py-1 text-[10px] text-slate-500">■ 返金配分</div>
+      <section className="border-b border-slate-200 dark:border-slate-700 py-2">
+        <div className="px-4 py-1 text-[10px] text-slate-500 dark:text-slate-400">■ 返金配分</div>
         <Row
           label={`一般（${s.flatCount}名・一律 上限${yen(event?.refund_flat ?? 0)}円）`}
           budget={yen(s.refundFlatBudget)}
           actual={s.refundFlatActual !== null ? yen(s.refundFlatActual) : "―"}
         />
-        <p className="px-4 pt-1 text-[10px] text-slate-500">
+        <p className="px-4 pt-1 text-[10px] text-slate-500 dark:text-slate-400">
           役職者（{s.execCount}名）は、<b>ご支援金の少ない役職から先に</b>、実質負担が一般社員（
           {yen(useActual ? s.floorActual ?? s.floorBudget : s.floorBudget)}円）に達するまで返金し、
           余った分を支援金の多い役職へ回します。調整額を多く払った人ほど多く戻ります（一般社員は下回りません）。
           金額は下の実質負担でご確認ください。
         </p>
         {s.refundFlatReduced && (
-          <p className="px-4 py-1 text-[10px] text-amber-400">
+          <p className="px-4 py-1 text-[10px] text-amber-600 dark:text-amber-400">
             ※余剰金が不足のため一般返金は設定額から自動減額されています
           </p>
         )}
         {leftover > 0 && (
-          <p className="px-4 py-1 text-[10px] text-amber-400">
+          <p className="px-4 py-1 text-[10px] text-amber-600 dark:text-amber-400">
             ※役職者を全員一般社員と同額まで下げても {yen(leftover)}円 余ります（返しきれない余剰）。
             一般返金額（上限）を上げるか、記念品等に充当してください。
           </p>
@@ -142,10 +142,10 @@ export default function SummaryTab({
 
       {/* 役職別 実質負担 */}
       <section className="py-2">
-        <div className="px-4 py-1 text-[10px] text-slate-500">
+        <div className="px-4 py-1 text-[10px] text-slate-500 dark:text-slate-400">
           ■ 役職別 実質負担（{s.hasActual ? "実績" : "予算"}ベース・返金差引後）
         </div>
-        <ul className="divide-y divide-slate-800/60">
+        <ul className="divide-y divide-slate-200 dark:divide-slate-700">
           {ranks.map((r) => {
             const rankDue = r.fee + r.support;
             const refund = rankRefund(rankDue, r.grp, r.support, s, useActual);
@@ -162,17 +162,17 @@ export default function SummaryTab({
               >
                 <span className="text-xs">
                   {r.name}
-                  <span className="ml-1 text-[10px] text-slate-500">
+                  <span className="ml-1 text-[10px] text-slate-500 dark:text-slate-400">
                     （{r.grp === "flat" ? "一般" : "役職者"}・{count}名）
                   </span>
                 </span>
                 {count === 0 ? (
-                  <span className="col-span-2 text-right text-[10px] text-slate-500">
+                  <span className="col-span-2 text-right text-[10px] text-slate-500 dark:text-slate-400">
                     対象者なし（返金なし）
                   </span>
                 ) : (
                   <>
-                    <span className="text-right text-[10px] tabular-nums text-slate-500">
+                    <span className="text-right text-[10px] tabular-nums text-slate-500 dark:text-slate-400">
                       {refund > 0 ? `返金${yen(refund)}` : ""}
                     </span>
                     <span className="text-right text-sm font-bold tabular-nums">
@@ -184,7 +184,7 @@ export default function SummaryTab({
             );
           })}
         </ul>
-        <p className="px-4 py-4 text-center text-[10px] text-slate-600">
+        <p className="px-4 py-4 text-center text-[10px] text-slate-400 dark:text-slate-500">
           「予算」＝1人当たり予算×出席者数（招待含む）の見込み。「実績」＝入力済みの実費からの確定額。端数切捨て。
         </p>
       </section>

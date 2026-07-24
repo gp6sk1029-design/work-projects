@@ -104,17 +104,17 @@ export default function ExpensesTab({
     return (
       <section className="mb-4">
         <div className="flex items-center justify-between px-4 py-2">
-          <h2 className="text-xs font-bold text-slate-300">{title}</h2>
+          <h2 className="text-xs font-bold text-slate-700 dark:text-slate-300">{title}</h2>
           <button
             onClick={() =>
               setDraft({ id: null, kind, name: "", budget_pp: "", budget_total: "", actual: "", note: "" })
             }
-            className="rounded bg-slate-800 px-2 py-1 text-[10px] font-bold text-amber-400"
+            className="rounded bg-white dark:bg-slate-700 px-2 py-1 text-[10px] font-bold text-amber-600 dark:text-amber-400"
           >
             ＋ 項目追加
           </button>
         </div>
-        <ul className="divide-y divide-slate-800 border-y border-slate-800">
+        <ul className="divide-y divide-slate-200 dark:divide-slate-700 border-y border-slate-200 dark:border-slate-700">
           {list.map((e) => {
             const budget = expenseBudgetOf(e, budgetPax);
             return (
@@ -125,7 +125,7 @@ export default function ExpensesTab({
                 >
                   <span className="min-w-0 flex-1">
                     <span className="block truncate text-sm">{e.name}</span>
-                    <span className="block text-[10px] text-slate-500">
+                    <span className="block text-[10px] text-slate-500 dark:text-slate-400">
                       {e.budget_total !== null
                         ? `総額予算 ${yen(e.budget_total)}円`
                         : e.budget_pp !== null
@@ -140,24 +140,24 @@ export default function ExpensesTab({
                     </span>
                     <span
                       className={`block text-[10px] ${
-                        e.actual !== null ? "text-emerald-400" : "text-slate-600"
+                        e.actual !== null ? "text-emerald-600 dark:text-emerald-400" : "text-slate-400 dark:text-slate-500"
                       }`}
                     >
                       実績 {e.actual !== null ? `${yen(e.actual)}円` : "未入力"}
                     </span>
                   </span>
-                  <span className="shrink-0 text-slate-600">›</span>
+                  <span className="shrink-0 text-slate-400 dark:text-slate-500">›</span>
                 </button>
               </li>
             );
           })}
           {list.length === 0 && (
-            <li className="px-4 py-4 text-center text-xs text-slate-600">項目がありません</li>
+            <li className="px-4 py-4 text-center text-xs text-slate-400 dark:text-slate-500">項目がありません</li>
           )}
         </ul>
-        <div className="flex justify-end gap-4 px-4 py-1.5 text-[11px] tabular-nums text-slate-400">
-          <span>予算計 <b className="text-slate-200">{yen(budgetSum)}円</b></span>
-          <span>実績計 <b className="text-emerald-400">{yen(actualSum)}円</b></span>
+        <div className="flex justify-end gap-4 px-4 py-1.5 text-[11px] tabular-nums text-slate-500 dark:text-slate-400">
+          <span>予算計 <b className="text-slate-800 dark:text-slate-100">{yen(budgetSum)}円</b></span>
+          <span>実績計 <b className="text-emerald-600 dark:text-emerald-400">{yen(actualSum)}円</b></span>
         </div>
       </section>
     );
@@ -165,9 +165,9 @@ export default function ExpensesTab({
 
   return (
     <div>
-      <header className="sticky top-0 z-10 border-b border-slate-700 bg-slate-900/95 px-4 py-3 backdrop-blur">
-        <h1 className="text-sm font-bold text-amber-400">費用管理</h1>
-        <p className="mt-0.5 text-[10px] text-slate-500">
+      <header className="sticky top-0 z-10 border-b border-slate-300 dark:border-slate-600 bg-white/95 dark:bg-slate-800/95 px-4 py-3 backdrop-blur">
+        <h1 className="text-sm font-bold text-amber-600 dark:text-amber-400">費用管理</h1>
+        <p className="mt-0.5 text-[10px] text-slate-500 dark:text-slate-400">
           1人当たり予算は出席者{budgetPax}名（招待含む）を掛けて予算合計を計算します
         </p>
       </header>
@@ -180,73 +180,73 @@ export default function ExpensesTab({
       {/* 編集モーダル */}
       {draft && (
         <div className="fixed inset-0 z-30 flex items-end justify-center bg-black/60 sm:items-center">
-          <div className="w-full max-w-md rounded-t-2xl bg-slate-900 p-4 sm:rounded-2xl">
+          <div className="w-full max-w-md rounded-t-2xl bg-white dark:bg-slate-800 p-4 sm:rounded-2xl">
             <div className="mb-3 flex items-center justify-between">
               <h2 className="text-sm font-bold">
                 {draft.id === null ? "費用項目を追加" : "費用項目を編集"}
-                <span className="ml-2 text-[10px] text-slate-500">
+                <span className="ml-2 text-[10px] text-slate-500 dark:text-slate-400">
                   （{draft.kind === "fixed" ? "固定費" : "変動費"}）
                 </span>
               </h2>
-              <button onClick={() => setDraft(null)} className="px-2 text-slate-400">
+              <button onClick={() => setDraft(null)} className="px-2 text-slate-500 dark:text-slate-400">
                 ✕
               </button>
             </div>
 
             <div className="space-y-3">
               <label className="block">
-                <span className="text-[10px] text-slate-400">項目名（必須）</span>
+                <span className="text-[10px] text-slate-500 dark:text-slate-400">項目名（必須）</span>
                 <input
                   value={draft.name}
                   onChange={(e) => setDraft({ ...draft, name: e.target.value })}
                   placeholder="食事代"
-                  className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                  className="w-full rounded-lg bg-white dark:bg-slate-700 px-2 py-2 text-sm outline-none"
                 />
               </label>
 
               <div className="flex gap-2">
                 <label className="flex-1">
-                  <span className="text-[10px] text-slate-400">1人当たり予算</span>
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400">1人当たり予算</span>
                   <input
                     type="number"
                     inputMode="numeric"
                     value={draft.budget_pp}
                     onChange={(e) => setDraft({ ...draft, budget_pp: e.target.value })}
                     placeholder="空欄可"
-                    className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                    className="w-full rounded-lg bg-white dark:bg-slate-700 px-2 py-2 text-sm outline-none"
                   />
                 </label>
                 <label className="flex-1">
-                  <span className="text-[10px] text-slate-400">総額予算（優先）</span>
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400">総額予算（優先）</span>
                   <input
                     type="number"
                     inputMode="numeric"
                     value={draft.budget_total}
                     onChange={(e) => setDraft({ ...draft, budget_total: e.target.value })}
                     placeholder="空欄可"
-                    className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                    className="w-full rounded-lg bg-white dark:bg-slate-700 px-2 py-2 text-sm outline-none"
                   />
                 </label>
               </div>
 
               <label className="block">
-                <span className="text-[10px] text-slate-400">実績（円）— 支払い後に入力</span>
+                <span className="text-[10px] text-slate-500 dark:text-slate-400">実績（円）— 支払い後に入力</span>
                 <input
                   type="number"
                   inputMode="numeric"
                   value={draft.actual}
                   onChange={(e) => setDraft({ ...draft, actual: e.target.value })}
                   placeholder="空欄=未確定"
-                  className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                  className="w-full rounded-lg bg-white dark:bg-slate-700 px-2 py-2 text-sm outline-none"
                 />
               </label>
 
               <label className="block">
-                <span className="text-[10px] text-slate-400">備考</span>
+                <span className="text-[10px] text-slate-500 dark:text-slate-400">備考</span>
                 <input
                   value={draft.note}
                   onChange={(e) => setDraft({ ...draft, note: e.target.value })}
-                  className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                  className="w-full rounded-lg bg-white dark:bg-slate-700 px-2 py-2 text-sm outline-none"
                 />
               </label>
 
@@ -254,7 +254,7 @@ export default function ExpensesTab({
                 {draft.id !== null && (
                   <button
                     onClick={() => remove(draft.id!)}
-                    className="rounded-lg bg-rose-500/20 px-3 py-2.5 text-xs font-bold text-rose-300"
+                    className="rounded-lg bg-rose-100 dark:bg-rose-500/30 px-3 py-2.5 text-xs font-bold text-rose-700 dark:text-rose-300"
                   >
                     削除
                   </button>

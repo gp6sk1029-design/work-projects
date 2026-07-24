@@ -148,10 +148,10 @@ export default function AttendeesTab({
       >
         <span className="min-w-0 flex-1">
           <span className="block truncate text-sm font-bold">
-            {a.dept && <span className="mr-1 text-[10px] text-slate-400">{a.dept}</span>}
+            {a.dept && <span className="mr-1 text-[10px] text-slate-500 dark:text-slate-400">{a.dept}</span>}
             {a.name}
           </span>
-          <span className="block text-[10px] text-slate-400">
+          <span className="block text-[10px] text-slate-500 dark:text-slate-400">
             {a.rank}
             {a.alcohol === "あり" && " ・🍺"}
             {a.shuttle === "あり" && " ・🚐"}
@@ -163,27 +163,27 @@ export default function AttendeesTab({
             {a.due > 0 ? `${yen(a.due)}円` : a.rank === "招待" ? "招待" : "0円"}
           </span>
           {a.adjust !== 0 ? (
-            <span className="block text-[10px] font-bold text-amber-400">
+            <span className="block text-[10px] font-bold text-amber-600 dark:text-amber-400">
               {a.adjust > 0 ? "＋" : "−"}
               {yen(Math.abs(a.adjust))} 調整
             </span>
           ) : (
             a.support > 0 && (
-              <span className="block text-[10px] text-slate-500">
+              <span className="block text-[10px] text-slate-500 dark:text-slate-400">
                 会費{yen(a.fee)}＋支援{yen(a.support)}
               </span>
             )
           )}
         </span>
-        <span className="shrink-0 text-slate-600">›</span>
+        <span className="shrink-0 text-slate-400 dark:text-slate-500">›</span>
       </button>
     </li>
   );
 
   return (
     <div>
-      <header className="sticky top-0 z-10 flex items-center justify-between border-b border-slate-700 bg-slate-900/95 px-4 py-3 backdrop-blur">
-        <h1 className="text-sm font-bold text-amber-400">参加者管理（{groups.active.length}名）</h1>
+      <header className="sticky top-0 z-10 flex items-center justify-between border-b border-slate-300 dark:border-slate-600 bg-white/95 dark:bg-slate-800/95 px-4 py-3 backdrop-blur">
+        <h1 className="text-sm font-bold text-amber-600 dark:text-amber-400">参加者管理（{groups.active.length}名）</h1>
         <button
           onClick={openNew}
           className="rounded-lg bg-amber-500 px-3 py-2 text-xs font-bold text-slate-900"
@@ -192,7 +192,7 @@ export default function AttendeesTab({
         </button>
       </header>
 
-      <ul className="divide-y divide-slate-800">
+      <ul className="divide-y divide-slate-200 dark:divide-slate-700">
         {groups.active.map((a) => (
           <Row key={a.id} a={a} />
         ))}
@@ -200,10 +200,10 @@ export default function AttendeesTab({
 
       {groups.absent.length > 0 && (
         <>
-          <div className="bg-slate-900 px-4 py-1.5 text-[10px] text-slate-500">
+          <div className="bg-white dark:bg-slate-800 px-4 py-1.5 text-[10px] text-slate-500 dark:text-slate-400">
             欠席（{groups.absent.length}名）
           </div>
-          <ul className="divide-y divide-slate-800 opacity-60">
+          <ul className="divide-y divide-slate-200 dark:divide-slate-700 opacity-60">
             {groups.absent.map((a) => (
               <Row key={a.id} a={a} />
             ))}
@@ -211,19 +211,19 @@ export default function AttendeesTab({
         </>
       )}
 
-      <p className="px-4 py-6 text-center text-[10px] text-slate-600">
+      <p className="px-4 py-6 text-center text-[10px] text-slate-400 dark:text-slate-500">
         行をタップで編集。役職を選ぶと会費・ご支援金が自動で入ります。
       </p>
 
       {/* 編集モーダル */}
       {draft && (
         <div className="fixed inset-0 z-30 flex items-end justify-center bg-black/60 sm:items-center">
-          <div className="max-h-[90dvh] w-full max-w-md overflow-y-auto rounded-t-2xl bg-slate-900 p-4 sm:rounded-2xl">
+          <div className="max-h-[90dvh] w-full max-w-md overflow-y-auto rounded-t-2xl bg-white dark:bg-slate-800 p-4 sm:rounded-2xl">
             <div className="mb-3 flex items-center justify-between">
               <h2 className="text-sm font-bold">
                 {draft.id === null ? "参加者を追加" : "参加者を編集"}
               </h2>
-              <button onClick={() => setDraft(null)} className="px-2 text-slate-400">
+              <button onClick={() => setDraft(null)} className="px-2 text-slate-500 dark:text-slate-400">
                 ✕
               </button>
             </div>
@@ -231,31 +231,31 @@ export default function AttendeesTab({
             <div className="space-y-3">
               <div className="flex gap-2">
                 <label className="w-24 shrink-0">
-                  <span className="text-[10px] text-slate-400">部署</span>
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400">部署</span>
                   <input
                     value={draft.dept}
                     onChange={(e) => setDraft({ ...draft, dept: e.target.value })}
                     placeholder="生技"
-                    className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                    className="w-full rounded-lg bg-white dark:bg-slate-700 px-2 py-2 text-sm outline-none"
                   />
                 </label>
                 <label className="min-w-0 flex-1">
-                  <span className="text-[10px] text-slate-400">氏名（必須）</span>
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400">氏名（必須）</span>
                   <input
                     value={draft.name}
                     onChange={(e) => setDraft({ ...draft, name: e.target.value })}
                     placeholder="山田"
-                    className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                    className="w-full rounded-lg bg-white dark:bg-slate-700 px-2 py-2 text-sm outline-none"
                   />
                 </label>
               </div>
 
               <label className="block">
-                <span className="text-[10px] text-slate-400">区分（役職）</span>
+                <span className="text-[10px] text-slate-500 dark:text-slate-400">区分（役職）</span>
                 <select
                   value={draft.rank}
                   onChange={(e) => applyRankFee(e.target.value)}
-                  className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                  className="w-full rounded-lg bg-white dark:bg-slate-700 px-2 py-2 text-sm outline-none"
                 >
                   {rankNames.map((r) => (
                     <option key={r} value={r}>
@@ -267,7 +267,7 @@ export default function AttendeesTab({
 
               <div className="flex gap-2">
                 <label className="flex-1">
-                  <span className="text-[10px] text-slate-400">会費（円）</span>
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400">会費（円）</span>
                   <input
                     type="number"
                     inputMode="numeric"
@@ -275,11 +275,11 @@ export default function AttendeesTab({
                     onChange={(e) =>
                       setDraft({ ...draft, fee: Math.max(0, Number(e.target.value) || 0) })
                     }
-                    className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                    className="w-full rounded-lg bg-white dark:bg-slate-700 px-2 py-2 text-sm outline-none"
                   />
                 </label>
                 <label className="flex-1">
-                  <span className="text-[10px] text-slate-400">ご支援金（円）</span>
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400">ご支援金（円）</span>
                   <input
                     type="number"
                     inputMode="numeric"
@@ -290,14 +290,14 @@ export default function AttendeesTab({
                         support: Math.max(0, Number(e.target.value) || 0),
                       })
                     }
-                    className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                    className="w-full rounded-lg bg-white dark:bg-slate-700 px-2 py-2 text-sm outline-none"
                   />
                 </label>
               </div>
 
               <div className="flex items-end gap-2">
                 <label className="flex-1">
-                  <span className="text-[10px] text-amber-400">
+                  <span className="text-[10px] text-amber-600 dark:text-amber-400">
                     調整額（イレギュラー支払い ＋多め／−割引）
                   </span>
                   <input
@@ -308,38 +308,38 @@ export default function AttendeesTab({
                       setDraft({ ...draft, adjust: Math.round(Number(e.target.value) || 0) })
                     }
                     placeholder="0"
-                    className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                    className="w-full rounded-lg bg-white dark:bg-slate-700 px-2 py-2 text-sm outline-none"
                   />
                 </label>
                 <div className="flex-1">
-                  <span className="text-[10px] text-slate-400">徴収額（自動）</span>
-                  <div className="rounded-lg bg-amber-500/10 px-2 py-2 text-sm font-bold tabular-nums text-amber-300 ring-1 ring-amber-500/30">
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400">徴収額（自動）</span>
+                  <div className="rounded-lg bg-amber-100 dark:bg-amber-500/20 px-2 py-2 text-sm font-bold tabular-nums text-amber-700 dark:text-amber-300 ring-1 ring-amber-300 dark:ring-amber-500/40">
                     {yen(Math.max(0, draft.fee + draft.support + draft.adjust))}円
                   </div>
                 </div>
               </div>
-              <p className="text-[10px] text-slate-500">
+              <p className="text-[10px] text-slate-500 dark:text-slate-400">
                 徴収額 = 会費 ＋ ご支援金 ＋ 調整額。中村さんのように多く払う人は調整額に「＋10000」。理由は備考へ。
               </p>
 
               <div className="flex gap-2">
                 <label className="flex-1">
-                  <span className="text-[10px] text-slate-400">🍺 アルコール</span>
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400">🍺 アルコール</span>
                   <select
                     value={draft.alcohol}
                     onChange={(e) => setDraft({ ...draft, alcohol: e.target.value })}
-                    className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                    className="w-full rounded-lg bg-white dark:bg-slate-700 px-2 py-2 text-sm outline-none"
                   >
                     <option>なし</option>
                     <option>あり</option>
                   </select>
                 </label>
                 <label className="flex-1">
-                  <span className="text-[10px] text-slate-400">🚐 送迎</span>
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400">🚐 送迎</span>
                   <select
                     value={draft.shuttle}
                     onChange={(e) => setDraft({ ...draft, shuttle: e.target.value })}
-                    className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                    className="w-full rounded-lg bg-white dark:bg-slate-700 px-2 py-2 text-sm outline-none"
                   >
                     <option>なし</option>
                     <option>あり</option>
@@ -348,11 +348,11 @@ export default function AttendeesTab({
               </div>
 
               <label className="block">
-                <span className="text-[10px] text-slate-400">備考（食事制限など）</span>
+                <span className="text-[10px] text-slate-500 dark:text-slate-400">備考（食事制限など）</span>
                 <input
                   value={draft.note}
                   onChange={(e) => setDraft({ ...draft, note: e.target.value })}
-                  className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                  className="w-full rounded-lg bg-white dark:bg-slate-700 px-2 py-2 text-sm outline-none"
                 />
               </label>
 
@@ -363,7 +363,7 @@ export default function AttendeesTab({
                       const a = list.find((x) => x.id === draft.id);
                       if (a) remove(a);
                     }}
-                    className="rounded-lg bg-rose-500/20 px-3 py-2.5 text-xs font-bold text-rose-300"
+                    className="rounded-lg bg-rose-100 dark:bg-rose-500/30 px-3 py-2.5 text-xs font-bold text-rose-700 dark:text-rose-300"
                   >
                     削除
                   </button>

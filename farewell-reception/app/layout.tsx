@@ -21,6 +21,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" className="h-full antialiased">
+      <head>
+        {/* 保存済みテーマを描画前に適用（チラつき防止）。既定はライト */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark')}}catch(e){}",
+          }}
+        />
+      </head>
       <body className="min-h-full">{children}</body>
     </html>
   );
