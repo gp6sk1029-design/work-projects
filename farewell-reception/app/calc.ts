@@ -21,10 +21,12 @@ export type Summary = {
   surplusActual: number | null; // 余剰金（実績ベース。実績未入力ならnull）
   refundFlatBudget: number; // 一般1人あたり返金（予算）
   refundFlatActual: number | null;
-  // 役職者の返金は「水位（level）方式」。各役職の返金 = max(0, 規定負担 − level)。
-  // levelを下げるほど返金が増えるが、floor（＝一般社員の実質負担）を下回らない＝逆転防止
-  execLevelBudget: number; // 役職者返金の水位（予算）
-  execLevelActual: number | null;
+  // 役職者の返金は「段階水位方式」：ご支援金の少ない役職グループから順に、
+  // 実質負担が一般社員(floor)に達するまで返金し、余りを支援金の多いグループへ回す。
+  // execTierBurden は「ご支援金の額 → そのグループの実質負担(水位)」のマップ。
+  // 各役職の返金 = max(0, 規定負担 − そのグループの水位)。調整額を多く払った人ほど多く戻る。
+  execTierBurdenBudget: Map<number, number>; // 予算ベース（support額→実質負担）
+  execTierBurdenActual: Map<number, number> | null; // 実績ベース
   floorBudget: number; // 役職者負担の下限＝一般実質負担（予算）
   floorActual: number | null;
   execLeftoverBudget: number; // 全役職者がfloorに達しても返しきれない余剰（予算）
@@ -85,43 +87,52 @@ export function computeSummary(
   const flatDueRep = ranks
     .filter((r) => r.grp === "flat")
     .reduce((m, r) => Math.max(m, r.fee + r.support), 0);
-  // 役職者ひとりずつの規定負担（調整額は個人の任意上乗せなので返金基準に含めない）
-  const execDues = payers
+  // 役職者ひとりずつ（調整額を含めた実支払い額 due と、グループ分けキーの support）
+  const execPeople = payers
     .filter((a) => execRanks.has(a.rank))
-    .map((a) => a.fee + a.support);
-  const maxExecDue = execDues.length > 0 ? Math.max(...execDues) : 0;
+    .map((a) => ({ due: a.fee + a.support + (a.adjust ?? 0), support: a.support }));
 
+  // 段階水位方式：ご支援金の少ないグループから順に floor まで満たし、余りを上のグループへ
   const calcRefunds = (surplus: number) => {
-    // ① 一般返金
     const flatCap = flatCount > 0 ? Math.max(0, Math.floor(surplus / flatCount)) : 0;
     const flat = surplus <= 0 || flatCount === 0 ? 0 : Math.min(setting, flatCap);
-    // 役職者負担の下限＝一般社員の実質負担
-    const floor = Math.max(0, flatDueRep - flat);
-    // ② 役職者に配分できる残額
-    const execBudget = Math.max(0, surplus - flat * flatCount);
+    const floor = Math.max(0, flatDueRep - flat); // 役職者負担の下限＝一般社員の実質負担
+    let pool = Math.max(0, surplus - flat * flatCount); // 役職者に回せる金額
 
-    let level = maxExecDue > floor ? maxExecDue : floor; // 返金0のとき水位＝最大負担
-    let leftover = 0;
-    if (execDues.length > 0 && execBudget > 0) {
-      // 全員floorまで下げるのに必要な額
-      const maxReturn = execDues.reduce((s, d) => s + Math.max(0, d - floor), 0);
-      if (execBudget >= maxReturn) {
-        level = floor; // 全役職者が一般社員と同額まで下がる
-        leftover = execBudget - maxReturn; // それでも余る分（役職者には返しきれない）
+    // ご支援金の額でグループ化
+    const bySupport = new Map<number, number[]>();
+    for (const p of execPeople) {
+      if (!bySupport.has(p.support)) bySupport.set(p.support, []);
+      bySupport.get(p.support)!.push(p.due);
+    }
+    const supports = [...bySupport.keys()].sort((x, y) => x - y); // 支援金の少ない順
+    const tierBurden = new Map<number, number>();
+
+    for (const sup of supports) {
+      const dues = bySupport.get(sup)!;
+      const cap = dues.reduce((s, d) => s + Math.max(0, d - floor), 0); // このグループを全員floorまで下げる額
+      const tierBudget = Math.min(pool, cap);
+      let T: number;
+      if (tierBudget <= 0) {
+        T = Math.max(...dues); // 予算切れ→返金0（水位＝最大負担）
+      } else if (tierBudget >= cap) {
+        T = floor; // このグループ全員が一般社員と同額まで下がる
       } else {
-        // 二分探索：Σ max(0, due − level) = execBudget となる level（floor以上）
+        // 二分探索：Σ max(0, due − T) = tierBudget（floor以上）
         let lo = floor;
-        let hi = maxExecDue;
+        let hi = Math.max(...dues);
         for (let i = 0; i < 60; i++) {
           const mid = (lo + hi) / 2;
-          const ret = execDues.reduce((s, d) => s + Math.max(0, d - mid), 0);
-          if (ret > execBudget) lo = mid;
+          const ret = dues.reduce((s, d) => s + Math.max(0, d - mid), 0);
+          if (ret > tierBudget) lo = mid;
           else hi = mid;
         }
-        level = hi;
+        T = hi;
       }
+      tierBurden.set(sup, T);
+      pool -= tierBudget;
     }
-    return { flat, level, floor, leftover };
+    return { flat, tierBurden, floor, leftover: pool };
   };
   const b = calcRefunds(surplusBudget);
   const a = surplusActual !== null ? calcRefunds(surplusActual) : null;
@@ -146,8 +157,8 @@ export function computeSummary(
     surplusActual,
     refundFlatBudget: b.flat,
     refundFlatActual: a?.flat ?? null,
-    execLevelBudget: b.level,
-    execLevelActual: a?.level ?? null,
+    execTierBurdenBudget: b.tierBurden,
+    execTierBurdenActual: a?.tierBurden ?? null,
     floorBudget: b.floor,
     floorActual: a?.floor ?? null,
     execLeftoverBudget: b.leftover,
@@ -156,10 +167,11 @@ export function computeSummary(
   };
 }
 
-// 役職の返金額（1人あたり）。exec は水位方式で負担額に応じて変わる
+// 役職の返金額（規定負担ベース）。exec はご支援金グループの水位で決まる
 export function rankRefund(
   rankDue: number, // その役職の規定負担（会費＋ご支援金）
   grp: "flat" | "exec",
+  support: number, // ご支援金（グループ判定キー）
   s: Summary,
   useActual: boolean
 ): number {
@@ -167,9 +179,11 @@ export function rankRefund(
     const f = useActual ? s.refundFlatActual : s.refundFlatBudget;
     return f ?? 0;
   }
-  const level = useActual ? s.execLevelActual : s.execLevelBudget;
-  if (level === null || level === undefined) return 0;
-  return Math.max(0, Math.floor(rankDue - level));
+  const map = useActual ? s.execTierBurdenActual : s.execTierBurdenBudget;
+  if (!map) return 0;
+  const T = map.get(support);
+  if (T === undefined) return 0;
+  return Math.max(0, Math.floor(rankDue - T));
 }
 
 export const yen = (n: number) => n.toLocaleString("ja-JP");

@@ -122,9 +122,10 @@ export default function SummaryTab({
           actual={s.refundFlatActual !== null ? yen(s.refundFlatActual) : "―"}
         />
         <p className="px-4 pt-1 text-[10px] text-slate-500">
-          役職者（{s.execCount}名）は、実質負担が一般社員（
-          {yen(useActual ? s.floorActual ?? s.floorBudget : s.floorBudget)}円）を下回らない範囲で、
-          負担額の高い役職から多めに返金します（逆転しません）。金額は下の実質負担でご確認ください。
+          役職者（{s.execCount}名）は、<b>ご支援金の少ない役職から先に</b>、実質負担が一般社員（
+          {yen(useActual ? s.floorActual ?? s.floorBudget : s.floorBudget)}円）に達するまで返金し、
+          余った分を支援金の多い役職へ回します。調整額を多く払った人ほど多く戻ります（一般社員は下回りません）。
+          金額は下の実質負担でご確認ください。
         </p>
         {s.refundFlatReduced && (
           <p className="px-4 py-1 text-[10px] text-amber-400">
@@ -147,7 +148,7 @@ export default function SummaryTab({
         <ul className="divide-y divide-slate-800/60">
           {ranks.map((r) => {
             const rankDue = r.fee + r.support;
-            const refund = rankRefund(rankDue, r.grp, s, useActual);
+            const refund = rankRefund(rankDue, r.grp, r.support, s, useActual);
             const burden = Math.max(0, rankDue - refund);
             const count = attendees.filter(
               (a) => a.rank === r.name && a.rank !== "欠席"
