@@ -257,6 +257,31 @@ export default function SettingsTab({
     }
   }
 
+  // イベントを削除（参加者・費用ごと）
+  async function deleteEvent(ev: EventRow) {
+    const n = ev.id === event?.id ? store.attendees.length : null;
+    if (
+      !window.confirm(
+        `イベント「${ev.title}」（${ev.event_date || "日付未設定"}）を削除しますか？\n` +
+          `参加者・費用・受付結果も一緒に消えます。取り消せません。\n` +
+          (ev.is_active === 1 ? "※運用中のイベントです。削除すると別のイベントに切り替わります。" : "") +
+          (n ? `\n（参加者 ${n} 名）` : "")
+      )
+    )
+      return;
+    setBusy(true);
+    try {
+      const res = await fetch(`/api/events/${ev.id}`, { method: "DELETE" });
+      const data = (await res.json()) as { ok?: boolean; error?: string };
+      if (!res.ok || !data.ok) throw new Error(data.error ?? "削除に失敗しました");
+      await reloadAll();
+    } catch (e) {
+      alert(e instanceof Error ? e.message : "削除に失敗しました");
+    } finally {
+      setBusy(false);
+    }
+  }
+
   const InfoRow = ({ label, value, onEdit }: { label: string; value: string; onEdit: () => void }) => (
     <button
       onClick={onEdit}
@@ -357,10 +382,10 @@ export default function SettingsTab({
         </div>
         <ul className="divide-y divide-slate-800/60">
           {events.map((ev) => (
-            <li key={ev.id}>
+            <li key={ev.id} className="flex items-center">
               <button
                 onClick={() => activateEvent(ev)}
-                className="flex w-full items-center gap-2 px-4 py-2.5 text-left active:bg-slate-900"
+                className="flex min-w-0 flex-1 items-center gap-2 px-4 py-2.5 text-left active:bg-slate-900"
               >
                 <span className="min-w-0 flex-1">
                   <span className="block truncate text-sm">{ev.title}</span>
@@ -374,11 +399,21 @@ export default function SettingsTab({
                   <span className="shrink-0 text-[10px] text-slate-600">切替 ›</span>
                 )}
               </button>
+              {events.length > 1 && (
+                <button
+                  onClick={() => deleteEvent(ev)}
+                  aria-label={`${ev.title}を削除`}
+                  className="mr-2 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-slate-500 active:bg-rose-500/20 active:text-rose-300"
+                >
+                  🗑
+                </button>
+              )}
             </li>
           ))}
         </ul>
         <p className="px-4 py-4 text-center text-[10px] text-slate-600">
-          イベントを切り替えても過去のデータは残ります。次回の歓送迎会は「＋新しいイベント」から。
+          切替でいつでも戻れます。🗑で不要なイベントを削除（参加者・費用ごと消えます／取り消し不可）。
+          次回の歓送迎会は「＋新しいイベント」から。
         </p>
       </section>
 
