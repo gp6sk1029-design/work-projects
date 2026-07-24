@@ -21,6 +21,14 @@ export default function SettingsTab({
 }) {
   const { event, events, ranks } = store;
   const [busy, setBusy] = useState(false);
+  // 役職編集モーダル（会費・ご支援金・グループを1画面で編集）
+  const [rankDraft, setRankDraft] = useState<{
+    id: number;
+    name: string;
+    fee: number;
+    support: number;
+    grp: "flat" | "exec";
+  } | null>(null);
 
   async function patchEvent(patch: Partial<EventRow>) {
     if (!event) return;
@@ -61,36 +69,38 @@ export default function SettingsTab({
     patchEvent({ refund_flat: v });
   }
 
-  // 役職の金額編集（会費・支援金をまとめて）
-  async function editRank(r: Rank) {
-    const feeIn = window.prompt(`「${r.name}」の会費（円）`, String(r.fee));
-    if (feeIn === null) return;
-    const supIn = window.prompt(`「${r.name}」のご支援金（円）`, String(r.support));
-    if (supIn === null) return;
-    const fee = Number(feeIn.replace(/[^0-9]/g, ""));
-    const support = Number(supIn.replace(/[^0-9]/g, ""));
-    if (!Number.isFinite(fee) || !Number.isFinite(support)) return alert("数字で入力してください");
+  // 役職の金額編集：モーダルを開く（会費・ご支援金・グループを1画面で）
+  function editRank(r: Rank) {
+    setRankDraft({ id: r.id, name: r.name, fee: r.fee, support: r.support, grp: r.grp });
+  }
 
-    const apply = window.confirm(
-      `会費テーブルを更新します。\n「${r.name}」の参加者の徴収額（${yen(fee + support)}円）にも反映しますか？\n（OK=参加者にも反映 / キャンセル=テーブルのみ）`
-    );
+  // 役職モーダルの保存
+  async function saveRank(applyToAttendees: boolean) {
+    if (!rankDraft) return;
+    if (!rankDraft.name.trim()) return alert("役職名を入力してください");
     setBusy(true);
     try {
-      const res = await fetch(`/api/ranks/${r.id}`, {
+      const res = await fetch(`/api/ranks/${rankDraft.id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ fee, support, applyToAttendees: apply }),
+        body: JSON.stringify({
+          name: rankDraft.name.trim(),
+          fee: rankDraft.fee,
+          support: rankDraft.support,
+          grp: rankDraft.grp,
+          applyToAttendees,
+        }),
       });
       const data = (await res.json()) as { rank?: Rank; error?: string };
       if (!res.ok || !data.rank) throw new Error(data.error ?? "保存に失敗しました");
-      setRanks(ranks.map((x) => (x.id === r.id ? data.rank! : x)));
-      if (apply) {
-        // 参加者側も再取得
+      setRanks(ranks.map((x) => (x.id === rankDraft.id ? data.rank! : x)));
+      if (applyToAttendees) {
         const at = (await fetch("/api/attendees").then((x) => x.json())) as {
           attendees: Attendee[];
         };
         setAttendees(at.attendees);
       }
+      setRankDraft(null);
     } catch (e) {
       alert(e instanceof Error ? e.message : "保存に失敗しました");
     } finally {
@@ -134,6 +144,72 @@ export default function SettingsTab({
     const data = (await res.json()) as { ok?: boolean; error?: string };
     if (!res.ok) return alert(data.error ?? "削除に失敗しました");
     setRanks(ranks.filter((x) => x.id !== r.id));
+  }
+
+  // データのリセット（現在のイベント。次のイベント準備・使い回し用）
+  async function resetData(target: "attendance" | "attendees" | "expenses") {
+    const labels: Record<typeof target, string> = {
+      attendance: "受付状況（来場・集金チェック）を全部クリア",
+      attendees: "参加者リストを全員削除",
+      expenses: "費用の項目を全部削除",
+    };
+    if (
+      !window.confirm(
+        `${labels[target]}します。\nこの操作は取り消せません。よろしいですか？`
+      )
+    )
+      return;
+    setBusy(true);
+    try {
+      const res = await fetch("/api/reset", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ targets: [target] }),
+      });
+      if (!res.ok) throw new Error("リセットに失敗しました");
+      await reloadAll();
+    } catch (e) {
+      alert(e instanceof Error ? e.message : "リセットに失敗しました");
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  // 現在のイベントをJSONファイルに保存（ダウンロード）
+  function exportEvent() {
+    // ブラウザで直接ダウンロード（認証Cookieはfetchに乗るのでリンクでも可）
+    window.location.href = "/api/export";
+  }
+
+  // JSONファイルを読み込んで新イベントとして復元
+  async function importEvent(file: File) {
+    if (
+      !window.confirm(
+        `「${file.name}」を読み込み、新しいイベントとして追加・切り替えますか？\n・現在のイベントは消えません（切替で戻れます）`
+      )
+    )
+      return;
+    setBusy(true);
+    try {
+      const text = await file.text();
+      const res = await fetch("/api/import", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: text,
+      });
+      const data = (await res.json()) as {
+        ok?: boolean;
+        counts?: { attendees: number };
+        error?: string;
+      };
+      if (!res.ok || !data.ok) throw new Error(data.error ?? "読み込みに失敗しました");
+      await reloadAll();
+      alert(`読み込みました（参加者 ${data.counts?.attendees ?? 0} 名）`);
+    } catch (e) {
+      alert(e instanceof Error ? e.message : "読み込みに失敗しました");
+    } finally {
+      setBusy(false);
+    }
   }
 
   // 新イベント作成（会費テーブルは現イベントからコピー）
@@ -305,6 +381,168 @@ export default function SettingsTab({
           イベントを切り替えても過去のデータは残ります。次回の歓送迎会は「＋新しいイベント」から。
         </p>
       </section>
+
+      {/* データの保存・読み込み（バックアップ／過去イベントの振り返り） */}
+      <section className="border-t border-slate-800 py-1">
+        <div className="px-4 py-1 text-[10px] text-slate-500">■ データの保存・読み込み</div>
+        <div className="flex gap-2 px-4 py-2">
+          <button
+            onClick={exportEvent}
+            className="flex-1 rounded-lg bg-slate-800 py-2.5 text-xs font-bold text-sky-300"
+          >
+            💾 このイベントを保存（ファイル）
+          </button>
+          <label className="flex-1 cursor-pointer rounded-lg bg-slate-800 py-2.5 text-center text-xs font-bold text-emerald-300">
+            📂 ファイルを読み込み
+            <input
+              type="file"
+              accept="application/json,.json"
+              className="hidden"
+              onChange={(e) => {
+                const f = e.target.files?.[0];
+                if (f) importEvent(f);
+                e.target.value = "";
+              }}
+            />
+          </label>
+        </div>
+        <p className="px-4 pb-2 text-[10px] text-slate-600">
+          「保存」でイベント一式（参加者・費用・受付結果）をファイルに書き出します。別PCへの移動や
+          バックアップ、過去イベントの振り返りに。読み込むと新しいイベントとして復元します（現在のデータは消えません）。
+        </p>
+      </section>
+
+      {/* データのリセット（次のイベント準備・使い回し） */}
+      <section className="border-t border-slate-800 py-1">
+        <div className="px-4 py-1 text-[10px] text-slate-500">
+          ■ データのリセット（次のイベント準備）
+        </div>
+        <div className="space-y-2 px-4 py-2">
+          <button
+            onClick={() => resetData("attendance")}
+            className="w-full rounded-lg bg-slate-800 py-2.5 text-xs font-bold text-slate-200"
+          >
+            受付状況だけリセット（来場・集金を全部クリア／参加者は残す）
+          </button>
+          <div className="flex gap-2">
+            <button
+              onClick={() => resetData("attendees")}
+              className="flex-1 rounded-lg bg-rose-500/15 py-2.5 text-xs font-bold text-rose-300"
+            >
+              参加者を全削除
+            </button>
+            <button
+              onClick={() => resetData("expenses")}
+              className="flex-1 rounded-lg bg-rose-500/15 py-2.5 text-xs font-bold text-rose-300"
+            >
+              費用を全削除
+            </button>
+          </div>
+        </div>
+        <p className="px-4 pb-4 text-[10px] text-slate-600">
+          ⚠️ 削除は取り消せません。心配な場合は先に「💾 保存」でバックアップを取ってから実行してください。
+          まったく新しい会でゼロから始めるなら「＋新しいイベント」がおすすめです。
+        </p>
+      </section>
+
+      {/* 役職 編集モーダル（会費・ご支援金・グループを1画面で） */}
+      {rankDraft && (
+        <div className="fixed inset-0 z-30 flex items-end justify-center bg-black/60 sm:items-center">
+          <div className="w-full max-w-md rounded-t-2xl bg-slate-900 p-4 sm:rounded-2xl">
+            <div className="mb-3 flex items-center justify-between">
+              <h2 className="text-sm font-bold">役職の金額を編集</h2>
+              <button onClick={() => setRankDraft(null)} className="px-2 text-slate-400">
+                ✕
+              </button>
+            </div>
+
+            <div className="space-y-3">
+              <label className="block">
+                <span className="text-[10px] text-slate-400">役職名</span>
+                <input
+                  value={rankDraft.name}
+                  onChange={(e) => setRankDraft({ ...rankDraft, name: e.target.value })}
+                  className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                />
+              </label>
+
+              <div className="flex items-end gap-2">
+                <label className="flex-1">
+                  <span className="text-[10px] text-slate-400">会費（円）</span>
+                  <input
+                    type="number"
+                    inputMode="numeric"
+                    value={rankDraft.fee}
+                    onChange={(e) =>
+                      setRankDraft({ ...rankDraft, fee: Math.max(0, Number(e.target.value) || 0) })
+                    }
+                    className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                  />
+                </label>
+                <label className="flex-1">
+                  <span className="text-[10px] text-slate-400">ご支援金（円）</span>
+                  <input
+                    type="number"
+                    inputMode="numeric"
+                    value={rankDraft.support}
+                    onChange={(e) =>
+                      setRankDraft({
+                        ...rankDraft,
+                        support: Math.max(0, Number(e.target.value) || 0),
+                      })
+                    }
+                    className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                  />
+                </label>
+                <div className="flex-1">
+                  <span className="text-[10px] text-slate-400">負担額（自動）</span>
+                  <div className="rounded-lg bg-slate-800/50 px-2 py-2 text-sm font-bold tabular-nums">
+                    {yen(rankDraft.fee + rankDraft.support)}円
+                  </div>
+                </div>
+              </div>
+
+              <label className="block">
+                <span className="text-[10px] text-slate-400">返金グループ</span>
+                <div className="mt-1 flex gap-2">
+                  {(["flat", "exec"] as const).map((g) => (
+                    <button
+                      key={g}
+                      onClick={() => setRankDraft({ ...rankDraft, grp: g })}
+                      className={`flex-1 rounded-lg py-2 text-xs font-bold ${
+                        rankDraft.grp === g
+                          ? g === "flat"
+                            ? "bg-sky-500 text-white"
+                            : "bg-purple-500 text-white"
+                          : "bg-slate-800 text-slate-400"
+                      }`}
+                    >
+                      {g === "flat" ? "一般（一律返金）" : "役職者（按分返金）"}
+                    </button>
+                  ))}
+                </div>
+              </label>
+
+              <div className="flex flex-col gap-2 pt-1">
+                <button
+                  onClick={() => saveRank(true)}
+                  disabled={busy}
+                  className="w-full rounded-lg bg-amber-500 py-2.5 text-sm font-bold text-slate-900 disabled:opacity-50"
+                >
+                  {busy ? "保存中…" : "保存して参加者の金額にも反映"}
+                </button>
+                <button
+                  onClick={() => saveRank(false)}
+                  disabled={busy}
+                  className="w-full rounded-lg bg-slate-800 py-2 text-xs font-bold text-slate-300 disabled:opacity-50"
+                >
+                  テーブルのみ保存（参加者は変えない）
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -147,6 +147,19 @@ export default function ReceptionTab({
             className="w-full rounded-lg bg-slate-800 px-3 py-2 text-sm outline-none placeholder:text-slate-500"
           />
         </div>
+        {/* 操作ガイド＋列見出し */}
+        <div className="mt-2 flex items-center gap-2">
+          <p className="min-w-0 flex-1 text-[10px] text-slate-500">
+            👉 各行の右にある2つのボタンをタップしてチェック
+          </p>
+          <span className="w-16 shrink-0 text-center text-[10px] font-bold text-emerald-400">
+            来場
+          </span>
+          <span className="w-[4.5rem] shrink-0 text-center text-[10px] font-bold text-amber-400">
+            集金
+          </span>
+          <span className="w-8 shrink-0" />
+        </div>
       </header>
 
       {/* 参加者リスト */}
@@ -155,60 +168,82 @@ export default function ReceptionTab({
           <li
             key={a.id}
             className={`flex items-center gap-2 px-3 py-2 ${
-              a.arrived ? "bg-slate-900/60" : ""
+              a.arrived ? "bg-emerald-500/5" : ""
             }`}
           >
-            {/* 来場トグル */}
+            {/* 氏名・情報（表示のみ） */}
+            <div className="min-w-0 flex-1">
+              <span className="block truncate text-sm font-bold">
+                {a.dept && (
+                  <span className="mr-1 text-[10px] text-slate-400">{a.dept}</span>
+                )}
+                {a.name}
+              </span>
+              <span className="block text-[10px] text-slate-400">
+                {a.rank}
+                {a.alcohol === "あり" && " ・🍺"}
+                {a.shuttle === "あり" && " ・🚐"}
+                {a.adjust !== 0 && (
+                  <span className="ml-1 font-bold text-amber-400">
+                    {a.adjust > 0 ? "＋" : "−"}
+                    {yen(Math.abs(a.adjust))}
+                  </span>
+                )}
+              </span>
+            </div>
+
+            {/* 来場チェック */}
             <button
               onClick={() => toggle(a.id, "arrived")}
-              className={`flex min-w-0 flex-1 items-center gap-2 rounded-lg px-2 py-3 text-left ${
-                a.arrived ? "bg-emerald-500/10" : "bg-slate-800/40"
+              aria-pressed={a.arrived === 1}
+              className={`flex h-14 w-16 shrink-0 flex-col items-center justify-center gap-1 rounded-lg border-2 transition-colors ${
+                a.arrived
+                  ? "border-emerald-500 bg-emerald-500 text-white"
+                  : "border-slate-600 bg-slate-800/60 text-slate-400"
               }`}
             >
               <span
-                className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-sm font-bold ${
-                  a.arrived
-                    ? "bg-emerald-500 text-white"
-                    : "border border-slate-600 text-slate-600"
+                className={`flex h-5 w-5 items-center justify-center rounded border-2 text-xs font-bold ${
+                  a.arrived ? "border-white bg-white text-emerald-600" : "border-slate-500"
                 }`}
               >
                 {a.arrived ? "✓" : ""}
               </span>
-              <span className="min-w-0">
-                <span className="block truncate text-sm font-bold">
-                  {a.dept && (
-                    <span className="mr-1 text-[10px] text-slate-400">{a.dept}</span>
-                  )}
-                  {a.name}
-                </span>
-                <span className="block text-[10px] text-slate-400">
-                  {a.rank}
-                  {a.alcohol === "あり" && " ・🍺"}
-                  {a.shuttle === "あり" && " ・🚐"}
-                  {a.adjust !== 0 && (
-                    <span className="ml-1 font-bold text-amber-400">
-                      {a.adjust > 0 ? "＋" : "−"}
-                      {yen(Math.abs(a.adjust))}
-                    </span>
-                  )}
-                </span>
-              </span>
+              <span className="text-[10px] font-bold">来場</span>
             </button>
 
-            {/* 集金トグル */}
+            {/* 集金チェック */}
             {a.due > 0 ? (
               <button
                 onClick={() => toggle(a.id, "paid")}
-                className={`w-24 shrink-0 rounded-lg py-3 text-center text-sm font-bold tabular-nums ${
+                aria-pressed={a.paid === 1}
+                className={`flex h-14 w-[4.5rem] shrink-0 flex-col items-center justify-center gap-0.5 rounded-lg border-2 transition-colors ${
                   a.paid
-                    ? "bg-emerald-500 text-white"
-                    : "bg-amber-500/20 text-amber-300 ring-1 ring-amber-500/40"
+                    ? "border-emerald-500 bg-emerald-500 text-white"
+                    : "border-amber-500/60 bg-amber-500/15 text-amber-300"
                 }`}
               >
-                {a.paid ? "集金済" : `${yen(a.due)}円`}
+                {a.paid ? (
+                  <>
+                    <span className="flex h-5 w-5 items-center justify-center rounded border-2 border-white bg-white text-xs font-bold text-emerald-600">
+                      ✓
+                    </span>
+                    <span className="text-[10px] font-bold">集金済</span>
+                  </>
+                ) : (
+                  <>
+                    <span className="text-[13px] font-bold tabular-nums leading-none">
+                      {yen(a.due)}
+                    </span>
+                    <span className="flex items-center gap-0.5 text-[10px] font-bold">
+                      <span className="flex h-3 w-3 items-center justify-center rounded-sm border border-amber-400" />
+                      集金
+                    </span>
+                  </>
+                )}
               </button>
             ) : (
-              <span className="w-24 shrink-0 text-center text-xs text-slate-500">
+              <span className="flex h-14 w-[4.5rem] shrink-0 items-center justify-center text-xs text-slate-500">
                 {a.rank === "招待" ? "招待" : "―"}
               </span>
             )}
@@ -217,7 +252,7 @@ export default function ReceptionTab({
             <button
               onClick={() => editDue(a)}
               aria-label={`${a.name}さんの金額を変更`}
-              className="flex h-11 w-9 shrink-0 items-center justify-center rounded-lg bg-slate-800 text-slate-400 active:bg-slate-700"
+              className="flex h-14 w-8 shrink-0 items-center justify-center rounded-lg bg-slate-800 text-slate-400 active:bg-slate-700"
             >
               ✏️
             </button>
@@ -231,7 +266,7 @@ export default function ReceptionTab({
       </ul>
 
       <p className="px-4 py-6 text-center text-[10px] text-slate-600">
-        氏名をタップで「来場」／金額をタップで「集金済」／✏️で金額を変更。変更は自動保存されます。
+        緑「来場」＝来場チェック／オレンジ「集金」＝集金チェック。もう一度タップで取り消し。✏️で金額変更。変更は自動保存されます。
       </p>
     </div>
   );
