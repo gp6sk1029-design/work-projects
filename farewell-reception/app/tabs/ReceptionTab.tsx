@@ -24,6 +24,8 @@ export default function ReceptionTab({
     return {
       total: present.length,
       arrived: present.filter((a) => a.arrived).length,
+      billableCount: billable.length, // 集金対象人数
+      paidCount: billable.filter((a) => a.paid).length, // 集金済み人数
       dueTotal: billable.reduce((s, a) => s + a.due, 0),
       paidTotal: billable.filter((a) => a.paid).reduce((s, a) => s + a.due, 0),
       unpaidCount: billable.filter((a) => !a.paid).length,
@@ -105,19 +107,13 @@ export default function ReceptionTab({
           {event ? `${event.title} 受付` : "受付"}
         </h1>
         <div className="mt-2 grid grid-cols-3 gap-2 text-center">
+          {/* 来場と未収を隣同士に（どちらも人数の進捗） */}
           <div className="rounded-lg bg-slate-800 py-2">
             <div className="text-[10px] text-slate-400">来場</div>
             <div className="text-lg font-bold tabular-nums">
               {stats.arrived}
-              <span className="text-xs text-slate-400">/{stats.total}</span>
+              <span className="text-xs text-slate-400">/{stats.total}名</span>
             </div>
-          </div>
-          <div className="rounded-lg bg-slate-800 py-2">
-            <div className="text-[10px] text-slate-400">集金</div>
-            <div className="text-lg font-bold tabular-nums text-emerald-400">
-              {yen(stats.paidTotal)}
-            </div>
-            <div className="text-[10px] text-slate-500">/{yen(stats.dueTotal)}円</div>
           </div>
           <div className="rounded-lg bg-slate-800 py-2">
             <div className="text-[10px] text-slate-400">未収</div>
@@ -128,6 +124,16 @@ export default function ReceptionTab({
             >
               {stats.unpaidCount}
               <span className="text-xs text-slate-400">名</span>
+            </div>
+          </div>
+          <div className="rounded-lg bg-slate-800 py-2">
+            <div className="text-[10px] text-slate-400">集金</div>
+            <div className="text-lg font-bold tabular-nums text-emerald-400">
+              {stats.paidCount}
+              <span className="text-xs text-slate-400">/{stats.billableCount}名</span>
+            </div>
+            <div className="text-[10px] text-slate-500">
+              {yen(stats.paidTotal)}/{yen(stats.dueTotal)}円
             </div>
           </div>
         </div>
