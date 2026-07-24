@@ -309,6 +309,17 @@
 - ログイン方式は One-time PIN（指定メールにコード送信）。identity provider未設定でもZero Trust Freeで利用可
 - **人にしかできない工程**: `wrangler login`（対話）と、実機での初回ログイン（メールOTP入力）は代行不可
 
+### ⚠️Excel COM操作で不可視プロセスが残りファイルロック（2026-07-23・重要）
+- **症状**: ユーザーが開いているxlsxに `win32com.GetObject()` で接続しExportAsFixedFormat等を実行後、`Application.Visible=False` の不可視Excelプロセスがそのファイルを掴んだまま残り、ユーザーが「編集中で開けない」状態に。`~$ファイル名` ロックファイルも残存
+- **原因**: GetObjectで取得したインスタンスが編集モード/ビジー状態(`0x800ac472`）で固まり、Close/Quit/Visible設定すべてCOM拒否される
+- **安全な復旧手順**（この順で実施）:
+  1. `GetObject(path)` で接続し `wb.Saved`（保存済みか）と `app.Visible`（不可視か）を確認
+  2. `app.Hwnd` → `win32process.GetWindowThreadProcessId(hwnd)` で**そのインスタンスのPIDを特定**（重要：作業中の別Excelを巻き込まないため）
+  3. 保存済みを確認できたら `taskkill //PID <pid> //F`（Bashツールでは `//` エスケープ）
+  4. ロックファイル `~$*.xlsx` の消滅を確認
+- **可視/不可視の判定**: `win32gui.EnumWindows`＋クラス名`XLMAIN`でウィンドウ持ちPIDを列挙する方法もあるが、Visible=Falseでもウィンドウは残るため不確実。**`app.Hwnd`からのPID特定が最も確実**
+- **予防（今後の運用ルール）**: ユーザーが開いている実ファイルにはCOM接続しない。**確認用PNG/PDF出力は実ファイルのコピー（別名）に対して行う**。編集が必要なときはユーザーに一旦閉じてもらう or コピーを操作して最後にリネーム依頼
+
 ### farewell-reception v2＝Excel同等の会費収支アプリ化（2026-07-23）
 - 5タブ構成（受付/参加者/費用/収支/設定）・複数イベント対応。スキーマv2: events/ranks/expenses + attendees.event_id
 - **移行SQLは役職ベースの一括UPDATEにすると個人情報ゼロでリポジトリにコミットできる**（migrations/001_multi_event.sql）
