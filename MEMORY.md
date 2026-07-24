@@ -318,6 +318,9 @@
   3. 保存済みを確認できたら `taskkill //PID <pid> //F`（Bashツールでは `//` エスケープ）
   4. ロックファイル `~$*.xlsx` の消滅を確認
 - **可視/不可視の判定**: `win32gui.EnumWindows`＋クラス名`XLMAIN`でウィンドウ持ちPIDを列挙する方法もあるが、Visible=Falseでもウィンドウは残るため不確実。**`app.Hwnd`からのPID特定が最も確実**
+- **併発する二次被害＝ウィンドウ非表示化**: 上記の不可視インスタンス操作の副作用で、ブックの `Window.Visible=False`（ウィンドウ非表示）状態がファイルに保存されてしまうことがある。すると次回ダブルクリックしても「プロセスは起動するが画面に出ない」状態になる（ユーザーには「開いても表示されない」と見える）
+  - **復旧**: `GetObject(Class="Excel.Application")` → `excel.Windows(1).Visible = True` → `wb.Save()`。表示ON状態で保存すれば再発しない。プロセスが無いなら `DispatchEx` で `Visible=True` 起動して開き直す
+  - 判別ポイント: `Application.Visible` と `Window.Visible` は別物。前者がTrueでも後者がFalseだと画面に出ない。`excel.ActiveWindow is None` なら全ウィンドウ非表示のサイン
 - **予防（今後の運用ルール）**: ユーザーが開いている実ファイルにはCOM接続しない。**確認用PNG/PDF出力は実ファイルのコピー（別名）に対して行う**。編集が必要なときはユーザーに一旦閉じてもらう or コピーを操作して最後にリネーム依頼
 
 ### farewell-reception v2＝Excel同等の会費収支アプリ化（2026-07-23）
