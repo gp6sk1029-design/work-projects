@@ -3,7 +3,7 @@
 // 収支サマリータブ：Excelの収支管理シート下部と同等（予算／実績の2本立て＋返金配分）
 import { useMemo } from "react";
 import type { Attendee, EventRow, Expense, Rank } from "../types";
-import { computeSummary, yen } from "../calc";
+import { computeSummary, rankRefund, yen } from "../calc";
 
 export default function SummaryTab({
   event,
@@ -45,9 +45,12 @@ export default function SummaryTab({
     </div>
   );
 
-  // 役職別の実質負担（実績返金を差し引き。実績が無ければ予算ベース）
-  const flatRefund = s.refundFlatActual ?? s.refundFlatBudget;
-  const execRefund = s.refundExecActual ?? s.refundExecBudget;
+  // 実績が入っていれば実績ベース、なければ予算ベースで表示
+  const useActual = s.hasActual;
+  const flatRefund = useActual ? s.refundFlatActual ?? 0 : s.refundFlatBudget;
+  const leftover = useActual
+    ? s.execLeftoverActual ?? 0
+    : s.execLeftoverBudget;
 
   return (
     <div>
@@ -112,24 +115,26 @@ export default function SummaryTab({
 
       {/* 返金配分 */}
       <section className="border-b border-slate-800 py-2">
-        <div className="grid grid-cols-[1fr_5.5rem_5.5rem] gap-2 px-4 py-1 text-[10px] text-slate-500">
-          <span>■ 返金配分（1人あたり）</span>
-          <span className="text-right">予算</span>
-          <span className="text-right">実績</span>
-        </div>
+        <div className="px-4 py-1 text-[10px] text-slate-500">■ 返金配分</div>
         <Row
           label={`一般（${s.flatCount}名・一律 上限${yen(event?.refund_flat ?? 0)}円）`}
           budget={yen(s.refundFlatBudget)}
           actual={s.refundFlatActual !== null ? yen(s.refundFlatActual) : "―"}
         />
-        <Row
-          label={`役職者（${s.execCount}名・残額を按分）`}
-          budget={yen(s.refundExecBudget)}
-          actual={s.refundExecActual !== null ? yen(s.refundExecActual) : "―"}
-        />
+        <p className="px-4 pt-1 text-[10px] text-slate-500">
+          役職者（{s.execCount}名）は、実質負担が一般社員（
+          {yen(useActual ? s.floorActual ?? s.floorBudget : s.floorBudget)}円）を下回らない範囲で、
+          負担額の高い役職から多めに返金します（逆転しません）。金額は下の実質負担でご確認ください。
+        </p>
         {s.refundFlatReduced && (
           <p className="px-4 py-1 text-[10px] text-amber-400">
             ※余剰金が不足のため一般返金は設定額から自動減額されています
+          </p>
+        )}
+        {leftover > 0 && (
+          <p className="px-4 py-1 text-[10px] text-amber-400">
+            ※役職者を全員一般社員と同額まで下げても {yen(leftover)}円 余ります（返しきれない余剰）。
+            一般返金額（上限）を上げるか、記念品等に充当してください。
           </p>
         )}
       </section>
@@ -141,15 +146,16 @@ export default function SummaryTab({
         </div>
         <ul className="divide-y divide-slate-800/60">
           {ranks.map((r) => {
-            const refund = r.grp === "flat" ? flatRefund : execRefund;
-            const burden = Math.max(0, r.fee + r.support - refund);
+            const rankDue = r.fee + r.support;
+            const refund = rankRefund(rankDue, r.grp, s, useActual);
+            const burden = Math.max(0, rankDue - refund);
             const count = attendees.filter(
               (a) => a.rank === r.name && a.rank !== "欠席"
             ).length;
             return (
               <li
                 key={r.id}
-                className="grid grid-cols-[1fr_4rem_6rem] items-center gap-2 px-4 py-1.5"
+                className="grid grid-cols-[1fr_4.5rem_6rem] items-center gap-2 px-4 py-1.5"
               >
                 <span className="text-xs">
                   {r.name}
