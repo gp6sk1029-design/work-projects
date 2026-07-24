@@ -51,7 +51,8 @@ CREATE TABLE IF NOT EXISTS attendees (
   rank       TEXT    NOT NULL DEFAULT '',   -- 役職 or 招待/欠席
   fee        INTEGER NOT NULL DEFAULT 0,    -- 会費
   support    INTEGER NOT NULL DEFAULT 0,    -- ご支援金
-  due        INTEGER NOT NULL DEFAULT 0,    -- 当日徴収額（会費＋ご支援金）
+  adjust     INTEGER NOT NULL DEFAULT 0,    -- 調整額（イレギュラー支払い。＋多め／−割引）
+  due        INTEGER NOT NULL DEFAULT 0,    -- 当日徴収額（会費＋ご支援金＋調整額）
   alcohol    TEXT    NOT NULL DEFAULT '',   -- あり/なし
   shuttle    TEXT    NOT NULL DEFAULT '',   -- 送迎バス あり/なし
   note       TEXT    NOT NULL DEFAULT '',

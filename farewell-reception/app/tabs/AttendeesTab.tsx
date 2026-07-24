@@ -13,6 +13,7 @@ type Draft = {
   rank: string;
   fee: number;
   support: number;
+  adjust: number; // 調整額（イレギュラー支払い）
   alcohol: string;
   shuttle: string;
   note: string;
@@ -25,6 +26,7 @@ const emptyDraft = (rank: string): Draft => ({
   rank,
   fee: 0,
   support: 0,
+  adjust: 0,
   alcohol: "なし",
   shuttle: "なし",
   note: "",
@@ -65,6 +67,7 @@ export default function AttendeesTab({
       rank: a.rank,
       fee: a.fee,
       support: a.support,
+      adjust: a.adjust,
       alcohol: a.alcohol || "なし",
       shuttle: a.shuttle || "なし",
       note: a.note,
@@ -88,13 +91,15 @@ export default function AttendeesTab({
       return;
     }
     setBusy(true);
+    const billable = draft.rank !== "招待" && draft.rank !== "欠席";
     const payload = {
       dept: draft.dept,
       name: draft.name,
       rank: draft.rank,
       fee: draft.fee,
       support: draft.support,
-      due: draft.fee + draft.support,
+      adjust: draft.adjust,
+      due: billable ? Math.max(0, draft.fee + draft.support + draft.adjust) : 0,
       alcohol: draft.alcohol,
       shuttle: draft.shuttle,
       note: draft.note,
@@ -157,10 +162,17 @@ export default function AttendeesTab({
           <span className="block text-sm font-bold tabular-nums">
             {a.due > 0 ? `${yen(a.due)}円` : a.rank === "招待" ? "招待" : "0円"}
           </span>
-          {a.support > 0 && (
-            <span className="block text-[10px] text-slate-500">
-              会費{yen(a.fee)}＋支援{yen(a.support)}
+          {a.adjust !== 0 ? (
+            <span className="block text-[10px] font-bold text-amber-400">
+              {a.adjust > 0 ? "＋" : "−"}
+              {yen(Math.abs(a.adjust))} 調整
             </span>
+          ) : (
+            a.support > 0 && (
+              <span className="block text-[10px] text-slate-500">
+                会費{yen(a.fee)}＋支援{yen(a.support)}
+              </span>
+            )
           )}
         </span>
         <span className="shrink-0 text-slate-600">›</span>
@@ -281,13 +293,34 @@ export default function AttendeesTab({
                     className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
                   />
                 </label>
+              </div>
+
+              <div className="flex items-end gap-2">
+                <label className="flex-1">
+                  <span className="text-[10px] text-amber-400">
+                    調整額（イレギュラー支払い ＋多め／−割引）
+                  </span>
+                  <input
+                    type="number"
+                    inputMode="numeric"
+                    value={draft.adjust}
+                    onChange={(e) =>
+                      setDraft({ ...draft, adjust: Math.round(Number(e.target.value) || 0) })
+                    }
+                    placeholder="0"
+                    className="w-full rounded-lg bg-slate-800 px-2 py-2 text-sm outline-none"
+                  />
+                </label>
                 <div className="flex-1">
                   <span className="text-[10px] text-slate-400">徴収額（自動）</span>
-                  <div className="rounded-lg bg-slate-800/50 px-2 py-2 text-sm font-bold tabular-nums">
-                    {yen(draft.fee + draft.support)}円
+                  <div className="rounded-lg bg-amber-500/10 px-2 py-2 text-sm font-bold tabular-nums text-amber-300 ring-1 ring-amber-500/30">
+                    {yen(Math.max(0, draft.fee + draft.support + draft.adjust))}円
                   </div>
                 </div>
               </div>
+              <p className="text-[10px] text-slate-500">
+                徴収額 = 会費 ＋ ご支援金 ＋ 調整額。中村さんのように多く払う人は調整額に「＋10000」。理由は備考へ。
+              </p>
 
               <div className="flex gap-2">
                 <label className="flex-1">

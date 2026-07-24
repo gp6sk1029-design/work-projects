@@ -51,10 +51,10 @@ export async function PATCH(
     .bind(rankId)
     .first<Rank>();
 
-  // 会費変更を同役職の参加者にも反映（既定ON）
+  // 会費変更を同役職の参加者にも反映（既定ON）。個人の調整額(adjust)は保持
   if (after && body.applyToAttendees !== false) {
     await env.DB.prepare(
-      `UPDATE attendees SET fee = ?, support = ?, due = ?, updated_at = ?
+      `UPDATE attendees SET fee = ?, support = ?, due = ? + adjust, updated_at = ?
        WHERE event_id = ? AND rank = ?`
     )
       .bind(

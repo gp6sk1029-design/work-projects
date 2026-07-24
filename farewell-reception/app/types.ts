@@ -6,6 +6,7 @@ export type Attendee = {
   rank: string; // 役職名 or 「招待」「欠席」
   fee: number;
   support: number;
+  adjust: number; // 調整額（イレギュラー支払い。＋多め／−割引）
   due: number;
   alcohol: string;
   shuttle: string;
@@ -52,7 +53,7 @@ export type Expense = {
 // 特殊区分（ranksテーブル外）
 export const SPECIAL_RANKS = ["招待", "欠席"] as const;
 
-export const SELECT_ATTENDEES = `SELECT id, event_id, dept, name, rank, fee, support, due, alcohol, shuttle, note, arrived, paid
+export const SELECT_ATTENDEES = `SELECT id, event_id, dept, name, rank, fee, support, adjust, due, alcohol, shuttle, note, arrived, paid
    FROM attendees WHERE event_id = ? ORDER BY id`;
 
 export const SELECT_EVENTS = `SELECT id, title, event_type, event_date, venue, venue_addr, venue_url, organizer, refund_flat, is_active

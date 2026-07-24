@@ -73,6 +73,12 @@ export default function SummaryTab({
             style={{ width: s.income > 0 ? `${(s.collected / s.income) * 100}%` : "0%" }}
           />
         </div>
+        {s.adjustCount > 0 && (
+          <p className="mt-2 text-[10px] text-amber-400">
+            ※イレギュラー支払い {s.adjustCount}名・純増減 {s.adjustTotal >= 0 ? "＋" : "−"}
+            {yen(Math.abs(s.adjustTotal))}円（規定額との差。収入合計に反映済み）
+          </p>
+        )}
       </section>
 
       {/* 収支表（予算／実績） */}

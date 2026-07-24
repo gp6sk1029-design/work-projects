@@ -27,15 +27,15 @@ export async function POST(req: NextRequest) {
 
   const fee = Math.max(0, Math.round(Number(body.fee) || 0));
   const support = Math.max(0, Math.round(Number(body.support) || 0));
-  const due =
-    body.due !== undefined
-      ? Math.max(0, Math.round(Number(body.due) || 0))
-      : fee + support;
+  const adjust = Math.round(Number(body.adjust) || 0); // マイナス（割引）も許可
+  // 徴収額は「会費＋ご支援金＋調整額」で自動計算。招待・欠席は0
+  const isBillable = body.rank !== "招待" && body.rank !== "欠席";
+  const due = isBillable ? Math.max(0, fee + support + adjust) : 0;
 
   const { env } = getCloudflareContext();
   const res = await env.DB.prepare(
-    `INSERT INTO attendees (event_id, dept, name, rank, fee, support, due, alcohol, shuttle, note, updated_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+    `INSERT INTO attendees (event_id, dept, name, rank, fee, support, adjust, due, alcohol, shuttle, note, updated_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
   )
     .bind(
       eventId,
@@ -44,6 +44,7 @@ export async function POST(req: NextRequest) {
       String(body.rank ?? ""),
       fee,
       support,
+      adjust,
       due,
       String(body.alcohol ?? ""),
       String(body.shuttle ?? ""),

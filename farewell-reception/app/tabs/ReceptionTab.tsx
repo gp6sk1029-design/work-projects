@@ -58,10 +58,12 @@ export default function ReceptionTab({
     }
   }
 
-  // 料金（徴収額）を変更する
+  // 実際に受け取る金額を入力（規定額との差は「調整額」として自動記録）
   async function editDue(a: Attendee) {
+    const base = a.fee + a.support; // 規定額
     const input = window.prompt(
-      `${a.dept ? a.dept + " " : ""}${a.name} さんの徴収額（円）を入力`,
+      `${a.dept ? a.dept + " " : ""}${a.name} さんから実際に受け取る金額（円）\n` +
+        `規定額 ${yen(base)}円。多め・割引はこの欄で調整できます`,
       String(a.due)
     );
     if (input === null) return;
@@ -73,16 +75,24 @@ export default function ReceptionTab({
     if (value === a.due) return;
 
     const prevDue = a.due;
-    setList(list.map((x) => (x.id === a.id ? { ...x, due: value } : x)));
+    const prevAdjust = a.adjust;
+    const newAdjust = value - base;
+    setList(
+      list.map((x) => (x.id === a.id ? { ...x, due: value, adjust: newAdjust } : x))
+    );
     try {
       const res = await fetch(`/api/attendees/${a.id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ due: value }),
+        body: JSON.stringify({ due: value }), // サーバ側で調整額を逆算
       });
       if (!res.ok) throw new Error("update failed");
     } catch {
-      setList(list.map((x) => (x.id === a.id ? { ...x, due: prevDue } : x)));
+      setList(
+        list.map((x) =>
+          x.id === a.id ? { ...x, due: prevDue, adjust: prevAdjust } : x
+        )
+      );
       alert("金額の変更に失敗しました。通信状況を確認してください。");
     }
   }
@@ -175,6 +185,12 @@ export default function ReceptionTab({
                   {a.rank}
                   {a.alcohol === "あり" && " ・🍺"}
                   {a.shuttle === "あり" && " ・🚐"}
+                  {a.adjust !== 0 && (
+                    <span className="ml-1 font-bold text-amber-400">
+                      {a.adjust > 0 ? "＋" : "−"}
+                      {yen(Math.abs(a.adjust))}
+                    </span>
+                  )}
                 </span>
               </span>
             </button>

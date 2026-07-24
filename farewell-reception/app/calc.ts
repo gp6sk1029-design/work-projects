@@ -6,8 +6,10 @@ export type Summary = {
   budgetPax: number; // 出席者（招待含む・欠席除く）＝1人当たり予算の分母
   flatCount: number; // 一般グループ人数
   execCount: number; // 役職者グループ人数
-  income: number; // 収入合計（会費＋ご支援金）
+  income: number; // 収入合計（会費＋ご支援金＋調整額）
   collected: number; // 集金済み合計（参考）
+  adjustTotal: number; // 調整額の合計（イレギュラー支払いの純増減）
+  adjustCount: number; // 調整額が入っている人数
   fixedBudget: number;
   fixedActual: number;
   variableBudget: number;
@@ -46,6 +48,8 @@ export function computeSummary(
 
   const income = payers.reduce((s, a) => s + a.due, 0);
   const collected = payers.filter((a) => a.paid).reduce((s, a) => s + a.due, 0);
+  const adjustTotal = payers.reduce((s, a) => s + (a.adjust ?? 0), 0);
+  const adjustCount = payers.filter((a) => (a.adjust ?? 0) !== 0).length;
 
   const budgetPax = present.length;
   const fixed = expenses.filter((e) => e.kind === "fixed");
@@ -85,6 +89,8 @@ export function computeSummary(
     execCount,
     income,
     collected,
+    adjustTotal,
+    adjustCount,
     fixedBudget,
     fixedActual,
     variableBudget,
