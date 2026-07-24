@@ -170,12 +170,24 @@ export default function ReceptionTab({
 
       {/* 参加者リスト */}
       <ul className="divide-y divide-slate-800">
-        {shown.map((a) => (
+        {shown.map((a) => {
+          const needsPay = a.due > 0;
+          // 4状態で色分け
+          // 完了(来場＆集金)＝濃い緑 / 集金済のみ＝薄緑 / 来場したのに未集金＝警告(赤) / それ以外＝通常
+          const done = a.arrived && (a.paid || !needsPay);
+          const warn = a.arrived && needsPay && !a.paid; // 来場したのに未集金
+          const paidOnly = a.paid && !a.arrived;
+          const rowClass = done
+            ? "bg-emerald-500/25"
+            : warn
+              ? "bg-rose-500/20 ring-1 ring-inset ring-rose-500/50"
+              : paidOnly
+                ? "bg-emerald-500/10"
+                : "";
+          return (
           <li
             key={a.id}
-            className={`flex items-center gap-2 px-3 py-2 ${
-              a.arrived ? "bg-emerald-500/5" : ""
-            }`}
+            className={`flex items-center gap-2 px-3 py-2 ${rowClass}`}
           >
             {/* 氏名・情報（表示のみ） */}
             <div className="min-w-0 flex-1">
@@ -184,6 +196,12 @@ export default function ReceptionTab({
                   <span className="mr-1 text-[10px] text-slate-400">{a.dept}</span>
                 )}
                 {a.name}
+                {done && <span className="ml-1 text-[10px] text-emerald-400">✓完了</span>}
+                {warn && (
+                  <span className="ml-1 rounded bg-rose-500 px-1 text-[10px] font-bold text-white">
+                    ⚠️未集金
+                  </span>
+                )}
               </span>
               <span className="block text-[10px] text-slate-400">
                 {a.rank}
@@ -263,7 +281,8 @@ export default function ReceptionTab({
               ✏️
             </button>
           </li>
-        ))}
+          );
+        })}
         {shown.length === 0 && (
           <li className="px-4 py-10 text-center text-sm text-slate-500">
             該当する参加者がいません
@@ -272,7 +291,10 @@ export default function ReceptionTab({
       </ul>
 
       <p className="px-4 py-6 text-center text-[10px] text-slate-600">
-        緑「来場」＝来場チェック／オレンジ「集金」＝集金チェック。もう一度タップで取り消し。✏️で金額変更。変更は自動保存されます。
+        行の色：<span className="text-emerald-400">濃い緑＝来場＆集金の完了</span>／
+        <span className="text-emerald-300">薄い緑＝集金済み（未来場）</span>／
+        <span className="text-rose-400">赤＝来場したのに未集金（要集金）</span>。
+        「来場」「集金」ボタンはもう一度タップで取り消し。✏️で金額変更。自動保存されます。
       </p>
     </div>
   );
