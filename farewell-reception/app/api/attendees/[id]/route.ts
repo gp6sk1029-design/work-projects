@@ -82,7 +82,8 @@ export async function PATCH(
     .first<{ fee: number; support: number; adjust: number; rank: string }>();
 
   if (cur) {
-    const billable = cur.rank !== "招待" && cur.rank !== "欠席";
+    // 欠席のみ徴収0。招待は調整額での徴収（会費の一部負担など）を許可
+    const billable = cur.rank !== "欠席";
     if (typeof body.due === "number" && Number.isFinite(body.due) && body.due >= 0) {
       // 実徴収額 → 調整額を逆算
       const newAdjust = billable ? Math.round(body.due) - cur.fee - cur.support : 0;

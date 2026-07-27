@@ -54,10 +54,12 @@ export function computeSummary(
   const flatCount = payers.filter((a) => flatRanks.has(a.rank)).length;
   const execCount = payers.filter((a) => execRanks.has(a.rank)).length;
 
-  const income = payers.reduce((s, a) => s + a.due, 0);
-  const collected = payers.filter((a) => a.paid).reduce((s, a) => s + a.due, 0);
-  const adjustTotal = payers.reduce((s, a) => s + (a.adjust ?? 0), 0);
-  const adjustCount = payers.filter((a) => (a.adjust ?? 0) !== 0).length;
+  // 収入は「徴収がある人すべて」（招待でも調整額で一部負担するケースを含む）
+  const billables = present.filter((a) => a.rank !== "招待" || a.due > 0);
+  const income = billables.reduce((s, a) => s + a.due, 0);
+  const collected = billables.filter((a) => a.paid).reduce((s, a) => s + a.due, 0);
+  const adjustTotal = billables.reduce((s, a) => s + (a.adjust ?? 0), 0);
+  const adjustCount = billables.filter((a) => (a.adjust ?? 0) !== 0).length;
 
   const budgetPax = present.length;
   const fixed = expenses.filter((e) => e.kind === "fixed");

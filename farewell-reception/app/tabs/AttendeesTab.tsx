@@ -91,7 +91,8 @@ export default function AttendeesTab({
       return;
     }
     setBusy(true);
-    const billable = draft.rank !== "招待" && draft.rank !== "欠席";
+    // 欠席のみ徴収0。招待は基本0だが、調整額での徴収（会費の一部負担など）を許可
+    const billable = draft.rank !== "欠席";
     const payload = {
       dept: draft.dept,
       name: draft.name,
