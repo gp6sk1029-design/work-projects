@@ -179,10 +179,12 @@ MEMORY.md（学習・経験の蓄積）
 - 図面検図ツール → drawing-checker/SKILL.md
 - 歓送迎会 当日受付アプリ → farewell-reception/SKILL.md（Next.js+Cloudflare Workers+D1+Access）
 
-**スキル（`/`コマンドで呼び出せる作業手順）**
-`.claude/skills/` に配置。該当する依頼をすると自動で読み込まれる。
+**スキル（作業手順書＋実行スクリプト）**
+`.claude/skills/` に配置（Codex等の他エージェント用に `.agents/skills/` へ同じ内容をミラー）。
 - 注文書作成（見積書・図面 → 注文書Excel） → `.claude/skills/purchase-order/SKILL.md`
 - 図面DXF変換（SolidWorks → DXF一括） → `.claude/skills/drawing-dxf/SKILL.md`
+- 使い方の概要 → `.claude/skills/README.md`
+- **スキルを編集したら `python tools/sync_skills.py` を実行**して `.agents/` と揃える
 
 - （今後追加されるプロジェクトをここに記載）
 

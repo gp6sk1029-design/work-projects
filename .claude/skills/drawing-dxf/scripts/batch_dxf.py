@@ -51,7 +51,9 @@ def connect():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--src", required=True, help="図面フォルダ（NASのUNCパス可）")
-    ap.add_argument("--out", default=r"C:\Users\SEIGI-N13\Desktop\DXF変換")
+    ap.add_argument("--out",
+                    default=os.path.join(os.path.expanduser("~"), "Desktop", "DXF変換"),
+                    help="出力先（既定：デスクトップのDXF変換フォルダ）")
     ap.add_argument("--check", action="store_true", help="件数と接続確認のみ")
     ap.add_argument("--skip-existing", action="store_true")
     a = ap.parse_args()

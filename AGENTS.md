@@ -179,10 +179,17 @@ MEMORY.md（学習・経験の蓄積）
 - 図面検図ツール → drawing-checker/SKILL.md
 - 歓送迎会 当日受付アプリ → farewell-reception/SKILL.md（Next.js+Cloudflare Workers+D1+Access）
 
-**スキル（`/`コマンドで呼び出せる作業手順）**
-`.Codex/skills/` に配置。該当する依頼をすると自動で読み込まれる。
-- 注文書作成（見積書・図面 → 注文書Excel） → `.Codex/skills/purchase-order/SKILL.md`
-- 図面DXF変換（SolidWorks → DXF一括） → `.Codex/skills/drawing-dxf/SKILL.md`
+**スキル（作業手順書＋実行スクリプト）**
+`.agents/skills/` に配置（Claude Code用の実体は `.claude/skills/`、内容は同一）。
+下記の依頼を受けたら、該当するSKILL.mdを**必ず読んでから**作業を始めること。
+
+| スキル | 呼ばれる場面 | 場所 |
+|---|---|---|
+| 注文書作成 | 「見積書から注文書を作って」「図面フォルダの分を注文書に」「注文書と見積書を照合して」 | `.agents/skills/purchase-order/SKILL.md` |
+| 図面DXF変換 | 「DXFに変換して」「取引先に支給するDXFを作って」 | `.agents/skills/drawing-dxf/SKILL.md` |
+
+使い方の概要は `.agents/skills/README.md`。
+スキルを編集したら **`python tools/sync_skills.py` を実行**して `.claude` と `.agents` を揃えること。
 
 - （今後追加されるプロジェクトをここに記載）
 

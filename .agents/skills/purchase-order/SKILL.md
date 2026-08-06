@@ -69,11 +69,43 @@ python scripts/verify_order.py --xlsx <注文書.xlsx> --sheet <タブ名> --jso
 - 入力結果を読み戻して**全件突合**（不一致0を確認）
 - **総合計＝見積書の合計**であることを確認
 
-### 5. 照合表を作る（見積書がある場合）
+### 5. 照合表を作る
 ```bash
-python scripts/make_match_table.py --xlsx <注文書.xlsx> --sheet <タブ名> --json <明細データ.json> --out <照合表.xlsx>
+python scripts/make_match_table.py --xlsx <注文書.xlsx> --sheet <タブ名> --json <明細.json> \
+    --start-page <開始ページNo> --out <照合表.xlsx> [--fixed "3089-400-555A=3089-400-55A"]
 ```
-左に見積書・右に注文書を並べ、判定列（一致／要確認）を色分けした確認用Excelを作る。
+左に見積書・右に注文書を並べ、判定列（一致／修正済／★要確認）を色分けした確認用Excelを作る。
+`--fixed` は「見積書の誤記を注文書側で直した」ペアを指定すると「修正済」として扱う。
+
+## 動作確認済みの実行例（2026-08-06）
+
+```bash
+# ① 注文書の空きページを調べる
+python scripts/inspect_order_sheet.py "…_編集用_260806A.xlsx" "ステンレス工機"
+
+# ② 図面フォルダから明細を作る（対称品も自動判定）
+python scripts/parse_drawing_pdf.py "C:/Users/SEIGI-N13/Desktop/板金" -o "%TEMP%/items.json"
+
+# ③ 注文書へ入力（まず --dry-run で入力先を確認してから実行）
+python scripts/fill_order_sheet.py --xlsx "…_編集用_260806A.xlsx" --sheet "ステンレス工機" \
+    --json "%TEMP%/items.json" --date 2026/8/6 --dry-run
+
+# ④ 照合表を作る
+python scripts/make_match_table.py --xlsx "…_編集用_260806A.xlsx" --sheet "ステンレス工機" \
+    --json "%TEMP%/items.json" --start-page 1 --out "%TEMP%/照合表.xlsx"
+```
+
+## このスキルが前提にしている形（変わったら要調整）
+
+| 前提 | 内容 |
+|---|---|
+| 注文書のレイアウト | 1シートに5列×3段＝15ページ。型式列＝B/J/R/Z/AH、明細25行、金額は数式 |
+| 明細列の並び | 型式／品名／メーカー／数量／単価／金額／納期（型式列から+0,+1,+2,+3,+4,+5,+6） |
+| 図面の表題欄 | 縦書きで「ラベル列のすぐ左が値」。PART NAME欄は末尾トークンが品名 |
+| 対称品の注記 | 「数量：本図面品/図面対称品を各N個⇒計M個」 |
+
+**別フォーマットの注文書・図面では動きません。**その場合は
+`scripts/inspect_order_sheet.py` の `COLS`／`BLOCKS` を実際の配置に合わせて直す。
 
 ## 重要ルール
 
@@ -100,6 +132,6 @@ python scripts/make_match_table.py --xlsx <注文書.xlsx> --sheet <タブ名> -
 複数の取引先タブに**同じ図番**が入っていないか確認する。
 （実例：`3089-330-37A プレート3` がNTSの見積書と板金図面の両方に存在した）
 
-## 自己改善ループ（AGENTS.mdに準拠）
-このスキルはAGENTS.mdの方針に従い、タスク完了のたびに振り返りレポートを出力し、
+## 自己改善ループ（CLAUDE.mdに準拠）
+このスキルはCLAUDE.mdの方針に従い、タスク完了のたびに振り返りレポートを出力し、
 SKILL.mdとMEMORY.mdを更新し続ける。ROI評価を毎回行い、費用対効果を最大化する。

@@ -33,3 +33,15 @@ node_modules/
 # アップロードされたメディアファイル
 media-transcriber/server/uploads/*
 !media-transcriber/server/uploads/.gitkeep
+
+# 業務の実データ（取引先の金額・個人情報・図面）※絶対にアップロード禁止
+*.xlsx
+*.xls
+*.xlsm
+*.pdf
+*.dxf
+*.SLDDRW
+*.SLDPRT
+*.SLDASM
+seed_attendees.sql
+members.json
