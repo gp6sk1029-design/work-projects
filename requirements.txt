@@ -2,5 +2,6 @@
 # インストール: pip install -r requirements.txt
 
 openpyxl>=3.1        # Excelの読み書き（注文書・会費表）
-PyMuPDF>=1.24        # PDFの読み取り・画像化（見積書・図面）
+PyMuPDF>=1.24        # PDFの読み取り・画像化（見積書・図面・PDF検証）
 pywin32>=306         # Excel/SolidWorksのCOM操作（Windows専用）
+ezdxf>=1.1           # DXFの読み取り（DXFとPDFの照合）
