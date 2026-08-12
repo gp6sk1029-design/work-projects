@@ -1,9 +1,9 @@
 ---
 name: drawing-dxf
-description: SolidWorks図面（.SLDDRW）をDXFに一括変換する。「DXFに変換して」「図面をDXFにして」「取引先にDXFを支給したい」「このフォルダの図面を全部DXF」などの依頼で使用する。NAS上の図面フォルダから読み取り専用で開き、原本を変更せずにDXFを別フォルダへ出力する。
+description: SolidWorks図面（.SLDDRW）をDXFやPDFに一括変換する。「DXFに変換して」「図面をPDFにして」「PDFとDXFに変換して」「取引先にDXFを支給したい」「このフォルダの図面を全部変換」などの依頼で使用する。NAS上の図面フォルダから読み取り専用で開き、原本を変更せずに別フォルダへ出力する。
 ---
 
-# 図面DXF変換（SolidWorks .SLDDRW → .DXF）
+# 図面変換（SolidWorks .SLDDRW → .DXF / .PDF）
 
 加工部品を発注するとき、取引先から「**CAD（DXF）データをご支給願います**」と求められる。
 その支給用DXFを、NAS上のSolidWorks図面から一括生成する。
@@ -36,12 +36,24 @@ python scripts/batch_dxf.py --src "<NASの図面フォルダ>" --check
 
 ### 2. 一括変換
 ```bash
-python scripts/batch_dxf.py --src "<NASの図面フォルダ>" --out "C:/Users/SEIGI-N13/Desktop/NTS_DXF"
+# DXFのみ（既定）
+python scripts/batch_dxf.py --src "<図面フォルダ>" --out "<出力先>"
+
+# PDFも一緒に（1回開いて両方書き出すので効率的）
+python scripts/batch_dxf.py --src "<図面フォルダ>" --out "<出力先>" --format dxf,pdf
+
+# PDFだけ
+python scripts/batch_dxf.py --src "<図面フォルダ>" --out "<出力先>" --format pdf
 ```
-> 出力先は**取引先名＋_DXF**（例 `NTS_DXF`）にすると、支給先ごとに整理できる。
+> 出力先は**取引先名＋_DXF**（例 `NTS_DXF`）や、図面フォルダ名＋`_PDF_DXF` にすると整理しやすい。
+> **NAS上の共有フォルダへ直接出力もできる**（書き込み権限が必要）。
 - **原本は読み取り専用で開き、一切変更しない**
 - 1件ずつログに記録し、失敗しても次へ進む
-- 100件以上なら **`run_in_background: true` で実行**（1件あたり約4秒、125件で約8分半）
+- **処理時間の目安**：DXFのみ 約4秒/件、**DXF+PDF 約22秒/件**（PDF書き出しが重い）
+- 20件以上なら **`run_in_background: true` で実行**
+
+> 💡 本番フォルダへ流す前に、**1件だけ一時フォルダで試して中身を確認**すると安全。
+> （NASへコピーする際は、Python内でUNCパスを組まず `cp` で行う）
 
 ### 3. 検証（省略禁止）
 ```bash

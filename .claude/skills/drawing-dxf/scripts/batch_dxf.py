@@ -56,7 +56,14 @@ def main():
                     help="出力先（既定：デスクトップのDXF変換フォルダ）")
     ap.add_argument("--check", action="store_true", help="件数と接続確認のみ")
     ap.add_argument("--skip-existing", action="store_true")
+    ap.add_argument("--format", default="dxf",
+                    help="出力形式をカンマ区切りで指定（dxf / pdf / dxf,pdf）")
     a = ap.parse_args()
+    formats = [f.strip().lower() for f in a.format.split(",") if f.strip()]
+    for f in formats:
+        if f not in ("dxf", "pdf"):
+            print(f"NG: 未対応の形式です: {f}（dxf / pdf のみ）")
+            return 1
     a.src, a.out = fix_path(a.src), fix_path(a.out)
 
     if not os.path.isdir(a.src):
@@ -89,15 +96,19 @@ def main():
         with open(log_path, "a", encoding="utf-8") as f:
             f.write(m + "\n")
 
-    log(f"変換開始: {len(files)}件 → {a.out}")
+    log(f"変換開始: {len(files)}件 → {a.out}  形式: {'/'.join(formats)}")
     sw.Visible = True
     results, t_all = [], time.time()
     for i, fn in enumerate(files, 1):
         src = os.path.join(a.src, fn)
-        dst = os.path.join(a.out, os.path.splitext(fn)[0] + ".dxf")
-        rec = {"no": i, "file": fn, "ok": False, "err": "", "size": 0, "sec": 0}
-        if a.skip_existing and os.path.exists(dst):
-            rec.update(ok=True, size=os.path.getsize(dst), err="既存のためスキップ")
+        base = os.path.splitext(fn)[0]
+        dsts = {f: os.path.join(a.out, base + "." + f) for f in formats}
+        rec = {"no": i, "file": fn, "ok": False, "err": "", "size": 0, "sec": 0,
+               "made": []}
+        if a.skip_existing and all(os.path.exists(p) for p in dsts.values()):
+            rec.update(ok=True, err="既存のためスキップ",
+                       size=sum(os.path.getsize(p) for p in dsts.values()),
+                       made=list(dsts))
             results.append(rec)
             log(f"[{i:3d}/{len(files)}] -- {fn}  （既存スキップ）")
             continue
@@ -113,17 +124,22 @@ def main():
             else:
                 title = doc.GetTitle
                 title = title() if callable(title) else title
-                doc.SaveAs3(dst, 0, 0)
-                time.sleep(0.4)
+                miss = []
+                for f, dst in dsts.items():          # 1回開いて全形式を書き出す
+                    doc.SaveAs3(dst, 0, 0)
+                    time.sleep(0.4)
+                    if os.path.exists(dst):
+                        rec["made"].append(f)
+                        rec["size"] += os.path.getsize(dst)
+                    else:
+                        miss.append(f)
                 try:
                     sw.CloseDoc(title)
                 except Exception:
                     pass
-                if os.path.exists(dst):
-                    rec["ok"] = True
-                    rec["size"] = os.path.getsize(dst)
-                else:
-                    rec["err"] = "DXFが出力されなかった"
+                if miss:
+                    rec["err"] = "出力されなかった形式: " + "/".join(miss)
+                rec["ok"] = not miss
         except pythoncom.com_error as ce:
             rec["err"] = f"COMエラー: {ce.args[1] if len(ce.args) > 1 else ce}"
         except Exception as ex:
@@ -131,7 +147,7 @@ def main():
         rec["sec"] = round(time.time() - t0, 1)
         results.append(rec)
         log(f"[{i:3d}/{len(files)}] {'OK ' if rec['ok'] else 'NG '} {fn}  "
-            f"{rec['size']:,}B  {rec['sec']}s  {rec['err']}")
+            f"[{'+'.join(rec['made']) or '-'}]  {rec['size']:,}B  {rec['sec']}s  {rec['err']}")
         json.dump(results, open(os.path.join(os.environ.get("TEMP", "."),
                                              "dxf_batch_result.json"), "w",
                                 encoding="utf-8"), ensure_ascii=False)

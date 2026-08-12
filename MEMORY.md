@@ -367,3 +367,9 @@
 - デバッグ術: 500が握りつぶされて見えないときは、APIルートに `try/catch` で `{error, stack}` をJSONで返す一時コードを入れて可視化。**ただしWebpackビルドでないとtry/catchすら効かない**（Turbopackビルドはコード自体が起動しない）→ まずWebpackビルドにしてからデバッグ
 - 副次学び: `getCloudflareContext()` はリクエスト内（Server Component/Route Handler）では**同期版**を使う。`{async:true}` はnext dev/static generation用
 - 副次学び: ローカルpreview用D1は本番D1と別。`wrangler d1 execute <name> --local --file=schema.sql` でローカルにも別途スキーマ投入が必要
+## 2026-08-10 ミスミ部品選定（RSZ用マグネットスタンド）
+- 追記エージェント：Codex 部品選定・調達調査担当
+- 両開クランプRSZ（型番3-135-0717）の柄はφ11×153mm。
+- 中央精機BM-50Cは上面M16P1、ES-12系スタンドも底面M16P1で直接接続できる。
+- ES-12系の公称適合径はφ12のため、φ11柄には厚さ0.5mmの非磁性シムを巻いて径を合わせると、低コストで再現性のある固定になる。
+- 公称範囲だけで加工・シムなしに成立させる場合は、BM-50C＋UA-50CL（保持範囲0～46mm）が確実だが、価格は大幅に上がる。
