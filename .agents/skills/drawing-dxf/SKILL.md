@@ -19,12 +19,35 @@ description: SolidWorks図面（.SLDDRW）をDXFやPDFに一括変換する。�
 ```bash
 ls -d "/c/Program Files/SOLIDWORKS Corp"      # SolidWorksがあるか
 tasklist | grep -i sldworks                    # 起動しているか
+ls -d "/c/Program Files/CubePDF"               # PDFを作るなら必要
 ```
 
 > ⚠️ **SolidWorksは自動起動させないこと。**
 > スクリプトから起動すると初期化途中でCOM要求を受けてプロセスが落ちる。
 > **ユーザーに手動で起動してもらい**、`GetActiveObject` で既に動いているインスタンスに接続する。
 > 起動していなければ「SolidWorksを起動してください」と依頼する。
+
+> ⚠️ **出力先のPDFをビューアで開いたままにしない。**
+> Acrobat等が開いていると上書きできず、**古いファイルが残ったまま**になる。
+> 変換前に「出力先のPDFを閉じてください」と伝える。
+
+## PDFの作り方（重要）
+
+**PDFは必ずCubePDFへ印刷して作る（既定の動作）。**
+
+SolidWorks標準の `SaveAs3` によるPDF書き出しは、**寸法線・矢印・図面枠・表題欄の罫線が
+すべて欠落し、文字だけが残る**不具合がある（2026-08-12 実機で確認。線が9本しか無いPDFが
+21件量産された）。DXFは `SaveAs3` で問題ないので、PDFだけ印刷経由にしている。
+
+処理の流れ（スクリプトが自動でやる）:
+1. シート寸法から用紙を決める（A5=11 / A4=9 / A3=8 / A2=66 ＝Windows標準の用紙コード）
+2. SolidWorksからCubePDFドライバへ「ファイルへ出力」してPS（PostScript）を作る
+3. `CubePdf.exe -SkipUI true` で**ダイアログを出さずに**PDFへ変換する
+4. 複数シートの図面は1つのPDFに結合する
+
+CubePDFの保存先は「レジストリ `LastAccess` のフォルダ ＋ `-DocumentName`」で決まる仕様。
+`-Destination` 引数は無視されるので、スクリプトが `LastAccess` を毎回書き換えて制御し、
+**ユーザーのCubePDF設定は終了時に必ず元へ戻す**（保存形式・変換後の動作・上書き設定）。
 
 ## 手順
 
@@ -44,24 +67,44 @@ python scripts/batch_dxf.py --src "<図面フォルダ>" --out "<出力先>" --f
 
 # PDFだけ
 python scripts/batch_dxf.py --src "<図面フォルダ>" --out "<出力先>" --format pdf
+
+# 本番前に先頭1件だけ試す
+python scripts/batch_dxf.py --src "..." --out "<一時フォルダ>" --format pdf --limit 1
 ```
 > 出力先は**取引先名＋_DXF**（例 `NTS_DXF`）や、図面フォルダ名＋`_PDF_DXF` にすると整理しやすい。
 > **NAS上の共有フォルダへ直接出力もできる**（書き込み権限が必要）。
 - **原本は読み取り専用で開き、一切変更しない**
 - 1件ずつログに記録し、失敗しても次へ進む
-- **処理時間の目安**：DXFのみ 約4秒/件、**DXF+PDF 約22秒/件**（PDF書き出しが重い）
+- **処理時間の目安**：DXFのみ 約4秒/件、PDFのみ 約5秒/件、**DXF+PDF 約6秒/件**
 - 20件以上なら **`run_in_background: true` で実行**
 
-> 💡 本番フォルダへ流す前に、**1件だけ一時フォルダで試して中身を確認**すると安全。
+主なオプション:
+
+| オプション | 既定 | 用途 |
+|---|---|---|
+| `--format` | `dxf` | `dxf` / `pdf` / `dxf,pdf` |
+| `--limit N` | 0（全件） | 先頭N件だけ処理（試し出力） |
+| `--only 文字列` | なし | ファイル名に含む図面だけ処理（1件だけ作り直す） |
+| `--pdf-scale` | `fit` | `fit`＝用紙に合わせる（欠けない） / `actual`＝100% |
+| `--printer` | `CubePDF` | 印刷に使うプリンタ名 |
+| `--pdf-engine` | `cubepdf` | `solidworks` は**線が抜けるので使わない**（比較検証用） |
+
+> 💡 本番フォルダへ流す前に、**1件だけ一時フォルダで試して中身を確認**すると安全（`--limit 1`）。
 > （NASへコピーする際は、Python内でUNCパスを組まず `cp` で行う）
 
 ### 3. 検証（省略禁止）
 ```bash
-python scripts/verify_dxf.py --src "<図面フォルダ>" --out "<DXFフォルダ>"
+python scripts/verify_dxf.py --src "<図面フォルダ>" --out "<出力フォルダ>"
+python scripts/verify_dxf.py --src "..." --out "..." --format pdf   # PDFだけ
 ```
-- 元図面とDXFの**件数一致**
+- 元図面と出力の**件数一致**
 - **中身が空のDXFがないか**（図形要素数を数える）
+- **PDFの用紙サイズと線の本数**（線が50本未満＝寸法線・枠の欠落を疑う）
 - ファイルができただけで終わらせない
+
+> **シェーディングされた3Dビューを含む図面**は、印刷経由だと**ページ全体が600dpiのラスタ画像**に
+> なる（線の本数0・約1.7MB）。**内容は欠けていないので正常**。検証スクリプトはこれを
+> 「ラスタ画像のPDF」として区別して表示する。
 
 ## つまずきポイント
 
@@ -71,6 +114,10 @@ python scripts/verify_dxf.py --src "<図面フォルダ>" --out "<DXFフォル�
 | `RPC サーバーを利用できません` | SolidWorksが落ちた。手動で起動し直す |
 | `os.path.exists()` が False なのに `ls` では見える | **UNCパスがシェル経由でバックスラッシュを失っている**。`--src` は **`"//nas-ime5/共有名/..."` 形式（スラッシュ）で渡す**。スクリプト側でも自動復元する（`fix_path`）。ヒアドキュメント内にUNCパスを直書きしない |
 | OpenDocがNoneを返す | `OpenDoc6` でエラーコードを取得して原因特定（1024=未来バージョン、32=参照不足 など） |
+| PDFの寸法線・枠が無く文字だけ | `--pdf-engine solidworks` になっている。**既定のcubepdfを使う** |
+| `古いファイルが残っています` | 出力先のPDFを**Acrobat等が開いている**。閉じてから再実行（該当ファイルだけ再実行でよい） |
+| CubePDFのダイアログが出て止まる | `-SkipUI true` が効いていない。引数の接頭辞は **`/` ではなく `-`**。Git Bashから実行すると `/DocumentName` がパスに化けるので、**PowerShellかPythonから実行**する |
+| PDFが1件だけ極端に大きい（1〜2MB） | シェーディング3Dビューを含む図面。ラスタ化されるが**正常**（欠落ではない） |
 
 ## 注意
 

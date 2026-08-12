@@ -209,6 +209,8 @@
 | 2026/04/13 | 文字起こしのJSONパースエラー | AIが不正なJSON返却 | フォールバック処理を追加 |
 | 2026/04/14 | 動画ファイルがgitに入ってpush失敗 | .gitignore漏れ | uploads/を.gitignoreに追加 |
 | 2026/04/15 | drawing-checkerブラウザ版でfavicon未設置のまま完成させた | Viteテンプレの既定faviconが無いことに気づかなかった | **今後、ブラウザツールは初期構築時にfavicon.svg設置を必須化**（CLAUDE.mdに明文化） |
+| 2026/08/12 | SolidWorksのSaveAs3で作ったPDF21件が「文字だけ・線なし」の不良品だった | PDF書き出しの不具合。件数とファイルサイズしか見ておらず中身を検証していなかった | **PDFは必ずCubePDFへ印刷して作る**。検証は `page.get_drawings()` の本数で行う（正常250本以上／不良30本以下）。`verify_dxf.py --format pdf` に実装済み |
+| 2026/08/12 | 出力先PDFがAcrobatで開かれていて上書きできず、古い不良ファイルのまま「成功」と報告した | 「ファイルが存在する＝成功」という判定 | **更新時刻＋ファイル先頭のマジックバイトまで検証する**（`produced_ok()`）。変換前に「出力先のPDFを閉じて」と依頼する |
 | 2026/07/10 | plc-debuggerが「また開かない」（2回目の起動不能） | このPCのスタートアップフォルダに自動起動ショートカット未登録（FP7 Diffのみ登録されていた）。install-autostart.batが旧タスクスケジューラ方式のままで、恒久対策（スタートアップフォルダ方式）と矛盾していた | install/uninstall-autostart.batをスタートアップフォルダ方式に書き換え済み。**新PCセットアップ時は各ツールのinstall-autostart.bat実行を必須化** |
 
 ---
@@ -246,6 +248,7 @@
 | 2026-04-15 | Claude | drawing-checker（図面検図ツール）プロジェクト初版実装・振り返り記録 |
 | 2026-04-17 | Claude | winding-report: AISIN軌跡計算Excelに SLM8000方式シート追加（append_slm8000_method.py）・ノウハウ追記 |
 | 2026-05-29 | 生産技術主任補佐PDM | ブラウザツール常駐化の恒久対策パターンを確立（下記） |
+| 2026-08-12 | 生産技術主任補佐PDM | 図面PDF生成をSolidWorks標準→CubePDF印刷へ変更（線の欠落を解消・3.6倍速化）。PDF検証機能を追加 |
 
 ---
 
@@ -322,6 +325,23 @@
 - **⚠️UNCパスはbash経由でバックスラッシュが潰れる**（`\\nas`→`\nas`）。ヒアドキュメントにUNCを直書きせず**スクリプトファイル化**するか、`//nas-ime5/...`形式で渡す。スクリプト側に `fix_path()` で自動復元を実装済み
 - COMで日付を渡すとき **datetimeはタイムゾーンで1日ずれる**→ `"2026/8/6"` と文字列で渡す
 - 取引先の見積単価は社外秘 → **Artifact等の外部ホスティングに出さず**ローカルExcelの照合表で受け渡す
+
+### ⚠️SolidWorksのPDF書き出しは「線が消える」→CubePDF印刷へ変更（2026-08-12・重要）
+
+- **症状**：`ModelDoc2.SaveAs3(*.pdf)` で作ったPDFが、**寸法線・矢印・寸法補助線・図面枠・表題欄の罫線を全部失い、文字だけ**になる。部品形状の輪郭だけは残るので、ファイルサイズ（約150KB）や件数チェックでは気づけない。21件を丸ごと不良品として納品しかけた
+- **見つけ方**：PyMuPDFで `page.get_drawings()` を数える。**正常＝250〜350本／不良＝9〜30本**。`--format pdf` 検証を `verify_dxf.py` に実装済み
+- **対策＝CubePDFへ印刷**（`batch_dxf.py --format pdf` の既定動作）
+  1. `doc.Extension.PrintOut3(pages, 1, False, "CubePDF", "出力.ps", True)` で**PSファイルへ直接出力**（0.6秒/件）。プリンタドライバのダイアログは出ない
+  2. `CubePdf.exe -SkipUI true -InputFile x.ps -DocumentName <基本名>` で**ダイアログなし変換**（1秒/件）
+  3. 結果：線350本・A3・49KB。DXF+PDFで **22秒/件 → 6秒/件**（従来比3.6倍速）
+- **CubePDFの無人実行のコツ**（v1.6.0で確認）
+  - 引数の接頭辞は **`-`（ハイフン）**。`/DocumentName` 形式は**Git Bashがパスに変換して壊す**（`C:/Program Files/Git/DocumentName` になる）。**PowerShellかPythonのsubprocessから実行する**
+  - **`-Destination` は無視される**。保存先は**レジストリ `HKCU\Software\CubeSoft\CubePDF\v2\LastAccess` のフォルダ ＋ `-DocumentName` ＋ .pdf**。LastAccessを毎回書き換えて制御する
+  - 実行前に `FileType=3`(PDF) `PostProcess=0`(何もしない) `ExistedFile=0`(上書き) を書き込む。**PostProcessを0にしないとビューアが件数分開く**。ユーザー設定は退避して終了時に必ず復元
+  - 動作ログは `C:\ProgramData\CubeSoft\CubePDF\Log\CubePdf.log`。引数の解釈結果と保存先が全部出るので原因究明が速い
+- **用紙サイズは Windows標準のDMPAPER値**（実測確定）：A5=11 / A4=9 / A3=8 / **A2=66**。`IPageSetup.PrinterPaperSize` に入れ、`doc.Extension.UsePageSetup = 2`(ドキュメント設定) を先に立てる。**カスタム用紙(256)はCubePDFドライバ非対応でA4に落ちる**→ A1/A0はA2へ縮小＋ログに警告
+- **シェーディング3Dビューを含む図面は、印刷経由だとページ全体が600dpiラスタになる**（線0本・1.7MB）。**内容は欠けていないので正常**。検証スクリプトは「画像あり＝ラスタ」「画像なし＝欠落」で区別する
+- **⚠️「ファイルが存在する＝成功」と判定してはいけない**：出力先PDFをAcrobatが開いていると削除も上書きもできず、**古い不良ファイルが残ったまま成功と誤判定**した（21件中1件）。**更新時刻が今回の開始時刻以降か＋先頭5バイトが `%PDF-` か**まで見る（`produced_ok()`）。作業前に「出力先のPDFを閉じて」と伝える
 
 ### ⚠️Excel COM操作で不可視プロセスが残りファイルロック（2026-07-23・重要）
 - **症状**: ユーザーが開いているxlsxに `win32com.GetObject()` で接続しExportAsFixedFormat等を実行後、`Application.Visible=False` の不可視Excelプロセスがそのファイルを掴んだまま残り、ユーザーが「編集中で開けない」状態に。`~$ファイル名` ロックファイルも残存
