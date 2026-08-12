@@ -18,9 +18,17 @@ SRC = os.path.join(ROOT, ".claude", "skills")
 DST = os.path.join(ROOT, ".agents", "skills")
 
 
+# 同期しないもの（実行時にできる生成物。写すとゴミがリポジトリに残る）
+SKIP_DIRS = {"__pycache__", ".pytest_cache", ".ipynb_checkpoints"}
+SKIP_EXTS = {".pyc", ".pyo"}
+
+
 def walk(base):
-    for dirpath, _, files in os.walk(base):
+    for dirpath, dirs, files in os.walk(base):
+        dirs[:] = [d for d in dirs if d not in SKIP_DIRS]
         for f in files:
+            if os.path.splitext(f)[1].lower() in SKIP_EXTS:
+                continue
             full = os.path.join(dirpath, f)
             yield os.path.relpath(full, base)
 

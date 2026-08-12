@@ -22,8 +22,13 @@ cd work-projects
 |---|---|---|
 | **Python 3.10以上** | スクリプト実行 | 何も動かない |
 | **Microsoft Excel** | 注文書・会費表の読み書き（COM操作） | 注文書スキルが使えない |
-| **SolidWorks** | 図面のDXF変換 | DXF変換スキルのみ使えない（他は動く） |
+| **SolidWorks** | 図面のDXF/PDF変換 | DXF変換スキルのみ使えない（他は動く） |
+| **CubePDF** | 図面のPDF出力（印刷経由） | **PDFが作れない**。SolidWorks標準の書き出しは寸法線・枠が消えるため代用不可 |
 | Git | 同期 | 手動コピーが必要 |
+
+> CubePDFは https://www.cube-soft.jp/cubepdf/ から入手（無料）。
+> インストール後、プリンタ一覧に「CubePDF」が出ていればOK。設定変更は不要
+> （スクリプトが実行時だけ設定を借りて、終了時に元へ戻す）。
 
 > Excel・SolidWorksは**Windows専用**。Mac/Linuxでは注文書入力とDXF変換は動かない
 > （PDF読み取り・データ解析だけなら動く）。
