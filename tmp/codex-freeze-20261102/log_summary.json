@@ -1,0 +1,205 @@
+[
+  {
+    "file": "codex-desktop-58ba094a-3461-4cfa-83e0-1ff42843b894-24312-t0-i1-003829-0.log",
+    "counts": {
+      "通信待ち": 17
+    },
+    "hits": [
+      {
+        "line": 2115,
+        "category": "通信待ち",
+        "prefix": "2026-11-02T00:46:41.031Z info [electron-message-handler] Orbit messaging stage clientRequestId=926c8103-10d2-4f28-97e6-f9479a745251 clientTimestampMs=1793580401030.8 documentVisible=true durationMs=300001 entryPoint=messages event=orbit.messaging.stage inputTextCharacters=23 isRetry=undefined measur",
+        "durationMs": [
+          "300001"
+        ]
+      },
+      {
+        "line": 2116,
+        "category": "通信待ち",
+        "prefix": "2026-11-02T00:46:41.031Z info [electron-message-handler] Orbit messaging stage clientRequestId=926c8103-10d2-4f28-97e6-f9479a745251 clientTimestampMs=1793580401030.8 documentVisible=true durationMs=300001 entryPoint=messages event=orbit.messaging.stage inputTextCharacters=23 isRetry=undefined measur",
+        "durationMs": [
+          "300001"
+        ]
+      },
+      {
+        "line": 2347,
+        "category": "通信待ち",
+        "prefix": "2026-11-02T00:48:13.742Z info [electron-message-handler] Orbit messaging stage clientRequestId=74e1eee7-26db-4031-b9a3-07366a16f9f0 clientTimestampMs=1793580493741.8 documentVisible=true durationMs=300007.40000000014 entryPoint=messages event=orbit.messaging.stage inputTextCharacters=24 isRetry=unde",
+        "durationMs": [
+          "300007.40000000014"
+        ]
+      },
+      {
+        "line": 2348,
+        "category": "通信待ち",
+        "prefix": "2026-11-02T00:48:13.742Z info [electron-message-handler] Orbit messaging stage clientRequestId=74e1eee7-26db-4031-b9a3-07366a16f9f0 clientTimestampMs=1793580493741.8 documentVisible=true durationMs=300007.40000000014 entryPoint=messages event=orbit.messaging.stage inputTextCharacters=24 isRetry=unde",
+        "durationMs": [
+          "300007.40000000014"
+        ]
+      },
+      {
+        "line": 2599,
+        "category": "通信待ち",
+        "prefix": "2026-11-02T00:49:24.910Z info [electron-message-handler] Orbit messaging stage clientRequestId=772a7a1c-1aab-45ce-8912-11dd8858eca2 clientTimestampMs=1793580564909.7 documentVisible=true durationMs=300016.2000000002 entryPoint=messages event=orbit.messaging.stage inputTextCharacters=8 isRetry=undefi",
+        "durationMs": [
+          "300016.2000000002"
+        ]
+      },
+      {
+        "line": 2600,
+        "category": "通信待ち",
+        "prefix": "2026-11-02T00:49:24.910Z info [electron-message-handler] Orbit messaging stage clientRequestId=772a7a1c-1aab-45ce-8912-11dd8858eca2 clientTimestampMs=1793580564909.7 documentVisible=true durationMs=300016.2000000002 entryPoint=messages event=orbit.messaging.stage inputTextCharacters=8 isRetry=undefi",
+        "durationMs": [
+          "300016.2000000002"
+        ]
+      },
+      {
+        "line": 2637,
+        "category": "通信待ち",
+        "prefix": "2026-11-02T00:49:38.709Z info [electron-message-handler] Orbit messaging stage clientRequestId=5c177ebb-5cea-4948-9fe7-18905194831d clientTimestampMs=1793580578710 documentVisible=true durationMs=300000.69999999995 entryPoint=messages event=orbit.messaging.stage inputTextCharacters=6 isRetry=undefin",
+        "durationMs": [
+          "300000.69999999995"
+        ]
+      },
+      {
+        "line": 2638,
+        "category": "通信待ち",
+        "prefix": "2026-11-02T00:49:38.710Z info [electron-message-handler] Orbit messaging stage clientRequestId=5c177ebb-5cea-4948-9fe7-18905194831d clientTimestampMs=1793580578710 documentVisible=true durationMs=300000.69999999995 entryPoint=messages event=orbit.messaging.stage inputTextCharacters=6 isRetry=undefin",
+        "durationMs": [
+          "300000.69999999995"
+        ]
+      },
+      {
+        "line": 2750,
+        "category": "通信待ち",
+        "prefix": "2026-11-02T00:50:04.333Z info [electron-message-handler] Orbit messaging stage clientRequestId=60da4cd2-f104-4a94-a32d-94a172210215 clientTimestampMs=1793580604334.1 documentVisible=true durationMs=300015.8999999999 entryPoint=messages event=orbit.messaging.stage inputTextCharacters=17 isRetry=undef",
+        "durationMs": [
+          "300015.8999999999"
+        ]
+      },
+      {
+        "line": 2751,
+        "category": "通信待ち",
+        "prefix": "2026-11-02T00:50:04.334Z info [electron-message-handler] Orbit messaging stage clientRequestId=60da4cd2-f104-4a94-a32d-94a172210215 clientTimestampMs=1793580604334.1 documentVisible=true durationMs=300015.8999999999 entryPoint=messages event=orbit.messaging.stage inputTextCharacters=17 isRetry=undef",
+        "durationMs": [
+          "300015.8999999999"
+        ]
+      },
+      {
+        "line": 2877,
+        "category": "通信待ち",
+        "prefix": "2026-11-02T00:52:32.929Z info [electron-message-handler] Orbit messaging stage clientRequestId=ba76ec87-7ddf-43d3-8dcf-b9bc8b378bf7 clientTimestampMs=1793580752928.6 documentVisible=false durationMs=300811.6000000001 entryPoint=messages event=orbit.messaging.stage inputTextCharacters=7 isRetry=undef",
+        "durationMs": [
+          "300811.6000000001"
+        ]
+      },
+      {
+        "line": 2878,
+        "category": "通信待ち",
+        "prefix": "2026-11-02T00:52:32.929Z info [electron-message-handler] Orbit messaging stage clientRequestId=ba76ec87-7ddf-43d3-8dcf-b9bc8b378bf7 clientTimestampMs=1793580752928.6 documentVisible=false durationMs=300811.6000000001 entryPoint=messages event=orbit.messaging.stage inputTextCharacters=7 isRetry=undef",
+        "durationMs": [
+          "300811.6000000001"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "codex-desktop-58ba094a-3461-4cfa-83e0-1ff42843b894-19540-t0-i1-003835-0.log",
+    "counts": {
+      "ブック表示": 1
+    },
+    "hits": [
+      {
+        "line": 21,
+        "category": "ブック表示",
+        "prefix": "2026-11-02T01:04:16.341Z warning [git] git.command.complete aborted=true allowedNonZeroExitCodes=0,1 argsCount=309 command=\"git -c diff.mnemonicPrefix=false -c diff.noprefix=false -c core.quotePath=false -c safe.bareRepository=explicit -c core.hooksPath=NUL -c core.fsmonitor= diff --no-ext-diff --no",
+        "durationMs": [
+          "115"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "codex-desktop-8b37118e-ac01-42b5-b0a2-e7e324cb1bc4-12432-t0-i1-002345-0.log",
+    "counts": {
+      "通信待ち": 5,
+      "画面停止": 1
+    },
+    "hits": [
+      {
+        "line": 732,
+        "category": "通信待ち",
+        "prefix": "2026-11-02T00:29:37.397Z info [electron-message-handler] websocket_reconnect_recovery_done currentConversationExistsOnTargetHost=false currentConversationId=null hostId=durable refreshRecentConversationsFailed=false rendererWebContentsId=1 rendererWindowAppearance=primary rendererWindowFocused=true ",
+        "durationMs": []
+      },
+      {
+        "line": 1418,
+        "category": "通信待ち",
+        "prefix": "2026-11-02T00:34:53.219Z info [electron-message-handler] Orbit messaging stage clientRequestId=c5585dac-fd31-4f1f-9f33-ce517c2de4db clientTimestampMs=1793579693218.9 documentVisible=true durationMs=300010.8999999999 entryPoint=messages event=orbit.messaging.stage inputTextCharacters=13 isRetry=undef",
+        "durationMs": [
+          "300010.8999999999"
+        ]
+      },
+      {
+        "line": 1419,
+        "category": "通信待ち",
+        "prefix": "2026-11-02T00:34:53.219Z info [electron-message-handler] Orbit messaging stage clientRequestId=c5585dac-fd31-4f1f-9f33-ce517c2de4db clientTimestampMs=1793579693218.9 documentVisible=true durationMs=300010.8999999999 entryPoint=messages event=orbit.messaging.stage inputTextCharacters=13 isRetry=undef",
+        "durationMs": [
+          "300010.8999999999"
+        ]
+      },
+      {
+        "line": 1948,
+        "category": "通信待ち",
+        "prefix": "2026-11-02T00:37:32.543Z info [electron-message-handler] Orbit messaging stage clientRequestId=7a8938eb-d8cf-4584-ae94-a862f8b61722 clientTimestampMs=1793579852543.0999 documentVisible=true durationMs=300008.19999999995 entryPoint=messages event=orbit.messaging.stage inputTextCharacters=46 isRetry=u",
+        "durationMs": [
+          "300008.19999999995"
+        ]
+      },
+      {
+        "line": 1949,
+        "category": "通信待ち",
+        "prefix": "2026-11-02T00:37:32.544Z info [electron-message-handler] Orbit messaging stage clientRequestId=7a8938eb-d8cf-4584-ae94-a862f8b61722 clientTimestampMs=1793579852543.0999 documentVisible=true durationMs=300008.19999999995 entryPoint=messages event=orbit.messaging.stage inputTextCharacters=46 isRetry=u",
+        "durationMs": [
+          "300008.19999999995"
+        ]
+      },
+      {
+        "line": 1998,
+        "category": "画面停止",
+        "prefix": "2026-11-02T00:38:17.178Z info [mcp-app-sandbox] mcp_app_sandbox.render_process_gone exitCode=1 guestWebContentsId=5 initId=2c9826e6-a0ba-4293-bb35-ae980ebb654c origin=codex-sandbox://codex-inline-visualization-c880fadc1af2b626.web-sandbox.oaiusercontent.com ownerWebContentsId=1 reason=killed sandbox",
+        "durationMs": []
+      }
+    ]
+  },
+  {
+    "file": "codex-desktop-df40ce0d-4117-477e-a394-cd85bdd60566-18664-t0-i1-001319-0.log",
+    "counts": {
+      "通信待ち": 1
+    },
+    "hits": [
+      {
+        "line": 2060,
+        "category": "通信待ち",
+        "prefix": "2026-11-02T00:22:21.578Z info [electron-message-handler] websocket_reconnect_recovery_done currentConversationExistsOnTargetHost=false currentConversationId=null hostId=durable refreshRecentConversationsFailed=false rendererWebContentsId=1 rendererWindowAppearance=primary rendererWindowFocused=true ",
+        "durationMs": []
+      }
+    ]
+  },
+  {
+    "file": "codex-desktop-df40ce0d-4117-477e-a394-cd85bdd60566-19496-t0-i1-001325-0.log",
+    "counts": {
+      "ブック表示": 1
+    },
+    "hits": [
+      {
+        "line": 4,
+        "category": "ブック表示",
+        "prefix": "2026-11-02T00:13:32.594Z warning [git] git.command.complete aborted=true allowedNonZeroExitCodes=0,1 argsCount=309 command=\"git -c diff.mnemonicPrefix=false -c diff.noprefix=false -c core.quotePath=false -c safe.bareRepository=explicit -c core.hooksPath=NUL -c core.fsmonitor= diff --no-ext-diff --no",
+        "durationMs": [
+          "525"
+        ]
+      }
+    ]
+  }
+]
