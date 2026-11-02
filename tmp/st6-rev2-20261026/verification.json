@@ -1,0 +1,203 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261026D.smc2",
+  "destination": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261026E.smc2",
+  "staged": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\st6-rev2-20261026\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261026E.smc2",
+  "source_sha256": "96da861ac1a0aa8c740b7399cb17b41139407fdc4acae80eb775beaf045f8e96",
+  "output_sha256": "a6567242ce382a2b8a1adc37c6d99ac920932c20112118632b0fc9066c26b6a6",
+  "original_entries": 200,
+  "changed_entries": [
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/4494cce8-9643-4ea8-a102-f9f72aae6c04.oem",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/20a6b651-4c34-401a-965e-db3e18414d5c.xml"
+  ],
+  "added_entries": [
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/f882be68-c93b-4a8c-858a-3d71ff06fa30.BookmarkGroup"
+  ],
+  "edited_rows": {
+    "st4": {
+      "changed_original_rows": [
+        7,
+        9,
+        10
+      ],
+      "added": 0
+    },
+    "st6": {
+      "changed_original_rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "added": 0
+    },
+    "output": {
+      "changed_original_rows": [
+        94,
+        97,
+        142
+      ],
+      "added": 0
+    },
+    "cv": {
+      "changed_original_rows": [
+        0
+      ],
+      "added": 0
+    },
+    "error": {
+      "changed_original_rows": [
+        20,
+        21
+      ],
+      "added": 1
+    },
+    "motion": {
+      "changed_original_rows": [],
+      "added": 4
+    }
+  },
+  "added_declarations": {
+    "globals": [
+      "ST6_A_Rev2_M",
+      "Stm_A_Rev_Axis001_MovePos_Degree",
+      "Stm_A_Rev_Axis001_MoveAbsoluteDone",
+      "HMI_Stm_A_Rev_Axis001_MovePos_Degree",
+      "Stm_A_Rev_Axis001_Auto",
+      "Homing_Para_Stm_Rev2"
+    ],
+    "movements_vars": [
+      "ST6_A_Rev2_Busy",
+      "ST6_A_Rev2_End",
+      "Out_CYw_Rev_01_Chk_A_H_Auto",
+      "Out_CYw_Rev_01_Chk_A_H_Done",
+      "HMI_Stm_A_Rev_Axis001_MovePos_Degree",
+      "Out_CYw_Rev_02_Chk_A_F_Done",
+      "Out_CYw_Rev_02_Pick_A_F_Auto",
+      "Out_CYw_Rev_02_Pick_A_F_Done",
+      "Out_CYw_Rev_02_Pick_A_H_Auto",
+      "Out_CYw_Rev_02_Pick_A_H_Done",
+      "ST6_A_Rev2_M",
+      "Stm_A_Rev_Axis001_Auto",
+      "Stm_A_Rev_Axis001_MoveAbsoluteDone",
+      "Stm_A_Rev_Axis001_MovePos_Degree"
+    ],
+    "other_vars": [
+      "Stm_A_Rev_Axis001_ZeroSet",
+      "Stm_A_Rev_Axis001_HomeWithParameter",
+      "Stm_A_Rev_Axis001_Power",
+      "Stm_A_Rev_Axis001_MoveAbsolute",
+      "Stm_A_Rev_Axis001_MoveVel",
+      "Stm_A_Rev_Axis001_MoveAcc",
+      "Stm_A_Rev_Axis001_MoveDec",
+      "Stm_A_Rev_Axis001_MoveBusy",
+      "Stm_A_Rev_Axis001_MoveError",
+      "Stm_A_Rev_Axis001_TON",
+      "Homing_Para_Stm_Rev2",
+      "Stm_A_Rev_Axis001",
+      "Stm_A_Rev_Axis001_Auto",
+      "Stm_A_Rev_Axis001_MoveAbsoluteDone",
+      "Stm_A_Rev_Axis001_MovePos_Degree",
+      "Stm_A_Rev_Axis001_Origin",
+      "Stm_A_Rev_Axis001_OriginDone"
+    ],
+    "mode_vars": [
+      "ST6_A_Rev2_M"
+    ]
+  },
+  "inline_eid": "d9bee799-8610-43ec-96ba-363ab37f5e5f",
+  "inline_entity_id": "f882be68-c93b-4a8c-858a-3d71ff06fa30",
+  "ladder_counts": {
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/02fa0618-20f0-422f-b44d-3aba0838a381.xml": 16,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/056f39b5-2372-4d32-b892-634336899ec4.xml": 1,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/08c19951-3bae-402d-a637-be66c221f71b.xml": 6,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml": 316,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/13f086b3-1a09-467f-8cff-eea83144ff00.xml": 3,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml": 18,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml": 2,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml": 1,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/49a83d1d-d863-4a09-a86a-4797edc14a57.xml": 1,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml": 17,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml": 8,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml": 152,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/5ede16be-2114-46c3-84df-a79badb6e32e.xml": 1,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml": 23,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/7b1666c7-ee97-4210-81b2-fed5a6172074.xml": 46,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml": 9,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/98de6707-f996-4f77-aad9-b0569299efb5.xml": 8,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml": 6,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml": 17,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml": 29,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml": 13,
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml": 16
+  },
+  "native_validation": {
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/02fa0618-20f0-422f-b44d-3aba0838a381.xml": "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/056f39b5-2372-4d32-b892-634336899ec4.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/08c19951-3bae-402d-a637-be66c221f71b.xml": "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml": "TOTAL=316 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/13f086b3-1a09-467f-8cff-eea83144ff00.xml": "TOTAL=3 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml": "TOTAL=18 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml": "TOTAL=2 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/49a83d1d-d863-4a09-a86a-4797edc14a57.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml": "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml": "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml": "TOTAL=152 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/5ede16be-2114-46c3-84df-a79badb6e32e.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml": "TOTAL=23 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/7b1666c7-ee97-4210-81b2-fed5a6172074.xml": "TOTAL=46 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml": "TOTAL=9 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/98de6707-f996-4f77-aad9-b0569299efb5.xml": "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml": "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml": "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml": "TOTAL=29 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml": "TOTAL=13 PARSE_FAIL=0 MODEL_FAIL=0",
+    "4494cce8-9643-4ea8-a102-f9f72aae6c04/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml": "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0"
+  },
+  "delta_audit": {
+    "limited_boolean_cases": {
+      "ワーク判定・通常コイル": 256,
+      "ST4・ST6異常分離": 32,
+      "再開許可・Pause解除": 1352,
+      "ST6完了待ち": 8
+    },
+    "total_cases": 1648,
+    "physical_at_declarations_unchanged": 722,
+    "old_hmi_variable_metadata_unchanged": 1991,
+    "approved_st4_changes_only": true,
+    "st6_mapping_and_motion_mapping_verified": true
+  },
+  "app_build_verified": false,
+  "machine_transfer_performed": false,
+  "remaining_source_findings": [
+    "ST4/ST6の180度側は角度転送のみで、別の移動開始指令はコピー元にない。今回の３点以外の順序は保持。",
+    "ST4/ST6の不一致判定M[7]はPause解除時の立上り復帰を使う既存構成を保持。",
+    "出力インターロックのMtr_Flip_01/02_BusyはIOローカルで、MC_MoveAbsoluteのBusyと未接続。今回接続を新設しない。",
+    "コンベア完了待ちのST4_End未接続は元のまま。ST6の仮完了接点だけ新ST6_Endへ対応。",
+    "新規の反転２設定角度・速度/加減速は初期値未指定。HMI画面・実機設定は未編集。"
+  ]
+}

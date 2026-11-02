@@ -1,0 +1,834 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029A.smc2",
+  "destination": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029B.smc2",
+  "staged": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\st7-insert-20261028\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029B.smc2",
+  "source_sha256": "4ab4ec4efb14152785855b53104fe3c42896f64ef9c62fa5653d665ed522a9e1",
+  "output_sha256": "95cc39b91e787237e1dbb3a667d5b1dff141b3482dcbf747af7597d984dfb39d",
+  "entries": 207,
+  "changed_entries": [
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+  ],
+  "reference_changes": [
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 3,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_1_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 5,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_1_OUT_TargetPos_mm",
+      "after": "RCON1_3_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 9,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_1_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 12,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_1_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 14,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[12]",
+      "after": "ST7_A_Dis2_M[17]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 14,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[17]",
+      "after": "ST7_A_Dis2_M[22]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 14,
+      "type": "ST",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[12]",
+      "after": "ST7_A_Dis2_M[17]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 14,
+      "type": "ST",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[13]",
+      "after": "ST7_A_Dis2_M[18]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 14,
+      "type": "ST",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[14]",
+      "after": "ST7_A_Dis2_M[19]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 14,
+      "type": "ST",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[15]",
+      "after": "ST7_A_Dis2_M[20]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 15,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[12]",
+      "after": "ST7_A_Dis2_M[17]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 15,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[16]",
+      "after": "ST7_A_Dis2_M[21]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 15,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[17]",
+      "after": "ST7_A_Dis2_M[22]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 15,
+      "type": "ST",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[16]",
+      "after": "ST7_A_Dis2_M[21]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 16,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[12]",
+      "after": "ST7_A_Dis2_M[17]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 16,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[13]",
+      "after": "ST7_A_Dis2_M[18]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 16,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[14]",
+      "after": "ST7_A_Dis2_M[19]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 16,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[15]",
+      "after": "ST7_A_Dis2_M[20]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 16,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[17]",
+      "after": "ST7_A_Dis2_M[22]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 16,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[18]",
+      "after": "ST7_A_Dis2_M[23]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 16,
+      "type": "ST",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[17]",
+      "after": "ST7_A_Dis2_M[22]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[17]",
+      "after": "ST7_A_Dis2_M[22]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[18]",
+      "after": "ST7_A_Dis2_M[23]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[22]",
+      "after": "ST7_A_Dis2_M[28]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "ST",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[18]",
+      "after": "ST7_A_Dis2_M[23]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "ST",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[19]",
+      "after": "ST7_A_Dis2_M[24]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "ST",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[20]",
+      "after": "ST7_A_Dis2_M[25]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "ST",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[21]",
+      "after": "ST7_A_Dis2_M[26]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_3_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_3_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_3_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_3_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_3_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_3_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_3_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 18,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[18]",
+      "after": "ST7_A_Dis2_M[23]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 18,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[19]",
+      "after": "ST7_A_Dis2_M[24]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 18,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[22]",
+      "after": "ST7_A_Dis2_M[27]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 18,
+      "type": "ST",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[22]",
+      "after": "ST7_A_Dis2_M[27]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 19,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[18]",
+      "after": "ST7_A_Dis2_M[23]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 19,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[19]",
+      "after": "ST7_A_Dis2_M[24]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 19,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[20]",
+      "after": "ST7_A_Dis2_M[25]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 19,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[21]",
+      "after": "ST7_A_Dis2_M[26]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 19,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[22]",
+      "after": "ST7_A_Dis2_M[28]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 19,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[23]",
+      "after": "ST7_A_Dis2_M[29]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 19,
+      "type": "ST",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[22]",
+      "after": "ST7_A_Dis2_M[28]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 20,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[22]",
+      "after": "ST7_A_Dis2_M[28]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 20,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[23]",
+      "after": "ST7_A_Dis2_M[29]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 20,
+      "type": "ST",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[23]",
+      "after": "ST7_A_Dis2_M[29]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 20,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_1_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 21,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[23]",
+      "after": "ST7_A_Dis2_M[29]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 21,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[24]",
+      "after": "ST7_A_Dis2_M[30]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 21,
+      "type": "ST",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[24]",
+      "after": "ST7_A_Dis2_M[30]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 22,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[24]",
+      "after": "ST7_A_Dis2_M[30]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 22,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[25]",
+      "after": "ST7_A_Dis2_M[31]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 22,
+      "type": "ST",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[25]",
+      "after": "ST7_A_Dis2_M[31]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 22,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_1_OUT_TargetPos_mm",
+      "after": "RCON1_3_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 23,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[25]",
+      "after": "ST7_A_Dis2_M[31]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 23,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[26]",
+      "after": "ST7_A_Dis2_M[32]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 23,
+      "type": "ST",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[26]",
+      "after": "ST7_A_Dis2_M[32]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 24,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[26]",
+      "after": "ST7_A_Dis2_M[32]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 24,
+      "type": "LD",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[27]",
+      "after": "ST7_A_Dis2_M[33]"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 24,
+      "type": "ST",
+      "field": "Var",
+      "before": "ST7_A_Dis2_M[27]",
+      "after": "ST7_A_Dis2_M[33]"
+    }
+  ],
+  "index_reference_change_count": 50,
+  "move_fixes": [
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 3,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_1_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 5,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_1_OUT_TargetPos_mm",
+      "after": "RCON1_3_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 9,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_1_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 12,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_1_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_3_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_3_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_3_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_3_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_3_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_3_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 17,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_3_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 20,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_1_OUT_TargetPos_mm",
+      "after": "RCON1_5_OUT_TargetPos_mm"
+    },
+    {
+      "entry": "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "row": 22,
+      "type": "MOVE",
+      "field": "Out",
+      "before": "RCON1_1_OUT_TargetPos_mm",
+      "after": "RCON1_3_OUT_TargetPos_mm"
+    }
+  ],
+  "move_fix_count": 13,
+  "coils_before": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "9": 1,
+    "10": 1,
+    "11": 1,
+    "12": 2,
+    "13": 2,
+    "14": 2,
+    "15": 2,
+    "16": 2,
+    "17": 1,
+    "18": 1,
+    "19": 1,
+    "20": 1,
+    "21": 1,
+    "22": 2,
+    "23": 1,
+    "24": 1,
+    "25": 1,
+    "26": 1,
+    "27": 1
+  },
+  "coils_after": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "9": 1,
+    "10": 1,
+    "11": 1,
+    "12": 1,
+    "13": 1,
+    "14": 1,
+    "15": 1,
+    "16": 1,
+    "17": 1,
+    "18": 1,
+    "19": 1,
+    "20": 1,
+    "21": 1,
+    "22": 1,
+    "23": 1,
+    "24": 1,
+    "25": 1,
+    "26": 1,
+    "27": 1,
+    "28": 1,
+    "29": 1,
+    "30": 1,
+    "31": 1,
+    "32": 1,
+    "33": 1
+  },
+  "element_comments_after": {
+    "9": "ST7 A ワーク有",
+    "10": "ST3 A ワーク無",
+    "11": "ST7 排出前ワーク不一致エラー",
+    "17": "NG / フォルダストック 仕分け IAI移動位置 判定",
+    "18": "ストックフォルダ位置",
+    "19": "カメラ2 キズNG位置",
+    "20": "カメラ2 姿NG位置",
+    "21": "排出フォルダ送り行",
+    "22": "SF/NG2左右 移動開始",
+    "23": "SF/NG2上下 目標位置転送",
+    "24": "ストックフォルダ カウントup",
+    "25": "カメラ キズNG位置",
+    "26": "カメラ 姿NG位置",
+    "28": "SF/NG2上下 移動開始",
+    "29": "SF/NG2上下 原点位置転送",
+    "30": "SF/NG2上下 原点移動開始",
+    "31": "SF/NG2左右 原点位置転送",
+    "32": "排出フォルダ送り戻",
+    "12": "コンベア下降 位置転送",
+    "13": "コンベア下降 移動開始",
+    "14": "排出チャック開 行",
+    "15": "セイフティ上昇 位置転送",
+    "16": "セイフティ上昇 移動開始",
+    "27": "ストックフォルダ条件保持",
+    "33": "排出フォルダ戻完了"
+  },
+  "declaration_entries": [
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+  ],
+  "blank_contacts_preserved": [
+    {
+      "row": 10,
+      "node_ix": 2
+    },
+    {
+      "row": 11,
+      "node_ix": 3
+    },
+    {
+      "row": 12,
+      "node_ix": 2
+    },
+    {
+      "row": 13,
+      "node_ix": 1
+    },
+    {
+      "row": 20,
+      "node_ix": 1
+    },
+    {
+      "row": 21,
+      "node_ix": 1
+    },
+    {
+      "row": 22,
+      "node_ix": 3
+    },
+    {
+      "row": 23,
+      "node_ix": 1
+    },
+    {
+      "row": 24,
+      "node_ix": 2
+    }
+  ],
+  "isolated_step_27_preserved_no_downstream_connection_added": true,
+  "later_sf_processing_unchanged": true,
+  "ladder_counts": {
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/02fa0618-20f0-422f-b44d-3aba0838a381.xml": 16,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/056f39b5-2372-4d32-b892-634336899ec4.xml": 1,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/08c19951-3bae-402d-a637-be66c221f71b.xml": 6,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml": 316,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/13f086b3-1a09-467f-8cff-eea83144ff00.xml": 3,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml": 31,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml": 18,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml": 2,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml": 1,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/49a83d1d-d863-4a09-a86a-4797edc14a57.xml": 1,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml": 17,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml": 8,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml": 152,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/5ede16be-2114-46c3-84df-a79badb6e32e.xml": 1,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml": 24,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/7b1666c7-ee97-4210-81b2-fed5a6172074.xml": 246,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml": 9,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/98de6707-f996-4f77-aad9-b0569299efb5.xml": 8,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml": 6,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml": 17,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml": 29,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml": 13,
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml": 16
+  },
+  "native_validation": {
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/02fa0618-20f0-422f-b44d-3aba0838a381.xml": "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/056f39b5-2372-4d32-b892-634336899ec4.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/08c19951-3bae-402d-a637-be66c221f71b.xml": "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml": "TOTAL=316 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/13f086b3-1a09-467f-8cff-eea83144ff00.xml": "TOTAL=3 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml": "TOTAL=31 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml": "TOTAL=18 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml": "TOTAL=2 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/49a83d1d-d863-4a09-a86a-4797edc14a57.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml": "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml": "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml": "TOTAL=152 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/5ede16be-2114-46c3-84df-a79badb6e32e.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml": "TOTAL=24 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/7b1666c7-ee97-4210-81b2-fed5a6172074.xml": "TOTAL=246 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml": "TOTAL=9 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/98de6707-f996-4f77-aad9-b0569299efb5.xml": "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml": "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml": "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml": "TOTAL=29 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml": "TOTAL=13 PARSE_FAIL=0 MODEL_FAIL=0",
+    "b751e1ac-6903-44c3-a5b1-dba5aba9ec02/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml": "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0"
+  },
+  "native_comments_validation": {
+    "loader": "メーカー同梱SSLightweightDataSerializer",
+    "declarations": 3,
+    "elements_per_declaration": 25,
+    "all_element_comments_matched": true,
+    "full_application_build_verified": false
+  },
+  "independent_audit": {
+    "coils_1_to_33_unique": true,
+    "row_to_coil_mapping_checked": true,
+    "all_16_axis_position_moves_consistent": true,
+    "approved_move_changes": 13,
+    "added_step_numbers_preserved": true,
+    "other_ladders_unchanged": true,
+    "unchanged_entries": 203,
+    "source_unchanged": true
+  },
+  "app_build_verified": false,
+  "machine_transfer_performed": false,
+  "published": true
+}

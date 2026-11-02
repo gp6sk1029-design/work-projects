@@ -1,0 +1,1943 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261023C.smc2",
+  "sha256": "2c8cee0b432eb824fde0bd8bd5974a290f091126ebb263d7a7a91a92453a41c9",
+  "scope": "保存済みC版。未保存変更、未割付端子、内部変数、X/Y番号のない通信データを除外。",
+  "counts": {
+    "X": 171,
+    "Y": 105
+  },
+  "rows": [
+    {
+      "io": "X100",
+      "short": "非常停止1(タッチ)SW",
+      "variable": "In_Sw_EMS1",
+      "original": "【X100】非常停止1(タッチパネル)SW",
+      "assignment": "IOBus://unit#1/Input Bit 32 bits/Input Bit 00"
+    },
+    {
+      "io": "X101",
+      "short": "非常停止2(その他)SW",
+      "variable": "In_Sw_EMS2",
+      "original": "【X101】非常停止2(その他)SW",
+      "assignment": "IOBus://unit#1/Input Bit 32 bits/Input Bit 01"
+    },
+    {
+      "io": "X102",
+      "short": "非常停止3(その他)SW",
+      "variable": "In_Sw_EMS3",
+      "original": "【X102】非常停止3(その他)SW",
+      "assignment": "IOBus://unit#1/Input Bit 32 bits/Input Bit 02"
+    },
+    {
+      "io": "X103",
+      "short": "スタートSW",
+      "variable": "In_Sw_START",
+      "original": "【X103】スタートSW",
+      "assignment": "IOBus://unit#1/Input Bit 32 bits/Input Bit 03"
+    },
+    {
+      "io": "X104",
+      "short": "ストップSW",
+      "variable": "In_Sw_STOP",
+      "original": "【X104】ストップSW",
+      "assignment": "IOBus://unit#1/Input Bit 32 bits/Input Bit 04"
+    },
+    {
+      "io": "X105",
+      "short": "リセットSW",
+      "variable": "In_Sw_RESET",
+      "original": "【X105】リセットSW",
+      "assignment": "IOBus://unit#1/Input Bit 32 bits/Input Bit 05"
+    },
+    {
+      "io": "X108",
+      "short": "ドアセンサ1",
+      "variable": "In_Sen_DOOR_01",
+      "original": "【X108】ドアセンサ1",
+      "assignment": "IOBus://unit#1/Input Bit 32 bits/Input Bit 08"
+    },
+    {
+      "io": "X109",
+      "short": "ドアセンサ2",
+      "variable": "In_Sen_DOOR_02",
+      "original": "【X109】ドアセンサ2",
+      "assignment": "IOBus://unit#1/Input Bit 32 bits/Input Bit 09"
+    },
+    {
+      "io": "X110",
+      "short": "ドアセンサ3",
+      "variable": "In_Sen_DOOR_03",
+      "original": "【X110】ドアセンサ3",
+      "assignment": "IOBus://unit#1/Input Bit 32 bits/Input Bit 10"
+    },
+    {
+      "io": "X111",
+      "short": "ドアセンサ4",
+      "variable": "In_Sen_DOOR_04",
+      "original": "【X111】ドアセンサ4",
+      "assignment": "IOBus://unit#1/Input Bit 32 bits/Input Bit 11"
+    },
+    {
+      "io": "X112",
+      "short": "ドアセンサ5",
+      "variable": "In_Sen_DOOR_05",
+      "original": "【X112】ドアセンサ5",
+      "assignment": "IOBus://unit#1/Input Bit 32 bits/Input Bit 12"
+    },
+    {
+      "io": "X113",
+      "short": "ドアセンサ6",
+      "variable": "In_Sen_DOOR_06",
+      "original": "【X113】ドアセンサ6",
+      "assignment": "IOBus://unit#1/Input Bit 32 bits/Input Bit 13"
+    },
+    {
+      "io": "X116",
+      "short": "入口 CVアラーム",
+      "variable": "In_Sen_CV_Alram",
+      "original": "【X116】入口 コンベアアラーム",
+      "assignment": "IOBus://unit#1/Input Bit 32 bits/Input Bit 16"
+    },
+    {
+      "io": "X117",
+      "short": "エア圧力(1)",
+      "variable": "In_Sen_AIR１_Pressure_01",
+      "original": "【X117】エア圧力(1)",
+      "assignment": "IOBus://unit#1/Input Bit 32 bits/Input Bit 17"
+    },
+    {
+      "io": "X118",
+      "short": "エア圧力(2)",
+      "variable": "In_Sen_AIR１_Pressure_02",
+      "original": "【X118】エア圧力(2)",
+      "assignment": "IOBus://unit#1/Input Bit 32 bits/Input Bit 18"
+    },
+    {
+      "io": "X119",
+      "short": "エア圧力(3)",
+      "variable": "In_Sen_AIR１_Pressure_03",
+      "original": "【X119】エア圧力(3)",
+      "assignment": "IOBus://unit#1/Input Bit 32 bits/Input Bit 19"
+    },
+    {
+      "io": "X124",
+      "short": "A反転 モータ1 エラー",
+      "variable": "In_Mtr_Flip_01_A_Error",
+      "original": "【X124】A(左側)反転 オリエンタルモータ1 エラー",
+      "assignment": "IOBus://unit#1/Input Bit 32 bits/Input Bit 24"
+    },
+    {
+      "io": "X125",
+      "short": "A反転 モータ2 エラー",
+      "variable": "In_Mtr_Flip_02_A_Error",
+      "original": "【X125】A(左側)反転 オリエンタルモータ2 エラー",
+      "assignment": "IOBus://unit#1/Input Bit 32 bits/Input Bit 25"
+    },
+    {
+      "io": "X126",
+      "short": "B反転 モータ1 エラー",
+      "variable": "In_Mtr_Flip_01_B_Error",
+      "original": "【X126】B(右側)反転 オリエンタルモータ1 エラー",
+      "assignment": "IOBus://unit#1/Input Bit 32 bits/Input Bit 26"
+    },
+    {
+      "io": "X127",
+      "short": "B反転 モータ2 エラー",
+      "variable": "In_Mtr_Flip_02_B_Error",
+      "original": "【X127】B(右側)反転 オリエンタルモータ2 エラー",
+      "assignment": "IOBus://unit#1/Input Bit 32 bits/Input Bit 27"
+    },
+    {
+      "io": "X201",
+      "short": "アキュームA CV着",
+      "variable": "In_Sen_Accum_CV_A_Arrival",
+      "original": "【X201】アキュームA(左側) CV着",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 01"
+    },
+    {
+      "io": "X202",
+      "short": "Aワーク位置0",
+      "variable": "In_Sen_Work_A_Pos_00",
+      "original": "【X202】A(左側)ワーク位置0",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 02"
+    },
+    {
+      "io": "X203",
+      "short": "Aワーク位置1",
+      "variable": "In_Sen_Work_A_Pos_01",
+      "original": "【X203】A(左側)ワーク位置1",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 03"
+    },
+    {
+      "io": "X204",
+      "short": "Aワーク位置2",
+      "variable": "In_Sen_Work_A_Pos_02",
+      "original": "【X204】A(左側)ワーク位置2",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 04"
+    },
+    {
+      "io": "X205",
+      "short": "Aワーク位置3",
+      "variable": "In_Sen_Work_A_Pos_03",
+      "original": "【X205】A(左側)ワーク位置3",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 05"
+    },
+    {
+      "io": "X206",
+      "short": "Aワーク位置4",
+      "variable": "In_Sen_Work_A_Pos_04",
+      "original": "【X206】A(左側)ワーク位置4",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 06"
+    },
+    {
+      "io": "X207",
+      "short": "Aワーク位置5",
+      "variable": "In_Sen_Work_A_Pos_05",
+      "original": "【X207】A(左側)ワーク位置5",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 07"
+    },
+    {
+      "io": "X208",
+      "short": "Aワーク位置6",
+      "variable": "In_Sen_Work_A_Pos_06",
+      "original": "【X208】A(左側)ワーク位置6",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 08"
+    },
+    {
+      "io": "X209",
+      "short": "Aワーク位置7",
+      "variable": "In_Sen_Work_A_Pos_07",
+      "original": "【X209】A(左側)ワーク位置7",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 09"
+    },
+    {
+      "io": "X210",
+      "short": "NG1トレイ1A満杯",
+      "variable": "In_Sen_NG1_Tray_01_A_Full",
+      "original": "【X210】NG1トレイ1A(左側)満杯",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 10"
+    },
+    {
+      "io": "X211",
+      "short": "NG1トレイ1A満杯警告",
+      "variable": "In_Sen_NG1_Tray_01_A_Full_Warn",
+      "original": "【X211】NG1トレイ1A(左側)満杯警告",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 11"
+    },
+    {
+      "io": "X212",
+      "short": "NG1トレイ2A満杯停止",
+      "variable": "In_Sen_NG1_Tray_02_A_Full",
+      "original": "【X212】NG1トレイ2A(左側)満杯停止",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 12"
+    },
+    {
+      "io": "X213",
+      "short": "NG1トレイ2A満杯警告",
+      "variable": "In_Sen_NG1_Tray_02_A_Full_Warn",
+      "original": "【X213】NG1トレイ2A(左側)満杯警告",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 13"
+    },
+    {
+      "io": "X214",
+      "short": "ストックフォルダAIN",
+      "variable": "In_Sen_SH_A_Ent",
+      "original": "【X214】ストックフォルダA(左側)IN",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 14"
+    },
+    {
+      "io": "X215",
+      "short": "ストックフォルダAOut",
+      "variable": "In_Sen_SH_A_Ext",
+      "original": "【X215】ストックフォルダA(左側)Out",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 15"
+    },
+    {
+      "io": "X216",
+      "short": "ストックA機種判別IN",
+      "variable": "In_Sen_SH_A_Type_Ent",
+      "original": "【X216】ストックA(左側)機種判別IN",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 16"
+    },
+    {
+      "io": "X217",
+      "short": "ストックA機種判別OUT",
+      "variable": "In_Sen_SH_A_Type_Ext",
+      "original": "【X217】ストックA(左側)機種判別OUT",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 17"
+    },
+    {
+      "io": "X218",
+      "short": "供給Aスライド戻",
+      "variable": "In_SenCY_Sply_Slide_A_H",
+      "original": "【X218】供給A(左側)スライド戻",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 18"
+    },
+    {
+      "io": "X219",
+      "short": "供給Aスライド行",
+      "variable": "In_SenCY_Sply_Slide_A_F",
+      "original": "【X219】供給A(左側)スライド行",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 19"
+    },
+    {
+      "io": "X220",
+      "short": "供給Aピック戻",
+      "variable": "In_SenCY_Sply_Pick_A_H",
+      "original": "【X220】供給A(左側)ピックアップ戻",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 20"
+    },
+    {
+      "io": "X221",
+      "short": "供給Aピック行",
+      "variable": "In_SenCY_Sply_Pick_A_F",
+      "original": "【X221】供給A(左側)ピックアップ行",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 21"
+    },
+    {
+      "io": "X222",
+      "short": "供給Aチャック戻",
+      "variable": "In_SenCY_Sply_Chk_A_H",
+      "original": "【X222】供給A(左側)チャック戻",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 22"
+    },
+    {
+      "io": "X223",
+      "short": "供給Aチャック行",
+      "variable": "In_SenCY_Sply_Chk_A_F",
+      "original": "【X223】供給A(左側)チャック行",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 23"
+    },
+    {
+      "io": "X224",
+      "short": "高さ検査A押え戻",
+      "variable": "In_SenCY_HgtInsp_Clp_A_H",
+      "original": "【X224】高さ検査A(左側)押え戻",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 24"
+    },
+    {
+      "io": "X225",
+      "short": "高さ検査A押え行",
+      "variable": "In_SenCY_HgtInsp_Clp_A_F",
+      "original": "【X225】高さ検査A(左側)押え行",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 25"
+    },
+    {
+      "io": "X226",
+      "short": "高さ検査A持上戻",
+      "variable": "In_SenCY_HgtInsp_Lf_A_H",
+      "original": "【X226】高さ検査A(左側)持上戻",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 26"
+    },
+    {
+      "io": "X227",
+      "short": "高さ検査A持上行",
+      "variable": "In_SenCY_HgtInsp_Lf_A_F",
+      "original": "【X227】高さ検査A(左側)持上行",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 27"
+    },
+    {
+      "io": "X228",
+      "short": "NG1Aピック戻",
+      "variable": "In_SenCY_NG1_Pick_A_H",
+      "original": "【X228】NG1A(左側)ピックアップ戻",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 28"
+    },
+    {
+      "io": "X229",
+      "short": "NG1Aピック行",
+      "variable": "In_SenCY_NG1_Pick_A_F",
+      "original": "【X229】NG1A(左側)ピックアップ行",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 29"
+    },
+    {
+      "io": "X230",
+      "short": "NG1Aチャック戻",
+      "variable": "In_SenCY_NG1_Chk_A_H",
+      "original": "【X230】NG1A(左側)チャック戻",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 30"
+    },
+    {
+      "io": "X231",
+      "short": "NG1Aチャック行",
+      "variable": "In_SenCY_NG1_Chk_A_F",
+      "original": "【X231】NG1A(左側)チャック行",
+      "assignment": "IOBus://unit#2/Input Bit 32 bits/Input Bit 31"
+    },
+    {
+      "io": "X300",
+      "short": "AST4 反転1チャック戻",
+      "variable": "In_SenCY_Rev_01_Chk_A_H",
+      "original": "【X300】A(左側)ST4 反転1チャック戻",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 00"
+    },
+    {
+      "io": "X301",
+      "short": "AST4 反転1チャック行",
+      "variable": "In_SenCY_Rev_01_Chk_A_F",
+      "original": "【X301】A(左側)ST4 反転1チャック行",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 01"
+    },
+    {
+      "io": "X302",
+      "short": "AST4 反転1ピック戻",
+      "variable": "In_SenCY_Rev_01_Pick_A_H",
+      "original": "【X302】A(左側)ST4 反転1ピックアップ戻",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 02"
+    },
+    {
+      "io": "X303",
+      "short": "AST4 反転1ピック行",
+      "variable": "In_SenCY_Rev_01_Pick_A_F",
+      "original": "【X303】A(左側)ST4 反転1ピックアップ行",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 03"
+    },
+    {
+      "io": "X304",
+      "short": "AST6 反転2チャック戻",
+      "variable": "In_SenCY_Rev_02_Chk_A_H",
+      "original": "【X304】A(左側)ST6 反転2チャック戻",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 04"
+    },
+    {
+      "io": "X305",
+      "short": "AST6 反転2チャック行",
+      "variable": "In_SenCY_Rev_02_Chk_A_F",
+      "original": "【X305】A(左側)ST6 反転2チャック行",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 05"
+    },
+    {
+      "io": "X306",
+      "short": "AST6 反転2ピック戻",
+      "variable": "In_SenCY_Rev_02_Pick_A_H",
+      "original": "【X306】A(左側)ST6 反転2ピックアップ戻",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 06"
+    },
+    {
+      "io": "X307",
+      "short": "AST6 反転2ピック行",
+      "variable": "In_SenCY_Rev_02_Pick_A_F",
+      "original": "【X307】A(左側)ST6 反転2ピックアップ行",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 07"
+    },
+    {
+      "io": "X308",
+      "short": "排出Aチャック戻",
+      "variable": "In_SenCY_Disc_Chk_A_H",
+      "original": "【X308】排出A(左側)チャック戻",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 08"
+    },
+    {
+      "io": "X309",
+      "short": "排出Aチャック行",
+      "variable": "In_SenCY_Disc_Chk_A_F",
+      "original": "【X309】排出A(左側)チャック行",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 09"
+    },
+    {
+      "io": "X310",
+      "short": "排出Aフォルダ送り戻",
+      "variable": "In_SenCY_Ejc_SH_Feed_A_H",
+      "original": "【X310】排出A(左側)フォルダ送り戻",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 10"
+    },
+    {
+      "io": "X311",
+      "short": "排出Aフォルダ送り行",
+      "variable": "In_SenCY_Ejc_SH_Feed_A_F",
+      "original": "【X311】排出A(左側)フォルダ送り行",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 11"
+    },
+    {
+      "io": "X312",
+      "short": "位置1Aストッパ戻",
+      "variable": "In_SenCY_Pos_01_Stopper_A_H",
+      "original": "【X312】位置1A(左側)ストッパー戻",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 12"
+    },
+    {
+      "io": "X313",
+      "short": "位置1ストッパ行",
+      "variable": "In_SenCY_Pos_01_Stopper_A_F",
+      "original": "【X313】位置1ストッパー行",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 13"
+    },
+    {
+      "io": "X314",
+      "short": "位置2Aストッパ戻",
+      "variable": "In_SenCY_Pos_02_Stopper_A_H",
+      "original": "【X314】位置2A(左側)ストッパー戻",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 14"
+    },
+    {
+      "io": "X315",
+      "short": "位置2Aストッパ行",
+      "variable": "In_SenCY_Pos_02_Stopper_A_F",
+      "original": "【X315】位置2A(左側)ストッパー行",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 15"
+    },
+    {
+      "io": "X316",
+      "short": "位置3Aストッパ戻",
+      "variable": "In_SenCY_Pos_03_Stopper_A_H",
+      "original": "【X316】位置3A(左側)ストッパー戻",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 16"
+    },
+    {
+      "io": "X317",
+      "short": "位置3Aストッパ行",
+      "variable": "In_SenCY_Pos_03_Stopper_A_F",
+      "original": "【X317】位置3A(左側)ストッパー行",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 17"
+    },
+    {
+      "io": "X318",
+      "short": "位置4Aストッパ戻",
+      "variable": "In_SenCY_Pos_04_Stopper_A_H",
+      "original": "【X318】位置4A(左側)ストッパー戻",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 18"
+    },
+    {
+      "io": "X319",
+      "short": "位置4Aストッパ行",
+      "variable": "In_SenCY_Pos_04_Stopper_A_F",
+      "original": "【X319】位置4A(左側)ストッパー行",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 19"
+    },
+    {
+      "io": "X320",
+      "short": "位置5Aストッパ戻",
+      "variable": "In_SenCY_Pos_05_Stopper_A_H",
+      "original": "【X320】位置5A(左側)ストッパー戻",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 20"
+    },
+    {
+      "io": "X321",
+      "short": "位置5Aストッパ行",
+      "variable": "In_SenCY_Pos_05_Stopper_A_F",
+      "original": "【X321】位置5A(左側)ストッパー行",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 21"
+    },
+    {
+      "io": "X322",
+      "short": "位置6Aストッパ戻",
+      "variable": "In_SenCY_Pos_06_Stopper_A_H",
+      "original": "【X322】位置6A(左側)ストッパー戻",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 22"
+    },
+    {
+      "io": "X323",
+      "short": "位置6Aストッパ行",
+      "variable": "In_SenCY_Pos_06_Stopper_A_F",
+      "original": "【X323】位置6A(左側)ストッパー行",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 23"
+    },
+    {
+      "io": "X324",
+      "short": "ストックAフォルダ回転戻",
+      "variable": "In_SenCY_SH_A_Turn_H",
+      "original": "【X324】ストックA(左側)フォルダターン戻",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 24"
+    },
+    {
+      "io": "X325",
+      "short": "ストックAフォルダ回転行",
+      "variable": "In_SenCY_SH_A_Turn_F",
+      "original": "【X325】ストックA(左側)フォルダターン行",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 25"
+    },
+    {
+      "io": "X330",
+      "short": "NG1A仕分け 戻",
+      "variable": "In_SenCY_NG1_Srt_A_H",
+      "original": "【X330】NG1A(左側)仕分け 戻",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 30"
+    },
+    {
+      "io": "X331",
+      "short": "NG1A仕分け 行",
+      "variable": "In_SenCY_NG1_Srt_A_F",
+      "original": "【X331】NG1A(左側)仕分け 行",
+      "assignment": "IOBus://unit#3/Input Bit 32 bits/Input Bit 31"
+    },
+    {
+      "io": "X400",
+      "short": "アキュームBCV満",
+      "variable": "In_Sen_Accum_CV_B_Full",
+      "original": "【X400】アキュームB(右側)CV満",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 00"
+    },
+    {
+      "io": "X401",
+      "short": "アキュームBCV着",
+      "variable": "In_Sen_Accum_CV_B_Arrival",
+      "original": "【X401】アキュームB(右側)CV着",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 01"
+    },
+    {
+      "io": "X402",
+      "short": "Bワーク位置0",
+      "variable": "In_Sen_Work_B_Pos_00",
+      "original": "【X402】B(右側)ワーク位置0",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 02"
+    },
+    {
+      "io": "X403",
+      "short": "Bワーク位置1",
+      "variable": "In_Sen_Work_B_Pos_01",
+      "original": "【X403】B(右側)ワーク位置1",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 03"
+    },
+    {
+      "io": "X404",
+      "short": "Bワーク位置2",
+      "variable": "In_Sen_Work_B_Pos_02",
+      "original": "【X404】B(右側)ワーク位置2",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 04"
+    },
+    {
+      "io": "X405",
+      "short": "Bワーク位置3",
+      "variable": "In_Sen_Work_B_Pos_03",
+      "original": "【X405】B(右側)ワーク位置3",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 05"
+    },
+    {
+      "io": "X406",
+      "short": "Bワーク位置4",
+      "variable": "In_Sen_Work_B_Pos_04",
+      "original": "【X406】B(右側)ワーク位置4",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 06"
+    },
+    {
+      "io": "X407",
+      "short": "Bワーク位置5",
+      "variable": "In_Sen_Work_B_Pos_05",
+      "original": "【X407】B(右側)ワーク位置5",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 07"
+    },
+    {
+      "io": "X408",
+      "short": "Bワーク位置6",
+      "variable": "In_Sen_Work_B_Pos_06",
+      "original": "【X408】B(右側)ワーク位置6",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 08"
+    },
+    {
+      "io": "X409",
+      "short": "Bワーク位置7",
+      "variable": "In_Sen_Work_B_Pos_07",
+      "original": "【X409】B(右側)ワーク位置7",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 09"
+    },
+    {
+      "io": "X410",
+      "short": "NG1トレイ1B満杯",
+      "variable": "In_Sen_NG1_Tray_01_B_Full",
+      "original": "【X410】NG1トレイ1B(右側)満杯",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 10"
+    },
+    {
+      "io": "X411",
+      "short": "NG1トレイ1B満杯警告",
+      "variable": "In_Sen_NG1_Tray_01_B_Full_Warn",
+      "original": "【X411】NG1トレイ1B(右側)満杯警告",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 11"
+    },
+    {
+      "io": "X412",
+      "short": "NG1トレイ2B満杯停止",
+      "variable": "In_Sen_NG1_Tray_02_B_Full",
+      "original": "【X412】NG1トレイ2B(右側)満杯停止",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 12"
+    },
+    {
+      "io": "X413",
+      "short": "NG1トレイ2B満杯警告",
+      "variable": "In_Sen_NG1_Tray_02_B_Full_Warn",
+      "original": "【X413】NG1トレイ2B(右側)満杯警告",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 13"
+    },
+    {
+      "io": "X414",
+      "short": "ストックフォルダBIN",
+      "variable": "In_Sen_SH_B_Ent",
+      "original": "【X414】ストックフォルダB(右側)IN",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 14"
+    },
+    {
+      "io": "X415",
+      "short": "ストックフォルダBOut",
+      "variable": "In_Sen_SH_B_Ext",
+      "original": "【X415】ストックフォルダB(右側)Out",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 15"
+    },
+    {
+      "io": "X416",
+      "short": "ストックB機種判別IN",
+      "variable": "In_Sen_SH_B_Type_Ent",
+      "original": "【X416】ストックB(右側)機種判別IN",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 16"
+    },
+    {
+      "io": "X417",
+      "short": "ストックB機種判別OUT",
+      "variable": "In_Sen_SH_B_Type_Ext",
+      "original": "【X417】ストックB(右側)機種判別OUT",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 17"
+    },
+    {
+      "io": "X418",
+      "short": "供給Bスライド戻",
+      "variable": "In_SenCY_Sply_Slide_B_H",
+      "original": "【X418】供給B(右側)スライド戻",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 18"
+    },
+    {
+      "io": "X419",
+      "short": "供給Bスライド行",
+      "variable": "In_SenCY_Sply_Slide_B_F",
+      "original": "【X419】供給B(右側)スライド行",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 19"
+    },
+    {
+      "io": "X420",
+      "short": "供給Bピック戻",
+      "variable": "In_SenCY_Sply_Pick_B_H",
+      "original": "【X420】供給B(右側)ピックアップ戻",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 20"
+    },
+    {
+      "io": "X421",
+      "short": "供給Bピック行",
+      "variable": "In_SenCY_Sply_Pick_B_F",
+      "original": "【X421】供給B(右側)ピックアップ行",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 21"
+    },
+    {
+      "io": "X422",
+      "short": "供給Bチャック閉 戻",
+      "variable": "In_SenCY_Sply_Chk_B_H",
+      "original": "【X422】供給B(右側)チャック閉 戻",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 22"
+    },
+    {
+      "io": "X423",
+      "short": "供給Bチャック開 行",
+      "variable": "In_SenCY_Sply_Chk_B_F",
+      "original": "【X423】供給B(右側)チャック開 行",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 23"
+    },
+    {
+      "io": "X424",
+      "short": "高さ検査B押え戻",
+      "variable": "In_SenCY_HgtInsp_Clp_B_H",
+      "original": "【X424】高さ検査B(右側)押え戻",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 24"
+    },
+    {
+      "io": "X425",
+      "short": "高さ検査B押え行",
+      "variable": "In_SenCY_HgtInsp_Clp_B_F",
+      "original": "【X425】高さ検査B(右側)押え行",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 25"
+    },
+    {
+      "io": "X426",
+      "short": "高さ検査B持上戻",
+      "variable": "In_SenCY_HgtInsp_Lf_B_H",
+      "original": "【X426】高さ検査B(右側)持上戻",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 26"
+    },
+    {
+      "io": "X427",
+      "short": "高さ検査B持上行",
+      "variable": "In_SenCY_HgtInsp_Lf_B_F",
+      "original": "【X427】高さ検査B(右側)持上行",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 27"
+    },
+    {
+      "io": "X428",
+      "short": "NG1Bピック戻",
+      "variable": "In_SenCY_NG1_Pick_B_H",
+      "original": "【X428】NG1B(右側)ピックアップ戻",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 28"
+    },
+    {
+      "io": "X429",
+      "short": "NG1Bピック行",
+      "variable": "In_SenCY_NG1_Pick_B_F",
+      "original": "【X429】NG1B(右側)ピックアップ行",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 29"
+    },
+    {
+      "io": "X430",
+      "short": "NG1Bチャック閉 戻",
+      "variable": "In_SenCY_NG1_Chk_B_H",
+      "original": "【X430】NG1B(右側)チャック閉 戻",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 30"
+    },
+    {
+      "io": "X431",
+      "short": "NG1Bチャック開 行",
+      "variable": "In_SenCY_NG1_Chk_B_F",
+      "original": "【X431】NG1B(右側)チャック開 行",
+      "assignment": "IOBus://unit#4/Input Bit 32 bits/Input Bit 31"
+    },
+    {
+      "io": "X500",
+      "short": "BST4 反転1チャック閉 戻",
+      "variable": "In_SenCY_Rev_01_Chk_B_H",
+      "original": "【X500】B(右側)ST4 反転1チャック閉 戻",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 00"
+    },
+    {
+      "io": "X501",
+      "short": "BST4 反転1チャック開 行",
+      "variable": "In_SenCY_Rev_01_Chk_B_F",
+      "original": "【X501】B(右側)ST4 反転1チャック開 行",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 01"
+    },
+    {
+      "io": "X502",
+      "short": "BST4 反転1ピック戻",
+      "variable": "In_SenCY_Rev_01_Pick_B_H",
+      "original": "【X502】B(右側)ST4 反転1ピックアップ戻",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 02"
+    },
+    {
+      "io": "X503",
+      "short": "BST4 反転1ピック行",
+      "variable": "In_SenCY_Rev_01_Pick_B_F",
+      "original": "【X503】B(右側)ST4 反転1ピックアップ行",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 03"
+    },
+    {
+      "io": "X504",
+      "short": "BST6 反転2チャック閉 戻",
+      "variable": "In_SenCY_Rev_02_Chk_B_H",
+      "original": "【X504】B(右側)ST6 反転2チャック閉 戻",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 04"
+    },
+    {
+      "io": "X505",
+      "short": "BST6 反転2チャック開 行",
+      "variable": "In_SenCY_Rev_02_Chk_B_F",
+      "original": "【X505】B(右側)ST6 反転2チャック開 行",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 05"
+    },
+    {
+      "io": "X506",
+      "short": "BST6 反転2ピック戻",
+      "variable": "In_SenCY_Rev_02_Pick_B_H",
+      "original": "【X506】B(右側)ST6 反転2ピックアップ戻",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 06"
+    },
+    {
+      "io": "X507",
+      "short": "BST6 反転2ピック行",
+      "variable": "In_SenCY_Rev_02_Pick_B_F",
+      "original": "【X507】B(右側)ST6 反転2ピックアップ行",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 07"
+    },
+    {
+      "io": "X508",
+      "short": "排出Bチャック閉 戻",
+      "variable": "In_SenCY_Disc_Chk_B_H",
+      "original": "【X508】排出B(右側)チャック閉 戻",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 08"
+    },
+    {
+      "io": "X509",
+      "short": "排出Bチャック開 行",
+      "variable": "In_SenCY_Disc_Chk_B_F",
+      "original": "【X509】排出B(右側)チャック開 行",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 09"
+    },
+    {
+      "io": "X510",
+      "short": "排出Bフォルダ送り戻",
+      "variable": "In_SenCY_Ejc_SH_Feed_B_F",
+      "original": "【X510】排出B(右側)フォルダ送り戻",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 10"
+    },
+    {
+      "io": "X511",
+      "short": "排出Bフォルダ送り行",
+      "variable": "In_SenCY_Ejc_SH_Feed_B_H",
+      "original": "【X511】排出B(右側)フォルダ送り行",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 11"
+    },
+    {
+      "io": "X512",
+      "short": "位置1Bストッパ戻",
+      "variable": "In_SenCY_Pos_01_Stopper_B_H",
+      "original": "【X512】位置1B(右側)ストッパー戻",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 12"
+    },
+    {
+      "io": "X513",
+      "short": "位置1Bストッパ行",
+      "variable": "In_SenCY_Pos_01_Stopper_B_F",
+      "original": "【X513】位置1B(右側)ストッパー行",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 13"
+    },
+    {
+      "io": "X514",
+      "short": "位置2Bストッパ戻",
+      "variable": "In_SenCY_Pos_02_Stopper_B_H",
+      "original": "【X514】位置2B(右側)ストッパー戻",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 14"
+    },
+    {
+      "io": "X515",
+      "short": "位置2Bストッパ行",
+      "variable": "In_SenCY_Pos_02_Stopper_B_F",
+      "original": "【X515】位置2B(右側)ストッパー行",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 15"
+    },
+    {
+      "io": "X516",
+      "short": "位置3Bストッパ戻",
+      "variable": "In_SenCY_Pos_03_Stopper_B_H",
+      "original": "【X516】位置3B(右側)ストッパー戻",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 16"
+    },
+    {
+      "io": "X517",
+      "short": "位置3Bストッパ行",
+      "variable": "In_SenCY_Pos_03_Stopper_B_F",
+      "original": "【X517】位置3B(右側)ストッパー行",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 17"
+    },
+    {
+      "io": "X518",
+      "short": "位置4Bストッパ戻",
+      "variable": "In_SenCY_Pos_04_Stopper_B_H",
+      "original": "【X518】位置4B(右側)ストッパー戻",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 18"
+    },
+    {
+      "io": "X519",
+      "short": "位置4Bストッパ行",
+      "variable": "In_SenCY_Pos_04_Stopper_B_F",
+      "original": "【X519】位置4B(右側)ストッパー行",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 19"
+    },
+    {
+      "io": "X520",
+      "short": "位置5Bストッパ戻",
+      "variable": "In_SenCY_Pos_05_Stopper_B_H",
+      "original": "【X520】位置5B(右側)ストッパー戻",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 20"
+    },
+    {
+      "io": "X521",
+      "short": "位置5Bストッパ行",
+      "variable": "In_SenCY_Pos_05_Stopper_B_F",
+      "original": "【X521】位置5B(右側)ストッパー行",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 21"
+    },
+    {
+      "io": "X522",
+      "short": "位置6Bストッパ戻",
+      "variable": "In_SenCY_Pos_06_Stopper_B_H",
+      "original": "【X522】位置6B(右側)ストッパー戻",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 22"
+    },
+    {
+      "io": "X523",
+      "short": "位置6Bストッパ行",
+      "variable": "In_SenCY_Pos_06_Stopper_B_F",
+      "original": "【X523】位置6B(右側)ストッパー行",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 23"
+    },
+    {
+      "io": "X524",
+      "short": "ストックBフォルダ回転戻",
+      "variable": "In_SenCY_SH_B_Turn_H",
+      "original": "【X524】ストックB(右側)フォルダターン戻",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 24"
+    },
+    {
+      "io": "X525",
+      "short": "ストックBフォルダ回転行",
+      "variable": "In_SenCY_SH_B_Turn_F",
+      "original": "【X525】ストックB(右側)フォルダターン行",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 25"
+    },
+    {
+      "io": "X530",
+      "short": "NG1 B仕分け 戻",
+      "variable": "In_SenCY_NG1_Srt_B_H",
+      "original": "【X530】NG1 B(右側)仕分け 戻",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 30"
+    },
+    {
+      "io": "X531",
+      "short": "NG1 B仕分け 行",
+      "variable": "In_SenCY_NG1_Srt_B_F",
+      "original": "【X531】NG1 B(右側)仕分け 行",
+      "assignment": "IOBus://unit#5/Input Bit 32 bits/Input Bit 31"
+    },
+    {
+      "io": "X1000",
+      "short": "供給部コンテナ有",
+      "variable": "In_Sen_Supply_Container_Exist",
+      "original": "【X1000】供給部コンテナ有",
+      "assignment": "ECAT://node#6/Read input 1st word/In Bit00"
+    },
+    {
+      "io": "X1001",
+      "short": "段バラシ1段目有",
+      "variable": "In_Sen_Destacker_Stage_01_Exist",
+      "original": "【X1001】段バラシ1段目有",
+      "assignment": "ECAT://node#6/Read input 1st word/In Bit01"
+    },
+    {
+      "io": "X1002",
+      "short": "段バラシ2段目有",
+      "variable": "In_Sen_Destacker_Stage_02_Exist",
+      "original": "【X1002】段バラシ2段目有",
+      "assignment": "ECAT://node#6/Read input 1st word/In Bit02"
+    },
+    {
+      "io": "X1003",
+      "short": "コンテナ到着",
+      "variable": "In_Sen_Container_Arrival",
+      "original": "【X1003】コンテナ到着",
+      "assignment": "ECAT://node#6/Read input 1st word/In Bit03"
+    },
+    {
+      "io": "X1004",
+      "short": "コンテナ方向確認",
+      "variable": "In_Sen_Container_Direction_Check",
+      "original": "【X1004】コンテナ方向確認",
+      "assignment": "ECAT://node#6/Read input 1st word/In Bit04"
+    },
+    {
+      "io": "X1005",
+      "short": "コンテナ通過",
+      "variable": "In_Sen_Container_Pass",
+      "original": "【X1005】コンテナ通過",
+      "assignment": "ECAT://node#6/Read input 1st word/In Bit05"
+    },
+    {
+      "io": "X1006",
+      "short": "コンテナ満杯",
+      "variable": "In_Sen_Container_Full",
+      "original": "【X1006】コンテナ満杯",
+      "assignment": "ECAT://node#6/Read input 1st word/In Bit06"
+    },
+    {
+      "io": "X1007",
+      "short": "コンテナトレイ方向",
+      "variable": "In_Sen_Tray_Direction_Check",
+      "original": "【X1007】コンテナトレイ方向",
+      "assignment": "ECAT://node#6/Read input 1st word/In Bit07"
+    },
+    {
+      "io": "X1010",
+      "short": "空コンテナ送り 戻",
+      "variable": "In_SenCY_Empty_Container_CY_H",
+      "original": "【X1010】空コンテナ送り 戻",
+      "assignment": "ECAT://node#6/Read input 1st word/In Bit10"
+    },
+    {
+      "io": "X1011",
+      "short": "空コンテナ送り 行",
+      "variable": "In_SenCY_Empty_Container_CY_F",
+      "original": "【X1011】空コンテナ送り 行",
+      "assignment": "ECAT://node#6/Read input 1st word/In Bit11"
+    },
+    {
+      "io": "X1012",
+      "short": "段バラシ爪1 戻",
+      "variable": "In_SenCY_Sep_Claw1_H",
+      "original": "【X1012】段バラシ爪1 戻",
+      "assignment": "ECAT://node#6/Read input 1st word/In Bit12"
+    },
+    {
+      "io": "X1013",
+      "short": "段バラシ爪1 行",
+      "variable": "In_SenCY_Sep_Claw1_F",
+      "original": "【X1013】段バラシ爪1 行",
+      "assignment": "ECAT://node#6/Read input 1st word/In Bit13"
+    },
+    {
+      "io": "X1014",
+      "short": "段バラシ爪2 戻",
+      "variable": "In_SenCY_Sep_Claw2_H",
+      "original": "【X1014】段バラシ爪2 戻",
+      "assignment": "ECAT://node#6/Read input 1st word/In Bit14"
+    },
+    {
+      "io": "X1015",
+      "short": "段バラシ爪2 行",
+      "variable": "In_SenCY_Sep_Claw2_F",
+      "original": "【X1015】段バラシ爪2 行",
+      "assignment": "ECAT://node#6/Read input 1st word/In Bit15"
+    },
+    {
+      "io": "X1016",
+      "short": "コンテナ排出1 戻",
+      "variable": "In_SenCY_Ejc_Cont1_H",
+      "original": "【X1016】コンテナ排出1 戻",
+      "assignment": "ECAT://node#7/Read input 1st word/In Bit00"
+    },
+    {
+      "io": "X1017",
+      "short": "コンテナ排出1 行",
+      "variable": "In_SenCY_Ejc_Cont1_F",
+      "original": "【X1017】コンテナ排出1 行",
+      "assignment": "ECAT://node#7/Read input 1st word/In Bit01"
+    },
+    {
+      "io": "X1018",
+      "short": "コンテナ排出2 戻",
+      "variable": "In_SenCY_Ejc_Cont2_H",
+      "original": "【X1018】コンテナ排出2 戻",
+      "assignment": "ECAT://node#7/Read input 1st word/In Bit02"
+    },
+    {
+      "io": "X1019",
+      "short": "コンテナ排出2 行",
+      "variable": "In_SenCY_Ejc_Cont2_F",
+      "original": "【X1019】コンテナ排出2 行",
+      "assignment": "ECAT://node#7/Read input 1st word/In Bit03"
+    },
+    {
+      "io": "X1020",
+      "short": "箱入れチャック 戻",
+      "variable": "In_SenCY_Box_Chk_H",
+      "original": "【X1020】箱入れチャック 戻",
+      "assignment": "ECAT://node#7/Read input 1st word/In Bit04"
+    },
+    {
+      "io": "X1021",
+      "short": "箱入れチャック 行",
+      "variable": "In_SenCY_Box_Chk_F",
+      "original": "【X1021】箱入れチャック 行",
+      "assignment": "ECAT://node#7/Read input 1st word/In Bit05"
+    },
+    {
+      "io": "X1022",
+      "short": "コンテナ仕分けストッパ 戻",
+      "variable": "In_SenCY_Srt_Stopper_H",
+      "original": "【X1022】コンテナ仕分けストッパー 戻",
+      "assignment": "ECAT://node#7/Read input 1st word/In Bit06"
+    },
+    {
+      "io": "X1023",
+      "short": "コンテナ仕分けストッパ 行",
+      "variable": "In_SenCY_Srt_Stopper_F",
+      "original": "【X1023】コンテナ仕分けストッパー 行",
+      "assignment": "ECAT://node#7/Read input 1st word/In Bit07"
+    },
+    {
+      "io": "X1024",
+      "short": "コンテナ仕分け送り 戻",
+      "variable": "In_SenCY_Srt_Feed_H",
+      "original": "【X1024】コンテナ仕分け送り 戻",
+      "assignment": "ECAT://node#7/Read input 1st word/In Bit08"
+    },
+    {
+      "io": "X1025",
+      "short": "コンテナ仕分け送り 行",
+      "variable": "In_SenCY_Srt_Feed_F",
+      "original": "【X1025】コンテナ仕分け送り 行",
+      "assignment": "ECAT://node#7/Read input 1st word/In Bit09"
+    },
+    {
+      "io": "X1100",
+      "short": "取出しCV A通過",
+      "variable": "In_Sen_Unl_Conv_A_Pass",
+      "original": "【X1100】取出しコンベア A(左側)通過",
+      "assignment": "ECAT://node#9/Read input 1st word/In Bit00"
+    },
+    {
+      "io": "X1101",
+      "short": "取出しCV B通過",
+      "variable": "In_Sen_Unl_Conv_B_Pass",
+      "original": "【X1101】取出しコンベア B(右側)通過",
+      "assignment": "ECAT://node#9/Read input 1st word/In Bit01"
+    },
+    {
+      "io": "X1102",
+      "short": "搬送CVA到着",
+      "variable": "In_Sen_Trs_Conv_A_Arrival",
+      "original": "【X1102】搬送コンベアA(左側)到着",
+      "assignment": "ECAT://node#9/Read input 1st word/In Bit02"
+    },
+    {
+      "io": "X1103",
+      "short": "搬送CVB到着",
+      "variable": "In_Sen_Trs_Conv_B_Arrival",
+      "original": "【X1103】搬送コンベアB(右側)到着",
+      "assignment": "ECAT://node#9/Read input 1st word/In Bit03"
+    },
+    {
+      "io": "X1104",
+      "short": "CV受渡A送り戻",
+      "variable": "In_SenCY_Hnd_Feed_A_H",
+      "original": "【X1104】コンベア受渡A(左側)送り戻",
+      "assignment": "ECAT://node#9/Read input 1st word/In Bit04"
+    },
+    {
+      "io": "X1105",
+      "short": "CV受渡A送り行",
+      "variable": "In_SenCY_Hnd_Feed_A_F",
+      "original": "【X1105】コンベア受渡A(左側)送り行",
+      "assignment": "ECAT://node#9/Read input 1st word/In Bit05"
+    },
+    {
+      "io": "X1106",
+      "short": "CV受渡B送り戻",
+      "variable": "In_SenCY_Hnd_Feed_B_H",
+      "original": "【X1106】コンベア受渡B(右側)送り戻",
+      "assignment": "ECAT://node#9/Read input 1st word/In Bit06"
+    },
+    {
+      "io": "X1107",
+      "short": "CV受渡B送り行",
+      "variable": "In_SenCY_Hnd_Feed_B_F",
+      "original": "【X1107】コンベア受渡B(右側)送り行",
+      "assignment": "ECAT://node#9/Read input 1st word/In Bit07"
+    },
+    {
+      "io": "Y600",
+      "short": "SWスタートランプ緑",
+      "variable": "Out_SW_Start_LP_GREEN",
+      "original": "【Y600】SWスタートランプ緑",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 00"
+    },
+    {
+      "io": "Y601",
+      "short": "SWストップランプ赤",
+      "variable": "Out_SW_Stop_LP_RED",
+      "original": "【Y601】SWストップランプ赤",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 01"
+    },
+    {
+      "io": "Y602",
+      "short": "SW リセットランプ橙",
+      "variable": "Out_SW_Reset_LP_Orange",
+      "original": "【Y602】SW リセットランプ橙",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 02"
+    },
+    {
+      "io": "Y603",
+      "short": "タワー緑",
+      "variable": "Out_Sg_LP_GREEN",
+      "original": "【Y603】シグナルタワー緑",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 03"
+    },
+    {
+      "io": "Y604",
+      "short": "タワー赤",
+      "variable": "Out_Sg_LP_RED",
+      "original": "【Y604】シグナルタワー赤",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 04"
+    },
+    {
+      "io": "Y605",
+      "short": "タワー橙",
+      "variable": "Out_Sg_LP_ORANGE",
+      "original": "【Y605】シグナルタワー橙",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 05"
+    },
+    {
+      "io": "Y606",
+      "short": "タワーブザー",
+      "variable": "Out_Sg_BUZZER",
+      "original": "【Y606】シグナルタワーブザー",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 06"
+    },
+    {
+      "io": "Y607",
+      "short": "アキューム CV運転ON",
+      "variable": "Out_Acc_Conv_Run",
+      "original": "【Y607】アキューム コンベア運転ON",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 07"
+    },
+    {
+      "io": "Y608",
+      "short": "アキューム CV リセット",
+      "variable": "Out_Accum_Cv_RESET",
+      "original": "【Y608】アキューム コンベア リセット",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 08"
+    },
+    {
+      "io": "Y609",
+      "short": "アキューム CV電源ON",
+      "variable": "Out_Accum_Cv_PowerOn",
+      "original": "【Y609】アキューム コンベア電源ON",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 09"
+    },
+    {
+      "io": "Y610",
+      "short": "検査ACV運転ON",
+      "variable": "Out_Insp_Cv_A_Run",
+      "original": "【Y610】検査A(左側)コンベア運転ON",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 10"
+    },
+    {
+      "io": "Y611",
+      "short": "検査ACV リセット",
+      "variable": "Out_Insp_Cv_A_RESET",
+      "original": "【Y611】検査A(左側)コンベア リセット",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 11"
+    },
+    {
+      "io": "Y612",
+      "short": "検査ACV 電源ON",
+      "variable": "Out_Insp_Cv_A_PowerOn",
+      "original": "【Y612】検査A(左側)コンベア 電源ON",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 12"
+    },
+    {
+      "io": "Y613",
+      "short": "検査BCV運転ON",
+      "variable": "Out_Insp_Cv_B_Run",
+      "original": "【Y613】検査B(右側)コンベア運転ON",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 13"
+    },
+    {
+      "io": "Y614",
+      "short": "検査BCV リセット",
+      "variable": "Out_Insp_Cv_B_RESET",
+      "original": "【Y614】検査B(右側)コンベア リセット",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 14"
+    },
+    {
+      "io": "Y615",
+      "short": "検査BCV 電源ON",
+      "variable": "Out_Insp_Cv_B_PowerOn",
+      "original": "【Y615】検査B(右側)コンベア 電源ON",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 15"
+    },
+    {
+      "io": "Y616",
+      "short": "供給Aスライド戻",
+      "variable": "Out_CYw_Sply_Slide_A_H",
+      "original": "【Y616】供給A(左側)スライド戻",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 16"
+    },
+    {
+      "io": "Y617",
+      "short": "供給Aスライド行",
+      "variable": "Out_CYw_Sply_Slide_A_F",
+      "original": "【Y617】供給A(左側)スライド行",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 17"
+    },
+    {
+      "io": "Y618",
+      "short": "供給Aピック戻",
+      "variable": "Out_CYw_Sply_Pick_A_H",
+      "original": "【Y618】供給A(左側)ピックアップ戻",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 18"
+    },
+    {
+      "io": "Y619",
+      "short": "供給Aピック行",
+      "variable": "Out_CYw_Sply_Pick_A_F",
+      "original": "【Y619】供給A(左側)ピックアップ行",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 19"
+    },
+    {
+      "io": "Y620",
+      "short": "供給Aチャック閉 戻",
+      "variable": "Out_CYw_Sup_Chuck_A_Cl_H",
+      "original": "【Y620】供給A(左側)チャック閉 戻",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 20"
+    },
+    {
+      "io": "Y621",
+      "short": "供給Aチャック開 行",
+      "variable": "Out_CYw_Sup_Chuck_A_Op_F",
+      "original": "【Y621】供給A(左側)チャック開 行",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 21"
+    },
+    {
+      "io": "Y622",
+      "short": "供給Bスライド戻",
+      "variable": "Out_CYw_Sply_Slide_B_H",
+      "original": "【Y622】供給B(右側)スライド戻",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 22"
+    },
+    {
+      "io": "Y623",
+      "short": "供給Bスライド行",
+      "variable": "Out_CYw_Sply_Slide_B_F",
+      "original": "【Y623】供給B(右側)スライド行",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 23"
+    },
+    {
+      "io": "Y624",
+      "short": "供給Bピック戻",
+      "variable": "Out_CYw_Sply_Pick_B_H",
+      "original": "【Y624】供給B(右側)ピックアップ戻",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 24"
+    },
+    {
+      "io": "Y625",
+      "short": "供給Bピック行",
+      "variable": "Out_CYw_Sply_Pick_B_F",
+      "original": "【Y625】供給B(右側)ピックアップ行",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 25"
+    },
+    {
+      "io": "Y626",
+      "short": "供給Bチャック閉 戻",
+      "variable": "Out_CYw_Sup_Chuck_B_Cl_H",
+      "original": "【Y626】供給B(右側)チャック閉 戻",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 26"
+    },
+    {
+      "io": "Y627",
+      "short": "供給Bチャック開 行",
+      "variable": "Out_CYw_Sup_Chuck_B_Op_F",
+      "original": "【Y627】供給B(右側)チャック開 行",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 27"
+    },
+    {
+      "io": "Y628",
+      "short": "プレス上死点停止",
+      "variable": "Out_TDC_Stop",
+      "original": "【Y628】プレス上死点停止",
+      "assignment": "IOBus://unit#6/Output Bit 32 bits/Output Bit 28"
+    },
+    {
+      "io": "Y700",
+      "short": "高さ検査A押え戻",
+      "variable": "Out_CYw_HgtInsp_Clp_A_H",
+      "original": "【Y700】高さ検査A(左側)押え戻",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 00"
+    },
+    {
+      "io": "Y701",
+      "short": "高さ検査A押え行",
+      "variable": "Out_CYw_HgtInsp_Clp_A_F",
+      "original": "【Y701】高さ検査A(左側)押え行",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 01"
+    },
+    {
+      "io": "Y702",
+      "short": "高さ検査A持上戻",
+      "variable": "Out_CYw_HgtInsp_Lf_A_H",
+      "original": "【Y702】高さ検査A(左側)持上戻",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 02"
+    },
+    {
+      "io": "Y703",
+      "short": "高さ検査A持上行",
+      "variable": "Out_CYw_HgtInsp_Lf_A_F",
+      "original": "【Y703】高さ検査A(左側)持上行",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 03"
+    },
+    {
+      "io": "Y704",
+      "short": "NG1Aピック戻",
+      "variable": "Out_CYw_NG1_Pick_A_H",
+      "original": "【Y704】NG1A(左側)ピックアップ戻",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 04"
+    },
+    {
+      "io": "Y705",
+      "short": "NG1Aピック 行",
+      "variable": "Out_CYw_NG1_Pick_A_F",
+      "original": "【Y705】NG1A(左側)ピックアップ 行",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 05"
+    },
+    {
+      "io": "Y706",
+      "short": "NG1Aチャック戻",
+      "variable": "Out_CYw_NG1_Chk_A_H",
+      "original": "【Y706】NG1A(左側)チャック戻",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 06"
+    },
+    {
+      "io": "Y707",
+      "short": "NG1Aチャック行",
+      "variable": "Out_CYw_NG1_Chk_A_F",
+      "original": "【Y707】NG1A(左側)チャック行",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 07"
+    },
+    {
+      "io": "Y708",
+      "short": "AST4 反転1チャック閉",
+      "variable": "Out_CYw_Rev_01_Chk_A_H",
+      "original": "【Y708】A(左側)ST4 反転1チャック閉",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 08"
+    },
+    {
+      "io": "Y709",
+      "short": "AST4 反転1チャック開",
+      "variable": "Out_CYw_Rev_01_Chk_A_F",
+      "original": "【Y709】A(左側)ST4 反転1チャック開",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 09"
+    },
+    {
+      "io": "Y710",
+      "short": "AST4 反転1ピック戻",
+      "variable": "Out_CYw_Rev_01_Pick_A_H",
+      "original": "【Y710】A(左側)ST4 反転1ピックアップ戻",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 10"
+    },
+    {
+      "io": "Y711",
+      "short": "AST4 反転1ピック行",
+      "variable": "Out_CYw_Rev_01_Pick_A_F",
+      "original": "【Y711】A(左側)ST4 反転1ピックアップ行",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 11"
+    },
+    {
+      "io": "Y712",
+      "short": "AST6 反転2チャック閉 戻",
+      "variable": "Out_CYw_Rev_02_Chk_A_H",
+      "original": "【Y712】A(左側)ST6 反転2チャック閉 戻",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 12"
+    },
+    {
+      "io": "Y713",
+      "short": "AST6 反転2チャック開 行",
+      "variable": "Out_CYw_Rev_02_Chk_A_F",
+      "original": "【Y713】A(左側)ST6 反転2チャック開 行",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 13"
+    },
+    {
+      "io": "Y714",
+      "short": "AST6 反転2ピック戻",
+      "variable": "Out_CYw_Rev_02_Pick_A_H",
+      "original": "【Y714】A(左側)ST6 反転2ピックアップ戻",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 14"
+    },
+    {
+      "io": "Y715",
+      "short": "AST6 反転2ピック行",
+      "variable": "Out_CYw_Rev_02_Pick_A_F",
+      "original": "【Y715】A(左側)ST6 反転2ピックアップ行",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 15"
+    },
+    {
+      "io": "Y716",
+      "short": "排出Aチャック閉 戻",
+      "variable": "Out_CYw_Disc_Chk_A_H",
+      "original": "【Y716】排出A(左側)チャック閉 戻",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 16"
+    },
+    {
+      "io": "Y717",
+      "short": "排出Aチャック開 行",
+      "variable": "Out_CYw_Disc_Chk_A_F",
+      "original": "【Y717】排出A(左側)チャック開 行",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 17"
+    },
+    {
+      "io": "Y718",
+      "short": "排出Aフォルダ送り戻",
+      "variable": "Out_CYw_Ejc_Hldr_Feed_A_H",
+      "original": "【Y718】排出A(左側)フォルダ送り戻",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 18"
+    },
+    {
+      "io": "Y719",
+      "short": "排出Aフォルダ送り行",
+      "variable": "Out_CYw_Ejc_Hldr_Feed_A_F",
+      "original": "【Y719】排出A(左側)フォルダ送り行",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 19"
+    },
+    {
+      "io": "Y720",
+      "short": "位置1Aストッパ",
+      "variable": "Out_CYS_Pos_01_Stopper_A",
+      "original": "【Y720】位置1A(左側)ストッパー ",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 20"
+    },
+    {
+      "io": "Y721",
+      "short": "位置2Aストッパ",
+      "variable": "Out_CYS_Pos_02_Stopper_A",
+      "original": "【Y721】位置2A(左側)ストッパー",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 21"
+    },
+    {
+      "io": "Y722",
+      "short": "位置3Aストッパ",
+      "variable": "Out_CYS_Pos_03_Stopper_A",
+      "original": "【Y722】位置3A(左側)ストッパー",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 22"
+    },
+    {
+      "io": "Y723",
+      "short": "位置4Aストッパ",
+      "variable": "Out_CYS_Pos_04_Stopper_A",
+      "original": "【Y723】位置4A(左側)ストッパー",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 23"
+    },
+    {
+      "io": "Y724",
+      "short": "位置5Aストッパ",
+      "variable": "Out_CYS_Pos_05_Stopper_A",
+      "original": "【Y724】位置5A(左側)ストッパー",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 24"
+    },
+    {
+      "io": "Y725",
+      "short": "位置6Aストッパ",
+      "variable": "Out_CYS_Pos_06_Stopper_A",
+      "original": "【Y725】位置6A(左側)ストッパー",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 25"
+    },
+    {
+      "io": "Y726",
+      "short": "ストックAフォルダ回転戻",
+      "variable": "Out_CYw_SH_A_Turn_H",
+      "original": "【Y726】ストックA(左側)フォルダターン戻",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 26"
+    },
+    {
+      "io": "Y727",
+      "short": "ストックAフォルダ回転行",
+      "variable": "Out_CYw_SH_A_Turn_F",
+      "original": "【Y727】ストックA(左側)フォルダターン行",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 27"
+    },
+    {
+      "io": "Y728",
+      "short": "NG1A仕分け 戻",
+      "variable": "Out_CYw_NG1_Srt_A_H",
+      "original": "【Y728】NG1A(左側)仕分け 戻",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 28"
+    },
+    {
+      "io": "Y729",
+      "short": "NG1A仕分け 行",
+      "variable": "Out_CYw_NG1_Srt_A_F",
+      "original": "【Y729】NG1A(左側)仕分け 行",
+      "assignment": "IOBus://unit#7/Output Bit 32 bits/Output Bit 29"
+    },
+    {
+      "io": "Y800",
+      "short": "高さ検査B押え戻",
+      "variable": "Out_CYw_HgtInsp_Clp_B_H",
+      "original": "【Y800】高さ検査B(右側)押え戻",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 00"
+    },
+    {
+      "io": "Y801",
+      "short": "高さ検査B押え行",
+      "variable": "Out_CYw_HgtInsp_Clp_B_F",
+      "original": "【Y801】高さ検査B(右側)押え行",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 01"
+    },
+    {
+      "io": "Y802",
+      "short": "高さ検査B持上戻",
+      "variable": "Out_CYw_HgtInsp_Lf_B_H",
+      "original": "【Y802】高さ検査B(右側)持上戻",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 02"
+    },
+    {
+      "io": "Y803",
+      "short": "高さ検査B持上行",
+      "variable": "Out_CYw_HgtInsp_Lf_B_F",
+      "original": "【Y803】高さ検査B(右側)持上行",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 03"
+    },
+    {
+      "io": "Y804",
+      "short": "NG1Bピック戻",
+      "variable": "Out_CYw_NG1_Pick_B_H",
+      "original": "【Y804】NG1B(右側)ピックアップ戻",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 04"
+    },
+    {
+      "io": "Y805",
+      "short": "NG1Bピック行",
+      "variable": "Out_CYw_NG1_Pick_B_F",
+      "original": "【Y805】NG1B(右側)ピックアップ行",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 05"
+    },
+    {
+      "io": "Y806",
+      "short": "NG1Bチャック戻",
+      "variable": "Out_CYw_NG1_Chk_B_H",
+      "original": "【Y806】NG1B(右側)チャック戻",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 06"
+    },
+    {
+      "io": "Y807",
+      "short": "NG1Bチャック行",
+      "variable": "Out_CYw_NG1_Chk_B_F",
+      "original": "【Y807】NG1B(右側)チャック行",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 07"
+    },
+    {
+      "io": "Y808",
+      "short": "BST4 反転1チャック閉 戻",
+      "variable": "Out_CYw_Rev_01_Chk_B_H",
+      "original": "【Y808】B(右側)ST4 反転1チャック閉 戻",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 08"
+    },
+    {
+      "io": "Y809",
+      "short": "BST4 反転1チャック開 戻",
+      "variable": "Out_CYw_Rev_01_Chk_B_F",
+      "original": "【Y809】B(右側)ST4 反転1チャック開 戻",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 09"
+    },
+    {
+      "io": "Y810",
+      "short": "BST4 反転1ピック戻",
+      "variable": "Out_CYw_Rev_01_Pick_B_H",
+      "original": "【Y810】B(右側)ST4 反転1ピックアップ戻",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 10"
+    },
+    {
+      "io": "Y811",
+      "short": "BST4 反転1ピック行",
+      "variable": "Out_CYw_Rev_01_Pick_B_F",
+      "original": "【Y811】B(右側)ST4 反転1ピックアップ行",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 11"
+    },
+    {
+      "io": "Y812",
+      "short": "BST6 反転2チャック閉 戻",
+      "variable": "Out_CYw_Rev_02_Chk_B_H",
+      "original": "【Y812】B(右側)ST6 反転2チャック閉 戻",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 12"
+    },
+    {
+      "io": "Y813",
+      "short": "BST6 反転2チャック開 行",
+      "variable": "Out_CYw_Rev_02_Chk_B_F",
+      "original": "【Y813】B(右側)ST6 反転2チャック開 行",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 13"
+    },
+    {
+      "io": "Y814",
+      "short": "BST6 反転2ピック戻",
+      "variable": "Out_CYw_Rev_02_Pick_B_H",
+      "original": "【Y814】B(右側)ST6 反転2ピックアップ戻",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 14"
+    },
+    {
+      "io": "Y815",
+      "short": "BST6 反転2ピック行",
+      "variable": "Out_CYw_Rev_02_Pick_B_F",
+      "original": "【Y815】B(右側)ST6 反転2ピックアップ行",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 15"
+    },
+    {
+      "io": "Y816",
+      "short": "排出Bチャック閉 戻",
+      "variable": "Out_CYw_Disc_Chk_B_H",
+      "original": "【Y816】排出B(右側)チャック閉 戻",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 16"
+    },
+    {
+      "io": "Y817",
+      "short": "排出Bチャック開 行",
+      "variable": "Out_CYw_Disc_Chk_B_F",
+      "original": "【Y817】排出B(右側)チャック開 行",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 17"
+    },
+    {
+      "io": "Y818",
+      "short": "排出Bフォルダ送り戻",
+      "variable": "Out_CYw_Ejc_Hldr_Feed_B_H",
+      "original": "【Y818】排出B(右側)フォルダ送り戻",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 18"
+    },
+    {
+      "io": "Y819",
+      "short": "排出Bフォルダ送り行",
+      "variable": "Out_CYw_Ejc_Hldr_Feed_B_F",
+      "original": "【Y819】排出B(右側)フォルダ送り行",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 19"
+    },
+    {
+      "io": "Y820",
+      "short": "位置1Bストッパ",
+      "variable": "Out_CYS_Pos_01_Stopper_B",
+      "original": "【Y820】位置1B(右側)ストッパー",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 20"
+    },
+    {
+      "io": "Y821",
+      "short": "位置2Bストッパ",
+      "variable": "Out_CYS_Pos_02_Stopper_B",
+      "original": "【Y821】位置2B(右側)ストッパー",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 21"
+    },
+    {
+      "io": "Y822",
+      "short": "位置3Bストッパ",
+      "variable": "Out_CYS_Pos_03_Stopper_B",
+      "original": "【Y822】位置3B(右側)ストッパー",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 22"
+    },
+    {
+      "io": "Y823",
+      "short": "位置4Bストッパ",
+      "variable": "Out_CYS_Pos_04_Stopper_B",
+      "original": "【Y823】位置4B(右側)ストッパー",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 23"
+    },
+    {
+      "io": "Y824",
+      "short": "位置5Bストッパ",
+      "variable": "Out_CYS_Pos_05_Stopper_B",
+      "original": "【Y824】位置5B(右側)ストッパー",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 24"
+    },
+    {
+      "io": "Y825",
+      "short": "位置6Bストッパ",
+      "variable": "Out_CYS_Pos_06_Stopper_B",
+      "original": "【Y825】位置6B(右側)ストッパー",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 25"
+    },
+    {
+      "io": "Y826",
+      "short": "ストックBフォルダ回転戻",
+      "variable": "Out_CYw_SH_B_Turn_H",
+      "original": "【Y826】ストックB(右側)フォルダターン戻",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 26"
+    },
+    {
+      "io": "Y827",
+      "short": "ストックBフォルダ回転行",
+      "variable": "Out_CYw_SH_B_Turn_F",
+      "original": "【Y827】ストックB(右側)フォルダターン行",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 27"
+    },
+    {
+      "io": "Y828",
+      "short": "NG1B仕分け 戻",
+      "variable": "Out_CYw_NG1_Srt_B_H",
+      "original": "【Y828】NG1B(右側)仕分け 戻",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 28"
+    },
+    {
+      "io": "Y829",
+      "short": "NG1B仕分け 行",
+      "variable": "Out_CYw_NG1_Srt_B_F",
+      "original": "【Y829】NG1B(右側)仕分け 行",
+      "assignment": "IOBus://unit#8/Output Bit 32 bits/Output Bit 29"
+    },
+    {
+      "io": "Y1200",
+      "short": "空コンテナ送り 戻",
+      "variable": "Out_CYw_Empty_Container_CY_H",
+      "original": "【Y1200】空コンテナ送り 戻",
+      "assignment": "ECAT://node#8/Write output 1st word/Out Bit00"
+    },
+    {
+      "io": "Y1201",
+      "short": "空コンテナ送り 行",
+      "variable": "Out_CYw_Empty_Container_CY_F",
+      "original": "【Y1201】空コンテナ送り 行",
+      "assignment": "ECAT://node#8/Write output 1st word/Out Bit01"
+    },
+    {
+      "io": "Y1202",
+      "short": "段バラシ爪 戻",
+      "variable": "Out_CYw_Sep_Claw_H",
+      "original": "【Y1202】段バラシ爪 戻",
+      "assignment": "ECAT://node#8/Write output 1st word/Out Bit02"
+    },
+    {
+      "io": "Y1203",
+      "short": "段バラシ爪 行",
+      "variable": "Out_CYw_Sep_Claw_F",
+      "original": "【Y1203】段バラシ爪 行",
+      "assignment": "ECAT://node#8/Write output 1st word/Out Bit03"
+    },
+    {
+      "io": "Y1204",
+      "short": "コンテナ排出 戻",
+      "variable": "Out_CYw_Ejc_Cont_H",
+      "original": "【Y1204】コンテナ排出 戻",
+      "assignment": "ECAT://node#8/Write output 1st word/Out Bit04"
+    },
+    {
+      "io": "Y1205",
+      "short": "コンテナ排出 行",
+      "variable": "Out_CYw_Ejc_Cont_F",
+      "original": "【Y1205】コンテナ排出 行",
+      "assignment": "ECAT://node#8/Write output 1st word/Out Bit05"
+    },
+    {
+      "io": "Y1206",
+      "short": "箱入れチャック 戻",
+      "variable": "Out_CYw_Box_Chuck_H",
+      "original": "【Y1206】箱入れチャック 戻",
+      "assignment": "ECAT://node#8/Write output 1st word/Out Bit06"
+    },
+    {
+      "io": "Y1207",
+      "short": "箱入れチャック 行",
+      "variable": "Out_CYw_Box_Chuck_F",
+      "original": "【Y1207】箱入れチャック 行",
+      "assignment": "ECAT://node#8/Write output 1st word/Out Bit07"
+    },
+    {
+      "io": "Y1208",
+      "short": "コンテナ仕分けストッパ 戻",
+      "variable": "Out_CYw_Srt_Stopper_H",
+      "original": "【Y1208】コンテナ仕分けストッパー 戻",
+      "assignment": "ECAT://node#8/Write output 1st word/Out Bit08"
+    },
+    {
+      "io": "Y1209",
+      "short": "コンテナ仕分けストッパ 行",
+      "variable": "Out_CYw_Srt_Stopper_F",
+      "original": "【Y1209】コンテナ仕分けストッパー 行",
+      "assignment": "ECAT://node#8/Write output 1st word/Out Bit09"
+    },
+    {
+      "io": "Y1210",
+      "short": "コンテナ仕分け送り 戻",
+      "variable": "Out_CYw_Srt_Feed_H",
+      "original": "【Y1210】コンテナ仕分け送り 戻",
+      "assignment": "ECAT://node#8/Write output 1st word/Out Bit10"
+    },
+    {
+      "io": "Y1211",
+      "short": "コンテナ仕分け送り 行",
+      "variable": "Out_CYw_Srt_Feed_F",
+      "original": "【Y1211】コンテナ仕分け送り 行",
+      "assignment": "ECAT://node#8/Write output 1st word/Out Bit11"
+    },
+    {
+      "io": "Y1300",
+      "short": "CV受渡A送り戻",
+      "variable": "Out_CYw_Hnd_Feed_A_H",
+      "original": "【Y1300】コンベア受渡A(左側)送り戻",
+      "assignment": "ECAT://node#10/Write output 1st word/Out Bit00"
+    },
+    {
+      "io": "Y1301",
+      "short": "CV受渡A送り行",
+      "variable": "Out_CYw_Hnd_Feed_A_F",
+      "original": "【Y1301】コンベア受渡A(左側)送り行",
+      "assignment": "ECAT://node#10/Write output 1st word/Out Bit01"
+    },
+    {
+      "io": "Y1302",
+      "short": "CV受渡B送り戻",
+      "variable": "Out_CYw_Hnd_Feed_B_H",
+      "original": "【Y1302】コンベア受渡B(右側)送り戻",
+      "assignment": "ECAT://node#10/Write output 1st word/Out Bit02"
+    },
+    {
+      "io": "Y1303",
+      "short": "CV受渡B送り行",
+      "variable": "Out_CYw_Hnd_Feed_B_F",
+      "original": "【Y1303】コンベア受渡B(右側)送り行",
+      "assignment": "ECAT://node#10/Write output 1st word/Out Bit03"
+    }
+  ]
+}

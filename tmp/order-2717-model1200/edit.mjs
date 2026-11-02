@@ -1,0 +1,11 @@
+import fs from 'node:fs/promises';
+import {FileBlob,SpreadsheetFile} from '@oai/artifact-tool';
+const d=import.meta.dirname;
+const m=JSON.parse(await fs.readFile(`${d}/manifest.json`,'utf8'));
+const w=await SpreadsheetFile.importXlsx(await FileBlob.load(`${d}/before.xlsx`));
+w.worksheets.getItem('集計表').getRange('C4').values=[[m.new]];
+w.recalculate();
+console.log((await w.inspect({kind:'table',range:'集計表!C3:C4',include:'values,formulas',tableMaxRows:2,tableMaxCols:1})).ndjson);
+const png=await w.render({sheetName:'巻線',range:'B8:H11',scale:2,format:'png'});
+await fs.writeFile(`${d}/preview.png`,new Uint8Array(await png.arrayBuffer()));
+await(await SpreadsheetFile.exportXlsx(w)).save(`${d}/candidate.xlsx`);

@@ -1,0 +1,198 @@
+{
+    "source":  "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261026C.smc2",
+    "destination":  "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261026D.smc2",
+    "staged":  "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\fh-error-split-20261026\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261026D.smc2",
+    "source_sha256":  "79d4d646b4dc16af4b42b91dbf5f1068143e13d70547c53a24a4bbb8c0cbca8c",
+    "output_sha256":  "5c9aff2fc52d5dbce52ec2de7845d30460a8ca8b7c50d435064a1030e7393c7d",
+    "entries":  198,
+    "changed_entries":  [
+                            "b00abb28-2171-4e54-8147-3c0d186145c8/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml",
+                            "b00abb28-2171-4e54-8147-3c0d186145c8/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml",
+                            "b00abb28-2171-4e54-8147-3c0d186145c8/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml",
+                            "b00abb28-2171-4e54-8147-3c0d186145c8/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+                            "b00abb28-2171-4e54-8147-3c0d186145c8/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+                            "b00abb28-2171-4e54-8147-3c0d186145c8/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+                            "b00abb28-2171-4e54-8147-3c0d186145c8/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+                            "b00abb28-2171-4e54-8147-3c0d186145c8/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+                        ],
+    "stations":  [
+                     [
+                         3,
+                         "A(左側) ST1",
+                         0
+                     ],
+                     [
+                         9,
+                         "A(左側) ST5",
+                         1
+                     ],
+                     [
+                         10,
+                         "B(右側) ST1",
+                         2
+                     ],
+                     [
+                         11,
+                         "B(右側) ST5",
+                         3
+                     ]
+                 ],
+    "declaration_comments_updated":  [
+                                         [
+                                             "b00abb28-2171-4e54-8147-3c0d186145c8/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+                                             "Pause"
+                                         ],
+                                         [
+                                             "b00abb28-2171-4e54-8147-3c0d186145c8/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+                                             "Error_M"
+                                         ],
+                                         [
+                                             "b00abb28-2171-4e54-8147-3c0d186145c8/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+                                             "ST1_A_Ca1_M"
+                                         ],
+                                         [
+                                             "b00abb28-2171-4e54-8147-3c0d186145c8/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+                                             "Pause"
+                                         ],
+                                         [
+                                             "b00abb28-2171-4e54-8147-3c0d186145c8/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+                                             "Pause"
+                                         ],
+                                         [
+                                             "b00abb28-2171-4e54-8147-3c0d186145c8/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+                                             "Error_M"
+                                         ],
+                                         [
+                                             "b00abb28-2171-4e54-8147-3c0d186145c8/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+                                             "Error_TON"
+                                         ],
+                                         [
+                                             "b00abb28-2171-4e54-8147-3c0d186145c8/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+                                             "Pause"
+                                         ],
+                                         [
+                                             "b00abb28-2171-4e54-8147-3c0d186145c8/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+                                             "Error_M"
+                                         ],
+                                         [
+                                             "b00abb28-2171-4e54-8147-3c0d186145c8/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+                                             "ST1_A_Ca1_M"
+                                         ],
+                                         [
+                                             "b00abb28-2171-4e54-8147-3c0d186145c8/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+                                             "Pause"
+                                         ],
+                                         [
+                                             "b00abb28-2171-4e54-8147-3c0d186145c8/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+                                             "Error_M"
+                                         ],
+                                         [
+                                             "b00abb28-2171-4e54-8147-3c0d186145c8/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+                                             "ST1_A_Ca1_M"
+                                         ]
+                                     ],
+    "pause_reference_changes":  [
+                                    {
+                                        "entry":  "b00abb28-2171-4e54-8147-3c0d186145c8/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml",
+                                        "row":  3,
+                                        "count":  2
+                                    },
+                                    {
+                                        "entry":  "b00abb28-2171-4e54-8147-3c0d186145c8/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml",
+                                        "row":  4,
+                                        "count":  2
+                                    },
+                                    {
+                                        "entry":  "b00abb28-2171-4e54-8147-3c0d186145c8/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml",
+                                        "row":  8,
+                                        "count":  2
+                                    },
+                                    {
+                                        "entry":  "b00abb28-2171-4e54-8147-3c0d186145c8/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml",
+                                        "row":  9,
+                                        "count":  1
+                                    },
+                                    {
+                                        "entry":  "b00abb28-2171-4e54-8147-3c0d186145c8/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml",
+                                        "row":  10,
+                                        "count":  1
+                                    },
+                                    {
+                                        "entry":  "b00abb28-2171-4e54-8147-3c0d186145c8/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml",
+                                        "row":  11,
+                                        "count":  1
+                                    },
+                                    {
+                                        "entry":  "b00abb28-2171-4e54-8147-3c0d186145c8/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml",
+                                        "row":  12,
+                                        "count":  1
+                                    },
+                                    {
+                                        "entry":  "b00abb28-2171-4e54-8147-3c0d186145c8/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml",
+                                        "row":  13,
+                                        "count":  1
+                                    },
+                                    {
+                                        "entry":  "b00abb28-2171-4e54-8147-3c0d186145c8/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml",
+                                        "row":  14,
+                                        "count":  1
+                                    },
+                                    {
+                                        "entry":  "b00abb28-2171-4e54-8147-3c0d186145c8/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml",
+                                        "row":  15,
+                                        "count":  1
+                                    }
+                                ],
+    "boolean_station_input_cases":  32768,
+    "boolean_restart_cases":  288,
+    "ladder_counts":  {
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/02fa0618-20f0-422f-b44d-3aba0838a381.xml":  16,
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/056f39b5-2372-4d32-b892-634336899ec4.xml":  1,
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/08c19951-3bae-402d-a637-be66c221f71b.xml":  6,
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml":  316,
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/13f086b3-1a09-467f-8cff-eea83144ff00.xml":  3,
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml":  18,
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml":  2,
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml":  1,
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/49a83d1d-d863-4a09-a86a-4797edc14a57.xml":  1,
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml":  17,
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml":  4,
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml":  152,
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/5ede16be-2114-46c3-84df-a79badb6e32e.xml":  1,
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml":  22,
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/7b1666c7-ee97-4210-81b2-fed5a6172074.xml":  46,
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml":  9,
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/98de6707-f996-4f77-aad9-b0569299efb5.xml":  8,
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml":  6,
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml":  29,
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml":  13,
+                          "b00abb28-2171-4e54-8147-3c0d186145c8/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml":  16
+                      },
+    "native_validation":  {
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/02fa0618-20f0-422f-b44d-3aba0838a381.xml":  "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/056f39b5-2372-4d32-b892-634336899ec4.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/08c19951-3bae-402d-a637-be66c221f71b.xml":  "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml":  "TOTAL=316 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/13f086b3-1a09-467f-8cff-eea83144ff00.xml":  "TOTAL=3 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml":  "TOTAL=18 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml":  "TOTAL=2 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/49a83d1d-d863-4a09-a86a-4797edc14a57.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml":  "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml":  "TOTAL=4 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml":  "TOTAL=152 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/5ede16be-2114-46c3-84df-a79badb6e32e.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml":  "TOTAL=22 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/7b1666c7-ee97-4210-81b2-fed5a6172074.xml":  "TOTAL=46 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml":  "TOTAL=9 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/98de6707-f996-4f77-aad9-b0569299efb5.xml":  "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml":  "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml":  "TOTAL=29 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml":  "TOTAL=13 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "b00abb28-2171-4e54-8147-3c0d186145c8/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml":  "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0"
+                          },
+    "output_section_unchanged":  true,
+    "physical_io_and_settings_unchanged":  true,
+    "app_build_verified":  false,
+    "machine_transfer_performed":  false
+}

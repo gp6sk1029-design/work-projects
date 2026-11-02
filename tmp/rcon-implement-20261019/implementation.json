@@ -1,0 +1,793 @@
+{
+  "原本": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261019A.smc2",
+  "保存先": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261019B.smc2",
+  "候補": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\rcon-implement-20261019\\検証用_v4_20261019B.smc2",
+  "原本SHA256": "14349687ae012fa0d33bb8b51ee35493edef96a751e96f018a485eb59dfe9f43",
+  "出力SHA256": "9e848e5295dd4498b65f33f177e0af475ec764c3f609e59fe8d73404071bb94d",
+  "原本不変": true,
+  "セクション": "OtherDevice_外部機器 / RCON_IAI",
+  "インラインST追加数": 6,
+  "元の回路保持": true,
+  "グローバル追加": 56,
+  "既存グローバル数": 1917,
+  "更新後グローバル数": 1973,
+  "ローカル作業変数追加": 12,
+  "ローカル外部参照追加": 280,
+  "既存の型4種類39メンバー": "完全不変・共用",
+  "既存変数名・データ型・AT・初期値・区分": "全て保持。既存I/O256個のコメントだけ追加",
+  "実I_O宣言照合": 256,
+  "追加保持変数": 0,
+  "出力代入箇所": 90,
+  "未使用出力領域": "Node1 OUT01～07・56～71、Node5 OUT01～07・48～55を書換えない",
+  "変更既存エントリ数": 5,
+  "変更エントリ": [
+    "1b1e94fa-3893-4ce1-8e74-dc8e6e24bc60/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+    "1b1e94fa-3893-4ce1-8e74-dc8e6e24bc60/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+    "1b1e94fa-3893-4ce1-8e74-dc8e6e24bc60/7b1666c7-ee97-4210-81b2-fed5a6172074.xml",
+    "1b1e94fa-3893-4ce1-8e74-dc8e6e24bc60/1b1e94fa-3893-4ce1-8e74-dc8e6e24bc60.oem",
+    "1b1e94fa-3893-4ce1-8e74-dc8e6e24bc60/1b1e94fa-3893-4ce1-8e74-dc8e6e24bc60.manifest"
+  ],
+  "追加エントリ数": 6,
+  "既存不変エントリ数": 174,
+  "EtherCAT構成・HMI・他セクション・タスク": "バイト単位不変",
+  "初期書込許可": "非保持BOOLの既定FALSE。コードでTRUEを設定しない",
+  "起動シーケンス・通信正常生成・機械安全停止": "今回未実装。変換処理とは別工程",
+  "Sysmac全体再ビルド": "未実施・必須。既存コンパイル済みデータを引き継いでいる",
+  "実機接続・転送": "未実施",
+  "blocks": [
+    {
+      "unit": 1,
+      "axes": 6,
+      "words": 72,
+      "step": 1,
+      "title": "RCON1－1 IN読取りと現在値の復元",
+      "file": "RCON1_01_IN読取りと現在値の復元.st",
+      "entityId": "6480c56f-a6b0-498a-aa2f-1a6ff419b356",
+      "trackingId": "ea1c9d89-4b83-4af9-8fae-174e5f5bf08f"
+    },
+    {
+      "unit": 1,
+      "axes": 6,
+      "words": 72,
+      "step": 2,
+      "title": "RCON1－2 OUT数値変換と制御bit組立",
+      "file": "RCON1_02_OUT数値変換と制御bit組立.st",
+      "entityId": "4091467c-4e7d-43eb-8d49-ce6332690e8d",
+      "trackingId": "ca3fc88d-425e-4f46-aefd-91a91eba86ee"
+    },
+    {
+      "unit": 1,
+      "axes": 6,
+      "words": 72,
+      "step": 3,
+      "title": "RCON1－3 許可条件付きの実I/O書込み",
+      "file": "RCON1_03_許可条件付きの実I_O書込み.st",
+      "entityId": "4d8b7395-9af0-47ba-83f6-b07bd1a5a8b4",
+      "trackingId": "5ef53eef-0f62-4f97-a2eb-14d2cf4c5315"
+    },
+    {
+      "unit": 2,
+      "axes": 5,
+      "words": 56,
+      "step": 1,
+      "title": "RCON2－1 IN読取りと現在値の復元",
+      "file": "RCON2_01_IN読取りと現在値の復元.st",
+      "entityId": "65c8bb4b-e646-4242-9780-3ce0e3295b8c",
+      "trackingId": "82207a16-2e2b-48d4-930c-d2c6542cab6c"
+    },
+    {
+      "unit": 2,
+      "axes": 5,
+      "words": 56,
+      "step": 2,
+      "title": "RCON2－2 OUT数値変換と制御bit組立",
+      "file": "RCON2_02_OUT数値変換と制御bit組立.st",
+      "entityId": "0fe49a6c-9905-4a79-a526-fed19cb69372",
+      "trackingId": "d2113234-9d15-496e-b1b2-a71c3e6dee2d"
+    },
+    {
+      "unit": 2,
+      "axes": 5,
+      "words": 56,
+      "step": 3,
+      "title": "RCON2－3 許可条件付きの実I/O書込み",
+      "file": "RCON2_03_許可条件付きの実I_O書込み.st",
+      "entityId": "a3ed80d3-2977-485d-9f7e-7c7a44c400ec",
+      "trackingId": "cad147a6-525e-48ba-8097-18c37bfce10c"
+    }
+  ],
+  "newGlobals": [
+    {
+      "N": "RCON1_RxRaw",
+      "D": "ARRAY[0..71] OF UINT",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：E001入力を読取った通信値。書換えない。"
+    },
+    {
+      "N": "RCON1_RxWord",
+      "D": "ARRAY[0..71] OF WORD",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：バイト順を正規化した論理入力ワード。"
+    },
+    {
+      "N": "RCON1_TxWord",
+      "D": "ARRAY[0..55] OF WORD",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：内部値から作成した論理出力ワード。"
+    },
+    {
+      "N": "RCON1_TxUInt",
+      "D": "ARRAY[0..55] OF UINT",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：バイト順を適用した送信候補。実I/Oそのものではない。"
+    },
+    {
+      "N": "RCON1_LayoutConfirmed",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：初期FALSE。全6軸直接数値指定・共通8W・軸順・占有を確認して設定。"
+    },
+    {
+      "N": "RCON1_ByteOrderConfirmed",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：初期FALSE。既知の位置とbitでワード順・バイト順を確認して設定。"
+    },
+    {
+      "N": "RCON1_SwapBytes",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：初期FALSEは仮値。1ワード内のバイト交換が必要か実機で確認。"
+    },
+    {
+      "N": "RCON1_CommOK",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：初期FALSE。CPUの実EtherCAT通信状態から別途作成。TRUE固定禁止。"
+    },
+    {
+      "N": "RCON1_GwMON_Request",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：初期FALSE。ゲートウェイMON要求。論理b15。安全停止ではない。"
+    },
+    {
+      "N": "RCON1_GwRTE_Request",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：初期FALSE。ゲートウェイ通信異常ラッチ解除要求。論理b13。"
+    },
+    {
+      "N": "RCON1_GwRun",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：入力：ゲートウェイ正常動作中RUN。"
+    },
+    {
+      "N": "RCON1_GwControllerCommLatch",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：入力：運転中ERR-C保持LERC。"
+    },
+    {
+      "N": "RCON1_GwAxisCommError",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：入力：ゲートウェイと軸の通信異常ERRT。"
+    },
+    {
+      "N": "RCON1_GwManual",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：入力：MANUスイッチ選択MOD。"
+    },
+    {
+      "N": "RCON1_GwHeavyAlarm",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：入力：再起動が必要なゲートウェイ異常ALMH。"
+    },
+    {
+      "N": "RCON1_GwLightAlarm",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：入力：ゲートウェイ軽微異常ALML。"
+    },
+    {
+      "N": "RCON1_GwSystemStop",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：入力：システムSTOP入力による停止状態SEMG。安全回路の代用不可。"
+    },
+    {
+      "N": "RCON1_GwAlarmCode",
+      "D": "UINT",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：入力：ゲートウェイALMCの下位8bit。軸AlarmCodeとは別。"
+    },
+    {
+      "N": "RCON1_AxisLinked",
+      "D": "ARRAY[1..6] OF BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：入力：軸No.0～5のリンク状態。"
+    },
+    {
+      "N": "RCON1_PowerStateRaw",
+      "D": "ARRAY[0..4] OF WORD",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：入力IN02～06の正規化済み生ワード。詳細意味は構成依存。"
+    },
+    {
+      "N": "RCON1_EncodeOK",
+      "D": "ARRAY[1..6] OF BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：通信形式へ数値変換できたか。安全・運転許可ではない。"
+    },
+    {
+      "N": "RCON1_EncodeError",
+      "D": "ARRAY[1..6] OF UINT",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：変換エラー番号。0正常、1単位、2位置、3幅、4速度、5加減速、6押付け、7両方向ジョグ。"
+    },
+    {
+      "N": "RCON1_WriteEnable",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：初期FALSE。実出力への書込みを許可。OFFは出力更新保留であり停止ではない。"
+    },
+    {
+      "N": "RCON1_GwApply",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：初期FALSE。共通MON/RTEワードを書込む。"
+    },
+    {
+      "N": "RCON1_AxisApply",
+      "D": "ARRAY[1..6] OF BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：初期FALSE。指定軸の8ワードを書込む。OFFは停止ではない。"
+    },
+    {
+      "N": "RCON1_MotionPermit",
+      "D": "ARRAY[1..6] OF BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：初期FALSE。機械範囲・安全・運転条件から別途作成する運転許可。単純TRUE固定禁止。"
+    },
+    {
+      "N": "RCON1_GwWritten",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：共通出力へ代入したサイクルのみTRUE。RCON受付の意味ではない。"
+    },
+    {
+      "N": "RCON1_AxisWritten",
+      "D": "ARRAY[1..6] OF BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1：各軸出力へ代入したサイクルのみTRUE。RCON受付・完了ではない。"
+    },
+    {
+      "N": "RCON2_RxRaw",
+      "D": "ARRAY[0..55] OF UINT",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：E005（末尾_1）入力を読取った通信値。書換えない。"
+    },
+    {
+      "N": "RCON2_RxWord",
+      "D": "ARRAY[0..55] OF WORD",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：バイト順を正規化した論理入力ワード。"
+    },
+    {
+      "N": "RCON2_TxWord",
+      "D": "ARRAY[0..47] OF WORD",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：内部値から作成した論理出力ワード。"
+    },
+    {
+      "N": "RCON2_TxUInt",
+      "D": "ARRAY[0..47] OF UINT",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：バイト順を適用した送信候補。実I/Oそのものではない。"
+    },
+    {
+      "N": "RCON2_LayoutConfirmed",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：初期FALSE。全5軸直接数値指定・共通8W・軸順・占有を確認して設定。"
+    },
+    {
+      "N": "RCON2_ByteOrderConfirmed",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：初期FALSE。既知の位置とbitでワード順・バイト順を確認して設定。"
+    },
+    {
+      "N": "RCON2_SwapBytes",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：初期FALSEは仮値。1ワード内のバイト交換が必要か実機で確認。"
+    },
+    {
+      "N": "RCON2_CommOK",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：初期FALSE。CPUの実EtherCAT通信状態から別途作成。TRUE固定禁止。"
+    },
+    {
+      "N": "RCON2_GwMON_Request",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：初期FALSE。ゲートウェイMON要求。論理b15。安全停止ではない。"
+    },
+    {
+      "N": "RCON2_GwRTE_Request",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：初期FALSE。ゲートウェイ通信異常ラッチ解除要求。論理b13。"
+    },
+    {
+      "N": "RCON2_GwRun",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：入力：ゲートウェイ正常動作中RUN。"
+    },
+    {
+      "N": "RCON2_GwControllerCommLatch",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：入力：運転中ERR-C保持LERC。"
+    },
+    {
+      "N": "RCON2_GwAxisCommError",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：入力：ゲートウェイと軸の通信異常ERRT。"
+    },
+    {
+      "N": "RCON2_GwManual",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：入力：MANUスイッチ選択MOD。"
+    },
+    {
+      "N": "RCON2_GwHeavyAlarm",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：入力：再起動が必要なゲートウェイ異常ALMH。"
+    },
+    {
+      "N": "RCON2_GwLightAlarm",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：入力：ゲートウェイ軽微異常ALML。"
+    },
+    {
+      "N": "RCON2_GwSystemStop",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：入力：システムSTOP入力による停止状態SEMG。安全回路の代用不可。"
+    },
+    {
+      "N": "RCON2_GwAlarmCode",
+      "D": "UINT",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：入力：ゲートウェイALMCの下位8bit。軸AlarmCodeとは別。"
+    },
+    {
+      "N": "RCON2_AxisLinked",
+      "D": "ARRAY[1..5] OF BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：入力：軸No.0～4のリンク状態。"
+    },
+    {
+      "N": "RCON2_PowerStateRaw",
+      "D": "ARRAY[0..4] OF WORD",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：入力IN02～06の正規化済み生ワード。詳細意味は構成依存。"
+    },
+    {
+      "N": "RCON2_EncodeOK",
+      "D": "ARRAY[1..5] OF BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：通信形式へ数値変換できたか。安全・運転許可ではない。"
+    },
+    {
+      "N": "RCON2_EncodeError",
+      "D": "ARRAY[1..5] OF UINT",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：変換エラー番号。0正常、1単位、2位置、3幅、4速度、5加減速、6押付け、7両方向ジョグ。"
+    },
+    {
+      "N": "RCON2_WriteEnable",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：初期FALSE。実出力への書込みを許可。OFFは出力更新保留であり停止ではない。"
+    },
+    {
+      "N": "RCON2_GwApply",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：初期FALSE。共通MON/RTEワードを書込む。"
+    },
+    {
+      "N": "RCON2_AxisApply",
+      "D": "ARRAY[1..5] OF BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：初期FALSE。指定軸の8ワードを書込む。OFFは停止ではない。"
+    },
+    {
+      "N": "RCON2_MotionPermit",
+      "D": "ARRAY[1..5] OF BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：初期FALSE。機械範囲・安全・運転条件から別途作成する運転許可。単純TRUE固定禁止。"
+    },
+    {
+      "N": "RCON2_GwWritten",
+      "D": "BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：共通出力へ代入したサイクルのみTRUE。RCON受付の意味ではない。"
+    },
+    {
+      "N": "RCON2_AxisWritten",
+      "D": "ARRAY[1..5] OF BOOL",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON2：各軸出力へ代入したサイクルのみTRUE。RCON受付・完了ではない。"
+    }
+  ],
+  "newLocals": [
+    {
+      "N": "ConvWordIndex",
+      "D": "INT",
+      "G": "VAR",
+      "Com": "ワード処理ループの添字。（2台を順番に処理する作業用。運転指令は入れない）"
+    },
+    {
+      "N": "ConvAxisIndex",
+      "D": "INT",
+      "G": "VAR",
+      "Com": "軸処理ループの添字1～6。（2台を順番に処理する作業用。運転指令は入れない）"
+    },
+    {
+      "N": "ConvBase",
+      "D": "INT",
+      "G": "VAR",
+      "Com": "軸データの先頭添字8/16/24/32/40/48。（2台を順番に処理する作業用。運転指令は入れない）"
+    },
+    {
+      "N": "ConvDWord",
+      "D": "DWORD",
+      "G": "VAR",
+      "Com": "32bitの分割・結合に使うビット列。（2台を順番に処理する作業用。運転指令は入れない）"
+    },
+    {
+      "N": "ConvPos",
+      "D": "DINT",
+      "G": "VAR",
+      "Com": "0.01mm単位の符号付き目標位置。（2台を順番に処理する作業用。運転指令は入れない）"
+    },
+    {
+      "N": "ConvBand",
+      "D": "UDINT",
+      "G": "VAR",
+      "Com": "0.01mm単位の非負位置決め幅（内部推奨型）。（2台を順番に処理する作業用。運転指令は入れない）"
+    },
+    {
+      "N": "ConvSpeed",
+      "D": "UINT",
+      "G": "VAR",
+      "Com": "速度の送信整数。（2台を順番に処理する作業用。運転指令は入れない）"
+    },
+    {
+      "N": "ConvAccDec",
+      "D": "UINT",
+      "G": "VAR",
+      "Com": "加減速度の送信整数。（2台を順番に処理する作業用。運転指令は入れない）"
+    },
+    {
+      "N": "ConvPush",
+      "D": "UINT",
+      "G": "VAR",
+      "Com": "押付け電流制限の送信整数。（2台を順番に処理する作業用。運転指令は入れない）"
+    },
+    {
+      "N": "ConvScaled",
+      "D": "LREAL",
+      "G": "VAR",
+      "Com": "単位換算の作業値。（2台を順番に処理する作業用。運転指令は入れない）"
+    },
+    {
+      "N": "ConvWord",
+      "D": "WORD",
+      "G": "VAR",
+      "Com": "バイト交換の作業ワード。（2台を順番に処理する作業用。運転指令は入れない）"
+    },
+    {
+      "N": "ConvUnitOK",
+      "D": "BOOL",
+      "G": "VAR",
+      "Com": "速度単位が1.0または0.1であること。（2台を順番に処理する作業用。運転指令は入れない）"
+    }
+  ],
+  "externalNames": [
+    "E001_In_IN00_2004_01",
+    "E001_In_IN01_2004_02",
+    "E001_In_IN02_2004_03",
+    "E001_In_IN03_2004_04",
+    "E001_In_IN04_2004_05",
+    "E001_In_IN05_2004_06",
+    "E001_In_IN06_2004_07",
+    "E001_In_IN07_2004_08",
+    "E001_In_IN08_2004_09",
+    "E001_In_IN09_2004_0A",
+    "E001_In_IN10_2004_0B",
+    "E001_In_IN11_2004_0C",
+    "E001_In_IN12_2004_0D",
+    "E001_In_IN13_2004_0E",
+    "E001_In_IN14_2004_0F",
+    "E001_In_IN15_2004_10",
+    "E001_In_IN16_2004_11",
+    "E001_In_IN17_2004_12",
+    "E001_In_IN18_2004_13",
+    "E001_In_IN19_2004_14",
+    "E001_In_IN20_2004_15",
+    "E001_In_IN21_2004_16",
+    "E001_In_IN22_2004_17",
+    "E001_In_IN23_2004_18",
+    "E001_In_IN24_2004_19",
+    "E001_In_IN25_2004_1A",
+    "E001_In_IN26_2004_1B",
+    "E001_In_IN27_2004_1C",
+    "E001_In_IN28_2004_1D",
+    "E001_In_IN29_2004_1E",
+    "E001_In_IN30_2004_1F",
+    "E001_In_IN31_2004_20",
+    "E001_In_IN32_2004_21",
+    "E001_In_IN33_2004_22",
+    "E001_In_IN34_2004_23",
+    "E001_In_IN35_2004_24",
+    "E001_In_IN36_2004_25",
+    "E001_In_IN37_2004_26",
+    "E001_In_IN38_2004_27",
+    "E001_In_IN39_2004_28",
+    "E001_In_IN40_2004_29",
+    "E001_In_IN41_2004_2A",
+    "E001_In_IN42_2004_2B",
+    "E001_In_IN43_2004_2C",
+    "E001_In_IN44_2004_2D",
+    "E001_In_IN45_2004_2E",
+    "E001_In_IN46_2004_2F",
+    "E001_In_IN47_2004_30",
+    "E001_In_IN48_2004_31",
+    "E001_In_IN49_2004_32",
+    "E001_In_IN50_2004_33",
+    "E001_In_IN51_2004_34",
+    "E001_In_IN52_2004_35",
+    "E001_In_IN53_2004_36",
+    "E001_In_IN54_2004_37",
+    "E001_In_IN55_2004_38",
+    "E001_In_IN56_2004_39",
+    "E001_In_IN57_2004_3A",
+    "E001_In_IN58_2004_3B",
+    "E001_In_IN59_2004_3C",
+    "E001_In_IN60_2004_3D",
+    "E001_In_IN61_2004_3E",
+    "E001_In_IN62_2004_3F",
+    "E001_In_IN63_2004_40",
+    "E001_In_IN64_2004_41",
+    "E001_In_IN65_2004_42",
+    "E001_In_IN66_2004_43",
+    "E001_In_IN67_2004_44",
+    "E001_In_IN68_2004_45",
+    "E001_In_IN69_2004_46",
+    "E001_In_IN70_2004_47",
+    "E001_In_IN71_2004_48",
+    "E001_Out_OUT00_2003_01",
+    "E001_Out_OUT08_2003_09",
+    "E001_Out_OUT09_2003_0A",
+    "E001_Out_OUT10_2003_0B",
+    "E001_Out_OUT11_2003_0C",
+    "E001_Out_OUT12_2003_0D",
+    "E001_Out_OUT13_2003_0E",
+    "E001_Out_OUT14_2003_0F",
+    "E001_Out_OUT15_2003_10",
+    "E001_Out_OUT16_2003_11",
+    "E001_Out_OUT17_2003_12",
+    "E001_Out_OUT18_2003_13",
+    "E001_Out_OUT19_2003_14",
+    "E001_Out_OUT20_2003_15",
+    "E001_Out_OUT21_2003_16",
+    "E001_Out_OUT22_2003_17",
+    "E001_Out_OUT23_2003_18",
+    "E001_Out_OUT24_2003_19",
+    "E001_Out_OUT25_2003_1A",
+    "E001_Out_OUT26_2003_1B",
+    "E001_Out_OUT27_2003_1C",
+    "E001_Out_OUT28_2003_1D",
+    "E001_Out_OUT29_2003_1E",
+    "E001_Out_OUT30_2003_1F",
+    "E001_Out_OUT31_2003_20",
+    "E001_Out_OUT32_2003_21",
+    "E001_Out_OUT33_2003_22",
+    "E001_Out_OUT34_2003_23",
+    "E001_Out_OUT35_2003_24",
+    "E001_Out_OUT36_2003_25",
+    "E001_Out_OUT37_2003_26",
+    "E001_Out_OUT38_2003_27",
+    "E001_Out_OUT39_2003_28",
+    "E001_Out_OUT40_2003_29",
+    "E001_Out_OUT41_2003_2A",
+    "E001_Out_OUT42_2003_2B",
+    "E001_Out_OUT43_2003_2C",
+    "E001_Out_OUT44_2003_2D",
+    "E001_Out_OUT45_2003_2E",
+    "E001_Out_OUT46_2003_2F",
+    "E001_Out_OUT47_2003_30",
+    "E001_Out_OUT48_2003_31",
+    "E001_Out_OUT49_2003_32",
+    "E001_Out_OUT50_2003_33",
+    "E001_Out_OUT51_2003_34",
+    "E001_Out_OUT52_2003_35",
+    "E001_Out_OUT53_2003_36",
+    "E001_Out_OUT54_2003_37",
+    "E001_Out_OUT55_2003_38",
+    "E005_In_IN00_2004_01_1",
+    "E005_In_IN01_2004_02_1",
+    "E005_In_IN02_2004_03_1",
+    "E005_In_IN03_2004_04_1",
+    "E005_In_IN04_2004_05_1",
+    "E005_In_IN05_2004_06_1",
+    "E005_In_IN06_2004_07_1",
+    "E005_In_IN07_2004_08_1",
+    "E005_In_IN08_2004_09_1",
+    "E005_In_IN09_2004_0A_1",
+    "E005_In_IN10_2004_0B_1",
+    "E005_In_IN11_2004_0C_1",
+    "E005_In_IN12_2004_0D_1",
+    "E005_In_IN13_2004_0E_1",
+    "E005_In_IN14_2004_0F_1",
+    "E005_In_IN15_2004_10_1",
+    "E005_In_IN16_2004_11_1",
+    "E005_In_IN17_2004_12_1",
+    "E005_In_IN18_2004_13_1",
+    "E005_In_IN19_2004_14_1",
+    "E005_In_IN20_2004_15_1",
+    "E005_In_IN21_2004_16_1",
+    "E005_In_IN22_2004_17_1",
+    "E005_In_IN23_2004_18_1",
+    "E005_In_IN24_2004_19_1",
+    "E005_In_IN25_2004_1A_1",
+    "E005_In_IN26_2004_1B_1",
+    "E005_In_IN27_2004_1C_1",
+    "E005_In_IN28_2004_1D_1",
+    "E005_In_IN29_2004_1E_1",
+    "E005_In_IN30_2004_1F_1",
+    "E005_In_IN31_2004_20_1",
+    "E005_In_IN32_2004_21_1",
+    "E005_In_IN33_2004_22_1",
+    "E005_In_IN34_2004_23_1",
+    "E005_In_IN35_2004_24_1",
+    "E005_In_IN36_2004_25_1",
+    "E005_In_IN37_2004_26_1",
+    "E005_In_IN38_2004_27_1",
+    "E005_In_IN39_2004_28_1",
+    "E005_In_IN40_2004_29_1",
+    "E005_In_IN41_2004_2A_1",
+    "E005_In_IN42_2004_2B_1",
+    "E005_In_IN43_2004_2C_1",
+    "E005_In_IN44_2004_2D_1",
+    "E005_In_IN45_2004_2E_1",
+    "E005_In_IN46_2004_2F_1",
+    "E005_In_IN47_2004_30_1",
+    "E005_In_IN48_2004_31_1",
+    "E005_In_IN49_2004_32_1",
+    "E005_In_IN50_2004_33_1",
+    "E005_In_IN51_2004_34_1",
+    "E005_In_IN52_2004_35_1",
+    "E005_In_IN53_2004_36_1",
+    "E005_In_IN54_2004_37_1",
+    "E005_In_IN55_2004_38_1",
+    "E005_Out_OUT00_2003_01_1",
+    "E005_Out_OUT08_2003_09_1",
+    "E005_Out_OUT09_2003_0A_1",
+    "E005_Out_OUT10_2003_0B_1",
+    "E005_Out_OUT11_2003_0C_1",
+    "E005_Out_OUT12_2003_0D_1",
+    "E005_Out_OUT13_2003_0E_1",
+    "E005_Out_OUT14_2003_0F_1",
+    "E005_Out_OUT15_2003_10_1",
+    "E005_Out_OUT16_2003_11_1",
+    "E005_Out_OUT17_2003_12_1",
+    "E005_Out_OUT18_2003_13_1",
+    "E005_Out_OUT19_2003_14_1",
+    "E005_Out_OUT20_2003_15_1",
+    "E005_Out_OUT21_2003_16_1",
+    "E005_Out_OUT22_2003_17_1",
+    "E005_Out_OUT23_2003_18_1",
+    "E005_Out_OUT24_2003_19_1",
+    "E005_Out_OUT25_2003_1A_1",
+    "E005_Out_OUT26_2003_1B_1",
+    "E005_Out_OUT27_2003_1C_1",
+    "E005_Out_OUT28_2003_1D_1",
+    "E005_Out_OUT29_2003_1E_1",
+    "E005_Out_OUT30_2003_1F_1",
+    "E005_Out_OUT31_2003_20_1",
+    "E005_Out_OUT32_2003_21_1",
+    "E005_Out_OUT33_2003_22_1",
+    "E005_Out_OUT34_2003_23_1",
+    "E005_Out_OUT35_2003_24_1",
+    "E005_Out_OUT36_2003_25_1",
+    "E005_Out_OUT37_2003_26_1",
+    "E005_Out_OUT38_2003_27_1",
+    "E005_Out_OUT39_2003_28_1",
+    "E005_Out_OUT40_2003_29_1",
+    "E005_Out_OUT41_2003_2A_1",
+    "E005_Out_OUT42_2003_2B_1",
+    "E005_Out_OUT43_2003_2C_1",
+    "E005_Out_OUT44_2003_2D_1",
+    "E005_Out_OUT45_2003_2E_1",
+    "E005_Out_OUT46_2003_2F_1",
+    "E005_Out_OUT47_2003_30_1",
+    "RCON1_AxisApply",
+    "RCON1_AxisLinked",
+    "RCON1_AxisWritten",
+    "RCON1_ByteOrderConfirmed",
+    "RCON1_CommOK",
+    "RCON1_EncodeError",
+    "RCON1_EncodeOK",
+    "RCON1_GwAlarmCode",
+    "RCON1_GwApply",
+    "RCON1_GwAxisCommError",
+    "RCON1_GwControllerCommLatch",
+    "RCON1_GwHeavyAlarm",
+    "RCON1_GwLightAlarm",
+    "RCON1_GwMON_Request",
+    "RCON1_GwManual",
+    "RCON1_GwRTE_Request",
+    "RCON1_GwRun",
+    "RCON1_GwSystemStop",
+    "RCON1_GwWritten",
+    "RCON1_IN",
+    "RCON1_LayoutConfirmed",
+    "RCON1_MotionPermit",
+    "RCON1_OUT",
+    "RCON1_PowerStateRaw",
+    "RCON1_RxRaw",
+    "RCON1_RxWord",
+    "RCON1_SpeedUnit_mm_s",
+    "RCON1_SwapBytes",
+    "RCON1_TxUInt",
+    "RCON1_TxWord",
+    "RCON1_WriteEnable",
+    "RCON2_AxisApply",
+    "RCON2_AxisLinked",
+    "RCON2_AxisWritten",
+    "RCON2_ByteOrderConfirmed",
+    "RCON2_CommOK",
+    "RCON2_EncodeError",
+    "RCON2_EncodeOK",
+    "RCON2_GwAlarmCode",
+    "RCON2_GwApply",
+    "RCON2_GwAxisCommError",
+    "RCON2_GwControllerCommLatch",
+    "RCON2_GwHeavyAlarm",
+    "RCON2_GwLightAlarm",
+    "RCON2_GwMON_Request",
+    "RCON2_GwManual",
+    "RCON2_GwRTE_Request",
+    "RCON2_GwRun",
+    "RCON2_GwSystemStop",
+    "RCON2_GwWritten",
+    "RCON2_IN",
+    "RCON2_LayoutConfirmed",
+    "RCON2_MotionPermit",
+    "RCON2_OUT",
+    "RCON2_PowerStateRaw",
+    "RCON2_RxRaw",
+    "RCON2_RxWord",
+    "RCON2_SpeedUnit_mm_s",
+    "RCON2_SwapBytes",
+    "RCON2_TxUInt",
+    "RCON2_TxWord",
+    "RCON2_WriteEnable"
+  ]
+}

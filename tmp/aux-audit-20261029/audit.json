@@ -1,0 +1,4755 @@
+{
+  "current": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029O.smc2",
+  "current_sha256": "4d6e592b9e2a89d0c7d7ff10795224660d7889ac7d5c5e2832393d5322188785",
+  "baseline": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\履歴\\Codex_履歴\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029E.smc2",
+  "baseline_sha256": "5d78d4b137cb9d6a9765cbb9100a8a48dbc8c3a5d2dd4213b1d3cc189ff63dfa",
+  "versions": {
+    "E": {
+      "path": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\履歴\\Codex_履歴\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029E.smc2",
+      "sha256": "5d78d4b137cb9d6a9765cbb9100a8a48dbc8c3a5d2dd4213b1d3cc189ff63dfa"
+    },
+    "G": {
+      "path": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\履歴\\Codex_履歴\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029G.smc2",
+      "sha256": "4fd98d982143e0b1092ab9bb37cac2102e3d3f865f3b8f9d315c084c49c1f1b5"
+    },
+    "H": {
+      "path": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\履歴\\Codex_履歴\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029H.smc2",
+      "sha256": "3bc62658e473625e52d73ca9ee52834ff0ecd02075e26a8e6f559cbd4b843189"
+    },
+    "I": {
+      "path": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\履歴\\Codex_履歴\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029I.smc2",
+      "sha256": "0fdfb3ef932a3a506df1084c349b6d467d7f4b2032b35004c523aad8631d66d6"
+    },
+    "J": {
+      "path": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\履歴\\Codex_履歴\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029J.smc2",
+      "sha256": "3d269d74ea049278ea043e9a3ea874ee5d18992e23612e97a6d086a135f1af1b"
+    },
+    "K": {
+      "path": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\履歴\\Codex_履歴\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029K.smc2",
+      "sha256": "4d781c47c2180947bdfa49f549857e348a51a5eef217cbadae943737efe69e30"
+    },
+    "L": {
+      "path": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\履歴\\Codex_履歴\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029L.smc2",
+      "sha256": "47105493589f1e5d0d74e7944968247381456b421b2b04f7ce17c47ffe133e26"
+    },
+    "M": {
+      "path": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\履歴\\Codex_履歴\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029M.smc2",
+      "sha256": "94d10736a0bb5a63b313943b2d52442ac20475b363b796312bb7211a11cb6dac"
+    },
+    "N": {
+      "path": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\履歴\\Codex_履歴\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029N.smc2",
+      "sha256": "a190829e53a11cda4ca0c9f6b4706df7fb6557184ca56424d421a9c555b4a968"
+    },
+    "O": {
+      "path": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029O.smc2",
+      "sha256": "4d6e592b9e2a89d0c7d7ff10795224660d7889ac7d5c5e2832393d5322188785"
+    }
+  },
+  "new_variables": [
+    {
+      "name": "Error_ST1_A_M",
+      "type": "ARRAY[0..4] OF BOOL",
+      "scope": "VAR_GLOBAL",
+      "owner": "new_Controller_0 / データ / グローバル変数",
+      "comment": "#A(左側) ST1 カメラ1 異常",
+      "first_version": "G",
+      "usage": [
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 20,
+          "comment": "機器異常（RESETで解除）",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST1_A_M[1]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST1_A_M[1]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 21,
+          "comment": "タイムアウト（RESETで解除）",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST1_A_M[2]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST1_A_M[2]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 22,
+          "comment": "ワーク不一致（RESETで解除）",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST1_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST1_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 23,
+          "comment": "総合異常",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST1_A_M[1]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST1_A_M[2]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST1_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST1_A_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 24,
+          "comment": "一時停止保持：Pause[3]",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST1_A_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 61,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【自動運転の再開】\r\n#\r\n# 目的：既存の開始・安全・異常解除条件で停止を解除する\r\n# 対象：Pause・Out_TDC_Stop\r\n# 注意：既存の条件と処理順を維持\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#自動運転再開\r\n既存の開始・安全・異常・Pause解除条件を維持",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST1_A_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Error_ST1_A_Timeout",
+      "type": "BOOL",
+      "scope": "VAR_GLOBAL",
+      "owner": "new_Controller_0 / データ / グローバル変数",
+      "comment": "FHタイムアウト（非保持）",
+      "first_version": "G",
+      "usage": [
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 0,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【表示要求の生成】\r\n#\r\n# 目的：FH異常・時間超過・ワーク不一致を表示要求へ変換する\r\n# 対象：ST1・ST5\r\n# 注意：再開前のワーク判定値を受け取って使用\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#HMI表示要求の収集\r\n実行順維持のため、異常判定後・再開処理前\r\n表示要求：108",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST1_A_Timeout",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 19,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【ST別異常｜A(左側) ST1 カメラ1】\r\n#\r\n# 目的：原因別の異常保持と停止を処理する\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#A(左側) ST1 カメラ1\r\nFH測定監視：10秒",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST1_A_Timeout",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 21,
+          "comment": "タイムアウト（RESETで解除）",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST1_A_Timeout",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Error_ST1_B_M",
+      "type": "ARRAY[0..4] OF BOOL",
+      "scope": "VAR_GLOBAL",
+      "owner": "new_Controller_0 / データ / グローバル変数",
+      "comment": "#B(右側) ST1 カメラ1 異常",
+      "first_version": "G",
+      "usage": [
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 25,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【ST別異常｜B(右側) ST1 カメラ1】\r\n#\r\n# 目的：原因別の異常保持と停止を処理する\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#B(右側) ST1 カメラ1\r\n機器異常（RESETで解除）",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST1_B_M[1]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST1_B_M[1]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 26,
+          "comment": "総合異常",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST1_B_M[1]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST1_B_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 27,
+          "comment": "一時停止保持：Pause[10]",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST1_B_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 61,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【自動運転の再開】\r\n#\r\n# 目的：既存の開始・安全・異常解除条件で停止を解除する\r\n# 対象：Pause・Out_TDC_Stop\r\n# 注意：既存の条件と処理順を維持\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#自動運転再開\r\n既存の開始・安全・異常・Pause解除条件を維持",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST1_B_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Error_ST2_A_M",
+      "type": "ARRAY[0..4] OF BOOL",
+      "scope": "VAR_GLOBAL",
+      "owner": "new_Controller_0 / データ / グローバル変数",
+      "comment": "#A(左側) ST2 高さ検査 異常",
+      "first_version": "G",
+      "usage": [
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 28,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【ST別異常｜A(左側) ST2 高さ検査】\r\n#\r\n# 目的：原因別の異常保持と停止を処理する\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#A(左側) ST2 高さ検査\r\nワーク不一致（RESETで解除）",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST2_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST2_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 29,
+          "comment": "総合異常",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST2_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST2_A_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 30,
+          "comment": "一時停止保持：Pause[6]",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST2_A_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 61,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【自動運転の再開】\r\n#\r\n# 目的：既存の開始・安全・異常解除条件で停止を解除する\r\n# 対象：Pause・Out_TDC_Stop\r\n# 注意：既存の条件と処理順を維持\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#自動運転再開\r\n既存の開始・安全・異常・Pause解除条件を維持",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST2_A_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Error_ST3_A_M",
+      "type": "ARRAY[0..4] OF BOOL",
+      "scope": "VAR_GLOBAL",
+      "owner": "new_Controller_0 / データ / グローバル変数",
+      "comment": "#A(左側) ST3 NG1排出 異常",
+      "first_version": "G",
+      "usage": [
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 31,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【ST別異常｜A(左側) ST3 NG1排出】\r\n#\r\n# 目的：原因別の異常保持と停止を処理する\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#A(左側) ST3 NG1排出\r\n機器異常（RESETで解除）",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST3_A_M[1]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST3_A_M[1]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 32,
+          "comment": "ワーク不一致（RESETで解除）",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST3_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST3_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 33,
+          "comment": "総合異常",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST3_A_M[1]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST3_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST3_A_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 34,
+          "comment": "一時停止保持：Pause[5]",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST3_A_M[1]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 35,
+          "comment": "一時停止保持：Pause[7]",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST3_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 61,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【自動運転の再開】\r\n#\r\n# 目的：既存の開始・安全・異常解除条件で停止を解除する\r\n# 対象：Pause・Out_TDC_Stop\r\n# 注意：既存の条件と処理順を維持\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#自動運転再開\r\n既存の開始・安全・異常・Pause解除条件を維持",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST3_A_M[1]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST3_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Error_ST4_A_M",
+      "type": "ARRAY[0..4] OF BOOL",
+      "scope": "VAR_GLOBAL",
+      "owner": "new_Controller_0 / データ / グローバル変数",
+      "comment": "#A(左側) ST4 反転1 異常",
+      "first_version": "G",
+      "usage": [
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 36,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【ST別異常｜A(左側) ST4 反転1】\r\n#\r\n# 目的：原因別の異常保持と停止を処理する\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#A(左側) ST4 反転1\r\nワーク不一致（RESETで解除）",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST4_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST4_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 37,
+          "comment": "総合異常",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST4_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST4_A_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 38,
+          "comment": "一時停止保持：Pause[8]",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST4_A_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 61,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【自動運転の再開】\r\n#\r\n# 目的：既存の開始・安全・異常解除条件で停止を解除する\r\n# 対象：Pause・Out_TDC_Stop\r\n# 注意：既存の条件と処理順を維持\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#自動運転再開\r\n既存の開始・安全・異常・Pause解除条件を維持",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST4_A_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Error_ST5_A_M",
+      "type": "ARRAY[0..4] OF BOOL",
+      "scope": "VAR_GLOBAL",
+      "owner": "new_Controller_0 / データ / グローバル変数",
+      "comment": "#A(左側) ST5 カメラ2 異常",
+      "first_version": "G",
+      "usage": [
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 40,
+          "comment": "機器異常（RESETで解除）",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST5_A_M[1]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST5_A_M[1]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 41,
+          "comment": "タイムアウト（RESETで解除）",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST5_A_M[2]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST5_A_M[2]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 42,
+          "comment": "ワーク不一致（RESETで解除）",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST5_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST5_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 43,
+          "comment": "総合異常",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST5_A_M[1]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST5_A_M[2]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST5_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST5_A_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 44,
+          "comment": "一時停止保持：Pause[9]",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST5_A_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 61,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【自動運転の再開】\r\n#\r\n# 目的：既存の開始・安全・異常解除条件で停止を解除する\r\n# 対象：Pause・Out_TDC_Stop\r\n# 注意：既存の条件と処理順を維持\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#自動運転再開\r\n既存の開始・安全・異常・Pause解除条件を維持",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST5_A_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Error_ST5_A_Timeout",
+      "type": "BOOL",
+      "scope": "VAR_GLOBAL",
+      "owner": "new_Controller_0 / データ / グローバル変数",
+      "comment": "FHタイムアウト（非保持）",
+      "first_version": "G",
+      "usage": [
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 3,
+          "comment": "表示要求：117",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST5_A_Timeout",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 39,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【ST別異常｜A(左側) ST5 カメラ2】\r\n#\r\n# 目的：原因別の異常保持と停止を処理する\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#A(左側) ST5 カメラ2\r\nFH測定監視：10秒",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST5_A_Timeout",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 41,
+          "comment": "タイムアウト（RESETで解除）",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST5_A_Timeout",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Error_ST5_B_M",
+      "type": "ARRAY[0..4] OF BOOL",
+      "scope": "VAR_GLOBAL",
+      "owner": "new_Controller_0 / データ / グローバル変数",
+      "comment": "#B(右側) ST5 カメラ2 異常",
+      "first_version": "G",
+      "usage": [
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 45,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【ST別異常｜B(右側) ST5 カメラ2】\r\n#\r\n# 目的：原因別の異常保持と停止を処理する\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#B(右側) ST5 カメラ2\r\n機器異常（RESETで解除）",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST5_B_M[1]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST5_B_M[1]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 46,
+          "comment": "総合異常",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST5_B_M[1]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST5_B_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 47,
+          "comment": "一時停止保持：Pause[11]",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST5_B_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 61,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【自動運転の再開】\r\n#\r\n# 目的：既存の開始・安全・異常解除条件で停止を解除する\r\n# 対象：Pause・Out_TDC_Stop\r\n# 注意：既存の条件と処理順を維持\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#自動運転再開\r\n既存の開始・安全・異常・Pause解除条件を維持",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST5_B_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Error_ST6_A_M",
+      "type": "ARRAY[0..4] OF BOOL",
+      "scope": "VAR_GLOBAL",
+      "owner": "new_Controller_0 / データ / グローバル変数",
+      "comment": "#A(左側) ST6 反転2 異常",
+      "first_version": "G",
+      "usage": [
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 48,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【ST別異常｜A(左側) ST6 反転2】\r\n#\r\n# 目的：原因別の異常保持と停止を処理する\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#A(左側) ST6 反転2\r\nワーク不一致（RESETで解除）",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST6_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST6_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 49,
+          "comment": "総合異常",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST6_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST6_A_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 50,
+          "comment": "一時停止保持：Pause[12]",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST6_A_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 61,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【自動運転の再開】\r\n#\r\n# 目的：既存の開始・安全・異常解除条件で停止を解除する\r\n# 対象：Pause・Out_TDC_Stop\r\n# 注意：既存の条件と処理順を維持\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#自動運転再開\r\n既存の開始・安全・異常・Pause解除条件を維持",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST6_A_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Error_ST7_A_M",
+      "type": "ARRAY[0..4] OF BOOL",
+      "scope": "VAR_GLOBAL",
+      "owner": "new_Controller_0 / データ / グローバル変数",
+      "comment": "#A(左側) ST7 SF排出 異常",
+      "first_version": "G",
+      "usage": [
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 54,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【ST別異常｜A(左側) ST7 SF排出】\r\n#\r\n# 目的：原因別の異常保持と停止を処理する\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#A(左側) ST7 SF排出\r\nワーク不一致（RESETで解除）",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST7_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST7_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 55,
+          "comment": "満杯（RESETで解除）",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST7_A_M[4]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST7_A_M[4]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 56,
+          "comment": "総合異常",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST7_A_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST7_A_M[4]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST7_A_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 57,
+          "comment": "一時停止保持：Pause[13]",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST7_A_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 61,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【自動運転の再開】\r\n#\r\n# 目的：既存の開始・安全・異常解除条件で停止を解除する\r\n# 対象：Pause・Out_TDC_Stop\r\n# 注意：既存の条件と処理順を維持\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#自動運転再開\r\n既存の開始・安全・異常・Pause解除条件を維持",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST7_A_M[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Error_ST7_A_Source_M",
+      "type": "ARRAY[0..4] OF BOOL",
+      "scope": "VAR_GLOBAL",
+      "owner": "new_Controller_0 / データ / グローバル変数",
+      "comment": "#A(左側) ST7 発生理由（内部保持）",
+      "first_version": "G",
+      "usage": [
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 51,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【ST7｜異常理由の記録】\r\n#\r\n# 目的：ワーク不一致・満杯の発生理由を保持する\r\n# 対象：A(左側) ST7\r\n# 注意：既存信号を直接参照（補助配列なし）\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#A(左側) ST7 異常理由\r\n元の異常が解除されたら理由を消去",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST7_A_Source_M[3]",
+              "coil_set": false,
+              "coil_reset": true
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST7_A_Source_M[4]",
+              "coil_set": false,
+              "coil_reset": true
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 52,
+          "comment": "ワーク不一致の発生理由を保持",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST7_A_Source_M[3]",
+              "coil_set": true,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 53,
+          "comment": "満杯の発生理由を保持（既存B側入力）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "Error_ST7_A_Source_M[4]",
+              "coil_set": true,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 54,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【ST別異常｜A(左側) ST7 SF排出】\r\n#\r\n# 目的：原因別の異常保持と停止を処理する\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#A(左側) ST7 SF排出\r\nワーク不一致（RESETで解除）",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST7_A_Source_M[3]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 55,
+          "comment": "満杯（RESETで解除）",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "Error_ST7_A_Source_M[4]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HMI_Error_WorkSample",
+      "type": "ARRAY[0..1] OF BOOL",
+      "scope": "VAR_GLOBAL",
+      "owner": "new_Controller_0 / データ / グローバル変数",
+      "comment": "#HMI 再開前のワーク不一致",
+      "first_version": "M",
+      "usage": [
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 2,
+          "comment": "表示要求：116",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Error_WorkSample[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 5,
+          "comment": "表示要求：121",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Error_WorkSample[1]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 59,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【表示用判定値の受渡し】\r\n#\r\n# 目的：再開時の解除で表示要求を見失わないようにする\r\n# 対象：ST1・ST5 ワーク不一致\r\n# 注意：表示要求の生成・番号選択はHMI内\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\nA(左側) ST1 ワーク不一致",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Error_WorkSample[0]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 60,
+          "comment": "A(左側) ST5 ワーク不一致",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Error_WorkSample[1]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HMI_Message_Request",
+      "type": "ARRAY[0..121] OF BOOL",
+      "scope": "VAR_GLOBAL",
+      "owner": "new_Controller_0 / データ / グローバル変数",
+      "comment": "#HMI メッセージ表示要求",
+      "first_version": "H",
+      "usage": [
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 18,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[1]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 21,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[2]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 24,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[3]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 27,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[4]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 30,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[5]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 33,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[6]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 36,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[7]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 39,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[8]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 42,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[9]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 45,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[10]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 48,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[11]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 51,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[12]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 54,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[13]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 57,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[14]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 60,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[15]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 63,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[16]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 66,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[17]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 69,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[18]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 72,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[19]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 75,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[20]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 78,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[21]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 81,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[22]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 84,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[23]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 87,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[24]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 90,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[25]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 93,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[26]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 96,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[27]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 99,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[28]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 102,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[29]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 105,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[30]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 108,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[31]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 111,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[32]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 114,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[33]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 117,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[34]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 120,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[35]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 123,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[36]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 126,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[37]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 129,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[38]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 132,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[39]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 135,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[40]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 138,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[41]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 141,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[42]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 144,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[43]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 147,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[44]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 150,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[45]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 153,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[46]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 156,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[47]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 159,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[48]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 162,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[49]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 165,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[50]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 168,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[51]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 171,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[52]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 174,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[53]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 177,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[54]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 180,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[55]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 183,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[56]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 186,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[57]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 189,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[58]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 192,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[59]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 195,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[60]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 198,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[61]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 201,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[62]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 204,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[63]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 207,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[64]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 210,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[65]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 213,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[66]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 216,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[67]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 219,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[68]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 222,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[69]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 225,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[70]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 228,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[71]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 231,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[72]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 234,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[73]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 237,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[74]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 240,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[75]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 243,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[76]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 246,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[77]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 249,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[78]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 252,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[79]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 255,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[80]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 258,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[81]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 261,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[82]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 264,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[83]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 267,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[84]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 270,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[85]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 273,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[86]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 276,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[87]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 279,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[88]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 282,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[89]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 285,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[90]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 288,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[91]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 291,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[92]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 294,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[93]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 297,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[94]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 300,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[95]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 303,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[96]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 306,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[97]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 309,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[98]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 312,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[99]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / IO_入出力 / Output_出力",
+          "row": 315,
+          "comment": "異常監視（自動指令・到達待ち10秒）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[100]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 0,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【表示要求の生成】\r\n#\r\n# 目的：FH異常・時間超過・ワーク不一致を表示要求へ変換する\r\n# 対象：ST1・ST5\r\n# 注意：再開前のワーク判定値を受け取って使用\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#HMI表示要求の収集\r\n実行順維持のため、異常判定後・再開処理前\r\n表示要求：108",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[108]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 1,
+          "comment": "表示要求：109",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[109]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 2,
+          "comment": "表示要求：116",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[116]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 3,
+          "comment": "表示要求：117",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[117]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 4,
+          "comment": "表示要求：110",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[110]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 5,
+          "comment": "表示要求：121",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[121]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 6,
+          "comment": "表示要求：111",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[111]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 7,
+          "comment": "表示要求：112",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[112]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 8,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【表示番号の選択｜シリンダ異常】\r\n#\r\n# 目的：前周期の要求から表示番号を選ぶ\r\n# 注意：同時要求は既存の後段優先\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#シリンダ異常\r\n前周期の表示要求（番号順・後段優先）\r\n【Y616】A(左側) 供給スライド戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[1]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 9,
+          "comment": "【Y617】A(左側) 供給スライド行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[2]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 10,
+          "comment": "【Y618】A(左側) 供給ピックアップ戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[3]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 11,
+          "comment": "【Y619】A(左側) 供給ピックアップ行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[4]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 12,
+          "comment": "【Y620】A(左側) 供給チャック閉 戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[5]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 13,
+          "comment": "【Y621】A(左側) 供給チャック開 行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[6]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 14,
+          "comment": "【Y622】B(右側) 供給スライド戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[7]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 15,
+          "comment": "【Y623】B(右側) 供給スライド行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[8]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 16,
+          "comment": "【Y624】B(右側) 供給ピックアップ戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[9]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 17,
+          "comment": "【Y625】B(右側) 供給ピックアップ行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[10]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 18,
+          "comment": "【Y626】B(右側) 供給チャック閉 戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[11]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 19,
+          "comment": "【Y627】B(右側) 供給チャック開 行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[12]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 20,
+          "comment": "【Y700】A(左側) 高さ検査押え戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[13]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 21,
+          "comment": "【Y701】A(左側) 高さ検査押え行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[14]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 22,
+          "comment": "【Y702】A(左側) 高さ検査持上戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[15]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 23,
+          "comment": "【Y703】A(左側) 高さ検査持上行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[16]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 24,
+          "comment": "【Y704】A(左側) NG1ピックアップ戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[17]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 25,
+          "comment": "【Y705】A(左側) NG1ピックアップ 行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[18]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 26,
+          "comment": "【Y706】A(左側) NG1チャック戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[19]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 27,
+          "comment": "【Y707】A(左側) NG1チャック行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[20]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 28,
+          "comment": "【Y708】A(左側)ST4 反転1チャック閉 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[21]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 29,
+          "comment": "【Y709】A(左側)ST4 反転1チャック開 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[22]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 30,
+          "comment": "【Y710】A(左側)ST4 反転1ピックアップ戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[23]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 31,
+          "comment": "【Y711】A(左側)ST4 反転1ピックアップ行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[24]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 32,
+          "comment": "【Y712】A(左側)ST6 反転2チャック閉 戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[25]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 33,
+          "comment": "【Y713】A(左側)ST6 反転2チャック開 行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[26]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 34,
+          "comment": "【Y714】A(左側)ST6 反転2ピックアップ戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[27]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 35,
+          "comment": "【Y715】A(左側)ST6 反転2ピックアップ行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[28]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 36,
+          "comment": "【Y716】A(左側) 排出チャック閉 戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[29]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 37,
+          "comment": "【Y717】A(左側) 排出チャック開 行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[30]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 38,
+          "comment": "【Y718】A(左側) 排出フォルダ送り戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[31]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 39,
+          "comment": "【Y719】A(左側) 排出フォルダ送り行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[32]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 40,
+          "comment": "A(左側) 位置1ストッパー戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[33]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 41,
+          "comment": "【Y720】A(左側) 位置1ストッパー 行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[34]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 42,
+          "comment": "【Y721】A(左側) 位置2ストッパー 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[35]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 43,
+          "comment": "【Y721】A(左側) 位置2ストッパー 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[36]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 44,
+          "comment": "【Y722】A(左側) 位置3ストッパー戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[37]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 45,
+          "comment": "【Y722】A(左側) 位置3ストッパー行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[38]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 46,
+          "comment": "Output_A_Error_M[33] 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[39]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 47,
+          "comment": "【Y723】A(左側) 位置4ストッパー行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[40]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 48,
+          "comment": "【Y724】A(左側) 位置5ストッパー戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[41]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 49,
+          "comment": "【Y724】A(左側) 位置5ストッパー行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[42]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 50,
+          "comment": "【Y725】A(左側) 位置6ストッパー戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[43]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 51,
+          "comment": "【Y725】A(左側) 位置6ストッパー行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[44]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 52,
+          "comment": "【Y726】A(左側) ストックフォルダターン戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[45]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 53,
+          "comment": "【Y727】A(左側) ストックフォルダターン行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[46]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 54,
+          "comment": "【Y728】A(左側) NG1仕分け 戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[47]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 55,
+          "comment": "【Y729】A(左側) NG1仕分け 行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[48]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 56,
+          "comment": "【Y800】B(右側) 高さ検査押え戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[49]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 57,
+          "comment": "【Y801】B(右側) 高さ検査押え行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[50]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 58,
+          "comment": "【Y802】B(右側) 高さ検査持上戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[51]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 59,
+          "comment": "【Y803】B(右側) 高さ検査持上行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[52]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 60,
+          "comment": "【Y804】B(右側) NG1ピックアップ戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[53]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 61,
+          "comment": "【Y805】B(右側) NG1ピックアップ 行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[54]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 62,
+          "comment": "【Y806】B(右側) NG1チャック戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[55]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 63,
+          "comment": "【Y807】B(右側) NG1チャック行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[56]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 64,
+          "comment": "【Y808】B(右側)ST4 反転1チャック閉 戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[57]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 65,
+          "comment": "【Y809】B(右側)ST4 反転1チャック開 戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[58]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 66,
+          "comment": "【Y810】B(右側)ST4 反転1ピックアップ戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[59]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 67,
+          "comment": "【Y811】B(右側)ST4 反転1ピックアップ行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[60]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 68,
+          "comment": "【Y812】B(右側)ST6 反転2チャック閉 戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[61]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 69,
+          "comment": "【Y813】B(右側)ST6 反転2チャック開 行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[62]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 70,
+          "comment": "【Y814】B(右側)ST6 反転2ピックアップ戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[63]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 71,
+          "comment": "【Y815】B(右側)ST6 反転2ピックアップ行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[64]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 72,
+          "comment": "【Y816】B(右側) 排出チャック閉 戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[65]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 73,
+          "comment": "【Y817】B(右側) 排出チャック開 行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[66]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 74,
+          "comment": "【Y818】B(右側) 排出フォルダ送り戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[67]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 75,
+          "comment": "【Y819】B(右側) 排出フォルダ送り行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[68]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 76,
+          "comment": "【Y820】B(右側) 位置1ストッパー 戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[69]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 77,
+          "comment": "【Y820】B(右側) 位置1ストッパー 行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[70]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 78,
+          "comment": "【Y821】B(右側) 位置2ストッパー戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[71]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 79,
+          "comment": "【Y821】B(右側) 位置2ストッパー行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[72]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 80,
+          "comment": "【Y822】B(右側) 位置3ストッパー戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[73]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 81,
+          "comment": "【Y822】B(右側) 位置3ストッパー行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[74]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 82,
+          "comment": "【Y823】B(右側) 位置4ストッパー戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[75]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 83,
+          "comment": "【Y823】B(右側) 位置4ストッパー行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[76]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 84,
+          "comment": "【Y824】B(右側) 位置5ストッパー戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[77]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 85,
+          "comment": "【Y824】B(右側) 位置5ストッパー行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[78]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 86,
+          "comment": "【Y825】B(右側) 位置6ストッパー戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[79]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 87,
+          "comment": "【Y825】B(右側) 位置6ストッパー行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[80]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 88,
+          "comment": "【Y826】B(右側) ストックフォルダターン戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[81]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 89,
+          "comment": "【Y827】B(右側) ストックフォルダターン行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[82]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 90,
+          "comment": "【Y828】B(右側) NG1仕分け 戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[83]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 91,
+          "comment": "【Y829】B(右側) NG1仕分け 行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[84]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 92,
+          "comment": "【Y1200】空コンテナ送り 戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[85]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 93,
+          "comment": "【Y1201】空コンテナ送り 行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[86]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 94,
+          "comment": "【Y1202】段バラシ爪 戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[87]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 95,
+          "comment": "【Y1203】段バラシ爪 行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[88]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 96,
+          "comment": "【Y1204】コンテナ排出 戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[89]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 97,
+          "comment": "【Y1205】コンテナ排出 行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[90]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 98,
+          "comment": "Output_Share_Error_M[7] 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[91]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 99,
+          "comment": "【Y1207】箱入れチャック 行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[92]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 100,
+          "comment": "【Y1208】コンテナ仕分けストッパー 戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[93]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 101,
+          "comment": "【Y1209】コンテナ仕分けストッパー 行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[94]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 102,
+          "comment": "【Y1210】コンテナ仕分け送り 戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[95]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 103,
+          "comment": "Output_Share_Error_M[12] 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[96]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 104,
+          "comment": "【Y1300】A(左側) コンベア受渡送り戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[97]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 105,
+          "comment": "【Y1301】A(左側) コンベア受渡送り行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[98]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 106,
+          "comment": "【Y1302】B(右側) コンベア受渡送り戻 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[99]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 107,
+          "comment": "【Y1303】B(右側) コンベア受渡送り行 異常表示",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[100]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 108,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【表示番号の選択｜ST別異常】\r\n#\r\n# 目的：ST別の異常表示要求を反映する\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#ST別異常\r\n当周期の表示要求（従来の優先順）\r\nA(左側) ST1 FH測定時間超過",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[108]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 109,
+          "comment": "A(左側) ST1 FH異常",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[109]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 110,
+          "comment": "A(左側) ST1 検査前ワーク不一致",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[116]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 111,
+          "comment": "A(左側) ST5 FH測定時間超過",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[117]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 112,
+          "comment": "A(左側) ST5 FH異常",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[110]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 113,
+          "comment": "A(左側) ST5 検査前ワーク不一致",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[121]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 114,
+          "comment": "B(右側) ST1 FH異常",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[111]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 115,
+          "comment": "B(右側) ST5 FH異常",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[112]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 116,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【表示番号の選択｜搬送共通】\r\n#\r\n# 目的：搬送ワーク不一致を優先表示する\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#検査コンベア異常\r\nST別FH異常より優先\r\nST1 搬送ワーク不一致",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[101]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 117,
+          "comment": "ST2 搬送ワーク不一致",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[102]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 118,
+          "comment": "ST3 搬送ワーク不一致",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[103]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 119,
+          "comment": "ST4 搬送ワーク不一致",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[104]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 120,
+          "comment": "ST5 搬送ワーク不一致",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[105]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 121,
+          "comment": "ST6 搬送ワーク不一致",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[106]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 122,
+          "comment": "ST7 搬送ワーク不一致",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[107]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 123,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【表示番号の選択｜FH判定】\r\n#\r\n# 目的：検査の判定結果を表示する\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#FH判定結果\r\n当周期の判定表示\r\nA(左側) ST1 FH判定OK",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[113]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 124,
+          "comment": "A(左側) ST1 FH判定NG1",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[114]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 125,
+          "comment": "A(左側) ST1 FH判定NG2",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[115]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 126,
+          "comment": "A(左側) ST5 FH判定OK",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[118]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 127,
+          "comment": "A(左側) ST5 FH判定NG1",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[119]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 128,
+          "comment": "A(左側) ST5 FH判定NG2",
+          "nodes": [
+            {
+              "kind": "LD",
+              "node_kind": "LD",
+              "var": "HMI_Message_Request[120]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / HMI",
+          "row": 129,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【表示要求の解除】\r\n#\r\n# 目的：消費済みのFH単発要求だけを解除する\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#FH表示要求の消費\r\n番号選択後に解除（単発要求を残さない）",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[113]",
+              "coil_set": false,
+              "coil_reset": true
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[114]",
+              "coil_set": false,
+              "coil_reset": true
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[115]",
+              "coil_set": false,
+              "coil_reset": true
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[118]",
+              "coil_set": false,
+              "coil_reset": true
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[119]",
+              "coil_set": false,
+              "coil_reset": true
+            },
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[120]",
+              "coil_set": false,
+              "coil_reset": true
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 12,
+          "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【搬送共通｜表示要求】\r\n#\r\n# 目的：確定した搬送異常からST別の表示要求を生成する\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#搬送ワーク不一致 表示要求\r\n停止・ワーク情報更新とは別回路\r\nST1 表示要求",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[101]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 13,
+          "comment": "ST2 表示要求",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[102]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 14,
+          "comment": "ST3 表示要求",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[103]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 15,
+          "comment": "ST4 表示要求",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[104]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 16,
+          "comment": "ST5 表示要求",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[105]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 17,
+          "comment": "ST6 表示要求",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[106]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / ModeManagement_モード管理 / Error_エラー処理",
+          "row": 18,
+          "comment": "ST7 表示要求",
+          "nodes": [
+            {
+              "kind": "ST",
+              "node_kind": "ST",
+              "var": "HMI_Message_Request[107]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / FH_5552_10",
+          "row": 5,
+          "comment": "OK判定",
+          "nodes": [
+            {
+              "kind": "F",
+              "node_kind": "PRM",
+              "var": "HMI_Message_Request[113]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / FH_5552_10",
+          "row": 6,
+          "comment": "NG判定",
+          "nodes": [
+            {
+              "kind": "F",
+              "node_kind": "PRM",
+              "var": "HMI_Message_Request[114]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "F",
+              "node_kind": "PRM",
+              "var": "HMI_Message_Request[115]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / FH_5552_10",
+          "row": 13,
+          "comment": "A(左側) ST5 カメラ2 OK判定",
+          "nodes": [
+            {
+              "kind": "F",
+              "node_kind": "PRM",
+              "var": "HMI_Message_Request[118]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        },
+        {
+          "section": "プログラム / OtherDevice_外部機器 / FH_5552_10",
+          "row": 14,
+          "comment": "A(左側) ST5 カメラ2 NG判定",
+          "nodes": [
+            {
+              "kind": "F",
+              "node_kind": "PRM",
+              "var": "HMI_Message_Request[119]",
+              "coil_set": false,
+              "coil_reset": false
+            },
+            {
+              "kind": "F",
+              "node_kind": "PRM",
+              "var": "HMI_Message_Request[120]",
+              "coil_set": false,
+              "coil_reset": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version_changes": [
+    {
+      "transition": "E→G",
+      "new_actual_names": [
+        "Error_Common_MessageActive",
+        "Error_ST1_A_M",
+        "Error_ST1_A_Timeout",
+        "Error_ST1_B_M",
+        "Error_ST2_A_M",
+        "Error_ST3_A_M",
+        "Error_ST4_A_M",
+        "Error_ST5_A_M",
+        "Error_ST5_A_Timeout",
+        "Error_ST5_B_M",
+        "Error_ST6_A_M",
+        "Error_ST7_A_M",
+        "Error_ST7_A_Source_M"
+      ],
+      "removed_actual_names": [],
+      "row_count": 981
+    },
+    {
+      "transition": "G→H",
+      "new_actual_names": [
+        "HMI_Message_Request"
+      ],
+      "removed_actual_names": [
+        "Error_Common_MessageActive"
+      ],
+      "row_count": 1101
+    },
+    {
+      "transition": "H→I",
+      "new_actual_names": [],
+      "removed_actual_names": [],
+      "row_count": 1101
+    },
+    {
+      "transition": "I→J",
+      "new_actual_names": [],
+      "removed_actual_names": [],
+      "row_count": 1100
+    },
+    {
+      "transition": "J→K",
+      "new_actual_names": [],
+      "removed_actual_names": [],
+      "row_count": 1100
+    },
+    {
+      "transition": "K→L",
+      "new_actual_names": [],
+      "removed_actual_names": [],
+      "row_count": 1107
+    },
+    {
+      "transition": "L→M",
+      "new_actual_names": [
+        "Error_ST7_A_Sample_M",
+        "HMI_Error_WorkSample"
+      ],
+      "removed_actual_names": [],
+      "row_count": 1114
+    },
+    {
+      "transition": "M→N",
+      "new_actual_names": [],
+      "removed_actual_names": [],
+      "row_count": 1114
+    },
+    {
+      "transition": "N→O",
+      "new_actual_names": [],
+      "removed_actual_names": [
+        "Error_ST7_A_Sample_M"
+      ],
+      "row_count": 1109
+    }
+  ],
+  "classification": {
+    "auxiliary_actual_variables": [
+      "Error_ST1_A_Timeout",
+      "Error_ST5_A_Timeout",
+      "Error_ST7_A_Source_M",
+      "HMI_Error_WorkSample",
+      "HMI_Message_Request"
+    ],
+    "requested_station_error_arrays": [
+      "Error_ST1_A_M",
+      "Error_ST1_B_M",
+      "Error_ST2_A_M",
+      "Error_ST3_A_M",
+      "Error_ST4_A_M",
+      "Error_ST5_A_M",
+      "Error_ST5_B_M",
+      "Error_ST6_A_M",
+      "Error_ST7_A_M"
+    ],
+    "new_actual_names_all_classified": true,
+    "fb_instance_call_multiset_preserved": true,
+    "already_removed_variables": [
+      "Error_Common_MessageActive",
+      "Error_ST7_A_Sample_M"
+    ]
+  },
+  "project_files_modified": false
+}

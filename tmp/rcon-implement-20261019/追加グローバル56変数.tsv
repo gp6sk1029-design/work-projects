@@ -1,0 +1,57 @@
+﻿変数名	データ型	区分	コメント
+RCON1_RxRaw	ARRAY[0..71] OF UINT	VAR_GLOBAL	RCON1：E001入力を読取った通信値。書換えない。
+RCON1_RxWord	ARRAY[0..71] OF WORD	VAR_GLOBAL	RCON1：バイト順を正規化した論理入力ワード。
+RCON1_TxWord	ARRAY[0..55] OF WORD	VAR_GLOBAL	RCON1：内部値から作成した論理出力ワード。
+RCON1_TxUInt	ARRAY[0..55] OF UINT	VAR_GLOBAL	RCON1：バイト順を適用した送信候補。実I/Oそのものではない。
+RCON1_LayoutConfirmed	BOOL	VAR_GLOBAL	RCON1：初期FALSE。全6軸直接数値指定・共通8W・軸順・占有を確認して設定。
+RCON1_ByteOrderConfirmed	BOOL	VAR_GLOBAL	RCON1：初期FALSE。既知の位置とbitでワード順・バイト順を確認して設定。
+RCON1_SwapBytes	BOOL	VAR_GLOBAL	RCON1：初期FALSEは仮値。1ワード内のバイト交換が必要か実機で確認。
+RCON1_CommOK	BOOL	VAR_GLOBAL	RCON1：初期FALSE。CPUの実EtherCAT通信状態から別途作成。TRUE固定禁止。
+RCON1_GwMON_Request	BOOL	VAR_GLOBAL	RCON1：初期FALSE。ゲートウェイMON要求。論理b15。安全停止ではない。
+RCON1_GwRTE_Request	BOOL	VAR_GLOBAL	RCON1：初期FALSE。ゲートウェイ通信異常ラッチ解除要求。論理b13。
+RCON1_GwRun	BOOL	VAR_GLOBAL	RCON1：入力：ゲートウェイ正常動作中RUN。
+RCON1_GwControllerCommLatch	BOOL	VAR_GLOBAL	RCON1：入力：運転中ERR-C保持LERC。
+RCON1_GwAxisCommError	BOOL	VAR_GLOBAL	RCON1：入力：ゲートウェイと軸の通信異常ERRT。
+RCON1_GwManual	BOOL	VAR_GLOBAL	RCON1：入力：MANUスイッチ選択MOD。
+RCON1_GwHeavyAlarm	BOOL	VAR_GLOBAL	RCON1：入力：再起動が必要なゲートウェイ異常ALMH。
+RCON1_GwLightAlarm	BOOL	VAR_GLOBAL	RCON1：入力：ゲートウェイ軽微異常ALML。
+RCON1_GwSystemStop	BOOL	VAR_GLOBAL	RCON1：入力：システムSTOP入力による停止状態SEMG。安全回路の代用不可。
+RCON1_GwAlarmCode	UINT	VAR_GLOBAL	RCON1：入力：ゲートウェイALMCの下位8bit。軸AlarmCodeとは別。
+RCON1_AxisLinked	ARRAY[1..6] OF BOOL	VAR_GLOBAL	RCON1：入力：軸No.0～5のリンク状態。
+RCON1_PowerStateRaw	ARRAY[0..4] OF WORD	VAR_GLOBAL	RCON1：入力IN02～06の正規化済み生ワード。詳細意味は構成依存。
+RCON1_EncodeOK	ARRAY[1..6] OF BOOL	VAR_GLOBAL	RCON1：通信形式へ数値変換できたか。安全・運転許可ではない。
+RCON1_EncodeError	ARRAY[1..6] OF UINT	VAR_GLOBAL	RCON1：変換エラー番号。0正常、1単位、2位置、3幅、4速度、5加減速、6押付け、7両方向ジョグ。
+RCON1_WriteEnable	BOOL	VAR_GLOBAL	RCON1：初期FALSE。実出力への書込みを許可。OFFは出力更新保留であり停止ではない。
+RCON1_GwApply	BOOL	VAR_GLOBAL	RCON1：初期FALSE。共通MON/RTEワードを書込む。
+RCON1_AxisApply	ARRAY[1..6] OF BOOL	VAR_GLOBAL	RCON1：初期FALSE。指定軸の8ワードを書込む。OFFは停止ではない。
+RCON1_MotionPermit	ARRAY[1..6] OF BOOL	VAR_GLOBAL	RCON1：初期FALSE。機械範囲・安全・運転条件から別途作成する運転許可。単純TRUE固定禁止。
+RCON1_GwWritten	BOOL	VAR_GLOBAL	RCON1：共通出力へ代入したサイクルのみTRUE。RCON受付の意味ではない。
+RCON1_AxisWritten	ARRAY[1..6] OF BOOL	VAR_GLOBAL	RCON1：各軸出力へ代入したサイクルのみTRUE。RCON受付・完了ではない。
+RCON2_RxRaw	ARRAY[0..55] OF UINT	VAR_GLOBAL	RCON2：E005（末尾_1）入力を読取った通信値。書換えない。
+RCON2_RxWord	ARRAY[0..55] OF WORD	VAR_GLOBAL	RCON2：バイト順を正規化した論理入力ワード。
+RCON2_TxWord	ARRAY[0..47] OF WORD	VAR_GLOBAL	RCON2：内部値から作成した論理出力ワード。
+RCON2_TxUInt	ARRAY[0..47] OF UINT	VAR_GLOBAL	RCON2：バイト順を適用した送信候補。実I/Oそのものではない。
+RCON2_LayoutConfirmed	BOOL	VAR_GLOBAL	RCON2：初期FALSE。全5軸直接数値指定・共通8W・軸順・占有を確認して設定。
+RCON2_ByteOrderConfirmed	BOOL	VAR_GLOBAL	RCON2：初期FALSE。既知の位置とbitでワード順・バイト順を確認して設定。
+RCON2_SwapBytes	BOOL	VAR_GLOBAL	RCON2：初期FALSEは仮値。1ワード内のバイト交換が必要か実機で確認。
+RCON2_CommOK	BOOL	VAR_GLOBAL	RCON2：初期FALSE。CPUの実EtherCAT通信状態から別途作成。TRUE固定禁止。
+RCON2_GwMON_Request	BOOL	VAR_GLOBAL	RCON2：初期FALSE。ゲートウェイMON要求。論理b15。安全停止ではない。
+RCON2_GwRTE_Request	BOOL	VAR_GLOBAL	RCON2：初期FALSE。ゲートウェイ通信異常ラッチ解除要求。論理b13。
+RCON2_GwRun	BOOL	VAR_GLOBAL	RCON2：入力：ゲートウェイ正常動作中RUN。
+RCON2_GwControllerCommLatch	BOOL	VAR_GLOBAL	RCON2：入力：運転中ERR-C保持LERC。
+RCON2_GwAxisCommError	BOOL	VAR_GLOBAL	RCON2：入力：ゲートウェイと軸の通信異常ERRT。
+RCON2_GwManual	BOOL	VAR_GLOBAL	RCON2：入力：MANUスイッチ選択MOD。
+RCON2_GwHeavyAlarm	BOOL	VAR_GLOBAL	RCON2：入力：再起動が必要なゲートウェイ異常ALMH。
+RCON2_GwLightAlarm	BOOL	VAR_GLOBAL	RCON2：入力：ゲートウェイ軽微異常ALML。
+RCON2_GwSystemStop	BOOL	VAR_GLOBAL	RCON2：入力：システムSTOP入力による停止状態SEMG。安全回路の代用不可。
+RCON2_GwAlarmCode	UINT	VAR_GLOBAL	RCON2：入力：ゲートウェイALMCの下位8bit。軸AlarmCodeとは別。
+RCON2_AxisLinked	ARRAY[1..5] OF BOOL	VAR_GLOBAL	RCON2：入力：軸No.0～4のリンク状態。
+RCON2_PowerStateRaw	ARRAY[0..4] OF WORD	VAR_GLOBAL	RCON2：入力IN02～06の正規化済み生ワード。詳細意味は構成依存。
+RCON2_EncodeOK	ARRAY[1..5] OF BOOL	VAR_GLOBAL	RCON2：通信形式へ数値変換できたか。安全・運転許可ではない。
+RCON2_EncodeError	ARRAY[1..5] OF UINT	VAR_GLOBAL	RCON2：変換エラー番号。0正常、1単位、2位置、3幅、4速度、5加減速、6押付け、7両方向ジョグ。
+RCON2_WriteEnable	BOOL	VAR_GLOBAL	RCON2：初期FALSE。実出力への書込みを許可。OFFは出力更新保留であり停止ではない。
+RCON2_GwApply	BOOL	VAR_GLOBAL	RCON2：初期FALSE。共通MON/RTEワードを書込む。
+RCON2_AxisApply	ARRAY[1..5] OF BOOL	VAR_GLOBAL	RCON2：初期FALSE。指定軸の8ワードを書込む。OFFは停止ではない。
+RCON2_MotionPermit	ARRAY[1..5] OF BOOL	VAR_GLOBAL	RCON2：初期FALSE。機械範囲・安全・運転条件から別途作成する運転許可。単純TRUE固定禁止。
+RCON2_GwWritten	BOOL	VAR_GLOBAL	RCON2：共通出力へ代入したサイクルのみTRUE。RCON受付の意味ではない。
+RCON2_AxisWritten	ARRAY[1..5] OF BOOL	VAR_GLOBAL	RCON2：各軸出力へ代入したサイクルのみTRUE。RCON受付・完了ではない。

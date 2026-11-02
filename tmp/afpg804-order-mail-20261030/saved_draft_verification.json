@@ -1,0 +1,26 @@
+{
+  "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+  "To": "木村様【福西電機】 <kimura.yuko@denzai.jp>",
+  "Cc": "中村 智 次長 <sa-nakamura@ime-group.co.jp>, 藤本様【福西電機】 <fujimoto.keita@denzai.jp>, 藤田さん【生産技術部】 <ch-fujita@ime-group.co.jp>, 北野社員【生産技術 】 <hi-kitano@ime-group.co.jp>",
+  "Subject": "Re: 見積依頼【FPΣ用バックアップ電池 AFPG804／10個】",
+  "Date": "Fri, 30 Oct 2026 16:08:14 +0900",
+  "Message-ID": "<0c48f620-4f58-4d23-acec-9f2ee20e7912@ime-group.co.jp>",
+  "In-Reply-To": "<OS9P286MB682298C0BF3354E012DB7335C86D2@OS9P286MB6822.JPNP286.PROD.OUTLOOK.COM>",
+  "References": "<ed079053-9a77-456d-8f38-e7ec3963bb14@ime-group.co.jp> <OS9P286MB682298C0BF3354E012DB7335C86D2@OS9P286MB6822.JPNP286.PROD.OUTLOOK.COM>",
+  "attachments": [
+    {
+      "name": "注文書【AF-K261030-1】.pdf",
+      "sha256": "2716db2a512c27769ae5d843d3abcd913082cc00e6a0af3ba833beff7980a9e4",
+      "bytes": 209586
+    }
+  ],
+  "raw_reply_headers": {
+    "References": "<ed079053-9a77-456d-8f38-e7ec3963bb14@ime-group.co.jp>\r\n <OS9P286MB682298C0BF3354E012DB7335C86D2@OS9P286MB6822.JPNP286.PROD.OUTLOOK.COM>",
+    "In-Reply-To": "<OS9P286MB682298C0BF3354E012DB7335C86D2@OS9P286MB6822.JPNP286.PROD.OUTLOOK.COM>"
+  },
+  "recipient_ok": true,
+  "cc_ok": true,
+  "attachment_ok": true,
+  "thread_ok": true,
+  "body_ok": true
+}

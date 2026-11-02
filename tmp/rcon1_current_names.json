@@ -1,0 +1,1560 @@
+{
+  "sourceProject": "20261017C（保存済みデータ）",
+  "globalPath": "C:\\OMRON\\Data\\Solution\\1b1e94fa-3893-4ce1-8e74-dc8e6e24bc60\\f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+  "variables": [
+    {
+      "D": "ARRAY[1..6] OF ST_RCON_Direct_OUT_Axis",
+      "N": "RCON1_OUT",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 6軸分 PLC→RCON 指令（内部変数・通信変換は別途）"
+    },
+    {
+      "D": "ARRAY[1..6] OF ST_RCON_Direct_IN_Axis",
+      "N": "RCON1_IN",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 6軸分 RCON→PLC 取得値・状態（内部変数・通信変換は別途）"
+    },
+    {
+      "D": "LREAL",
+      "N": "RCON1_SpeedUnit_mm_s",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 速度の1カウント量mm/s。実機設定1.0または0.1を確認。未確認・0では使用しない。"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_GwControl0Raw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT00】共通 ゲートウェイ制御信号0（MON等）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_GwControl1ReservedRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT01】共通 ゲートウェイ制御信号1（予約・使用禁止）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_ReservedOut02Raw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT02】共通 共通予約領域（使用禁止・占有あり）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_ReservedOut03Raw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT03】共通 共通予約領域（使用禁止・占有あり）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_ReservedOut04Raw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT04】共通 共通予約領域（使用禁止・占有あり）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_ReservedOut05Raw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT05】共通 共通予約領域（使用禁止・占有あり）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_ReservedOut06Raw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT06】共通 共通予約領域（使用禁止・占有あり）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_ReservedOut07Raw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT07】共通 共通予約領域（使用禁止・占有あり）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis1_TargetPosLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT08】1軸目（No.0） 目標位置 下位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis1_TargetPosHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT09】1軸目（No.0） 目標位置 上位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis1_PositionBandLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT10】1軸目（No.0） 位置決め幅 下位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis1_PositionBandHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT11】1軸目（No.0） 位置決め幅 上位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis1_SpeedRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT12】1軸目（No.0） 速度指令（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis1_AccDecRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT13】1軸目（No.0） 加減速度指令（加速・減速共通）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis1_PushLimitRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT14】1軸目（No.0） 押付け電流制限値（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis1_ControlRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT15】1軸目（No.0） 軸制御信号（DSTR・SON等）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis2_TargetPosLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT16】2軸目（No.1） 目標位置 下位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis2_TargetPosHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT17】2軸目（No.1） 目標位置 上位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis2_PositionBandLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT18】2軸目（No.1） 位置決め幅 下位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis2_PositionBandHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT19】2軸目（No.1） 位置決め幅 上位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis2_SpeedRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT20】2軸目（No.1） 速度指令（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis2_AccDecRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT21】2軸目（No.1） 加減速度指令（加速・減速共通）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis2_PushLimitRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT22】2軸目（No.1） 押付け電流制限値（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis2_ControlRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT23】2軸目（No.1） 軸制御信号（DSTR・SON等）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis3_TargetPosLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT24】3軸目（No.2） 目標位置 下位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis3_TargetPosHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT25】3軸目（No.2） 目標位置 上位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis3_PositionBandLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT26】3軸目（No.2） 位置決め幅 下位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis3_PositionBandHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT27】3軸目（No.2） 位置決め幅 上位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis3_SpeedRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT28】3軸目（No.2） 速度指令（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis3_AccDecRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT29】3軸目（No.2） 加減速度指令（加速・減速共通）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis3_PushLimitRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT30】3軸目（No.2） 押付け電流制限値（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis3_ControlRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT31】3軸目（No.2） 軸制御信号（DSTR・SON等）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis4_TargetPosLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT32】4軸目（No.3） 目標位置 下位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis4_TargetPosHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT33】4軸目（No.3） 目標位置 上位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis4_PositionBandLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT34】4軸目（No.3） 位置決め幅 下位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis4_PositionBandHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT35】4軸目（No.3） 位置決め幅 上位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis4_SpeedRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT36】4軸目（No.3） 速度指令（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis4_AccDecRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT37】4軸目（No.3） 加減速度指令（加速・減速共通）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis4_PushLimitRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT38】4軸目（No.3） 押付け電流制限値（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis4_ControlRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT39】4軸目（No.3） 軸制御信号（DSTR・SON等）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis5_TargetPosLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT40】5軸目（No.4） 目標位置 下位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis5_TargetPosHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT41】5軸目（No.4） 目標位置 上位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis5_PositionBandLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT42】5軸目（No.4） 位置決め幅 下位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis5_PositionBandHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT43】5軸目（No.4） 位置決め幅 上位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis5_SpeedRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT44】5軸目（No.4） 速度指令（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis5_AccDecRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT45】5軸目（No.4） 加減速度指令（加速・減速共通）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis5_PushLimitRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT46】5軸目（No.4） 押付け電流制限値（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis5_ControlRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT47】5軸目（No.4） 軸制御信号（DSTR・SON等）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis6_TargetPosLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT48】6軸目（No.5） 目標位置 下位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis6_TargetPosHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT49】6軸目（No.5） 目標位置 上位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis6_PositionBandLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT50】6軸目（No.5） 位置決め幅 下位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis6_PositionBandHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT51】6軸目（No.5） 位置決め幅 上位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis6_SpeedRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT52】6軸目（No.5） 速度指令（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis6_AccDecRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT53】6軸目（No.5） 加減速度指令（加速・減速共通）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis6_PushLimitRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT54】6軸目（No.5） 押付け電流制限値（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_OUT_Axis6_ControlRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 PLC→RCON 【OUT55】6軸目（No.5） 軸制御信号（DSTR・SON等）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_GwStatus0Raw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN00】共通 ゲートウェイ状態信号0（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_AxisLinkStatusRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN01】共通 ゲートウェイ状態信号1（軸No.0～15リンク状態）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_PowerStatus0Raw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN02】共通 電源ユニット状態信号0（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_PowerStatus1Raw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN03】共通 電源ユニット状態信号1（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_PowerStatus2Raw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN04】共通 電源ユニット状態信号2（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_PowerStatus3Raw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN05】共通 電源ユニット状態信号3（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_PowerStatus4MaintenanceRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN06】共通 電源ユニット状態信号4／軽故障メンテナンス（設定依存）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_ReservedIn07Raw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN07】共通 共通予約領域（使用禁止・占有あり）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis1_ActualPosLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN08】1軸目（No.0） 現在位置 下位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis1_ActualPosHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN09】1軸目（No.0） 現在位置 上位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis1_CurrentLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN10】1軸目（No.0） 現在電流 下位ワード（PCは指令電流）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis1_CurrentHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN11】1軸目（No.0） 現在電流 上位ワード（PCは指令電流）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis1_ActualSpeedRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN12】1軸目（No.0） 現在速度（負方向は2の補数）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis1_ReservedInRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN13】1軸目（No.0） 予約領域（使用禁止）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis1_AlarmCodeRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN14】1軸目（No.0） アラームコード（簡易コードではない）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis1_StatusRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN15】1軸目（No.0） 軸状態信号（PEND・SV等）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis2_ActualPosLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN16】2軸目（No.1） 現在位置 下位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis2_ActualPosHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN17】2軸目（No.1） 現在位置 上位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis2_CurrentLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN18】2軸目（No.1） 現在電流 下位ワード（PCは指令電流）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis2_CurrentHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN19】2軸目（No.1） 現在電流 上位ワード（PCは指令電流）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis2_ActualSpeedRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN20】2軸目（No.1） 現在速度（負方向は2の補数）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis2_ReservedInRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN21】2軸目（No.1） 予約領域（使用禁止）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis2_AlarmCodeRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN22】2軸目（No.1） アラームコード（簡易コードではない）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis2_StatusRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN23】2軸目（No.1） 軸状態信号（PEND・SV等）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis3_ActualPosLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN24】3軸目（No.2） 現在位置 下位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis3_ActualPosHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN25】3軸目（No.2） 現在位置 上位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis3_CurrentLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN26】3軸目（No.2） 現在電流 下位ワード（PCは指令電流）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis3_CurrentHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN27】3軸目（No.2） 現在電流 上位ワード（PCは指令電流）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis3_ActualSpeedRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN28】3軸目（No.2） 現在速度（負方向は2の補数）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis3_ReservedInRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN29】3軸目（No.2） 予約領域（使用禁止）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis3_AlarmCodeRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN30】3軸目（No.2） アラームコード（簡易コードではない）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis3_StatusRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN31】3軸目（No.2） 軸状態信号（PEND・SV等）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis4_ActualPosLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN32】4軸目（No.3） 現在位置 下位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis4_ActualPosHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN33】4軸目（No.3） 現在位置 上位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis4_CurrentLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN34】4軸目（No.3） 現在電流 下位ワード（PCは指令電流）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis4_CurrentHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN35】4軸目（No.3） 現在電流 上位ワード（PCは指令電流）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis4_ActualSpeedRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN36】4軸目（No.3） 現在速度（負方向は2の補数）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis4_ReservedInRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN37】4軸目（No.3） 予約領域（使用禁止）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis4_AlarmCodeRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN38】4軸目（No.3） アラームコード（簡易コードではない）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis4_StatusRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN39】4軸目（No.3） 軸状態信号（PEND・SV等）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis5_ActualPosLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN40】5軸目（No.4） 現在位置 下位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis5_ActualPosHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN41】5軸目（No.4） 現在位置 上位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis5_CurrentLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN42】5軸目（No.4） 現在電流 下位ワード（PCは指令電流）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis5_CurrentHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN43】5軸目（No.4） 現在電流 上位ワード（PCは指令電流）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis5_ActualSpeedRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN44】5軸目（No.4） 現在速度（負方向は2の補数）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis5_ReservedInRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN45】5軸目（No.4） 予約領域（使用禁止）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis5_AlarmCodeRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN46】5軸目（No.4） アラームコード（簡易コードではない）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis5_StatusRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN47】5軸目（No.4） 軸状態信号（PEND・SV等）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis6_ActualPosLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN48】6軸目（No.5） 現在位置 下位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis6_ActualPosHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN49】6軸目（No.5） 現在位置 上位ワード（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis6_CurrentLoRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN50】6軸目（No.5） 現在電流 下位ワード（PCは指令電流）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis6_CurrentHiRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN51】6軸目（No.5） 現在電流 上位ワード（PCは指令電流）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis6_ActualSpeedRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN52】6軸目（No.5） 現在速度（負方向は2の補数）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis6_ReservedInRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN53】6軸目（No.5） 予約領域（使用禁止）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis6_AlarmCodeRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN54】6軸目（No.5） アラームコード（簡易コードではない）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "RCON1_IN_Axis6_StatusRaw",
+      "G": "VAR_GLOBAL",
+      "Com": "RCON1 RCON→PLC 【IN55】6軸目（No.5） 軸状態信号（PEND・SV等）（未割付・直接数値指定の設計用）"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT00_2003_01",
+      "AT": "ECAT://node#1/Out_OUT00_2003_01",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT01_2003_02",
+      "AT": "ECAT://node#1/Out_OUT01_2003_02",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT02_2003_03",
+      "AT": "ECAT://node#1/Out_OUT02_2003_03",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT03_2003_04",
+      "AT": "ECAT://node#1/Out_OUT03_2003_04",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT04_2003_05",
+      "AT": "ECAT://node#1/Out_OUT04_2003_05",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT05_2003_06",
+      "AT": "ECAT://node#1/Out_OUT05_2003_06",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT06_2003_07",
+      "AT": "ECAT://node#1/Out_OUT06_2003_07",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT07_2003_08",
+      "AT": "ECAT://node#1/Out_OUT07_2003_08",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT08_2003_09",
+      "AT": "ECAT://node#1/Out_OUT08_2003_09",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT09_2003_0A",
+      "AT": "ECAT://node#1/Out_OUT09_2003_0A",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT10_2003_0B",
+      "AT": "ECAT://node#1/Out_OUT10_2003_0B",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT11_2003_0C",
+      "AT": "ECAT://node#1/Out_OUT11_2003_0C",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT12_2003_0D",
+      "AT": "ECAT://node#1/Out_OUT12_2003_0D",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT13_2003_0E",
+      "AT": "ECAT://node#1/Out_OUT13_2003_0E",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT14_2003_0F",
+      "AT": "ECAT://node#1/Out_OUT14_2003_0F",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT15_2003_10",
+      "AT": "ECAT://node#1/Out_OUT15_2003_10",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT16_2003_11",
+      "AT": "ECAT://node#1/Out_OUT16_2003_11",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT17_2003_12",
+      "AT": "ECAT://node#1/Out_OUT17_2003_12",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT18_2003_13",
+      "AT": "ECAT://node#1/Out_OUT18_2003_13",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT19_2003_14",
+      "AT": "ECAT://node#1/Out_OUT19_2003_14",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT20_2003_15",
+      "AT": "ECAT://node#1/Out_OUT20_2003_15",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT21_2003_16",
+      "AT": "ECAT://node#1/Out_OUT21_2003_16",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT22_2003_17",
+      "AT": "ECAT://node#1/Out_OUT22_2003_17",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT23_2003_18",
+      "AT": "ECAT://node#1/Out_OUT23_2003_18",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT24_2003_19",
+      "AT": "ECAT://node#1/Out_OUT24_2003_19",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT25_2003_1A",
+      "AT": "ECAT://node#1/Out_OUT25_2003_1A",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT26_2003_1B",
+      "AT": "ECAT://node#1/Out_OUT26_2003_1B",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT27_2003_1C",
+      "AT": "ECAT://node#1/Out_OUT27_2003_1C",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT28_2003_1D",
+      "AT": "ECAT://node#1/Out_OUT28_2003_1D",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT29_2003_1E",
+      "AT": "ECAT://node#1/Out_OUT29_2003_1E",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT30_2003_1F",
+      "AT": "ECAT://node#1/Out_OUT30_2003_1F",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT31_2003_20",
+      "AT": "ECAT://node#1/Out_OUT31_2003_20",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT32_2003_21",
+      "AT": "ECAT://node#1/Out_OUT32_2003_21",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT33_2003_22",
+      "AT": "ECAT://node#1/Out_OUT33_2003_22",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT34_2003_23",
+      "AT": "ECAT://node#1/Out_OUT34_2003_23",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT35_2003_24",
+      "AT": "ECAT://node#1/Out_OUT35_2003_24",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT36_2003_25",
+      "AT": "ECAT://node#1/Out_OUT36_2003_25",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT37_2003_26",
+      "AT": "ECAT://node#1/Out_OUT37_2003_26",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT38_2003_27",
+      "AT": "ECAT://node#1/Out_OUT38_2003_27",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT39_2003_28",
+      "AT": "ECAT://node#1/Out_OUT39_2003_28",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT40_2003_29",
+      "AT": "ECAT://node#1/Out_OUT40_2003_29",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT41_2003_2A",
+      "AT": "ECAT://node#1/Out_OUT41_2003_2A",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT42_2003_2B",
+      "AT": "ECAT://node#1/Out_OUT42_2003_2B",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT43_2003_2C",
+      "AT": "ECAT://node#1/Out_OUT43_2003_2C",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT44_2003_2D",
+      "AT": "ECAT://node#1/Out_OUT44_2003_2D",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT45_2003_2E",
+      "AT": "ECAT://node#1/Out_OUT45_2003_2E",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT46_2003_2F",
+      "AT": "ECAT://node#1/Out_OUT46_2003_2F",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT47_2003_30",
+      "AT": "ECAT://node#1/Out_OUT47_2003_30",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT48_2003_31",
+      "AT": "ECAT://node#1/Out_OUT48_2003_31",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT49_2003_32",
+      "AT": "ECAT://node#1/Out_OUT49_2003_32",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT50_2003_33",
+      "AT": "ECAT://node#1/Out_OUT50_2003_33",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT51_2003_34",
+      "AT": "ECAT://node#1/Out_OUT51_2003_34",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT52_2003_35",
+      "AT": "ECAT://node#1/Out_OUT52_2003_35",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT53_2003_36",
+      "AT": "ECAT://node#1/Out_OUT53_2003_36",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT54_2003_37",
+      "AT": "ECAT://node#1/Out_OUT54_2003_37",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT55_2003_38",
+      "AT": "ECAT://node#1/Out_OUT55_2003_38",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT56_2003_39",
+      "AT": "ECAT://node#1/Out_OUT56_2003_39",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT57_2003_3A",
+      "AT": "ECAT://node#1/Out_OUT57_2003_3A",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT58_2003_3B",
+      "AT": "ECAT://node#1/Out_OUT58_2003_3B",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT59_2003_3C",
+      "AT": "ECAT://node#1/Out_OUT59_2003_3C",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT60_2003_3D",
+      "AT": "ECAT://node#1/Out_OUT60_2003_3D",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT61_2003_3E",
+      "AT": "ECAT://node#1/Out_OUT61_2003_3E",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT62_2003_3F",
+      "AT": "ECAT://node#1/Out_OUT62_2003_3F",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT63_2003_40",
+      "AT": "ECAT://node#1/Out_OUT63_2003_40",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT64_2003_41",
+      "AT": "ECAT://node#1/Out_OUT64_2003_41",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT65_2003_42",
+      "AT": "ECAT://node#1/Out_OUT65_2003_42",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT66_2003_43",
+      "AT": "ECAT://node#1/Out_OUT66_2003_43",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT67_2003_44",
+      "AT": "ECAT://node#1/Out_OUT67_2003_44",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT68_2003_45",
+      "AT": "ECAT://node#1/Out_OUT68_2003_45",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT69_2003_46",
+      "AT": "ECAT://node#1/Out_OUT69_2003_46",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT70_2003_47",
+      "AT": "ECAT://node#1/Out_OUT70_2003_47",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_Out_OUT71_2003_48",
+      "AT": "ECAT://node#1/Out_OUT71_2003_48",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN00_2004_01",
+      "AT": "ECAT://node#1/In_IN00_2004_01",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN01_2004_02",
+      "AT": "ECAT://node#1/In_IN01_2004_02",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN02_2004_03",
+      "AT": "ECAT://node#1/In_IN02_2004_03",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN03_2004_04",
+      "AT": "ECAT://node#1/In_IN03_2004_04",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN04_2004_05",
+      "AT": "ECAT://node#1/In_IN04_2004_05",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN05_2004_06",
+      "AT": "ECAT://node#1/In_IN05_2004_06",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN06_2004_07",
+      "AT": "ECAT://node#1/In_IN06_2004_07",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN07_2004_08",
+      "AT": "ECAT://node#1/In_IN07_2004_08",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN08_2004_09",
+      "AT": "ECAT://node#1/In_IN08_2004_09",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN09_2004_0A",
+      "AT": "ECAT://node#1/In_IN09_2004_0A",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN10_2004_0B",
+      "AT": "ECAT://node#1/In_IN10_2004_0B",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN11_2004_0C",
+      "AT": "ECAT://node#1/In_IN11_2004_0C",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN12_2004_0D",
+      "AT": "ECAT://node#1/In_IN12_2004_0D",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN13_2004_0E",
+      "AT": "ECAT://node#1/In_IN13_2004_0E",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN14_2004_0F",
+      "AT": "ECAT://node#1/In_IN14_2004_0F",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN15_2004_10",
+      "AT": "ECAT://node#1/In_IN15_2004_10",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN16_2004_11",
+      "AT": "ECAT://node#1/In_IN16_2004_11",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN17_2004_12",
+      "AT": "ECAT://node#1/In_IN17_2004_12",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN18_2004_13",
+      "AT": "ECAT://node#1/In_IN18_2004_13",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN19_2004_14",
+      "AT": "ECAT://node#1/In_IN19_2004_14",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN20_2004_15",
+      "AT": "ECAT://node#1/In_IN20_2004_15",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN21_2004_16",
+      "AT": "ECAT://node#1/In_IN21_2004_16",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN22_2004_17",
+      "AT": "ECAT://node#1/In_IN22_2004_17",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN23_2004_18",
+      "AT": "ECAT://node#1/In_IN23_2004_18",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN24_2004_19",
+      "AT": "ECAT://node#1/In_IN24_2004_19",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN25_2004_1A",
+      "AT": "ECAT://node#1/In_IN25_2004_1A",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN26_2004_1B",
+      "AT": "ECAT://node#1/In_IN26_2004_1B",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN27_2004_1C",
+      "AT": "ECAT://node#1/In_IN27_2004_1C",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN28_2004_1D",
+      "AT": "ECAT://node#1/In_IN28_2004_1D",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN29_2004_1E",
+      "AT": "ECAT://node#1/In_IN29_2004_1E",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN30_2004_1F",
+      "AT": "ECAT://node#1/In_IN30_2004_1F",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN31_2004_20",
+      "AT": "ECAT://node#1/In_IN31_2004_20",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN32_2004_21",
+      "AT": "ECAT://node#1/In_IN32_2004_21",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN33_2004_22",
+      "AT": "ECAT://node#1/In_IN33_2004_22",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN34_2004_23",
+      "AT": "ECAT://node#1/In_IN34_2004_23",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN35_2004_24",
+      "AT": "ECAT://node#1/In_IN35_2004_24",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN36_2004_25",
+      "AT": "ECAT://node#1/In_IN36_2004_25",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN37_2004_26",
+      "AT": "ECAT://node#1/In_IN37_2004_26",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN38_2004_27",
+      "AT": "ECAT://node#1/In_IN38_2004_27",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN39_2004_28",
+      "AT": "ECAT://node#1/In_IN39_2004_28",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN40_2004_29",
+      "AT": "ECAT://node#1/In_IN40_2004_29",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN41_2004_2A",
+      "AT": "ECAT://node#1/In_IN41_2004_2A",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN42_2004_2B",
+      "AT": "ECAT://node#1/In_IN42_2004_2B",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN43_2004_2C",
+      "AT": "ECAT://node#1/In_IN43_2004_2C",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN44_2004_2D",
+      "AT": "ECAT://node#1/In_IN44_2004_2D",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN45_2004_2E",
+      "AT": "ECAT://node#1/In_IN45_2004_2E",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN46_2004_2F",
+      "AT": "ECAT://node#1/In_IN46_2004_2F",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN47_2004_30",
+      "AT": "ECAT://node#1/In_IN47_2004_30",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN48_2004_31",
+      "AT": "ECAT://node#1/In_IN48_2004_31",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN49_2004_32",
+      "AT": "ECAT://node#1/In_IN49_2004_32",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN50_2004_33",
+      "AT": "ECAT://node#1/In_IN50_2004_33",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN51_2004_34",
+      "AT": "ECAT://node#1/In_IN51_2004_34",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN52_2004_35",
+      "AT": "ECAT://node#1/In_IN52_2004_35",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN53_2004_36",
+      "AT": "ECAT://node#1/In_IN53_2004_36",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN54_2004_37",
+      "AT": "ECAT://node#1/In_IN54_2004_37",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN55_2004_38",
+      "AT": "ECAT://node#1/In_IN55_2004_38",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN56_2004_39",
+      "AT": "ECAT://node#1/In_IN56_2004_39",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN57_2004_3A",
+      "AT": "ECAT://node#1/In_IN57_2004_3A",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN58_2004_3B",
+      "AT": "ECAT://node#1/In_IN58_2004_3B",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN59_2004_3C",
+      "AT": "ECAT://node#1/In_IN59_2004_3C",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN60_2004_3D",
+      "AT": "ECAT://node#1/In_IN60_2004_3D",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN61_2004_3E",
+      "AT": "ECAT://node#1/In_IN61_2004_3E",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN62_2004_3F",
+      "AT": "ECAT://node#1/In_IN62_2004_3F",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN63_2004_40",
+      "AT": "ECAT://node#1/In_IN63_2004_40",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN64_2004_41",
+      "AT": "ECAT://node#1/In_IN64_2004_41",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN65_2004_42",
+      "AT": "ECAT://node#1/In_IN65_2004_42",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN66_2004_43",
+      "AT": "ECAT://node#1/In_IN66_2004_43",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN67_2004_44",
+      "AT": "ECAT://node#1/In_IN67_2004_44",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN68_2004_45",
+      "AT": "ECAT://node#1/In_IN68_2004_45",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN69_2004_46",
+      "AT": "ECAT://node#1/In_IN69_2004_46",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN70_2004_47",
+      "AT": "ECAT://node#1/In_IN70_2004_47",
+      "G": "VAR_GLOBAL"
+    },
+    {
+      "D": "UINT",
+      "N": "E001_In_IN71_2004_48",
+      "AT": "ECAT://node#1/In_IN71_2004_48",
+      "G": "VAR_GLOBAL"
+    }
+  ]
+}

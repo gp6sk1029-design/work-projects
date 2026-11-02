@@ -1,0 +1,210 @@
+{
+    "source":  "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261026A.smc2",
+    "destination":  "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261026B.smc2",
+    "staged":  "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\st4-rev1-shift-20261026\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261026B.smc2",
+    "source_sha256":  "ea5d41e9682099c64512ecdf325893b2a24e41c8f789884fa3cc1d9a61204696",
+    "output_sha256":  "7a2529af975001d8e93d3c447066e82943876235f3672e97cfefcc5bdf0c60f9",
+    "entries":  195,
+    "changed_entries":  [
+                            "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                            "4008c85d-b137-4d0c-891b-788323a2a47f/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml",
+                            "4008c85d-b137-4d0c-891b-788323a2a47f/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+                            "4008c85d-b137-4d0c-891b-788323a2a47f/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+                        ],
+    "reference_changes":  [
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                                  "row":  4,
+                                  "before":  3,
+                                  "after":  4
+                              },
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                                  "row":  4,
+                                  "before":  4,
+                                  "after":  5
+                              },
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                                  "row":  4,
+                                  "before":  3,
+                                  "after":  4
+                              },
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                                  "row":  5,
+                                  "before":  3,
+                                  "after":  4
+                              },
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                                  "row":  5,
+                                  "before":  4,
+                                  "after":  5
+                              },
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                                  "row":  5,
+                                  "before":  5,
+                                  "after":  6
+                              },
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                                  "row":  5,
+                                  "before":  4,
+                                  "after":  5
+                              },
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                                  "row":  6,
+                                  "before":  4,
+                                  "after":  5
+                              },
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                                  "row":  6,
+                                  "before":  5,
+                                  "after":  6
+                              },
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                                  "row":  6,
+                                  "before":  5,
+                                  "after":  6
+                              },
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                                  "row":  7,
+                                  "before":  5,
+                                  "after":  6
+                              },
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                                  "row":  7,
+                                  "before":  5,
+                                  "after":  6
+                              },
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                                  "row":  7,
+                                  "before":  5,
+                                  "after":  6
+                              },
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                                  "row":  7,
+                                  "before":  6,
+                                  "after":  7
+                              },
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                                  "row":  7,
+                                  "before":  7,
+                                  "after":  8
+                              },
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                                  "row":  7,
+                                  "before":  8,
+                                  "after":  9
+                              },
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                                  "row":  8,
+                                  "before":  5,
+                                  "after":  6
+                              },
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                                  "row":  8,
+                                  "before":  6,
+                                  "after":  7
+                              },
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                                  "row":  8,
+                                  "before":  9,
+                                  "after":  10
+                              },
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                                  "row":  8,
+                                  "before":  9,
+                                  "after":  10
+                              },
+                              {
+                                  "entry":  "4008c85d-b137-4d0c-891b-788323a2a47f/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml",
+                                  "row":  17,
+                                  "before":  8,
+                                  "after":  9
+                              }
+                          ],
+    "moved_comments":  {
+                           "4008c85d-b137-4d0c-891b-788323a2a47f/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml":  3,
+                           "4008c85d-b137-4d0c-891b-788323a2a47f/f07dd06c-505c-431b-b9fc-098949805b4e.xml":  6
+                       },
+    "added_comment_for_retained_3":  "【Y723】A(左側) 位置4ストッパー戻",
+    "coil_counts":  {
+                        "1":  1,
+                        "2":  1,
+                        "3":  1,
+                        "4":  1,
+                        "5":  1,
+                        "6":  2,
+                        "7":  1,
+                        "8":  1,
+                        "9":  1,
+                        "10":  1
+                    },
+    "mapping":  "上側[3]保持、下側[3]→[4]、旧[4]～[9]→[5]～[10]",
+    "existing_findings":  [
+                              "旧[5]二重出力は新[6]二重出力として保持。",
+                              "既存の外部変数コメントとグローバルコメントの文言相違は、修正せず各原文を番号と一緒に移動。"
+                          ],
+    "ladder_counts":  {
+                          "4008c85d-b137-4d0c-891b-788323a2a47f/02fa0618-20f0-422f-b44d-3aba0838a381.xml":  16,
+                          "4008c85d-b137-4d0c-891b-788323a2a47f/056f39b5-2372-4d32-b892-634336899ec4.xml":  1,
+                          "4008c85d-b137-4d0c-891b-788323a2a47f/08c19951-3bae-402d-a637-be66c221f71b.xml":  6,
+                          "4008c85d-b137-4d0c-891b-788323a2a47f/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml":  316,
+                          "4008c85d-b137-4d0c-891b-788323a2a47f/13f086b3-1a09-467f-8cff-eea83144ff00.xml":  3,
+                          "4008c85d-b137-4d0c-891b-788323a2a47f/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml":  18,
+                          "4008c85d-b137-4d0c-891b-788323a2a47f/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml":  2,
+                          "4008c85d-b137-4d0c-891b-788323a2a47f/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml":  1,
+                          "4008c85d-b137-4d0c-891b-788323a2a47f/49a83d1d-d863-4a09-a86a-4797edc14a57.xml":  1,
+                          "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml":  9,
+                          "4008c85d-b137-4d0c-891b-788323a2a47f/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml":  4,
+                          "4008c85d-b137-4d0c-891b-788323a2a47f/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml":  152,
+                          "4008c85d-b137-4d0c-891b-788323a2a47f/5ede16be-2114-46c3-84df-a79badb6e32e.xml":  1,
+                          "4008c85d-b137-4d0c-891b-788323a2a47f/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml":  19,
+                          "4008c85d-b137-4d0c-891b-788323a2a47f/7b1666c7-ee97-4210-81b2-fed5a6172074.xml":  46,
+                          "4008c85d-b137-4d0c-891b-788323a2a47f/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml":  9,
+                          "4008c85d-b137-4d0c-891b-788323a2a47f/98de6707-f996-4f77-aad9-b0569299efb5.xml":  8,
+                          "4008c85d-b137-4d0c-891b-788323a2a47f/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml":  29,
+                          "4008c85d-b137-4d0c-891b-788323a2a47f/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml":  13,
+                          "4008c85d-b137-4d0c-891b-788323a2a47f/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml":  8
+                      },
+    "native_validation":  {
+                              "4008c85d-b137-4d0c-891b-788323a2a47f/02fa0618-20f0-422f-b44d-3aba0838a381.xml":  "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "4008c85d-b137-4d0c-891b-788323a2a47f/056f39b5-2372-4d32-b892-634336899ec4.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "4008c85d-b137-4d0c-891b-788323a2a47f/08c19951-3bae-402d-a637-be66c221f71b.xml":  "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "4008c85d-b137-4d0c-891b-788323a2a47f/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml":  "TOTAL=316 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "4008c85d-b137-4d0c-891b-788323a2a47f/13f086b3-1a09-467f-8cff-eea83144ff00.xml":  "TOTAL=3 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "4008c85d-b137-4d0c-891b-788323a2a47f/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml":  "TOTAL=18 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "4008c85d-b137-4d0c-891b-788323a2a47f/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml":  "TOTAL=2 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "4008c85d-b137-4d0c-891b-788323a2a47f/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "4008c85d-b137-4d0c-891b-788323a2a47f/49a83d1d-d863-4a09-a86a-4797edc14a57.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "4008c85d-b137-4d0c-891b-788323a2a47f/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml":  "TOTAL=9 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "4008c85d-b137-4d0c-891b-788323a2a47f/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml":  "TOTAL=4 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "4008c85d-b137-4d0c-891b-788323a2a47f/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml":  "TOTAL=152 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "4008c85d-b137-4d0c-891b-788323a2a47f/5ede16be-2114-46c3-84df-a79badb6e32e.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "4008c85d-b137-4d0c-891b-788323a2a47f/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml":  "TOTAL=19 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "4008c85d-b137-4d0c-891b-788323a2a47f/7b1666c7-ee97-4210-81b2-fed5a6172074.xml":  "TOTAL=46 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "4008c85d-b137-4d0c-891b-788323a2a47f/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml":  "TOTAL=9 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "4008c85d-b137-4d0c-891b-788323a2a47f/98de6707-f996-4f77-aad9-b0569299efb5.xml":  "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "4008c85d-b137-4d0c-891b-788323a2a47f/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml":  "TOTAL=29 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "4008c85d-b137-4d0c-891b-788323a2a47f/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml":  "TOTAL=13 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "4008c85d-b137-4d0c-891b-788323a2a47f/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml":  "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0"
+                          },
+    "app_build_verified":  false,
+    "machine_transfer_performed":  false
+}

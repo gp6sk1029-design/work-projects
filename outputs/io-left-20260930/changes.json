@@ -1,0 +1,758 @@
+[
+  {
+    "source": "AL7",
+    "target": "BL7",
+    "kind": "コメント",
+    "before": "【X516】位置4左ストッパー戻",
+    "after": "【X516】位置3左ストッパー戻"
+  },
+  {
+    "source": "AF7",
+    "target": "BF7",
+    "kind": "名称",
+    "before": "In_SenCY_Rot_Chuck_01_L_H",
+    "after": "In_SenCY_Swv_01_Chk_L_H"
+  },
+  {
+    "source": "AK7",
+    "target": "BK7",
+    "kind": "名称",
+    "before": "\tIn_SenCY_Pos_04_Stp_L_H",
+    "after": "In_SenCY_Pos_03_Stopper_L_H"
+  },
+  {
+    "source": "AL8",
+    "target": "BL8",
+    "kind": "コメント",
+    "before": "【X517】位置4左ストッパー戻",
+    "after": "【X517】位置3左ストッパー行"
+  },
+  {
+    "source": "AF8",
+    "target": "BF8",
+    "kind": "名称",
+    "before": "In_SenCY_Rot_Chuck_01_L_F",
+    "after": "In_SenCY_Swv_01_Chk_L_F"
+  },
+  {
+    "source": "AK8",
+    "target": "BK8",
+    "kind": "名称",
+    "before": "\tIn_SenCY_Pos_04_Stp_L_F",
+    "after": "In_SenCY_Pos_03_Stopper_L_F"
+  },
+  {
+    "source": "R9",
+    "target": "AR9",
+    "kind": "コメント",
+    "before": "【X402】左側ワーク位置1",
+    "after": "【X402】左側ワーク位置0"
+  },
+  {
+    "source": "AL9",
+    "target": "BL9",
+    "kind": "コメント",
+    "before": "【X518】位置5左ストッパー戻",
+    "after": "【X518】位置4左ストッパー戻"
+  },
+  {
+    "source": "S9",
+    "target": "AS9",
+    "kind": "名称",
+    "before": "In_Sen_Work_Pos_01_L",
+    "after": "In_Sen_Work_L_Pos_00"
+  },
+  {
+    "source": "AF9",
+    "target": "BF9",
+    "kind": "名称",
+    "before": "In_SenCY_Rot_Pick_01_L_H",
+    "after": "In_SenCY_Swv_01_Pick_L_H"
+  },
+  {
+    "source": "AK9",
+    "target": "BK9",
+    "kind": "名称",
+    "before": "\tIn_SenCY_Pos_05_Stp_L_H",
+    "after": "In_SenCY_Pos_04_Stopper_L_H"
+  },
+  {
+    "source": "R10",
+    "target": "AR10",
+    "kind": "コメント",
+    "before": "【X403】左側ワーク位置2",
+    "after": "【X403】左側ワーク位置1"
+  },
+  {
+    "source": "AL10",
+    "target": "BL10",
+    "kind": "コメント",
+    "before": "【X519】位置5左ストッパー戻",
+    "after": "【X519】位置4左ストッパー行"
+  },
+  {
+    "source": "S10",
+    "target": "AS10",
+    "kind": "名称",
+    "before": "In_Sen_Work_Pos_02_L",
+    "after": "In_Sen_Work_L_Pos_01"
+  },
+  {
+    "source": "AF10",
+    "target": "BF10",
+    "kind": "名称",
+    "before": "In_SenCY_Rot_Pick_01_L_F",
+    "after": "In_SenCY_Swv_01_Pick_L_F"
+  },
+  {
+    "source": "AK10",
+    "target": "BK10",
+    "kind": "名称",
+    "before": "\tIn_SenCY_Pos_05_Stp_L_F",
+    "after": "In_SenCY_Pos_04_Stopper_L_F"
+  },
+  {
+    "source": "R11",
+    "target": "AR11",
+    "kind": "コメント",
+    "before": "【X404】左側ワーク位置3",
+    "after": "【X404】左側ワーク位置2"
+  },
+  {
+    "source": "AE11",
+    "target": "BE11",
+    "kind": "コメント",
+    "before": "【X504】左旋回2チャック戻",
+    "after": "【X504】左旋回2チャック閉 戻"
+  },
+  {
+    "source": "AL11",
+    "target": "BL11",
+    "kind": "コメント",
+    "before": "【X520】位置6左ストッパー戻",
+    "after": "【X520】位置5左ストッパー戻"
+  },
+  {
+    "source": "S11",
+    "target": "AS11",
+    "kind": "名称",
+    "before": "In_Sen_Work_Pos_03_L",
+    "after": "In_Sen_Work_L_Pos_02"
+  },
+  {
+    "source": "X11",
+    "target": "AX11",
+    "kind": "名称",
+    "before": "In_SenCY_Sply_Pick_L_F",
+    "after": "In_SenCY_Sply_Pick_L_H"
+  },
+  {
+    "source": "AF11",
+    "target": "BF11",
+    "kind": "名称",
+    "before": "In_SenCY_Rot_Chuck_02_L_H",
+    "after": "In_SenCY_Swv_02_Chk_L_H"
+  },
+  {
+    "source": "AK11",
+    "target": "BK11",
+    "kind": "名称",
+    "before": "\tIn_SenCY_Pos_06_Stp_L_H",
+    "after": "In_SenCY_Pos_05_Stopper_L_H"
+  },
+  {
+    "source": "R12",
+    "target": "AR12",
+    "kind": "コメント",
+    "before": "【X405】左側ワーク位置4",
+    "after": "【X405】左側ワーク位置3"
+  },
+  {
+    "source": "AE12",
+    "target": "BE12",
+    "kind": "コメント",
+    "before": "【X505】左旋回2チャック行",
+    "after": "【X505】左旋回2チャック開 行"
+  },
+  {
+    "source": "AL12",
+    "target": "BL12",
+    "kind": "コメント",
+    "before": "【X521】位置6左ストッパー戻",
+    "after": "【X521】位置5左ストッパー行"
+  },
+  {
+    "source": "S12",
+    "target": "AS12",
+    "kind": "名称",
+    "before": "In_Sen_Work_Pos_04_L",
+    "after": "In_Sen_Work_L_Pos_03"
+  },
+  {
+    "source": "AF12",
+    "target": "BF12",
+    "kind": "名称",
+    "before": "In_SenCY_Rot_Chuck_02_L_F",
+    "after": "In_SenCY_Swv_02_Chk_L_F"
+  },
+  {
+    "source": "AK12",
+    "target": "BK12",
+    "kind": "名称",
+    "before": "\tIn_SenCY_Pos_06_Stp_L_F",
+    "after": "In_SenCY_Pos_05_Stopper_L_F"
+  },
+  {
+    "source": "R13",
+    "target": "AR13",
+    "kind": "コメント",
+    "before": "【X406】左側ワーク位置5",
+    "after": "【X406】左側ワーク位置4"
+  },
+  {
+    "source": "Y13",
+    "target": "AY13",
+    "kind": "コメント",
+    "before": "【X422】供給左チャック戻",
+    "after": "【X422】供給左チャック閉 戻"
+  },
+  {
+    "source": "AL13",
+    "target": "BL13",
+    "kind": "コメント",
+    "before": "【X522】位置7左ストッパー戻",
+    "after": "【X522】位置6左ストッパー戻"
+  },
+  {
+    "source": "S13",
+    "target": "AS13",
+    "kind": "名称",
+    "before": "In_Sen_Work_Pos_05_L",
+    "after": "In_Sen_Work_L_Pos_04"
+  },
+  {
+    "source": "AF13",
+    "target": "BF13",
+    "kind": "名称",
+    "before": "In_SenCY_Rot_Pick_02_L_H",
+    "after": "In_SenCY_Swv_02_Pick_L_H"
+  },
+  {
+    "source": "AK13",
+    "target": "BK13",
+    "kind": "名称",
+    "before": "\tIn_SenCY_Pos_07_Stp_L_H",
+    "after": "In_SenCY_Pos_06_Stopper_L_H"
+  },
+  {
+    "source": "R14",
+    "target": "AR14",
+    "kind": "コメント",
+    "before": "【X407】左側ワーク位置6",
+    "after": "【X407】左側ワーク位置5"
+  },
+  {
+    "source": "Y14",
+    "target": "AY14",
+    "kind": "コメント",
+    "before": "【X423】供給左チャック行",
+    "after": "【X423】供給左チャック開 行"
+  },
+  {
+    "source": "AL14",
+    "target": "BL14",
+    "kind": "コメント",
+    "before": "【X523】位置7左ストッパー戻",
+    "after": "【X523】位置6左ストッパー行"
+  },
+  {
+    "source": "S14",
+    "target": "AS14",
+    "kind": "名称",
+    "before": "In_Sen_Work_Pos_06_L",
+    "after": "In_Sen_Work_L_Pos_05"
+  },
+  {
+    "source": "AF14",
+    "target": "BF14",
+    "kind": "名称",
+    "before": "In_SenCY_Rot_Pick_02_L_F",
+    "after": "In_SenCY_Swv_02_Pick_L_F"
+  },
+  {
+    "source": "AK14",
+    "target": "BK14",
+    "kind": "名称",
+    "before": "\tIn_SenCY_Pos_07_Stp_L_F",
+    "after": "In_SenCY_Pos_06_Stopper_L_F"
+  },
+  {
+    "source": "R16",
+    "target": "AR16",
+    "kind": "コメント",
+    "before": "【X408】左側ワーク位置7",
+    "after": "【X408】左側ワーク位置6"
+  },
+  {
+    "source": "AE16",
+    "target": "BE16",
+    "kind": "コメント",
+    "before": "【X508】排出左チャック戻",
+    "after": "【X508】排出左チャック閉 戻"
+  },
+  {
+    "source": "S16",
+    "target": "AS16",
+    "kind": "名称",
+    "before": "In_Sen_Work_Pos_07_L",
+    "after": "In_Sen_Work_L_Pos_06"
+  },
+  {
+    "source": "AK16",
+    "target": "BK16",
+    "kind": "名称",
+    "before": "\tIn_SenCY_SH_L_Turn_H",
+    "after": "In_SenCY_SH_L_Turn_H"
+  },
+  {
+    "source": "R17",
+    "target": "AR17",
+    "kind": "コメント",
+    "before": "【X409】左側ワーク位置8",
+    "after": "【X409】左側ワーク位置7"
+  },
+  {
+    "source": "AE17",
+    "target": "BE17",
+    "kind": "コメント",
+    "before": "【X509】排出左チャック行",
+    "after": "【X509】排出左チャック開 行"
+  },
+  {
+    "source": "S17",
+    "target": "AS17",
+    "kind": "名称",
+    "before": "In_Sen_Work_Pos_08_L",
+    "after": "In_Sen_Work_L_Pos_07"
+  },
+  {
+    "source": "AK17",
+    "target": "BK17",
+    "kind": "名称",
+    "before": "\tIn_SenCY_SH_L_Turn_F",
+    "after": "In_SenCY_SH_L_Turn_F"
+  },
+  {
+    "source": "R18",
+    "target": "AR18",
+    "kind": "コメント",
+    "before": "【X410】NG1左満杯",
+    "after": "【X410】NG1トレイ1左満杯"
+  },
+  {
+    "source": "S18",
+    "target": "AS18",
+    "kind": "名称",
+    "before": "In_Sen_NG_01_L_Full",
+    "after": "In_Sen_NG1_Tray_01_L_Full"
+  },
+  {
+    "source": "AF18",
+    "target": "BF18",
+    "kind": "名称",
+    "before": "In_SenCY_Ejc_SH_Feed_L_H",
+    "after": "In_SenCY_Ejc_SH_Feed_L_F"
+  },
+  {
+    "source": "R19",
+    "target": "AR19",
+    "kind": "コメント",
+    "before": "【X411】NG2左満杯",
+    "after": "【X411】NG1トレイ1左満杯警告"
+  },
+  {
+    "source": "Y19",
+    "target": "AY19",
+    "kind": "コメント",
+    "before": "【X427】高さ検査左持上行",
+    "after": "【X427】 高さ検査左持上行"
+  },
+  {
+    "source": "S19",
+    "target": "AS19",
+    "kind": "名称",
+    "before": "In_Sen_NG_02_L_Full",
+    "after": "In_Sen_NG1_Tray_01_L_Full_Warn"
+  },
+  {
+    "source": "AF19",
+    "target": "BF19",
+    "kind": "名称",
+    "before": "In_SenCY_Ejc_SH_Feed_L_F",
+    "after": "In_SenCY_Ejc_SH_Feed_L_H"
+  },
+  {
+    "source": "R20",
+    "target": "AR20",
+    "kind": "コメント",
+    "before": "【X412】NG3左満杯",
+    "after": "【X412】NG1トレイ2左満杯停止"
+  },
+  {
+    "source": "AE20",
+    "target": "BE20",
+    "kind": "コメント",
+    "before": "【X512】位置2左ストッパー戻",
+    "after": "【X512】位置1左ストッパー戻"
+  },
+  {
+    "source": "S20",
+    "target": "AS20",
+    "kind": "名称",
+    "before": "In_Sen_NG_03_L_Full",
+    "after": "In_Sen_NG1_Tray_02_L_Full"
+  },
+  {
+    "source": "X20",
+    "target": "AX20",
+    "kind": "名称",
+    "before": "\tIn_SenCY_NG_Pick_01_L_H",
+    "after": "In_SenCY_NG1_Pick_L_H"
+  },
+  {
+    "source": "AF20",
+    "target": "BF20",
+    "kind": "名称",
+    "before": "\tIn_SenCY_Pos_02_Stp_L_H",
+    "after": "In_SenCY_Pos_01_Stopper_L_H"
+  },
+  {
+    "source": "R21",
+    "target": "AR21",
+    "kind": "コメント",
+    "before": "【X413】NG4左満杯",
+    "after": "【X413】NG1トレイ2左満杯警告"
+  },
+  {
+    "source": "AE21",
+    "target": "BE21",
+    "kind": "コメント",
+    "before": "【X513】位置2左ストッパー行",
+    "after": "【X513】位置1左ストッパー行"
+  },
+  {
+    "source": "S21",
+    "target": "AS21",
+    "kind": "名称",
+    "before": "In_Sen_NG_04_L_Full",
+    "after": "In_Sen_NG1_Tray_02_L_Full_Warn"
+  },
+  {
+    "source": "X21",
+    "target": "AX21",
+    "kind": "名称",
+    "before": "\tIn_SenCY_NG_Pick_01_L_F",
+    "after": "In_SenCY_NG1_Pick_L_F"
+  },
+  {
+    "source": "AF21",
+    "target": "BF21",
+    "kind": "名称",
+    "before": "\tIn_SenCY_Pos_02_Stp_L_F",
+    "after": "In_SenCY_Pos_01_Stopper_L_F"
+  },
+  {
+    "source": "Y22",
+    "target": "AY22",
+    "kind": "コメント",
+    "before": "【X430】NG1左チャック戻",
+    "after": "【X430】 NG1左チャック閉 戻"
+  },
+  {
+    "source": "AE22",
+    "target": "BE22",
+    "kind": "コメント",
+    "before": "【X514】位置3左ストッパー戻",
+    "after": "【X514】位置2左ストッパー戻"
+  },
+  {
+    "source": "AL22",
+    "target": "BL22",
+    "kind": "コメント",
+    "before": "",
+    "after": "【X530】NG1左仕分け 戻"
+  },
+  {
+    "source": "X22",
+    "target": "AX22",
+    "kind": "名称",
+    "before": "In_SenCY_NG_Chk_01_L_H",
+    "after": "In_SenCY_NG1_Chk_L_H"
+  },
+  {
+    "source": "AF22",
+    "target": "BF22",
+    "kind": "名称",
+    "before": "\tIn_SenCY_Pos_03_Stp_L_H",
+    "after": "In_SenCY_Pos_02_Stopper_L_H"
+  },
+  {
+    "source": "AK22",
+    "target": "BK22",
+    "kind": "名称",
+    "before": "",
+    "after": "In_SenCY_NG1_Srt_L_H"
+  },
+  {
+    "source": "Y23",
+    "target": "AY23",
+    "kind": "コメント",
+    "before": "【X431】NG1左チャック行",
+    "after": "【X431】NG1左チャック開 行"
+  },
+  {
+    "source": "AE23",
+    "target": "BE23",
+    "kind": "コメント",
+    "before": "【X515】位置3左ストッパー行",
+    "after": "【X515】位置2左ストッパー行"
+  },
+  {
+    "source": "AL23",
+    "target": "BL23",
+    "kind": "コメント",
+    "before": "",
+    "after": "【X531】NG1左仕分け 行"
+  },
+  {
+    "source": "X23",
+    "target": "AX23",
+    "kind": "名称",
+    "before": "In_SenCY_NG_Chk_01_L_F",
+    "after": "In_SenCY_NG1_Chk_L_F"
+  },
+  {
+    "source": "AF23",
+    "target": "BF23",
+    "kind": "名称",
+    "before": "\tIn_SenCY_Pos_03_Stp_L_F",
+    "after": "In_SenCY_Pos_02_Stopper_L_F"
+  },
+  {
+    "source": "AK23",
+    "target": "BK23",
+    "kind": "名称",
+    "before": "",
+    "after": "In_SenCY_NG1_Srt_L_F"
+  },
+  {
+    "source": "Y33",
+    "target": "AL33",
+    "kind": "コメント",
+    "before": "【Y816】排出左チャック閉",
+    "after": "【Y816】排出左チャック閉 戻"
+  },
+  {
+    "source": "Y34",
+    "target": "AL34",
+    "kind": "コメント",
+    "before": "【Y817】排出左チャック開",
+    "after": "【Y817】排出左チャック開 行"
+  },
+  {
+    "source": "X35",
+    "target": "AK35",
+    "kind": "名称",
+    "before": "Out_CYw_Ejc_SH_Feed_L_F",
+    "after": "Out_CYw_Ejc_Hldr_Feed_L_F"
+  },
+  {
+    "source": "X36",
+    "target": "AK36",
+    "kind": "名称",
+    "before": "Out_CYw_Ejc_SH_Feed_L_H",
+    "after": "Out_CYw_Ejc_Hldr_Feed_L_H"
+  },
+  {
+    "source": "S37",
+    "target": "AF37",
+    "kind": "名称",
+    "before": "Out_CYw_NG_Pick_01_L_H",
+    "after": "Out_CYw_NG1_Pick_L_H"
+  },
+  {
+    "source": "X37",
+    "target": "AK37",
+    "kind": "名称",
+    "before": "Out_CYS_Pos_02_Stp_L",
+    "after": "\tOut_CYS_Pos_01_Stopper_L"
+  },
+  {
+    "source": "R38",
+    "target": "AE38",
+    "kind": "コメント",
+    "before": "【Y805】NG1左ピックアップ行",
+    "after": "【Y805】NG1左ピックアップ 行"
+  },
+  {
+    "source": "S38",
+    "target": "AF38",
+    "kind": "名称",
+    "before": "Out_CYw_NG_Pick_01_L_F",
+    "after": "Out_CYw_NG1_Pick_L_F"
+  },
+  {
+    "source": "X38",
+    "target": "AK38",
+    "kind": "名称",
+    "before": "Out_CYS_Pos_03_Stp_L",
+    "after": "\tOut_CYS_Pos_02_Stopper_L"
+  },
+  {
+    "source": "S39",
+    "target": "AF39",
+    "kind": "名称",
+    "before": "Out_CYw_NG_Chk_01_L_H",
+    "after": "Out_CYw_NG1_Chk_L_H"
+  },
+  {
+    "source": "X39",
+    "target": "AK39",
+    "kind": "名称",
+    "before": "Out_CYS_Pos_04_Stp_L",
+    "after": "\tOut_CYS_Pos_03_Stopper_L"
+  },
+  {
+    "source": "S40",
+    "target": "AF40",
+    "kind": "名称",
+    "before": "Out_CYw_NG_Chk_01_L_F",
+    "after": "Out_CYw_NG1_Chk_L_F"
+  },
+  {
+    "source": "X40",
+    "target": "AK40",
+    "kind": "名称",
+    "before": "Out_CYS_Pos_05_Stp_L",
+    "after": "\tOut_CYS_Pos_04_Stopper_L"
+  },
+  {
+    "source": "S43",
+    "target": "AF43",
+    "kind": "名称",
+    "before": "Out_CYw_Rot_Chuck_01_L_Cl",
+    "after": "Out_CYw_Swv_01_Chk_L_H"
+  },
+  {
+    "source": "X43",
+    "target": "AK43",
+    "kind": "名称",
+    "before": "Out_CYS_Pos_06_Stp_L",
+    "after": "\tOut_CYS_Pos_05_Stp_L"
+  },
+  {
+    "source": "Y44",
+    "target": "AL44",
+    "kind": "コメント",
+    "before": "【Y825】位置7左ストッパー",
+    "after": "【Y825】位置6左ストッパー"
+  },
+  {
+    "source": "S44",
+    "target": "AF44",
+    "kind": "名称",
+    "before": "Out_CYw_Rot_Chuck_01_L_Op",
+    "after": "Out_CYw_Swv_01_Chk_L_F"
+  },
+  {
+    "source": "X44",
+    "target": "AK44",
+    "kind": "名称",
+    "before": "Out_CYS_Pos_07_Stp_L",
+    "after": "\tOut_CYS_Pos_06_Stp_L"
+  },
+  {
+    "source": "S45",
+    "target": "AF45",
+    "kind": "名称",
+    "before": "Out_CYw_Rot_Pick_01_L_H",
+    "after": "Out_CYw_Swv_01_Pick_L_H"
+  },
+  {
+    "source": "X45",
+    "target": "AK45",
+    "kind": "名称",
+    "before": "\tOut_CYw_SH_L_Turn_H",
+    "after": "Out_CYw_SH_L_Turn_H"
+  },
+  {
+    "source": "S46",
+    "target": "AF46",
+    "kind": "名称",
+    "before": "Out_CYw_Rot_Pick_01_L_F",
+    "after": "Out_CYw_Swv_01_Pick_L_F"
+  },
+  {
+    "source": "X46",
+    "target": "AK46",
+    "kind": "名称",
+    "before": "\tOut_CYw_SH_L_Turn_F",
+    "after": "Out_CYw_SH_L_Turn_F"
+  },
+  {
+    "source": "R47",
+    "target": "AE47",
+    "kind": "コメント",
+    "before": "【Y812】左旋回2チャック閉",
+    "after": "【Y812】左旋回2チャック閉 戻"
+  },
+  {
+    "source": "S47",
+    "target": "AF47",
+    "kind": "名称",
+    "before": "Out_CYw_Rot_Chuck_02_L_H",
+    "after": "Out_CYw_Swv_02_Chk_L_H"
+  },
+  {
+    "source": "R48",
+    "target": "AE48",
+    "kind": "コメント",
+    "before": "【Y813】左旋回2チャック開",
+    "after": "【Y813】左旋回2チャック開 行"
+  },
+  {
+    "source": "S48",
+    "target": "AF48",
+    "kind": "名称",
+    "before": "Out_CYw_Rot_Chuck_02_L_F",
+    "after": "Out_CYw_Swv_02_Chk_L_F"
+  },
+  {
+    "source": "Y49",
+    "target": "AL49",
+    "kind": "コメント",
+    "before": "【X830】NG1左仕分け 戻",
+    "after": "【Y830】NG1左仕分け 戻"
+  },
+  {
+    "source": "S49",
+    "target": "AF49",
+    "kind": "名称",
+    "before": "Out_CYw_Rot_Pick_02_L_H",
+    "after": "Out_CYw_Swv_02_Pick_L_H"
+  },
+  {
+    "source": "Y50",
+    "target": "AL50",
+    "kind": "コメント",
+    "before": "【X830】NG1左仕分け 行",
+    "after": "【Y831】NG1左仕分け 行"
+  },
+  {
+    "source": "S50",
+    "target": "AF50",
+    "kind": "名称",
+    "before": "Out_CYw_Rot_Pick_02_L_F",
+    "after": "Out_CYw_Swv_02_Pick_L_F"
+  }
+]

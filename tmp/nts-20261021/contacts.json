@@ -1,0 +1,146 @@
+[
+  {
+    "db": "abook-1.sqlite",
+    "card": "3dfbe3bf-c336-4f9e-8dc5-53ec867eba60",
+    "DisplayName": "鴻江様【三木プーリ】",
+    "FirstName": "Koujirou",
+    "LastName": "Kounoe",
+    "PrimaryEmail": "kounoe.koujirou@mikipulley.co.jp"
+  },
+  {
+    "db": "abook-10.sqlite",
+    "card": "3a7212ca-afe9-4370-a6db-7feca5f0ea49",
+    "DisplayName": "安井工場長【光都】",
+    "PrimaryEmail": "yu-yasui@ime-group.co.jp"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "card": "ba11dad8-ec49-46f9-a2e5-531ce8736665",
+    "DisplayName": "藤田専務様",
+    "LastName": "藤田専務様",
+    "PrimaryEmail": "s-fujita@hirakata-g.co.jp"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "card": "998a94e5-e9a1-4417-b31e-5f3282d7b217",
+    "DisplayName": "池辺様【三木プーリー】",
+    "PrimaryEmail": "akemi@mikipulley.co.jp"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "card": "366c6a73-b577-43a9-9ba1-436cdabe6029",
+    "DisplayName": "三木様【N・T・S 】旧",
+    "LastName": "N・T・S 三木様",
+    "PrimaryEmail": "nts-miki@leto.eonet.ne.jp"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "card": "983e9ec4-098a-4fdc-980e-59c65c48c737",
+    "DisplayName": "藤田様【山陽電研】",
+    "PrimaryEmail": "h.fujita@sanyodenken.co.jp"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "card": "24e39402-f262-4911-bb08-f27a08f76e51",
+    "DisplayName": "安井様【キーエンス】",
+    "PrimaryEmail": "masui-y@sales.keyence.co.jp"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "card": "6059dacd-8fec-4f74-b5e3-8798f1543ad1",
+    "DisplayName": "藤田専務【アクトマシナリー】",
+    "LastName": "アクトマシナリー㈱　藤田様",
+    "PrimaryEmail": "s-fujita@actmc.co.jp"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "card": "075ce63e-77ed-43c0-8bbf-91e451025a2f",
+    "DisplayName": "藤田様【アクトマシナリー】",
+    "PrimaryEmail": "s-fujita@actmc.co.jp"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "card": "1bf1c0fa-f056-4c79-a254-68d7d4bbd3b3",
+    "DisplayName": "藤田社長【アクトマシナリー】",
+    "LastName": "藤田様",
+    "PrimaryEmail": "h-fujita@actmc.co.jp"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "card": "d451d336-cec4-444a-97b3-8ce42633aa39",
+    "DisplayName": "後藤様【NTS】",
+    "PrimaryEmail": "m.gotou@fa-nts.com"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "card": "4e3b6b29-4b60-43fc-8bb8-6f288dcf1934",
+    "DisplayName": "三木様【NTS】",
+    "FirstName": "三木様【NTS】",
+    "PrimaryEmail": "m.miki@fa-nts.com"
+  },
+  {
+    "db": "abook-16.sqlite",
+    "card": "a7829ebe-6bb5-4278-9563-82f17a61e132",
+    "DisplayName": "千足様【三木プーリー】",
+    "PrimaryEmail": "kchiashi@mikipulley.co.jp"
+  },
+  {
+    "db": "abook-19.sqlite",
+    "card": "2a62800e-c126-4eda-8195-f8561fca74aa",
+    "DisplayName": "藤田社員【生産技術】",
+    "PrimaryEmail": "ch-fujita@ime-group.co.jp"
+  },
+  {
+    "db": "abook-2.v3.sqlite",
+    "card": "06d8213f-c896-4ba1-92fb-8cca1f843adf",
+    "DisplayName": "安井 勇気 工場長",
+    "FirstName": "勇気",
+    "LastName": "安井",
+    "PrimaryEmail": "yu-yasui@ime-group.co.jp",
+    "Company": "株式会社ミヤビ",
+    "Department": "ミヤビ山崎",
+    "JobTitle": "課長（工場長）"
+  },
+  {
+    "db": "abook-3.sqlite",
+    "card": "5953e6c4-7271-404d-80b7-c50c34f9de41",
+    "DisplayName": "(有)エヌ・ティー・エス 後藤麻結 様",
+    "FirstName": "(有)エヌ・ティー・エス 後藤麻結 様",
+    "PrimaryEmail": "nts-gotou@zeus.eonet.ne.jp"
+  },
+  {
+    "db": "abook-3.sqlite",
+    "card": "7fe0f892-ef88-4f22-86e4-a200d93227d6",
+    "DisplayName": "(有)エヌ・ティー・エス 三木 学 様",
+    "FirstName": "(有)エヌ・ティー・エス 三木 学 様",
+    "PrimaryEmail": "m.miki@fa-nts.com"
+  },
+  {
+    "db": "abook-3.sqlite",
+    "card": "7111aaf1-49bd-4283-a9e1-e7a30b66039b",
+    "DisplayName": "鴻江様【三木プーリ】",
+    "FirstName": "Koujirou",
+    "LastName": "Kounoe",
+    "PrimaryEmail": "kounoe.koujirou@mikipulley.co.jp"
+  },
+  {
+    "db": "abook.sqlite",
+    "card": "54e26dd2-3c3a-4ca5-a396-fe19d5f50004",
+    "DisplayName": "鴻江様【三木プーリ】",
+    "FirstName": "Koujirou",
+    "LastName": "Kounoe",
+    "PrimaryEmail": "kounoe.koujirou@mikipulley.co.jp"
+  },
+  {
+    "db": "abook.v2.sqlite",
+    "card": "9637346c-ff96-4956-8d33-6c796bc2e466",
+    "DisplayName": "安井工場長（ミヤビ）",
+    "PrimaryEmail": "yu-yasui@ime-group.co.jp"
+  },
+  {
+    "db": "abook.v3.sqlite",
+    "card": "9637346c-ff96-4956-8d33-6c796bc2e466",
+    "DisplayName": "安井工場長（ミヤビ）",
+    "PrimaryEmail": "yu-yasui@ime-group.co.jp"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "eml": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\afpg804-order-mail-20261030\\注文書_AF-K261030-1_未送信.eml",
+  "to": "木村様【福西電機】 <kimura.yuko@denzai.jp>",
+  "cc": "中村 智 次長 <sa-nakamura@ime-group.co.jp>, 藤本様【福西電機】 <fujimoto.keita@denzai.jp>, 藤田さん【生産技術部】 <ch-fujita@ime-group.co.jp>, 北野社員【生産技術 】 <hi-kitano@ime-group.co.jp>",
+  "subject": "Re: 見積依頼【FPΣ用バックアップ電池 AFPG804／10個】",
+  "reply_to": "<OS9P286MB682298C0BF3354E012DB7335C86D2@OS9P286MB6822.JPNP286.PROD.OUTLOOK.COM>",
+  "attachment": "\\\\nas-ime5\\生産技術部\\scan\\注文書【AF-K261030-1】.pdf",
+  "attachment_sha256": "2716db2a512c27769ae5d843d3abcd913082cc00e6a0af3ba833beff7980a9e4",
+  "attachment_bytes": 209586,
+  "eml_verified": true,
+  "thunderbird_drafts_saved": true,
+  "sent": false,
+  "ui_error": null,
+  "saved_message_id": "<0c48f620-4f58-4d23-acec-9f2ee20e7912@ime-group.co.jp>",
+  "saved_date": "Fri, 30 Oct 2026 16:08:14 +0900",
+  "matching_active_drafts": 1,
+  "verification": "保存後の宛先・CC・本文・添付SHA256・In-Reply-To/Referencesが一致"
+}

@@ -1,0 +1,1685 @@
+{
+  "output": "C:/Users/SEIGI-N13/Desktop/3089-2603A 検査箱詰め装置(CORE SUB)/資料/RCON_直接数値指定_INOUT登録バイブル_20261017B.xlsx",
+  "defs": [
+    {
+      "old": "ST_RCON_DirectControl",
+      "name": "ST_RCON_Direct_OUT_Control",
+      "members": [
+        {
+          "name": "Start",
+          "type": "BOOL",
+          "comment": "位置決め開始。受付応答確認・10ms以上保持が必要",
+          "bit": 0,
+          "signal": "DSTR",
+          "explain": "TRUEで開始要求。受付応答と10ms以上の保持を確認してOFF。常時ONにしない。"
+        },
+        {
+          "name": "Home",
+          "type": "BOOL",
+          "comment": "原点復帰指令",
+          "bit": 1,
+          "signal": "HOME",
+          "explain": "TRUEで原点復帰を指令。原点復帰完了はIN側HomeDoneで確認。"
+        },
+        {
+          "name": "Pause",
+          "type": "BOOL",
+          "comment": "一時停止。TRUEで停止、FALSEで解除（安全停止とは別）",
+          "bit": 2,
+          "signal": "STP",
+          "explain": "TRUEで一時停止、FALSEで解除。非常停止・安全停止の代用ではない。"
+        },
+        {
+          "name": "Reset",
+          "type": "BOOL",
+          "comment": "アラームリセット指令",
+          "bit": 3,
+          "signal": "RES",
+          "explain": "TRUEでアラームリセット要求。コールドスタート級の異常には使用できない。"
+        },
+        {
+          "name": "ServoOn",
+          "type": "BOOL",
+          "comment": "サーボON指令",
+          "bit": 4,
+          "signal": "SON",
+          "explain": "TRUEでサーボON要求。ON状態はIN側ServoReadyで確認。"
+        },
+        {
+          "name": "InchingSelect",
+          "type": "BOOL",
+          "comment": "TRUE：インチング、FALSE：ジョグ",
+          "bit": 5,
+          "signal": "JISL",
+          "explain": "TRUEは一定距離のインチング、FALSEは押している間のジョグ。"
+        },
+        {
+          "name": "JogSpeedSelect",
+          "type": "BOOL",
+          "comment": "ジョグ速度・インチング距離の切替",
+          "bit": 6,
+          "signal": "JVEL",
+          "explain": "FALSEは速度No.26・距離No.48、TRUEは速度No.47または指令速度・距離No.49。"
+        },
+        {
+          "name": "JogMinus",
+          "type": "BOOL",
+          "comment": "原点方向ジョグ",
+          "bit": 7,
+          "signal": "JOG-",
+          "explain": "TRUEで原点方向へジョグ。反対方向指令との同時ONを防ぐ。"
+        },
+        {
+          "name": "JogPlus",
+          "type": "BOOL",
+          "comment": "反原点方向ジョグ",
+          "bit": 8,
+          "signal": "JOG+",
+          "explain": "TRUEで反原点方向へジョグ。反対方向指令との同時ONを防ぐ。"
+        },
+        {
+          "name": "GainSelect0",
+          "type": "BOOL",
+          "comment": "サーボゲインセット選択の下位bit",
+          "bit": 10,
+          "signal": "GSL0",
+          "explain": "GainSelect1と組合せてサーボゲインセット0～3を選ぶ。機械調整用。"
+        },
+        {
+          "name": "GainSelect1",
+          "type": "BOOL",
+          "comment": "サーボゲインセット選択の上位bit",
+          "bit": 11,
+          "signal": "GSL1",
+          "explain": "GainSelect0との2bitで選択。速度指令とは別の機能。"
+        },
+        {
+          "name": "PushEnable",
+          "type": "BOOL",
+          "comment": "TRUE：押付け、FALSE：通常位置決め",
+          "bit": 12,
+          "signal": "PUSH",
+          "explain": "TRUEは押付け、FALSEは通常位置決め。押付け条件は別途確認。"
+        },
+        {
+          "name": "PushDirection",
+          "type": "BOOL",
+          "comment": "押付け方向指定（CON方式選択時）",
+          "bit": 13,
+          "signal": "DIR",
+          "explain": "CON方式押付け時、TRUEは反原点方向、FALSEは原点方向。"
+        },
+        {
+          "name": "RelativeMove",
+          "type": "BOOL",
+          "comment": "TRUE：相対位置、FALSE：絶対位置",
+          "bit": 14,
+          "signal": "INC",
+          "explain": "FALSEは絶対座標、TRUEは現在位置からの相対移動量。"
+        },
+        {
+          "name": "BrakeRelease",
+          "type": "BOOL",
+          "comment": "ブレーキ強制解除。通常FALSE・使用時は機械安全確認",
+          "bit": 15,
+          "signal": "BKRL",
+          "explain": "TRUEはブレーキ強制解除。通常FALSE。縦軸では落下等の危険がある。"
+        }
+      ],
+      "order": 1,
+      "dir": "OUT"
+    },
+    {
+      "old": "ST_RCON_DirectStatusBits",
+      "name": "ST_RCON_Direct_IN_Status",
+      "members": [
+        {
+          "name": "PositionDone",
+          "type": "BOOL",
+          "comment": "位置決め完了",
+          "bit": 0,
+          "signal": "PEND",
+          "explain": "TRUEは位置決め完了。今回の指令受付・完了の順序と合わせて確認する。"
+        },
+        {
+          "name": "HomeDone",
+          "type": "BOOL",
+          "comment": "原点復帰完了",
+          "bit": 1,
+          "signal": "HEND",
+          "explain": "TRUEは原点復帰が完了し原点情報を維持している状態。"
+        },
+        {
+          "name": "Moving",
+          "type": "BOOL",
+          "comment": "移動中",
+          "bit": 2,
+          "signal": "MOVE",
+          "explain": "TRUEは移動中。FALSEだけで目的地到着とは判断しない。"
+        },
+        {
+          "name": "Alarm",
+          "type": "BOOL",
+          "comment": "アラーム発生",
+          "bit": 3,
+          "signal": "ALM",
+          "explain": "TRUEはアラーム発生中。AlarmCodeも読み原因を確認する。"
+        },
+        {
+          "name": "ServoReady",
+          "type": "BOOL",
+          "comment": "サーボON・運転準備完了",
+          "bit": 4,
+          "signal": "SV",
+          "explain": "TRUEはサーボON状態。OUT側のServoOn指令と区別する。"
+        },
+        {
+          "name": "PushMiss",
+          "type": "BOOL",
+          "comment": "押付け空振り",
+          "bit": 5,
+          "signal": "PSFL",
+          "explain": "TRUEは押付け空振り完了。押付け成功と同一視しない。"
+        },
+        {
+          "name": "OverloadWarning",
+          "type": "BOOL",
+          "comment": "過負荷警告・軽故障アラーム",
+          "bit": 7,
+          "signal": "ALML",
+          "explain": "TRUEは過負荷警告またはメッセージレベルのアラーム。"
+        },
+        {
+          "name": "CommandDone",
+          "type": "BOOL",
+          "comment": "指令完了（位置決め・押付け・空振りを含む）",
+          "bit": 8,
+          "signal": "MEND",
+          "explain": "TRUEは位置決め・押付け・空振りのいずれかで完了。成功保証ではない。"
+        },
+        {
+          "name": "Zone1",
+          "type": "BOOL",
+          "comment": "ゾーン1内",
+          "bit": 12,
+          "signal": "ZONE1",
+          "explain": "TRUEは現在位置がゾーン1の設定範囲内。"
+        },
+        {
+          "name": "Zone2",
+          "type": "BOOL",
+          "comment": "ゾーン2内",
+          "bit": 13,
+          "signal": "ZONE2",
+          "explain": "TRUEは現在位置がゾーン2の設定範囲内。"
+        },
+        {
+          "name": "ControllerReady",
+          "type": "BOOL",
+          "comment": "コントローラー準備完了",
+          "bit": 14,
+          "signal": "CRDY",
+          "explain": "TRUEはコントローラー準備完了。通信・安全等の条件は別途確認。"
+        },
+        {
+          "name": "EmergencyStop",
+          "type": "BOOL",
+          "comment": "非常停止状態のモニター（安全回路の代用不可）",
+          "bit": 15,
+          "signal": "EMGS",
+          "explain": "TRUEは非常停止状態のモニター。安全回路の代用にはしない。"
+        }
+      ],
+      "order": 2,
+      "dir": "IN"
+    },
+    {
+      "old": "ST_RCON_DirectCommand",
+      "name": "ST_RCON_Direct_OUT_Axis",
+      "members": [
+        {
+          "name": "TargetPos_mm",
+          "type": "LREAL",
+          "comment": "目標位置。絶対／相対はControl.RelativeMoveで区別"
+        },
+        {
+          "name": "PositionBand_mm",
+          "type": "LREAL",
+          "comment": "位置決め幅。非負・仕様範囲内で指定"
+        },
+        {
+          "name": "Speed_mm_s",
+          "type": "LREAL",
+          "comment": "指令速度。実機速度単位・上限に合わせて換算"
+        },
+        {
+          "name": "AccDec_G",
+          "type": "LREAL",
+          "comment": "加速・減速共通値。個別指定ではない"
+        },
+        {
+          "name": "PushLimit_pct",
+          "type": "LREAL",
+          "comment": "押付け電流制限。適用範囲はアクチュエーター仕様を確認"
+        },
+        {
+          "name": "Control",
+          "type": "ST_RCON_Direct_OUT_Control",
+          "comment": "制御BOOL群をWORDにまとめてからUINTへ渡す"
+        }
+      ],
+      "order": 3,
+      "dir": "OUT"
+    },
+    {
+      "old": "ST_RCON_DirectFeedback",
+      "name": "ST_RCON_Direct_IN_Axis",
+      "members": [
+        {
+          "name": "ActualPos_mm",
+          "type": "LREAL",
+          "comment": "現在位置。符号付き32bitを復元して換算"
+        },
+        {
+          "name": "Current_mA",
+          "type": "DINT",
+          "comment": "RCON-PCでは指令電流。実測トルクではない"
+        },
+        {
+          "name": "ActualSpeed_mm_s",
+          "type": "LREAL",
+          "comment": "現在速度。移動方向の符号を保持"
+        },
+        {
+          "name": "AlarmCode",
+          "type": "UINT",
+          "comment": "アラームコード。簡易アラームコードではない"
+        },
+        {
+          "name": "Status",
+          "type": "ST_RCON_Direct_IN_Status",
+          "comment": "状態WORDから各BOOLを取り出す"
+        },
+        {
+          "name": "DataValid",
+          "type": "BOOL",
+          "comment": "通信・軸リンク・割付確認を含む有効性。初期FALSE"
+        }
+      ],
+      "order": 4,
+      "dir": "IN"
+    }
+  ],
+  "io": {
+    "OUT": [
+      [
+        "RCON1_OUT_GwControl0Raw",
+        "PLC→RCON 【OUT00】共通 ゲートウェイ制御信号0（MON等）",
+        "OUT00",
+        "UINT",
+        "WORD",
+        "共通",
+        "共通制御",
+        "16bit一括",
+        "2003:01"
+      ],
+      [
+        "RCON1_OUT_GwControl1ReservedRaw",
+        "PLC→RCON 【OUT01】共通 ゲートウェイ制御信号1（予約・使用禁止）",
+        "OUT01",
+        "UINT",
+        "-",
+        "共通",
+        "-",
+        "予約",
+        "2003:02"
+      ],
+      [
+        "RCON1_OUT_ReservedOut02Raw",
+        "PLC→RCON 【OUT02】共通 共通予約領域（使用禁止・占有あり）",
+        "OUT02",
+        "UINT",
+        "-",
+        "共通",
+        "-",
+        "予約",
+        "2003:03"
+      ],
+      [
+        "RCON1_OUT_ReservedOut03Raw",
+        "PLC→RCON 【OUT03】共通 共通予約領域（使用禁止・占有あり）",
+        "OUT03",
+        "UINT",
+        "-",
+        "共通",
+        "-",
+        "予約",
+        "2003:04"
+      ],
+      [
+        "RCON1_OUT_ReservedOut04Raw",
+        "PLC→RCON 【OUT04】共通 共通予約領域（使用禁止・占有あり）",
+        "OUT04",
+        "UINT",
+        "-",
+        "共通",
+        "-",
+        "予約",
+        "2003:05"
+      ],
+      [
+        "RCON1_OUT_ReservedOut05Raw",
+        "PLC→RCON 【OUT05】共通 共通予約領域（使用禁止・占有あり）",
+        "OUT05",
+        "UINT",
+        "-",
+        "共通",
+        "-",
+        "予約",
+        "2003:06"
+      ],
+      [
+        "RCON1_OUT_ReservedOut06Raw",
+        "PLC→RCON 【OUT06】共通 共通予約領域（使用禁止・占有あり）",
+        "OUT06",
+        "UINT",
+        "-",
+        "共通",
+        "-",
+        "予約",
+        "2003:07"
+      ],
+      [
+        "RCON1_OUT_ReservedOut07Raw",
+        "PLC→RCON 【OUT07】共通 共通予約領域（使用禁止・占有あり）",
+        "OUT07",
+        "UINT",
+        "-",
+        "共通",
+        "-",
+        "予約",
+        "2003:08"
+      ],
+      [
+        "RCON1_OUT_Axis1_TargetPosLoRaw",
+        "PLC→RCON 【OUT08】1軸目（No.0） 目標位置 下位ワード",
+        "OUT08",
+        "UINT",
+        "DINT（分割前）",
+        0,
+        "RCON1_OUT[1].TargetPos_mm",
+        "0.01mm",
+        "2003:09"
+      ],
+      [
+        "RCON1_OUT_Axis1_TargetPosHiRaw",
+        "PLC→RCON 【OUT09】1軸目（No.0） 目標位置 上位ワード",
+        "OUT09",
+        "UINT",
+        "DINT（分割前）",
+        0,
+        "RCON1_OUT[1].TargetPos_mm",
+        "0.01mm",
+        "2003:0A"
+      ],
+      [
+        "RCON1_OUT_Axis1_PositionBandLoRaw",
+        "PLC→RCON 【OUT10】1軸目（No.0） 位置決め幅 下位ワード",
+        "OUT10",
+        "UINT",
+        "UDINT（内部推奨）",
+        0,
+        "RCON1_OUT[1].PositionBand_mm",
+        "0.01mm",
+        "2003:0B"
+      ],
+      [
+        "RCON1_OUT_Axis1_PositionBandHiRaw",
+        "PLC→RCON 【OUT11】1軸目（No.0） 位置決め幅 上位ワード",
+        "OUT11",
+        "UINT",
+        "UDINT（内部推奨）",
+        0,
+        "RCON1_OUT[1].PositionBand_mm",
+        "0.01mm",
+        "2003:0C"
+      ],
+      [
+        "RCON1_OUT_Axis1_SpeedRaw",
+        "PLC→RCON 【OUT12】1軸目（No.0） 速度指令",
+        "OUT12",
+        "UINT",
+        "UINT",
+        0,
+        "RCON1_OUT[1].Speed_mm_s",
+        "1.0／0.1mm/s（設定依存）",
+        "2003:0D"
+      ],
+      [
+        "RCON1_OUT_Axis1_AccDecRaw",
+        "PLC→RCON 【OUT13】1軸目（No.0） 加減速度指令（加速・減速共通）",
+        "OUT13",
+        "UINT",
+        "UINT",
+        0,
+        "RCON1_OUT[1].AccDec_G",
+        "0.01G",
+        "2003:0E"
+      ],
+      [
+        "RCON1_OUT_Axis1_PushLimitRaw",
+        "PLC→RCON 【OUT14】1軸目（No.0） 押付け電流制限値",
+        "OUT14",
+        "UINT",
+        "UINT",
+        0,
+        "RCON1_OUT[1].PushLimit_pct",
+        "255＝100％",
+        "2003:0F"
+      ],
+      [
+        "RCON1_OUT_Axis1_ControlRaw",
+        "PLC→RCON 【OUT15】1軸目（No.0） 軸制御信号（DSTR・SON等）",
+        "OUT15",
+        "UINT",
+        "WORD",
+        0,
+        "RCON1_OUT[1].Control",
+        "16bit一括",
+        "2003:10"
+      ],
+      [
+        "RCON1_OUT_Axis2_TargetPosLoRaw",
+        "PLC→RCON 【OUT16】2軸目（No.1） 目標位置 下位ワード",
+        "OUT16",
+        "UINT",
+        "DINT（分割前）",
+        1,
+        "RCON1_OUT[2].TargetPos_mm",
+        "0.01mm",
+        "2003:11"
+      ],
+      [
+        "RCON1_OUT_Axis2_TargetPosHiRaw",
+        "PLC→RCON 【OUT17】2軸目（No.1） 目標位置 上位ワード",
+        "OUT17",
+        "UINT",
+        "DINT（分割前）",
+        1,
+        "RCON1_OUT[2].TargetPos_mm",
+        "0.01mm",
+        "2003:12"
+      ],
+      [
+        "RCON1_OUT_Axis2_PositionBandLoRaw",
+        "PLC→RCON 【OUT18】2軸目（No.1） 位置決め幅 下位ワード",
+        "OUT18",
+        "UINT",
+        "UDINT（内部推奨）",
+        1,
+        "RCON1_OUT[2].PositionBand_mm",
+        "0.01mm",
+        "2003:13"
+      ],
+      [
+        "RCON1_OUT_Axis2_PositionBandHiRaw",
+        "PLC→RCON 【OUT19】2軸目（No.1） 位置決め幅 上位ワード",
+        "OUT19",
+        "UINT",
+        "UDINT（内部推奨）",
+        1,
+        "RCON1_OUT[2].PositionBand_mm",
+        "0.01mm",
+        "2003:14"
+      ],
+      [
+        "RCON1_OUT_Axis2_SpeedRaw",
+        "PLC→RCON 【OUT20】2軸目（No.1） 速度指令",
+        "OUT20",
+        "UINT",
+        "UINT",
+        1,
+        "RCON1_OUT[2].Speed_mm_s",
+        "1.0／0.1mm/s（設定依存）",
+        "2003:15"
+      ],
+      [
+        "RCON1_OUT_Axis2_AccDecRaw",
+        "PLC→RCON 【OUT21】2軸目（No.1） 加減速度指令（加速・減速共通）",
+        "OUT21",
+        "UINT",
+        "UINT",
+        1,
+        "RCON1_OUT[2].AccDec_G",
+        "0.01G",
+        "2003:16"
+      ],
+      [
+        "RCON1_OUT_Axis2_PushLimitRaw",
+        "PLC→RCON 【OUT22】2軸目（No.1） 押付け電流制限値",
+        "OUT22",
+        "UINT",
+        "UINT",
+        1,
+        "RCON1_OUT[2].PushLimit_pct",
+        "255＝100％",
+        "2003:17"
+      ],
+      [
+        "RCON1_OUT_Axis2_ControlRaw",
+        "PLC→RCON 【OUT23】2軸目（No.1） 軸制御信号（DSTR・SON等）",
+        "OUT23",
+        "UINT",
+        "WORD",
+        1,
+        "RCON1_OUT[2].Control",
+        "16bit一括",
+        "2003:18"
+      ],
+      [
+        "RCON1_OUT_Axis3_TargetPosLoRaw",
+        "PLC→RCON 【OUT24】3軸目（No.2） 目標位置 下位ワード",
+        "OUT24",
+        "UINT",
+        "DINT（分割前）",
+        2,
+        "RCON1_OUT[3].TargetPos_mm",
+        "0.01mm",
+        "2003:19"
+      ],
+      [
+        "RCON1_OUT_Axis3_TargetPosHiRaw",
+        "PLC→RCON 【OUT25】3軸目（No.2） 目標位置 上位ワード",
+        "OUT25",
+        "UINT",
+        "DINT（分割前）",
+        2,
+        "RCON1_OUT[3].TargetPos_mm",
+        "0.01mm",
+        "2003:1A"
+      ],
+      [
+        "RCON1_OUT_Axis3_PositionBandLoRaw",
+        "PLC→RCON 【OUT26】3軸目（No.2） 位置決め幅 下位ワード",
+        "OUT26",
+        "UINT",
+        "UDINT（内部推奨）",
+        2,
+        "RCON1_OUT[3].PositionBand_mm",
+        "0.01mm",
+        "2003:1B"
+      ],
+      [
+        "RCON1_OUT_Axis3_PositionBandHiRaw",
+        "PLC→RCON 【OUT27】3軸目（No.2） 位置決め幅 上位ワード",
+        "OUT27",
+        "UINT",
+        "UDINT（内部推奨）",
+        2,
+        "RCON1_OUT[3].PositionBand_mm",
+        "0.01mm",
+        "2003:1C"
+      ],
+      [
+        "RCON1_OUT_Axis3_SpeedRaw",
+        "PLC→RCON 【OUT28】3軸目（No.2） 速度指令",
+        "OUT28",
+        "UINT",
+        "UINT",
+        2,
+        "RCON1_OUT[3].Speed_mm_s",
+        "1.0／0.1mm/s（設定依存）",
+        "2003:1D"
+      ],
+      [
+        "RCON1_OUT_Axis3_AccDecRaw",
+        "PLC→RCON 【OUT29】3軸目（No.2） 加減速度指令（加速・減速共通）",
+        "OUT29",
+        "UINT",
+        "UINT",
+        2,
+        "RCON1_OUT[3].AccDec_G",
+        "0.01G",
+        "2003:1E"
+      ],
+      [
+        "RCON1_OUT_Axis3_PushLimitRaw",
+        "PLC→RCON 【OUT30】3軸目（No.2） 押付け電流制限値",
+        "OUT30",
+        "UINT",
+        "UINT",
+        2,
+        "RCON1_OUT[3].PushLimit_pct",
+        "255＝100％",
+        "2003:1F"
+      ],
+      [
+        "RCON1_OUT_Axis3_ControlRaw",
+        "PLC→RCON 【OUT31】3軸目（No.2） 軸制御信号（DSTR・SON等）",
+        "OUT31",
+        "UINT",
+        "WORD",
+        2,
+        "RCON1_OUT[3].Control",
+        "16bit一括",
+        "2003:20"
+      ],
+      [
+        "RCON1_OUT_Axis4_TargetPosLoRaw",
+        "PLC→RCON 【OUT32】4軸目（No.3） 目標位置 下位ワード",
+        "OUT32",
+        "UINT",
+        "DINT（分割前）",
+        3,
+        "RCON1_OUT[4].TargetPos_mm",
+        "0.01mm",
+        "2003:21"
+      ],
+      [
+        "RCON1_OUT_Axis4_TargetPosHiRaw",
+        "PLC→RCON 【OUT33】4軸目（No.3） 目標位置 上位ワード",
+        "OUT33",
+        "UINT",
+        "DINT（分割前）",
+        3,
+        "RCON1_OUT[4].TargetPos_mm",
+        "0.01mm",
+        "2003:22"
+      ],
+      [
+        "RCON1_OUT_Axis4_PositionBandLoRaw",
+        "PLC→RCON 【OUT34】4軸目（No.3） 位置決め幅 下位ワード",
+        "OUT34",
+        "UINT",
+        "UDINT（内部推奨）",
+        3,
+        "RCON1_OUT[4].PositionBand_mm",
+        "0.01mm",
+        "2003:23"
+      ],
+      [
+        "RCON1_OUT_Axis4_PositionBandHiRaw",
+        "PLC→RCON 【OUT35】4軸目（No.3） 位置決め幅 上位ワード",
+        "OUT35",
+        "UINT",
+        "UDINT（内部推奨）",
+        3,
+        "RCON1_OUT[4].PositionBand_mm",
+        "0.01mm",
+        "2003:24"
+      ],
+      [
+        "RCON1_OUT_Axis4_SpeedRaw",
+        "PLC→RCON 【OUT36】4軸目（No.3） 速度指令",
+        "OUT36",
+        "UINT",
+        "UINT",
+        3,
+        "RCON1_OUT[4].Speed_mm_s",
+        "1.0／0.1mm/s（設定依存）",
+        "2003:25"
+      ],
+      [
+        "RCON1_OUT_Axis4_AccDecRaw",
+        "PLC→RCON 【OUT37】4軸目（No.3） 加減速度指令（加速・減速共通）",
+        "OUT37",
+        "UINT",
+        "UINT",
+        3,
+        "RCON1_OUT[4].AccDec_G",
+        "0.01G",
+        "2003:26"
+      ],
+      [
+        "RCON1_OUT_Axis4_PushLimitRaw",
+        "PLC→RCON 【OUT38】4軸目（No.3） 押付け電流制限値",
+        "OUT38",
+        "UINT",
+        "UINT",
+        3,
+        "RCON1_OUT[4].PushLimit_pct",
+        "255＝100％",
+        "2003:27"
+      ],
+      [
+        "RCON1_OUT_Axis4_ControlRaw",
+        "PLC→RCON 【OUT39】4軸目（No.3） 軸制御信号（DSTR・SON等）",
+        "OUT39",
+        "UINT",
+        "WORD",
+        3,
+        "RCON1_OUT[4].Control",
+        "16bit一括",
+        "2003:28"
+      ],
+      [
+        "RCON1_OUT_Axis5_TargetPosLoRaw",
+        "PLC→RCON 【OUT40】5軸目（No.4） 目標位置 下位ワード",
+        "OUT40",
+        "UINT",
+        "DINT（分割前）",
+        4,
+        "RCON1_OUT[5].TargetPos_mm",
+        "0.01mm",
+        "2003:29"
+      ],
+      [
+        "RCON1_OUT_Axis5_TargetPosHiRaw",
+        "PLC→RCON 【OUT41】5軸目（No.4） 目標位置 上位ワード",
+        "OUT41",
+        "UINT",
+        "DINT（分割前）",
+        4,
+        "RCON1_OUT[5].TargetPos_mm",
+        "0.01mm",
+        "2003:2A"
+      ],
+      [
+        "RCON1_OUT_Axis5_PositionBandLoRaw",
+        "PLC→RCON 【OUT42】5軸目（No.4） 位置決め幅 下位ワード",
+        "OUT42",
+        "UINT",
+        "UDINT（内部推奨）",
+        4,
+        "RCON1_OUT[5].PositionBand_mm",
+        "0.01mm",
+        "2003:2B"
+      ],
+      [
+        "RCON1_OUT_Axis5_PositionBandHiRaw",
+        "PLC→RCON 【OUT43】5軸目（No.4） 位置決め幅 上位ワード",
+        "OUT43",
+        "UINT",
+        "UDINT（内部推奨）",
+        4,
+        "RCON1_OUT[5].PositionBand_mm",
+        "0.01mm",
+        "2003:2C"
+      ],
+      [
+        "RCON1_OUT_Axis5_SpeedRaw",
+        "PLC→RCON 【OUT44】5軸目（No.4） 速度指令",
+        "OUT44",
+        "UINT",
+        "UINT",
+        4,
+        "RCON1_OUT[5].Speed_mm_s",
+        "1.0／0.1mm/s（設定依存）",
+        "2003:2D"
+      ],
+      [
+        "RCON1_OUT_Axis5_AccDecRaw",
+        "PLC→RCON 【OUT45】5軸目（No.4） 加減速度指令（加速・減速共通）",
+        "OUT45",
+        "UINT",
+        "UINT",
+        4,
+        "RCON1_OUT[5].AccDec_G",
+        "0.01G",
+        "2003:2E"
+      ],
+      [
+        "RCON1_OUT_Axis5_PushLimitRaw",
+        "PLC→RCON 【OUT46】5軸目（No.4） 押付け電流制限値",
+        "OUT46",
+        "UINT",
+        "UINT",
+        4,
+        "RCON1_OUT[5].PushLimit_pct",
+        "255＝100％",
+        "2003:2F"
+      ],
+      [
+        "RCON1_OUT_Axis5_ControlRaw",
+        "PLC→RCON 【OUT47】5軸目（No.4） 軸制御信号（DSTR・SON等）",
+        "OUT47",
+        "UINT",
+        "WORD",
+        4,
+        "RCON1_OUT[5].Control",
+        "16bit一括",
+        "2003:30"
+      ],
+      [
+        "RCON1_OUT_Axis6_TargetPosLoRaw",
+        "PLC→RCON 【OUT48】6軸目（No.5） 目標位置 下位ワード",
+        "OUT48",
+        "UINT",
+        "DINT（分割前）",
+        5,
+        "RCON1_OUT[6].TargetPos_mm",
+        "0.01mm",
+        "2003:31"
+      ],
+      [
+        "RCON1_OUT_Axis6_TargetPosHiRaw",
+        "PLC→RCON 【OUT49】6軸目（No.5） 目標位置 上位ワード",
+        "OUT49",
+        "UINT",
+        "DINT（分割前）",
+        5,
+        "RCON1_OUT[6].TargetPos_mm",
+        "0.01mm",
+        "2003:32"
+      ],
+      [
+        "RCON1_OUT_Axis6_PositionBandLoRaw",
+        "PLC→RCON 【OUT50】6軸目（No.5） 位置決め幅 下位ワード",
+        "OUT50",
+        "UINT",
+        "UDINT（内部推奨）",
+        5,
+        "RCON1_OUT[6].PositionBand_mm",
+        "0.01mm",
+        "2003:33"
+      ],
+      [
+        "RCON1_OUT_Axis6_PositionBandHiRaw",
+        "PLC→RCON 【OUT51】6軸目（No.5） 位置決め幅 上位ワード",
+        "OUT51",
+        "UINT",
+        "UDINT（内部推奨）",
+        5,
+        "RCON1_OUT[6].PositionBand_mm",
+        "0.01mm",
+        "2003:34"
+      ],
+      [
+        "RCON1_OUT_Axis6_SpeedRaw",
+        "PLC→RCON 【OUT52】6軸目（No.5） 速度指令",
+        "OUT52",
+        "UINT",
+        "UINT",
+        5,
+        "RCON1_OUT[6].Speed_mm_s",
+        "1.0／0.1mm/s（設定依存）",
+        "2003:35"
+      ],
+      [
+        "RCON1_OUT_Axis6_AccDecRaw",
+        "PLC→RCON 【OUT53】6軸目（No.5） 加減速度指令（加速・減速共通）",
+        "OUT53",
+        "UINT",
+        "UINT",
+        5,
+        "RCON1_OUT[6].AccDec_G",
+        "0.01G",
+        "2003:36"
+      ],
+      [
+        "RCON1_OUT_Axis6_PushLimitRaw",
+        "PLC→RCON 【OUT54】6軸目（No.5） 押付け電流制限値",
+        "OUT54",
+        "UINT",
+        "UINT",
+        5,
+        "RCON1_OUT[6].PushLimit_pct",
+        "255＝100％",
+        "2003:37"
+      ],
+      [
+        "RCON1_OUT_Axis6_ControlRaw",
+        "PLC→RCON 【OUT55】6軸目（No.5） 軸制御信号（DSTR・SON等）",
+        "OUT55",
+        "UINT",
+        "WORD",
+        5,
+        "RCON1_OUT[6].Control",
+        "16bit一括",
+        "2003:38"
+      ]
+    ],
+    "IN": [
+      [
+        "RCON1_IN_GwStatus0Raw",
+        "RCON→PLC 【IN00】共通 ゲートウェイ状態信号0",
+        "IN00",
+        "UINT",
+        "WORD",
+        "共通",
+        "共通状態",
+        "16bit一括",
+        "2004:01"
+      ],
+      [
+        "RCON1_IN_AxisLinkStatusRaw",
+        "RCON→PLC 【IN01】共通 ゲートウェイ状態信号1（軸No.0～15リンク状態）",
+        "IN01",
+        "UINT",
+        "WORD",
+        "共通",
+        "軸リンク状態",
+        "16bit一括",
+        "2004:02"
+      ],
+      [
+        "RCON1_IN_PowerStatus0Raw",
+        "RCON→PLC 【IN02】共通 電源ユニット状態信号0",
+        "IN02",
+        "UINT",
+        "WORD",
+        "共通",
+        "電源状態",
+        "16bit一括",
+        "2004:03"
+      ],
+      [
+        "RCON1_IN_PowerStatus1Raw",
+        "RCON→PLC 【IN03】共通 電源ユニット状態信号1",
+        "IN03",
+        "UINT",
+        "WORD",
+        "共通",
+        "電源状態",
+        "16bit一括",
+        "2004:04"
+      ],
+      [
+        "RCON1_IN_PowerStatus2Raw",
+        "RCON→PLC 【IN04】共通 電源ユニット状態信号2",
+        "IN04",
+        "UINT",
+        "WORD",
+        "共通",
+        "電源状態",
+        "16bit一括",
+        "2004:05"
+      ],
+      [
+        "RCON1_IN_PowerStatus3Raw",
+        "RCON→PLC 【IN05】共通 電源ユニット状態信号3",
+        "IN05",
+        "UINT",
+        "WORD",
+        "共通",
+        "電源状態",
+        "16bit一括",
+        "2004:06"
+      ],
+      [
+        "RCON1_IN_PowerStatus4MaintenanceRaw",
+        "RCON→PLC 【IN06】共通 電源ユニット状態信号4／軽故障メンテナンス（設定依存）",
+        "IN06",
+        "UINT",
+        "WORD",
+        "共通",
+        "共通状態",
+        "16bit一括",
+        "2004:07"
+      ],
+      [
+        "RCON1_IN_ReservedIn07Raw",
+        "RCON→PLC 【IN07】共通 共通予約領域（使用禁止・占有あり）",
+        "IN07",
+        "UINT",
+        "-",
+        "共通",
+        "-",
+        "予約",
+        "2004:08"
+      ],
+      [
+        "RCON1_IN_Axis1_ActualPosLoRaw",
+        "RCON→PLC 【IN08】1軸目（No.0） 現在位置 下位ワード",
+        "IN08",
+        "UINT",
+        "DINT（結合後）",
+        0,
+        "RCON1_IN[1].ActualPos_mm",
+        "0.01mm",
+        "2004:09"
+      ],
+      [
+        "RCON1_IN_Axis1_ActualPosHiRaw",
+        "RCON→PLC 【IN09】1軸目（No.0） 現在位置 上位ワード",
+        "IN09",
+        "UINT",
+        "DINT（結合後）",
+        0,
+        "RCON1_IN[1].ActualPos_mm",
+        "0.01mm",
+        "2004:0A"
+      ],
+      [
+        "RCON1_IN_Axis1_CurrentLoRaw",
+        "RCON→PLC 【IN10】1軸目（No.0） 現在電流 下位ワード（PCは指令電流）",
+        "IN10",
+        "UINT",
+        "DINT（結合後）",
+        0,
+        "RCON1_IN[1].Current_mA",
+        "mA",
+        "2004:0B"
+      ],
+      [
+        "RCON1_IN_Axis1_CurrentHiRaw",
+        "RCON→PLC 【IN11】1軸目（No.0） 現在電流 上位ワード（PCは指令電流）",
+        "IN11",
+        "UINT",
+        "DINT（結合後）",
+        0,
+        "RCON1_IN[1].Current_mA",
+        "mA",
+        "2004:0C"
+      ],
+      [
+        "RCON1_IN_Axis1_ActualSpeedRaw",
+        "RCON→PLC 【IN12】1軸目（No.0） 現在速度（負方向は2の補数）",
+        "IN12",
+        "UINT",
+        "INT",
+        0,
+        "RCON1_IN[1].ActualSpeed_mm_s",
+        "1.0／0.1mm/s（設定依存）",
+        "2004:0D"
+      ],
+      [
+        "RCON1_IN_Axis1_ReservedInRaw",
+        "RCON→PLC 【IN13】1軸目（No.0） 予約領域（使用禁止）",
+        "IN13",
+        "UINT",
+        "-",
+        0,
+        "-",
+        "予約",
+        "2004:0E"
+      ],
+      [
+        "RCON1_IN_Axis1_AlarmCodeRaw",
+        "RCON→PLC 【IN14】1軸目（No.0） アラームコード（簡易コードではない）",
+        "IN14",
+        "UINT",
+        "UINT",
+        0,
+        "RCON1_IN[1].AlarmCode",
+        "コード",
+        "2004:0F"
+      ],
+      [
+        "RCON1_IN_Axis1_StatusRaw",
+        "RCON→PLC 【IN15】1軸目（No.0） 軸状態信号（PEND・SV等）",
+        "IN15",
+        "UINT",
+        "WORD",
+        0,
+        "RCON1_IN[1].Status",
+        "16bit一括",
+        "2004:10"
+      ],
+      [
+        "RCON1_IN_Axis2_ActualPosLoRaw",
+        "RCON→PLC 【IN16】2軸目（No.1） 現在位置 下位ワード",
+        "IN16",
+        "UINT",
+        "DINT（結合後）",
+        1,
+        "RCON1_IN[2].ActualPos_mm",
+        "0.01mm",
+        "2004:11"
+      ],
+      [
+        "RCON1_IN_Axis2_ActualPosHiRaw",
+        "RCON→PLC 【IN17】2軸目（No.1） 現在位置 上位ワード",
+        "IN17",
+        "UINT",
+        "DINT（結合後）",
+        1,
+        "RCON1_IN[2].ActualPos_mm",
+        "0.01mm",
+        "2004:12"
+      ],
+      [
+        "RCON1_IN_Axis2_CurrentLoRaw",
+        "RCON→PLC 【IN18】2軸目（No.1） 現在電流 下位ワード（PCは指令電流）",
+        "IN18",
+        "UINT",
+        "DINT（結合後）",
+        1,
+        "RCON1_IN[2].Current_mA",
+        "mA",
+        "2004:13"
+      ],
+      [
+        "RCON1_IN_Axis2_CurrentHiRaw",
+        "RCON→PLC 【IN19】2軸目（No.1） 現在電流 上位ワード（PCは指令電流）",
+        "IN19",
+        "UINT",
+        "DINT（結合後）",
+        1,
+        "RCON1_IN[2].Current_mA",
+        "mA",
+        "2004:14"
+      ],
+      [
+        "RCON1_IN_Axis2_ActualSpeedRaw",
+        "RCON→PLC 【IN20】2軸目（No.1） 現在速度（負方向は2の補数）",
+        "IN20",
+        "UINT",
+        "INT",
+        1,
+        "RCON1_IN[2].ActualSpeed_mm_s",
+        "1.0／0.1mm/s（設定依存）",
+        "2004:15"
+      ],
+      [
+        "RCON1_IN_Axis2_ReservedInRaw",
+        "RCON→PLC 【IN21】2軸目（No.1） 予約領域（使用禁止）",
+        "IN21",
+        "UINT",
+        "-",
+        1,
+        "-",
+        "予約",
+        "2004:16"
+      ],
+      [
+        "RCON1_IN_Axis2_AlarmCodeRaw",
+        "RCON→PLC 【IN22】2軸目（No.1） アラームコード（簡易コードではない）",
+        "IN22",
+        "UINT",
+        "UINT",
+        1,
+        "RCON1_IN[2].AlarmCode",
+        "コード",
+        "2004:17"
+      ],
+      [
+        "RCON1_IN_Axis2_StatusRaw",
+        "RCON→PLC 【IN23】2軸目（No.1） 軸状態信号（PEND・SV等）",
+        "IN23",
+        "UINT",
+        "WORD",
+        1,
+        "RCON1_IN[2].Status",
+        "16bit一括",
+        "2004:18"
+      ],
+      [
+        "RCON1_IN_Axis3_ActualPosLoRaw",
+        "RCON→PLC 【IN24】3軸目（No.2） 現在位置 下位ワード",
+        "IN24",
+        "UINT",
+        "DINT（結合後）",
+        2,
+        "RCON1_IN[3].ActualPos_mm",
+        "0.01mm",
+        "2004:19"
+      ],
+      [
+        "RCON1_IN_Axis3_ActualPosHiRaw",
+        "RCON→PLC 【IN25】3軸目（No.2） 現在位置 上位ワード",
+        "IN25",
+        "UINT",
+        "DINT（結合後）",
+        2,
+        "RCON1_IN[3].ActualPos_mm",
+        "0.01mm",
+        "2004:1A"
+      ],
+      [
+        "RCON1_IN_Axis3_CurrentLoRaw",
+        "RCON→PLC 【IN26】3軸目（No.2） 現在電流 下位ワード（PCは指令電流）",
+        "IN26",
+        "UINT",
+        "DINT（結合後）",
+        2,
+        "RCON1_IN[3].Current_mA",
+        "mA",
+        "2004:1B"
+      ],
+      [
+        "RCON1_IN_Axis3_CurrentHiRaw",
+        "RCON→PLC 【IN27】3軸目（No.2） 現在電流 上位ワード（PCは指令電流）",
+        "IN27",
+        "UINT",
+        "DINT（結合後）",
+        2,
+        "RCON1_IN[3].Current_mA",
+        "mA",
+        "2004:1C"
+      ],
+      [
+        "RCON1_IN_Axis3_ActualSpeedRaw",
+        "RCON→PLC 【IN28】3軸目（No.2） 現在速度（負方向は2の補数）",
+        "IN28",
+        "UINT",
+        "INT",
+        2,
+        "RCON1_IN[3].ActualSpeed_mm_s",
+        "1.0／0.1mm/s（設定依存）",
+        "2004:1D"
+      ],
+      [
+        "RCON1_IN_Axis3_ReservedInRaw",
+        "RCON→PLC 【IN29】3軸目（No.2） 予約領域（使用禁止）",
+        "IN29",
+        "UINT",
+        "-",
+        2,
+        "-",
+        "予約",
+        "2004:1E"
+      ],
+      [
+        "RCON1_IN_Axis3_AlarmCodeRaw",
+        "RCON→PLC 【IN30】3軸目（No.2） アラームコード（簡易コードではない）",
+        "IN30",
+        "UINT",
+        "UINT",
+        2,
+        "RCON1_IN[3].AlarmCode",
+        "コード",
+        "2004:1F"
+      ],
+      [
+        "RCON1_IN_Axis3_StatusRaw",
+        "RCON→PLC 【IN31】3軸目（No.2） 軸状態信号（PEND・SV等）",
+        "IN31",
+        "UINT",
+        "WORD",
+        2,
+        "RCON1_IN[3].Status",
+        "16bit一括",
+        "2004:20"
+      ],
+      [
+        "RCON1_IN_Axis4_ActualPosLoRaw",
+        "RCON→PLC 【IN32】4軸目（No.3） 現在位置 下位ワード",
+        "IN32",
+        "UINT",
+        "DINT（結合後）",
+        3,
+        "RCON1_IN[4].ActualPos_mm",
+        "0.01mm",
+        "2004:21"
+      ],
+      [
+        "RCON1_IN_Axis4_ActualPosHiRaw",
+        "RCON→PLC 【IN33】4軸目（No.3） 現在位置 上位ワード",
+        "IN33",
+        "UINT",
+        "DINT（結合後）",
+        3,
+        "RCON1_IN[4].ActualPos_mm",
+        "0.01mm",
+        "2004:22"
+      ],
+      [
+        "RCON1_IN_Axis4_CurrentLoRaw",
+        "RCON→PLC 【IN34】4軸目（No.3） 現在電流 下位ワード（PCは指令電流）",
+        "IN34",
+        "UINT",
+        "DINT（結合後）",
+        3,
+        "RCON1_IN[4].Current_mA",
+        "mA",
+        "2004:23"
+      ],
+      [
+        "RCON1_IN_Axis4_CurrentHiRaw",
+        "RCON→PLC 【IN35】4軸目（No.3） 現在電流 上位ワード（PCは指令電流）",
+        "IN35",
+        "UINT",
+        "DINT（結合後）",
+        3,
+        "RCON1_IN[4].Current_mA",
+        "mA",
+        "2004:24"
+      ],
+      [
+        "RCON1_IN_Axis4_ActualSpeedRaw",
+        "RCON→PLC 【IN36】4軸目（No.3） 現在速度（負方向は2の補数）",
+        "IN36",
+        "UINT",
+        "INT",
+        3,
+        "RCON1_IN[4].ActualSpeed_mm_s",
+        "1.0／0.1mm/s（設定依存）",
+        "2004:25"
+      ],
+      [
+        "RCON1_IN_Axis4_ReservedInRaw",
+        "RCON→PLC 【IN37】4軸目（No.3） 予約領域（使用禁止）",
+        "IN37",
+        "UINT",
+        "-",
+        3,
+        "-",
+        "予約",
+        "2004:26"
+      ],
+      [
+        "RCON1_IN_Axis4_AlarmCodeRaw",
+        "RCON→PLC 【IN38】4軸目（No.3） アラームコード（簡易コードではない）",
+        "IN38",
+        "UINT",
+        "UINT",
+        3,
+        "RCON1_IN[4].AlarmCode",
+        "コード",
+        "2004:27"
+      ],
+      [
+        "RCON1_IN_Axis4_StatusRaw",
+        "RCON→PLC 【IN39】4軸目（No.3） 軸状態信号（PEND・SV等）",
+        "IN39",
+        "UINT",
+        "WORD",
+        3,
+        "RCON1_IN[4].Status",
+        "16bit一括",
+        "2004:28"
+      ],
+      [
+        "RCON1_IN_Axis5_ActualPosLoRaw",
+        "RCON→PLC 【IN40】5軸目（No.4） 現在位置 下位ワード",
+        "IN40",
+        "UINT",
+        "DINT（結合後）",
+        4,
+        "RCON1_IN[5].ActualPos_mm",
+        "0.01mm",
+        "2004:29"
+      ],
+      [
+        "RCON1_IN_Axis5_ActualPosHiRaw",
+        "RCON→PLC 【IN41】5軸目（No.4） 現在位置 上位ワード",
+        "IN41",
+        "UINT",
+        "DINT（結合後）",
+        4,
+        "RCON1_IN[5].ActualPos_mm",
+        "0.01mm",
+        "2004:2A"
+      ],
+      [
+        "RCON1_IN_Axis5_CurrentLoRaw",
+        "RCON→PLC 【IN42】5軸目（No.4） 現在電流 下位ワード（PCは指令電流）",
+        "IN42",
+        "UINT",
+        "DINT（結合後）",
+        4,
+        "RCON1_IN[5].Current_mA",
+        "mA",
+        "2004:2B"
+      ],
+      [
+        "RCON1_IN_Axis5_CurrentHiRaw",
+        "RCON→PLC 【IN43】5軸目（No.4） 現在電流 上位ワード（PCは指令電流）",
+        "IN43",
+        "UINT",
+        "DINT（結合後）",
+        4,
+        "RCON1_IN[5].Current_mA",
+        "mA",
+        "2004:2C"
+      ],
+      [
+        "RCON1_IN_Axis5_ActualSpeedRaw",
+        "RCON→PLC 【IN44】5軸目（No.4） 現在速度（負方向は2の補数）",
+        "IN44",
+        "UINT",
+        "INT",
+        4,
+        "RCON1_IN[5].ActualSpeed_mm_s",
+        "1.0／0.1mm/s（設定依存）",
+        "2004:2D"
+      ],
+      [
+        "RCON1_IN_Axis5_ReservedInRaw",
+        "RCON→PLC 【IN45】5軸目（No.4） 予約領域（使用禁止）",
+        "IN45",
+        "UINT",
+        "-",
+        4,
+        "-",
+        "予約",
+        "2004:2E"
+      ],
+      [
+        "RCON1_IN_Axis5_AlarmCodeRaw",
+        "RCON→PLC 【IN46】5軸目（No.4） アラームコード（簡易コードではない）",
+        "IN46",
+        "UINT",
+        "UINT",
+        4,
+        "RCON1_IN[5].AlarmCode",
+        "コード",
+        "2004:2F"
+      ],
+      [
+        "RCON1_IN_Axis5_StatusRaw",
+        "RCON→PLC 【IN47】5軸目（No.4） 軸状態信号（PEND・SV等）",
+        "IN47",
+        "UINT",
+        "WORD",
+        4,
+        "RCON1_IN[5].Status",
+        "16bit一括",
+        "2004:30"
+      ],
+      [
+        "RCON1_IN_Axis6_ActualPosLoRaw",
+        "RCON→PLC 【IN48】6軸目（No.5） 現在位置 下位ワード",
+        "IN48",
+        "UINT",
+        "DINT（結合後）",
+        5,
+        "RCON1_IN[6].ActualPos_mm",
+        "0.01mm",
+        "2004:31"
+      ],
+      [
+        "RCON1_IN_Axis6_ActualPosHiRaw",
+        "RCON→PLC 【IN49】6軸目（No.5） 現在位置 上位ワード",
+        "IN49",
+        "UINT",
+        "DINT（結合後）",
+        5,
+        "RCON1_IN[6].ActualPos_mm",
+        "0.01mm",
+        "2004:32"
+      ],
+      [
+        "RCON1_IN_Axis6_CurrentLoRaw",
+        "RCON→PLC 【IN50】6軸目（No.5） 現在電流 下位ワード（PCは指令電流）",
+        "IN50",
+        "UINT",
+        "DINT（結合後）",
+        5,
+        "RCON1_IN[6].Current_mA",
+        "mA",
+        "2004:33"
+      ],
+      [
+        "RCON1_IN_Axis6_CurrentHiRaw",
+        "RCON→PLC 【IN51】6軸目（No.5） 現在電流 上位ワード（PCは指令電流）",
+        "IN51",
+        "UINT",
+        "DINT（結合後）",
+        5,
+        "RCON1_IN[6].Current_mA",
+        "mA",
+        "2004:34"
+      ],
+      [
+        "RCON1_IN_Axis6_ActualSpeedRaw",
+        "RCON→PLC 【IN52】6軸目（No.5） 現在速度（負方向は2の補数）",
+        "IN52",
+        "UINT",
+        "INT",
+        5,
+        "RCON1_IN[6].ActualSpeed_mm_s",
+        "1.0／0.1mm/s（設定依存）",
+        "2004:35"
+      ],
+      [
+        "RCON1_IN_Axis6_ReservedInRaw",
+        "RCON→PLC 【IN53】6軸目（No.5） 予約領域（使用禁止）",
+        "IN53",
+        "UINT",
+        "-",
+        5,
+        "-",
+        "予約",
+        "2004:36"
+      ],
+      [
+        "RCON1_IN_Axis6_AlarmCodeRaw",
+        "RCON→PLC 【IN54】6軸目（No.5） アラームコード（簡易コードではない）",
+        "IN54",
+        "UINT",
+        "UINT",
+        5,
+        "RCON1_IN[6].AlarmCode",
+        "コード",
+        "2004:37"
+      ],
+      [
+        "RCON1_IN_Axis6_StatusRaw",
+        "RCON→PLC 【IN55】6軸目（No.5） 軸状態信号（PEND・SV等）",
+        "IN55",
+        "UINT",
+        "WORD",
+        5,
+        "RCON1_IN[6].Status",
+        "16bit一括",
+        "2004:38"
+      ]
+    ]
+  },
+  "blockRows": {
+    "ST_RCON_Direct_OUT_Control": {
+      "sheet": "OUT型・メンバー",
+      "start": 9,
+      "end": 23
+    },
+    "ST_RCON_Direct_OUT_Axis": {
+      "sheet": "OUT型・メンバー",
+      "start": 29,
+      "end": 34
+    },
+    "ST_RCON_Direct_IN_Status": {
+      "sheet": "IN型・メンバー",
+      "start": 9,
+      "end": 20
+    },
+    "ST_RCON_Direct_IN_Axis": {
+      "sheet": "IN型・メンバー",
+      "start": 26,
+      "end": 31
+    }
+  },
+  "views": [
+    [
+      "登録ガイド",
+      "A2:D21",
+      "01-guide-top"
+    ],
+    [
+      "登録ガイド",
+      "A24:D48",
+      "02-guide-bottom"
+    ],
+    [
+      "OUT型・メンバー",
+      "A6:F24",
+      "03-out-control"
+    ],
+    [
+      "OUT型・メンバー",
+      "A27:F35",
+      "04-out-axis"
+    ],
+    [
+      "IN型・メンバー",
+      "A6:F21",
+      "05-in-status"
+    ],
+    [
+      "IN型・メンバー",
+      "A24:F32",
+      "06-in-axis"
+    ],
+    [
+      "組合せ例・型選び",
+      "A2:D15",
+      "07-combinations"
+    ],
+    [
+      "組合せ例・型選び",
+      "A18:D35",
+      "08-type-choice"
+    ],
+    [
+      "組合せ例・型選び",
+      "A38:D44",
+      "09-renaming"
+    ],
+    [
+      "OUT_IO",
+      "A1:F17",
+      "10-out-io"
+    ],
+    [
+      "OUT_IO",
+      "A50:I57",
+      "11-out-last"
+    ],
+    [
+      "IN_IO",
+      "A1:F17",
+      "12-in-io"
+    ],
+    [
+      "IN_IO",
+      "A50:I57",
+      "13-in-last"
+    ],
+    [
+      "解説_取説から設計",
+      "A2:F15",
+      "14-process-first"
+    ],
+    [
+      "解説_取説から設計",
+      "A16:F24",
+      "15-process-second"
+    ],
+    [
+      "解説_取説から設計",
+      "A28:F42",
+      "16-process-sources"
+    ],
+    [
+      "解説_単位と上下ワード",
+      "A2:F19",
+      "17-learning"
+    ],
+    [
+      "解説_単位と上下ワード",
+      "A22:F32",
+      "18-learning-cases"
+    ],
+    [
+      "解説_単位と上下ワード",
+      "A35:F48",
+      "19-learning-notes"
+    ],
+    [
+      "解説_登録と動作確認",
+      "A2:E16",
+      "20-registration"
+    ],
+    [
+      "解説_登録と動作確認",
+      "A17:E23",
+      "21-implementation"
+    ],
+    [
+      "解説_登録と動作確認",
+      "A27:E41",
+      "22-sequence"
+    ]
+  ]
+}

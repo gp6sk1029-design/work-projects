@@ -1,0 +1,1260 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261026F.smc2",
+  "destination": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261026F.smc2",
+  "staged": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\rcon-row-comments-20261026\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261026F.smc2",
+  "source_sha256": "d28564e74037f23d8b224db9a2944192be1ed2c6bb56a9abf245164b33710162",
+  "output_sha256": "a4562caa09e44d4f04939373816ad0904974cc3699ee3b0a8e5455437a3799de",
+  "entries": 205,
+  "changed_entries": [
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/7b1666c7-ee97-4210-81b2-fed5a6172074.xml"
+  ],
+  "comment_changes": [
+    {
+      "row": 1,
+      "before": "位置決め幅 [mm]（転送未接続：P_Off）",
+      "after": "A(左側) RCON1_1 NG1上下降／位置決め幅 [mm]（転送未接続：P_Off）"
+    },
+    {
+      "row": 2,
+      "before": "指令速度 [mm/s]（転送未接続：P_Off）",
+      "after": "A(左側) RCON1_1 NG1上下降／指令速度 [mm/s]（転送未接続：P_Off）"
+    },
+    {
+      "row": 3,
+      "before": "共通加減速度 [G]（転送未接続：P_Off）",
+      "after": "A(左側) RCON1_1 NG1上下降／共通加減速度 [G]（転送未接続：P_Off）"
+    },
+    {
+      "row": 4,
+      "before": "押付け制限 [%]（未使用：P_Off）",
+      "after": "A(左側) RCON1_1 NG1上下降／押付け制限 [%]（未使用：P_Off）"
+    },
+    {
+      "row": 5,
+      "before": "【出力信号】 /////////////////////////////////////\r\n移動開始要求（立上り・100ms保持）／NG1戻センサ条件",
+      "after": "A(左側) RCON1_1 NG1上下降\r\n【出力信号】 /////////////////////////////////////\r\n移動開始要求（立上り・100ms保持）／NG1戻センサ条件"
+    },
+    {
+      "row": 6,
+      "before": "原点復帰要求（未接続：P_Off）",
+      "after": "A(左側) RCON1_1 NG1上下降／原点復帰要求（未接続：P_Off）"
+    },
+    {
+      "row": 7,
+      "before": "一時停止要求（未接続：P_Off）",
+      "after": "A(左側) RCON1_1 NG1上下降／一時停止要求（未接続：P_Off）"
+    },
+    {
+      "row": 8,
+      "before": "異常リセット（RESET・共通Pause[5]）",
+      "after": "A(左側) RCON1_1 NG1上下降／異常リセット（RESET・共通Pause[5]）"
+    },
+    {
+      "row": 9,
+      "before": "サーボON要求（非常停止時OFF）",
+      "after": "A(左側) RCON1_1 NG1上下降／サーボON要求（非常停止時OFF）"
+    },
+    {
+      "row": 10,
+      "before": "インチング選択（OFF=ジョグ）",
+      "after": "A(左側) RCON1_1 NG1上下降／インチング選択（OFF=ジョグ）"
+    },
+    {
+      "row": 11,
+      "before": "ジョグ速度切替（未接続：P_Off）",
+      "after": "A(左側) RCON1_1 NG1上下降／ジョグ速度切替（未接続：P_Off）"
+    },
+    {
+      "row": 12,
+      "before": "原点方向ジョグ（未接続：P_Off）",
+      "after": "A(左側) RCON1_1 NG1上下降／原点方向ジョグ（未接続：P_Off）"
+    },
+    {
+      "row": 13,
+      "before": "反原点方向ジョグ（未接続：P_Off）",
+      "after": "A(左側) RCON1_1 NG1上下降／反原点方向ジョグ（未接続：P_Off）"
+    },
+    {
+      "row": 14,
+      "before": "ゲイン選択下位（未使用）",
+      "after": "A(左側) RCON1_1 NG1上下降／ゲイン選択下位（未使用）"
+    },
+    {
+      "row": 15,
+      "before": "ゲイン選択上位（未使用）",
+      "after": "A(左側) RCON1_1 NG1上下降／ゲイン選択上位（未使用）"
+    },
+    {
+      "row": 16,
+      "before": "押付け選択（未使用・OFF=位置決め）",
+      "after": "A(左側) RCON1_1 NG1上下降／押付け選択（未使用・OFF=位置決め）"
+    },
+    {
+      "row": 17,
+      "before": "押付け方向（未使用）",
+      "after": "A(左側) RCON1_1 NG1上下降／押付け方向（未使用）"
+    },
+    {
+      "row": 18,
+      "before": "相対移動選択（未使用・OFF=絶対）",
+      "after": "A(左側) RCON1_1 NG1上下降／相対移動選択（未使用・OFF=絶対）"
+    },
+    {
+      "row": 19,
+      "before": "ブレーキ強制解除（非常停止でない間ON：要確認）",
+      "after": "A(左側) RCON1_1 NG1上下降／ブレーキ強制解除（非常停止でない間ON：要確認）"
+    },
+    {
+      "row": 20,
+      "before": "【入力値】 /////////////////////////////////////\r\n現在位置 [mm]（監視転送未接続：P_Off）",
+      "after": "A(左側) RCON1_1 NG1上下降\r\n【入力値】 /////////////////////////////////////\r\n現在位置 [mm]（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 21,
+      "before": "指令電流 [mA]（監視転送未接続：P_Off）",
+      "after": "A(左側) RCON1_1 NG1上下降／指令電流 [mA]（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 22,
+      "before": "現在速度 [mm/s・符号付き]（監視転送未接続：P_Off）",
+      "after": "A(左側) RCON1_1 NG1上下降／現在速度 [mm/s・符号付き]（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 23,
+      "before": "軸異常コード（監視転送未接続：P_Off）",
+      "after": "A(左側) RCON1_1 NG1上下降／軸異常コード（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 24,
+      "before": "入力有効（監視転送未接続：P_Off）",
+      "after": "A(左側) RCON1_1 NG1上下降／入力有効（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 25,
+      "before": "【入力信号】 /////////////////////////////////////\r\n位置決め完了",
+      "after": "A(左側) RCON1_1 NG1上下降\r\n【入力信号】 /////////////////////////////////////\r\n位置決め完了"
+    },
+    {
+      "row": 26,
+      "before": "原点復帰完了",
+      "after": "A(左側) RCON1_1 NG1上下降／原点復帰完了"
+    },
+    {
+      "row": 27,
+      "before": "移動中",
+      "after": "A(左側) RCON1_1 NG1上下降／移動中"
+    },
+    {
+      "row": 28,
+      "before": "軸異常",
+      "after": "A(左側) RCON1_1 NG1上下降／軸異常"
+    },
+    {
+      "row": 29,
+      "before": "サーボON状態",
+      "after": "A(左側) RCON1_1 NG1上下降／サーボON状態"
+    },
+    {
+      "row": 30,
+      "before": "押付け空振り（未使用・読取無効）",
+      "after": "A(左側) RCON1_1 NG1上下降／押付け空振り（未使用・読取無効）"
+    },
+    {
+      "row": 31,
+      "before": "過負荷警告",
+      "after": "A(左側) RCON1_1 NG1上下降／過負荷警告"
+    },
+    {
+      "row": 32,
+      "before": "指令完了",
+      "after": "A(左側) RCON1_1 NG1上下降／指令完了"
+    },
+    {
+      "row": 33,
+      "before": "ゾーン1内",
+      "after": "A(左側) RCON1_1 NG1上下降／ゾーン1内"
+    },
+    {
+      "row": 34,
+      "before": "ゾーン2内",
+      "after": "A(左側) RCON1_1 NG1上下降／ゾーン2内"
+    },
+    {
+      "row": 35,
+      "before": "コントローラ準備完了",
+      "after": "A(左側) RCON1_1 NG1上下降／コントローラ準備完了"
+    },
+    {
+      "row": 36,
+      "before": "非常停止状態（入力）",
+      "after": "A(左側) RCON1_1 NG1上下降／非常停止状態（入力）"
+    },
+    {
+      "row": 37,
+      "before": "【動作管理】 /////////////////////////////////////\r\n動作準備（準備完了・サーボON・異常なし）",
+      "after": "A(左側) RCON1_1 NG1上下降\r\n【動作管理】 /////////////////////////////////////\r\n動作準備（準備完了・サーボON・異常なし）"
+    },
+    {
+      "row": 38,
+      "before": "開始保持（要求1～3・準備100ms）",
+      "after": "A(左側) RCON1_1 NG1上下降／開始保持（要求1～3・準備100ms）"
+    },
+    {
+      "row": 39,
+      "before": "動作完了（位置決め完了立上り・100ms保持）",
+      "after": "A(左側) RCON1_1 NG1上下降／動作完了（位置決め完了立上り・100ms保持）"
+    },
+    {
+      "row": 41,
+      "before": "位置決め幅 [mm]（転送未接続：P_Off）",
+      "after": "B(右側) RCON1_2 NG1上下降／位置決め幅 [mm]（転送未接続：P_Off）"
+    },
+    {
+      "row": 42,
+      "before": "指令速度 [mm/s]（転送未接続：P_Off）",
+      "after": "B(右側) RCON1_2 NG1上下降／指令速度 [mm/s]（転送未接続：P_Off）"
+    },
+    {
+      "row": 43,
+      "before": "共通加減速度 [G]（転送未接続：P_Off）",
+      "after": "B(右側) RCON1_2 NG1上下降／共通加減速度 [G]（転送未接続：P_Off）"
+    },
+    {
+      "row": 44,
+      "before": "押付け制限 [%]（未使用：P_Off）",
+      "after": "B(右側) RCON1_2 NG1上下降／押付け制限 [%]（未使用：P_Off）"
+    },
+    {
+      "row": 45,
+      "before": "【出力信号】 /////////////////////////////////////\r\n移動開始要求（立上り・100ms保持）／NG1戻センサ条件",
+      "after": "B(右側) RCON1_2 NG1上下降\r\n【出力信号】 /////////////////////////////////////\r\n移動開始要求（立上り・100ms保持）／NG1戻センサ条件"
+    },
+    {
+      "row": 46,
+      "before": "原点復帰要求（未接続：P_Off）",
+      "after": "B(右側) RCON1_2 NG1上下降／原点復帰要求（未接続：P_Off）"
+    },
+    {
+      "row": 47,
+      "before": "一時停止要求（未接続：P_Off）",
+      "after": "B(右側) RCON1_2 NG1上下降／一時停止要求（未接続：P_Off）"
+    },
+    {
+      "row": 48,
+      "before": "異常リセット（RESET・共通Pause[5]）",
+      "after": "B(右側) RCON1_2 NG1上下降／異常リセット（RESET・共通Pause[5]）"
+    },
+    {
+      "row": 49,
+      "before": "サーボON要求（非常停止時OFF）",
+      "after": "B(右側) RCON1_2 NG1上下降／サーボON要求（非常停止時OFF）"
+    },
+    {
+      "row": 50,
+      "before": "インチング選択（OFF=ジョグ）",
+      "after": "B(右側) RCON1_2 NG1上下降／インチング選択（OFF=ジョグ）"
+    },
+    {
+      "row": 51,
+      "before": "ジョグ速度切替（未接続：P_Off）",
+      "after": "B(右側) RCON1_2 NG1上下降／ジョグ速度切替（未接続：P_Off）"
+    },
+    {
+      "row": 52,
+      "before": "原点方向ジョグ（未接続：P_Off）",
+      "after": "B(右側) RCON1_2 NG1上下降／原点方向ジョグ（未接続：P_Off）"
+    },
+    {
+      "row": 53,
+      "before": "反原点方向ジョグ（未接続：P_Off）",
+      "after": "B(右側) RCON1_2 NG1上下降／反原点方向ジョグ（未接続：P_Off）"
+    },
+    {
+      "row": 54,
+      "before": "ゲイン選択下位（未使用）",
+      "after": "B(右側) RCON1_2 NG1上下降／ゲイン選択下位（未使用）"
+    },
+    {
+      "row": 55,
+      "before": "ゲイン選択上位（未使用）",
+      "after": "B(右側) RCON1_2 NG1上下降／ゲイン選択上位（未使用）"
+    },
+    {
+      "row": 56,
+      "before": "押付け選択（未使用・OFF=位置決め）",
+      "after": "B(右側) RCON1_2 NG1上下降／押付け選択（未使用・OFF=位置決め）"
+    },
+    {
+      "row": 57,
+      "before": "押付け方向（未使用）",
+      "after": "B(右側) RCON1_2 NG1上下降／押付け方向（未使用）"
+    },
+    {
+      "row": 58,
+      "before": "相対移動選択（未使用・OFF=絶対）",
+      "after": "B(右側) RCON1_2 NG1上下降／相対移動選択（未使用・OFF=絶対）"
+    },
+    {
+      "row": 59,
+      "before": "ブレーキ強制解除（非常停止でない間ON：要確認）",
+      "after": "B(右側) RCON1_2 NG1上下降／ブレーキ強制解除（非常停止でない間ON：要確認）"
+    },
+    {
+      "row": 60,
+      "before": "【入力値】 /////////////////////////////////////\r\n現在位置 [mm]（監視転送未接続：P_Off）",
+      "after": "B(右側) RCON1_2 NG1上下降\r\n【入力値】 /////////////////////////////////////\r\n現在位置 [mm]（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 61,
+      "before": "指令電流 [mA]（監視転送未接続：P_Off）",
+      "after": "B(右側) RCON1_2 NG1上下降／指令電流 [mA]（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 62,
+      "before": "現在速度 [mm/s・符号付き]（監視転送未接続：P_Off）",
+      "after": "B(右側) RCON1_2 NG1上下降／現在速度 [mm/s・符号付き]（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 63,
+      "before": "軸異常コード（監視転送未接続：P_Off）",
+      "after": "B(右側) RCON1_2 NG1上下降／軸異常コード（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 64,
+      "before": "入力有効（監視転送未接続：P_Off）",
+      "after": "B(右側) RCON1_2 NG1上下降／入力有効（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 65,
+      "before": "【入力信号】 /////////////////////////////////////\r\n位置決め完了",
+      "after": "B(右側) RCON1_2 NG1上下降\r\n【入力信号】 /////////////////////////////////////\r\n位置決め完了"
+    },
+    {
+      "row": 66,
+      "before": "原点復帰完了",
+      "after": "B(右側) RCON1_2 NG1上下降／原点復帰完了"
+    },
+    {
+      "row": 67,
+      "before": "移動中",
+      "after": "B(右側) RCON1_2 NG1上下降／移動中"
+    },
+    {
+      "row": 68,
+      "before": "軸異常",
+      "after": "B(右側) RCON1_2 NG1上下降／軸異常"
+    },
+    {
+      "row": 69,
+      "before": "サーボON状態",
+      "after": "B(右側) RCON1_2 NG1上下降／サーボON状態"
+    },
+    {
+      "row": 70,
+      "before": "押付け空振り（未使用・読取無効）",
+      "after": "B(右側) RCON1_2 NG1上下降／押付け空振り（未使用・読取無効）"
+    },
+    {
+      "row": 71,
+      "before": "過負荷警告",
+      "after": "B(右側) RCON1_2 NG1上下降／過負荷警告"
+    },
+    {
+      "row": 72,
+      "before": "指令完了",
+      "after": "B(右側) RCON1_2 NG1上下降／指令完了"
+    },
+    {
+      "row": 73,
+      "before": "ゾーン1内",
+      "after": "B(右側) RCON1_2 NG1上下降／ゾーン1内"
+    },
+    {
+      "row": 74,
+      "before": "ゾーン2内",
+      "after": "B(右側) RCON1_2 NG1上下降／ゾーン2内"
+    },
+    {
+      "row": 75,
+      "before": "コントローラ準備完了",
+      "after": "B(右側) RCON1_2 NG1上下降／コントローラ準備完了"
+    },
+    {
+      "row": 76,
+      "before": "非常停止状態（入力）",
+      "after": "B(右側) RCON1_2 NG1上下降／非常停止状態（入力）"
+    },
+    {
+      "row": 77,
+      "before": "【動作管理】 /////////////////////////////////////\r\n動作準備（準備完了・サーボON・異常なし）",
+      "after": "B(右側) RCON1_2 NG1上下降\r\n【動作管理】 /////////////////////////////////////\r\n動作準備（準備完了・サーボON・異常なし）"
+    },
+    {
+      "row": 78,
+      "before": "開始保持（要求1～3・準備100ms）",
+      "after": "B(右側) RCON1_2 NG1上下降／開始保持（要求1～3・準備100ms）"
+    },
+    {
+      "row": 79,
+      "before": "動作完了（位置決め完了立上り・100ms保持）",
+      "after": "B(右側) RCON1_2 NG1上下降／動作完了（位置決め完了立上り・100ms保持）"
+    },
+    {
+      "row": 81,
+      "before": "位置決め幅 [mm]（転送未接続：P_Off）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／位置決め幅 [mm]（転送未接続：P_Off）"
+    },
+    {
+      "row": 82,
+      "before": "指令速度 [mm/s]（転送未接続：P_Off）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／指令速度 [mm/s]（転送未接続：P_Off）"
+    },
+    {
+      "row": 83,
+      "before": "共通加減速度 [G]（転送未接続：P_Off）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／共通加減速度 [G]（転送未接続：P_Off）"
+    },
+    {
+      "row": 84,
+      "before": "押付け制限 [%]（未使用：P_Off）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／押付け制限 [%]（未使用：P_Off）"
+    },
+    {
+      "row": 85,
+      "before": "【出力信号】 /////////////////////////////////////\r\n移動開始要求（立上り・100ms保持）／条件未確定：P_Offで禁止",
+      "after": "A(左側) RCON1_3 SF/NG2送り\r\n【出力信号】 /////////////////////////////////////\r\n移動開始要求（立上り・100ms保持）／条件未確定：P_Offで禁止"
+    },
+    {
+      "row": 86,
+      "before": "原点復帰要求（未接続：P_Off）／インターロック未確定",
+      "after": "A(左側) RCON1_3 SF/NG2送り／原点復帰要求（未接続：P_Off）／インターロック未確定"
+    },
+    {
+      "row": 87,
+      "before": "一時停止要求（未接続：P_Off）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／一時停止要求（未接続：P_Off）"
+    },
+    {
+      "row": 88,
+      "before": "異常リセット（RESET・共通Pause[5]）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／異常リセット（RESET・共通Pause[5]）"
+    },
+    {
+      "row": 89,
+      "before": "サーボON要求（非常停止時OFF）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／サーボON要求（非常停止時OFF）"
+    },
+    {
+      "row": 90,
+      "before": "インチング選択（OFF=ジョグ）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／インチング選択（OFF=ジョグ）"
+    },
+    {
+      "row": 91,
+      "before": "ジョグ速度切替（未接続：P_Off）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／ジョグ速度切替（未接続：P_Off）"
+    },
+    {
+      "row": 92,
+      "before": "原点方向ジョグ（未接続：P_Off）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／原点方向ジョグ（未接続：P_Off）"
+    },
+    {
+      "row": 93,
+      "before": "反原点方向ジョグ（未接続：P_Off）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／反原点方向ジョグ（未接続：P_Off）"
+    },
+    {
+      "row": 94,
+      "before": "ゲイン選択下位（未使用）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／ゲイン選択下位（未使用）"
+    },
+    {
+      "row": 95,
+      "before": "ゲイン選択上位（未使用）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／ゲイン選択上位（未使用）"
+    },
+    {
+      "row": 96,
+      "before": "押付け選択（未使用・OFF=位置決め）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／押付け選択（未使用・OFF=位置決め）"
+    },
+    {
+      "row": 97,
+      "before": "押付け方向（未使用）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／押付け方向（未使用）"
+    },
+    {
+      "row": 98,
+      "before": "相対移動選択（未使用・OFF=絶対）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／相対移動選択（未使用・OFF=絶対）"
+    },
+    {
+      "row": 99,
+      "before": "ブレーキ強制解除（非常停止でない間ON：要確認）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／ブレーキ強制解除（非常停止でない間ON：要確認）"
+    },
+    {
+      "row": 100,
+      "before": "【入力値】 /////////////////////////////////////\r\n現在位置 [mm]（監視転送未接続：P_Off）",
+      "after": "A(左側) RCON1_3 SF/NG2送り\r\n【入力値】 /////////////////////////////////////\r\n現在位置 [mm]（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 101,
+      "before": "指令電流 [mA]（監視転送未接続：P_Off）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／指令電流 [mA]（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 102,
+      "before": "現在速度 [mm/s・符号付き]（監視転送未接続：P_Off）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／現在速度 [mm/s・符号付き]（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 103,
+      "before": "軸異常コード（監視転送未接続：P_Off）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／軸異常コード（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 104,
+      "before": "入力有効（監視転送未接続：P_Off）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／入力有効（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 105,
+      "before": "【入力信号】 /////////////////////////////////////\r\n位置決め完了",
+      "after": "A(左側) RCON1_3 SF/NG2送り\r\n【入力信号】 /////////////////////////////////////\r\n位置決め完了"
+    },
+    {
+      "row": 106,
+      "before": "原点復帰完了",
+      "after": "A(左側) RCON1_3 SF/NG2送り／原点復帰完了"
+    },
+    {
+      "row": 107,
+      "before": "移動中",
+      "after": "A(左側) RCON1_3 SF/NG2送り／移動中"
+    },
+    {
+      "row": 108,
+      "before": "軸異常",
+      "after": "A(左側) RCON1_3 SF/NG2送り／軸異常"
+    },
+    {
+      "row": 109,
+      "before": "サーボON状態",
+      "after": "A(左側) RCON1_3 SF/NG2送り／サーボON状態"
+    },
+    {
+      "row": 110,
+      "before": "押付け空振り（未使用・読取無効）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／押付け空振り（未使用・読取無効）"
+    },
+    {
+      "row": 111,
+      "before": "過負荷警告",
+      "after": "A(左側) RCON1_3 SF/NG2送り／過負荷警告"
+    },
+    {
+      "row": 112,
+      "before": "指令完了",
+      "after": "A(左側) RCON1_3 SF/NG2送り／指令完了"
+    },
+    {
+      "row": 113,
+      "before": "ゾーン1内",
+      "after": "A(左側) RCON1_3 SF/NG2送り／ゾーン1内"
+    },
+    {
+      "row": 114,
+      "before": "ゾーン2内",
+      "after": "A(左側) RCON1_3 SF/NG2送り／ゾーン2内"
+    },
+    {
+      "row": 115,
+      "before": "コントローラ準備完了",
+      "after": "A(左側) RCON1_3 SF/NG2送り／コントローラ準備完了"
+    },
+    {
+      "row": 116,
+      "before": "非常停止状態（入力）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／非常停止状態（入力）"
+    },
+    {
+      "row": 117,
+      "before": "【動作管理】 /////////////////////////////////////\r\n動作準備（準備完了・サーボON・異常なし）",
+      "after": "A(左側) RCON1_3 SF/NG2送り\r\n【動作管理】 /////////////////////////////////////\r\n動作準備（準備完了・サーボON・異常なし）"
+    },
+    {
+      "row": 118,
+      "before": "開始保持（要求1～3・準備100ms）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／開始保持（要求1～3・準備100ms）"
+    },
+    {
+      "row": 119,
+      "before": "動作完了（位置決め完了立上り・100ms保持）",
+      "after": "A(左側) RCON1_3 SF/NG2送り／動作完了（位置決め完了立上り・100ms保持）"
+    },
+    {
+      "row": 121,
+      "before": "位置決め幅 [mm]（転送未接続：P_Off）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／位置決め幅 [mm]（転送未接続：P_Off）"
+    },
+    {
+      "row": 122,
+      "before": "指令速度 [mm/s]（転送未接続：P_Off）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／指令速度 [mm/s]（転送未接続：P_Off）"
+    },
+    {
+      "row": 123,
+      "before": "共通加減速度 [G]（転送未接続：P_Off）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／共通加減速度 [G]（転送未接続：P_Off）"
+    },
+    {
+      "row": 124,
+      "before": "押付け制限 [%]（未使用：P_Off）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／押付け制限 [%]（未使用：P_Off）"
+    },
+    {
+      "row": 125,
+      "before": "【出力信号】 /////////////////////////////////////\r\n移動開始要求（立上り・100ms保持）／条件未確定：P_Offで禁止",
+      "after": "B(右側) RCON1_4 SF/NG2送り\r\n【出力信号】 /////////////////////////////////////\r\n移動開始要求（立上り・100ms保持）／条件未確定：P_Offで禁止"
+    },
+    {
+      "row": 126,
+      "before": "原点復帰要求（未接続：P_Off）／インターロック未確定",
+      "after": "B(右側) RCON1_4 SF/NG2送り／原点復帰要求（未接続：P_Off）／インターロック未確定"
+    },
+    {
+      "row": 127,
+      "before": "一時停止要求（未接続：P_Off）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／一時停止要求（未接続：P_Off）"
+    },
+    {
+      "row": 128,
+      "before": "異常リセット（RESET・共通Pause[5]）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／異常リセット（RESET・共通Pause[5]）"
+    },
+    {
+      "row": 129,
+      "before": "サーボON要求（非常停止時OFF）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／サーボON要求（非常停止時OFF）"
+    },
+    {
+      "row": 130,
+      "before": "インチング選択（OFF=ジョグ）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／インチング選択（OFF=ジョグ）"
+    },
+    {
+      "row": 131,
+      "before": "ジョグ速度切替（未接続：P_Off）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／ジョグ速度切替（未接続：P_Off）"
+    },
+    {
+      "row": 132,
+      "before": "原点方向ジョグ（未接続：P_Off）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／原点方向ジョグ（未接続：P_Off）"
+    },
+    {
+      "row": 133,
+      "before": "反原点方向ジョグ（未接続：P_Off）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／反原点方向ジョグ（未接続：P_Off）"
+    },
+    {
+      "row": 134,
+      "before": "ゲイン選択下位（未使用）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／ゲイン選択下位（未使用）"
+    },
+    {
+      "row": 135,
+      "before": "ゲイン選択上位（未使用）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／ゲイン選択上位（未使用）"
+    },
+    {
+      "row": 136,
+      "before": "押付け選択（未使用・OFF=位置決め）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／押付け選択（未使用・OFF=位置決め）"
+    },
+    {
+      "row": 137,
+      "before": "押付け方向（未使用）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／押付け方向（未使用）"
+    },
+    {
+      "row": 138,
+      "before": "相対移動選択（未使用・OFF=絶対）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／相対移動選択（未使用・OFF=絶対）"
+    },
+    {
+      "row": 139,
+      "before": "ブレーキ強制解除（非常停止でない間ON：要確認）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／ブレーキ強制解除（非常停止でない間ON：要確認）"
+    },
+    {
+      "row": 140,
+      "before": "【入力値】 /////////////////////////////////////\r\n現在位置 [mm]（監視転送未接続：P_Off）",
+      "after": "B(右側) RCON1_4 SF/NG2送り\r\n【入力値】 /////////////////////////////////////\r\n現在位置 [mm]（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 141,
+      "before": "指令電流 [mA]（監視転送未接続：P_Off）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／指令電流 [mA]（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 142,
+      "before": "現在速度 [mm/s・符号付き]（監視転送未接続：P_Off）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／現在速度 [mm/s・符号付き]（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 143,
+      "before": "軸異常コード（監視転送未接続：P_Off）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／軸異常コード（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 144,
+      "before": "入力有効（監視転送未接続：P_Off）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／入力有効（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 145,
+      "before": "【入力信号】 /////////////////////////////////////\r\n位置決め完了",
+      "after": "B(右側) RCON1_4 SF/NG2送り\r\n【入力信号】 /////////////////////////////////////\r\n位置決め完了"
+    },
+    {
+      "row": 146,
+      "before": "原点復帰完了",
+      "after": "B(右側) RCON1_4 SF/NG2送り／原点復帰完了"
+    },
+    {
+      "row": 147,
+      "before": "移動中",
+      "after": "B(右側) RCON1_4 SF/NG2送り／移動中"
+    },
+    {
+      "row": 148,
+      "before": "軸異常",
+      "after": "B(右側) RCON1_4 SF/NG2送り／軸異常"
+    },
+    {
+      "row": 149,
+      "before": "サーボON状態",
+      "after": "B(右側) RCON1_4 SF/NG2送り／サーボON状態"
+    },
+    {
+      "row": 150,
+      "before": "押付け空振り（未使用・読取無効）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／押付け空振り（未使用・読取無効）"
+    },
+    {
+      "row": 151,
+      "before": "過負荷警告",
+      "after": "B(右側) RCON1_4 SF/NG2送り／過負荷警告"
+    },
+    {
+      "row": 152,
+      "before": "指令完了",
+      "after": "B(右側) RCON1_4 SF/NG2送り／指令完了"
+    },
+    {
+      "row": 153,
+      "before": "ゾーン1内",
+      "after": "B(右側) RCON1_4 SF/NG2送り／ゾーン1内"
+    },
+    {
+      "row": 154,
+      "before": "ゾーン2内",
+      "after": "B(右側) RCON1_4 SF/NG2送り／ゾーン2内"
+    },
+    {
+      "row": 155,
+      "before": "コントローラ準備完了",
+      "after": "B(右側) RCON1_4 SF/NG2送り／コントローラ準備完了"
+    },
+    {
+      "row": 156,
+      "before": "非常停止状態（入力）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／非常停止状態（入力）"
+    },
+    {
+      "row": 157,
+      "before": "【動作管理】 /////////////////////////////////////\r\n動作準備（準備完了・サーボON・異常なし）",
+      "after": "B(右側) RCON1_4 SF/NG2送り\r\n【動作管理】 /////////////////////////////////////\r\n動作準備（準備完了・サーボON・異常なし）"
+    },
+    {
+      "row": 158,
+      "before": "開始保持（要求1～3・準備100ms）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／開始保持（要求1～3・準備100ms）"
+    },
+    {
+      "row": 159,
+      "before": "動作完了（位置決め完了立上り・100ms保持）",
+      "after": "B(右側) RCON1_4 SF/NG2送り／動作完了（位置決め完了立上り・100ms保持）"
+    },
+    {
+      "row": 161,
+      "before": "位置決め幅 [mm]（転送未接続：P_Off）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／位置決め幅 [mm]（転送未接続：P_Off）"
+    },
+    {
+      "row": 162,
+      "before": "指令速度 [mm/s]（転送未接続：P_Off）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／指令速度 [mm/s]（転送未接続：P_Off）"
+    },
+    {
+      "row": 163,
+      "before": "共通加減速度 [G]（転送未接続：P_Off）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／共通加減速度 [G]（転送未接続：P_Off）"
+    },
+    {
+      "row": 164,
+      "before": "押付け制限 [%]（未使用：P_Off）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／押付け制限 [%]（未使用：P_Off）"
+    },
+    {
+      "row": 165,
+      "before": "【出力信号】 /////////////////////////////////////\r\n移動開始要求（立上り・100ms保持）／条件未確定：P_Offで禁止",
+      "after": "A(左側) RCON1_5 SF/NG2上下降\r\n【出力信号】 /////////////////////////////////////\r\n移動開始要求（立上り・100ms保持）／条件未確定：P_Offで禁止"
+    },
+    {
+      "row": 166,
+      "before": "原点復帰要求（未接続：P_Off）／インターロック未確定",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／原点復帰要求（未接続：P_Off）／インターロック未確定"
+    },
+    {
+      "row": 167,
+      "before": "一時停止要求（未接続：P_Off）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／一時停止要求（未接続：P_Off）"
+    },
+    {
+      "row": 168,
+      "before": "異常リセット（RESET・共通Pause[5]）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／異常リセット（RESET・共通Pause[5]）"
+    },
+    {
+      "row": 169,
+      "before": "サーボON要求（非常停止時OFF）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／サーボON要求（非常停止時OFF）"
+    },
+    {
+      "row": 170,
+      "before": "インチング選択（OFF=ジョグ）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／インチング選択（OFF=ジョグ）"
+    },
+    {
+      "row": 171,
+      "before": "ジョグ速度切替（未接続：P_Off）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／ジョグ速度切替（未接続：P_Off）"
+    },
+    {
+      "row": 172,
+      "before": "原点方向ジョグ（未接続：P_Off）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／原点方向ジョグ（未接続：P_Off）"
+    },
+    {
+      "row": 173,
+      "before": "反原点方向ジョグ（未接続：P_Off）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／反原点方向ジョグ（未接続：P_Off）"
+    },
+    {
+      "row": 174,
+      "before": "ゲイン選択下位（未使用）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／ゲイン選択下位（未使用）"
+    },
+    {
+      "row": 175,
+      "before": "ゲイン選択上位（未使用）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／ゲイン選択上位（未使用）"
+    },
+    {
+      "row": 176,
+      "before": "押付け選択（未使用・OFF=位置決め）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／押付け選択（未使用・OFF=位置決め）"
+    },
+    {
+      "row": 177,
+      "before": "押付け方向（未使用）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／押付け方向（未使用）"
+    },
+    {
+      "row": 178,
+      "before": "相対移動選択（未使用・OFF=絶対）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／相対移動選択（未使用・OFF=絶対）"
+    },
+    {
+      "row": 179,
+      "before": "ブレーキ強制解除（非常停止でない間ON：要確認）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／ブレーキ強制解除（非常停止でない間ON：要確認）"
+    },
+    {
+      "row": 180,
+      "before": "【入力値】 /////////////////////////////////////\r\n現在位置 [mm]（監視転送未接続：P_Off）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降\r\n【入力値】 /////////////////////////////////////\r\n現在位置 [mm]（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 181,
+      "before": "指令電流 [mA]（監視転送未接続：P_Off）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／指令電流 [mA]（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 182,
+      "before": "現在速度 [mm/s・符号付き]（監視転送未接続：P_Off）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／現在速度 [mm/s・符号付き]（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 183,
+      "before": "軸異常コード（監視転送未接続：P_Off）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／軸異常コード（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 184,
+      "before": "入力有効（監視転送未接続：P_Off）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／入力有効（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 185,
+      "before": "【入力信号】 /////////////////////////////////////\r\n位置決め完了",
+      "after": "A(左側) RCON1_5 SF/NG2上下降\r\n【入力信号】 /////////////////////////////////////\r\n位置決め完了"
+    },
+    {
+      "row": 186,
+      "before": "原点復帰完了",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／原点復帰完了"
+    },
+    {
+      "row": 187,
+      "before": "移動中",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／移動中"
+    },
+    {
+      "row": 188,
+      "before": "軸異常",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／軸異常"
+    },
+    {
+      "row": 189,
+      "before": "サーボON状態",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／サーボON状態"
+    },
+    {
+      "row": 190,
+      "before": "押付け空振り（未使用・読取無効）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／押付け空振り（未使用・読取無効）"
+    },
+    {
+      "row": 191,
+      "before": "過負荷警告",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／過負荷警告"
+    },
+    {
+      "row": 192,
+      "before": "指令完了",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／指令完了"
+    },
+    {
+      "row": 193,
+      "before": "ゾーン1内",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／ゾーン1内"
+    },
+    {
+      "row": 194,
+      "before": "ゾーン2内",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／ゾーン2内"
+    },
+    {
+      "row": 195,
+      "before": "コントローラ準備完了",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／コントローラ準備完了"
+    },
+    {
+      "row": 196,
+      "before": "非常停止状態（入力）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／非常停止状態（入力）"
+    },
+    {
+      "row": 197,
+      "before": "【動作管理】 /////////////////////////////////////\r\n動作準備（準備完了・サーボON・異常なし）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降\r\n【動作管理】 /////////////////////////////////////\r\n動作準備（準備完了・サーボON・異常なし）"
+    },
+    {
+      "row": 198,
+      "before": "開始保持（要求1～3・準備100ms）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／開始保持（要求1～3・準備100ms）"
+    },
+    {
+      "row": 199,
+      "before": "動作完了（位置決め完了立上り・100ms保持）",
+      "after": "A(左側) RCON1_5 SF/NG2上下降／動作完了（位置決め完了立上り・100ms保持）"
+    },
+    {
+      "row": 201,
+      "before": "位置決め幅 [mm]（転送未接続：P_Off）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／位置決め幅 [mm]（転送未接続：P_Off）"
+    },
+    {
+      "row": 202,
+      "before": "指令速度 [mm/s]（転送未接続：P_Off）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／指令速度 [mm/s]（転送未接続：P_Off）"
+    },
+    {
+      "row": 203,
+      "before": "共通加減速度 [G]（転送未接続：P_Off）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／共通加減速度 [G]（転送未接続：P_Off）"
+    },
+    {
+      "row": 204,
+      "before": "押付け制限 [%]（未使用：P_Off）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／押付け制限 [%]（未使用：P_Off）"
+    },
+    {
+      "row": 205,
+      "before": "【出力信号】 /////////////////////////////////////\r\n移動開始要求（立上り・100ms保持）／条件未確定：P_Offで禁止",
+      "after": "B(右側) RCON1_6 SF/NG2上下降\r\n【出力信号】 /////////////////////////////////////\r\n移動開始要求（立上り・100ms保持）／条件未確定：P_Offで禁止"
+    },
+    {
+      "row": 206,
+      "before": "原点復帰要求（未接続：P_Off）／インターロック未確定",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／原点復帰要求（未接続：P_Off）／インターロック未確定"
+    },
+    {
+      "row": 207,
+      "before": "一時停止要求（未接続：P_Off）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／一時停止要求（未接続：P_Off）"
+    },
+    {
+      "row": 208,
+      "before": "異常リセット（RESET・共通Pause[5]）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／異常リセット（RESET・共通Pause[5]）"
+    },
+    {
+      "row": 209,
+      "before": "サーボON要求（非常停止時OFF）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／サーボON要求（非常停止時OFF）"
+    },
+    {
+      "row": 210,
+      "before": "インチング選択（OFF=ジョグ）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／インチング選択（OFF=ジョグ）"
+    },
+    {
+      "row": 211,
+      "before": "ジョグ速度切替（未接続：P_Off）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／ジョグ速度切替（未接続：P_Off）"
+    },
+    {
+      "row": 212,
+      "before": "原点方向ジョグ（未接続：P_Off）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／原点方向ジョグ（未接続：P_Off）"
+    },
+    {
+      "row": 213,
+      "before": "反原点方向ジョグ（未接続：P_Off）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／反原点方向ジョグ（未接続：P_Off）"
+    },
+    {
+      "row": 214,
+      "before": "ゲイン選択下位（未使用）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／ゲイン選択下位（未使用）"
+    },
+    {
+      "row": 215,
+      "before": "ゲイン選択上位（未使用）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／ゲイン選択上位（未使用）"
+    },
+    {
+      "row": 216,
+      "before": "押付け選択（未使用・OFF=位置決め）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／押付け選択（未使用・OFF=位置決め）"
+    },
+    {
+      "row": 217,
+      "before": "押付け方向（未使用）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／押付け方向（未使用）"
+    },
+    {
+      "row": 218,
+      "before": "相対移動選択（未使用・OFF=絶対）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／相対移動選択（未使用・OFF=絶対）"
+    },
+    {
+      "row": 219,
+      "before": "ブレーキ強制解除（非常停止でない間ON：要確認）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／ブレーキ強制解除（非常停止でない間ON：要確認）"
+    },
+    {
+      "row": 220,
+      "before": "【入力値】 /////////////////////////////////////\r\n現在位置 [mm]（監視転送未接続：P_Off）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降\r\n【入力値】 /////////////////////////////////////\r\n現在位置 [mm]（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 221,
+      "before": "指令電流 [mA]（監視転送未接続：P_Off）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／指令電流 [mA]（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 222,
+      "before": "現在速度 [mm/s・符号付き]（監視転送未接続：P_Off）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／現在速度 [mm/s・符号付き]（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 223,
+      "before": "軸異常コード（監視転送未接続：P_Off）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／軸異常コード（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 224,
+      "before": "入力有効（監視転送未接続：P_Off）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／入力有効（監視転送未接続：P_Off）"
+    },
+    {
+      "row": 225,
+      "before": "【入力信号】 /////////////////////////////////////\r\n位置決め完了",
+      "after": "B(右側) RCON1_6 SF/NG2上下降\r\n【入力信号】 /////////////////////////////////////\r\n位置決め完了"
+    },
+    {
+      "row": 226,
+      "before": "原点復帰完了",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／原点復帰完了"
+    },
+    {
+      "row": 227,
+      "before": "移動中",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／移動中"
+    },
+    {
+      "row": 228,
+      "before": "軸異常",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／軸異常"
+    },
+    {
+      "row": 229,
+      "before": "サーボON状態",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／サーボON状態"
+    },
+    {
+      "row": 230,
+      "before": "押付け空振り（未使用・読取無効）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／押付け空振り（未使用・読取無効）"
+    },
+    {
+      "row": 231,
+      "before": "過負荷警告",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／過負荷警告"
+    },
+    {
+      "row": 232,
+      "before": "指令完了",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／指令完了"
+    },
+    {
+      "row": 233,
+      "before": "ゾーン1内",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／ゾーン1内"
+    },
+    {
+      "row": 234,
+      "before": "ゾーン2内",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／ゾーン2内"
+    },
+    {
+      "row": 235,
+      "before": "コントローラ準備完了",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／コントローラ準備完了"
+    },
+    {
+      "row": 236,
+      "before": "非常停止状態（入力）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／非常停止状態（入力）"
+    },
+    {
+      "row": 237,
+      "before": "【動作管理】 /////////////////////////////////////\r\n動作準備（準備完了・サーボON・異常なし）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降\r\n【動作管理】 /////////////////////////////////////\r\n動作準備（準備完了・サーボON・異常なし）"
+    },
+    {
+      "row": 238,
+      "before": "開始保持（要求1～3・準備100ms）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／開始保持（要求1～3・準備100ms）"
+    },
+    {
+      "row": 239,
+      "before": "動作完了（位置決め完了立上り・100ms保持）",
+      "after": "B(右側) RCON1_6 SF/NG2上下降／動作完了（位置決め完了立上り・100ms保持）"
+    },
+    {
+      "row": 241,
+      "before": "【OUT数値変換・制御bit組立】\r\n内部計算のみ。実出力代入は次のST。",
+      "after": "RCON1/Node1 共通通信\r\n【OUT数値変換・制御bit組立】\r\n内部計算のみ。実出力代入は次のST。"
+    },
+    {
+      "row": 242,
+      "before": "【許可条件付き実I/O書込み】\r\n書込み許可OFFは更新保留。停止指令ではない。",
+      "after": "RCON1/Node1 共通通信\r\n【許可条件付き実I/O書込み】\r\n書込み許可OFFは更新保留。停止指令ではない。"
+    },
+    {
+      "row": 244,
+      "before": "【OUT数値変換・制御bit組立】\r\n内部計算のみ。実出力代入は次のST。",
+      "after": "RCON2/Node5 共通通信\r\n【OUT数値変換・制御bit組立】\r\n内部計算のみ。実出力代入は次のST。"
+    },
+    {
+      "row": 245,
+      "before": "【許可条件付き実I/O書込み】\r\n書込み許可OFFは更新保留。停止指令ではない。",
+      "after": "RCON2/Node5 共通通信\r\n【許可条件付き実I/O書込み】\r\n書込み許可OFFは更新保留。停止指令ではない。"
+    }
+  ],
+  "ladder_counts": {
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/02fa0618-20f0-422f-b44d-3aba0838a381.xml": 16,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/056f39b5-2372-4d32-b892-634336899ec4.xml": 1,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/08c19951-3bae-402d-a637-be66c221f71b.xml": 6,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml": 316,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/13f086b3-1a09-467f-8cff-eea83144ff00.xml": 3,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml": 4,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml": 18,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml": 2,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml": 1,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/49a83d1d-d863-4a09-a86a-4797edc14a57.xml": 1,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml": 17,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml": 8,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml": 152,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/5ede16be-2114-46c3-84df-a79badb6e32e.xml": 1,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml": 23,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/7b1666c7-ee97-4210-81b2-fed5a6172074.xml": 246,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml": 9,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/98de6707-f996-4f77-aad9-b0569299efb5.xml": 8,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml": 6,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml": 17,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml": 29,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml": 13,
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml": 16
+  },
+  "native_validation": {
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/02fa0618-20f0-422f-b44d-3aba0838a381.xml": "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/056f39b5-2372-4d32-b892-634336899ec4.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/08c19951-3bae-402d-a637-be66c221f71b.xml": "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml": "TOTAL=316 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/13f086b3-1a09-467f-8cff-eea83144ff00.xml": "TOTAL=3 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml": "TOTAL=4 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml": "TOTAL=18 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml": "TOTAL=2 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/49a83d1d-d863-4a09-a86a-4797edc14a57.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml": "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml": "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml": "TOTAL=152 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/5ede16be-2114-46c3-84df-a79badb6e32e.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml": "TOTAL=23 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/7b1666c7-ee97-4210-81b2-fed5a6172074.xml": "TOTAL=246 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml": "TOTAL=9 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/98de6707-f996-4f77-aad9-b0569299efb5.xml": "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml": "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml": "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml": "TOTAL=29 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml": "TOTAL=13 PARSE_FAIL=0 MODEL_FAIL=0",
+    "0dd3ea6a-9d98-423a-b710-063ba51bf485/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml": "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0"
+  },
+  "program_logic_unchanged": true,
+  "all_variable_declarations_unchanged": true,
+  "all_network_configuration_unchanged": true,
+  "app_build_verified": false,
+  "machine_transfer_performed": false,
+  "backup": "C:\\Users\\SEIGI-N13\\Desktop\\PLC_更新前バックアップ\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261026F_行コメント更新前_d28564e7.smc2",
+  "published": true
+}

@@ -1,0 +1,17 @@
+{
+  "folder": "\\\\nas-ime5\\生産技術部\\1.注文書\\_内作設備\\_1.製作中注文書\\2717-2610A インナー巻線機 (AIW-1100T) 〈2台〉【マーレOH】",
+  "file": "\\\\nas-ime5\\生産技術部\\1.注文書\\_内作設備\\_1.製作中注文書\\2717-2610A インナー巻線機 (AIW-1100T) 〈2台〉【マーレOH】\\2717-2610A インナー巻線機 (AIW-1100T) 〈2台〉【マーレOH】.xlsx",
+  "cells": {
+    "C3": "2717-2610A",
+    "C4": "インナー巻線機 (AIW-1100T) 〈2台〉【マーレOH】"
+  },
+  "sheets": 17,
+  "formulas_preserved": 3945,
+  "changed_zip_entries": [
+    "xl/workbook.xml",
+    "xl/worksheets/sheet1.xml"
+  ],
+  "template_unchanged": true,
+  "sha256": "12b8f69bd95ade2168d2ee340fedf233c76c3c6e86ece3f3fbbfa2906af382ab",
+  "note": "数式キャッシュは原紙を維持。Excelで開いた際に全再計算する設定。図番台帳は未変更。"
+}

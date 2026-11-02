@@ -1,0 +1,613 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261027B.smc2",
+  "destination": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261027C.smc2",
+  "staged": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\rcon3-role-20261027\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261027C.smc2",
+  "source_sha256": "7103f45370cffaa886ad25672bf65d4479581cc5eb377f4ff11f0f1a7a27e0c6",
+  "output_sha256": "c19f8fc81ab2136f8089e1309be6459a97eb7b6e820f226e714d465f0b83c449",
+  "entries": 205,
+  "changed_entries": [
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/20a6b651-4c34-401a-965e-db3e18414d5c.xml",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/7b1666c7-ee97-4210-81b2-fed5a6172074.xml",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+  ],
+  "comment_changes": [
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "kind": "CMT",
+      "context": "5",
+      "before": "RCON1_3 SF/NG2排出(送り)\r\n原点位置移動 データ転送",
+      "after": "RCON1_3 SF/NG2仕分け(左右)\r\n原点位置移動 データ転送"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/20a6b651-4c34-401a-965e-db3e18414d5c.xml",
+      "kind": "Comment",
+      "context": "new_Controller_0.RCON1_3_M RCON1_3_M",
+      "before": "#A(左側) RCON1_3 SF/NG2排出(送り)",
+      "after": "#A(左側) RCON1_3 SF/NG2仕分け(左右)"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/20a6b651-4c34-401a-965e-db3e18414d5c.xml",
+      "kind": "Comment",
+      "context": "new_Controller_0.HMI_RCON1_3_OUT_TargetPos HMI_RCON1_3_OUT_TargetPos",
+      "before": "RCON1_3 SF/NG2排出(送り) 目標位置 [mm]：",
+      "after": "RCON1_3 SF/NG2仕分け(左右) 目標位置 [mm]："
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/7b1666c7-ee97-4210-81b2-fed5a6172074.xml",
+      "kind": "CMT",
+      "context": "80",
+      "before": "#A(左側) RCON1_3 SF/NG2排出(送り)\r\n【出力値】\r\n目標位置 [mm]（未接続）",
+      "after": "#A(左側) RCON1_3 SF/NG2仕分け(左右)\r\n【出力値】\r\n目標位置 [mm]（未接続）"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "kind": "Com",
+      "context": "HMI_RCON1_3_OUT_TargetPos",
+      "before": "RCON1_3 SF/NG2排出(送り) 目標位置 [mm]：",
+      "after": "RCON1_3 SF/NG2仕分け(左右) 目標位置 [mm]："
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_IN[3]",
+      "before": "#A(左側) SF/NG2排出(送り)",
+      "after": "#A(左側) SF/NG2仕分け(左右)"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_OUT[3]",
+      "before": "#A(左側) SF/NG2排出(送り)",
+      "after": "#A(左側) SF/NG2仕分け(左右)"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_RxRaw[24]",
+      "before": "IN24 A(左側) RCON1_3 SF/NG2送り 現在位置 下位 [0.01mm]",
+      "after": "IN24 A(左側) RCON1_3 SF/NG2仕分け(左右) 現在位置 下位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_RxRaw[25]",
+      "before": "IN25 A(左側) RCON1_3 SF/NG2送り 現在位置 上位 [0.01mm]",
+      "after": "IN25 A(左側) RCON1_3 SF/NG2仕分け(左右) 現在位置 上位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_RxRaw[26]",
+      "before": "IN26 A(左側) RCON1_3 SF/NG2送り 指令電流 下位 [mA]",
+      "after": "IN26 A(左側) RCON1_3 SF/NG2仕分け(左右) 指令電流 下位 [mA]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_RxRaw[27]",
+      "before": "IN27 A(左側) RCON1_3 SF/NG2送り 指令電流 上位 [mA]",
+      "after": "IN27 A(左側) RCON1_3 SF/NG2仕分け(左右) 指令電流 上位 [mA]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_RxRaw[28]",
+      "before": "IN28 A(左側) RCON1_3 SF/NG2送り 現在速度 [実機単位・符号付き]",
+      "after": "IN28 A(左側) RCON1_3 SF/NG2仕分け(左右) 現在速度 [実機単位・符号付き]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_RxRaw[29]",
+      "before": "IN29 A(左側) RCON1_3 SF/NG2送り 予約（使用禁止）",
+      "after": "IN29 A(左側) RCON1_3 SF/NG2仕分け(左右) 予約（使用禁止）"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_RxRaw[30]",
+      "before": "IN30 A(左側) RCON1_3 SF/NG2送り 軸異常コード",
+      "after": "IN30 A(左側) RCON1_3 SF/NG2仕分け(左右) 軸異常コード"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_RxRaw[31]",
+      "before": "IN31 A(左側) RCON1_3 SF/NG2送り 状態信号（PEND/SV等）",
+      "after": "IN31 A(左側) RCON1_3 SF/NG2仕分け(左右) 状態信号（PEND/SV等）"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_RxWord[24]",
+      "before": "IN24 A(左側) RCON1_3 SF/NG2送り 現在位置 下位 [0.01mm]",
+      "after": "IN24 A(左側) RCON1_3 SF/NG2仕分け(左右) 現在位置 下位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_RxWord[25]",
+      "before": "IN25 A(左側) RCON1_3 SF/NG2送り 現在位置 上位 [0.01mm]",
+      "after": "IN25 A(左側) RCON1_3 SF/NG2仕分け(左右) 現在位置 上位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_RxWord[26]",
+      "before": "IN26 A(左側) RCON1_3 SF/NG2送り 指令電流 下位 [mA]",
+      "after": "IN26 A(左側) RCON1_3 SF/NG2仕分け(左右) 指令電流 下位 [mA]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_RxWord[27]",
+      "before": "IN27 A(左側) RCON1_3 SF/NG2送り 指令電流 上位 [mA]",
+      "after": "IN27 A(左側) RCON1_3 SF/NG2仕分け(左右) 指令電流 上位 [mA]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_RxWord[28]",
+      "before": "IN28 A(左側) RCON1_3 SF/NG2送り 現在速度 [実機単位・符号付き]",
+      "after": "IN28 A(左側) RCON1_3 SF/NG2仕分け(左右) 現在速度 [実機単位・符号付き]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_RxWord[29]",
+      "before": "IN29 A(左側) RCON1_3 SF/NG2送り 予約（使用禁止）",
+      "after": "IN29 A(左側) RCON1_3 SF/NG2仕分け(左右) 予約（使用禁止）"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_RxWord[30]",
+      "before": "IN30 A(左側) RCON1_3 SF/NG2送り 軸異常コード",
+      "after": "IN30 A(左側) RCON1_3 SF/NG2仕分け(左右) 軸異常コード"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_RxWord[31]",
+      "before": "IN31 A(左側) RCON1_3 SF/NG2送り 状態信号（PEND/SV等）",
+      "after": "IN31 A(左側) RCON1_3 SF/NG2仕分け(左右) 状態信号（PEND/SV等）"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_TxUInt[24]",
+      "before": "OUT24 A(左側) RCON1_3 SF/NG2送り 目標位置 下位 [0.01mm]",
+      "after": "OUT24 A(左側) RCON1_3 SF/NG2仕分け(左右) 目標位置 下位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_TxUInt[25]",
+      "before": "OUT25 A(左側) RCON1_3 SF/NG2送り 目標位置 上位 [0.01mm]",
+      "after": "OUT25 A(左側) RCON1_3 SF/NG2仕分け(左右) 目標位置 上位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_TxUInt[26]",
+      "before": "OUT26 A(左側) RCON1_3 SF/NG2送り 位置決め幅 下位 [0.01mm]",
+      "after": "OUT26 A(左側) RCON1_3 SF/NG2仕分け(左右) 位置決め幅 下位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_TxUInt[27]",
+      "before": "OUT27 A(左側) RCON1_3 SF/NG2送り 位置決め幅 上位 [0.01mm]",
+      "after": "OUT27 A(左側) RCON1_3 SF/NG2仕分け(左右) 位置決め幅 上位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_TxUInt[28]",
+      "before": "OUT28 A(左側) RCON1_3 SF/NG2送り 速度指令 [実機単位]",
+      "after": "OUT28 A(左側) RCON1_3 SF/NG2仕分け(左右) 速度指令 [実機単位]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_TxUInt[29]",
+      "before": "OUT29 A(左側) RCON1_3 SF/NG2送り 共通加減速 [0.01G]",
+      "after": "OUT29 A(左側) RCON1_3 SF/NG2仕分け(左右) 共通加減速 [0.01G]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_TxUInt[30]",
+      "before": "OUT30 A(左側) RCON1_3 SF/NG2送り 押付け制限 [255=100%]",
+      "after": "OUT30 A(左側) RCON1_3 SF/NG2仕分け(左右) 押付け制限 [255=100%]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_TxUInt[31]",
+      "before": "OUT31 A(左側) RCON1_3 SF/NG2送り 制御信号（DSTR/SON等）",
+      "after": "OUT31 A(左側) RCON1_3 SF/NG2仕分け(左右) 制御信号（DSTR/SON等）"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_TxWord[24]",
+      "before": "OUT24 A(左側) RCON1_3 SF/NG2送り 目標位置 下位 [0.01mm]",
+      "after": "OUT24 A(左側) RCON1_3 SF/NG2仕分け(左右) 目標位置 下位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_TxWord[25]",
+      "before": "OUT25 A(左側) RCON1_3 SF/NG2送り 目標位置 上位 [0.01mm]",
+      "after": "OUT25 A(左側) RCON1_3 SF/NG2仕分け(左右) 目標位置 上位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_TxWord[26]",
+      "before": "OUT26 A(左側) RCON1_3 SF/NG2送り 位置決め幅 下位 [0.01mm]",
+      "after": "OUT26 A(左側) RCON1_3 SF/NG2仕分け(左右) 位置決め幅 下位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_TxWord[27]",
+      "before": "OUT27 A(左側) RCON1_3 SF/NG2送り 位置決め幅 上位 [0.01mm]",
+      "after": "OUT27 A(左側) RCON1_3 SF/NG2仕分け(左右) 位置決め幅 上位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_TxWord[28]",
+      "before": "OUT28 A(左側) RCON1_3 SF/NG2送り 速度指令 [実機単位]",
+      "after": "OUT28 A(左側) RCON1_3 SF/NG2仕分け(左右) 速度指令 [実機単位]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_TxWord[29]",
+      "before": "OUT29 A(左側) RCON1_3 SF/NG2送り 共通加減速 [0.01G]",
+      "after": "OUT29 A(左側) RCON1_3 SF/NG2仕分け(左右) 共通加減速 [0.01G]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_TxWord[30]",
+      "before": "OUT30 A(左側) RCON1_3 SF/NG2送り 押付け制限 [255=100%]",
+      "after": "OUT30 A(左側) RCON1_3 SF/NG2仕分け(左右) 押付け制限 [255=100%]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "EC",
+      "context": "RCON1_TxWord[31]",
+      "before": "OUT31 A(左側) RCON1_3 SF/NG2送り 制御信号（DSTR/SON等）",
+      "after": "OUT31 A(左側) RCON1_3 SF/NG2仕分け(左右) 制御信号（DSTR/SON等）"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "kind": "Com",
+      "context": "RCON1_3_M",
+      "before": "#A(左側) RCON1_3 SF/NG2排出(送り)",
+      "after": "#A(左側) RCON1_3 SF/NG2仕分け(左右)"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_OUT[3]",
+      "before": "#A(左側) SF/NG2排出(送り)",
+      "after": "#A(左側) SF/NG2仕分け(左右)"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_IN[3]",
+      "before": "#A(左側) SF/NG2排出(送り)",
+      "after": "#A(左側) SF/NG2仕分け(左右)"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_RxRaw[24]",
+      "before": "IN24 A(左側) RCON1_3 SF/NG2送り 現在位置 下位 [0.01mm]",
+      "after": "IN24 A(左側) RCON1_3 SF/NG2仕分け(左右) 現在位置 下位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_RxRaw[25]",
+      "before": "IN25 A(左側) RCON1_3 SF/NG2送り 現在位置 上位 [0.01mm]",
+      "after": "IN25 A(左側) RCON1_3 SF/NG2仕分け(左右) 現在位置 上位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_RxRaw[26]",
+      "before": "IN26 A(左側) RCON1_3 SF/NG2送り 指令電流 下位 [mA]",
+      "after": "IN26 A(左側) RCON1_3 SF/NG2仕分け(左右) 指令電流 下位 [mA]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_RxRaw[27]",
+      "before": "IN27 A(左側) RCON1_3 SF/NG2送り 指令電流 上位 [mA]",
+      "after": "IN27 A(左側) RCON1_3 SF/NG2仕分け(左右) 指令電流 上位 [mA]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_RxRaw[28]",
+      "before": "IN28 A(左側) RCON1_3 SF/NG2送り 現在速度 [実機単位・符号付き]",
+      "after": "IN28 A(左側) RCON1_3 SF/NG2仕分け(左右) 現在速度 [実機単位・符号付き]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_RxRaw[29]",
+      "before": "IN29 A(左側) RCON1_3 SF/NG2送り 予約（使用禁止）",
+      "after": "IN29 A(左側) RCON1_3 SF/NG2仕分け(左右) 予約（使用禁止）"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_RxRaw[30]",
+      "before": "IN30 A(左側) RCON1_3 SF/NG2送り 軸異常コード",
+      "after": "IN30 A(左側) RCON1_3 SF/NG2仕分け(左右) 軸異常コード"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_RxRaw[31]",
+      "before": "IN31 A(左側) RCON1_3 SF/NG2送り 状態信号（PEND/SV等）",
+      "after": "IN31 A(左側) RCON1_3 SF/NG2仕分け(左右) 状態信号（PEND/SV等）"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_RxWord[24]",
+      "before": "IN24 A(左側) RCON1_3 SF/NG2送り 現在位置 下位 [0.01mm]",
+      "after": "IN24 A(左側) RCON1_3 SF/NG2仕分け(左右) 現在位置 下位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_RxWord[25]",
+      "before": "IN25 A(左側) RCON1_3 SF/NG2送り 現在位置 上位 [0.01mm]",
+      "after": "IN25 A(左側) RCON1_3 SF/NG2仕分け(左右) 現在位置 上位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_RxWord[26]",
+      "before": "IN26 A(左側) RCON1_3 SF/NG2送り 指令電流 下位 [mA]",
+      "after": "IN26 A(左側) RCON1_3 SF/NG2仕分け(左右) 指令電流 下位 [mA]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_RxWord[27]",
+      "before": "IN27 A(左側) RCON1_3 SF/NG2送り 指令電流 上位 [mA]",
+      "after": "IN27 A(左側) RCON1_3 SF/NG2仕分け(左右) 指令電流 上位 [mA]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_RxWord[28]",
+      "before": "IN28 A(左側) RCON1_3 SF/NG2送り 現在速度 [実機単位・符号付き]",
+      "after": "IN28 A(左側) RCON1_3 SF/NG2仕分け(左右) 現在速度 [実機単位・符号付き]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_RxWord[29]",
+      "before": "IN29 A(左側) RCON1_3 SF/NG2送り 予約（使用禁止）",
+      "after": "IN29 A(左側) RCON1_3 SF/NG2仕分け(左右) 予約（使用禁止）"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_RxWord[30]",
+      "before": "IN30 A(左側) RCON1_3 SF/NG2送り 軸異常コード",
+      "after": "IN30 A(左側) RCON1_3 SF/NG2仕分け(左右) 軸異常コード"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_RxWord[31]",
+      "before": "IN31 A(左側) RCON1_3 SF/NG2送り 状態信号（PEND/SV等）",
+      "after": "IN31 A(左側) RCON1_3 SF/NG2仕分け(左右) 状態信号（PEND/SV等）"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_TxWord[24]",
+      "before": "OUT24 A(左側) RCON1_3 SF/NG2送り 目標位置 下位 [0.01mm]",
+      "after": "OUT24 A(左側) RCON1_3 SF/NG2仕分け(左右) 目標位置 下位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_TxWord[25]",
+      "before": "OUT25 A(左側) RCON1_3 SF/NG2送り 目標位置 上位 [0.01mm]",
+      "after": "OUT25 A(左側) RCON1_3 SF/NG2仕分け(左右) 目標位置 上位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_TxWord[26]",
+      "before": "OUT26 A(左側) RCON1_3 SF/NG2送り 位置決め幅 下位 [0.01mm]",
+      "after": "OUT26 A(左側) RCON1_3 SF/NG2仕分け(左右) 位置決め幅 下位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_TxWord[27]",
+      "before": "OUT27 A(左側) RCON1_3 SF/NG2送り 位置決め幅 上位 [0.01mm]",
+      "after": "OUT27 A(左側) RCON1_3 SF/NG2仕分け(左右) 位置決め幅 上位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_TxWord[28]",
+      "before": "OUT28 A(左側) RCON1_3 SF/NG2送り 速度指令 [実機単位]",
+      "after": "OUT28 A(左側) RCON1_3 SF/NG2仕分け(左右) 速度指令 [実機単位]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_TxWord[29]",
+      "before": "OUT29 A(左側) RCON1_3 SF/NG2送り 共通加減速 [0.01G]",
+      "after": "OUT29 A(左側) RCON1_3 SF/NG2仕分け(左右) 共通加減速 [0.01G]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_TxWord[30]",
+      "before": "OUT30 A(左側) RCON1_3 SF/NG2送り 押付け制限 [255=100%]",
+      "after": "OUT30 A(左側) RCON1_3 SF/NG2仕分け(左右) 押付け制限 [255=100%]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_TxWord[31]",
+      "before": "OUT31 A(左側) RCON1_3 SF/NG2送り 制御信号（DSTR/SON等）",
+      "after": "OUT31 A(左側) RCON1_3 SF/NG2仕分け(左右) 制御信号（DSTR/SON等）"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_TxUInt[24]",
+      "before": "OUT24 A(左側) RCON1_3 SF/NG2送り 目標位置 下位 [0.01mm]",
+      "after": "OUT24 A(左側) RCON1_3 SF/NG2仕分け(左右) 目標位置 下位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_TxUInt[25]",
+      "before": "OUT25 A(左側) RCON1_3 SF/NG2送り 目標位置 上位 [0.01mm]",
+      "after": "OUT25 A(左側) RCON1_3 SF/NG2仕分け(左右) 目標位置 上位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_TxUInt[26]",
+      "before": "OUT26 A(左側) RCON1_3 SF/NG2送り 位置決め幅 下位 [0.01mm]",
+      "after": "OUT26 A(左側) RCON1_3 SF/NG2仕分け(左右) 位置決め幅 下位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_TxUInt[27]",
+      "before": "OUT27 A(左側) RCON1_3 SF/NG2送り 位置決め幅 上位 [0.01mm]",
+      "after": "OUT27 A(左側) RCON1_3 SF/NG2仕分け(左右) 位置決め幅 上位 [0.01mm]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_TxUInt[28]",
+      "before": "OUT28 A(左側) RCON1_3 SF/NG2送り 速度指令 [実機単位]",
+      "after": "OUT28 A(左側) RCON1_3 SF/NG2仕分け(左右) 速度指令 [実機単位]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_TxUInt[29]",
+      "before": "OUT29 A(左側) RCON1_3 SF/NG2送り 共通加減速 [0.01G]",
+      "after": "OUT29 A(左側) RCON1_3 SF/NG2仕分け(左右) 共通加減速 [0.01G]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_TxUInt[30]",
+      "before": "OUT30 A(左側) RCON1_3 SF/NG2送り 押付け制限 [255=100%]",
+      "after": "OUT30 A(左側) RCON1_3 SF/NG2仕分け(左右) 押付け制限 [255=100%]"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "EC",
+      "context": "RCON1_TxUInt[31]",
+      "before": "OUT31 A(左側) RCON1_3 SF/NG2送り 制御信号（DSTR/SON等）",
+      "after": "OUT31 A(左側) RCON1_3 SF/NG2仕分け(左右) 制御信号（DSTR/SON等）"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "Com",
+      "context": "RCON1_3_M",
+      "before": "#A(左側) RCON1_3 SF/NG2排出(送り)",
+      "after": "#A(左側) RCON1_3 SF/NG2仕分け(左右)"
+    },
+    {
+      "entry": "3049551b-189c-4058-8b60-cb6ec7884f3d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "kind": "Com",
+      "context": "HMI_RCON1_3_OUT_TargetPos",
+      "before": "RCON1_3 SF/NG2排出(送り) 目標位置 [mm]：",
+      "after": "RCON1_3 SF/NG2仕分け(左右) 目標位置 [mm]："
+    }
+  ],
+  "comment_change_count": 76,
+  "change_counts": {
+    "CMT": 2,
+    "Comment": 2,
+    "Com": 4,
+    "EC": 68
+  },
+  "ladder_counts": {
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/02fa0618-20f0-422f-b44d-3aba0838a381.xml": 16,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/056f39b5-2372-4d32-b892-634336899ec4.xml": 1,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/08c19951-3bae-402d-a637-be66c221f71b.xml": 6,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml": 316,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/13f086b3-1a09-467f-8cff-eea83144ff00.xml": 3,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml": 10,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml": 18,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml": 2,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml": 1,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/49a83d1d-d863-4a09-a86a-4797edc14a57.xml": 1,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml": 17,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml": 8,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml": 152,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/5ede16be-2114-46c3-84df-a79badb6e32e.xml": 1,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml": 24,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/7b1666c7-ee97-4210-81b2-fed5a6172074.xml": 246,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml": 9,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/98de6707-f996-4f77-aad9-b0569299efb5.xml": 8,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml": 6,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml": 17,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml": 29,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml": 13,
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml": 16
+  },
+  "native_validation": {
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/02fa0618-20f0-422f-b44d-3aba0838a381.xml": "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/056f39b5-2372-4d32-b892-634336899ec4.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/08c19951-3bae-402d-a637-be66c221f71b.xml": "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml": "TOTAL=316 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/13f086b3-1a09-467f-8cff-eea83144ff00.xml": "TOTAL=3 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml": "TOTAL=10 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml": "TOTAL=18 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml": "TOTAL=2 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/49a83d1d-d863-4a09-a86a-4797edc14a57.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml": "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml": "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml": "TOTAL=152 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/5ede16be-2114-46c3-84df-a79badb6e32e.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml": "TOTAL=24 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/7b1666c7-ee97-4210-81b2-fed5a6172074.xml": "TOTAL=246 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml": "TOTAL=9 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/98de6707-f996-4f77-aad9-b0569299efb5.xml": "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml": "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml": "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml": "TOTAL=29 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml": "TOTAL=13 PARSE_FAIL=0 MODEL_FAIL=0",
+    "3049551b-189c-4058-8b60-cb6ec7884f3d/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml": "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0"
+  },
+  "comments_only_verified": true,
+  "other_axes_unchanged": true,
+  "names_logic_types_and_io_unchanged": true,
+  "app_build_verified": false,
+  "machine_transfer_performed": false,
+  "published": true
+}

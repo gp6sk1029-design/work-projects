@@ -1,0 +1,484 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029D.smc2",
+  "destination": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029E.smc2",
+  "staged": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\tray-rename-20261028\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029E.smc2",
+  "source_sha256": "de86b8690096fd254feb2401172434cd6471d88a1046fd0fefc72a3096f3095f",
+  "output_sha256": "23897b84445fac481bdcb224e1464175ff2401f6c154e93c4389d1e9a1e7ae43",
+  "rename_map": {
+    "In_Sen_NG1_Tray_01_A_Full": "In_Sen_NG1_Tray_A_Full",
+    "In_Sen_NG1_Tray_01_A_Full_Warn": "In_Sen_NG1_Tray_A_Full_Warn",
+    "In_Sen_NG1_Tray_01_B_Full": "In_Sen_NG1_Tray_B_Full",
+    "In_Sen_NG1_Tray_01_B_Full_Warn": "In_Sen_NG1_Tray_B_Full_Warn",
+    "In_Sen_NG1_Tray_02_A_Full": "In_Sen_NG2_Tray_A_Full",
+    "In_Sen_NG1_Tray_02_A_Full_Warn": "In_Sen_NG2_Tray_A_Full_Warn",
+    "In_Sen_NG1_Tray_02_B_Full": "In_Sen_NG2_Tray_B_Full",
+    "In_Sen_NG1_Tray_02_B_Full_Warn": "In_Sen_NG2_Tray_B_Full_Warn",
+    "TimerQ_In_Sen_NG1_Tray_01_A_Full": "TimerQ_In_Sen_NG1_Tray_A_Full",
+    "TimerQ_In_Sen_NG1_Tray_01_A_Full_Warn": "TimerQ_In_Sen_NG1_Tray_A_Full_Warn",
+    "TimerQ_In_Sen_NG1_Tray_01_B_Full": "TimerQ_In_Sen_NG1_Tray_B_Full",
+    "TimerQ_In_Sen_NG1_Tray_01_B_Full_Warn": "TimerQ_In_Sen_NG1_Tray_B_Full_Warn",
+    "TimerQ_In_Sen_NG1_Tray_02_A_Full": "TimerQ_In_Sen_NG2_Tray_A_Full",
+    "TimerQ_In_Sen_NG1_Tray_02_A_Full_Warn": "TimerQ_In_Sen_NG2_Tray_A_Full_Warn",
+    "TimerQ_In_Sen_NG1_Tray_02_B_Full": "TimerQ_In_Sen_NG2_Tray_B_Full",
+    "TimerQ_In_Sen_NG1_Tray_02_B_Full_Warn": "TimerQ_In_Sen_NG2_Tray_B_Full_Warn",
+    "Timer_In_Sen_NG1_Tray_01_A_Full": "Timer_In_Sen_NG1_Tray_A_Full",
+    "Timer_In_Sen_NG1_Tray_01_A_Full_Warn": "Timer_In_Sen_NG1_Tray_A_Full_Warn",
+    "Timer_In_Sen_NG1_Tray_01_B_Full": "Timer_In_Sen_NG1_Tray_B_Full",
+    "Timer_In_Sen_NG1_Tray_01_B_Full_Warn": "Timer_In_Sen_NG1_Tray_B_Full_Warn",
+    "Timer_In_Sen_NG1_Tray_02_A_Full": "Timer_In_Sen_NG2_Tray_A_Full",
+    "Timer_In_Sen_NG1_Tray_02_A_Full_Warn": "Timer_In_Sen_NG2_Tray_A_Full_Warn",
+    "Timer_In_Sen_NG1_Tray_02_B_Full": "Timer_In_Sen_NG2_Tray_B_Full",
+    "Timer_In_Sen_NG1_Tray_02_B_Full_Warn": "Timer_In_Sen_NG2_Tray_B_Full_Warn"
+  },
+  "entries": 207,
+  "changed_entries": [
+    "bd725a79-b939-4c42-8b09-d4003288186d/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+    "bd725a79-b939-4c42-8b09-d4003288186d/20a6b651-4c34-401a-965e-db3e18414d5c.xml",
+    "bd725a79-b939-4c42-8b09-d4003288186d/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml",
+    "bd725a79-b939-4c42-8b09-d4003288186d/508fadff-168f-41f5-b7a2-a80b4184f04c.xml",
+    "bd725a79-b939-4c42-8b09-d4003288186d/5e9126d6-8f87-494e-bf44-c84712e3509e.NexBuildVerifierGroup",
+    "bd725a79-b939-4c42-8b09-d4003288186d/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+    "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+    "bd725a79-b939-4c42-8b09-d4003288186d/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+  ],
+  "declaration_renames": [
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "old": "In_Sen_NG1_Tray_02_B_Full",
+      "new": "In_Sen_NG2_Tray_B_Full",
+      "type": "BOOL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "old": "TimerQ_In_Sen_NG1_Tray_02_B_Full",
+      "new": "TimerQ_In_Sen_NG2_Tray_B_Full",
+      "type": "BOOL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "old": "TimerQ_In_Sen_NG1_Tray_01_B_Full",
+      "new": "TimerQ_In_Sen_NG1_Tray_B_Full",
+      "type": "BOOL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "Timer_In_Sen_NG1_Tray_01_A_Full",
+      "new": "Timer_In_Sen_NG1_Tray_A_Full",
+      "type": "TON",
+      "group": "VAR"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "Timer_In_Sen_NG1_Tray_01_A_Full_Warn",
+      "new": "Timer_In_Sen_NG1_Tray_A_Full_Warn",
+      "type": "TON",
+      "group": "VAR"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "Timer_In_Sen_NG1_Tray_02_A_Full",
+      "new": "Timer_In_Sen_NG2_Tray_A_Full",
+      "type": "TON",
+      "group": "VAR"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "Timer_In_Sen_NG1_Tray_02_A_Full_Warn",
+      "new": "Timer_In_Sen_NG2_Tray_A_Full_Warn",
+      "type": "TON",
+      "group": "VAR"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "Timer_In_Sen_NG1_Tray_01_B_Full",
+      "new": "Timer_In_Sen_NG1_Tray_B_Full",
+      "type": "TON",
+      "group": "VAR"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "Timer_In_Sen_NG1_Tray_01_B_Full_Warn",
+      "new": "Timer_In_Sen_NG1_Tray_B_Full_Warn",
+      "type": "TON",
+      "group": "VAR"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "Timer_In_Sen_NG1_Tray_02_B_Full",
+      "new": "Timer_In_Sen_NG2_Tray_B_Full",
+      "type": "TON",
+      "group": "VAR"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "Timer_In_Sen_NG1_Tray_02_B_Full_Warn",
+      "new": "Timer_In_Sen_NG2_Tray_B_Full_Warn",
+      "type": "TON",
+      "group": "VAR"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "In_Sen_NG1_Tray_01_A_Full",
+      "new": "In_Sen_NG1_Tray_A_Full",
+      "type": "BOOL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "TimerQ_In_Sen_NG1_Tray_01_A_Full",
+      "new": "TimerQ_In_Sen_NG1_Tray_A_Full",
+      "type": "BOOL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "In_Sen_NG1_Tray_01_A_Full_Warn",
+      "new": "In_Sen_NG1_Tray_A_Full_Warn",
+      "type": "BOOL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "TimerQ_In_Sen_NG1_Tray_01_A_Full_Warn",
+      "new": "TimerQ_In_Sen_NG1_Tray_A_Full_Warn",
+      "type": "BOOL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "In_Sen_NG1_Tray_02_A_Full",
+      "new": "In_Sen_NG2_Tray_A_Full",
+      "type": "BOOL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "TimerQ_In_Sen_NG1_Tray_02_A_Full",
+      "new": "TimerQ_In_Sen_NG2_Tray_A_Full",
+      "type": "BOOL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "In_Sen_NG1_Tray_02_A_Full_Warn",
+      "new": "In_Sen_NG2_Tray_A_Full_Warn",
+      "type": "BOOL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "TimerQ_In_Sen_NG1_Tray_02_A_Full_Warn",
+      "new": "TimerQ_In_Sen_NG2_Tray_A_Full_Warn",
+      "type": "BOOL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "In_Sen_NG1_Tray_01_B_Full",
+      "new": "In_Sen_NG1_Tray_B_Full",
+      "type": "BOOL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "In_Sen_NG1_Tray_01_B_Full_Warn",
+      "new": "In_Sen_NG1_Tray_B_Full_Warn",
+      "type": "BOOL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "In_Sen_NG1_Tray_02_B_Full",
+      "new": "In_Sen_NG2_Tray_B_Full",
+      "type": "BOOL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "In_Sen_NG1_Tray_02_B_Full_Warn",
+      "new": "In_Sen_NG2_Tray_B_Full_Warn",
+      "type": "BOOL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "TimerQ_In_Sen_NG1_Tray_01_B_Full",
+      "new": "TimerQ_In_Sen_NG1_Tray_B_Full",
+      "type": "BOOL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "TimerQ_In_Sen_NG1_Tray_01_B_Full_Warn",
+      "new": "TimerQ_In_Sen_NG1_Tray_B_Full_Warn",
+      "type": "BOOL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "TimerQ_In_Sen_NG1_Tray_02_B_Full",
+      "new": "TimerQ_In_Sen_NG2_Tray_B_Full",
+      "type": "BOOL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "old": "TimerQ_In_Sen_NG1_Tray_02_B_Full_Warn",
+      "new": "TimerQ_In_Sen_NG2_Tray_B_Full_Warn",
+      "type": "BOOL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "In_Sen_NG1_Tray_01_A_Full",
+      "new": "In_Sen_NG1_Tray_A_Full",
+      "type": "BOOL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "In_Sen_NG1_Tray_01_A_Full_Warn",
+      "new": "In_Sen_NG1_Tray_A_Full_Warn",
+      "type": "BOOL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "In_Sen_NG1_Tray_02_A_Full",
+      "new": "In_Sen_NG2_Tray_A_Full",
+      "type": "BOOL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "In_Sen_NG1_Tray_02_A_Full_Warn",
+      "new": "In_Sen_NG2_Tray_A_Full_Warn",
+      "type": "BOOL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "In_Sen_NG1_Tray_01_B_Full",
+      "new": "In_Sen_NG1_Tray_B_Full",
+      "type": "BOOL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "In_Sen_NG1_Tray_01_B_Full_Warn",
+      "new": "In_Sen_NG1_Tray_B_Full_Warn",
+      "type": "BOOL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "In_Sen_NG1_Tray_02_B_Full",
+      "new": "In_Sen_NG2_Tray_B_Full",
+      "type": "BOOL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "In_Sen_NG1_Tray_02_B_Full_Warn",
+      "new": "In_Sen_NG2_Tray_B_Full_Warn",
+      "type": "BOOL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "TimerQ_In_Sen_NG1_Tray_01_A_Full",
+      "new": "TimerQ_In_Sen_NG1_Tray_A_Full",
+      "type": "BOOL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "TimerQ_In_Sen_NG1_Tray_01_A_Full_Warn",
+      "new": "TimerQ_In_Sen_NG1_Tray_A_Full_Warn",
+      "type": "BOOL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "TimerQ_In_Sen_NG1_Tray_02_A_Full",
+      "new": "TimerQ_In_Sen_NG2_Tray_A_Full",
+      "type": "BOOL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "TimerQ_In_Sen_NG1_Tray_02_A_Full_Warn",
+      "new": "TimerQ_In_Sen_NG2_Tray_A_Full_Warn",
+      "type": "BOOL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "TimerQ_In_Sen_NG1_Tray_01_B_Full",
+      "new": "TimerQ_In_Sen_NG1_Tray_B_Full",
+      "type": "BOOL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "TimerQ_In_Sen_NG1_Tray_01_B_Full_Warn",
+      "new": "TimerQ_In_Sen_NG1_Tray_B_Full_Warn",
+      "type": "BOOL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "TimerQ_In_Sen_NG1_Tray_02_B_Full",
+      "new": "TimerQ_In_Sen_NG2_Tray_B_Full",
+      "type": "BOOL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "bd725a79-b939-4c42-8b09-d4003288186d/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "TimerQ_In_Sen_NG1_Tray_02_B_Full_Warn",
+      "new": "TimerQ_In_Sen_NG2_Tray_B_Full_Warn",
+      "type": "BOOL",
+      "group": "VAR_GLOBAL"
+    }
+  ],
+  "ladder_reference_counts": {
+    "TimerQ_In_Sen_NG1_Tray_02_B_Full": 4,
+    "In_Sen_NG1_Tray_01_A_Full": 1,
+    "Timer_In_Sen_NG1_Tray_01_A_Full": 1,
+    "TimerQ_In_Sen_NG1_Tray_01_A_Full": 1,
+    "In_Sen_NG1_Tray_01_A_Full_Warn": 1,
+    "Timer_In_Sen_NG1_Tray_01_A_Full_Warn": 1,
+    "TimerQ_In_Sen_NG1_Tray_01_A_Full_Warn": 1,
+    "In_Sen_NG1_Tray_02_A_Full": 1,
+    "Timer_In_Sen_NG1_Tray_02_A_Full": 1,
+    "TimerQ_In_Sen_NG1_Tray_02_A_Full": 1,
+    "In_Sen_NG1_Tray_02_A_Full_Warn": 1,
+    "Timer_In_Sen_NG1_Tray_02_A_Full_Warn": 1,
+    "TimerQ_In_Sen_NG1_Tray_02_A_Full_Warn": 1,
+    "In_Sen_NG1_Tray_01_B_Full": 1,
+    "Timer_In_Sen_NG1_Tray_01_B_Full": 1,
+    "TimerQ_In_Sen_NG1_Tray_01_B_Full": 1,
+    "In_Sen_NG1_Tray_01_B_Full_Warn": 1,
+    "Timer_In_Sen_NG1_Tray_01_B_Full_Warn": 1,
+    "TimerQ_In_Sen_NG1_Tray_01_B_Full_Warn": 1,
+    "In_Sen_NG1_Tray_02_B_Full": 1,
+    "Timer_In_Sen_NG1_Tray_02_B_Full": 1,
+    "In_Sen_NG1_Tray_02_B_Full_Warn": 1,
+    "Timer_In_Sen_NG1_Tray_02_B_Full_Warn": 1,
+    "TimerQ_In_Sen_NG1_Tray_02_B_Full_Warn": 1
+  },
+  "comment_change_count": 41,
+  "ladder_counts": {
+    "bd725a79-b939-4c42-8b09-d4003288186d/02fa0618-20f0-422f-b44d-3aba0838a381.xml": 16,
+    "bd725a79-b939-4c42-8b09-d4003288186d/056f39b5-2372-4d32-b892-634336899ec4.xml": 1,
+    "bd725a79-b939-4c42-8b09-d4003288186d/08c19951-3bae-402d-a637-be66c221f71b.xml": 6,
+    "bd725a79-b939-4c42-8b09-d4003288186d/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml": 316,
+    "bd725a79-b939-4c42-8b09-d4003288186d/13f086b3-1a09-467f-8cff-eea83144ff00.xml": 3,
+    "bd725a79-b939-4c42-8b09-d4003288186d/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml": 32,
+    "bd725a79-b939-4c42-8b09-d4003288186d/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml": 18,
+    "bd725a79-b939-4c42-8b09-d4003288186d/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml": 2,
+    "bd725a79-b939-4c42-8b09-d4003288186d/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml": 1,
+    "bd725a79-b939-4c42-8b09-d4003288186d/49a83d1d-d863-4a09-a86a-4797edc14a57.xml": 1,
+    "bd725a79-b939-4c42-8b09-d4003288186d/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml": 17,
+    "bd725a79-b939-4c42-8b09-d4003288186d/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml": 8,
+    "bd725a79-b939-4c42-8b09-d4003288186d/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml": 152,
+    "bd725a79-b939-4c42-8b09-d4003288186d/5ede16be-2114-46c3-84df-a79badb6e32e.xml": 1,
+    "bd725a79-b939-4c42-8b09-d4003288186d/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml": 24,
+    "bd725a79-b939-4c42-8b09-d4003288186d/7b1666c7-ee97-4210-81b2-fed5a6172074.xml": 246,
+    "bd725a79-b939-4c42-8b09-d4003288186d/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml": 9,
+    "bd725a79-b939-4c42-8b09-d4003288186d/98de6707-f996-4f77-aad9-b0569299efb5.xml": 8,
+    "bd725a79-b939-4c42-8b09-d4003288186d/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml": 6,
+    "bd725a79-b939-4c42-8b09-d4003288186d/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml": 17,
+    "bd725a79-b939-4c42-8b09-d4003288186d/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml": 29,
+    "bd725a79-b939-4c42-8b09-d4003288186d/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml": 13,
+    "bd725a79-b939-4c42-8b09-d4003288186d/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml": 16
+  },
+  "physical_io_and_logic_preserved": true,
+  "native_validation": {
+    "bd725a79-b939-4c42-8b09-d4003288186d/02fa0618-20f0-422f-b44d-3aba0838a381.xml": "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/056f39b5-2372-4d32-b892-634336899ec4.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/08c19951-3bae-402d-a637-be66c221f71b.xml": "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml": "TOTAL=316 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/13f086b3-1a09-467f-8cff-eea83144ff00.xml": "TOTAL=3 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml": "TOTAL=32 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml": "TOTAL=18 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml": "TOTAL=2 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/49a83d1d-d863-4a09-a86a-4797edc14a57.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml": "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml": "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml": "TOTAL=152 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/5ede16be-2114-46c3-84df-a79badb6e32e.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml": "TOTAL=24 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/7b1666c7-ee97-4210-81b2-fed5a6172074.xml": "TOTAL=246 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml": "TOTAL=9 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/98de6707-f996-4f77-aad9-b0569299efb5.xml": "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml": "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml": "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml": "TOTAL=29 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml": "TOTAL=13 PARSE_FAIL=0 MODEL_FAIL=0",
+    "bd725a79-b939-4c42-8b09-d4003288186d/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml": "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0"
+  },
+  "native_variables": {
+    "loader": "繝｡繝ｼ繧ｫ繝ｼ蜷梧｢ｱSSLightweightDataSerializer",
+    "declarations": 43,
+    "type_constant_readonly_retain_address_preserved": true,
+    "full_application_build_verified": false
+  },
+  "app_build_verified": false,
+  "machine_transfer_performed": false,
+  "independent_audit": {
+    "renamed_declarations": 43,
+    "input_signals": [
+      {
+        "new": "In_Sen_NG1_Tray_A_Full",
+        "comment": "【X210】A(左側) NG1トレイ満杯停止",
+        "address": "IOBus://unit#2/Input Bit 32 bits/Input Bit 10"
+      },
+      {
+        "new": "In_Sen_NG1_Tray_A_Full_Warn",
+        "comment": "【X211】A(左側) NG1トレイ満杯警告",
+        "address": "IOBus://unit#2/Input Bit 32 bits/Input Bit 11"
+      },
+      {
+        "new": "In_Sen_NG2_Tray_A_Full",
+        "comment": "【X212】A(左側) NG2トレイ満杯停止",
+        "address": "IOBus://unit#2/Input Bit 32 bits/Input Bit 12"
+      },
+      {
+        "new": "In_Sen_NG2_Tray_A_Full_Warn",
+        "comment": "【X213】A(左側) NG2トレイ満杯警告",
+        "address": "IOBus://unit#2/Input Bit 32 bits/Input Bit 13"
+      },
+      {
+        "new": "In_Sen_NG1_Tray_B_Full",
+        "comment": "【X410】B(右側) NG1トレイ満杯停止",
+        "address": "IOBus://unit#4/Input Bit 32 bits/Input Bit 10"
+      },
+      {
+        "new": "In_Sen_NG1_Tray_B_Full_Warn",
+        "comment": "【X411】B(右側) NG1トレイ満杯警告",
+        "address": "IOBus://unit#4/Input Bit 32 bits/Input Bit 11"
+      },
+      {
+        "new": "In_Sen_NG2_Tray_B_Full",
+        "comment": "【X412】B(右側) NG2トレイ満杯停止",
+        "address": "IOBus://unit#4/Input Bit 32 bits/Input Bit 12"
+      },
+      {
+        "new": "In_Sen_NG2_Tray_B_Full_Warn",
+        "comment": "【X413】B(右側) NG2トレイ満杯警告",
+        "address": "IOBus://unit#4/Input Bit 32 bits/Input Bit 13"
+      }
+    ],
+    "all_physical_addresses_preserved": 722,
+    "unchanged_entries": 199,
+    "logic_and_conditions_preserved": true,
+    "all_external_names_resolved": true,
+    "source_unchanged": true
+  },
+  "published": true
+}

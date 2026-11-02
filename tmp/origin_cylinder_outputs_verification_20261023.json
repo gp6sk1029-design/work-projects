@@ -1,0 +1,192 @@
+{
+  "日付": "2026-10-23",
+  "C版": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261023C.smc2",
+  "上書き前バックアップ": "C:\\Users\\SEIGI-N13\\Desktop\\C版_シリンダ出力追加前_20261023_qdbjjeco",
+  "変更前SHA256": "c0cfe7d3fc6254a4f670c1f40d0f8af1b79459a4edda2a03c126b71209a70fcb",
+  "変更後SHA256": "e09c4681e30b39a9b635ba045c9fb610aeb6a8699c5c8f684de8677c02580009",
+  "追加した原点復帰出力枝": [
+    {
+      "行": 88,
+      "変数": "Out_CYw_Rev_02_Chk_A_H_Origin[1]",
+      "出力": "Out_CYw_Rev_02_Chk_A_H",
+      "コメント": "【Y712】A(左側)ST6 反転2チャック閉 戻"
+    },
+    {
+      "行": 94,
+      "変数": "Out_CYw_Rev_02_Pick_A_H_Origin[1]",
+      "出力": "Out_CYw_Rev_02_Pick_A_H",
+      "コメント": "【Y714】A(左側)ST6 反転2ピックアップ戻"
+    },
+    {
+      "行": 97,
+      "変数": "Out_CYw_Rev_02_Pick_A_F_Origin[1]",
+      "出力": "Out_CYw_Rev_02_Pick_A_F",
+      "コメント": "【Y715】A(左側)ST6 反転2ピックアップ行"
+    },
+    {
+      "行": 184,
+      "変数": "Out_CYw_Rev_01_Chk_B_H_Origin[1]",
+      "出力": "Out_CYw_Rev_01_Chk_B_H",
+      "コメント": "【Y808】B(右側)ST4 反転1チャック閉 戻"
+    },
+    {
+      "行": 190,
+      "変数": "Out_CYw_Rev_01_Pick_B_H_Origin[1]",
+      "出力": "Out_CYw_Rev_01_Pick_B_H",
+      "コメント": "【Y810】B(右側)ST4 反転1ピックアップ戻"
+    },
+    {
+      "行": 193,
+      "変数": "Out_CYw_Rev_01_Pick_B_F_Origin[1]",
+      "出力": "Out_CYw_Rev_01_Pick_B_F",
+      "コメント": "【Y811】B(右側)ST4 反転1ピックアップ行"
+    },
+    {
+      "行": 196,
+      "変数": "Out_CYw_Rev_02_Chk_B_H_Origin[1]",
+      "出力": "Out_CYw_Rev_02_Chk_B_H",
+      "コメント": "【Y812】B(右側)ST6 反転2チャック閉 戻"
+    },
+    {
+      "行": 202,
+      "変数": "Out_CYw_Rev_02_Pick_B_H_Origin[1]",
+      "出力": "Out_CYw_Rev_02_Pick_B_H",
+      "コメント": "【Y814】B(右側)ST6 反転2ピックアップ戻"
+    },
+    {
+      "行": 205,
+      "変数": "Out_CYw_Rev_02_Pick_B_F_Origin[1]",
+      "出力": "Out_CYw_Rev_02_Pick_B_F",
+      "コメント": "【Y815】B(右側)ST6 反転2ピックアップ行"
+    }
+  ],
+  "既存の原点復帰出力枝": [
+    [
+      76,
+      "Out_CYw_Rev_01_Chk_A_H_Origin[1]"
+    ],
+    [
+      82,
+      "Out_CYw_Rev_01_Pick_A_H_Origin[1]"
+    ],
+    [
+      85,
+      "Out_CYw_Rev_01_Pick_A_F_Origin[1]"
+    ]
+  ],
+  "追加外部変数": [
+    [
+      "Out_CYw_Rev_02_Chk_A_H_Origin",
+      "ARRAY[0..99] OF Bool",
+      "原点復帰 【Y712】A(左側)ST6 反転2チャック閉 戻"
+    ],
+    [
+      "Out_CYw_Rev_02_Pick_A_H_Origin",
+      "ARRAY[0..10] OF Bool",
+      "原点復帰 【Y714】A(左側)ST6 反転2ピックアップ戻"
+    ],
+    [
+      "Out_CYw_Rev_02_Pick_A_F_Origin",
+      "ARRAY[0..99] OF Bool",
+      "原点復帰 【Y715】A(左側)ST6 反転2ピックアップ行"
+    ],
+    [
+      "Out_CYw_Rev_01_Chk_B_H_Origin",
+      "ARRAY[0..99] OF Bool",
+      "原点復帰 【Y808】B(右側)ST4 反転1チャック閉 戻"
+    ],
+    [
+      "Out_CYw_Rev_01_Pick_B_H_Origin",
+      "ARRAY[0..10] OF Bool",
+      "原点復帰 【Y810】B(右側)ST4 反転1ピックアップ戻"
+    ],
+    [
+      "Out_CYw_Rev_01_Pick_B_F_Origin",
+      "ARRAY[0..99] OF Bool",
+      "原点復帰 【Y811】B(右側)ST4 反転1ピックアップ行"
+    ],
+    [
+      "Out_CYw_Rev_02_Chk_B_H_Origin",
+      "ARRAY[0..99] OF Bool",
+      "原点復帰 【Y812】B(右側)ST6 反転2チャック閉 戻"
+    ],
+    [
+      "Out_CYw_Rev_02_Pick_B_H_Origin",
+      "ARRAY[0..10] OF Bool",
+      "原点復帰 【Y814】B(右側)ST6 反転2ピックアップ戻"
+    ],
+    [
+      "Out_CYw_Rev_02_Pick_B_F_Origin",
+      "ARRAY[0..99] OF Bool",
+      "原点復帰 【Y815】B(右側)ST6 反転2ピックアップ行"
+    ]
+  ],
+  "原点復帰ラダー28行": "全バイト不変",
+  "モータセクション": "全バイト不変",
+  "出力セクション行数": 316,
+  "既存条件の確認": [
+    "原点復帰枝の導通:Out_CYw_Rev_02_Chk_A_H",
+    "既存遮断条件保持:Out_CYw_Rev_02_Chk_A_H:Pause[1]",
+    "既存遮断条件保持:Out_CYw_Rev_02_Chk_A_H:M9999",
+    "既存遮断条件保持:Out_CYw_Rev_02_Chk_A_H:Pause[1]",
+    "既存遮断条件保持:Out_CYw_Rev_02_Chk_A_H:Output_A_Reset_TON[19].Q",
+    "既存遮断条件保持:Out_CYw_Rev_02_Chk_A_H:Mtr_Flip_02_Busy",
+    "原点復帰枝の導通:Out_CYw_Rev_02_Pick_A_H",
+    "既存遮断条件保持:Out_CYw_Rev_02_Pick_A_H:Pause[1]",
+    "既存遮断条件保持:Out_CYw_Rev_02_Pick_A_H:M9999",
+    "既存遮断条件保持:Out_CYw_Rev_02_Pick_A_H:Pause[1]",
+    "既存遮断条件保持:Out_CYw_Rev_02_Pick_A_H:Output_A_Reset_TON[21].Q",
+    "既存遮断条件保持:Out_CYw_Rev_02_Pick_A_H:Mtr_Flip_02_Busy",
+    "原点復帰枝の導通:Out_CYw_Rev_02_Pick_A_F",
+    "既存遮断条件保持:Out_CYw_Rev_02_Pick_A_F:Pause[1]",
+    "既存遮断条件保持:Out_CYw_Rev_02_Pick_A_F:M9999",
+    "既存遮断条件保持:Out_CYw_Rev_02_Pick_A_F:Pause[1]",
+    "既存遮断条件保持:Out_CYw_Rev_02_Pick_A_F:Output_A_Reset_TON[22].Q",
+    "既存遮断条件保持:Out_CYw_Rev_02_Pick_A_F:Mtr_Flip_02_Busy",
+    "原点復帰枝の導通:Out_CYw_Rev_01_Chk_B_H",
+    "既存遮断条件保持:Out_CYw_Rev_01_Chk_B_H:Pause[1]",
+    "既存遮断条件保持:Out_CYw_Rev_01_Chk_B_H:M9999",
+    "既存遮断条件保持:Out_CYw_Rev_01_Chk_B_H:Pause[1]",
+    "既存遮断条件保持:Out_CYw_Rev_01_Chk_B_H:Output_B_Error_M[15]",
+    "既存遮断条件保持:Out_CYw_Rev_01_Chk_B_H:Output_B_Reset_TON[15].Q",
+    "既存遮断条件保持:Out_CYw_Rev_01_Chk_B_H:Mtr_Flip_01_Busy",
+    "原点復帰枝の導通:Out_CYw_Rev_01_Pick_B_H",
+    "既存遮断条件保持:Out_CYw_Rev_01_Pick_B_H:Pause[1]",
+    "既存遮断条件保持:Out_CYw_Rev_01_Pick_B_H:M9999",
+    "既存遮断条件保持:Out_CYw_Rev_01_Pick_B_H:Pause[1]",
+    "既存遮断条件保持:Out_CYw_Rev_01_Pick_B_H:Output_B_Reset_TON[17].Q",
+    "既存遮断条件保持:Out_CYw_Rev_01_Pick_B_H:Mtr_Flip_01_Busy",
+    "原点復帰枝の導通:Out_CYw_Rev_01_Pick_B_F",
+    "既存遮断条件保持:Out_CYw_Rev_01_Pick_B_F:Pause[1]",
+    "既存遮断条件保持:Out_CYw_Rev_01_Pick_B_F:M9999",
+    "既存遮断条件保持:Out_CYw_Rev_01_Pick_B_F:Pause[1]",
+    "既存遮断条件保持:Out_CYw_Rev_01_Pick_B_F:Output_B_Reset_TON[18].Q",
+    "既存遮断条件保持:Out_CYw_Rev_01_Pick_B_F:Mtr_Flip_01_Busy",
+    "原点復帰枝の導通:Out_CYw_Rev_02_Chk_B_H",
+    "既存遮断条件保持:Out_CYw_Rev_02_Chk_B_H:Pause[1]",
+    "既存遮断条件保持:Out_CYw_Rev_02_Chk_B_H:M9999",
+    "既存遮断条件保持:Out_CYw_Rev_02_Chk_B_H:Pause[1]",
+    "既存遮断条件保持:Out_CYw_Rev_02_Chk_B_H:Output_B_Reset_TON[19].Q",
+    "既存遮断条件保持:Out_CYw_Rev_02_Chk_B_H:Mtr_Flip_02_Busy",
+    "原点復帰枝の導通:Out_CYw_Rev_02_Pick_B_H",
+    "既存遮断条件保持:Out_CYw_Rev_02_Pick_B_H:Pause[1]",
+    "既存遮断条件保持:Out_CYw_Rev_02_Pick_B_H:M9999",
+    "既存遮断条件保持:Out_CYw_Rev_02_Pick_B_H:Pause[1]",
+    "既存遮断条件保持:Out_CYw_Rev_02_Pick_B_H:Output_B_Reset_TON[21].Q",
+    "既存遮断条件保持:Out_CYw_Rev_02_Pick_B_H:Mtr_Flip_02_Busy",
+    "原点復帰枝の導通:Out_CYw_Rev_02_Pick_B_F",
+    "既存遮断条件保持:Out_CYw_Rev_02_Pick_B_F:Pause[1]",
+    "既存遮断条件保持:Out_CYw_Rev_02_Pick_B_F:M9999",
+    "既存遮断条件保持:Out_CYw_Rev_02_Pick_B_F:Pause[1]",
+    "既存遮断条件保持:Out_CYw_Rev_02_Pick_B_F:Output_B_Reset_TON[22].Q",
+    "既存遮断条件保持:Out_CYw_Rev_02_Pick_B_F:Mtr_Flip_02_Busy"
+  ],
+  "変更エントリ": [
+    "878e15c5-b753-4e44-8de7-fbcd7ad09626/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml",
+    "878e15c5-b753-4e44-8de7-fbcd7ad09626/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+    "878e15c5-b753-4e44-8de7-fbcd7ad09626/878e15c5-b753-4e44-8de7-fbcd7ad09626.oem"
+  ],
+  "不変エントリ数": 188,
+  "Sysmac読込み・ビルド": "未実施",
+  "PLC接続・転送": "なし"
+}

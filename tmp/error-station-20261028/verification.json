@@ -1,0 +1,226 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029E.smc2",
+  "staged": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\error-station-20261028\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029G.smc2",
+  "destination": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029G.smc2",
+  "source_sha256": "5d78d4b137cb9d6a9765cbb9100a8a48dbc8c3a5d2dd4213b1d3cc189ff63dfa",
+  "output_sha256": "4fd98d982143e0b1092ab9bb37cac2102e3d3f865f3b8f9d315c084c49c1f1b5",
+  "changed_entries": [
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/20a6b651-4c34-401a-965e-db3e18414d5c.xml"
+  ],
+  "new_globals": [
+    "Error_ST1_A_M",
+    "Error_ST1_B_M",
+    "Error_ST2_A_M",
+    "Error_ST3_A_M",
+    "Error_ST4_A_M",
+    "Error_ST5_A_M",
+    "Error_ST5_B_M",
+    "Error_ST6_A_M",
+    "Error_ST7_A_M",
+    "Error_ST7_A_Source_M"
+  ],
+  "new_declarations": [
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "name": "Error_ST7_A_Source_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "name": "Error_ST1_A_Timeout",
+      "type": "BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "name": "Error_ST5_A_Timeout",
+      "type": "BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "name": "Error_Common_MessageActive",
+      "type": "BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "name": "Error_ST1_A_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "name": "Error_ST1_B_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "name": "Error_ST2_A_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "name": "Error_ST3_A_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "name": "Error_ST4_A_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "name": "Error_ST5_A_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "name": "Error_ST5_B_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "name": "Error_ST6_A_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "name": "Error_ST7_A_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "name": "Error_ST7_A_Source_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "name": "Error_ST1_A_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "name": "Error_ST1_B_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "name": "Error_ST2_A_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "name": "Error_ST3_A_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "name": "Error_ST4_A_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "name": "Error_ST5_A_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "name": "Error_ST5_B_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "name": "Error_ST6_A_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "name": "Error_ST7_A_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "name": "Error_ST7_A_Source_M",
+      "type": "ARRAY[0..4] OF BOOL"
+    }
+  ],
+  "ladder_counts": {
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/02fa0618-20f0-422f-b44d-3aba0838a381.xml": 16,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/056f39b5-2372-4d32-b892-634336899ec4.xml": 1,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/08c19951-3bae-402d-a637-be66c221f71b.xml": 6,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml": 316,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/13f086b3-1a09-467f-8cff-eea83144ff00.xml": 3,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml": 35,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml": 18,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml": 2,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml": 1,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/41a409d9-8b74-4a8f-a215-a939e2d48477.xml": 1,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/49a83d1d-d863-4a09-a86a-4797edc14a57.xml": 1,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml": 17,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml": 8,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml": 152,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/5ede16be-2114-46c3-84df-a79badb6e32e.xml": 1,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml": 59,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/7b1666c7-ee97-4210-81b2-fed5a6172074.xml": 246,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml": 9,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/98de6707-f996-4f77-aad9-b0569299efb5.xml": 8,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml": 6,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml": 17,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml": 29,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml": 13,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml": 16
+  },
+  "checks": {
+    "common_source_rungs_preserved": 13,
+    "source_st7_rungs_preserved": 32,
+    "latch_equivalence_cases": 360,
+    "latch_wiring_cases": 160,
+    "hmi_priority_cases": 1024,
+    "common_hmi_enable_cases": 512,
+    "st7_attribution_cases": 768,
+    "st3_pause_cases": 4,
+    "physical_io_assignments_unchanged": true,
+    "all_other_sections_unchanged": true,
+    "original_vs_generated_station_cases": 712,
+    "original_st7_branch_cases": 2048,
+    "io_assignment_count": 722,
+    "new_reference_declarations_resolved": true
+  },
+  "native_validation": {
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/02fa0618-20f0-422f-b44d-3aba0838a381.xml": "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/056f39b5-2372-4d32-b892-634336899ec4.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/08c19951-3bae-402d-a637-be66c221f71b.xml": "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml": "TOTAL=316 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/13f086b3-1a09-467f-8cff-eea83144ff00.xml": "TOTAL=3 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml": "TOTAL=35 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml": "TOTAL=18 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml": "TOTAL=2 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/41a409d9-8b74-4a8f-a215-a939e2d48477.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/49a83d1d-d863-4a09-a86a-4797edc14a57.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml": "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml": "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml": "TOTAL=152 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/5ede16be-2114-46c3-84df-a79badb6e32e.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml": "TOTAL=59 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/7b1666c7-ee97-4210-81b2-fed5a6172074.xml": "TOTAL=246 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml": "TOTAL=9 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/98de6707-f996-4f77-aad9-b0569299efb5.xml": "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml": "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml": "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml": "TOTAL=29 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml": "TOTAL=13 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml": "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0"
+  },
+  "native_variables": {
+    "loader": "メーカー同梱SSLightweightDataSerializer",
+    "new_declarations": 24,
+    "constant_and_readonly_false": true,
+    "full_application_build_verified": false
+  },
+  "full_application_build_verified": false,
+  "hardware_transfer_performed": false
+}

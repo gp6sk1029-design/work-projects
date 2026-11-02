@@ -1,0 +1,19 @@
+{
+  "output": "C:\\Users\\SEIGI-N13\\work-projects\\outputs\\circular_fix_20260915\\_設備資料_3089-2603A_検査箱詰め装置_CORE_SUB__PIP-02F02NX__20260914A_循環参照修正.xlsx",
+  "cell_changes": [
+    [
+      "箱詰めユニット センサ・シリンダ名称",
+      "T56",
+      "=O55:T56",
+      "None"
+    ]
+  ],
+  "package_changes": [
+    "xl/worksheets/sheet3.xml",
+    "xl/calcChain.xml"
+  ],
+  "remaining_formulas": 411,
+  "cycles": 0,
+  "images_preserved": 14,
+  "all_other_parts_identical": true
+}

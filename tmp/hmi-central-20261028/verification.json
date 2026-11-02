@@ -1,0 +1,1107 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029G.smc2",
+  "staged": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\hmi-central-20261028\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029H.smc2",
+  "destination": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029H.smc2",
+  "source_sha256": "4fd98d982143e0b1092ab9bb37cac2102e3d3f865f3b8f9d315c084c49c1f1b5",
+  "output_sha256": "3bc62658e473625e52d73ca9ee52834ff0ecd02075e26a8e6f559cbd4b843189",
+  "names": {
+    "error": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml",
+    "output": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml",
+    "fh": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml",
+    "hmi": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml",
+    "globals": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+    "mode_vars": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+    "other_vars": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+    "io_vars": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+    "metadata": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/20a6b651-4c34-401a-965e-db3e18414d5c.xml",
+    "task": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/e2e4c044-641e-49ac-a486-71b29b0e7c87.xml"
+  },
+  "changed_entries": [
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/20a6b651-4c34-401a-965e-db3e18414d5c.xml"
+  ],
+  "replacements": [
+    {
+      "scope": "output",
+      "row": 18,
+      "number": 1,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 21,
+      "number": 2,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 24,
+      "number": 3,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 27,
+      "number": 4,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 30,
+      "number": 5,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 33,
+      "number": 6,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 36,
+      "number": 7,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 39,
+      "number": 8,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 42,
+      "number": 9,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 45,
+      "number": 10,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 48,
+      "number": 11,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 51,
+      "number": 12,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 54,
+      "number": 13,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 57,
+      "number": 14,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 60,
+      "number": 15,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 63,
+      "number": 16,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 66,
+      "number": 17,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 69,
+      "number": 18,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 72,
+      "number": 19,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 75,
+      "number": 20,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 78,
+      "number": 21,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 81,
+      "number": 22,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 84,
+      "number": 23,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 87,
+      "number": 24,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 90,
+      "number": 25,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 93,
+      "number": 26,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 96,
+      "number": 27,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 99,
+      "number": 28,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 102,
+      "number": 29,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 105,
+      "number": 30,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 108,
+      "number": 31,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 111,
+      "number": 32,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 114,
+      "number": 33,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 117,
+      "number": 34,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 120,
+      "number": 35,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 123,
+      "number": 36,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 126,
+      "number": 37,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 129,
+      "number": 38,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 132,
+      "number": 39,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 135,
+      "number": 40,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 138,
+      "number": 41,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 141,
+      "number": 42,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 144,
+      "number": 43,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 147,
+      "number": 44,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 150,
+      "number": 45,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 153,
+      "number": 46,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 156,
+      "number": 47,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 159,
+      "number": 48,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 162,
+      "number": 49,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 165,
+      "number": 50,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 168,
+      "number": 51,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 171,
+      "number": 52,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 174,
+      "number": 53,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 177,
+      "number": 54,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 180,
+      "number": 55,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 183,
+      "number": 56,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 186,
+      "number": 57,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 189,
+      "number": 58,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 192,
+      "number": 59,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 195,
+      "number": 60,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 198,
+      "number": 61,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 201,
+      "number": 62,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 204,
+      "number": 63,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 207,
+      "number": 64,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 210,
+      "number": 65,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 213,
+      "number": 66,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 216,
+      "number": 67,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 219,
+      "number": 68,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 222,
+      "number": 69,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 225,
+      "number": 70,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 228,
+      "number": 71,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 231,
+      "number": 72,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 234,
+      "number": 73,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 237,
+      "number": 74,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 240,
+      "number": 75,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 243,
+      "number": 76,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 246,
+      "number": 77,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 249,
+      "number": 78,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 252,
+      "number": 79,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 255,
+      "number": 80,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 258,
+      "number": 81,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 261,
+      "number": 82,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 264,
+      "number": 83,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 267,
+      "number": 84,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 270,
+      "number": 85,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 273,
+      "number": 86,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 276,
+      "number": 87,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 279,
+      "number": 88,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 282,
+      "number": 89,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 285,
+      "number": 90,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 288,
+      "number": 91,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 291,
+      "number": 92,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 294,
+      "number": 93,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 297,
+      "number": 94,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 300,
+      "number": 95,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 303,
+      "number": 96,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 306,
+      "number": 97,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 309,
+      "number": 98,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 312,
+      "number": 99,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "output",
+      "row": 315,
+      "number": 100,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "error",
+      "row": 11,
+      "number": 101,
+      "extra_request_branch": true
+    },
+    {
+      "scope": "error",
+      "row": 11,
+      "number": 102,
+      "extra_request_branch": true
+    },
+    {
+      "scope": "error",
+      "row": 11,
+      "number": 103,
+      "extra_request_branch": true
+    },
+    {
+      "scope": "error",
+      "row": 11,
+      "number": 104,
+      "extra_request_branch": true
+    },
+    {
+      "scope": "error",
+      "row": 11,
+      "number": 105,
+      "extra_request_branch": true
+    },
+    {
+      "scope": "error",
+      "row": 11,
+      "number": 106,
+      "extra_request_branch": true
+    },
+    {
+      "scope": "error",
+      "row": 11,
+      "number": 107,
+      "extra_request_branch": true
+    },
+    {
+      "scope": "error",
+      "row": 50,
+      "number": 108,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "error",
+      "row": 51,
+      "number": 109,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "error",
+      "row": 54,
+      "number": 110,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "error",
+      "row": 56,
+      "number": 111,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "error",
+      "row": 57,
+      "number": 112,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "fh",
+      "row": 5,
+      "number": 113,
+      "extra_request_branch": true
+    },
+    {
+      "scope": "fh",
+      "row": 6,
+      "number": 114,
+      "extra_request_branch": true
+    },
+    {
+      "scope": "fh",
+      "row": 6,
+      "number": 115,
+      "extra_request_branch": true
+    },
+    {
+      "scope": "error",
+      "row": 52,
+      "number": 116,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "error",
+      "row": 53,
+      "number": 117,
+      "extra_request_branch": false
+    },
+    {
+      "scope": "fh",
+      "row": 13,
+      "number": 118,
+      "extra_request_branch": true
+    },
+    {
+      "scope": "fh",
+      "row": 14,
+      "number": 119,
+      "extra_request_branch": true
+    },
+    {
+      "scope": "fh",
+      "row": 14,
+      "number": 120,
+      "extra_request_branch": true
+    },
+    {
+      "scope": "error",
+      "row": 55,
+      "number": 121,
+      "extra_request_branch": false
+    }
+  ],
+  "priority": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    108,
+    109,
+    116,
+    117,
+    110,
+    121,
+    111,
+    112,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    113,
+    114,
+    115,
+    118,
+    119,
+    120
+  ],
+  "message_comments": {
+    "107": "ST7 搬送ワーク不一致",
+    "106": "ST6 搬送ワーク不一致",
+    "105": "ST5 搬送ワーク不一致",
+    "104": "ST4 搬送ワーク不一致",
+    "103": "ST3 搬送ワーク不一致",
+    "102": "ST2 搬送ワーク不一致",
+    "101": "ST1 搬送ワーク不一致",
+    "108": "A(左側) ST1 FH測定時間超過",
+    "109": "A(左側) ST1 FH異常",
+    "116": "A(左側) ST1 検査前ワーク不一致",
+    "117": "A(左側) ST5 FH測定時間超過",
+    "110": "A(左側) ST5 FH異常",
+    "121": "A(左側) ST5 検査前ワーク不一致",
+    "111": "B(右側) ST1 FH異常",
+    "112": "B(右側) ST5 FH異常",
+    "113": "A(左側) ST1 FH判定OK",
+    "115": "A(左側) ST1 FH判定NG2",
+    "114": "A(左側) ST1 FH判定NG1",
+    "118": "A(左側) ST5 FH判定OK",
+    "120": "A(左側) ST5 FH判定NG2",
+    "119": "A(左側) ST5 FH判定NG1",
+    "1": "【Y616】A(左側) 供給スライド戻 異常表示",
+    "2": "【Y617】A(左側) 供給スライド行 異常表示",
+    "3": "【Y618】A(左側) 供給ピックアップ戻 異常表示",
+    "4": "【Y619】A(左側) 供給ピックアップ行 異常表示",
+    "5": "【Y620】A(左側) 供給チャック閉 戻 異常表示",
+    "6": "【Y621】A(左側) 供給チャック開 行 異常表示",
+    "7": "【Y622】B(右側) 供給スライド戻 異常表示",
+    "8": "【Y623】B(右側) 供給スライド行 異常表示",
+    "9": "【Y624】B(右側) 供給ピックアップ戻 異常表示",
+    "10": "【Y625】B(右側) 供給ピックアップ行 異常表示",
+    "11": "【Y626】B(右側) 供給チャック閉 戻 異常表示",
+    "12": "【Y627】B(右側) 供給チャック開 行 異常表示",
+    "13": "【Y700】A(左側) 高さ検査押え戻 異常表示",
+    "14": "【Y701】A(左側) 高さ検査押え行 異常表示",
+    "15": "【Y702】A(左側) 高さ検査持上戻 異常表示",
+    "16": "【Y703】A(左側) 高さ検査持上行 異常表示",
+    "17": "【Y704】A(左側) NG1ピックアップ戻 異常表示",
+    "18": "【Y705】A(左側) NG1ピックアップ 行 異常表示",
+    "19": "【Y706】A(左側) NG1チャック戻 異常表示",
+    "20": "【Y707】A(左側) NG1チャック行 異常表示",
+    "21": "【Y708】A(左側)ST4 反転1チャック閉 異常表示",
+    "22": "【Y709】A(左側)ST4 反転1チャック開 異常表示",
+    "23": "【Y710】A(左側)ST4 反転1ピックアップ戻 異常表示",
+    "24": "【Y711】A(左側)ST4 反転1ピックアップ行 異常表示",
+    "25": "【Y712】A(左側)ST6 反転2チャック閉 戻 異常表示",
+    "26": "【Y713】A(左側)ST6 反転2チャック開 行 異常表示",
+    "27": "【Y714】A(左側)ST6 反転2ピックアップ戻 異常表示",
+    "28": "【Y715】A(左側)ST6 反転2ピックアップ行 異常表示",
+    "29": "【Y716】A(左側) 排出チャック閉 戻 異常表示",
+    "30": "【Y717】A(左側) 排出チャック開 行 異常表示",
+    "31": "【Y718】A(左側) 排出フォルダ送り戻 異常表示",
+    "32": "【Y719】A(左側) 排出フォルダ送り行 異常表示",
+    "33": "A(左側) 位置1ストッパー戻 異常表示",
+    "34": "【Y720】A(左側) 位置1ストッパー 行 異常表示",
+    "35": "【Y721】A(左側) 位置2ストッパー 異常表示",
+    "36": "【Y721】A(左側) 位置2ストッパー 異常表示",
+    "37": "【Y722】A(左側) 位置3ストッパー戻 異常表示",
+    "38": "【Y722】A(左側) 位置3ストッパー行 異常表示",
+    "39": "Output_A_Error_M[33] 異常表示",
+    "40": "【Y723】A(左側) 位置4ストッパー行 異常表示",
+    "41": "【Y724】A(左側) 位置5ストッパー戻 異常表示",
+    "42": "【Y724】A(左側) 位置5ストッパー行 異常表示",
+    "43": "【Y725】A(左側) 位置6ストッパー戻 異常表示",
+    "44": "【Y725】A(左側) 位置6ストッパー行 異常表示",
+    "45": "【Y726】A(左側) ストックフォルダターン戻 異常表示",
+    "46": "【Y727】A(左側) ストックフォルダターン行 異常表示",
+    "47": "【Y728】A(左側) NG1仕分け 戻 異常表示",
+    "48": "【Y729】A(左側) NG1仕分け 行 異常表示",
+    "49": "【Y800】B(右側) 高さ検査押え戻 異常表示",
+    "50": "【Y801】B(右側) 高さ検査押え行 異常表示",
+    "51": "【Y802】B(右側) 高さ検査持上戻 異常表示",
+    "52": "【Y803】B(右側) 高さ検査持上行 異常表示",
+    "53": "【Y804】B(右側) NG1ピックアップ戻 異常表示",
+    "54": "【Y805】B(右側) NG1ピックアップ 行 異常表示",
+    "55": "【Y806】B(右側) NG1チャック戻 異常表示",
+    "56": "【Y807】B(右側) NG1チャック行 異常表示",
+    "57": "【Y808】B(右側)ST4 反転1チャック閉 戻 異常表示",
+    "58": "【Y809】B(右側)ST4 反転1チャック開 戻 異常表示",
+    "59": "【Y810】B(右側)ST4 反転1ピックアップ戻 異常表示",
+    "60": "【Y811】B(右側)ST4 反転1ピックアップ行 異常表示",
+    "61": "【Y812】B(右側)ST6 反転2チャック閉 戻 異常表示",
+    "62": "【Y813】B(右側)ST6 反転2チャック開 行 異常表示",
+    "63": "【Y814】B(右側)ST6 反転2ピックアップ戻 異常表示",
+    "64": "【Y815】B(右側)ST6 反転2ピックアップ行 異常表示",
+    "65": "【Y816】B(右側) 排出チャック閉 戻 異常表示",
+    "66": "【Y817】B(右側) 排出チャック開 行 異常表示",
+    "67": "【Y818】B(右側) 排出フォルダ送り戻 異常表示",
+    "68": "【Y819】B(右側) 排出フォルダ送り行 異常表示",
+    "69": "【Y820】B(右側) 位置1ストッパー 戻 異常表示",
+    "70": "【Y820】B(右側) 位置1ストッパー 行 異常表示",
+    "71": "【Y821】B(右側) 位置2ストッパー戻 異常表示",
+    "72": "【Y821】B(右側) 位置2ストッパー行 異常表示",
+    "73": "【Y822】B(右側) 位置3ストッパー戻 異常表示",
+    "74": "【Y822】B(右側) 位置3ストッパー行 異常表示",
+    "75": "【Y823】B(右側) 位置4ストッパー戻 異常表示",
+    "76": "【Y823】B(右側) 位置4ストッパー行 異常表示",
+    "77": "【Y824】B(右側) 位置5ストッパー戻 異常表示",
+    "78": "【Y824】B(右側) 位置5ストッパー行 異常表示",
+    "79": "【Y825】B(右側) 位置6ストッパー戻 異常表示",
+    "80": "【Y825】B(右側) 位置6ストッパー行 異常表示",
+    "81": "【Y826】B(右側) ストックフォルダターン戻 異常表示",
+    "82": "【Y827】B(右側) ストックフォルダターン行 異常表示",
+    "83": "【Y828】B(右側) NG1仕分け 戻 異常表示",
+    "84": "【Y829】B(右側) NG1仕分け 行 異常表示",
+    "85": "【Y1200】空コンテナ送り 戻 異常表示",
+    "86": "【Y1201】空コンテナ送り 行 異常表示",
+    "87": "【Y1202】段バラシ爪 戻 異常表示",
+    "88": "【Y1203】段バラシ爪 行 異常表示",
+    "89": "【Y1204】コンテナ排出 戻 異常表示",
+    "90": "【Y1205】コンテナ排出 行 異常表示",
+    "91": "Output_Share_Error_M[7] 異常表示",
+    "92": "【Y1207】箱入れチャック 行 異常表示",
+    "93": "【Y1208】コンテナ仕分けストッパー 戻 異常表示",
+    "94": "【Y1209】コンテナ仕分けストッパー 行 異常表示",
+    "95": "【Y1210】コンテナ仕分け送り 戻 異常表示",
+    "96": "Output_Share_Error_M[12] 異常表示",
+    "97": "【Y1300】A(左側) コンベア受渡送り戻 異常表示",
+    "98": "【Y1301】A(左側) コンベア受渡送り行 異常表示",
+    "99": "【Y1302】B(右側) コンベア受渡送り戻 異常表示",
+    "100": "【Y1303】B(右側) コンベア受渡送り行 異常表示"
+  },
+  "checks": {
+    "source_wiring_cases": 10272,
+    "hmi_priority_cases": 19102,
+    "single_scan_io_pulse_cases": 500,
+    "all_messages_centralized": 121,
+    "source_request_normal_coils": 121,
+    "io_assignment_count": 722,
+    "unchanged_ladder_sections": 20,
+    "task_and_section_order_unchanged": true,
+    "existing_hmi_language_text_unchanged": true,
+    "all_existing_Up_ids_preserved": true,
+    "stop_and_work_data_instructions_preserved": true,
+    "task_oem_inline_st_and_screen_files_byte_preserved": true,
+    "message_number_reads_only_in_original_hmi_text_conversion": true
+  },
+  "ladder_counts": {
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/02fa0618-20f0-422f-b44d-3aba0838a381.xml": 16,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/056f39b5-2372-4d32-b892-634336899ec4.xml": 1,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/08c19951-3bae-402d-a637-be66c221f71b.xml": 6,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml": 316,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/13f086b3-1a09-467f-8cff-eea83144ff00.xml": 3,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml": 35,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml": 18,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml": 123,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml": 1,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/41a409d9-8b74-4a8f-a215-a939e2d48477.xml": 1,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/49a83d1d-d863-4a09-a86a-4797edc14a57.xml": 1,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml": 17,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml": 8,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml": 152,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/5ede16be-2114-46c3-84df-a79badb6e32e.xml": 1,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml": 58,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/7b1666c7-ee97-4210-81b2-fed5a6172074.xml": 246,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml": 9,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/98de6707-f996-4f77-aad9-b0569299efb5.xml": 8,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml": 6,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml": 17,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml": 29,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml": 13,
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml": 16
+  },
+  "new_declarations": [
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "name": "HMI_Message_Request",
+      "type": "ARRAY[0..121] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "name": "HMI_Message_Request",
+      "type": "ARRAY[0..121] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "name": "HMI_Message_Request",
+      "type": "ARRAY[0..121] OF BOOL"
+    },
+    {
+      "entry": "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "name": "HMI_Message_Request",
+      "type": "ARRAY[0..121] OF BOOL"
+    }
+  ],
+  "native_validation": {
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/02fa0618-20f0-422f-b44d-3aba0838a381.xml": "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/056f39b5-2372-4d32-b892-634336899ec4.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/08c19951-3bae-402d-a637-be66c221f71b.xml": "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml": "TOTAL=316 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/13f086b3-1a09-467f-8cff-eea83144ff00.xml": "TOTAL=3 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml": "TOTAL=35 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml": "TOTAL=18 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml": "TOTAL=123 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/41a409d9-8b74-4a8f-a215-a939e2d48477.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/49a83d1d-d863-4a09-a86a-4797edc14a57.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml": "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml": "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml": "TOTAL=152 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/5ede16be-2114-46c3-84df-a79badb6e32e.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml": "TOTAL=58 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/7b1666c7-ee97-4210-81b2-fed5a6172074.xml": "TOTAL=246 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml": "TOTAL=9 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/98de6707-f996-4f77-aad9-b0569299efb5.xml": "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml": "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml": "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml": "TOTAL=29 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml": "TOTAL=13 PARSE_FAIL=0 MODEL_FAIL=0",
+    "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml": "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0"
+  },
+  "native_variables": {
+    "loader": "メーカー同梱SSLightweightDataSerializer",
+    "new_declarations": 4,
+    "constant_and_readonly_false": true,
+    "full_application_build_verified": false
+  },
+  "full_application_build_verified": false,
+  "hardware_transfer_performed": false,
+  "editor_section_loader": {
+    "available": false,
+    "reason": "アプリの実行環境が必要。原本G/生成HともCompactLadderPersisterのコンストラクタで同じNullReferenceException。",
+    "not_treated_as_a_successful_editor_load": true
+  },
+  "verification_scope": "各行のメーカー変換・変数読込み・独自モデル。Sysmac全体ビルド/画面表示/タイマー実時間/実機動作は未確認。"
+}

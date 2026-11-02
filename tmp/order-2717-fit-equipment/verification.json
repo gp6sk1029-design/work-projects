@@ -1,0 +1,27 @@
+{
+  "path": "\\\\nas-ime5\\生産技術部\\1.注文書\\_内作設備\\_1.製作中注文書\\2717-2610A インナー巻線機 (AIW-1100T) 〈2台〉【マーレOH】\\2717-2610A インナー巻線機 (AIW-1100T) 〈2台〉【マーレOH】.xlsx",
+  "count": 123,
+  "sheets": 15,
+  "new_styles": 3,
+  "changed": [
+    "xl/worksheets/sheet1.xml",
+    "xl/worksheets/sheet2.xml",
+    "xl/worksheets/sheet3.xml",
+    "xl/worksheets/sheet4.xml",
+    "xl/worksheets/sheet5.xml",
+    "xl/worksheets/sheet6.xml",
+    "xl/worksheets/sheet7.xml",
+    "xl/worksheets/sheet8.xml",
+    "xl/worksheets/sheet9.xml",
+    "xl/worksheets/sheet11.xml",
+    "xl/worksheets/sheet12.xml",
+    "xl/worksheets/sheet13.xml",
+    "xl/worksheets/sheet14.xml",
+    "xl/worksheets/sheet15.xml",
+    "xl/worksheets/sheet16.xml",
+    "xl/styles.xml"
+  ],
+  "sha256": "371ae760297bc563f6c002b252acaa48794dfe8c7f20bab90cb6a690ecd3c1a1",
+  "content_formulas_merges_widths_unchanged": true,
+  "excel_visual_check": "Excel実アプリの表示確認は未実施。縮小表示属性を全対象セルで読戻し検証。"
+}

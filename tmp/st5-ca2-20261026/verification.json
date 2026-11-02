@@ -1,0 +1,166 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261026B.smc2",
+  "destination": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261026C.smc2",
+  "staged": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\st5-ca2-20261026\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261026C.smc2",
+  "source_sha256": "154163e0c1dd37482df4cc6920eb353a9d1cb7ebdfc17ebf357262d59239ca16",
+  "output_sha256": "a00c9cbaa6ac4df779381205b74ce19018da308fa2bde8b74f9d003b23437286",
+  "entries": 198,
+  "changed_entries": [
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/20a6b651-4c34-401a-965e-db3e18414d5c.xml"
+  ],
+  "changed_rungs": {
+    "st5": {
+      "replaced": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "appended": 0
+    },
+    "fh": {
+      "replaced": [],
+      "appended": 8
+    },
+    "cv": {
+      "replaced": [
+        0
+      ],
+      "appended": 0
+    },
+    "output": {
+      "replaced": [
+        136
+      ],
+      "appended": 0
+    },
+    "error": {
+      "replaced": [
+        11,
+        18
+      ],
+      "appended": 0
+    }
+  },
+  "added_declarations": {
+    "globals": [
+      "ST5_A_Ca2_M",
+      "ST5_A_Ca2_Busy",
+      "ST5_A_Ca2_End",
+      "FH_A_ST5_Auto",
+      "FH_A_ST5_Manual",
+      "FH_A_ST5_Done"
+    ],
+    "movements_vars": [
+      "ST5_A_Ca2_M",
+      "ST5_A_Ca2_Busy",
+      "ST5_A_Ca2_End",
+      "FH_A_ST5_Auto",
+      "FH_A_ST5_Done",
+      "Out_CYS_Pos_05_Stopper_A_H_Done"
+    ],
+    "other_vars": [
+      "FH_A_ST5_M",
+      "FH_A_ST5_OK",
+      "FH_A_ST5_NG",
+      "FH_A_ST5_TON",
+      "FH_A_ST5_TOF",
+      "FH_A_ST5_Auto",
+      "FH_A_ST5_Manual",
+      "FH_A_ST5_Done",
+      "FH_Line1_Busy_1",
+      "FH_Line1_Command_Code_1",
+      "FH_Line1_Command_Completion_1",
+      "FH_Line1_Command_Request_1",
+      "FH_Line1_DINT_Result_Data_0_1",
+      "FH_Line1_DINT_Result_Data_1_1",
+      "FH_Line1_Error_Status_1",
+      "FH_Line1_Result_Notification_1",
+      "FH_Line1_Trigger_1",
+      "FH_Line1_Trigger_Ready_1"
+    ],
+    "mode_vars": [
+      "ST5_A_Ca2_M",
+      "FH_A_ST5_Auto"
+    ]
+  },
+  "new_hmi_message_numbers_require_screen_registration": {
+    "117": "A(左側) ST5 カメラ2 測定タイムアウト",
+    "118": "A(左側) ST5 カメラ2 OK",
+    "119": "A(左側) ST5 カメラ2 NG（結果0）",
+    "120": "A(左側) ST5 カメラ2 NG（結果1）",
+    "121": "A(左側) ST5 カメラ2 検査前ワーク不一致"
+  },
+  "ladder_counts": {
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/02fa0618-20f0-422f-b44d-3aba0838a381.xml": 16,
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/056f39b5-2372-4d32-b892-634336899ec4.xml": 1,
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/08c19951-3bae-402d-a637-be66c221f71b.xml": 6,
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml": 316,
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/13f086b3-1a09-467f-8cff-eea83144ff00.xml": 3,
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml": 18,
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml": 2,
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml": 1,
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/49a83d1d-d863-4a09-a86a-4797edc14a57.xml": 1,
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml": 17,
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml": 4,
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml": 152,
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/5ede16be-2114-46c3-84df-a79badb6e32e.xml": 1,
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml": 19,
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/7b1666c7-ee97-4210-81b2-fed5a6172074.xml": 46,
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml": 9,
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/98de6707-f996-4f77-aad9-b0569299efb5.xml": 8,
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml": 6,
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml": 29,
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml": 13,
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml": 16
+  },
+  "native_validation": {
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/02fa0618-20f0-422f-b44d-3aba0838a381.xml": "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/056f39b5-2372-4d32-b892-634336899ec4.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/08c19951-3bae-402d-a637-be66c221f71b.xml": "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml": "TOTAL=316 PARSE_FAIL=0 MODEL_FAIL=0",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/13f086b3-1a09-467f-8cff-eea83144ff00.xml": "TOTAL=3 PARSE_FAIL=0 MODEL_FAIL=0",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml": "TOTAL=18 PARSE_FAIL=0 MODEL_FAIL=0",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml": "TOTAL=2 PARSE_FAIL=0 MODEL_FAIL=0",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/49a83d1d-d863-4a09-a86a-4797edc14a57.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml": "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml": "TOTAL=4 PARSE_FAIL=0 MODEL_FAIL=0",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml": "TOTAL=152 PARSE_FAIL=0 MODEL_FAIL=0",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/5ede16be-2114-46c3-84df-a79badb6e32e.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml": "TOTAL=19 PARSE_FAIL=0 MODEL_FAIL=0",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/7b1666c7-ee97-4210-81b2-fed5a6172074.xml": "TOTAL=46 PARSE_FAIL=0 MODEL_FAIL=0",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml": "TOTAL=9 PARSE_FAIL=0 MODEL_FAIL=0",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/98de6707-f996-4f77-aad9-b0569299efb5.xml": "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml": "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml": "TOTAL=29 PARSE_FAIL=0 MODEL_FAIL=0",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml": "TOTAL=13 PARSE_FAIL=0 MODEL_FAIL=0",
+    "da4d2861-17dc-4412-b8fd-03db57bf3b70/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml": "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0"
+  },
+  "st1_preserved": true,
+  "physical_io_assignments_unchanged": true,
+  "app_build_verified": false,
+  "machine_transfer_performed": false,
+  "delta_audit": {
+    "limited_boolean_topology_cases": {
+      "コンベア完了接点": 1024,
+      "FH共通異常接点": 4096,
+      "再開時の不一致解除接点": 18
+    },
+    "physical_at_variables_unchanged": 722,
+    "old_metadata_preserved": 1985,
+    "added_function_ids_unique": true
+  }
+}

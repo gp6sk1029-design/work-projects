@@ -1,0 +1,1298 @@
+[
+  {
+    "source": "R7",
+    "target": "AR7",
+    "kind": "コメント",
+    "expected": "【X400】アキューム左CV満"
+  },
+  {
+    "source": "Y7",
+    "target": "AY7",
+    "kind": "コメント",
+    "expected": "【X416】ストック左機種判別IN"
+  },
+  {
+    "source": "AE7",
+    "target": "BE7",
+    "kind": "コメント",
+    "expected": "【X500】左旋回1チャック戻"
+  },
+  {
+    "source": "AL7",
+    "target": "BL7",
+    "kind": "コメント",
+    "expected": "【X516】位置3左ストッパー戻"
+  },
+  {
+    "source": "S7",
+    "target": "AS7",
+    "kind": "名称",
+    "expected": "In_Sen_Accum_CV_L_Full"
+  },
+  {
+    "source": "X7",
+    "target": "AX7",
+    "kind": "名称",
+    "expected": "In_Sen_SH_L_Type_Ent"
+  },
+  {
+    "source": "AF7",
+    "target": "BF7",
+    "kind": "名称",
+    "expected": "In_SenCY_Swv_01_Chk_L_H"
+  },
+  {
+    "source": "AK7",
+    "target": "BK7",
+    "kind": "名称",
+    "expected": "In_SenCY_Pos_03_Stopper_L_H"
+  },
+  {
+    "source": "R8",
+    "target": "AR8",
+    "kind": "コメント",
+    "expected": "【X401】アキューム左CV着"
+  },
+  {
+    "source": "Y8",
+    "target": "AY8",
+    "kind": "コメント",
+    "expected": "【X417】ストック左機種判別OUT"
+  },
+  {
+    "source": "AE8",
+    "target": "BE8",
+    "kind": "コメント",
+    "expected": "【X501】左旋回1チャック行"
+  },
+  {
+    "source": "AL8",
+    "target": "BL8",
+    "kind": "コメント",
+    "expected": "【X517】位置3左ストッパー行"
+  },
+  {
+    "source": "S8",
+    "target": "AS8",
+    "kind": "名称",
+    "expected": "In_Sen_Accum_CV_L_Arrival"
+  },
+  {
+    "source": "X8",
+    "target": "AX8",
+    "kind": "名称",
+    "expected": "In_Sen_SH_L_Type_Ext"
+  },
+  {
+    "source": "AF8",
+    "target": "BF8",
+    "kind": "名称",
+    "expected": "In_SenCY_Swv_01_Chk_L_F"
+  },
+  {
+    "source": "AK8",
+    "target": "BK8",
+    "kind": "名称",
+    "expected": "In_SenCY_Pos_03_Stopper_L_F"
+  },
+  {
+    "source": "R9",
+    "target": "AR9",
+    "kind": "コメント",
+    "expected": "【X402】左側ワーク位置0"
+  },
+  {
+    "source": "Y9",
+    "target": "AY9",
+    "kind": "コメント",
+    "expected": "【X418】供給左スライド戻"
+  },
+  {
+    "source": "AE9",
+    "target": "BE9",
+    "kind": "コメント",
+    "expected": "【X502】左旋回1ピックアップ戻"
+  },
+  {
+    "source": "AL9",
+    "target": "BL9",
+    "kind": "コメント",
+    "expected": "【X518】位置4左ストッパー戻"
+  },
+  {
+    "source": "S9",
+    "target": "AS9",
+    "kind": "名称",
+    "expected": "In_Sen_Work_L_Pos_00"
+  },
+  {
+    "source": "X9",
+    "target": "AX9",
+    "kind": "名称",
+    "expected": "In_SenCY_Sply_Slide_L_H"
+  },
+  {
+    "source": "AF9",
+    "target": "BF9",
+    "kind": "名称",
+    "expected": "In_SenCY_Swv_01_Pick_L_H"
+  },
+  {
+    "source": "AK9",
+    "target": "BK9",
+    "kind": "名称",
+    "expected": "In_SenCY_Pos_04_Stopper_L_H"
+  },
+  {
+    "source": "R10",
+    "target": "AR10",
+    "kind": "コメント",
+    "expected": "【X403】左側ワーク位置1"
+  },
+  {
+    "source": "Y10",
+    "target": "AY10",
+    "kind": "コメント",
+    "expected": "【X419】供給左スライド行"
+  },
+  {
+    "source": "AE10",
+    "target": "BE10",
+    "kind": "コメント",
+    "expected": "【X503】左旋回1ピックアップ行"
+  },
+  {
+    "source": "AL10",
+    "target": "BL10",
+    "kind": "コメント",
+    "expected": "【X519】位置4左ストッパー行"
+  },
+  {
+    "source": "S10",
+    "target": "AS10",
+    "kind": "名称",
+    "expected": "In_Sen_Work_L_Pos_01"
+  },
+  {
+    "source": "X10",
+    "target": "AX10",
+    "kind": "名称",
+    "expected": "In_SenCY_Sply_Slide_L_F"
+  },
+  {
+    "source": "AF10",
+    "target": "BF10",
+    "kind": "名称",
+    "expected": "In_SenCY_Swv_01_Pick_L_F"
+  },
+  {
+    "source": "AK10",
+    "target": "BK10",
+    "kind": "名称",
+    "expected": "In_SenCY_Pos_04_Stopper_L_F"
+  },
+  {
+    "source": "R11",
+    "target": "AR11",
+    "kind": "コメント",
+    "expected": "【X404】左側ワーク位置2"
+  },
+  {
+    "source": "Y11",
+    "target": "AY11",
+    "kind": "コメント",
+    "expected": "【X420】供給左ピックアップ戻"
+  },
+  {
+    "source": "AE11",
+    "target": "BE11",
+    "kind": "コメント",
+    "expected": "【X504】左旋回2チャック閉 戻"
+  },
+  {
+    "source": "AL11",
+    "target": "BL11",
+    "kind": "コメント",
+    "expected": "【X520】位置5左ストッパー戻"
+  },
+  {
+    "source": "S11",
+    "target": "AS11",
+    "kind": "名称",
+    "expected": "In_Sen_Work_L_Pos_02"
+  },
+  {
+    "source": "X11",
+    "target": "AX11",
+    "kind": "名称",
+    "expected": "In_SenCY_Sply_Pick_L_H"
+  },
+  {
+    "source": "AF11",
+    "target": "BF11",
+    "kind": "名称",
+    "expected": "In_SenCY_Swv_02_Chk_L_H"
+  },
+  {
+    "source": "AK11",
+    "target": "BK11",
+    "kind": "名称",
+    "expected": "In_SenCY_Pos_05_Stopper_L_H"
+  },
+  {
+    "source": "R12",
+    "target": "AR12",
+    "kind": "コメント",
+    "expected": "【X405】左側ワーク位置3"
+  },
+  {
+    "source": "Y12",
+    "target": "AY12",
+    "kind": "コメント",
+    "expected": "【X421】供給左ピックアップ行"
+  },
+  {
+    "source": "AE12",
+    "target": "BE12",
+    "kind": "コメント",
+    "expected": "【X505】左旋回2チャック開 行"
+  },
+  {
+    "source": "AL12",
+    "target": "BL12",
+    "kind": "コメント",
+    "expected": "【X521】位置5左ストッパー行"
+  },
+  {
+    "source": "S12",
+    "target": "AS12",
+    "kind": "名称",
+    "expected": "In_Sen_Work_L_Pos_03"
+  },
+  {
+    "source": "X12",
+    "target": "AX12",
+    "kind": "名称",
+    "expected": "In_SenCY_Sply_Pick_L_F"
+  },
+  {
+    "source": "AF12",
+    "target": "BF12",
+    "kind": "名称",
+    "expected": "In_SenCY_Swv_02_Chk_L_F"
+  },
+  {
+    "source": "AK12",
+    "target": "BK12",
+    "kind": "名称",
+    "expected": "In_SenCY_Pos_05_Stopper_L_F"
+  },
+  {
+    "source": "R13",
+    "target": "AR13",
+    "kind": "コメント",
+    "expected": "【X406】左側ワーク位置4"
+  },
+  {
+    "source": "Y13",
+    "target": "AY13",
+    "kind": "コメント",
+    "expected": "【X422】供給左チャック閉 戻"
+  },
+  {
+    "source": "AE13",
+    "target": "BE13",
+    "kind": "コメント",
+    "expected": "【X506】左旋回2ピックアップ戻"
+  },
+  {
+    "source": "AL13",
+    "target": "BL13",
+    "kind": "コメント",
+    "expected": "【X522】位置6左ストッパー戻"
+  },
+  {
+    "source": "S13",
+    "target": "AS13",
+    "kind": "名称",
+    "expected": "In_Sen_Work_L_Pos_04"
+  },
+  {
+    "source": "X13",
+    "target": "AX13",
+    "kind": "名称",
+    "expected": "In_SenCY_Sply_Chk_L_H"
+  },
+  {
+    "source": "AF13",
+    "target": "BF13",
+    "kind": "名称",
+    "expected": "In_SenCY_Swv_02_Pick_L_H"
+  },
+  {
+    "source": "AK13",
+    "target": "BK13",
+    "kind": "名称",
+    "expected": "In_SenCY_Pos_06_Stopper_L_H"
+  },
+  {
+    "source": "R14",
+    "target": "AR14",
+    "kind": "コメント",
+    "expected": "【X407】左側ワーク位置5"
+  },
+  {
+    "source": "Y14",
+    "target": "AY14",
+    "kind": "コメント",
+    "expected": "【X423】供給左チャック開 行"
+  },
+  {
+    "source": "AE14",
+    "target": "BE14",
+    "kind": "コメント",
+    "expected": "【X507】左旋回2ピックアップ行"
+  },
+  {
+    "source": "AL14",
+    "target": "BL14",
+    "kind": "コメント",
+    "expected": "【X523】位置6左ストッパー行"
+  },
+  {
+    "source": "S14",
+    "target": "AS14",
+    "kind": "名称",
+    "expected": "In_Sen_Work_L_Pos_05"
+  },
+  {
+    "source": "X14",
+    "target": "AX14",
+    "kind": "名称",
+    "expected": "In_SenCY_Sply_Chk_L_F"
+  },
+  {
+    "source": "AF14",
+    "target": "BF14",
+    "kind": "名称",
+    "expected": "In_SenCY_Swv_02_Pick_L_F"
+  },
+  {
+    "source": "AK14",
+    "target": "BK14",
+    "kind": "名称",
+    "expected": "In_SenCY_Pos_06_Stopper_L_F"
+  },
+  {
+    "source": "R16",
+    "target": "AR16",
+    "kind": "コメント",
+    "expected": "【X408】左側ワーク位置6"
+  },
+  {
+    "source": "Y16",
+    "target": "AY16",
+    "kind": "コメント",
+    "expected": "【X424】高さ検査左押え戻"
+  },
+  {
+    "source": "AE16",
+    "target": "BE16",
+    "kind": "コメント",
+    "expected": "【X508】排出左チャック閉 戻"
+  },
+  {
+    "source": "AL16",
+    "target": "BL16",
+    "kind": "コメント",
+    "expected": "【X524】ストック左フォルダターン戻"
+  },
+  {
+    "source": "S16",
+    "target": "AS16",
+    "kind": "名称",
+    "expected": "In_Sen_Work_L_Pos_06"
+  },
+  {
+    "source": "X16",
+    "target": "AX16",
+    "kind": "名称",
+    "expected": "In_SenCY_HgtInsp_Clp_L_H"
+  },
+  {
+    "source": "AF16",
+    "target": "BF16",
+    "kind": "名称",
+    "expected": "In_SenCY_Disc_Chk_L_H"
+  },
+  {
+    "source": "AK16",
+    "target": "BK16",
+    "kind": "名称",
+    "expected": "In_SenCY_SH_L_Turn_H"
+  },
+  {
+    "source": "R17",
+    "target": "AR17",
+    "kind": "コメント",
+    "expected": "【X409】左側ワーク位置7"
+  },
+  {
+    "source": "Y17",
+    "target": "AY17",
+    "kind": "コメント",
+    "expected": "【X425】高さ検査左押え行"
+  },
+  {
+    "source": "AE17",
+    "target": "BE17",
+    "kind": "コメント",
+    "expected": "【X509】排出左チャック開 行"
+  },
+  {
+    "source": "AL17",
+    "target": "BL17",
+    "kind": "コメント",
+    "expected": "【X525】ストック左フォルダターン行"
+  },
+  {
+    "source": "S17",
+    "target": "AS17",
+    "kind": "名称",
+    "expected": "In_Sen_Work_L_Pos_07"
+  },
+  {
+    "source": "X17",
+    "target": "AX17",
+    "kind": "名称",
+    "expected": "In_SenCY_HgtInsp_Clp_L_F"
+  },
+  {
+    "source": "AF17",
+    "target": "BF17",
+    "kind": "名称",
+    "expected": "In_SenCY_Disc_Chk_L_F"
+  },
+  {
+    "source": "AK17",
+    "target": "BK17",
+    "kind": "名称",
+    "expected": "In_SenCY_SH_L_Turn_F"
+  },
+  {
+    "source": "R18",
+    "target": "AR18",
+    "kind": "コメント",
+    "expected": "【X410】NG1トレイ1左満杯"
+  },
+  {
+    "source": "Y18",
+    "target": "AY18",
+    "kind": "コメント",
+    "expected": "【X426】高さ検査左持上戻"
+  },
+  {
+    "source": "AE18",
+    "target": "BE18",
+    "kind": "コメント",
+    "expected": "【X510】排出左フォルダ送り戻"
+  },
+  {
+    "source": "S18",
+    "target": "AS18",
+    "kind": "名称",
+    "expected": "In_Sen_NG1_Tray_01_L_Full"
+  },
+  {
+    "source": "X18",
+    "target": "AX18",
+    "kind": "名称",
+    "expected": "In_SenCY_HgtInsp_Lf_L_H"
+  },
+  {
+    "source": "AF18",
+    "target": "BF18",
+    "kind": "名称",
+    "expected": "In_SenCY_Ejc_SH_Feed_L_F"
+  },
+  {
+    "source": "R19",
+    "target": "AR19",
+    "kind": "コメント",
+    "expected": "【X411】NG1トレイ1左満杯警告"
+  },
+  {
+    "source": "Y19",
+    "target": "AY19",
+    "kind": "コメント",
+    "expected": "【X427】 高さ検査左持上行"
+  },
+  {
+    "source": "AE19",
+    "target": "BE19",
+    "kind": "コメント",
+    "expected": "【X511】排出左フォルダ送り行"
+  },
+  {
+    "source": "S19",
+    "target": "AS19",
+    "kind": "名称",
+    "expected": "In_Sen_NG1_Tray_01_L_Full_Warn"
+  },
+  {
+    "source": "X19",
+    "target": "AX19",
+    "kind": "名称",
+    "expected": "In_SenCY_HgtInsp_Lf_L_F"
+  },
+  {
+    "source": "AF19",
+    "target": "BF19",
+    "kind": "名称",
+    "expected": "In_SenCY_Ejc_SH_Feed_L_H"
+  },
+  {
+    "source": "R20",
+    "target": "AR20",
+    "kind": "コメント",
+    "expected": "【X412】NG1トレイ2左満杯停止"
+  },
+  {
+    "source": "Y20",
+    "target": "AY20",
+    "kind": "コメント",
+    "expected": "【X428】NG1左ピックアップ戻"
+  },
+  {
+    "source": "AE20",
+    "target": "BE20",
+    "kind": "コメント",
+    "expected": "【X512】位置1左ストッパー戻"
+  },
+  {
+    "source": "S20",
+    "target": "AS20",
+    "kind": "名称",
+    "expected": "In_Sen_NG1_Tray_02_L_Full"
+  },
+  {
+    "source": "X20",
+    "target": "AX20",
+    "kind": "名称",
+    "expected": "In_SenCY_NG1_Pick_L_H"
+  },
+  {
+    "source": "AF20",
+    "target": "BF20",
+    "kind": "名称",
+    "expected": "In_SenCY_Pos_01_Stopper_L_H"
+  },
+  {
+    "source": "R21",
+    "target": "AR21",
+    "kind": "コメント",
+    "expected": "【X413】NG1トレイ2左満杯警告"
+  },
+  {
+    "source": "Y21",
+    "target": "AY21",
+    "kind": "コメント",
+    "expected": "【X429】NG1左ピックアップ行"
+  },
+  {
+    "source": "AE21",
+    "target": "BE21",
+    "kind": "コメント",
+    "expected": "【X513】位置1左ストッパー行"
+  },
+  {
+    "source": "S21",
+    "target": "AS21",
+    "kind": "名称",
+    "expected": "In_Sen_NG1_Tray_02_L_Full_Warn"
+  },
+  {
+    "source": "X21",
+    "target": "AX21",
+    "kind": "名称",
+    "expected": "In_SenCY_NG1_Pick_L_F"
+  },
+  {
+    "source": "AF21",
+    "target": "BF21",
+    "kind": "名称",
+    "expected": "In_SenCY_Pos_01_Stopper_L_F"
+  },
+  {
+    "source": "R22",
+    "target": "AR22",
+    "kind": "コメント",
+    "expected": "【X414】ストックフォルダ左側IN"
+  },
+  {
+    "source": "Y22",
+    "target": "AY22",
+    "kind": "コメント",
+    "expected": "【X430】 NG1左チャック閉 戻"
+  },
+  {
+    "source": "AE22",
+    "target": "BE22",
+    "kind": "コメント",
+    "expected": "【X514】位置2左ストッパー戻"
+  },
+  {
+    "source": "AL22",
+    "target": "BL22",
+    "kind": "コメント",
+    "expected": "【X530】NG1左仕分け 戻"
+  },
+  {
+    "source": "S22",
+    "target": "AS22",
+    "kind": "名称",
+    "expected": "In_Sen_SH_L_Ent"
+  },
+  {
+    "source": "X22",
+    "target": "AX22",
+    "kind": "名称",
+    "expected": "In_SenCY_NG1_Chk_L_H"
+  },
+  {
+    "source": "AF22",
+    "target": "BF22",
+    "kind": "名称",
+    "expected": "In_SenCY_Pos_02_Stopper_L_H"
+  },
+  {
+    "source": "AK22",
+    "target": "BK22",
+    "kind": "名称",
+    "expected": "In_SenCY_NG1_Srt_L_H"
+  },
+  {
+    "source": "R23",
+    "target": "AR23",
+    "kind": "コメント",
+    "expected": "【X415】ストックフォルダ左側Out"
+  },
+  {
+    "source": "Y23",
+    "target": "AY23",
+    "kind": "コメント",
+    "expected": "【X431】NG1左チャック開 行"
+  },
+  {
+    "source": "AE23",
+    "target": "BE23",
+    "kind": "コメント",
+    "expected": "【X515】位置2左ストッパー行"
+  },
+  {
+    "source": "AL23",
+    "target": "BL23",
+    "kind": "コメント",
+    "expected": "【X531】NG1左仕分け 行"
+  },
+  {
+    "source": "S23",
+    "target": "AS23",
+    "kind": "名称",
+    "expected": "\tIn_Sen_SH_L_Ext"
+  },
+  {
+    "source": "X23",
+    "target": "AX23",
+    "kind": "名称",
+    "expected": "In_SenCY_NG1_Chk_L_F"
+  },
+  {
+    "source": "AF23",
+    "target": "BF23",
+    "kind": "名称",
+    "expected": "In_SenCY_Pos_02_Stopper_L_F"
+  },
+  {
+    "source": "AK23",
+    "target": "BK23",
+    "kind": "名称",
+    "expected": "In_SenCY_NG1_Srt_L_F"
+  },
+  {
+    "source": "R33",
+    "target": "AE33",
+    "kind": "コメント",
+    "expected": "【Y800】高さ検査左押え戻"
+  },
+  {
+    "source": "Y33",
+    "target": "AL33",
+    "kind": "コメント",
+    "expected": "【Y816】排出左チャック閉 戻"
+  },
+  {
+    "source": "S33",
+    "target": "AF33",
+    "kind": "名称",
+    "expected": "Out_CYw_HgtInsp_Clp_L_H"
+  },
+  {
+    "source": "X33",
+    "target": "AK33",
+    "kind": "名称",
+    "expected": "Out_CYw_Disc_Chk_L_H"
+  },
+  {
+    "source": "R34",
+    "target": "AE34",
+    "kind": "コメント",
+    "expected": "【Y801】高さ検査左押え行"
+  },
+  {
+    "source": "Y34",
+    "target": "AL34",
+    "kind": "コメント",
+    "expected": "【Y817】排出左チャック開 行"
+  },
+  {
+    "source": "S34",
+    "target": "AF34",
+    "kind": "名称",
+    "expected": "Out_CYw_HgtInsp_Clp_L_F"
+  },
+  {
+    "source": "X34",
+    "target": "AK34",
+    "kind": "名称",
+    "expected": "Out_CYw_Disc_Chk_L_F"
+  },
+  {
+    "source": "R35",
+    "target": "AE35",
+    "kind": "コメント",
+    "expected": "【Y802】高さ検査左持上戻"
+  },
+  {
+    "source": "Y35",
+    "target": "AL35",
+    "kind": "コメント",
+    "expected": "【Y818】排出左フォルダ送り戻"
+  },
+  {
+    "source": "S35",
+    "target": "AF35",
+    "kind": "名称",
+    "expected": "Out_CYw_HgtInsp_Lf_L_H"
+  },
+  {
+    "source": "X35",
+    "target": "AK35",
+    "kind": "名称",
+    "expected": "Out_CYw_Ejc_Hldr_Feed_L_F"
+  },
+  {
+    "source": "R36",
+    "target": "AE36",
+    "kind": "コメント",
+    "expected": "【Y803】高さ検査左持上行"
+  },
+  {
+    "source": "Y36",
+    "target": "AL36",
+    "kind": "コメント",
+    "expected": "【Y819】排出左フォルダ送り行"
+  },
+  {
+    "source": "S36",
+    "target": "AF36",
+    "kind": "名称",
+    "expected": "Out_CYw_HgtInsp_Lf_L_F"
+  },
+  {
+    "source": "X36",
+    "target": "AK36",
+    "kind": "名称",
+    "expected": "Out_CYw_Ejc_Hldr_Feed_L_H"
+  },
+  {
+    "source": "R37",
+    "target": "AE37",
+    "kind": "コメント",
+    "expected": "【Y804】NG1左ピックアップ戻"
+  },
+  {
+    "source": "Y37",
+    "target": "AL37",
+    "kind": "コメント",
+    "expected": "【Y820】位置1左ストッパー"
+  },
+  {
+    "source": "S37",
+    "target": "AF37",
+    "kind": "名称",
+    "expected": "Out_CYw_NG1_Pick_L_H"
+  },
+  {
+    "source": "X37",
+    "target": "AK37",
+    "kind": "名称",
+    "expected": "\tOut_CYS_Pos_01_Stopper_L"
+  },
+  {
+    "source": "R38",
+    "target": "AE38",
+    "kind": "コメント",
+    "expected": "【Y805】NG1左ピックアップ 行"
+  },
+  {
+    "source": "Y38",
+    "target": "AL38",
+    "kind": "コメント",
+    "expected": "【Y821】位置2左ストッパー"
+  },
+  {
+    "source": "S38",
+    "target": "AF38",
+    "kind": "名称",
+    "expected": "Out_CYw_NG1_Pick_L_F"
+  },
+  {
+    "source": "X38",
+    "target": "AK38",
+    "kind": "名称",
+    "expected": "\tOut_CYS_Pos_02_Stopper_L"
+  },
+  {
+    "source": "R39",
+    "target": "AE39",
+    "kind": "コメント",
+    "expected": "【Y806】NG1左チャック戻"
+  },
+  {
+    "source": "Y39",
+    "target": "AL39",
+    "kind": "コメント",
+    "expected": "【Y822】位置3左ストッパー"
+  },
+  {
+    "source": "S39",
+    "target": "AF39",
+    "kind": "名称",
+    "expected": "Out_CYw_NG1_Chk_L_H"
+  },
+  {
+    "source": "X39",
+    "target": "AK39",
+    "kind": "名称",
+    "expected": "\tOut_CYS_Pos_03_Stopper_L"
+  },
+  {
+    "source": "R40",
+    "target": "AE40",
+    "kind": "コメント",
+    "expected": "【Y807】NG1左チャック行"
+  },
+  {
+    "source": "Y40",
+    "target": "AL40",
+    "kind": "コメント",
+    "expected": "【Y823】位置4左ストッパー"
+  },
+  {
+    "source": "S40",
+    "target": "AF40",
+    "kind": "名称",
+    "expected": "Out_CYw_NG1_Chk_L_F"
+  },
+  {
+    "source": "X40",
+    "target": "AK40",
+    "kind": "名称",
+    "expected": "\tOut_CYS_Pos_04_Stopper_L"
+  },
+  {
+    "source": "R43",
+    "target": "AE43",
+    "kind": "コメント",
+    "expected": "【Y808】左旋回1チャック閉"
+  },
+  {
+    "source": "Y43",
+    "target": "AL43",
+    "kind": "コメント",
+    "expected": "【Y824】位置5左ストッパー"
+  },
+  {
+    "source": "S43",
+    "target": "AF43",
+    "kind": "名称",
+    "expected": "Out_CYw_Swv_01_Chk_L_H"
+  },
+  {
+    "source": "X43",
+    "target": "AK43",
+    "kind": "名称",
+    "expected": "\tOut_CYS_Pos_05_Stp_L"
+  },
+  {
+    "source": "R44",
+    "target": "AE44",
+    "kind": "コメント",
+    "expected": "【Y809】左旋回1チャック開"
+  },
+  {
+    "source": "Y44",
+    "target": "AL44",
+    "kind": "コメント",
+    "expected": "【Y825】位置6左ストッパー"
+  },
+  {
+    "source": "S44",
+    "target": "AF44",
+    "kind": "名称",
+    "expected": "Out_CYw_Swv_01_Chk_L_F"
+  },
+  {
+    "source": "X44",
+    "target": "AK44",
+    "kind": "名称",
+    "expected": "\tOut_CYS_Pos_06_Stp_L"
+  },
+  {
+    "source": "R45",
+    "target": "AE45",
+    "kind": "コメント",
+    "expected": "【Y810】左旋回1ピックアップ戻"
+  },
+  {
+    "source": "Y45",
+    "target": "AL45",
+    "kind": "コメント",
+    "expected": "【Y826】ストック左フォルダターン戻"
+  },
+  {
+    "source": "S45",
+    "target": "AF45",
+    "kind": "名称",
+    "expected": "Out_CYw_Swv_01_Pick_L_H"
+  },
+  {
+    "source": "X45",
+    "target": "AK45",
+    "kind": "名称",
+    "expected": "Out_CYw_SH_L_Turn_H"
+  },
+  {
+    "source": "R46",
+    "target": "AE46",
+    "kind": "コメント",
+    "expected": "【Y811】左旋回1ピックアップ行"
+  },
+  {
+    "source": "Y46",
+    "target": "AL46",
+    "kind": "コメント",
+    "expected": "【Y827】ストック左フォルダターン行"
+  },
+  {
+    "source": "S46",
+    "target": "AF46",
+    "kind": "名称",
+    "expected": "Out_CYw_Swv_01_Pick_L_F"
+  },
+  {
+    "source": "X46",
+    "target": "AK46",
+    "kind": "名称",
+    "expected": "Out_CYw_SH_L_Turn_F"
+  },
+  {
+    "source": "R47",
+    "target": "AE47",
+    "kind": "コメント",
+    "expected": "【Y812】左旋回2チャック閉 戻"
+  },
+  {
+    "source": "Y47",
+    "target": "AL47",
+    "kind": "コメント",
+    "expected": "【Y828】予備"
+  },
+  {
+    "source": "S47",
+    "target": "AF47",
+    "kind": "名称",
+    "expected": "Out_CYw_Swv_02_Chk_L_H"
+  },
+  {
+    "source": "R48",
+    "target": "AE48",
+    "kind": "コメント",
+    "expected": "【Y813】左旋回2チャック開 行"
+  },
+  {
+    "source": "Y48",
+    "target": "AL48",
+    "kind": "コメント",
+    "expected": "【Y829】予備"
+  },
+  {
+    "source": "S48",
+    "target": "AF48",
+    "kind": "名称",
+    "expected": "Out_CYw_Swv_02_Chk_L_F"
+  },
+  {
+    "source": "R49",
+    "target": "AE49",
+    "kind": "コメント",
+    "expected": "【Y814】左旋回2ピックアップ戻"
+  },
+  {
+    "source": "Y49",
+    "target": "AL49",
+    "kind": "コメント",
+    "expected": "【Y830】NG1左仕分け 戻"
+  },
+  {
+    "source": "S49",
+    "target": "AF49",
+    "kind": "名称",
+    "expected": "Out_CYw_Swv_02_Pick_L_H"
+  },
+  {
+    "source": "X49",
+    "target": "AK49",
+    "kind": "名称",
+    "expected": "Out_CYw_NG1_Srt_L_H"
+  },
+  {
+    "source": "R50",
+    "target": "AE50",
+    "kind": "コメント",
+    "expected": "【Y815】左旋回2ピックアップ行"
+  },
+  {
+    "source": "Y50",
+    "target": "AL50",
+    "kind": "コメント",
+    "expected": "【Y831】NG1左仕分け 行"
+  },
+  {
+    "source": "S50",
+    "target": "AF50",
+    "kind": "名称",
+    "expected": "Out_CYw_Swv_02_Pick_L_F"
+  },
+  {
+    "source": "X50",
+    "target": "AK50",
+    "kind": "名称",
+    "expected": "Out_CYw_NG1_Srt_L_F"
+  },
+  {
+    "source": "L16",
+    "target": "L18",
+    "kind": "コメント",
+    "expected": "【X126】左反転 オリエンタルモータ1 エラー"
+  },
+  {
+    "source": "K16",
+    "target": "K18",
+    "kind": "名称",
+    "expected": "In_Mtr_Flip_01_L_Error"
+  },
+  {
+    "source": "L17",
+    "target": "L19",
+    "kind": "コメント",
+    "expected": "【X127】左反転 オリエンタルモータ2 エラー"
+  },
+  {
+    "source": "K17",
+    "target": "K19",
+    "kind": "名称",
+    "expected": "In_Mtr_Flip_02_L_Error"
+  },
+  {
+    "source": "L33",
+    "target": "L39",
+    "kind": "コメント",
+    "expected": "【Y622】供給左スライド戻"
+  },
+  {
+    "source": "K33",
+    "target": "K39",
+    "kind": "名称",
+    "expected": "Out_CYw_Sply_Slide_L_H"
+  },
+  {
+    "source": "L34",
+    "target": "L40",
+    "kind": "コメント",
+    "expected": "【Y623】供給左スライド行"
+  },
+  {
+    "source": "K34",
+    "target": "K40",
+    "kind": "名称",
+    "expected": "Out_CYw_Sply_Slide_L_F"
+  },
+  {
+    "source": "L35",
+    "target": "L43",
+    "kind": "コメント",
+    "expected": "【Y624】供給左ピックアップ戻"
+  },
+  {
+    "source": "K35",
+    "target": "K43",
+    "kind": "名称",
+    "expected": "Out_CYw_Sply_Pick_L_H"
+  },
+  {
+    "source": "L36",
+    "target": "L44",
+    "kind": "コメント",
+    "expected": "【Y625】供給左ピックアップ行"
+  },
+  {
+    "source": "K36",
+    "target": "K44",
+    "kind": "名称",
+    "expected": "Out_CYw_Sply_Pick_L_F"
+  },
+  {
+    "source": "L37",
+    "target": "L45",
+    "kind": "コメント",
+    "expected": "【Y626】供給左チャック閉 戻"
+  },
+  {
+    "source": "K37",
+    "target": "K45",
+    "kind": "名称",
+    "expected": "Out_CYw_Sup_Chuck_L_Cl"
+  },
+  {
+    "source": "L38",
+    "target": "L46",
+    "kind": "コメント",
+    "expected": "【Y627】供給左チャック開 行"
+  },
+  {
+    "source": "K38",
+    "target": "K46",
+    "kind": "名称",
+    "expected": "Out_CYw_Sup_Chuck_L_Op"
+  },
+  {
+    "source": "E45",
+    "target": "E48",
+    "kind": "コメント",
+    "expected": "【Y613】検査 左コンベア運転ON"
+  },
+  {
+    "source": "F45",
+    "target": "F48",
+    "kind": "名称",
+    "expected": "Out_Insp_Cv_L_Run"
+  },
+  {
+    "source": "E46",
+    "target": "E49",
+    "kind": "コメント",
+    "expected": "【Y614】検査 左コンベア リセット"
+  },
+  {
+    "source": "F46",
+    "target": "F49",
+    "kind": "名称",
+    "expected": "Out_Insp_Cv_L_RESET"
+  },
+  {
+    "source": "E47",
+    "target": "E50",
+    "kind": "コメント",
+    "expected": "【Y615】検査 左コンベア 電源ON"
+  },
+  {
+    "source": "F47",
+    "target": "F50",
+    "kind": "名称",
+    "expected": "Out_Insp_Cv_L_PowerOn"
+  },
+  {
+    "source": "CD7",
+    "target": "CD8",
+    "kind": "コメント",
+    "expected": "取出しコンベア 左通過"
+  },
+  {
+    "source": "CE7",
+    "target": "CE8",
+    "kind": "名称",
+    "expected": "In_Sen_Unl_Conv_L_Pass"
+  },
+  {
+    "source": "CD9",
+    "target": "CD10",
+    "kind": "コメント",
+    "expected": "搬送コンベア左到着"
+  },
+  {
+    "source": "CE9",
+    "target": "CE10",
+    "kind": "名称",
+    "expected": "In_Sen_Trs_Conv_L_Arv"
+  },
+  {
+    "source": "CD11",
+    "target": "CD13",
+    "kind": "コメント",
+    "expected": "コンベア受渡左送り戻"
+  },
+  {
+    "source": "CE11",
+    "target": "CE13",
+    "kind": "名称",
+    "expected": "In_SenCY_Hnd_Feed_L_H"
+  },
+  {
+    "source": "CD12",
+    "target": "CD14",
+    "kind": "コメント",
+    "expected": "コンベア受渡左送り行"
+  },
+  {
+    "source": "CE12",
+    "target": "CE14",
+    "kind": "名称",
+    "expected": "In_SenCY_Hnd_Feed_L_F"
+  },
+  {
+    "source": "BE33",
+    "target": "BE35",
+    "kind": "コメント",
+    "expected": "【Y1302】コンベア受渡左送り戻"
+  },
+  {
+    "source": "BF33",
+    "target": "BF35",
+    "kind": "名称",
+    "expected": "Out_CYw_Hnd_Feed_L_H"
+  },
+  {
+    "source": "BE34",
+    "target": "BE36",
+    "kind": "コメント",
+    "expected": "【Y1303】コンベア受渡左送り行"
+  },
+  {
+    "source": "BF34",
+    "target": "BF36",
+    "kind": "名称",
+    "expected": "Out_CYw_Hnd_Feed_L_F"
+  }
+]

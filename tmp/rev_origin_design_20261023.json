@@ -1,0 +1,329 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261023B.smc2",
+  "destination": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261023C.smc2",
+  "sourceHash": "c6a9531be2fc5c8287c127edfb8af0f994373be5c312ab02f391a519f939e736",
+  "groups": [
+    {
+      "side": "A",
+      "number": "01",
+      "station": "ST4",
+      "axis": "Stm_A_Rev_Axis000",
+      "axisnum": 0,
+      "label": "A(左側) ST4 反転1",
+      "seq": "ST4_A_Rev_01_Origin_M",
+      "done": "ST4_A_Rev_01_OriginDone",
+      "busy": "ST4_A_Rev_01_OriginBusy",
+      "param": "Homing_Para_Stm"
+    },
+    {
+      "side": "A",
+      "number": "02",
+      "station": "ST6",
+      "axis": "Stm_A_Rev_Axis001",
+      "axisnum": 1,
+      "label": "A(左側) ST6 反転2",
+      "seq": "ST4_A_Rev_02_Origin_M",
+      "done": "ST4_A_Rev_02_OriginDone",
+      "busy": "ST4_A_Rev_02_OriginBusy",
+      "param": "Homing_Para_Stm_Axis001"
+    },
+    {
+      "side": "B",
+      "number": "01",
+      "station": "ST4",
+      "axis": "Stm_B_Rev_Axis002",
+      "axisnum": 2,
+      "label": "B(右側) ST4 反転1",
+      "seq": "ST4_B_Rev_01_Origin_M",
+      "done": "ST4_B_Rev_01_OriginDone",
+      "busy": "ST4_B_Rev_01_OriginBusy",
+      "param": "Homing_Para_Stm_Axis002"
+    },
+    {
+      "side": "B",
+      "number": "02",
+      "station": "ST6",
+      "axis": "Stm_B_Rev_Axis003",
+      "axisnum": 3,
+      "label": "B(右側) ST6 反転2",
+      "seq": "ST4_B_Rev_02_Origin_M",
+      "done": "ST4_B_Rev_02_OriginDone",
+      "busy": "ST4_B_Rev_02_OriginBusy",
+      "param": "Homing_Para_Stm_Axis003"
+    }
+  ],
+  "renamedDeclarations": {
+    "878e15c5-b753-4e44-8de7-fbcd7ad09626/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml": 2,
+    "878e15c5-b753-4e44-8de7-fbcd7ad09626/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml": 115,
+    "878e15c5-b753-4e44-8de7-fbcd7ad09626/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml": 0,
+    "878e15c5-b753-4e44-8de7-fbcd7ad09626/b530d740-9d69-41c3-974a-97c06e823eb2.xml": 6,
+    "878e15c5-b753-4e44-8de7-fbcd7ad09626/f07dd06c-505c-431b-b9fc-098949805b4e.xml": 99
+  },
+  "newGlobals": [
+    [
+      "Stm_A_Rev_Axis000_Busy",
+      "BOOL",
+      "A(左側) ST4 反転1 モータ動作中（原点復帰・座標設定）",
+      "Stm_A_Rev_Axis000_OriginDone"
+    ],
+    [
+      "Stm_A_Rev_Axis001_Origin",
+      "BOOL",
+      "A(左側) ST6 反転2 モータ原点復帰開始",
+      "Stm_A_Rev_Axis000_Origin"
+    ],
+    [
+      "Stm_A_Rev_Axis001_OriginDone",
+      "BOOL",
+      "A(左側) ST6 反転2 モータ原点復帰完了",
+      "Stm_A_Rev_Axis000_OriginDone"
+    ],
+    [
+      "Homing_Para_Stm_Axis001",
+      "_sHOMING_REF",
+      "A(左側) ST6 反転2 原点復帰パラメータ",
+      "Homing_Para_Stm"
+    ],
+    [
+      "Stm_A_Rev_Axis001_Busy",
+      "BOOL",
+      "A(左側) ST6 反転2 モータ動作中（原点復帰・座標設定）",
+      "Stm_A_Rev_Axis000_OriginDone"
+    ],
+    [
+      "Out_CYw_Rev_02_Pick_A_H_Origin",
+      "ARRAY[0..10] OF Bool",
+      "原点復帰 【Y714】A(左側)ST6 反転2ピックアップ戻",
+      "Out_CYw_Rev_01_Pick_A_H_Origin"
+    ],
+    [
+      "Out_CYw_Rev_02_Pick_A_F_Origin",
+      "ARRAY[0..99] OF Bool",
+      "原点復帰 【Y715】A(左側)ST6 反転2ピックアップ行",
+      "Out_CYw_Rev_01_Pick_A_F_Origin"
+    ],
+    [
+      "Out_CYw_Rev_02_Chk_A_H_Origin",
+      "ARRAY[0..99] OF Bool",
+      "原点復帰 【Y712】A(左側)ST6 反転2チャック閉 戻",
+      "Out_CYw_Rev_01_Chk_A_H_Origin"
+    ],
+    [
+      "Stm_B_Rev_Axis002_Origin",
+      "BOOL",
+      "B(右側) ST4 反転1 モータ原点復帰開始",
+      "Stm_A_Rev_Axis000_Origin"
+    ],
+    [
+      "Stm_B_Rev_Axis002_OriginDone",
+      "BOOL",
+      "B(右側) ST4 反転1 モータ原点復帰完了",
+      "Stm_A_Rev_Axis000_OriginDone"
+    ],
+    [
+      "Homing_Para_Stm_Axis002",
+      "_sHOMING_REF",
+      "B(右側) ST4 反転1 原点復帰パラメータ",
+      "Homing_Para_Stm"
+    ],
+    [
+      "Stm_B_Rev_Axis002_Busy",
+      "BOOL",
+      "B(右側) ST4 反転1 モータ動作中（原点復帰・座標設定）",
+      "Stm_A_Rev_Axis000_OriginDone"
+    ],
+    [
+      "Out_CYw_Rev_01_Pick_B_H_Origin",
+      "ARRAY[0..10] OF Bool",
+      "原点復帰 【Y810】B(右側)ST4 反転1ピックアップ戻",
+      "Out_CYw_Rev_01_Pick_A_H_Origin"
+    ],
+    [
+      "Out_CYw_Rev_01_Pick_B_F_Origin",
+      "ARRAY[0..99] OF Bool",
+      "原点復帰 【Y811】B(右側)ST4 反転1ピックアップ行",
+      "Out_CYw_Rev_01_Pick_A_F_Origin"
+    ],
+    [
+      "Out_CYw_Rev_01_Chk_B_H_Origin",
+      "ARRAY[0..99] OF Bool",
+      "原点復帰 【Y808】B(右側)ST4 反転1チャック閉 戻",
+      "Out_CYw_Rev_01_Chk_A_H_Origin"
+    ],
+    [
+      "Stm_B_Rev_Axis003_Origin",
+      "BOOL",
+      "B(右側) ST6 反転2 モータ原点復帰開始",
+      "Stm_A_Rev_Axis000_Origin"
+    ],
+    [
+      "Stm_B_Rev_Axis003_OriginDone",
+      "BOOL",
+      "B(右側) ST6 反転2 モータ原点復帰完了",
+      "Stm_A_Rev_Axis000_OriginDone"
+    ],
+    [
+      "Homing_Para_Stm_Axis003",
+      "_sHOMING_REF",
+      "B(右側) ST6 反転2 原点復帰パラメータ",
+      "Homing_Para_Stm"
+    ],
+    [
+      "Stm_B_Rev_Axis003_Busy",
+      "BOOL",
+      "B(右側) ST6 反転2 モータ動作中（原点復帰・座標設定）",
+      "Stm_A_Rev_Axis000_OriginDone"
+    ],
+    [
+      "Out_CYw_Rev_02_Pick_B_H_Origin",
+      "ARRAY[0..10] OF Bool",
+      "原点復帰 【Y814】B(右側)ST6 反転2ピックアップ戻",
+      "Out_CYw_Rev_01_Pick_A_H_Origin"
+    ],
+    [
+      "Out_CYw_Rev_02_Pick_B_F_Origin",
+      "ARRAY[0..99] OF Bool",
+      "原点復帰 【Y815】B(右側)ST6 反転2ピックアップ行",
+      "Out_CYw_Rev_01_Pick_A_F_Origin"
+    ],
+    [
+      "Out_CYw_Rev_02_Chk_B_H_Origin",
+      "ARRAY[0..99] OF Bool",
+      "原点復帰 【Y812】B(右側)ST6 反転2チャック閉 戻",
+      "Out_CYw_Rev_01_Chk_A_H_Origin"
+    ]
+  ],
+  "outputOriginContactsAdded": [
+    [
+      88,
+      "Out_CYw_Rev_02_Chk_A_H_Origin[1]"
+    ],
+    [
+      94,
+      "Out_CYw_Rev_02_Pick_A_H_Origin[1]"
+    ],
+    [
+      97,
+      "Out_CYw_Rev_02_Pick_A_F_Origin[1]"
+    ],
+    [
+      184,
+      "Out_CYw_Rev_01_Chk_B_H_Origin[1]"
+    ],
+    [
+      190,
+      "Out_CYw_Rev_01_Pick_B_H_Origin[1]"
+    ],
+    [
+      193,
+      "Out_CYw_Rev_01_Pick_B_F_Origin[1]"
+    ],
+    [
+      196,
+      "Out_CYw_Rev_02_Chk_B_H_Origin[1]"
+    ],
+    [
+      202,
+      "Out_CYw_Rev_02_Pick_B_H_Origin[1]"
+    ],
+    [
+      205,
+      "Out_CYw_Rev_02_Pick_B_F_Origin[1]"
+    ]
+  ],
+  "outputBusyContactsReplaced": [
+    [
+      76,
+      "Mtr_Flip_01_Busy",
+      "Stm_A_Rev_Axis000_Busy"
+    ],
+    [
+      79,
+      "Mtr_Flip_01_Busy",
+      "Stm_A_Rev_Axis000_Busy"
+    ],
+    [
+      82,
+      "Mtr_Flip_01_Busy",
+      "Stm_A_Rev_Axis000_Busy"
+    ],
+    [
+      85,
+      "Mtr_Flip_01_Busy",
+      "Stm_A_Rev_Axis000_Busy"
+    ],
+    [
+      88,
+      "Mtr_Flip_02_Busy",
+      "Stm_A_Rev_Axis001_Busy"
+    ],
+    [
+      91,
+      "Mtr_Flip_02_Busy",
+      "Stm_A_Rev_Axis001_Busy"
+    ],
+    [
+      94,
+      "Mtr_Flip_02_Busy",
+      "Stm_A_Rev_Axis001_Busy"
+    ],
+    [
+      97,
+      "Mtr_Flip_02_Busy",
+      "Stm_A_Rev_Axis001_Busy"
+    ],
+    [
+      184,
+      "Mtr_Flip_01_Busy",
+      "Stm_B_Rev_Axis002_Busy"
+    ],
+    [
+      187,
+      "Mtr_Flip_01_Busy",
+      "Stm_B_Rev_Axis002_Busy"
+    ],
+    [
+      190,
+      "Mtr_Flip_01_Busy",
+      "Stm_B_Rev_Axis002_Busy"
+    ],
+    [
+      193,
+      "Mtr_Flip_01_Busy",
+      "Stm_B_Rev_Axis002_Busy"
+    ],
+    [
+      196,
+      "Mtr_Flip_02_Busy",
+      "Stm_B_Rev_Axis003_Busy"
+    ],
+    [
+      199,
+      "Mtr_Flip_02_Busy",
+      "Stm_B_Rev_Axis003_Busy"
+    ],
+    [
+      202,
+      "Mtr_Flip_02_Busy",
+      "Stm_B_Rev_Axis003_Busy"
+    ],
+    [
+      205,
+      "Mtr_Flip_02_Busy",
+      "Stm_B_Rev_Axis003_Busy"
+    ]
+  ],
+  "originRungs": 35,
+  "motorRungs": 16,
+  "paths": {
+    "global": "878e15c5-b753-4e44-8de7-fbcd7ad09626/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+    "mode": "878e15c5-b753-4e44-8de7-fbcd7ad09626/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+    "device": "878e15c5-b753-4e44-8de7-fbcd7ad09626/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+    "io": "878e15c5-b753-4e44-8de7-fbcd7ad09626/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+    "origin": "878e15c5-b753-4e44-8de7-fbcd7ad09626/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml",
+    "motor": "878e15c5-b753-4e44-8de7-fbcd7ad09626/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml",
+    "output": "878e15c5-b753-4e44-8de7-fbcd7ad09626/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml",
+    "meta": "878e15c5-b753-4e44-8de7-fbcd7ad09626/20a6b651-4c34-401a-965e-db3e18414d5c.xml",
+    "oem": "878e15c5-b753-4e44-8de7-fbcd7ad09626/878e15c5-b753-4e44-8de7-fbcd7ad09626.oem"
+  }
+}

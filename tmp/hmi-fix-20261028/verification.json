@@ -1,0 +1,120 @@
+{
+    "source":  "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029H.smc2",
+    "staged":  "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\hmi-fix-20261028\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029I.smc2",
+    "destination":  "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029I.smc2",
+    "source_sha256":  "3bc62658e473625e52d73ca9ee52834ff0ecd02075e26a8e6f559cbd4b843189",
+    "output_sha256":  "fef473a27776a0c3a0e13e92224a8b6f737ad0bf1c1a76336048387c0d8227cb",
+    "names":  {
+                  "error":  "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml",
+                  "output":  "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml",
+                  "fh":  "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml",
+                  "hmi":  "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml",
+                  "globals":  "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+                  "mode_vars":  "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+                  "other_vars":  "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+                  "io_vars":  "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+                  "metadata":  "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/20a6b651-4c34-401a-965e-db3e18414d5c.xml",
+                  "task":  "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/e2e4c044-641e-49ac-a486-71b29b0e7c87.xml"
+              },
+    "changed_entries":  [
+                            "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml",
+                            "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml"
+                        ],
+    "fixes":  [
+                  {
+                      "row":  5,
+                      "requests":  [
+                                       113
+                                   ],
+                      "original_geometry_preserved":  true
+                  },
+                  {
+                      "row":  6,
+                      "requests":  [
+                                       114,
+                                       115
+                                   ],
+                      "original_geometry_preserved":  true
+                  },
+                  {
+                      "row":  13,
+                      "requests":  [
+                                       118
+                                   ],
+                      "original_geometry_preserved":  true
+                  },
+                  {
+                      "row":  14,
+                      "requests":  [
+                                       119,
+                                       120
+                                   ],
+                      "original_geometry_preserved":  true
+                  }
+              ],
+    "checks":  {
+                   "original_g_geometry_restored_rows":  4,
+                   "wiring_cases":  3072,
+                   "two_cycle_request_cases":  8192,
+                   "hmi_moves":  121,
+                   "all_other_archive_entries_preserved":  true,
+                   "existing_Up_ids_preserved":  true,
+                   "stop_output_task_declarations_and_io_unchanged":  true
+               },
+    "ladder_counts":  {
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/02fa0618-20f0-422f-b44d-3aba0838a381.xml":  16,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/056f39b5-2372-4d32-b892-634336899ec4.xml":  1,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/08c19951-3bae-402d-a637-be66c221f71b.xml":  6,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml":  316,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/13f086b3-1a09-467f-8cff-eea83144ff00.xml":  3,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml":  35,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml":  18,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml":  124,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml":  1,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/41a409d9-8b74-4a8f-a215-a939e2d48477.xml":  1,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/49a83d1d-d863-4a09-a86a-4797edc14a57.xml":  1,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml":  17,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml":  8,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml":  152,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/5ede16be-2114-46c3-84df-a79badb6e32e.xml":  1,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml":  58,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/7b1666c7-ee97-4210-81b2-fed5a6172074.xml":  246,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml":  9,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/98de6707-f996-4f77-aad9-b0569299efb5.xml":  8,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml":  6,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml":  17,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml":  29,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml":  13,
+                          "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml":  16
+                      },
+    "native_validation":  {
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/02fa0618-20f0-422f-b44d-3aba0838a381.xml":  "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/056f39b5-2372-4d32-b892-634336899ec4.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/08c19951-3bae-402d-a637-be66c221f71b.xml":  "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml":  "TOTAL=316 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/13f086b3-1a09-467f-8cff-eea83144ff00.xml":  "TOTAL=3 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml":  "TOTAL=35 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml":  "TOTAL=18 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml":  "TOTAL=124 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/41a409d9-8b74-4a8f-a215-a939e2d48477.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/49a83d1d-d863-4a09-a86a-4797edc14a57.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml":  "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml":  "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml":  "TOTAL=152 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/5ede16be-2114-46c3-84df-a79badb6e32e.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml":  "TOTAL=58 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/7b1666c7-ee97-4210-81b2-fed5a6172074.xml":  "TOTAL=246 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml":  "TOTAL=9 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/98de6707-f996-4f77-aad9-b0569299efb5.xml":  "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml":  "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml":  "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml":  "TOTAL=29 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml":  "TOTAL=13 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "fcdf528a-f66f-40c2-a7aa-2249afbfcf5b/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml":  "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0"
+                          },
+    "application_build":  {
+                              "verified":  false
+                          },
+    "hardware_transfer_performed":  false
+}

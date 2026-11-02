@@ -1,0 +1,173 @@
+[
+  {
+    "db": "abook-1.sqlite",
+    "DisplayName": "中村様【シンフォニア】",
+    "PrimaryEmail": "nakamura-shin@sinfo-t.jp"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "DisplayName": "藤田専務様",
+    "PrimaryEmail": "s-fujita@hirakata-g.co.jp"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "DisplayName": "中村様【アールエフ】",
+    "PrimaryEmail": "os@rfsystemlab.com"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "DisplayName": "中村様【向洋電機】",
+    "PrimaryEmail": "mariko_nakamura@koyoelec.co.jp"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "DisplayName": "中村様【ミスミ】",
+    "PrimaryEmail": "fumito.jztz.nakamura@misumi.co.jp"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "DisplayName": "中村【ISSリアライズ】",
+    "PrimaryEmail": "takuya.nakamura@mb.issgrp.co.jp"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "DisplayName": "藤田様【山陽電研】",
+    "PrimaryEmail": "h.fujita@sanyodenken.co.jp"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "DisplayName": "中村様【宮脇機械】",
+    "PrimaryEmail": "s_nakamura@mkp-fa.co.jp"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "DisplayName": "藤田専務【アクトマシナリー】",
+    "PrimaryEmail": "s-fujita@actmc.co.jp"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "DisplayName": "藤田様【アクトマシナリー】",
+    "PrimaryEmail": "s-fujita@actmc.co.jp"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "DisplayName": "藤田社長【アクトマシナリー】",
+    "PrimaryEmail": "h-fujita@actmc.co.jp"
+  },
+  {
+    "db": "abook-15.sqlite",
+    "DisplayName": "中村様【今永電機産業】",
+    "PrimaryEmail": "m.nakamura@imanaga.co.jp"
+  },
+  {
+    "db": "abook-19.sqlite",
+    "DisplayName": "中村智次長【生産技術】",
+    "PrimaryEmail": "sa-nakamura@ime-group.co.jp"
+  },
+  {
+    "db": "abook-19.sqlite",
+    "DisplayName": "藤田社員【生産技術】",
+    "PrimaryEmail": "ch-fujita@ime-group.co.jp"
+  },
+  {
+    "db": "abook-2.v3.sqlite",
+    "DisplayName": "中村 一浩 主任",
+    "PrimaryEmail": "ka-nakamura@ime-group.co.jp",
+    "Company": "株式会社一宮電機",
+    "Department": "船岡工場",
+    "JobTitle": "主任"
+  },
+  {
+    "db": "abook-2.v3.sqlite",
+    "DisplayName": "中村 吉美 係長",
+    "PrimaryEmail": "y-nakamura@ime-group.co.jp",
+    "Company": "株式会社一宮電機",
+    "Department": "丹比工場",
+    "JobTitle": "係長"
+  },
+  {
+    "db": "abook-2.v3.sqlite",
+    "DisplayName": "中村 和行 係長",
+    "PrimaryEmail": "kz-nakamura@ime-group.co.jp",
+    "Company": "株式会社一宮電機",
+    "Department": "生産技術部",
+    "JobTitle": "係長"
+  },
+  {
+    "db": "abook-2.v3.sqlite",
+    "DisplayName": "八木 課長",
+    "PrimaryEmail": "a-yagi@ime-group.co.jp",
+    "Company": "株式会社一宮電機",
+    "Department": "サーボ工場",
+    "JobTitle": "課長"
+  },
+  {
+    "db": "abook-2.v3.sqlite",
+    "DisplayName": "中村 智 課長",
+    "PrimaryEmail": "sa-nakamura@ime-group.co.jp",
+    "Company": "株式会社一宮電機",
+    "Department": "生産技術部",
+    "JobTitle": "課長"
+  },
+  {
+    "db": "abook-21.sqlite",
+    "DisplayName": "中村主任【船岡】",
+    "PrimaryEmail": "ka-nakamura@ime-group.co.jp"
+  },
+  {
+    "db": "abook-3.sqlite",
+    "DisplayName": "中村様【シンフォニア】",
+    "PrimaryEmail": "nakamura-shin@sinfo-t.jp"
+  },
+  {
+    "db": "abook-6.sqlite",
+    "DisplayName": "八木 工場長【サーボ】",
+    "PrimaryEmail": "a-yagi@ime-group.co.jp"
+  },
+  {
+    "db": "abook.sqlite",
+    "DisplayName": "中村様【シンフォニア】",
+    "PrimaryEmail": "nakamura-shin@sinfo-t.jp"
+  },
+  {
+    "db": "abook.sqlite",
+    "DisplayName": "八木 工場長【サーボ】",
+    "PrimaryEmail": "a-yagi@ime-group.co.jp"
+  },
+  {
+    "db": "abook.v2.sqlite",
+    "DisplayName": "中村係長 [本社/生技]",
+    "PrimaryEmail": "kz-nakamura@ime-group.co.jp"
+  },
+  {
+    "db": "abook.v2.sqlite",
+    "DisplayName": "八木　課長 (サーボ)",
+    "PrimaryEmail": "a-yagi@ime-group.co.jp",
+    "Company": "一宮電機"
+  },
+  {
+    "db": "abook.v2.sqlite",
+    "DisplayName": "中村智　課長",
+    "PrimaryEmail": "sa-nakamura@ime-group.co.jp",
+    "Company": "一宮電機　",
+    "Department": "生産技術"
+  },
+  {
+    "db": "abook.v3.sqlite",
+    "DisplayName": "中村さん [生技]",
+    "PrimaryEmail": "kz-nakamura@ime-group.co.jp"
+  },
+  {
+    "db": "abook.v3.sqlite",
+    "DisplayName": "中村智　課長",
+    "PrimaryEmail": "sa-nakamura@ime-group.co.jp",
+    "Company": "一宮電機　",
+    "Department": "生産技術"
+  },
+  {
+    "db": "abook.v3.sqlite",
+    "DisplayName": "八木　課長 (サーボ)",
+    "PrimaryEmail": "a-yagi@ime-group.co.jp",
+    "Company": "一宮電機"
+  }
+]

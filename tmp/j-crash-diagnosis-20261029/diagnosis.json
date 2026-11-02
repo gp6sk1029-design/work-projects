@@ -1,0 +1,44 @@
+{
+  "I": {
+    "path": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029I.smc2",
+    "sha256": "0fdfb3ef932a3a506df1084c349b6d467d7f4b2032b35004c523aad8631d66d6",
+    "zip_crc_ok": true,
+    "xml_parsed": 138,
+    "xml_errors": [],
+    "rungs": 1101
+  },
+  "J": {
+    "path": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029J.smc2",
+    "sha256": "3d269d74ea049278ea043e9a3ea874ee5d18992e23612e97a6d086a135f1af1b",
+    "zip_crc_ok": true,
+    "xml_parsed": 144,
+    "xml_errors": [],
+    "rungs": 1100
+  },
+  "native_connection_audit": {
+    "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029G.smc2": "TOTAL_RUNGS=981 COILS=1194 MISSING=0 PARSE_MODEL_FAIL=0\r\n",
+    "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029I.smc2": "MISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[107] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nMISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[106] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nMISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[105] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nMISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[104] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nMISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[103] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nMISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[102] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nMISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[101] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nTOTAL_RUNGS=1101 COILS=1314 MISSING=7 PARSE_MODEL_FAIL=0\r\n",
+    "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029J.smc2": "MISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[107] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nMISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[106] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nMISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[105] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nMISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[104] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nMISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[103] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nMISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[102] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nMISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[101] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nTOTAL_RUNGS=1100 COILS=1314 MISSING=7 PARSE_MODEL_FAIL=0\r\n"
+  },
+  "observed_logs": {
+    "file": "C:\\Users\\SEIGI-N13\\AppData\\Roaming\\OMRON\\CXAP\\Log\\SysmacStudioErrorTrace.log",
+    "display_crashes": [
+      "2026-10-29T08:41:52.349",
+      "2026-10-29T08:43:28.845"
+    ],
+    "exception": "System.ArgumentOutOfRangeException",
+    "method": "LadderLayoutStrategy.AssignXCoordinate",
+    "user_report": "リビルドではエラー表示なし、Error_エラー処理を開くと異常終了"
+  },
+  "findings": {
+    "section": "Error_エラー処理",
+    "row": 11,
+    "variables": "HMI_Message_Request[101]～[107]",
+    "confirmed_defect": "メーカー変換後モデルでコイルの出力接続点/出力辺が0。正常な他コイルには出力接続あり。",
+    "display_code_evidence": "AssignXCoordinateはコイルの出力辺GetOutputs(vertex)[0]を参照する経路を持つ。",
+    "causal_status": "不正接続7件は確認済み。利用者の発生画面とログに整合し有力な原因。UIでの修正前後再現検証は未実施。",
+    "inherited_by_i_and_j": true,
+    "source_projects_modified": false,
+    "repair_performed": false
+  }
+}

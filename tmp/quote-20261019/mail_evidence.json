@@ -1,0 +1,381 @@
+{
+  "templates": [
+    {
+      "Date": "Wed, 17 Jan 2024 17:38:11 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "有限会社スガテクノ <info@sugatechno.com>",
+      "Cc": "中村 智 課長 <sa-nakamura@ime-group.co.jp>, 宮元 智秋 主任 <ch-miyamoto@ime-group.co.jp>",
+      "Subject": "注文書・図面の送付 【有限会社 スガテクノ様】 ",
+      "Message-ID": "<73b16438-6aa0-4529-9418-7a20a34cfe8e@ime-group.co.jp>",
+      "start": 33,
+      "end": 2104,
+      "mailbox": "Templates",
+      "body": ""
+    },
+    {
+      "Date": "Wed, 17 Jan 2024 17:46:24 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "藤宏商事 藤井様 <fujihiro1127@eagle.ocn.ne.jp>",
+      "Cc": "中村 智 課長 <sa-nakamura@ime-group.co.jp>, 宮元 智秋 主任 <ch-miyamoto@ime-group.co.jp>",
+      "Subject": "注文書・図面の送付 【藤宏商事 様】",
+      "Message-ID": "<23bfa20c-ee70-4c8f-89bc-11406934f837@ime-group.co.jp>",
+      "start": 2137,
+      "end": 4181,
+      "mailbox": "Templates",
+      "body": ""
+    },
+    {
+      "Date": "Wed, 17 Jan 2024 17:48:48 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "営業1課 福田係長 <m_fukuda@yasuhira.com>, 山畑 <h_yamahata@yasuhira.com>",
+      "Cc": "中村 智 課長 <sa-nakamura@ime-group.co.jp>, 宮元 智秋 主任 <ch-miyamoto@ime-group.co.jp>",
+      "Subject": "注文書・図面の送付 【株式会社ヤスヒラ 様】 ",
+      "Message-ID": "<c902e030-6cb2-45dc-828f-e97db4cdc579@ime-group.co.jp>",
+      "start": 4214,
+      "end": 6392,
+      "mailbox": "Templates",
+      "body": ""
+    },
+    {
+      "Date": "Fri, 14 Jun 2024 08:25:50 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "オムロン(株) 大原 様 <naoki.ohara@omron.com>",
+      "Cc": "渡辺 耕二 部長 <ko-watanabe@ime-group.co.jp>, 中村 智 課長 <sa-nakamura@ime-group.co.jp>",
+      "Subject": "○○○○○○の件について",
+      "Message-ID": "<df0c19d8-dc1b-4e0c-8520-69aedca945df@ime-group.co.jp>",
+      "start": 6425,
+      "end": 8411,
+      "mailbox": "Templates",
+      "body": ""
+    },
+    {
+      "Date": "Tue, 4 Aug 2026 11:59:17 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "藤本様【福西電機】 <fujimoto.keita@denzai.jp>, 木村様【福西電機】 <kimura.yuko@denzai.jp>",
+      "Cc": "中村 智 課長 <sa-nakamura@ime-group.co.jp>",
+      "Subject": "見積書の送付 【福西電機 様】 ",
+      "Message-ID": "<28c0bad5-facf-4bea-a5ff-e795b44e5736@ime-group.co.jp>",
+      "start": 8444,
+      "end": 10549,
+      "mailbox": "Templates",
+      "body": ""
+    }
+  ],
+  "techno": [
+    {
+      "Date": "Mon, 25 Dec 2023 18:00:07 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "有限会社スガテクノ <info@sugatechno.com>",
+      "Cc": "中村 智 課長 <sa-nakamura@ime-group.co.jp>, 宮元 智秋 主任 <ch-miyamoto@ime-group.co.jp>",
+      "Subject": "Re: 注文書・図面の送付",
+      "Message-ID": "<b2886525-db83-4226-926a-6f3df5c03eb6@ime-group.co.jp>",
+      "start": 585704048,
+      "end": 585726437,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Wed, 17 Jan 2024 18:35:21 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "有限会社スガテクノ <info@sugatechno.com>",
+      "Cc": "中村 智 課長 <sa-nakamura@ime-group.co.jp>, 宮元 智秋 主任 <ch-miyamoto@ime-group.co.jp>",
+      "Subject": "注文書・図面の送付 【有限会社 スガテクノ様】",
+      "Message-ID": "<4cd38f48-c5f1-493b-b4ff-5e74f91bb302@ime-group.co.jp>",
+      "start": 621359919,
+      "end": 622266289,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Tue, 26 Mar 2024 16:09:50 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "主任 樋引 登喜男 さん <to-hibiki@ime-group.co.jp>",
+      "Cc": "",
+      "Subject": "テクノ SLM4000 取扱説明書",
+      "Message-ID": "<ac808251-e07f-4113-a92f-c0ef2cc0d4a6@ime-group.co.jp>",
+      "start": 653810564,
+      "end": 655478440,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Wed, 30 Oct 2024 17:18:55 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "大坪 寿佳 主任 <hi-ohtsubo@ime-group.co.jp>",
+      "Cc": "櫛田 健二 工場長 <ke-kushida@ime-group.co.jp>, 開道 利枝 主任 <r-kaidou@ime-group.co.jp>",
+      "Subject": "スガテクノ LF巻線ノズル 図面 注文例",
+      "Message-ID": "<cbf3d3d0-994c-4ee2-b186-b77ed55407b0@ime-group.co.jp>",
+      "start": 729966751,
+      "end": 730938569,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Fri, 27 Mar 2026 10:45:19 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "(株)テクノ 様 <mail@open-mc.com>",
+      "Cc": "",
+      "Subject": "SLM4000のWindows11対応USBドライバに関するご相談",
+      "Message-ID": "<e1f8a99c-0bc2-456e-abdf-8dc2b389337d@ime-group.co.jp>",
+      "start": 974141907,
+      "end": 974202385,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Fri, 27 Mar 2026 12:02:55 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "株式会社テクノ <mail@open-mc.com>",
+      "Cc": "hyamanaka@open-mc.com",
+      "Subject": "Re: SLM4000のWindows11対応USBドライバに関するご相談",
+      "Message-ID": "<db8152c9-c189-4a64-b072-53e36667a039@ime-group.co.jp>",
+      "start": 974202418,
+      "end": 974271363,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Fri, 27 Mar 2026 13:30:22 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "平岩 大輔 課長 <da-hiraiwa@ime-group.co.jp>",
+      "Cc": "エドセル 生技 <m-ascutia@ime-group.co.jp>",
+      "Subject": "DCW巻線機(テクノSLM4000仕様)通信ケーブルを貸して頂けないでしょうか。",
+      "Message-ID": "<f4e1c16c-91c7-41b3-a1a8-72ec51865b09@ime-group.co.jp>",
+      "start": 974271396,
+      "end": 974530029,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Fri, 27 Mar 2026 13:39:01 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "株式会社テクノ <mail@open-mc.com>",
+      "Cc": "hyamanaka@open-mc.com",
+      "Subject": "Re: SLM4000のWindows11対応USBドライバに関するご相談",
+      "Message-ID": "<032af92f-9048-4a2d-973e-93d92adf5e37@ime-group.co.jp>",
+      "start": 974530062,
+      "end": 974870946,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Fri, 27 Mar 2026 16:07:34 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "株式会社テクノ <mail@open-mc.com>",
+      "Cc": "hyamanaka@open-mc.com",
+      "Subject": "Re: SLM4000のWindows11対応USBドライバに関するご相談",
+      "Message-ID": "<7105535b-f628-41d2-8a72-10871fee7862@ime-group.co.jp>",
+      "start": 974870979,
+      "end": 975580382,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Tue, 31 Mar 2026 15:25:39 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "山中 裕貴 <hyamanaka@open-mc.com>, 株式会社テクノ <mail@open-mc.com>",
+      "Cc": "",
+      "Subject": "Re: SLM4000のWindows11対応USBドライバに関するご相談",
+      "Message-ID": "<9c389a4a-fff7-4fcf-8d49-09f334d58717@ime-group.co.jp>",
+      "start": 976706675,
+      "end": 977702952,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Thu, 23 Apr 2026 08:26:13 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "k-itakura <k-itakura@ime-group.co.jp>",
+      "Cc": "",
+      "Subject": "Re: テクノ教育訓練記録追記",
+      "Message-ID": "<7d7eba0f-e1d5-490b-9924-87167b7c4cbf@ime-group.co.jp>",
+      "start": 995953925,
+      "end": 996947622,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Tue, 28 Apr 2026 08:30:39 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "山中 裕貴 <hyamanaka@open-mc.com>, 株式会社テクノ <mail@open-mc.com>",
+      "Cc": "",
+      "Subject": "Re: SLM4000のWindows11対応USBドライバに関するご相談",
+      "Message-ID": "<264a3fe7-0d3a-419c-9c6c-48e5205e070a@ime-group.co.jp>",
+      "start": 1019841520,
+      "end": 1020565291,
+      "mailbox": "Sent",
+      "body": "テクノ\r\n山中 様\r\n\r\n大変お世話になっております。\r\n一宮電機の幸田です。\r\n\r\n納品書および請求書につきまして、確かに受領いたしました。\r\nご手配いただき、誠にありがとうございます。\r\n\r\n内容を確認のうえ、社内にて処理を進めさせていただきます。\r\n引き続き、よろしくお願いいたします。\r\n\r\nOn 2026/04/27 14:39, 山中 裕貴 wrote:\r\n> 一宮電機\r\n> 幸田 様\r\n>\r\n> お世話になります。\r\n> テクノの山中です。\r\n>\r\n> 本件、納品・請求書をお送りします。\r\n> よろしくお願いいたします。\r\n>\r\n> 以上です。\r\n>\r\n> On 2026/03/31 15:25, 幸田 祥平 wrote:\r\n>> 株式会社テクノ\r\n>> 山中 様\r\n>>\r\n>> ご無沙汰しております。\r\n>> いつも大変お世話になっております。\r\n>> 一宮電機の幸田です。\r\n>>\r\n>> 早速ではございますが、\r\n>> 注文書を添付いたしますので、\r\n>> よろしくお願いいたします。\r\n>>\r\n>>\r\n>>\r\n>> On 2026/03/31 14:38, 山中 裕貴 wrote:\r\n>>> 一宮電機\r\n>>> 幸田 様\r\n>>>\r\n>>> お世話になります。\r\n>>> テクノの山中です。\r\n>>>\r\n>>> 本件のお見積もりをお送りします。\r\n>>>\r\n>>> 以上、よろしくお願いいたします。\r\n>>>\r\n>>> On 2026/03/27 17:02, 株式会社テクノ wrote:\r\n>>>> 一宮電機幸田様\r\n>>>> お世話になっております。\r\n>>>> テクノ高尾です。\r\n>>>> １式であれば、在庫あります。\r\n>>>> 本日、営業の者が不在のため、\r\n>>>> 来週早々に見積もりお出しします。\r\n>>>> 以上です。\r\n>>>> よろしくお願い致します。\r\n>>>>\r\n>>>> _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/\r\n>>>> 株式会社　テ ク ノ\r\n>>>> 高尾　俊介　　mail@open-mc.com\r\n>>>> HomePage　http://www.open-mc.com\r\n>>>> Tel:04-2964-3677 Fax:04-2964-3322\r\n>>>> 〒358-0011 埼玉県入間市下藤沢１３０４－５\r\n>>>> _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/\r\n>>>>\r\n>>>> ------------------------------------------------------------------------\r\n>>>> *From:* 幸田 祥平 [mailto:sy-kouda@ime-group.co.jp]\r\n>>>> *Sent:* Friday, March 27, 2026 4:08 PM\r\n>>>> *To:* 株式会社テクノ\r\n>>>> *Cc:* hyamanaka@open-mc.com\r\n>>>> *Subject:* Re: SLM4000のWindows11対応USBドライバに関するご相談\r\n>>>>\r\n>>>> 株式会社テクノ\r\n>>>>  高尾 様\r\n>>>>\r\n>>>> お世話になっております。\r\n>>>> 一宮電機の幸田です。\r\n>>>>\r\n>>>> ①「CB-C-008-01」は必要ですか ⇒「CB-C-008-01」もよろしくお願いします。\r\n>>>>\r\n>>>> ②数量はいくつ必要ですか？ ⇒ 各1個ずつよろしくお願いします。\r\n>>>>\r\n>>>> お手数をおかけしますが、\r\n>>>> お見積りの方をよろしくお願いいたします。\r\n>>>>\r\n>>>> On 2026/03/27 14:49, 株式会社テクノ wrote:\r\n>>>>> 一宮電機幸田様\r\n>>>>> お世話になっております。\r\n>>>>> テクノ高尾です。\r\n>>>>> ２点質問です。\r\n>>>>> ①「CB-C-008-01」は必要ですか？\r\n>>>>> 　この232Cケーブルは一般に販売されているケーブルとはpin配置が異なるため、\r\n>>>>> 　これを使わないと通信ができないです。\r\n>>>>> 　マニュアルに配線は公開しているので、どなたにでも製作は可能です。\r\n>>>>> ②数量はいくつ必要ですか？\r\n>>>>> 　在庫が限られており、現状の在庫が尽きると、製作するのが結構大変です。\r\n>>>>> 　数量が間に合うと良いのですが。\r\n>>>>> 以上です。\r\n>>>>> よろしくお願い致します。\r\n>>>>>\r\n>>>>> ------------------------------------------------------------------------\r\n>>>>> *From:* 幸田 祥平 [mailto:sy-kouda@ime-group.co.jp]\r\n>>>>> *Sent:* Friday, March 27, 2026 1:39 PM\r\n>>>>> *To:* 株式会社テクノ\r\n>>>>> *Cc:* hyamanaka@open-mc.com\r\n>>>>> *Subject:* Re: SLM4000のWindows11対応USBドライバに関するご相談\r\n>>>>>\r\n>>>>> 株式会社テクノ\r\n>>>>>  高尾 様\r\n>>>>>\r\n>>>>> お世話になっております。\r\n>>>>> 一宮電機の幸田です。\r\n>>>>>\r\n>>>>> こちらの説明不足で、大変失礼いたしました。\r\n>>>>> 下記のRS232Cミニボードと基盤用のケーブルをご購入させて頂きたいのですが、\r\n>>>>> 可能でしょうか？\r\n>>>>>\r\n>>>>> 何卒よろしくお願い申し上げます。\r\n>>>>>\r\n>>>>>\r\n>>>>>\r\n>>>>> On 2026/03/27 13:31, 株式会社テクノ wrote:\r\n>>>>>> 一宮電機幸田様\r\n>>>>>> お世話になっております。\r\n>>>>>> テクノ高尾です。\r\n>>>>>> USB-RS232C変換ケーブルは弊社製品ではなく、\r\n>>>>>> 一般的に販売されているものです。\r\n>>>>>> 例えば、\r\n>>>>>> https://www.buffalo.jp/product/detail/bsusrc0710bs.html\r\n>>>>>> とか、\r\n>>>>>> https://www.aten.com/jp/ja/products/usb%E3%82%BD%E3%83%AA%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%BA/%E3%82%B3%E3%83%B3%E3%83%90%E3%83%BC%E3%82%BF%E3%83%BC/uc232a1/\r\n>>>>>> のようなものです。\r\n>>>>>> （弊社では、「SRC06USB」を使ってます。前者は後継機種です。）\r\n>>>>>> いずれも、amazonやモノタロウ等で、1本3000～5000円で購入できます。\r\n>>>>>> ちなみに、パソコンにこれらを挿入してD-Subコネクタに弊社製の232Cケーブルを繋ぎます。\r\n>>>>>> 以上、\r\n>>>>>> ご検討の程、\r\n>>>>>> よろしくお願い致します。\r\n>>>>>>\r\n>>>>>> ------------------------------------------------------------------------\r\n>>>>>> *From:* 幸田 祥平 [mailto:sy-kouda@ime-group.co.jp]\r\n>>>>>> *Sent:* Friday, March 27, 2026 12:03 PM\r\n>>>>>> *To:* 株式会社テクノ\r\n>>>>>> *Cc:* hyamanaka@open-mc.com\r\n>>>>>> *Subject:* Re: SLM4000のWindows11対応USBドライバに関するご相談\r\n>>>>>>\r\n>>>>>> 株式会社テクノ\r\n>>>>>> 高尾 様\r\n>>>>>>\r\n>>>>>> お世話になっております。\r\n>>>>>> 一宮電機の幸田です。\r\n>>>>>>\r\n>>>>>> 承知いたしました。\r\n>>>>>> USB-RS232Cの変換ケーブルの購入検討してみたいと思います。\r\n>>>>>> お見積りを頂いてもよろしいでしょうか？\r\n>>>>>>\r\n>>>>>> On 2026/03/27 11:36, 株式会社テクノ wrote:\r\n>>>>>>> 一宮電機幸田様\r\n>>>>>>> お世話になっております。\r\n>>>>>>> テクノ高尾です。\r\n>>>>>>> 弊社都合で恐縮ですが、SLM4000の64Bit USBドライバの開発はできません。\r\n>>>>>>> （技術的には開発可能ですが、デジタル署名の維持のため数十万円／年の\r\n>>>>>>> 　費用負担が発生するため会社の方針として開発はしないことになっています。）\r\n>>>>>>> 通信速度が遅いですが、RS-232Cシリアル通信をご使用になるか、\r\n>>>>>>> 後継機種SLM8000への置き換えをご検討ください。\r\n>>>>>>> ちなみに、\r\n>>>>>>> 昨今のPCにはシリアルポートは付いていないことが多いですが、\r\n>>>>>>> USB-RS232Cの変換ケーブル等は今も入手可能です。\r\n>>>>>>> 以上です。\r\n>>>>>>> ご検討の程、\r\n>>>>>>> よろしくお願い致します。\r\n>>>>>>>\r\n>>>>>>> _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/\r\n>>>>>>> 株式会社　テ ク ノ\r\n>>>>>>> 高尾　俊介　　mail@open-mc.com\r\n>>>>>>> HomePage　http://www.open-mc.com\r\n>>>>>>> Tel:04-2964-3677 Fax:04-2964-3322\r\n>>>>>>> 〒358-0011 埼玉県入間市下藤沢１３０４－５\r\n>>>>>>> _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/\r\n>>>>>>>\r\n>>>>>>>\r\n>>>>>>> ------------------------------------------------------------------------\r\n>>>>>>> *From:* 幸田 祥平 [mailto:sy-kouda@ime-group.co.jp]\r\n>>>>>>> *Sent:* Friday, March 27, 2026 10:45 AM\r\n>>>>>>> *To:* (株)テクノ 様\r\n>>>>>>> *Subject:* SLM4000のWindows11対応USBドライバに関するご相談\r\n>>>>>>>\r\n>>>>>>> 株式会社テクノ\r\n>>>>>>> 高尾 様\r\n>>>>>>>\r\n>>>>>>> 大変ご無沙汰しております。\r\n>>>>>>> 一宮電機の幸田です。\r\n>>>>>>>\r\n>>>>>>> 本日は、貴社製品「SLM4000」の件でご相談があり、ご連絡させていただきました。\r\n>>>>>>>\r\n>>>>>>> 現在、弊社のWindows11（64ビット版）PCにて、同製品のUSB接続を試みております。\r\n>>>>>>> しかし、取扱説明書を拝見したところ、Windows11 \r\n>>>>>>> 64ビット版には対応していない旨の記載がございました。\r\n>>>>>>>\r\n>>>>>>> つきましては、Windows11 \r\n>>>>>>> 64ビット版に対応したUSBドライバをご提供いただくことは可能でしょうか。\r\n>>>>>>> なお、ご提供にあたり費用が発生いたします場合は、お見積もりをいただけますと幸いです。\r\n>>>>>>>\r\n>>>>>>> ご無沙汰しておりますところ、突然のお願いで大変恐縮にですが、\r\n>>>>>>> ご対応のほどよろしくお願いします。\r\n>>>>>>>\r\n>>>>>>>\r\n>>>>>>>\r\n>>>>>>>\r\n>>>>>>>\r\n>>>>>>\r\n>>>>>\r\n>>>>\r\n>>>\r\n>>> -- \r\n>>> ===================================\r\n>>> 株式会社　テクノ\r\n>>> 山中 裕貴\r\n>>> Mail:hyamanaka@open-mc.com\r\n>>>       mail@open-mc.com\r\n>>> HP　:http://www.open-mc.com\r\n>>> Tel :04-2964-3677 Fax:04-2964-3322\r\n>>> 〒358-0011 埼玉県入間市下藤沢1304-5\r\n>>> ===================================\r\n>>>\r\n>>\r\n>\r\n> -- \r\n> ===================================\r\n> 株式会社　テクノ\r\n> 山中 裕貴\r\n> Mail:hyamanaka@open-mc.com\r\n>       mail@open-mc.com\r\n> HP　:http://www.open-mc.com\r\n> Tel :04-2964-3677 Fax:04-2964-3322\r\n> 〒358-0011 埼玉県入間市下藤沢1304-5\r\n> ===================================\r\n>\r\n"
+    },
+    {
+      "Date": "Wed, 29 Jul 2026 11:45:49 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "(株)テクノ 様 <mail@open-mc.com>",
+      "Cc": "",
+      "Subject": "SLM4000でのPanasonic A6シリーズモータ制御について",
+      "Message-ID": "<7502efdc-2f48-496f-b211-b937786fdd18@ime-group.co.jp>",
+      "start": 1067290574,
+      "end": 1067294184,
+      "mailbox": "Sent",
+      "body": "株式会社テクノ高尾 様\r\n\r\nお世話になっております。\r\n一宮電機の幸田です。\r\n\r\n早速ですが、SLM4000に関して確認させてください。\r\nPanasonic A6シリーズのサーボモータを使用した制御は可能でしょうか。\r\n想定している構成は下記のとおりです。\r\n\r\nモータ：MSMF042L1S1　アンプ：MBDLT25SF\r\nモータ：MSMF082L1S1　アンプ：MCDLT35SF\r\nモータ：MSMF102L1C6　アンプ：MDDLT55SF\r\n\r\nなお、配線・制御方式は位置決めパルス方式を予定しております。\r\nお手数をおかけしますが、ご確認のほどよろしくお願いいたします。\r\n\r\n/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/\r\n株式会社　一宮電機\r\n   生産技術部\r\n      幸田　祥平 （Shohei Koda）\r\n〒679-5165\r\n兵庫県たつの市新宮町光都1丁目1179-17\r\nTEL ： 0791-59-8205\r\nFAX ： 0791-59-8213\r\nE-mail ： sy-kouda@ime-group.co.jp\r\n/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/"
+    },
+    {
+      "Date": "Tue, 4 Aug 2026 14:13:57 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "株式会社テクノ <mail@open-mc.com>",
+      "Cc": "中村智次長【生産技術】 <sa-nakamura@ime-group.co.jp>",
+      "Subject": "SLM4000プログラム改造費用について",
+      "Message-ID": "<eee05328-ae62-41a0-a607-4a25fc00cba0@ime-group.co.jp>",
+      "start": 1079177039,
+      "end": 1079285100,
+      "mailbox": "Sent",
+      "body": "株式会社テクノ\r\n高尾 様\r\n\r\nお世話になっております。\r\n一宮電機の幸田です。\r\n\r\nご回答いただき、誠にありがとうございます。\r\nA6シリーズのモータ制御にも関連する件で、ご相談がございます。\r\n今回、巻線機の制御を弊社在庫品のSLM4000へ変更することを検討しております。\r\nしかし、弊社在庫品SLM4000ではTBLREEL命令に対応していないと認識しております。\r\nつきましては、当該命令に対応するためのプログラム改修をご対応いただくことは可能でしょうか。\r\n対象は4台となります。恐れ入りますが、改修費用のお見積りをご提示いただけますと幸いです。\r\n\r\nお手数をおかけしますが、何卒よろしくお願いいたします。\r\n\r\n\r\nOn 2026/07/31 15:45, 株式会社テクノ wrote:\r\n> 一宮電機 幸田様\r\n> いつもお世話になっております。\r\n> テクノ高尾です。\r\n> 回答が遅くなりすいません。\r\n> 各A6のサーボは使用可能です。\r\n> 理由としては、A6の差動ラインドライバの入力が最大8Mppsまで可能という仕様なので、\r\n> SLM4000の最大4Mppsを十分満たすということです。\r\n> 以上です。\r\n> よろしくお願い致します。\r\n>\r\n> ------------------------------------------------------------------------\r\n> *From:* 幸田 祥平 [mailto:sy-kouda@ime-group.co.jp]\r\n> *Sent:* Wednesday, July 29, 2026 11:46 AM\r\n> *To:* (株)テクノ 様\r\n> *Subject:* SLM4000でのPanasonic A6シリーズモータ制御について\r\n>\r\n> 株式会社テクノ高尾 様\r\n>\r\n> お世話になっております。\r\n> 一宮電機の幸田です。\r\n>\r\n> 早速ですが、SLM4000に関して確認させてください。\r\n> Panasonic A6シリーズのサーボモータを使用した制御は可能でしょうか。\r\n> 想定している構成は下記のとおりです。\r\n>\r\n> モータ：MSMF042L1S1　アンプ：MBDLT25SF\r\n> モータ：MSMF082L1S1　アンプ：MCDLT35SF\r\n> モータ：MSMF102L1C6　アンプ：MDDLT55SF\r\n>\r\n> なお、配線・制御方式は位置決めパルス方式を予定しております。\r\n> お手数をおかけしますが、ご確認のほどよろしくお願いいたします。\r\n>\r\n> /-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/\r\n> 株式会社　一宮電機\r\n>   生産技術部\r\n>      幸田　祥平 （Shohei Koda）\r\n> 〒679-5165\r\n> 兵庫県たつの市新宮町光都1丁目1179-17\r\n> TEL ： 0791-59-8205\r\n> FAX ： 0791-59-8213\r\n> E-mail ： sy-kouda@ime-group.co.jp\r\n> /-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/ \r\n"
+    },
+    {
+      "Date": "Wed, 5 Aug 2026 14:19:37 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "株式会社テクノ <mail@open-mc.com>",
+      "Cc": "'中村智次長【生産技術】' <sa-nakamura@ime-group.co.jp>",
+      "Subject": "Re: SLM4000プログラム改造費用について",
+      "Message-ID": "<ffcae0d8-2a82-4503-8f94-188e971455b2@ime-group.co.jp>",
+      "start": 1079285133,
+      "end": 1079301607,
+      "mailbox": "Sent",
+      "body": "株式会社テクノ\r\n高尾 様\r\n\r\nお世話になっております。\r\n一宮電機の幸田です。\r\n\r\n承知いたしました。\r\n弊社在庫品は全部で5台になります。\r\n\r\nSLM1084R\r\nSLM1085R\r\nSLM1087R\r\nSLM1125R\r\nSLM1126R\r\n\r\nお手数をおかけしますが、\r\nご確認よろしくお願い致します。\r\n\r\nOn 2026/08/05 14:07, 株式会社テクノ wrote:\r\n> 一宮電機 幸田様\r\n> いつもお世話になっております。\r\n> テクノ高尾です。\r\n> すいません、再確認したところ私が認識を間違えていました。\r\n> TBLREEL命令は御社向け専用のSLM4000に追加済みです。\r\n> (2018年4月リリース)\r\n> 最新のソフトにはTBLREELが含まれますが、\r\n> 2018/4以前に出荷したものには、まだ機能が追加されていないバージョンのソフトが\r\n> 書き込まれていると思われます。\r\n> なので、該当のSLM4000に対するソフトバージョンアップで\r\n> すぐ使用できる状態になると思われます。\r\n> 対象４台のSLM4000のシリアルNo.を教えてください。\r\n> それによって、対応が変わると思います。\r\n> 以上です。\r\n> よろしくお願い致します。\r\n>\r\n> ------------------------------------------------------------------------\r\n> *From:* 幸田 祥平 [mailto:sy-kouda@ime-group.co.jp]\r\n> *Sent:* Tuesday, August 04, 2026 2:14 PM\r\n> *To:* 株式会社テクノ\r\n> *Cc:* 中村智次長【生産技術】\r\n> *Subject:* SLM4000プログラム改造費用について\r\n>\r\n> 株式会社テクノ\r\n> 高尾 様\r\n>\r\n> お世話になっております。\r\n> 一宮電機の幸田です。\r\n>\r\n> ご回答いただき、誠にありがとうございます。\r\n> A6シリーズのモータ制御にも関連する件で、ご相談がございます。\r\n> 今回、巻線機の制御を弊社在庫品のSLM4000へ変更することを検討しております。\r\n> しかし、弊社在庫品SLM4000ではTBLREEL命令に対応していないと認識しております。\r\n> つきましては、当該命令に対応するためのプログラム改修をご対応いただくことは可能でしょうか。\r\n> 対象は4台となります。恐れ入りますが、改修費用のお見積りをご提示いただけますと幸いです。\r\n>\r\n> お手数をおかけしますが、何卒よろしくお願いいたします。\r\n>\r\n>\r\n> On 2026/07/31 15:45, 株式会社テクノ wrote:\r\n>> 一宮電機 幸田様\r\n>> いつもお世話になっております。\r\n>> テクノ高尾です。\r\n>> 回答が遅くなりすいません。\r\n>> 各A6のサーボは使用可能です。\r\n>> 理由としては、A6の差動ラインドライバの入力が最大8Mppsまで可能という仕様なので、\r\n>> SLM4000の最大4Mppsを十分満たすということです。\r\n>> 以上です。\r\n>> よろしくお願い致します。\r\n>>\r\n>> ------------------------------------------------------------------------\r\n>> *From:* 幸田 祥平 [mailto:sy-kouda@ime-group.co.jp]\r\n>> *Sent:* Wednesday, July 29, 2026 11:46 AM\r\n>> *To:* (株)テクノ 様\r\n>> *Subject:* SLM4000でのPanasonic A6シリーズモータ制御について\r\n>>\r\n>> 株式会社テクノ高尾 様\r\n>>\r\n>> お世話になっております。\r\n>> 一宮電機の幸田です。\r\n>>\r\n>> 早速ですが、SLM4000に関して確認させてください。\r\n>> Panasonic A6シリーズのサーボモータを使用した制御は可能でしょうか。\r\n>> 想定している構成は下記のとおりです。\r\n>>\r\n>> モータ：MSMF042L1S1　アンプ：MBDLT25SF\r\n>> モータ：MSMF082L1S1　アンプ：MCDLT35SF\r\n>> モータ：MSMF102L1C6　アンプ：MDDLT55SF\r\n>>\r\n>> なお、配線・制御方式は位置決めパルス方式を予定しております。\r\n>> お手数をおかけしますが、ご確認のほどよろしくお願いいたします。\r\n>>\r\n>> /-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/\r\n>> 株式会社　一宮電機\r\n>>   生産技術部\r\n>>      幸田　祥平 （Shohei Koda）\r\n>> 〒679-5165\r\n>> 兵庫県たつの市新宮町光都1丁目1179-17\r\n>> TEL ： 0791-59-8205\r\n>> FAX ： 0791-59-8213\r\n>> E-mail ： sy-kouda@ime-group.co.jp\r\n>> /-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/ \r\n>\r\n"
+    },
+    {
+      "Date": "Wed, 5 Aug 2026 14:39:23 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "株式会社テクノ <mail@open-mc.com>",
+      "Cc": "'中村智次長【生産技術】' <sa-nakamura@ime-group.co.jp>",
+      "Subject": "Re: SLM4000プログラム改造費用について",
+      "Message-ID": "<64ff1c6a-696a-42d8-b733-6a5dabc6d42b@ime-group.co.jp>",
+      "start": 1079301640,
+      "end": 1079330604,
+      "mailbox": "Sent",
+      "body": "株式会社テクノ\r\n高尾 様\r\n\r\nお世話になっております。\r\n一宮電機の幸田です。\r\n\r\n承知いたしました。\r\n\r\nこの度はいろいろとご協力いただき、\r\n誠にありがとうございます。\r\n\r\n引き続き今後ともよろしくお願いいたします。\r\n\r\n\r\nOn 2026/08/05 14:43, 株式会社テクノ wrote:\r\n> 一宮電機 幸田様\r\n> いつもお世話になっております。\r\n> テクノ高尾です。\r\n> ご連絡いただいた５台はいずれもTBLREELが使えるバージョンのソフトを書き込んだものでした。\r\n> なので、そのまま使えるはずです。\r\n> 弊社の出荷時の記録によると\r\n> ○出荷日：2018/4/6\r\n> 　・シリアル\r\n> 　　SLM1084R\r\n> 　　SLM1085R\r\n> 　　SLM1087R\r\n> 　・バージョン\r\n> 　　Romソフト：V1.1.0\r\n>     SUM(Flash):5AE2\r\n> ○出荷日：2018/9/18\r\n> 　・シリアル\r\n> 　　SLM1125R\r\n> 　　SLM1126R\r\n> 　・バージョン\r\n> 　　Romソフト：V1.1.0\r\n>     SUM(Flash):5AE2\r\n> ボードに電源を入れてPCと通信できる状態にして、\r\n> セッティングPCのバージョン情報をご覧いただいた時、\r\n> 上記のバージョンとSUM値が読み出せれば間違い無いです。\r\n> ただし、パソコンソフト側が古いと\r\n> テクノコードライブラリが古いため、\r\n> \"TBLREEL\"命令がコンパイルできずにエラーになるかもしれませんので、\r\n> 御注意ください。\r\n> 以上です。\r\n> ご確認の程、\r\n> よろしくお願い致します。\r\n>\r\n> ------------------------------------------------------------------------\r\n> *From:* 幸田 祥平 [mailto:sy-kouda@ime-group.co.jp]\r\n> *Sent:* Wednesday, August 05, 2026 2:20 PM\r\n> *To:* 株式会社テクノ\r\n> *Cc:* '中村智次長【生産技術】'\r\n> *Subject:* Re: SLM4000プログラム改造費用について\r\n>\r\n> 株式会社テクノ\r\n> 高尾 様\r\n>\r\n> お世話になっております。\r\n> 一宮電機の幸田です。\r\n>\r\n> 承知いたしました。\r\n> 弊社在庫品は全部で5台になります。\r\n>\r\n> SLM1084R\r\n> SLM1085R\r\n> SLM1087R\r\n> SLM1125R\r\n> SLM1126R\r\n>\r\n> お手数をおかけしますが、\r\n> ご確認よろしくお願い致します。\r\n>\r\n> On 2026/08/05 14:07, 株式会社テクノ wrote:\r\n>> 一宮電機 幸田様\r\n>> いつもお世話になっております。\r\n>> テクノ高尾です。\r\n>> すいません、再確認したところ私が認識を間違えていました。\r\n>> TBLREEL命令は御社向け専用のSLM4000に追加済みです。\r\n>> (2018年4月リリース)\r\n>> 最新のソフトにはTBLREELが含まれますが、\r\n>> 2018/4以前に出荷したものには、まだ機能が追加されていないバージョンのソフトが\r\n>> 書き込まれていると思われます。\r\n>> なので、該当のSLM4000に対するソフトバージョンアップで\r\n>> すぐ使用できる状態になると思われます。\r\n>> 対象４台のSLM4000のシリアルNo.を教えてください。\r\n>> それによって、対応が変わると思います。\r\n>> 以上です。\r\n>> よろしくお願い致します。\r\n>>\r\n>> ------------------------------------------------------------------------\r\n>> *From:* 幸田 祥平 [mailto:sy-kouda@ime-group.co.jp]\r\n>> *Sent:* Tuesday, August 04, 2026 2:14 PM\r\n>> *To:* 株式会社テクノ\r\n>> *Cc:* 中村智次長【生産技術】\r\n>> *Subject:* SLM4000プログラム改造費用について\r\n>>\r\n>> 株式会社テクノ\r\n>> 高尾 様\r\n>>\r\n>> お世話になっております。\r\n>> 一宮電機の幸田です。\r\n>>\r\n>> ご回答いただき、誠にありがとうございます。\r\n>> A6シリーズのモータ制御にも関連する件で、ご相談がございます。\r\n>> 今回、巻線機の制御を弊社在庫品のSLM4000へ変更することを検討しております。\r\n>> しかし、弊社在庫品SLM4000ではTBLREEL命令に対応していないと認識しております。\r\n>> つきましては、当該命令に対応するためのプログラム改修をご対応いただくことは可能でしょうか。\r\n>> 対象は4台となります。恐れ入りますが、改修費用のお見積りをご提示いただけますと幸いです。\r\n>>\r\n>> お手数をおかけしますが、何卒よろしくお願いいたします。\r\n>>\r\n>>\r\n>> On 2026/07/31 15:45, 株式会社テクノ wrote:\r\n>>> 一宮電機 幸田様\r\n>>> いつもお世話になっております。\r\n>>> テクノ高尾です。\r\n>>> 回答が遅くなりすいません。\r\n>>> 各A6のサーボは使用可能です。\r\n>>> 理由としては、A6の差動ラインドライバの入力が最大8Mppsまで可能という仕様なので、\r\n>>> SLM4000の最大4Mppsを十分満たすということです。\r\n>>> 以上です。\r\n>>> よろしくお願い致します。\r\n>>>\r\n>>> ------------------------------------------------------------------------\r\n>>> *From:* 幸田 祥平 [mailto:sy-kouda@ime-group.co.jp]\r\n>>> *Sent:* Wednesday, July 29, 2026 11:46 AM\r\n>>> *To:* (株)テクノ 様\r\n>>> *Subject:* SLM4000でのPanasonic A6シリーズモータ制御について\r\n>>>\r\n>>> 株式会社テクノ高尾 様\r\n>>>\r\n>>> お世話になっております。\r\n>>> 一宮電機の幸田です。\r\n>>>\r\n>>> 早速ですが、SLM4000に関して確認させてください。\r\n>>> Panasonic A6シリーズのサーボモータを使用した制御は可能でしょうか。\r\n>>> 想定している構成は下記のとおりです。\r\n>>>\r\n>>> モータ：MSMF042L1S1　アンプ：MBDLT25SF\r\n>>> モータ：MSMF082L1S1　アンプ：MCDLT35SF\r\n>>> モータ：MSMF102L1C6　アンプ：MDDLT55SF\r\n>>>\r\n>>> なお、配線・制御方式は位置決めパルス方式を予定しております。\r\n>>> お手数をおかけしますが、ご確認のほどよろしくお願いいたします。\r\n>>>\r\n>>> /-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/\r\n>>> 株式会社　一宮電機\r\n>>>   生産技術部\r\n>>>      幸田　祥平 （Shohei Koda）\r\n>>> 〒679-5165\r\n>>> 兵庫県たつの市新宮町光都1丁目1179-17\r\n>>> TEL ： 0791-59-8205\r\n>>> FAX ： 0791-59-8213\r\n>>> E-mail ： sy-kouda@ime-group.co.jp\r\n>>> /-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/ \r\n>>\r\n>\r\n"
+    }
+  ],
+  "cc_candidates": [
+    {
+      "Date": "Fri, 11 Sep 2026 17:48:03 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "tsu-okumura@ime-group.co.jp, 中村 智 次長 <sa-nakamura@ime-group.co.jp>",
+      "Cc": "寺坂 智則 課長 <t-terasaka@ime-group.co.jp>, 宮本 真也 課長 <sny-miyamoto@ime-group.co.jp>, 松本 公一 主任 <ki-matsumoto@ime-group.co.jp>, 秋田 伊範 主任 <yo-akita@ime-group.co.jp>, 翟 雪均 主任 <xuejun-zhai@ime-group.co.jp>, 西田 勝 主任 <ma-nishida@ime-group.co.jp>",
+      "Subject": "Re: FW: 【楽楽精算】決裁願承認通知",
+      "Message-ID": "<0736195e-b013-43fb-8813-3be0ef963cac@ime-group.co.jp>",
+      "start": 1142703347,
+      "end": 1142715428,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Tue, 15 Sep 2026 17:13:05 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "ke-kushida@ime-group.co.jp, 'ch-fujita' <ch-fujita@ime-group.co.jp>",
+      "Cc": "'中村 智 次長' <sa-nakamura@ime-group.co.jp>, '中田係長' <yo-nakata@ime-group.co.jp>, '松本班長' <hi-matsumoto@ime-group.co.jp>, 武田技師【生産技術】 <hi-takeda@ime-group.co.jp>",
+      "Subject": "Re: 見積依頼",
+      "Message-ID": "<9b175305-d8b8-4ba0-ae5f-9fb7c369bfd0@ime-group.co.jp>",
+      "start": 1142715461,
+      "end": 1142869349,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Thu, 17 Sep 2026 15:26:01 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "今永電機産業 中村 <m.nakamura@imanaga.co.jp>",
+      "Cc": "'中村 智 次長' <sa-nakamura@ime-group.co.jp>, '寺坂 智則 課長' <t-terasaka@ime-group.co.jp>, '今永電機産業㈱ 小池部長' <koike@imanaga.co.jp>, '今永電機産業 五十嵐さん' <igarashi@imanaga.co.jp>, 藤田社員【生産技術】 <ch-fujita@ime-group.co.jp>",
+      "Subject": " DX1 注文依頼",
+      "Message-ID": "<b1ff0a80-2414-431f-bdb8-deee4794fc8f@ime-group.co.jp>",
+      "start": 1143143833,
+      "end": 1143516943,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Fri, 18 Sep 2026 15:47:40 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "今永電機産業 中村 <m.nakamura@imanaga.co.jp>",
+      "Cc": "'中村 智 次長' <sa-nakamura@ime-group.co.jp>, '寺坂 智則 課長' <t-terasaka@ime-group.co.jp>, '今永電機産業㈱ 小池部長' <koike@imanaga.co.jp>, '今永電機産業 五十嵐さん' <igarashi@imanaga.co.jp>, '藤田社員【生産技術】' <ch-fujita@ime-group.co.jp>",
+      "Subject": "Re: DX1 注文依頼",
+      "Message-ID": "<8a294a27-51c3-45c5-af1c-e76cc131ea89@ime-group.co.jp>",
+      "start": 1143516976,
+      "end": 1143619912,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Tue, 22 Sep 2026 09:10:25 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "m.miki@fa-nts.com",
+      "Cc": "藤田社員【生産技術】 <ch-fujita@ime-group.co.jp>, 八木 工場長【サーボ】 <a-yagi@ime-group.co.jp>",
+      "Subject": "Re: 見積依頼",
+      "Message-ID": "<eb516bac-2d23-4dc7-ae60-cc75d63be621@ime-group.co.jp>",
+      "start": 1143619945,
+      "end": 1143931093,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Thu, 24 Sep 2026 18:32:30 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "\"shinto.ishida@omron.com\" <shinto.ishida@omron.com>",
+      "Cc": "\"mi-hirano@ime-group.co.jp\" <mi-hirano@ime-group.co.jp>, \"shohei.sakai@omron.com\" <shohei.sakai@omron.com>, 中村智次長【生産技術】 <sa-nakamura@ime-group.co.jp>",
+      "Subject": "Re: 【送付】修正プログラムならびにデータの送付_オムロン石田",
+      "Message-ID": "<c83a99fe-7944-49b2-ae9c-2f459727b5b4@ime-group.co.jp>",
+      "start": 1143934034,
+      "end": 1146417589,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Mon, 28 Sep 2026 08:51:00 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "\"shinto.ishida@omron.com\" <shinto.ishida@omron.com>",
+      "Cc": "\"mi-hirano@ime-group.co.jp\" <mi-hirano@ime-group.co.jp>, \"shohei.sakai@omron.com\" <shohei.sakai@omron.com>, 中村智次長【生産技術】 <sa-nakamura@ime-group.co.jp>",
+      "Subject": "Re: 【送付】修正プログラムならびにデータの送付_オムロン石田",
+      "Message-ID": "<31fb6fbd-168f-4cac-9ab0-3b776cb434d0@ime-group.co.jp>",
+      "start": 1146417622,
+      "end": 1148935580,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Tue, 29 Sep 2026 14:21:27 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "\"shinto.ishida@omron.com\" <shinto.ishida@omron.com>",
+      "Cc": "\"mi-hirano@ime-group.co.jp\" <mi-hirano@ime-group.co.jp>, \"shohei.sakai@omron.com\" <shohei.sakai@omron.com>, 中村智次長【生産技術】 <sa-nakamura@ime-group.co.jp>",
+      "Subject": "Re: 【送付】修正プログラムならびにデータの送付_オムロン石田",
+      "Message-ID": "<18539457-c5aa-4675-8545-172f6796d7fd@ime-group.co.jp>",
+      "start": 1148935613,
+      "end": 1151477791,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Wed, 30 Sep 2026 10:30:23 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "\"shinto.ishida@omron.com\" <shinto.ishida@omron.com>",
+      "Cc": "\"mi-hirano@ime-group.co.jp\" <mi-hirano@ime-group.co.jp>, \"shohei.sakai@omron.com\" <shohei.sakai@omron.com>, 中村智次長【生産技術】 <sa-nakamura@ime-group.co.jp>",
+      "Subject": "Re: 【送付】修正プログラムならびにデータの送付_オムロン石田",
+      "Message-ID": "<2b491781-57e2-45e8-953b-006257d1836c@ime-group.co.jp>",
+      "start": 1151477824,
+      "end": 1154042238,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Wed, 7 Oct 2026 13:25:49 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "(株)ヤスヒラ 福田係長 様 <m_fukuda@yasuhira.com>, 山畑様【ヤスヒラ】 <h_yamahata@yasuhira.com>",
+      "Cc": "八木 工場長【サーボ】 <a-yagi@ime-group.co.jp>, ''サーボ工場 藤田班長' <yo-fujita@ime-group.co.jp>, 森本 <sy-morimoto@ime-group.co.jp>, 'サーボ工場 小林H' <ke-kobayashi@ime-group.co.jp>, 中村智次長【生産技術】 <sa-nakamura@ime-group.co.jp>",
+      "Subject": "見積依頼書送付の件",
+      "Message-ID": "<67c16a9c-c56e-4cd7-b674-10b73b97af94@ime-group.co.jp>",
+      "start": 1154045361,
+      "end": 1154345612,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Thu, 8 Oct 2026 08:20:22 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "\"shinto.ishida@omron.com\" <shinto.ishida@omron.com>",
+      "Cc": "\"mi-hirano@ime-group.co.jp\" <mi-hirano@ime-group.co.jp>, \"shohei.sakai@omron.com\" <shohei.sakai@omron.com>, 中村智次長【生産技術】 <sa-nakamura@ime-group.co.jp>",
+      "Subject": "Re: 【送付】修正プログラムならびにデータの送付_オムロン石田",
+      "Message-ID": "<b0e952ec-d8db-422a-a1e6-45085833ebdc@ime-group.co.jp>",
+      "start": 1154345645,
+      "end": 1157702902,
+      "mailbox": "Sent"
+    },
+    {
+      "Date": "Mon, 19 Oct 2026 10:29:49 +0900",
+      "From": "幸田 祥平 <sy-kouda@ime-group.co.jp>",
+      "To": "今永電機産業 中村 <m.nakamura@imanaga.co.jp>",
+      "Cc": "",
+      "Subject": "マイクロフォトセンサ見積の件について",
+      "Message-ID": "<b5a4892f-d11c-45de-9752-39497313777a@ime-group.co.jp>",
+      "start": 1160841009,
+      "end": 1160842970,
+      "mailbox": "Sent"
+    }
+  ]
+}

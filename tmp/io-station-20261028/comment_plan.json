@@ -1,0 +1,3142 @@
+{
+  "groups": {
+    "4": 32,
+    "6": 32,
+    "0": 76,
+    "1": 25,
+    "2": 74,
+    "3": 104,
+    "5": 26,
+    "7": 100
+  },
+  "changes": [
+    {
+      "name": "In_Mtr_Flip_01_A_Error",
+      "old": "【X124】A(左側)反転 オリエンタルモータ1 エラー",
+      "new": "【X124】A(左側)ST4 反転 オリエンタルモータ1 エラー",
+      "physical": false
+    },
+    {
+      "name": "In_Mtr_Flip_02_A_Error",
+      "old": "【X125】A(左側)反転 オリエンタルモータ2 エラー",
+      "new": "【X125】A(左側)ST6 反転 オリエンタルモータ2 エラー",
+      "physical": false
+    },
+    {
+      "name": "In_Mtr_Flip_01_B_Error",
+      "old": "【X126】B(右側)反転 オリエンタルモータ1 エラー",
+      "new": "【X126】B(右側)ST4 反転 オリエンタルモータ1 エラー",
+      "physical": false
+    },
+    {
+      "name": "In_Mtr_Flip_02_B_Error",
+      "old": "【X127】B(右側)反転 オリエンタルモータ2 エラー",
+      "new": "【X127】B(右側)ST6 反転 オリエンタルモータ2 エラー",
+      "physical": false
+    },
+    {
+      "name": "In_Sen_Work_A_Pos_00",
+      "old": "【X202】A(左側)ワーク位置0",
+      "new": "【X202】A(左側)ST0 ワーク位置0",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_Work_A_Pos_01",
+      "old": "【X203】A(左側)ワーク位置1",
+      "new": "【X203】A(左側)ST1 ワーク位置1",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_Work_A_Pos_02",
+      "old": "【X204】A(左側)ワーク位置2",
+      "new": "【X204】A(左側)ST2 ワーク位置2",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_Work_A_Pos_03",
+      "old": "【X205】A(左側)ワーク位置3",
+      "new": "【X205】A(左側)ST3 ワーク位置3",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_Work_A_Pos_04",
+      "old": "【X206】A(左側)ワーク位置4",
+      "new": "【X206】A(左側)ST4 ワーク位置4",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_Work_A_Pos_05",
+      "old": "【X207】A(左側)ワーク位置5",
+      "new": "【X207】A(左側)ST5 ワーク位置5",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_Work_A_Pos_06",
+      "old": "【X208】A(左側)ワーク位置6",
+      "new": "【X208】A(左側)ST6 ワーク位置6",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_Work_A_Pos_07",
+      "old": "【X209】A(左側)ワーク位置7",
+      "new": "【X209】A(左側)ST7 ワーク位置7",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_NG1_Tray_A_Full",
+      "old": "【X210】A(左側) NG1トレイ満杯停止",
+      "new": "【X210】A(左側)ST3 NG1トレイ満杯停止",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_NG1_Tray_A_Full_Warn",
+      "old": "【X211】A(左側) NG1トレイ満杯警告",
+      "new": "【X211】A(左側)ST3 NG1トレイ満杯警告",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_NG2_Tray_A_Full",
+      "old": "【X212】A(左側) NG2トレイ満杯停止",
+      "new": "【X212】A(左側)ST7 NG2トレイ満杯停止",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_NG2_Tray_A_Full_Warn",
+      "old": "【X213】A(左側) NG2トレイ満杯警告",
+      "new": "【X213】A(左側)ST7 NG2トレイ満杯警告",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_SH_A_Ent",
+      "old": "【X214】A(左側) ストックフォルダIN",
+      "new": "【X214】A(左側)ST7 ストックフォルダIN",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_SH_A_Ext",
+      "old": "【X215】A(左側) ストックフォルダOut",
+      "new": "【X215】A(左側)ST7 ストックフォルダOut",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_SH_A_Type_Ent",
+      "old": "【X216】A(左側) ストック機種判別IN",
+      "new": "【X216】A(左側)ST7 ストック機種判別IN",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_SH_A_Type_Ext",
+      "old": "【X217】A(左側) ストック機種判別OUT",
+      "new": "【X217】A(左側)ST7 ストック機種判別OUT",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Sply_Slide_A_H",
+      "old": "【X218】A(左側) 供給スライド戻",
+      "new": "【X218】A(左側)ST0 供給スライド戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Sply_Slide_A_F",
+      "old": "【X219】A(左側) 供給スライド行",
+      "new": "【X219】A(左側)ST0 供給スライド行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Sply_Pick_A_H",
+      "old": "【X220】A(左側) 供給ピックアップ戻",
+      "new": "【X220】A(左側)ST0 供給ピックアップ戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Sply_Pick_A_F",
+      "old": "【X221】A(左側) 供給ピックアップ行",
+      "new": "【X221】A(左側)ST0 供給ピックアップ行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Sply_Chk_A_H",
+      "old": "【X222】A(左側) 供給チャック戻",
+      "new": "【X222】A(左側)ST0 供給チャック戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Sply_Chk_A_F",
+      "old": "【X223】A(左側) 供給チャック行",
+      "new": "【X223】A(左側)ST0 供給チャック行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_HgtInsp_Clp_A_H",
+      "old": "【X224】A(左側) 高さ検査押え戻",
+      "new": "【X224】A(左側)ST2 高さ検査押え戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_HgtInsp_Clp_A_F",
+      "old": "【X225】A(左側) 高さ検査押え行",
+      "new": "【X225】A(左側)ST2 高さ検査押え行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_HgtInsp_Lf_A_H",
+      "old": "【X226】A(左側) 高さ検査持上戻",
+      "new": "【X226】A(左側)ST2 高さ検査持上戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_HgtInsp_Lf_A_F",
+      "old": "【X227】A(左側) 高さ検査持上行",
+      "new": "【X227】A(左側)ST2 高さ検査持上行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_NG1_Pick_A_H",
+      "old": "【X228】A(左側) NG1ピックアップ戻",
+      "new": "【X228】A(左側)ST3 NG1ピックアップ戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_NG1_Pick_A_F",
+      "old": "【X229】A(左側) NG1ピックアップ行",
+      "new": "【X229】A(左側)ST3 NG1ピックアップ行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_NG1_Chk_A_H",
+      "old": "【X230】A(左側) NG1チャック戻",
+      "new": "【X230】A(左側)ST3 NG1チャック戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_NG1_Chk_A_F",
+      "old": "【X231】A(左側) NG1チャック行",
+      "new": "【X231】A(左側)ST3 NG1チャック行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Rev_01_Chk_A_H",
+      "old": "【X300】A(左側) 反転1チャック戻",
+      "new": "【X300】A(左側)ST4 反転1チャック戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Rev_01_Chk_A_F",
+      "old": "【X301】A(左側) 反転1チャック行",
+      "new": "【X301】A(左側)ST4 反転1チャック行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Rev_01_Pick_A_H",
+      "old": "【X302】A(左側) 反転1ピックアップ戻",
+      "new": "【X302】A(左側)ST4 反転1ピックアップ戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Rev_01_Pick_A_F",
+      "old": "【X303】A(左側) 反転1ピックアップ行",
+      "new": "【X303】A(左側)ST4 反転1ピックアップ行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Rev_02_Chk_A_H",
+      "old": "【X304】A(左側) 反転2チャック戻",
+      "new": "【X304】A(左側)ST6 反転2チャック戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Rev_02_Chk_A_F",
+      "old": "【X305】A(左側) 反転2チャック行",
+      "new": "【X305】A(左側)ST6 反転2チャック行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Rev_02_Pick_A_H",
+      "old": "【X306】A(左側) 反転2ピックアップ戻",
+      "new": "【X306】A(左側)ST6 反転2ピックアップ戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Rev_02_Pick_A_F",
+      "old": "【X307】A(左側) 反転2ピックアップ行",
+      "new": "【X307】A(左側)ST6 反転2ピックアップ行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Disc_Chk_A_H",
+      "old": "【X308】A(左側) 排出チャック戻",
+      "new": "【X308】A(左側)ST7 排出チャック戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Disc_Chk_A_F",
+      "old": "【X309】A(左側) 排出チャック行",
+      "new": "【X309】A(左側)ST7 排出チャック行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Ejc_SH_Feed_A_H",
+      "old": "【X310】A(左側) 排出フォルダ送り戻",
+      "new": "【X310】A(左側)ST7 排出フォルダ送り戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Ejc_SH_Feed_A_F",
+      "old": "【X311】A(左側) 排出フォルダ送り行",
+      "new": "【X311】A(左側)ST7 排出フォルダ送り行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_01_Stopper_A_H",
+      "old": "【X312】A(左側) 位置1ストッパー戻",
+      "new": "【X312】A(左側)ST1 位置1ストッパー戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_01_Stopper_A_F",
+      "old": "【X313】A(左側) 位置1ストッパー行",
+      "new": "【X313】A(左側)ST1 位置1ストッパー行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_02_Stopper_A_H",
+      "old": "【X314】A(左側) 位置2ストッパー戻",
+      "new": "【X314】A(左側)ST2 位置2ストッパー戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_02_Stopper_A_F",
+      "old": "【X315】A(左側) 位置2ストッパー行",
+      "new": "【X315】A(左側)ST2 位置2ストッパー行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_03_Stopper_A_H",
+      "old": "【X316】A(左側) 位置3ストッパー戻",
+      "new": "【X316】A(左側)ST3 位置3ストッパー戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_03_Stopper_A_F",
+      "old": "【X317】A(左側) 位置3ストッパー行",
+      "new": "【X317】A(左側)ST3 位置3ストッパー行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_04_Stopper_A_H",
+      "old": "【X318】A(左側) 位置4ストッパー戻",
+      "new": "【X318】A(左側)ST4 位置4ストッパー戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_04_Stopper_A_F",
+      "old": "【X319】A(左側) 位置4ストッパー行",
+      "new": "【X319】A(左側)ST4 位置4ストッパー行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_05_Stopper_A_H",
+      "old": "【X320】A(左側) 位置5ストッパー戻",
+      "new": "【X320】A(左側)ST5 位置5ストッパー戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_05_Stopper_A_F",
+      "old": "【X321】A(左側) 位置5ストッパー行",
+      "new": "【X321】A(左側)ST5 位置5ストッパー行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_06_Stopper_A_H",
+      "old": "【X322】A(左側) 位置6ストッパー戻",
+      "new": "【X322】A(左側)ST6 位置6ストッパー戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_06_Stopper_A_F",
+      "old": "【X323】A(左側) 位置6ストッパー行",
+      "new": "【X323】A(左側)ST6 位置6ストッパー行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_SH_A_Turn_H",
+      "old": "【X324】A(左側) ストックフォルダターン戻",
+      "new": "【X324】A(左側)ST7 ストックフォルダターン戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_SH_A_Turn_F",
+      "old": "【X325】A(左側) ストックフォルダターン行",
+      "new": "【X325】A(左側)ST7 ストックフォルダターン行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_NG1_Srt_A_H",
+      "old": "【X330】A(左側) NG1仕分け 戻",
+      "new": "【X330】A(左側)ST3 NG1仕分け 戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_NG1_Srt_A_F",
+      "old": "【X331】A(左側) NG1仕分け 行",
+      "new": "【X331】A(左側)ST3 NG1仕分け 行",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_Work_B_Pos_00",
+      "old": "【X402】B(右側)ワーク位置0",
+      "new": "【X402】B(右側)ST0 ワーク位置0",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_Work_B_Pos_01",
+      "old": "【X403】B(右側)ワーク位置1",
+      "new": "【X403】B(右側)ST1 ワーク位置1",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_Work_B_Pos_02",
+      "old": "【X404】B(右側)ワーク位置2",
+      "new": "【X404】B(右側)ST2 ワーク位置2",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_Work_B_Pos_03",
+      "old": "【X405】B(右側)ワーク位置3",
+      "new": "【X405】B(右側)ST3 ワーク位置3",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_Work_B_Pos_04",
+      "old": "【X406】B(右側)ワーク位置4",
+      "new": "【X406】B(右側)ST4 ワーク位置4",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_Work_B_Pos_05",
+      "old": "【X407】B(右側)ワーク位置5",
+      "new": "【X407】B(右側)ST5 ワーク位置5",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_Work_B_Pos_06",
+      "old": "【X408】B(右側)ワーク位置6",
+      "new": "【X408】B(右側)ST6 ワーク位置6",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_Work_B_Pos_07",
+      "old": "【X409】B(右側)ワーク位置7",
+      "new": "【X409】B(右側)ST7 ワーク位置7",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_NG1_Tray_B_Full",
+      "old": "【X410】B(右側) NG1トレイ満杯停止",
+      "new": "【X410】B(右側)ST3 NG1トレイ満杯停止",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_NG1_Tray_B_Full_Warn",
+      "old": "【X411】B(右側) NG1トレイ満杯警告",
+      "new": "【X411】B(右側)ST3 NG1トレイ満杯警告",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_NG2_Tray_B_Full",
+      "old": "【X412】B(右側) NG2トレイ満杯停止",
+      "new": "【X412】B(右側)ST7 NG2トレイ満杯停止",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_NG2_Tray_B_Full_Warn",
+      "old": "【X413】B(右側) NG2トレイ満杯警告",
+      "new": "【X413】B(右側)ST7 NG2トレイ満杯警告",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_SH_B_Ent",
+      "old": "【X414】B(右側) ストックフォルダIN",
+      "new": "【X414】B(右側)ST7 ストックフォルダIN",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_SH_B_Ext",
+      "old": "【X415】B(右側) ストックフォルダOut",
+      "new": "【X415】B(右側)ST7 ストックフォルダOut",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_SH_B_Type_Ent",
+      "old": "【X416】B(右側) ストック機種判別IN",
+      "new": "【X416】B(右側)ST7 ストック機種判別IN",
+      "physical": true
+    },
+    {
+      "name": "In_Sen_SH_B_Type_Ext",
+      "old": "【X417】B(右側) ストック機種判別OUT",
+      "new": "【X417】B(右側)ST7 ストック機種判別OUT",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Sply_Slide_B_H",
+      "old": "【X418】B(右側) 供給スライド戻",
+      "new": "【X418】B(右側)ST0 供給スライド戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Sply_Slide_B_F",
+      "old": "【X419】B(右側) 供給スライド行",
+      "new": "【X419】B(右側)ST0 供給スライド行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Sply_Pick_B_H",
+      "old": "【X420】B(右側) 供給ピックアップ戻",
+      "new": "【X420】B(右側)ST0 供給ピックアップ戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Sply_Pick_B_F",
+      "old": "【X421】B(右側) 供給ピックアップ行",
+      "new": "【X421】B(右側)ST0 供給ピックアップ行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Sply_Chk_B_H",
+      "old": "【X422】B(右側) 供給チャック閉 戻",
+      "new": "【X422】B(右側)ST0 供給チャック閉 戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Sply_Chk_B_F",
+      "old": "【X423】B(右側) 供給チャック開 行",
+      "new": "【X423】B(右側)ST0 供給チャック開 行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_HgtInsp_Clp_B_H",
+      "old": "【X424】B(右側) 高さ検査押え戻",
+      "new": "【X424】B(右側)ST2 高さ検査押え戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_HgtInsp_Clp_B_F",
+      "old": "【X425】B(右側) 高さ検査押え行",
+      "new": "【X425】B(右側)ST2 高さ検査押え行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_HgtInsp_Lf_B_H",
+      "old": "【X426】B(右側) 高さ検査持上戻",
+      "new": "【X426】B(右側)ST2 高さ検査持上戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_HgtInsp_Lf_B_F",
+      "old": "【X427】B(右側) 高さ検査持上行",
+      "new": "【X427】B(右側)ST2 高さ検査持上行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_NG1_Pick_B_H",
+      "old": "【X428】B(右側) NG1ピックアップ戻",
+      "new": "【X428】B(右側)ST3 NG1ピックアップ戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_NG1_Pick_B_F",
+      "old": "【X429】B(右側) NG1ピックアップ行",
+      "new": "【X429】B(右側)ST3 NG1ピックアップ行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_NG1_Chk_B_H",
+      "old": "【X430】B(右側) NG1チャック閉 戻",
+      "new": "【X430】B(右側)ST3 NG1チャック閉 戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_NG1_Chk_B_F",
+      "old": "【X431】B(右側) NG1チャック開 行",
+      "new": "【X431】B(右側)ST3 NG1チャック開 行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Disc_Chk_B_H",
+      "old": "【X508】B(右側) 排出チャック閉 戻",
+      "new": "【X508】B(右側)ST7 排出チャック閉 戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Disc_Chk_B_F",
+      "old": "【X509】B(右側) 排出チャック開 行",
+      "new": "【X509】B(右側)ST7 排出チャック開 行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Ejc_SH_Feed_B_F",
+      "old": "【X510】B(右側) 排出フォルダ送り戻",
+      "new": "【X510】B(右側)ST7 排出フォルダ送り戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Ejc_SH_Feed_B_H",
+      "old": "【X511】B(右側) 排出フォルダ送り行",
+      "new": "【X511】B(右側)ST7 排出フォルダ送り行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_01_Stopper_B_H",
+      "old": "【X512】B(右側) 位置1ストッパー戻",
+      "new": "【X512】B(右側)ST1 位置1ストッパー戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_01_Stopper_B_F",
+      "old": "【X513】B(右側) 位置1ストッパー行",
+      "new": "【X513】B(右側)ST1 位置1ストッパー行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_02_Stopper_B_H",
+      "old": "【X514】B(右側) 位置2ストッパー戻",
+      "new": "【X514】B(右側)ST2 位置2ストッパー戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_02_Stopper_B_F",
+      "old": "【X515】B(右側) 位置2ストッパー行",
+      "new": "【X515】B(右側)ST2 位置2ストッパー行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_03_Stopper_B_H",
+      "old": "【X516】B(右側) 位置3ストッパー戻",
+      "new": "【X516】B(右側)ST3 位置3ストッパー戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_03_Stopper_B_F",
+      "old": "【X517】B(右側) 位置3ストッパー行",
+      "new": "【X517】B(右側)ST3 位置3ストッパー行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_04_Stopper_B_H",
+      "old": "【X518】B(右側) 位置4ストッパー戻",
+      "new": "【X518】B(右側)ST4 位置4ストッパー戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_04_Stopper_B_F",
+      "old": "【X519】B(右側) 位置4ストッパー行",
+      "new": "【X519】B(右側)ST4 位置4ストッパー行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_05_Stopper_B_H",
+      "old": "【X520】B(右側) 位置5ストッパー戻",
+      "new": "【X520】B(右側)ST5 位置5ストッパー戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_05_Stopper_B_F",
+      "old": "【X521】B(右側) 位置5ストッパー行",
+      "new": "【X521】B(右側)ST5 位置5ストッパー行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_06_Stopper_B_H",
+      "old": "【X522】B(右側) 位置6ストッパー戻",
+      "new": "【X522】B(右側)ST6 位置6ストッパー戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_Pos_06_Stopper_B_F",
+      "old": "【X523】B(右側) 位置6ストッパー行",
+      "new": "【X523】B(右側)ST6 位置6ストッパー行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_SH_B_Turn_H",
+      "old": "【X524】B(右側) ストックフォルダターン戻",
+      "new": "【X524】B(右側)ST7 ストックフォルダターン戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_SH_B_Turn_F",
+      "old": "【X525】B(右側) ストックフォルダターン行",
+      "new": "【X525】B(右側)ST7 ストックフォルダターン行",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_NG1_Srt_B_H",
+      "old": "【X530】B(右側) NG1 仕分け 戻",
+      "new": "【X530】B(右側)ST3 NG1 仕分け 戻",
+      "physical": true
+    },
+    {
+      "name": "In_SenCY_NG1_Srt_B_F",
+      "old": "【X531】B(右側) NG1 仕分け 行",
+      "new": "【X531】B(右側)ST3 NG1 仕分け 行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_Sply_Slide_A_H",
+      "old": "【Y616】A(左側) 供給スライド戻",
+      "new": "【Y616】A(左側)ST0 供給スライド戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_Sply_Slide_A_F",
+      "old": "【Y617】A(左側) 供給スライド行",
+      "new": "【Y617】A(左側)ST0 供給スライド行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_Sply_Pick_A_H",
+      "old": "【Y618】A(左側) 供給ピックアップ戻",
+      "new": "【Y618】A(左側)ST0 供給ピックアップ戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_Sply_Pick_A_F",
+      "old": "【Y619】A(左側) 供給ピックアップ行",
+      "new": "【Y619】A(左側)ST0 供給ピックアップ行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_Sup_Chuck_A_Cl_H",
+      "old": "【Y620】A(左側) 供給チャック閉 戻",
+      "new": "【Y620】A(左側)ST0 供給チャック閉 戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_Sup_Chuck_A_Op_F",
+      "old": "【Y621】A(左側) 供給チャック開 行",
+      "new": "【Y621】A(左側)ST0 供給チャック開 行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_Sply_Slide_B_H",
+      "old": "【Y622】B(右側) 供給スライド戻",
+      "new": "【Y622】B(右側)ST0 供給スライド戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_Sply_Slide_B_F",
+      "old": "【Y623】B(右側) 供給スライド行",
+      "new": "【Y623】B(右側)ST0 供給スライド行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_Sply_Pick_B_H",
+      "old": "【Y624】B(右側) 供給ピックアップ戻",
+      "new": "【Y624】B(右側)ST0 供給ピックアップ戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_Sply_Pick_B_F",
+      "old": "【Y625】B(右側) 供給ピックアップ行",
+      "new": "【Y625】B(右側)ST0 供給ピックアップ行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_Sup_Chuck_B_Cl_H",
+      "old": "【Y626】B(右側) 供給チャック閉 戻",
+      "new": "【Y626】B(右側)ST0 供給チャック閉 戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_Sup_Chuck_B_Op_F",
+      "old": "【Y627】B(右側) 供給チャック開 行",
+      "new": "【Y627】B(右側)ST0 供給チャック開 行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Clp_A_H",
+      "old": "【Y700】A(左側) 高さ検査押え戻",
+      "new": "【Y700】A(左側)ST2 高さ検査押え戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Clp_A_F",
+      "old": "【Y701】A(左側) 高さ検査押え行",
+      "new": "【Y701】A(左側)ST2 高さ検査押え行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Lf_A_H",
+      "old": "【Y702】A(左側) 高さ検査持上戻",
+      "new": "【Y702】A(左側)ST2 高さ検査持上戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Lf_A_F",
+      "old": "【Y703】A(左側) 高さ検査持上行",
+      "new": "【Y703】A(左側)ST2 高さ検査持上行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_NG1_Pick_A_H",
+      "old": "【Y704】A(左側) NG1ピックアップ戻",
+      "new": "【Y704】A(左側)ST3 NG1ピックアップ戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_NG1_Pick_A_F",
+      "old": "【Y705】A(左側) NG1ピックアップ 行",
+      "new": "【Y705】A(左側)ST3 NG1ピックアップ 行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_NG1_Chk_A_H",
+      "old": "【Y706】A(左側) NG1チャック戻",
+      "new": "【Y706】A(左側)ST3 NG1チャック戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_NG1_Chk_A_F",
+      "old": "【Y707】A(左側) NG1チャック行",
+      "new": "【Y707】A(左側)ST3 NG1チャック行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_Disc_Chk_A_H",
+      "old": "【Y716】A(左側) 排出チャック閉 戻",
+      "new": "【Y716】A(左側)ST7 排出チャック閉 戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_Disc_Chk_A_F",
+      "old": "【Y717】A(左側) 排出チャック開 行",
+      "new": "【Y717】A(左側)ST7 排出チャック開 行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_Ejc_Hldr_Feed_A_F",
+      "old": "【Y719】A(左側) 排出フォルダ送り行",
+      "new": "【Y719】A(左側)ST7 排出フォルダ送り行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_Ejc_Hldr_Feed_A_H",
+      "old": "【Y718】A(左側) 排出フォルダ送り戻",
+      "new": "【Y718】A(左側)ST7 排出フォルダ送り戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYS_Pos_01_Stopper_A",
+      "old": "【Y720】A(左側) 位置1ストッパー ",
+      "new": "【Y720】A(左側)ST1 位置1ストッパー ",
+      "physical": true
+    },
+    {
+      "name": "Out_CYS_Pos_02_Stopper_A",
+      "old": "【Y721】A(左側) 位置2ストッパー",
+      "new": "【Y721】A(左側)ST2 位置2ストッパー",
+      "physical": true
+    },
+    {
+      "name": "Out_CYS_Pos_03_Stopper_A",
+      "old": "【Y722】A(左側) 位置3ストッパー",
+      "new": "【Y722】A(左側)ST3 位置3ストッパー",
+      "physical": true
+    },
+    {
+      "name": "Out_CYS_Pos_04_Stopper_A",
+      "old": "【Y723】A(左側) 位置4ストッパー",
+      "new": "【Y723】A(左側)ST4 位置4ストッパー",
+      "physical": true
+    },
+    {
+      "name": "Out_CYS_Pos_05_Stopper_A",
+      "old": "【Y724】A(左側) 位置5ストッパー",
+      "new": "【Y724】A(左側)ST5 位置5ストッパー",
+      "physical": true
+    },
+    {
+      "name": "Out_CYS_Pos_06_Stopper_A",
+      "old": "【Y725】A(左側) 位置6ストッパー",
+      "new": "【Y725】A(左側)ST6 位置6ストッパー",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_SH_A_Turn_H",
+      "old": "【Y726】A(左側) ストックフォルダターン戻",
+      "new": "【Y726】A(左側)ST7 ストックフォルダターン戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_SH_A_Turn_F",
+      "old": "【Y727】A(左側) ストックフォルダターン行",
+      "new": "【Y727】A(左側)ST7 ストックフォルダターン行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_NG1_Srt_A_H",
+      "old": "【Y728】A(左側) NG1仕分け 戻",
+      "new": "【Y728】A(左側)ST3 NG1仕分け 戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_NG1_Srt_A_F",
+      "old": "【Y729】A(左側) NG1仕分け 行",
+      "new": "【Y729】A(左側)ST3 NG1仕分け 行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Clp_B_H",
+      "old": "【Y800】B(右側) 高さ検査押え戻",
+      "new": "【Y800】B(右側)ST2 高さ検査押え戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Clp_B_F",
+      "old": "【Y801】B(右側) 高さ検査押え行",
+      "new": "【Y801】B(右側)ST2 高さ検査押え行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Lf_B_H",
+      "old": "【Y802】B(右側) 高さ検査持上戻",
+      "new": "【Y802】B(右側)ST2 高さ検査持上戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Lf_B_F",
+      "old": "【Y803】B(右側) 高さ検査持上行",
+      "new": "【Y803】B(右側)ST2 高さ検査持上行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_NG1_Pick_B_H",
+      "old": "【Y804】B(右側) NG1ピックアップ戻",
+      "new": "【Y804】B(右側)ST3 NG1ピックアップ戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_NG1_Pick_B_F",
+      "old": "【Y805】B(右側) NG1ピックアップ行",
+      "new": "【Y805】B(右側)ST3 NG1ピックアップ行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_NG1_Chk_B_H",
+      "old": "【Y806】B(右側) NG1チャック戻",
+      "new": "【Y806】B(右側)ST3 NG1チャック戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_NG1_Chk_B_F",
+      "old": "【Y807】B(右側) NG1チャック行",
+      "new": "【Y807】B(右側)ST3 NG1チャック行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_Disc_Chk_B_H",
+      "old": "【Y816】B(右側) 排出チャック閉 戻",
+      "new": "【Y816】B(右側)ST7 排出チャック閉 戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_Disc_Chk_B_F",
+      "old": "【Y817】B(右側) 排出チャック開 行",
+      "new": "【Y817】B(右側)ST7 排出チャック開 行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_Ejc_Hldr_Feed_B_F",
+      "old": "【Y819】B(右側) 排出フォルダ送り行",
+      "new": "【Y819】B(右側)ST7 排出フォルダ送り行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_Ejc_Hldr_Feed_B_H",
+      "old": "【Y818】B(右側) 排出フォルダ送り戻",
+      "new": "【Y818】B(右側)ST7 排出フォルダ送り戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYS_Pos_01_Stopper_B",
+      "old": "【Y820】B(右側) 位置1ストッパー",
+      "new": "【Y820】B(右側)ST1 位置1ストッパー",
+      "physical": true
+    },
+    {
+      "name": "Out_CYS_Pos_02_Stopper_B",
+      "old": "【Y821】B(右側) 位置2ストッパー",
+      "new": "【Y821】B(右側)ST2 位置2ストッパー",
+      "physical": true
+    },
+    {
+      "name": "Out_CYS_Pos_03_Stopper_B",
+      "old": "【Y822】B(右側) 位置3ストッパー",
+      "new": "【Y822】B(右側)ST3 位置3ストッパー",
+      "physical": true
+    },
+    {
+      "name": "Out_CYS_Pos_04_Stopper_B",
+      "old": "【Y823】B(右側) 位置4ストッパー",
+      "new": "【Y823】B(右側)ST4 位置4ストッパー",
+      "physical": true
+    },
+    {
+      "name": "Out_CYS_Pos_05_Stopper_B",
+      "old": "【Y824】B(右側) 位置5ストッパー",
+      "new": "【Y824】B(右側)ST5 位置5ストッパー",
+      "physical": true
+    },
+    {
+      "name": "Out_CYS_Pos_06_Stopper_B",
+      "old": "【Y825】B(右側) 位置6ストッパー",
+      "new": "【Y825】B(右側)ST6 位置6ストッパー",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_SH_B_Turn_H",
+      "old": "【Y826】B(右側) ストックフォルダターン戻",
+      "new": "【Y826】B(右側)ST7 ストックフォルダターン戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_SH_B_Turn_F",
+      "old": "【Y827】B(右側) ストックフォルダターン行",
+      "new": "【Y827】B(右側)ST7 ストックフォルダターン行",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_NG1_Srt_B_H",
+      "old": "【Y828】B(右側) NG1仕分け 戻",
+      "new": "【Y828】B(右側)ST3 NG1仕分け 戻",
+      "physical": true
+    },
+    {
+      "name": "Out_CYw_NG1_Srt_B_F",
+      "old": "【Y829】B(右側) NG1仕分け 行",
+      "new": "【Y829】B(右側)ST3 NG1仕分け 行",
+      "physical": true
+    },
+    {
+      "name": "TimerQ_In_Sen_Work_A_Pos_00",
+      "old": "【X202】A(左側)ワーク位置0",
+      "new": "【X202】A(左側)ST0 ワーク位置0",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_Work_A_Pos_01",
+      "old": "【X203】A(左側)ワーク位置1",
+      "new": "【X203】A(左側)ST1 ワーク位置1",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_Work_A_Pos_02",
+      "old": "【X204】A(左側)ワーク位置2",
+      "new": "【X204】A(左側)ST2 ワーク位置2",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_Work_A_Pos_03",
+      "old": "【X205】A(左側)ワーク位置3",
+      "new": "【X205】A(左側)ST3 ワーク位置3",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_Work_A_Pos_04",
+      "old": "【X206】A(左側)ワーク位置4",
+      "new": "【X206】A(左側)ST4 ワーク位置4",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_Work_A_Pos_05",
+      "old": "【X207】A(左側)ワーク位置5",
+      "new": "【X207】A(左側)ST5 ワーク位置5",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_Work_A_Pos_06",
+      "old": "【X208】A(左側)ワーク位置6",
+      "new": "【X208】A(左側)ST6 ワーク位置6",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_Work_A_Pos_07",
+      "old": "【X209】A(左側)ワーク位置7",
+      "new": "【X209】A(左側)ST7 ワーク位置7",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_NG1_Tray_A_Full",
+      "old": "【X210】A(左側) NG1トレイ満杯停止",
+      "new": "【X210】A(左側)ST3 NG1トレイ満杯停止",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_NG1_Tray_A_Full_Warn",
+      "old": "【X211】A(左側) NG1トレイ満杯警告",
+      "new": "【X211】A(左側)ST3 NG1トレイ満杯警告",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_NG2_Tray_A_Full",
+      "old": "【X212】A(左側) NG2トレイ満杯停止",
+      "new": "【X212】A(左側)ST7 NG2トレイ満杯停止",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_NG2_Tray_A_Full_Warn",
+      "old": "【X213】A(左側) NG2トレイ満杯警告",
+      "new": "【X213】A(左側)ST7 NG2トレイ満杯警告",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_SH_A_Ent",
+      "old": "【X214】A(左側) ストックフォルダIN",
+      "new": "【X214】A(左側)ST7 ストックフォルダIN",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_SH_A_Ext",
+      "old": "【X215】A(左側) ストックフォルダOut",
+      "new": "【X215】A(左側)ST7 ストックフォルダOut",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_SH_A_Type_Ent",
+      "old": "【X216】A(左側) ストック機種判別IN",
+      "new": "【X216】A(左側)ST7 ストック機種判別IN",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_SH_A_Type_Ext",
+      "old": "【X217】A(左側) ストック機種判別OUT",
+      "new": "【X217】A(左側)ST7 ストック機種判別OUT",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Sply_Slide_A_H",
+      "old": "【X218】A(左側) 供給スライド戻",
+      "new": "【X218】A(左側)ST0 供給スライド戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Sply_Slide_A_F",
+      "old": "【X219】A(左側) 供給スライド行",
+      "new": "【X219】A(左側)ST0 供給スライド行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Sply_Pick_A_H",
+      "old": "【X220】A(左側) 供給ピックアップ戻",
+      "new": "【X220】A(左側)ST0 供給ピックアップ戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Sply_Pick_A_F",
+      "old": "【X221】A(左側) 供給ピックアップ行",
+      "new": "【X221】A(左側)ST0 供給ピックアップ行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Sply_Chk_A_H",
+      "old": "【X222】A(左側) 供給チャック戻",
+      "new": "【X222】A(左側)ST0 供給チャック戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Sply_Chk_A_F",
+      "old": "【X223】A(左側) 供給チャック行",
+      "new": "【X223】A(左側)ST0 供給チャック行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_HgtInsp_Clp_A_H",
+      "old": "【X224】A(左側) 高さ検査押え戻",
+      "new": "【X224】A(左側)ST2 高さ検査押え戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_HgtInsp_Clp_A_F",
+      "old": "【X225】A(左側) 高さ検査押え行",
+      "new": "【X225】A(左側)ST2 高さ検査押え行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_HgtInsp_Lf_A_H",
+      "old": "【X226】A(左側) 高さ検査持上戻",
+      "new": "【X226】A(左側)ST2 高さ検査持上戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_HgtInsp_Lf_A_F",
+      "old": "【X227】A(左側) 高さ検査持上行",
+      "new": "【X227】A(左側)ST2 高さ検査持上行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_NG1_Pick_A_H",
+      "old": "【X228】A(左側) NG1ピックアップ戻",
+      "new": "【X228】A(左側)ST3 NG1ピックアップ戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_NG1_Pick_A_F",
+      "old": "【X229】A(左側) NG1ピックアップ行",
+      "new": "【X229】A(左側)ST3 NG1ピックアップ行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_NG1_Chk_A_H",
+      "old": "【X230】A(左側) NG1チャック戻",
+      "new": "【X230】A(左側)ST3 NG1チャック戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_NG1_Chk_A_F",
+      "old": "【X231】A(左側) NG1チャック行",
+      "new": "【X231】A(左側)ST3 NG1チャック行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Disc_Chk_A_H",
+      "old": "【X308】A(左側) 排出チャック戻",
+      "new": "【X308】A(左側)ST7 排出チャック戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Disc_Chk_A_F",
+      "old": "【X309】A(左側) 排出チャック行",
+      "new": "【X309】A(左側)ST7 排出チャック行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Ejc_SH_Feed_A_H",
+      "old": "【X310】A(左側) 排出フォルダ送り戻",
+      "new": "【X310】A(左側)ST7 排出フォルダ送り戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Ejc_SH_Feed_A_F",
+      "old": "【X311】A(左側) 排出フォルダ送り行",
+      "new": "【X311】A(左側)ST7 排出フォルダ送り行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_01_Stopper_A_H",
+      "old": "【X312】A(左側) 位置1ストッパー戻",
+      "new": "【X312】A(左側)ST1 位置1ストッパー戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_02_Stopper_A_H",
+      "old": "【X314】A(左側) 位置2ストッパー戻",
+      "new": "【X314】A(左側)ST2 位置2ストッパー戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_02_Stopper_A_F",
+      "old": "【X315】A(左側) 位置2ストッパー行",
+      "new": "【X315】A(左側)ST2 位置2ストッパー行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_03_Stopper_A_H",
+      "old": "【X316】A(左側) 位置3ストッパー戻",
+      "new": "【X316】A(左側)ST3 位置3ストッパー戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_03_Stopper_A_F",
+      "old": "【X317】A(左側) 位置3ストッパー行",
+      "new": "【X317】A(左側)ST3 位置3ストッパー行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_04_Stopper_A_H",
+      "old": "【X318】A(左側) 位置4ストッパー戻",
+      "new": "【X318】A(左側)ST4 位置4ストッパー戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_04_Stopper_A_F",
+      "old": "【X319】A(左側) 位置4ストッパー行",
+      "new": "【X319】A(左側)ST4 位置4ストッパー行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_05_Stopper_A_H",
+      "old": "【X320】A(左側) 位置5ストッパー戻",
+      "new": "【X320】A(左側)ST5 位置5ストッパー戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_05_Stopper_A_F",
+      "old": "【X321】A(左側) 位置5ストッパー行",
+      "new": "【X321】A(左側)ST5 位置5ストッパー行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_06_Stopper_A_H",
+      "old": "【X322】A(左側) 位置6ストッパー戻",
+      "new": "【X322】A(左側)ST6 位置6ストッパー戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_06_Stopper_A_F",
+      "old": "【X323】A(左側) 位置6ストッパー行",
+      "new": "【X323】A(左側)ST6 位置6ストッパー行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_SH_A_Turn_H",
+      "old": "【X324】A(左側) ストックフォルダターン戻",
+      "new": "【X324】A(左側)ST7 ストックフォルダターン戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_SH_A_Turn_F",
+      "old": "【X325】A(左側) ストックフォルダターン行",
+      "new": "【X325】A(左側)ST7 ストックフォルダターン行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_Work_B_Pos_00",
+      "old": "【X402】B(右側)ワーク位置0",
+      "new": "【X402】B(右側)ST0 ワーク位置0",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_Work_B_Pos_01",
+      "old": "【X403】B(右側)ワーク位置1",
+      "new": "【X403】B(右側)ST1 ワーク位置1",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_Work_B_Pos_02",
+      "old": "【X404】B(右側)ワーク位置2",
+      "new": "【X404】B(右側)ST2 ワーク位置2",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_Work_B_Pos_03",
+      "old": "【X405】B(右側)ワーク位置3",
+      "new": "【X405】B(右側)ST3 ワーク位置3",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_Work_B_Pos_04",
+      "old": "【X406】B(右側)ワーク位置4",
+      "new": "【X406】B(右側)ST4 ワーク位置4",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_Work_B_Pos_05",
+      "old": "【X407】B(右側)ワーク位置5",
+      "new": "【X407】B(右側)ST5 ワーク位置5",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_Work_B_Pos_06",
+      "old": "【X408】B(右側)ワーク位置6",
+      "new": "【X408】B(右側)ST6 ワーク位置6",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_Work_B_Pos_07",
+      "old": "【X409】B(右側)ワーク位置7",
+      "new": "【X409】B(右側)ST7 ワーク位置7",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_NG1_Tray_B_Full",
+      "old": "【X410】B(右側) NG1トレイ満杯停止",
+      "new": "【X410】B(右側)ST3 NG1トレイ満杯停止",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_NG1_Tray_B_Full_Warn",
+      "old": "【X411】B(右側) NG1トレイ満杯警告",
+      "new": "【X411】B(右側)ST3 NG1トレイ満杯警告",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_NG2_Tray_B_Full",
+      "old": "【X412】B(右側) NG2トレイ満杯停止",
+      "new": "【X412】B(右側)ST7 NG2トレイ満杯停止",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_NG2_Tray_B_Full_Warn",
+      "old": "【X413】B(右側) NG2トレイ満杯警告",
+      "new": "【X413】B(右側)ST7 NG2トレイ満杯警告",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_SH_B_Ent",
+      "old": "【X414】B(右側) ストックフォルダIN",
+      "new": "【X414】B(右側)ST7 ストックフォルダIN",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_SH_B_Ext",
+      "old": "【X415】B(右側) ストックフォルダOut",
+      "new": "【X415】B(右側)ST7 ストックフォルダOut",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_SH_B_Type_Ent",
+      "old": "【X416】B(右側) ストック機種判別IN",
+      "new": "【X416】B(右側)ST7 ストック機種判別IN",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_Sen_SH_B_Type_Ext",
+      "old": "【X417】B(右側) ストック機種判別OUT",
+      "new": "【X417】B(右側)ST7 ストック機種判別OUT",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Sply_Slide_B_H",
+      "old": "【X418】B(右側) 供給スライド戻",
+      "new": "【X418】B(右側)ST0 供給スライド戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Sply_Slide_B_F",
+      "old": "【X419】B(右側) 供給スライド行",
+      "new": "【X419】B(右側)ST0 供給スライド行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Sply_Pick_B_H",
+      "old": "【X420】B(右側) 供給ピックアップ戻",
+      "new": "【X420】B(右側)ST0 供給ピックアップ戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Sply_Pick_B_F",
+      "old": "【X421】B(右側) 供給ピックアップ行",
+      "new": "【X421】B(右側)ST0 供給ピックアップ行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Sply_Chk_B_H",
+      "old": "【X422】B(右側) 供給チャック閉 戻",
+      "new": "【X422】B(右側)ST0 供給チャック閉 戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_HgtInsp_Clp_B_H",
+      "old": "【X424】B(右側) 高さ検査押え戻",
+      "new": "【X424】B(右側)ST2 高さ検査押え戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Sply_Chk_B_F",
+      "old": "【X423】B(右側) 供給チャック開 行",
+      "new": "【X423】B(右側)ST0 供給チャック開 行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_HgtInsp_Clp_B_F",
+      "old": "【X425】B(右側) 高さ検査押え行",
+      "new": "【X425】B(右側)ST2 高さ検査押え行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_HgtInsp_Lf_B_H",
+      "old": "【X426】B(右側) 高さ検査持上戻",
+      "new": "【X426】B(右側)ST2 高さ検査持上戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_HgtInsp_Lf_B_F",
+      "old": "【X427】 B(右側) 高さ検査持上行",
+      "new": "【X427】 B(右側)ST2 高さ検査持上行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_NG1_Pick_B_H",
+      "old": "【X428】B(右側) NG1ピックアップ戻",
+      "new": "【X428】B(右側)ST3 NG1ピックアップ戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_NG1_Pick_B_F",
+      "old": "【X429】B(右側) NG1ピックアップ行",
+      "new": "【X429】B(右側)ST3 NG1ピックアップ行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_NG1_Chk_B_H",
+      "old": "【X430】 B(右側) NG1チャック閉 戻",
+      "new": "【X430】 B(右側)ST3 NG1チャック閉 戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_NG1_Chk_B_F",
+      "old": "【X431】B(右側) NG1チャック開 行",
+      "new": "【X431】B(右側)ST3 NG1チャック開 行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Disc_Chk_B_H",
+      "old": "【X508】B(右側) 排出チャック閉 戻",
+      "new": "【X508】B(右側)ST7 排出チャック閉 戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Disc_Chk_B_F",
+      "old": "【X509】B(右側) 排出チャック開 行",
+      "new": "【X509】B(右側)ST7 排出チャック開 行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Ejc_SH_Feed_B_H",
+      "old": "【X511】B(右側) 排出フォルダ送り行",
+      "new": "【X511】B(右側)ST7 排出フォルダ送り行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Ejc_SH_Feed_B_F",
+      "old": "【X510】B(右側) 排出フォルダ送り戻",
+      "new": "【X510】B(右側)ST7 排出フォルダ送り戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_01_Stopper_B_H",
+      "old": "【X512】B(右側) 位置1ストッパー戻",
+      "new": "【X512】B(右側)ST1 位置1ストッパー戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_01_Stopper_B_F",
+      "old": "【X513】B(右側) 位置1ストッパー行",
+      "new": "【X513】B(右側)ST1 位置1ストッパー行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_02_Stopper_B_H",
+      "old": "【X514】B(右側) 位置2ストッパー戻",
+      "new": "【X514】B(右側)ST2 位置2ストッパー戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_02_Stopper_B_F",
+      "old": "【X515】B(右側) 位置2ストッパー行",
+      "new": "【X515】B(右側)ST2 位置2ストッパー行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_03_Stopper_B_H",
+      "old": "【X516】B(右側) 位置3ストッパー戻",
+      "new": "【X516】B(右側)ST3 位置3ストッパー戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_03_Stopper_B_F",
+      "old": "【X517】B(右側) 位置3ストッパー行",
+      "new": "【X517】B(右側)ST3 位置3ストッパー行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_04_Stopper_B_H",
+      "old": "【X518】B(右側) 位置4ストッパー戻",
+      "new": "【X518】B(右側)ST4 位置4ストッパー戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_04_Stopper_B_F",
+      "old": "【X519】B(右側) 位置4ストッパー行",
+      "new": "【X519】B(右側)ST4 位置4ストッパー行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_05_Stopper_B_H",
+      "old": "【X520】B(右側) 位置5ストッパー戻",
+      "new": "【X520】B(右側)ST5 位置5ストッパー戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_05_Stopper_B_F",
+      "old": "【X521】B(右側) 位置5ストッパー行",
+      "new": "【X521】B(右側)ST5 位置5ストッパー行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_06_Stopper_B_H",
+      "old": "【X522】B(右側) 位置6ストッパー戻",
+      "new": "【X522】B(右側)ST6 位置6ストッパー戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_Pos_06_Stopper_B_F",
+      "old": "【X523】B(右側) 位置6ストッパー行",
+      "new": "【X523】B(右側)ST6 位置6ストッパー行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_SH_B_Turn_H",
+      "old": "【X524】B(右側) ストックフォルダターン戻",
+      "new": "【X524】B(右側)ST7 ストックフォルダターン戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_SH_B_Turn_F",
+      "old": "【X525】B(右側) ストックフォルダターン行",
+      "new": "【X525】B(右側)ST7 ストックフォルダターン行",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_NG1_Srt_B_H",
+      "old": "【X530】B(右側) NG1仕分け 戻",
+      "new": "【X530】B(右側)ST3 NG1仕分け 戻",
+      "physical": false
+    },
+    {
+      "name": "TimerQ_In_SenCY_NG1_Srt_B_F",
+      "old": "【X531】B(右側) NG1仕分け 行",
+      "new": "【X531】B(右側)ST3 NG1仕分け 行",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Slide_A_H_Done",
+      "old": "【Y616】A(左側) 供給スライド戻 動作完了",
+      "new": "【Y616】A(左側)ST0 供給スライド戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Slide_A_H_Manual",
+      "old": "手動【Y616】A(左側) 供給スライド戻：",
+      "new": "手動【Y616】A(左側)ST0 供給スライド戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Slide_A_H_Auto",
+      "old": "自動【Y616】A(左側) 供給スライド戻：",
+      "new": "自動【Y616】A(左側)ST0 供給スライド戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Slide_A_F_Done",
+      "old": "【Y617】A(左側) 供給スライド行動作完了",
+      "new": "【Y617】A(左側)ST0 供給スライド行動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_04_Stopper_B_H_Auto",
+      "old": "自動【Y823】B(右側) 位置4ストッパー戻：",
+      "new": "自動【Y823】B(右側)ST4 位置4ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_04_Stopper_B_H_Manual",
+      "old": "手動【Y823】B(右側) 位置4ストッパー戻：",
+      "new": "手動【Y823】B(右側)ST4 位置4ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_04_Stopper_B_H_Done",
+      "old": "【Y823】B(右側) 位置4ストッパー戻 動作完了",
+      "new": "【Y823】B(右側)ST4 位置4ストッパー戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_04_Stopper_B_F_Auto",
+      "old": "自動【Y823】B(右側) 位置4ストッパー行：",
+      "new": "自動【Y823】B(右側)ST4 位置4ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_04_Stopper_B_F_Manual",
+      "old": "手動【Y823】B(右側) 位置4ストッパー行：",
+      "new": "手動【Y823】B(右側)ST4 位置4ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_04_Stopper_B_F_Done",
+      "old": "【Y823】B(右側) 位置4ストッパー行 動作完了",
+      "new": "【Y823】B(右側)ST4 位置4ストッパー行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_05_Stopper_B_H_Auto",
+      "old": "自動【Y824】B(右側) 位置5ストッパー戻：",
+      "new": "自動【Y824】B(右側)ST5 位置5ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_05_Stopper_B_H_Manual",
+      "old": "手動【Y824】B(右側) 位置5ストッパー戻：",
+      "new": "手動【Y824】B(右側)ST5 位置5ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_05_Stopper_B_H_Done",
+      "old": "【Y824】B(右側) 位置5ストッパー戻 動作完了",
+      "new": "【Y824】B(右側)ST5 位置5ストッパー戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_05_Stopper_B_F_Auto",
+      "old": "自動【Y824】B(右側) 位置5ストッパー行：",
+      "new": "自動【Y824】B(右側)ST5 位置5ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_05_Stopper_B_F_Manual",
+      "old": "手動【Y824】B(右側) 位置5ストッパー行：",
+      "new": "手動【Y824】B(右側)ST5 位置5ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_05_Stopper_B_F_Done",
+      "old": "【Y824】B(右側) 位置5ストッパー行 動作完了",
+      "new": "【Y824】B(右側)ST5 位置5ストッパー行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_06_Stopper_B_H_Auto",
+      "old": "自動【Y825】B(右側) 位置6ストッパー戻：",
+      "new": "自動【Y825】B(右側)ST6 位置6ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_06_Stopper_B_H_Manual",
+      "old": "手動【Y825】B(右側) 位置6ストッパー戻：",
+      "new": "手動【Y825】B(右側)ST6 位置6ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_06_Stopper_B_H_Done",
+      "old": "【Y825】B(右側) 位置6ストッパー戻 動作完了",
+      "new": "【Y825】B(右側)ST6 位置6ストッパー戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_06_Stopper_B_F_Auto",
+      "old": "自動【Y825】B(右側) 位置6ストッパー行：",
+      "new": "自動【Y825】B(右側)ST6 位置6ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_06_Stopper_B_F_Manual",
+      "old": "手動【Y825】B(右側) 位置6ストッパー行：",
+      "new": "手動【Y825】B(右側)ST6 位置6ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_06_Stopper_B_F_Done",
+      "old": "【Y825】B(右側) 位置6ストッパー行 動作完了",
+      "new": "【Y825】B(右側)ST6 位置6ストッパー行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_SH_B_Turn_H_Auto",
+      "old": "自動【Y826】B(右側) ストックフォルダターン戻：",
+      "new": "自動【Y826】B(右側)ST7 ストックフォルダターン戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_SH_B_Turn_H_Manual",
+      "old": "手動【Y826】B(右側) ストックフォルダターン戻：",
+      "new": "手動【Y826】B(右側)ST7 ストックフォルダターン戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_SH_B_Turn_H_Done",
+      "old": "【Y826】B(右側) ストックフォルダターン戻 動作完了",
+      "new": "【Y826】B(右側)ST7 ストックフォルダターン戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_SH_B_Turn_F_Manual",
+      "old": "自動【Y827】B(右側) ストックフォルダターン行：",
+      "new": "自動【Y827】B(右側)ST7 ストックフォルダターン行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_SH_B_Turn_F_Auto",
+      "old": "手動【Y827】B(右側) ストックフォルダターン行：",
+      "new": "手動【Y827】B(右側)ST7 ストックフォルダターン行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_SH_B_Turn_F_Done",
+      "old": "【Y827】B(右側) ストックフォルダターン行 動作完了",
+      "new": "【Y827】B(右側)ST7 ストックフォルダターン行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Srt_B_H_Auto",
+      "old": "自動【Y828】B(右側) NG1仕分け 戻：",
+      "new": "自動【Y828】B(右側)ST3 NG1仕分け 戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Srt_B_H_Manual",
+      "old": "手動【Y828】B(右側) NG1仕分け 戻：",
+      "new": "手動【Y828】B(右側)ST3 NG1仕分け 戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Srt_B_H_Done",
+      "old": "【Y828】B(右側) NG1仕分け 戻 動作完了",
+      "new": "【Y828】B(右側)ST3 NG1仕分け 戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Srt_B_F_Auto",
+      "old": "自動【Y829】B(右側) NG1仕分け 行：",
+      "new": "自動【Y829】B(右側)ST3 NG1仕分け 行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Srt_B_F_Manual",
+      "old": "手動【Y829】B(右側) NG1仕分け 行：",
+      "new": "手動【Y829】B(右側)ST3 NG1仕分け 行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Srt_B_F_Done",
+      "old": "【Y829】B(右側) NG1仕分け 行 動作完了",
+      "new": "【Y829】B(右側)ST3 NG1仕分け 行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Disc_Chk_B_H_Auto",
+      "old": "自動【Y816】B(右側) 排出チャック閉 戻 ：",
+      "new": "自動【Y816】B(右側)ST7 排出チャック閉 戻 ：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Disc_Chk_B_H_Manual",
+      "old": "手動【Y816】B(右側) 排出チャック閉 戻：",
+      "new": "手動【Y816】B(右側)ST7 排出チャック閉 戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Disc_Chk_B_H_Done",
+      "old": "【Y816】B(右側) 排出チャック閉 戻 動作完了",
+      "new": "【Y816】B(右側)ST7 排出チャック閉 戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Disc_Chk_B_F_Auto",
+      "old": "自動【Y817】B(右側) 排出チャック開 行 ：",
+      "new": "自動【Y817】B(右側)ST7 排出チャック開 行 ：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Disc_Chk_B_F_Manual",
+      "old": "手動【Y817】B(右側) 排出チャック開 行：",
+      "new": "手動【Y817】B(右側)ST7 排出チャック開 行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Disc_Chk_B_F_Done",
+      "old": "【Y817】B(右側) 排出チャック開 行 動作完了",
+      "new": "【Y817】B(右側)ST7 排出チャック開 行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Ejc_Hldr_Feed_B_H_Auto",
+      "old": "自動【Y818】B(右側) 排出フォルダ送り戻：",
+      "new": "自動【Y818】B(右側)ST7 排出フォルダ送り戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Ejc_Hldr_Feed_B_H_Manual",
+      "old": "手動【Y818】B(右側) 排出フォルダ送り戻：",
+      "new": "手動【Y818】B(右側)ST7 排出フォルダ送り戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Ejc_Hldr_Feed_B_H_Done",
+      "old": "【Y818】B(右側) 排出フォルダ送り戻 動作完了",
+      "new": "【Y818】B(右側)ST7 排出フォルダ送り戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Ejc_Hldr_Feed_B_F_Auto",
+      "old": "自動【Y819】B(右側) 排出フォルダ送り行：",
+      "new": "自動【Y819】B(右側)ST7 排出フォルダ送り行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Ejc_Hldr_Feed_B_F_Manual",
+      "old": "手動【Y819】B(右側) 排出フォルダ送り行：",
+      "new": "手動【Y819】B(右側)ST7 排出フォルダ送り行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Ejc_Hldr_Feed_B_F_Done",
+      "old": "【Y819】B(右側) 排出フォルダ送り行 動作完了",
+      "new": "【Y819】B(右側)ST7 排出フォルダ送り行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_01_Stopper_B_H_Auto",
+      "old": "自動【Y820】B(右側) 位置1ストッパー戻：",
+      "new": "自動【Y820】B(右側)ST1 位置1ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_01_Stopper_B_H_Manual",
+      "old": "手動【Y820】B(右側) 位置1ストッパー戻：",
+      "new": "手動【Y820】B(右側)ST1 位置1ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_01_Stopper_B_H_Done",
+      "old": "【Y820】B(右側) 位置1ストッパー戻 動作完了",
+      "new": "【Y820】B(右側)ST1 位置1ストッパー戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_01_Stopper_B_F_Auto",
+      "old": "自動【Y820】B(右側) 位置1ストッパー 行：",
+      "new": "自動【Y820】B(右側)ST1 位置1ストッパー 行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_01_Stopper_B_F_Manual",
+      "old": "手動【Y820】B(右側) 位置1ストッパー 行：",
+      "new": "手動【Y820】B(右側)ST1 位置1ストッパー 行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_01_Stopper_B_F_Done",
+      "old": "【Y820】B(右側) 位置1ストッパー 行 動作完了",
+      "new": "【Y820】B(右側)ST1 位置1ストッパー 行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_02_Stopper_B_H_Auto",
+      "old": "自動【Y821】B(右側) 位置2ストッパー戻：",
+      "new": "自動【Y821】B(右側)ST2 位置2ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_02_Stopper_B_H_Manual",
+      "old": "手動【Y821】B(右側) 位置2ストッパー戻：",
+      "new": "手動【Y821】B(右側)ST2 位置2ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_02_Stopper_B_H_Done",
+      "old": "【Y821】B(右側) 位置2ストッパー戻 動作完了",
+      "new": "【Y821】B(右側)ST2 位置2ストッパー戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_02_Stopper_B_F_Auto",
+      "old": "自動【Y821】B(右側) 位置2ストッパー行：",
+      "new": "自動【Y821】B(右側)ST2 位置2ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_02_Stopper_B_F_Manual",
+      "old": "手動【Y821】B(右側) 位置2ストッパー行：",
+      "new": "手動【Y821】B(右側)ST2 位置2ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_02_Stopper_B_F_Done",
+      "old": "【Y821】B(右側) 位置2ストッパー行 動作完了",
+      "new": "【Y821】B(右側)ST2 位置2ストッパー行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_03_Stopper_B_H_Auto",
+      "old": "自動【Y822】B(右側) 位置3ストッパー戻：",
+      "new": "自動【Y822】B(右側)ST3 位置3ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_03_Stopper_B_H_Manual",
+      "old": "手動【Y822】B(右側) 位置3ストッパー戻：",
+      "new": "手動【Y822】B(右側)ST3 位置3ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_03_Stopper_B_H_Done",
+      "old": "【Y822】B(右側) 位置3ストッパー戻 動作完了",
+      "new": "【Y822】B(右側)ST3 位置3ストッパー戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_03_Stopper_B_F_Auto",
+      "old": "自動【Y822】B(右側) 位置3ストッパー行：",
+      "new": "自動【Y822】B(右側)ST3 位置3ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_03_Stopper_B_F_Manual",
+      "old": "手動【Y822】B(右側) 位置3ストッパー行：",
+      "new": "手動【Y822】B(右側)ST3 位置3ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_03_Stopper_B_F_Done",
+      "old": "【Y822】B(右側) 位置3ストッパー行 動作完了",
+      "new": "【Y822】B(右側)ST3 位置3ストッパー行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Lf_B_H_Done",
+      "old": "【Y802】B(右側) 高さ検査持上戻 動作完了",
+      "new": "【Y802】B(右側)ST2 高さ検査持上戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Lf_B_F_Auto",
+      "old": "自動【Y803】B(右側) 高さ検査持上行：",
+      "new": "自動【Y803】B(右側)ST2 高さ検査持上行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Lf_B_F_Manual",
+      "old": "手動【Y803】B(右側) 高さ検査持上行：",
+      "new": "手動【Y803】B(右側)ST2 高さ検査持上行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Lf_B_F_Done",
+      "old": "【Y803】B(右側) 高さ検査持上行 動作完了",
+      "new": "【Y803】B(右側)ST2 高さ検査持上行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Pick_B_H_Auto",
+      "old": "自動【Y804】B(右側) NG1ピックアップ戻：",
+      "new": "自動【Y804】B(右側)ST3 NG1ピックアップ戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Pick_B_H_Manual",
+      "old": "手動【Y804】B(右側) NG1ピックアップ戻：",
+      "new": "手動【Y804】B(右側)ST3 NG1ピックアップ戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Pick_B_H_Done",
+      "old": "【Y804】B(右側) NG1ピックアップ戻 動作完了",
+      "new": "【Y804】B(右側)ST3 NG1ピックアップ戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Pick_B_F_Auto",
+      "old": "自動【Y805】B(右側) NG1ピックアップ行：",
+      "new": "自動【Y805】B(右側)ST3 NG1ピックアップ行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Pick_B_F_Manual",
+      "old": "手動【Y805】B(右側) NG1ピックアップ行：",
+      "new": "手動【Y805】B(右側)ST3 NG1ピックアップ行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Pick_B_F_Done",
+      "old": "【Y805】B(右側) NG1ピックアップ行 動作完了",
+      "new": "【Y805】B(右側)ST3 NG1ピックアップ行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Chk_B_H_Auto",
+      "old": "自動【Y806】B(右側) NG1チャック戻：",
+      "new": "自動【Y806】B(右側)ST3 NG1チャック戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Chk_B_H_Manual",
+      "old": "手動【Y806】B(右側) NG1チャック戻：",
+      "new": "手動【Y806】B(右側)ST3 NG1チャック戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Chk_B_H_Done",
+      "old": "【Y806】B(右側) NG1チャック戻 動作完了",
+      "new": "【Y806】B(右側)ST3 NG1チャック戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Chk_B_F_Auto",
+      "old": "自動【Y807】B(右側) NG1チャック行：",
+      "new": "自動【Y807】B(右側)ST3 NG1チャック行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Chk_B_F_Manual",
+      "old": "手動【Y807】B(右側) NG1チャック行：",
+      "new": "手動【Y807】B(右側)ST3 NG1チャック行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Chk_B_F_Done",
+      "old": "【Y807】B(右側) NG1チャック行 動作完了",
+      "new": "【Y807】B(右側)ST3 NG1チャック行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Clp_B_H_Done",
+      "old": "【Y800】B(右側) 高さ検査押え戻 動作完了",
+      "new": "【Y800】B(右側)ST2 高さ検査押え戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Clp_B_H_Auto",
+      "old": "自動【Y800】B(右側) 高さ検査押え戻：",
+      "new": "自動【Y800】B(右側)ST2 高さ検査押え戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Clp_B_H_Manual",
+      "old": "手動【Y800】B(右側) 高さ検査押え戻：",
+      "new": "手動【Y800】B(右側)ST2 高さ検査押え戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Clp_B_F_Auto",
+      "old": "自動【Y801】B(右側) 高さ検査押え行：",
+      "new": "自動【Y801】B(右側)ST2 高さ検査押え行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Clp_B_F_Manual",
+      "old": "手動【Y801】B(右側) 高さ検査押え行：",
+      "new": "手動【Y801】B(右側)ST2 高さ検査押え行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Clp_B_F_Done",
+      "old": "【Y801】B(右側) 高さ検査押え行 動作完了",
+      "new": "【Y801】B(右側)ST2 高さ検査押え行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Lf_B_H_Auto",
+      "old": "自動【Y802】B(右側) 高さ検査持上戻：",
+      "new": "自動【Y802】B(右側)ST2 高さ検査持上戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Lf_B_H_Manual",
+      "old": "手動【Y802】B(右側) 高さ検査持上戻：",
+      "new": "手動【Y802】B(右側)ST2 高さ検査持上戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_03_Stopper_A_H_Manual",
+      "old": "手動【Y722】A(左側) 位置3ストッパー戻：",
+      "new": "手動【Y722】A(左側)ST3 位置3ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_03_Stopper_A_H_Done",
+      "old": "【Y722】A(左側) 位置3ストッパー戻 動作完了",
+      "new": "【Y722】A(左側)ST3 位置3ストッパー戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_03_Stopper_A_F_Auto",
+      "old": "自動【Y722】A(左側) 位置3ストッパー行：",
+      "new": "自動【Y722】A(左側)ST3 位置3ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_03_Stopper_A_F_Manual",
+      "old": "手動【Y722】A(左側) 位置3ストッパー行：",
+      "new": "手動【Y722】A(左側)ST3 位置3ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_03_Stopper_A_F_Done",
+      "old": "【Y722】A(左側) 位置3ストッパー行 動作完了",
+      "new": "【Y722】A(左側)ST3 位置3ストッパー行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_04_Stopper_A_H_Auto",
+      "old": "自動【Y723】A(左側) 位置4ストッパー戻：",
+      "new": "自動【Y723】A(左側)ST4 位置4ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_04_Stopper_A_H_Manual",
+      "old": "手動【Y723】A(左側) 位置4ストッパー戻：",
+      "new": "手動【Y723】A(左側)ST4 位置4ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_04_Stopper_A_H_Done",
+      "old": "【Y723】A(左側) 位置4ストッパー戻 動作完了",
+      "new": "【Y723】A(左側)ST4 位置4ストッパー戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_04_Stopper_A_F_Auto",
+      "old": "自動【Y723】A(左側) 位置4ストッパー行：",
+      "new": "自動【Y723】A(左側)ST4 位置4ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_04_Stopper_A_F_Manual",
+      "old": "手動【Y723】A(左側) 位置4ストッパー行：",
+      "new": "手動【Y723】A(左側)ST4 位置4ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_04_Stopper_A_F_Done",
+      "old": "【Y723】A(左側) 位置4ストッパー行 動作完了",
+      "new": "【Y723】A(左側)ST4 位置4ストッパー行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_05_Stopper_A_H_Auto",
+      "old": "自動【Y724】A(左側) 位置5ストッパー戻：",
+      "new": "自動【Y724】A(左側)ST5 位置5ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_05_Stopper_A_H_Manual",
+      "old": "手動【Y724】A(左側) 位置5ストッパー戻：",
+      "new": "手動【Y724】A(左側)ST5 位置5ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_05_Stopper_A_H_Done",
+      "old": "【Y724】A(左側) 位置5ストッパー戻 動作完了",
+      "new": "【Y724】A(左側)ST5 位置5ストッパー戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_05_Stopper_A_F_Auto",
+      "old": "自動【Y724】A(左側) 位置5ストッパー行：",
+      "new": "自動【Y724】A(左側)ST5 位置5ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_05_Stopper_A_F_Manual",
+      "old": "手動【Y724】A(左側) 位置5ストッパー行：",
+      "new": "手動【Y724】A(左側)ST5 位置5ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_05_Stopper_A_F_Done",
+      "old": "【Y724】A(左側) 位置5ストッパー行 動作完了",
+      "new": "【Y724】A(左側)ST5 位置5ストッパー行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_06_Stopper_A_H_Auto",
+      "old": "自動【Y725】A(左側) 位置6ストッパー戻：",
+      "new": "自動【Y725】A(左側)ST6 位置6ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_06_Stopper_A_H_Manual",
+      "old": "手動【Y725】A(左側) 位置6ストッパー戻：",
+      "new": "手動【Y725】A(左側)ST6 位置6ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_06_Stopper_A_H_Done",
+      "old": "【Y725】A(左側) 位置6ストッパー戻 動作完了",
+      "new": "【Y725】A(左側)ST6 位置6ストッパー戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_06_Stopper_A_F_Auto",
+      "old": "自動【Y725】A(左側) 位置6ストッパー行：",
+      "new": "自動【Y725】A(左側)ST6 位置6ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_06_Stopper_A_F_Manual",
+      "old": "手動【Y725】A(左側) 位置6ストッパー行：",
+      "new": "手動【Y725】A(左側)ST6 位置6ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_06_Stopper_A_F_Done",
+      "old": "【Y725】A(左側) 位置6ストッパー行 動作完了",
+      "new": "【Y725】A(左側)ST6 位置6ストッパー行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_SH_A_Turn_H_Auto",
+      "old": "自動【Y726】A(左側) ストックフォルダターン戻：",
+      "new": "自動【Y726】A(左側)ST7 ストックフォルダターン戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_SH_A_Turn_H_Manual",
+      "old": "手動【Y726】A(左側) ストックフォルダターン戻：",
+      "new": "手動【Y726】A(左側)ST7 ストックフォルダターン戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_SH_A_Turn_H_Done",
+      "old": "【Y726】A(左側) ストックフォルダターン戻 動作完了",
+      "new": "【Y726】A(左側)ST7 ストックフォルダターン戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_SH_A_Turn_F_Auto",
+      "old": "自動【Y727】A(左側) ストックフォルダターン行：",
+      "new": "自動【Y727】A(左側)ST7 ストックフォルダターン行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_SH_A_Turn_F_Manual",
+      "old": "手動【Y727】A(左側) ストックフォルダターン行：",
+      "new": "手動【Y727】A(左側)ST7 ストックフォルダターン行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_SH_A_Turn_F_Done",
+      "old": "【Y727】A(左側) ストックフォルダターン行 動作完了",
+      "new": "【Y727】A(左側)ST7 ストックフォルダターン行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Srt_A_H_Auto",
+      "old": "自動【Y728】A(左側) NG1仕分け 戻：",
+      "new": "自動【Y728】A(左側)ST3 NG1仕分け 戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Srt_A_H_Manual",
+      "old": "手動【Y728】A(左側) NG1仕分け 戻：",
+      "new": "手動【Y728】A(左側)ST3 NG1仕分け 戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Srt_A_H_Done",
+      "old": "【Y728】A(左側) NG1仕分け 戻 動作完了",
+      "new": "【Y728】A(左側)ST3 NG1仕分け 戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Srt_A_F_Auto",
+      "old": "自動【Y729】A(左側) NG1仕分け行：",
+      "new": "自動【Y729】A(左側)ST3 NG1仕分け行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Srt_A_F_Manual",
+      "old": "手動【Y729】A(左側) NG1仕分け行：",
+      "new": "手動【Y729】A(左側)ST3 NG1仕分け行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Srt_A_F_Done",
+      "old": "【Y729】A(左側) NG1仕分け行 動作完了",
+      "new": "【Y729】A(左側)ST3 NG1仕分け行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_01_Stopper_A_F_Auto",
+      "old": "自動【Y720】A(左側) 位置1ストッパー行：",
+      "new": "自動【Y720】A(左側)ST1 位置1ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_01_Stopper_A_F_Manual",
+      "old": "手動【Y720】A(左側) 位置1ストッパー 行：",
+      "new": "手動【Y720】A(左側)ST1 位置1ストッパー 行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_02_Stopper_A_H_Auto",
+      "old": "自動【Y721】A(左側) 位置2ストッパー戻：",
+      "new": "自動【Y721】A(左側)ST2 位置2ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_02_Stopper_A_H_Manual",
+      "old": "手動【Y721】A(左側) 位置2ストッパー戻：",
+      "new": "手動【Y721】A(左側)ST2 位置2ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_02_Stopper_A_H_Done",
+      "old": "【Y721】A(左側) 位置2ストッパー戻 動作完了",
+      "new": "【Y721】A(左側)ST2 位置2ストッパー戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_02_Stopper_A_F_Auto",
+      "old": "自動【Y721】A(左側) 位置2ストッパー行：",
+      "new": "自動【Y721】A(左側)ST2 位置2ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_02_Stopper_A_F_Manual",
+      "old": "手動【Y721】A(左側) 位置2ストッパー行：",
+      "new": "手動【Y721】A(左側)ST2 位置2ストッパー行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_02_Stopper_A_F_Done",
+      "old": "【Y721】A(左側) 位置2ストッパー行 動作完了",
+      "new": "【Y721】A(左側)ST2 位置2ストッパー行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_03_Stopper_A_H_Auto",
+      "old": "自動【Y722】A(左側) 位置3ストッパー戻：",
+      "new": "自動【Y722】A(左側)ST3 位置3ストッパー戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Disc_Chk_A_H_Auto",
+      "old": "自動【Y716】A(左側) 排出チャック閉 戻 ：",
+      "new": "自動【Y716】A(左側)ST7 排出チャック閉 戻 ：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Disc_Chk_A_H_Manual",
+      "old": "手動【Y716】A(左側) 排出チャック閉 戻 ：",
+      "new": "手動【Y716】A(左側)ST7 排出チャック閉 戻 ：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Disc_Chk_A_H_Done",
+      "old": "【Y716】A(左側) 排出チャック閉 戻 動作完了",
+      "new": "【Y716】A(左側)ST7 排出チャック閉 戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Disc_Chk_A_F_Auto",
+      "old": "自動【Y717】A(左側) 排出チャック開 行 ：",
+      "new": "自動【Y717】A(左側)ST7 排出チャック開 行 ：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Disc_Chk_A_F_Manual",
+      "old": "手動【Y717】A(左側) 排出チャック開 行 ：",
+      "new": "手動【Y717】A(左側)ST7 排出チャック開 行 ：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Disc_Chk_A_F_Done",
+      "old": "【Y717】A(左側) 排出チャック開 行 動作完了",
+      "new": "【Y717】A(左側)ST7 排出チャック開 行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Ejc_Hldr_Feed_A_F_Auto",
+      "old": "自動【Y719】A(左側) 排出フォルダ送り行 ：",
+      "new": "自動【Y719】A(左側)ST7 排出フォルダ送り行 ：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Ejc_Hldr_Feed_A_F_Manual",
+      "old": "手動【Y719】A(左側) 排出フォルダ送り行 ：",
+      "new": "手動【Y719】A(左側)ST7 排出フォルダ送り行 ：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Ejc_Hldr_Feed_A_F_Done",
+      "old": "【Y719】A(左側) 排出フォルダ送り行 動作完了",
+      "new": "【Y719】A(左側)ST7 排出フォルダ送り行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Ejc_Hldr_Feed_A_H_Auto",
+      "old": "自動【Y718】A(左側) 排出フォルダ送り戻 ：",
+      "new": "自動【Y718】A(左側)ST7 排出フォルダ送り戻 ：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Ejc_Hldr_Feed_A_H_Manual",
+      "old": "手動【Y718】A(左側) 排出フォルダ送り戻 ：",
+      "new": "手動【Y718】A(左側)ST7 排出フォルダ送り戻 ：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Ejc_Hldr_Feed_A_H_Done",
+      "old": "【Y718】A(左側) 排出フォルダ送り戻 動作完了",
+      "new": "【Y718】A(左側)ST7 排出フォルダ送り戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_01_Stopper_A_H_Auto",
+      "old": "自動【Y720】A(左側) 位置1ストッパー 戻：",
+      "new": "自動【Y720】A(左側)ST1 位置1ストッパー 戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_01_Stopper_A_H_Manual",
+      "old": "手動【Y720】A(左側) 位置1ストッパー 戻 ：",
+      "new": "手動【Y720】A(左側)ST1 位置1ストッパー 戻 ：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_01_Stopper_A_F_Done",
+      "old": "【Y720】A(左側) 位置1ストッパー行 動作完了",
+      "new": "【Y720】A(左側)ST1 位置1ストッパー行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYS_Pos_01_Stopper_A_H_Done",
+      "old": "【Y720】A(左側) 位置1ストッパー戻 動作完了",
+      "new": "【Y720】A(左側)ST1 位置1ストッパー戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Lf_A_F_Done",
+      "old": "【Y703】A(左側) 高さ検査持上行 動作完了",
+      "new": "【Y703】A(左側)ST2 高さ検査持上行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Pick_A_H_Auto",
+      "old": "自動【Y704】A(左側) NG1ピックアップ戻：",
+      "new": "自動【Y704】A(左側)ST3 NG1ピックアップ戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Pick_A_H_Manual",
+      "old": "手動【Y704】A(左側) NG1ピックアップ戻：",
+      "new": "手動【Y704】A(左側)ST3 NG1ピックアップ戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Pick_A_H_Done",
+      "old": "【Y704】A(左側) NG1ピックアップ戻 動作完了",
+      "new": "【Y704】A(左側)ST3 NG1ピックアップ戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Pick_A_F_Auto",
+      "old": "自動【Y705】A(左側) NG1ピックアップ 行：",
+      "new": "自動【Y705】A(左側)ST3 NG1ピックアップ 行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Pick_A_F_Manual",
+      "old": "手動【Y705】A(左側) NG1ピックアップ 行：",
+      "new": "手動【Y705】A(左側)ST3 NG1ピックアップ 行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Pick_A_F_Done",
+      "old": "【Y705】A(左側) NG1ピックアップ 動作完了",
+      "new": "【Y705】A(左側)ST3 NG1ピックアップ 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Chk_A_H_Auto",
+      "old": "自動【Y706】A(左側) NG1チャック戻 ：",
+      "new": "自動【Y706】A(左側)ST3 NG1チャック戻 ：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Chk_A_H_Manual",
+      "old": "手動【Y706】A(左側) NG1チャック戻 ：",
+      "new": "手動【Y706】A(左側)ST3 NG1チャック戻 ：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Chk_A_H_Done",
+      "old": "【Y706】A(左側) NG1チャック戻 動作完了",
+      "new": "【Y706】A(左側)ST3 NG1チャック戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Chk_A_F_Auto",
+      "old": "自動【Y707】A(左側) NG1チャック行：",
+      "new": "自動【Y707】A(左側)ST3 NG1チャック行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Chk_A_F_Manual",
+      "old": "手動【Y707】A(左側) NG1チャック行：",
+      "new": "手動【Y707】A(左側)ST3 NG1チャック行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_NG1_Chk_A_F_Done",
+      "old": "【Y707】A(左側) NG1チャック行 動作完了",
+      "new": "【Y707】A(左側)ST3 NG1チャック行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Slide_B_F_Done",
+      "old": "【Y623】B(右側) 供給スライド行 動作完了",
+      "new": "【Y623】B(右側)ST0 供給スライド行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Pick_B_H_Auto",
+      "old": "自動【Y624】B(右側) 供給ピックアップ戻：",
+      "new": "自動【Y624】B(右側)ST0 供給ピックアップ戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Pick_B_H_Manual",
+      "old": "手動【Y624】B(右側) 供給ピックアップ戻：",
+      "new": "手動【Y624】B(右側)ST0 供給ピックアップ戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Pick_B_H_Done",
+      "old": "【Y624】B(右側) 供給ピックアップ戻 動作完了",
+      "new": "【Y624】B(右側)ST0 供給ピックアップ戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Pick_B_F_Auto",
+      "old": "自動【Y625】B(右側) 供給ピックアップ行：",
+      "new": "自動【Y625】B(右側)ST0 供給ピックアップ行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Pick_B_F_Manual",
+      "old": "手動【Y625】B(右側) 供給ピックアップ行：",
+      "new": "手動【Y625】B(右側)ST0 供給ピックアップ行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Pick_B_F_Done",
+      "old": "【Y625】B(右側) 供給ピックアップ行 動作完了",
+      "new": "【Y625】B(右側)ST0 供給ピックアップ行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sup_Chuck_B_Cl_H_Auto",
+      "old": "自動【Y626】B(右側) 供給チャック閉 戻：",
+      "new": "自動【Y626】B(右側)ST0 供給チャック閉 戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sup_Chuck_B_Cl_H_Manual",
+      "old": "手動【Y626】B(右側) 供給チャック閉 戻：",
+      "new": "手動【Y626】B(右側)ST0 供給チャック閉 戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sup_Chuck_B_Cl_H_Done",
+      "old": "【Y626】B(右側) 供給チャック閉 戻 動作完了",
+      "new": "【Y626】B(右側)ST0 供給チャック閉 戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sup_Chuck_B_Cl_F_Auto",
+      "old": "自動【Y627】B(右側) 供給チャック開 行：",
+      "new": "自動【Y627】B(右側)ST0 供給チャック開 行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sup_Chuck_B_Cl_F_Manual",
+      "old": "手動【Y627】B(右側) 供給チャック開 行：",
+      "new": "手動【Y627】B(右側)ST0 供給チャック開 行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sup_Chuck_B_Cl_F_Done",
+      "old": "【Y627】B(右側) 供給チャック開 行 動作完了",
+      "new": "【Y627】B(右側)ST0 供給チャック開 行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Clp_A_H_Auto",
+      "old": "自動【Y700】A(左側) 高さ検査押え戻：",
+      "new": "自動【Y700】A(左側)ST2 高さ検査押え戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Clp_A_H_Manual",
+      "old": "手動【Y700】A(左側) 高さ検査押え戻：",
+      "new": "手動【Y700】A(左側)ST2 高さ検査押え戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Clp_A_H_Done",
+      "old": "【Y700】A(左側) 高さ検査押え戻 動作完了",
+      "new": "【Y700】A(左側)ST2 高さ検査押え戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Clp_A_F_Auto",
+      "old": "自動【Y701】A(左側) 高さ検査押え行：",
+      "new": "自動【Y701】A(左側)ST2 高さ検査押え行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Clp_A_F_Manual",
+      "old": "手動【Y701】A(左側) 高さ検査押え行：",
+      "new": "手動【Y701】A(左側)ST2 高さ検査押え行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Clp_A_F_Done",
+      "old": "【Y701】A(左側) 高さ検査押え行 動作完了",
+      "new": "【Y701】A(左側)ST2 高さ検査押え行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Lf_A_H_Auto",
+      "old": "自動【Y702】A(左側) 高さ検査持上戻：",
+      "new": "自動【Y702】A(左側)ST2 高さ検査持上戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Lf_A_H_Manual",
+      "old": "手動【Y702】A(左側) 高さ検査持上戻：",
+      "new": "手動【Y702】A(左側)ST2 高さ検査持上戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Lf_A_H_Done",
+      "old": "【Y702】A(左側) 高さ検査持上戻 動作完了",
+      "new": "【Y702】A(左側)ST2 高さ検査持上戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Lf_A_F_Auto",
+      "old": "自動【Y703】A(左側) 高さ検査持上行：",
+      "new": "自動【Y703】A(左側)ST2 高さ検査持上行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_HgtInsp_Lf_A_F_Manual",
+      "old": "手動【Y703】A(左側) 高さ検査持上行：",
+      "new": "手動【Y703】A(左側)ST2 高さ検査持上行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Slide_A_F_Auto",
+      "old": "自動【Y617】A(左側) 供給スライド行：",
+      "new": "自動【Y617】A(左側)ST0 供給スライド行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Slide_A_F_Manual",
+      "old": "手動【Y617】A(左側) 供給スライド行：",
+      "new": "手動【Y617】A(左側)ST0 供給スライド行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Pick_A_H_Auto",
+      "old": "自動【Y618】A(左側) 供給ピックアップ戻：",
+      "new": "自動【Y618】A(左側)ST0 供給ピックアップ戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Pick_A_H_Manual",
+      "old": "手動【Y618】A(左側) 供給ピックアップ戻：",
+      "new": "手動【Y618】A(左側)ST0 供給ピックアップ戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Pick_A_H_Done",
+      "old": "【Y618】A(左側) 供給ピックアップ戻 動作完了",
+      "new": "【Y618】A(左側)ST0 供給ピックアップ戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Pick_A_F_Auto",
+      "old": "自動【Y619】A(左側) 供給ピックアップ行：",
+      "new": "自動【Y619】A(左側)ST0 供給ピックアップ行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Pick_A_F_Manual",
+      "old": "自動【Y619】A(左側) 供給ピックアップ行：",
+      "new": "自動【Y619】A(左側)ST0 供給ピックアップ行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Pick_A_F_Done",
+      "old": "【Y619】A(左側) 供給ピックアップ行 動作完了",
+      "new": "【Y619】A(左側)ST0 供給ピックアップ行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sup_Chuck_A_Cl_H_Auto",
+      "old": "自動【Y620】A(左側) 供給チャック閉 戻：",
+      "new": "自動【Y620】A(左側)ST0 供給チャック閉 戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sup_Chuck_A_Cl_H_Manual",
+      "old": "手動【Y620】A(左側) 供給チャック閉 戻：",
+      "new": "手動【Y620】A(左側)ST0 供給チャック閉 戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sup_Chuck_A_Cl_H_Done",
+      "old": "【Y620】A(左側) 供給チャック閉 戻 動作完了",
+      "new": "【Y620】A(左側)ST0 供給チャック閉 戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sup_Chuck_A_Cl_F_Auto",
+      "old": "自動【Y621】A(左側) 供給チャック開 行：",
+      "new": "自動【Y621】A(左側)ST0 供給チャック開 行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sup_Chuck_A_Cl_F_Manual",
+      "old": "手動【Y621】A(左側) 供給チャック開 行：",
+      "new": "手動【Y621】A(左側)ST0 供給チャック開 行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sup_Chuck_A_Cl_F_Done",
+      "old": "【Y621】A(左側) 供給チャック開 行 動作完了",
+      "new": "【Y621】A(左側)ST0 供給チャック開 行 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Slide_B_H_Auto",
+      "old": "自動【Y622】B(右側) 供給スライド戻：",
+      "new": "自動【Y622】B(右側)ST0 供給スライド戻：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Slide_B_H_Manual",
+      "old": "手動【Y622】B(右側) 供給スライド行：",
+      "new": "手動【Y622】B(右側)ST0 供給スライド行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Slide_B_Done",
+      "old": "【Y622】B(右側) 供給スライド戻 動作完了",
+      "new": "【Y622】B(右側)ST0 供給スライド戻 動作完了",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Slide_B_F_Auto",
+      "old": "自動【Y623】B(右側) 供給スライド行：",
+      "new": "自動【Y623】B(右側)ST0 供給スライド行：",
+      "physical": false
+    },
+    {
+      "name": "Out_CYw_Sply_Slide_B_F_Manual",
+      "old": "手動【Y623】B(右側) 供給スライド行：",
+      "new": "手動【Y623】B(右側)ST0 供給スライド行：",
+      "physical": false
+    }
+  ],
+  "physical_excluded": [
+    {
+      "name": "In_Sw_EMS1",
+      "comment": "【X100】非常停止1(タッチパネル)SW"
+    },
+    {
+      "name": "In_Sw_EMS2",
+      "comment": "【X101】非常停止2(その他)SW"
+    },
+    {
+      "name": "In_Sw_EMS3",
+      "comment": "【X102】非常停止3(その他)SW"
+    },
+    {
+      "name": "In_Sw_START",
+      "comment": "【X103】スタートSW"
+    },
+    {
+      "name": "In_Sw_STOP",
+      "comment": "【X104】ストップSW"
+    },
+    {
+      "name": "In_Sw_RESET",
+      "comment": "【X105】リセットSW"
+    },
+    {
+      "name": "In_Sen_DOOR_01",
+      "comment": "【X108】ドアセンサ1"
+    },
+    {
+      "name": "In_Sen_DOOR_02",
+      "comment": "【X109】ドアセンサ2"
+    },
+    {
+      "name": "In_Sen_DOOR_03",
+      "comment": "【X110】ドアセンサ3"
+    },
+    {
+      "name": "In_Sen_DOOR_04",
+      "comment": "【X111】ドアセンサ4"
+    },
+    {
+      "name": "In_Sen_DOOR_05",
+      "comment": "【X112】ドアセンサ5"
+    },
+    {
+      "name": "In_Sen_DOOR_06",
+      "comment": "【X113】ドアセンサ6"
+    },
+    {
+      "name": "In_Sen_CV_Alram",
+      "comment": "【X116】入口 コンベアアラーム"
+    },
+    {
+      "name": "In_Sen_AIR１_Pressure_01",
+      "comment": "【X117】エア圧力(1)"
+    },
+    {
+      "name": "In_Sen_AIR１_Pressure_02",
+      "comment": "【X118】エア圧力(2)"
+    },
+    {
+      "name": "In_Sen_AIR１_Pressure_03",
+      "comment": "【X119】エア圧力(3)"
+    },
+    {
+      "name": "In_Sen_Accum_CV_B_Full",
+      "comment": "【X400】B(右側) アキュームCV満"
+    },
+    {
+      "name": "In_Sen_Accum_CV_A_Arrival",
+      "comment": "【X201】A(左側) アキューム CV着"
+    },
+    {
+      "name": "In_Sen_Accum_CV_B_Arrival",
+      "comment": "【X401】B(右側) アキュームCV着"
+    },
+    {
+      "name": "In_Sen_Supply_Container_Exist",
+      "comment": "【X1000】供給部コンテナ有"
+    },
+    {
+      "name": "In_Sen_Destacker_Stage_01_Exist",
+      "comment": "【X1001】段バラシ1段目有"
+    },
+    {
+      "name": "In_Sen_Destacker_Stage_02_Exist",
+      "comment": "【X1002】段バラシ2段目有"
+    },
+    {
+      "name": "In_Sen_Container_Arrival",
+      "comment": "【X1003】コンテナ到着"
+    },
+    {
+      "name": "In_Sen_Container_Direction_Check",
+      "comment": "【X1004】コンテナ方向確認"
+    },
+    {
+      "name": "In_Sen_Container_Pass",
+      "comment": "【X1005】コンテナ通過"
+    },
+    {
+      "name": "In_Sen_Container_Full",
+      "comment": "【X1006】コンテナ満杯"
+    },
+    {
+      "name": "In_Sen_Tray_Direction_Check",
+      "comment": "【X1007】コンテナトレイ方向"
+    },
+    {
+      "name": "In_SenCY_Empty_Container_CY_H",
+      "comment": "【X1010】空コンテナ送り 戻"
+    },
+    {
+      "name": "In_SenCY_Empty_Container_CY_F",
+      "comment": "【X1011】空コンテナ送り 行"
+    },
+    {
+      "name": "In_SenCY_Sep_Claw1_H",
+      "comment": "【X1012】段バラシ爪1 戻"
+    },
+    {
+      "name": "In_SenCY_Sep_Claw1_F",
+      "comment": "【X1013】段バラシ爪1 行"
+    },
+    {
+      "name": "In_SenCY_Sep_Claw2_H",
+      "comment": "【X1014】段バラシ爪2 戻"
+    },
+    {
+      "name": "In_SenCY_Sep_Claw2_F",
+      "comment": "【X1015】段バラシ爪2 行"
+    },
+    {
+      "name": "In_SenCY_Ejc_Cont1_H",
+      "comment": "【X1016】コンテナ排出1 戻"
+    },
+    {
+      "name": "In_SenCY_Ejc_Cont1_F",
+      "comment": "【X1017】コンテナ排出1 行"
+    },
+    {
+      "name": "In_SenCY_Ejc_Cont2_H",
+      "comment": "【X1018】コンテナ排出2 戻"
+    },
+    {
+      "name": "In_SenCY_Ejc_Cont2_F",
+      "comment": "【X1019】コンテナ排出2 行"
+    },
+    {
+      "name": "In_SenCY_Box_Chk_H",
+      "comment": "【X1020】箱入れチャック 戻"
+    },
+    {
+      "name": "In_SenCY_Box_Chk_F",
+      "comment": "【X1021】箱入れチャック 行"
+    },
+    {
+      "name": "In_SenCY_Srt_Stopper_H",
+      "comment": "【X1022】コンテナ仕分けストッパー 戻"
+    },
+    {
+      "name": "In_SenCY_Srt_Stopper_F",
+      "comment": "【X1023】コンテナ仕分けストッパー 行"
+    },
+    {
+      "name": "In_SenCY_Srt_Feed_H",
+      "comment": "【X1024】コンテナ仕分け送り 戻"
+    },
+    {
+      "name": "In_SenCY_Srt_Feed_F",
+      "comment": "【X1025】コンテナ仕分け送り 行"
+    },
+    {
+      "name": "Out_CYw_Hnd_Feed_A_H",
+      "comment": "【Y1300】A(左側) コンベア受渡送り戻"
+    },
+    {
+      "name": "Out_CYw_Hnd_Feed_A_F",
+      "comment": "【Y1301】A(左側) コンベア受渡送り行"
+    },
+    {
+      "name": "Out_CYw_Hnd_Feed_B_H",
+      "comment": "【Y1302】B(右側) コンベア受渡送り戻"
+    },
+    {
+      "name": "Out_CYw_Hnd_Feed_B_F",
+      "comment": "【Y1303】B(右側) コンベア受渡送り行"
+    },
+    {
+      "name": "In_Sen_Unl_Conv_A_Pass",
+      "comment": "【X1100】A(左側) 取出しコンベア 通過"
+    },
+    {
+      "name": "In_Sen_Unl_Conv_B_Pass",
+      "comment": "【X1101】B(右側) 取出しコンベア 通過"
+    },
+    {
+      "name": "In_Sen_Trs_Conv_A_Arrival",
+      "comment": "【X1102】A(左側) 搬送コンベア到着"
+    },
+    {
+      "name": "In_Sen_Trs_Conv_B_Arrival",
+      "comment": "【X1103】B(右側) 搬送コンベア到着"
+    },
+    {
+      "name": "In_SenCY_Hnd_Feed_A_H",
+      "comment": "【X1104】A(左側) コンベア受渡送り戻"
+    },
+    {
+      "name": "In_SenCY_Hnd_Feed_A_F",
+      "comment": "【X1105】A(左側) コンベア受渡送り行"
+    },
+    {
+      "name": "In_SenCY_Hnd_Feed_B_H",
+      "comment": "【X1106】B(右側) コンベア受渡送り戻"
+    },
+    {
+      "name": "In_SenCY_Hnd_Feed_B_F",
+      "comment": "【X1107】B(右側) コンベア受渡送り行"
+    },
+    {
+      "name": "Out_CYw_Empty_Container_CY_H",
+      "comment": "【Y1200】空コンテナ送り 戻"
+    },
+    {
+      "name": "Out_CYw_Empty_Container_CY_F",
+      "comment": "【Y1201】空コンテナ送り 行"
+    },
+    {
+      "name": "Out_CYw_Sep_Claw_F",
+      "comment": "【Y1203】段バラシ爪 行"
+    },
+    {
+      "name": "Out_CYw_Sep_Claw_H",
+      "comment": "【Y1202】段バラシ爪 戻"
+    },
+    {
+      "name": "Out_CYw_Ejc_Cont_H",
+      "comment": "【Y1204】コンテナ排出 戻"
+    },
+    {
+      "name": "Out_CYw_Ejc_Cont_F",
+      "comment": "【Y1205】コンテナ排出 行"
+    },
+    {
+      "name": "Out_CYw_Box_Chuck_H",
+      "comment": "【Y1206】箱入れチャック 戻"
+    },
+    {
+      "name": "Out_CYw_Box_Chuck_F",
+      "comment": "【Y1207】箱入れチャック 行"
+    },
+    {
+      "name": "Out_CYw_Srt_Stopper_H",
+      "comment": "【Y1208】コンテナ仕分けストッパー 戻"
+    },
+    {
+      "name": "Out_CYw_Srt_Stopper_F",
+      "comment": "【Y1209】コンテナ仕分けストッパー 行"
+    },
+    {
+      "name": "Out_CYw_Srt_Feed_H",
+      "comment": "【Y1210】コンテナ仕分け送り 戻"
+    },
+    {
+      "name": "Out_CYw_Srt_Feed_F",
+      "comment": "【Y1211】コンテナ仕分け送り 行"
+    },
+    {
+      "name": "Out_SW_Start_LP_GREEN",
+      "comment": "【Y600】SWスタートランプ緑"
+    },
+    {
+      "name": "Out_SW_Stop_LP_RED",
+      "comment": "【Y601】SWストップランプ赤"
+    },
+    {
+      "name": "Out_SW_Reset_LP_Orange",
+      "comment": "【Y602】SW リセットランプ橙"
+    },
+    {
+      "name": "Out_Sg_LP_GREEN",
+      "comment": "【Y603】シグナルタワー緑"
+    },
+    {
+      "name": "Out_Sg_LP_RED",
+      "comment": "【Y604】シグナルタワー赤"
+    },
+    {
+      "name": "Out_Sg_LP_ORANGE",
+      "comment": "【Y605】シグナルタワー橙"
+    },
+    {
+      "name": "Out_Sg_BUZZER",
+      "comment": "【Y606】シグナルタワーブザー"
+    },
+    {
+      "name": "Out_Acc_Conv_Run",
+      "comment": "【Y607】アキューム コンベア運転ON"
+    },
+    {
+      "name": "Out_Insp_Cv_A_Run",
+      "comment": "【Y610】A(左側) 検査コンベア運転ON"
+    },
+    {
+      "name": "Out_Insp_Cv_B_Run",
+      "comment": "【Y613】B(右側) 検査コンベア運転ON"
+    },
+    {
+      "name": "Out_TDC_Stop",
+      "comment": "【Y628】プレス上死点停止"
+    }
+  ]
+}

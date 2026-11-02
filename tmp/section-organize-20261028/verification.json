@@ -1,0 +1,381 @@
+{
+    "source":  "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029I.smc2",
+    "staged":  "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\section-organize-20261028\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029J.smc2",
+    "destination":  "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029J.smc2",
+    "source_sha256":  "0fdfb3ef932a3a506df1084c349b6d467d7f4b2032b35004c523aad8631d66d6",
+    "output_sha256":  "3d269d74ea049278ea043e9a3ea874ee5d18992e23612e97a6d086a135f1af1b",
+    "changed_entries":  [
+                            "0943de8e-fc6a-41bc-9714-73b1e334e22c/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+                            "0943de8e-fc6a-41bc-9714-73b1e334e22c/41a409d9-8b74-4a8f-a215-a939e2d48477.xml",
+                            "0943de8e-fc6a-41bc-9714-73b1e334e22c/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml",
+                            "0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml",
+                            "0943de8e-fc6a-41bc-9714-73b1e334e22c/6e084b53-62d4-4fde-aa83-ef0f7da31ee2.xml",
+                            "0943de8e-fc6a-41bc-9714-73b1e334e22c/0943de8e-fc6a-41bc-9714-73b1e334e22c.oem"
+                        ],
+    "added_entries":  [
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/b357473c-e0e8-46fb-a43a-32ec339a52c7.xml",
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/b357473c-e0e8-46fb-a43a-32ec339a52c7.BookmarkGroup",
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/afae9f9a-c345-48e2-80ca-cb3921a2674f.xml",
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/56d181ec-ffe1-4894-bab2-865f84b064aa.xml",
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/56d181ec-ffe1-4894-bab2-865f84b064aa.BookmarkGroup",
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/41b04155-2494-4393-a227-cd351bba45a5.xml",
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/18906edb-dd5e-4e94-953b-c4da01106425.xml",
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/18906edb-dd5e-4e94-953b-c4da01106425.BookmarkGroup",
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/1082faff-8586-4545-8db1-7ccc38feea2b.xml"
+                      ],
+    "section_audit":  [
+                          {
+                              "source":  "ST7_A_Dis2_左SF排出",
+                              "old_rows":  [
+                                               9,
+                                               10,
+                                               11
+                                           ],
+                              "destination":  "ErrorCollect_異常収集",
+                              "classification":  "異常理由の記録/解除",
+                              "reason":  "ST7末尾まで読書き競合なし。同じMovements内・IO更新前で収集する"
+                          },
+                          {
+                              "source":  "Output_出力",
+                              "old_rows":  [
+                                               18,
+                                               21,
+                                               24,
+                                               27,
+                                               30,
+                                               33,
+                                               36,
+                                               39,
+                                               42,
+                                               45,
+                                               48,
+                                               51,
+                                               54,
+                                               57,
+                                               60,
+                                               63,
+                                               66,
+                                               69,
+                                               72,
+                                               75,
+                                               78,
+                                               81,
+                                               84,
+                                               87,
+                                               90,
+                                               93,
+                                               96,
+                                               99,
+                                               102,
+                                               105,
+                                               108,
+                                               111,
+                                               114,
+                                               117,
+                                               120,
+                                               123,
+                                               126,
+                                               129,
+                                               132,
+                                               135,
+                                               138,
+                                               141,
+                                               144,
+                                               147,
+                                               150,
+                                               153,
+                                               156,
+                                               159,
+                                               162,
+                                               165,
+                                               168,
+                                               171,
+                                               174,
+                                               177,
+                                               180,
+                                               183,
+                                               186,
+                                               189,
+                                               192,
+                                               195,
+                                               198,
+                                               201,
+                                               204,
+                                               207,
+                                               210,
+                                               213,
+                                               216,
+                                               219,
+                                               222,
+                                               225,
+                                               228,
+                                               231,
+                                               234,
+                                               237,
+                                               240,
+                                               243,
+                                               246,
+                                               249,
+                                               252,
+                                               255,
+                                               258,
+                                               261,
+                                               264,
+                                               267,
+                                               270,
+                                               273,
+                                               276,
+                                               279,
+                                               282,
+                                               285,
+                                               288,
+                                               291,
+                                               294,
+                                               297,
+                                               300,
+                                               303,
+                                               306,
+                                               309,
+                                               312,
+                                               315
+                                           ],
+                              "destination":  "ErrorCylinder_シリンダ異常監視",
+                              "classification":  "時間監視/異常保持/表示要求",
+                              "reason":  "後段の出力制御と読書き競合なし。同じIO内の末尾へ移動"
+                          },
+                          {
+                              "source":  "Error_エラー処理",
+                              "old_rows":  [
+                                               49,
+                                               50,
+                                               51,
+                                               52,
+                                               53,
+                                               54,
+                                               55,
+                                               56
+                                           ],
+                              "destination":  "HMI_Request_表示要求",
+                              "classification":  "表示要求のみ",
+                              "reason":  "元の前後関係をそのまま維持"
+                          },
+                          {
+                              "source":  "Error_エラー処理",
+                              "old_rows":  [
+                                               57
+                                           ],
+                              "destination":  "Restart_再開処理",
+                              "classification":  "再開/停止解除",
+                              "reason":  "表示要求収集の後という元の順序を維持"
+                          },
+                          {
+                              "source":  "Initial_初期化処理",
+                              "classification":  "動作の成立条件/ワーク情報/機器通信",
+                              "destination":  "現状維持",
+                              "reason":  "進行判定やデータ更新と同じ行であり、補助表示だけの独立行ではない"
+                          },
+                          {
+                              "source":  "Origin_原点復帰",
+                              "classification":  "動作の成立条件/ワーク情報/機器通信",
+                              "destination":  "現状維持",
+                              "reason":  "進行判定やデータ更新と同じ行であり、補助表示だけの独立行ではない"
+                          },
+                          {
+                              "source":  "DummyCheck_ダミーチェック",
+                              "classification":  "動作の成立条件/ワーク情報/機器通信",
+                              "destination":  "現状維持",
+                              "reason":  "進行判定やデータ更新と同じ行であり、補助表示だけの独立行ではない"
+                          },
+                          {
+                              "source":  "AutoMode_自動運転",
+                              "classification":  "動作の成立条件/ワーク情報/機器通信",
+                              "destination":  "現状維持",
+                              "reason":  "進行判定やデータ更新と同じ行であり、補助表示だけの独立行ではない"
+                          },
+                          {
+                              "source":  "Manual_手動運転",
+                              "classification":  "動作の成立条件/ワーク情報/機器通信",
+                              "destination":  "現状維持",
+                              "reason":  "進行判定やデータ更新と同じ行であり、補助表示だけの独立行ではない"
+                          },
+                          {
+                              "source":  "Setting_設定",
+                              "classification":  "動作の成立条件/ワーク情報/機器通信",
+                              "destination":  "現状維持",
+                              "reason":  "進行判定やデータ更新と同じ行であり、補助表示だけの独立行ではない"
+                          },
+                          {
+                              "source":  "Ins_A_Cv_左検査Cv",
+                              "classification":  "動作の成立条件/ワーク情報/機器通信",
+                              "destination":  "現状維持",
+                              "reason":  "進行判定やデータ更新と同じ行であり、補助表示だけの独立行ではない"
+                          },
+                          {
+                              "source":  "ST0_A_Sup_左供給",
+                              "classification":  "動作の成立条件/ワーク情報/機器通信",
+                              "destination":  "現状維持",
+                              "reason":  "進行判定やデータ更新と同じ行であり、補助表示だけの独立行ではない"
+                          },
+                          {
+                              "source":  "ST1_A_Ca1_左Ca1検査",
+                              "classification":  "動作の成立条件/ワーク情報/機器通信",
+                              "destination":  "現状維持",
+                              "reason":  "進行判定やデータ更新と同じ行であり、補助表示だけの独立行ではない"
+                          },
+                          {
+                              "source":  "ST2_A_Hgt_左高さ検査",
+                              "classification":  "動作の成立条件/ワーク情報/機器通信",
+                              "destination":  "現状維持",
+                              "reason":  "進行判定やデータ更新と同じ行であり、補助表示だけの独立行ではない"
+                          },
+                          {
+                              "source":  "ST3_A_Dis1_左NG1排出",
+                              "classification":  "動作の成立条件/ワーク情報/機器通信",
+                              "destination":  "現状維持",
+                              "reason":  "進行判定やデータ更新と同じ行であり、補助表示だけの独立行ではない"
+                          },
+                          {
+                              "source":  "ST4_A_Rev1_左反転1",
+                              "classification":  "動作の成立条件/ワーク情報/機器通信",
+                              "destination":  "現状維持",
+                              "reason":  "進行判定やデータ更新と同じ行であり、補助表示だけの独立行ではない"
+                          },
+                          {
+                              "source":  "ST5_A_Ca2_左Ca2検査",
+                              "classification":  "動作の成立条件/ワーク情報/機器通信",
+                              "destination":  "現状維持",
+                              "reason":  "進行判定やデータ更新と同じ行であり、補助表示だけの独立行ではない"
+                          },
+                          {
+                              "source":  "ST6_A_Rev2_左反転2",
+                              "classification":  "動作の成立条件/ワーク情報/機器通信",
+                              "destination":  "現状維持",
+                              "reason":  "進行判定やデータ更新と同じ行であり、補助表示だけの独立行ではない"
+                          },
+                          {
+                              "source":  "RCON_IAI",
+                              "classification":  "動作の成立条件/ワーク情報/機器通信",
+                              "destination":  "現状維持",
+                              "reason":  "進行判定やデータ更新と同じ行であり、補助表示だけの独立行ではない"
+                          },
+                          {
+                              "source":  "DLEP1_GT2",
+                              "classification":  "動作の成立条件/ワーク情報/機器通信",
+                              "destination":  "現状維持",
+                              "reason":  "進行判定やデータ更新と同じ行であり、補助表示だけの独立行ではない"
+                          },
+                          {
+                              "source":  "FH_5552_10",
+                              "classification":  "動作の成立条件/ワーク情報/機器通信",
+                              "destination":  "現状維持",
+                              "reason":  "進行判定やデータ更新と同じ行であり、補助表示だけの独立行ではない"
+                          },
+                          {
+                              "source":  "CV2A_KED",
+                              "classification":  "動作の成立条件/ワーク情報/機器通信",
+                              "destination":  "現状維持",
+                              "reason":  "進行判定やデータ更新と同じ行であり、補助表示だけの独立行ではない"
+                          },
+                          {
+                              "source":  "Input_入力",
+                              "classification":  "動作の成立条件/ワーク情報/機器通信",
+                              "destination":  "現状維持",
+                              "reason":  "進行判定やデータ更新と同じ行であり、補助表示だけの独立行ではない"
+                          }
+                      ],
+    "new_sections":  [
+                         {
+                             "name":  "ErrorCylinder_シリンダ異常監視",
+                             "program":  "IO_入出力",
+                             "id":  "b357473c-e0e8-46fb-a43a-32ec339a52c7",
+                             "rows":  100,
+                             "source":  "0943de8e-fc6a-41bc-9714-73b1e334e22c/b357473c-e0e8-46fb-a43a-32ec339a52c7.xml"
+                         },
+                         {
+                             "name":  "HMI_Request_表示要求",
+                             "program":  "ModeManagement_モード管理",
+                             "id":  "56d181ec-ffe1-4894-bab2-865f84b064aa",
+                             "rows":  8,
+                             "source":  "0943de8e-fc6a-41bc-9714-73b1e334e22c/56d181ec-ffe1-4894-bab2-865f84b064aa.xml"
+                         },
+                         {
+                             "name":  "Restart_再開処理",
+                             "program":  "ModeManagement_モード管理",
+                             "id":  "18906edb-dd5e-4e94-953b-c4da01106425",
+                             "rows":  1,
+                             "source":  "0943de8e-fc6a-41bc-9714-73b1e334e22c/18906edb-dd5e-4e94-953b-c4da01106425.xml"
+                         }
+                     ],
+    "reused_blank_section":  "ErrorCollect_異常収集",
+    "checks":  {
+                   "st7_commutation_pairs":  66,
+                   "output_commutation_pairs":  9900,
+                   "read_write_conflicts":  0,
+                   "all_nonempty_rungs_and_existing_instruction_ids_preserved":  true,
+                   "mode_instruction_order_preserved":  true,
+                   "all_variable_declarations_io_and_task_settings_preserved":  true,
+                   "hmi_communication_section_position_preserved":  true,
+                   "only_unused_blank_rung_removed":  true,
+                   "user_updated_i_used":  true
+               },
+    "ladder_counts":  {
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/02fa0618-20f0-422f-b44d-3aba0838a381.xml":  16,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/056f39b5-2372-4d32-b892-634336899ec4.xml":  1,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/08c19951-3bae-402d-a637-be66c221f71b.xml":  6,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml":  216,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/13f086b3-1a09-467f-8cff-eea83144ff00.xml":  3,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml":  31,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml":  18,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml":  124,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml":  1,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/41a409d9-8b74-4a8f-a215-a939e2d48477.xml":  3,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/49a83d1d-d863-4a09-a86a-4797edc14a57.xml":  1,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml":  17,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml":  8,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml":  152,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/5ede16be-2114-46c3-84df-a79badb6e32e.xml":  1,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml":  49,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/7b1666c7-ee97-4210-81b2-fed5a6172074.xml":  246,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml":  9,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/98de6707-f996-4f77-aad9-b0569299efb5.xml":  8,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml":  6,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml":  17,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml":  29,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml":  13,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml":  16,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/b357473c-e0e8-46fb-a43a-32ec339a52c7.xml":  100,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/56d181ec-ffe1-4894-bab2-865f84b064aa.xml":  8,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/18906edb-dd5e-4e94-953b-c4da01106425.xml":  1
+                      },
+    "native_validation":  {
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/02fa0618-20f0-422f-b44d-3aba0838a381.xml":  "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/056f39b5-2372-4d32-b892-634336899ec4.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/08c19951-3bae-402d-a637-be66c221f71b.xml":  "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml":  "TOTAL=216 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/13f086b3-1a09-467f-8cff-eea83144ff00.xml":  "TOTAL=3 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml":  "TOTAL=31 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml":  "TOTAL=18 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml":  "TOTAL=124 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/41a409d9-8b74-4a8f-a215-a939e2d48477.xml":  "TOTAL=3 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/49a83d1d-d863-4a09-a86a-4797edc14a57.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml":  "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml":  "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml":  "TOTAL=152 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/5ede16be-2114-46c3-84df-a79badb6e32e.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml":  "TOTAL=49 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/7b1666c7-ee97-4210-81b2-fed5a6172074.xml":  "TOTAL=246 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml":  "TOTAL=9 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/98de6707-f996-4f77-aad9-b0569299efb5.xml":  "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml":  "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml":  "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml":  "TOTAL=29 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml":  "TOTAL=13 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml":  "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/b357473c-e0e8-46fb-a43a-32ec339a52c7.xml":  "TOTAL=100 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/56d181ec-ffe1-4894-bab2-865f84b064aa.xml":  "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/18906edb-dd5e-4e94-953b-c4da01106425.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0"
+                          },
+    "application_build_verified":  false,
+    "hardware_transfer_performed":  false
+}

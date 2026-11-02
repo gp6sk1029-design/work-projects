@@ -1,0 +1,153 @@
+{
+    "source":  "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029J.smc2",
+    "staged":  "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\j-seven-fix-20261029\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029K.smc2",
+    "destination":  "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261029K.smc2",
+    "source_sha256":  "3d269d74ea049278ea043e9a3ea874ee5d18992e23612e97a6d086a135f1af1b",
+    "output_sha256":  "4d781c47c2180947bdfa49f549857e348a51a5eef217cbadae943737efe69e30",
+    "changed_entries":  [
+                            "0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml"
+                        ],
+    "changed_row":  11,
+    "fixed_coils":  [
+                        "HMI_Message_Request[101]",
+                        "HMI_Message_Request[102]",
+                        "HMI_Message_Request[103]",
+                        "HMI_Message_Request[104]",
+                        "HMI_Message_Request[105]",
+                        "HMI_Message_Request[106]",
+                        "HMI_Message_Request[107]"
+                    ],
+    "added_horizontal_cells":  [
+                                   {
+                                       "X":  5,
+                                       "Y":  16
+                                   },
+                                   {
+                                       "X":  6,
+                                       "Y":  16
+                                   },
+                                   {
+                                       "X":  5,
+                                       "Y":  14
+                                   },
+                                   {
+                                       "X":  6,
+                                       "Y":  14
+                                   },
+                                   {
+                                       "X":  5,
+                                       "Y":  12
+                                   },
+                                   {
+                                       "X":  6,
+                                       "Y":  12
+                                   },
+                                   {
+                                       "X":  5,
+                                       "Y":  10
+                                   },
+                                   {
+                                       "X":  6,
+                                       "Y":  10
+                                   },
+                                   {
+                                       "X":  5,
+                                       "Y":  8
+                                   },
+                                   {
+                                       "X":  6,
+                                       "Y":  8
+                                   },
+                                   {
+                                       "X":  5,
+                                       "Y":  6
+                                   },
+                                   {
+                                       "X":  6,
+                                       "Y":  6
+                                   },
+                                   {
+                                       "X":  5,
+                                       "Y":  4
+                                   },
+                                   {
+                                       "X":  6,
+                                       "Y":  4
+                                   }
+                               ],
+    "checks":  {
+                   "existing_instruction_state_and_ids_unchanged":  true,
+                   "other_rows_and_archive_entries_unchanged":  true,
+                   "no_vertical_crossings_added":  true,
+                   "boolean_power_cases":  22528,
+                   "variable_io_task_and_sections_unchanged":  true
+               },
+    "ladder_counts":  {
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/02fa0618-20f0-422f-b44d-3aba0838a381.xml":  16,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/056f39b5-2372-4d32-b892-634336899ec4.xml":  1,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/08c19951-3bae-402d-a637-be66c221f71b.xml":  6,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml":  216,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/13f086b3-1a09-467f-8cff-eea83144ff00.xml":  3,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml":  31,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml":  18,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml":  124,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml":  1,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/41a409d9-8b74-4a8f-a215-a939e2d48477.xml":  3,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/49a83d1d-d863-4a09-a86a-4797edc14a57.xml":  1,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml":  17,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml":  8,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml":  152,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/5ede16be-2114-46c3-84df-a79badb6e32e.xml":  1,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml":  49,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/7b1666c7-ee97-4210-81b2-fed5a6172074.xml":  246,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml":  9,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/98de6707-f996-4f77-aad9-b0569299efb5.xml":  8,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml":  6,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml":  17,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml":  29,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml":  13,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml":  16,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/b357473c-e0e8-46fb-a43a-32ec339a52c7.xml":  100,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/56d181ec-ffe1-4894-bab2-865f84b064aa.xml":  8,
+                          "0943de8e-fc6a-41bc-9714-73b1e334e22c/18906edb-dd5e-4e94-953b-c4da01106425.xml":  1
+                      },
+    "native_validation":  {
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/02fa0618-20f0-422f-b44d-3aba0838a381.xml":  "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/056f39b5-2372-4d32-b892-634336899ec4.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/08c19951-3bae-402d-a637-be66c221f71b.xml":  "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml":  "TOTAL=216 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/13f086b3-1a09-467f-8cff-eea83144ff00.xml":  "TOTAL=3 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml":  "TOTAL=31 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml":  "TOTAL=18 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml":  "TOTAL=124 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/41a409d9-8b74-4a8f-a215-a939e2d48477.xml":  "TOTAL=3 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/49a83d1d-d863-4a09-a86a-4797edc14a57.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml":  "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml":  "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml":  "TOTAL=152 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/5ede16be-2114-46c3-84df-a79badb6e32e.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml":  "TOTAL=49 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/7b1666c7-ee97-4210-81b2-fed5a6172074.xml":  "TOTAL=246 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml":  "TOTAL=9 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/98de6707-f996-4f77-aad9-b0569299efb5.xml":  "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml":  "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml":  "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml":  "TOTAL=29 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml":  "TOTAL=13 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml":  "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/b357473c-e0e8-46fb-a43a-32ec339a52c7.xml":  "TOTAL=100 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/56d181ec-ffe1-4894-bab2-865f84b064aa.xml":  "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+                              "0943de8e-fc6a-41bc-9714-73b1e334e22c/18906edb-dd5e-4e94-953b-c4da01106425.xml":  "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0"
+                          },
+    "native_connections":  {
+                               "before_missing_connections":  7,
+                               "after_missing_connections":  0,
+                               "fixed_coils_connected":  7,
+                               "total_coils":  1314,
+                               "before":  "MISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[107] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nMISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[106] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nMISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[105] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nMISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[104] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nMISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[103] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nMISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[102] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nMISSING_CONNECTION entry=0943de8e-fc6a-41bc-9714-73b1e334e22c/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml row=11 variable=HMI_Message_Request[101] inputPoints=1 outputPoints=0 inputEdges=1 outputEdges=0\r\nTOTAL_RUNGS=1100 COILS=1314 MISSING=7 PARSE_MODEL_FAIL=0\r\n",
+                               "after":  "TOTAL_RUNGS=1100 COILS=1314 MISSING=0 PARSE_MODEL_FAIL=0\r\n"
+                           },
+    "application_display_verified":  false,
+    "hardware_transfer_performed":  false
+}

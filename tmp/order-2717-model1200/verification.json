@@ -1,0 +1,27 @@
+{
+  "target": "\\\\nas-ime5\\生産技術部\\1.注文書\\_内作設備\\_1.製作中注文書\\2717-2610A インナー巻線機 (AIW-1200T) 〈2台〉【マーレOH】\\2717-2610A インナー巻線機 (AIW-1200T) 〈2台〉【マーレOH】.xlsx",
+  "changed_xml": {
+    "xl/workbook.xml": 1,
+    "xl/worksheets/sheet1.xml": 2,
+    "xl/worksheets/sheet2.xml": 10,
+    "xl/worksheets/sheet3.xml": 10,
+    "xl/worksheets/sheet4.xml": 10,
+    "xl/worksheets/sheet5.xml": 10,
+    "xl/worksheets/sheet6.xml": 10,
+    "xl/worksheets/sheet7.xml": 10,
+    "xl/worksheets/sheet8.xml": 10,
+    "xl/worksheets/sheet9.xml": 10,
+    "xl/worksheets/sheet11.xml": 5,
+    "xl/worksheets/sheet12.xml": 10,
+    "xl/worksheets/sheet13.xml": 5,
+    "xl/worksheets/sheet14.xml": 10,
+    "xl/worksheets/sheet15.xml": 5,
+    "xl/worksheets/sheet16.xml": 5,
+    "xl/sharedStrings.xml": 1
+  },
+  "sha256": "dd077fd504652ad450032029e3a51a823b16a9e5efda2e6fd1cbcfa3a20aa63d",
+  "totals": [
+    1398000,
+    712000
+  ]
+}

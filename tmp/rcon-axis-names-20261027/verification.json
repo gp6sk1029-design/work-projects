@@ -1,0 +1,362 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261027A.smc2",
+  "destination": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261027B.smc2",
+  "staged": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\rcon-axis-names-20261027\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261027B.smc2",
+  "source_sha256": "44bf90f01cf6f9ca7d1ddc6ddd2400c3f45707194b8c442a96cd1c42f167c95a",
+  "output_sha256": "622b62fc73ad14f850e21db41ebe59cc9256bb7b551874c88207b7fcd1590814",
+  "rename_map": {
+    "RCON1_OUT_PositionBand_mm": "RCON1_1_OUT_PositionBand_mm",
+    "RCON1_OUT_Speed_mm_s": "RCON1_1_OUT_Speed_mm_s",
+    "RCON1_OUT_AccDec_G": "RCON1_1_OUT_AccDec_G",
+    "RCON1_OUT_PushLimit_pct": "RCON1_1_OUT_PushLimit_pct",
+    "RCON1_ActualPos_mm": "RCON1_1_ActualPos_mm",
+    "RCON1_Current_mA": "RCON1_1_Current_mA",
+    "RCON1_ActualSpeed_mm_s": "RCON1_1_ActualSpeed_mm_s",
+    "RCON1_AlarmCode": "RCON1_1_AlarmCode",
+    "RCON1_DataValid": "RCON1_1_DataValid",
+    "RCON1_IAI_Auto": "RCON1_1_Auto",
+    "HMI_RCON1_OUT_TargetPos": "HMI_RCON1_1_OUT_TargetPos"
+  },
+  "metadata_alias_map": {
+    "RCON1_PositionBand_mm": "RCON1_1_OUT_PositionBand_mm",
+    "RCON1_Speed_mm_s": "RCON1_1_OUT_Speed_mm_s",
+    "RCON1_AccDec_G": "RCON1_1_OUT_AccDec_G",
+    "RCON1_PushLimit_pct": "RCON1_1_OUT_PushLimit_pct"
+  },
+  "entries": 205,
+  "changed_entries": [
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/20a6b651-4c34-401a-965e-db3e18414d5c.xml",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/5e9126d6-8f87-494e-bf44-c84712e3509e.NexBuildVerifierGroup",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/7b1666c7-ee97-4210-81b2-fed5a6172074.xml",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+  ],
+  "replacements": {
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml": {
+      "HMI_RCON1_OUT_TargetPos": 1
+    },
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/20a6b651-4c34-401a-965e-db3e18414d5c.xml": {
+      "RCON1_IAI_Auto": 2,
+      "RCON1_PositionBand_mm": 1,
+      "RCON1_OUT_PositionBand_mm": 1,
+      "RCON1_Speed_mm_s": 1,
+      "RCON1_OUT_Speed_mm_s": 1,
+      "RCON1_AccDec_G": 1,
+      "RCON1_OUT_AccDec_G": 1,
+      "RCON1_PushLimit_pct": 1,
+      "RCON1_OUT_PushLimit_pct": 1,
+      "RCON1_ActualPos_mm": 2,
+      "RCON1_Current_mA": 2,
+      "RCON1_ActualSpeed_mm_s": 2,
+      "RCON1_AlarmCode": 2,
+      "RCON1_DataValid": 2,
+      "HMI_RCON1_OUT_TargetPos": 2
+    },
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml": {
+      "HMI_RCON1_OUT_TargetPos": 5,
+      "RCON1_IAI_Auto": 3
+    },
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/5e9126d6-8f87-494e-bf44-c84712e3509e.NexBuildVerifierGroup": {
+      "RCON1_ActualPos_mm": 1,
+      "RCON1_DataValid": 1,
+      "HMI_RCON1_OUT_TargetPos": 1,
+      "RCON1_OUT_PushLimit_pct": 1,
+      "RCON1_OUT_AccDec_G": 1,
+      "RCON1_Current_mA": 1,
+      "RCON1_ActualSpeed_mm_s": 1,
+      "RCON1_OUT_PositionBand_mm": 1,
+      "RCON1_AlarmCode": 1,
+      "RCON1_IAI_Auto": 1,
+      "RCON1_OUT_Speed_mm_s": 1
+    },
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/7b1666c7-ee97-4210-81b2-fed5a6172074.xml": {
+      "RCON1_OUT_PositionBand_mm": 1,
+      "RCON1_OUT_Speed_mm_s": 1,
+      "RCON1_OUT_AccDec_G": 1,
+      "RCON1_OUT_PushLimit_pct": 1,
+      "RCON1_ActualPos_mm": 1,
+      "RCON1_Current_mA": 1,
+      "RCON1_ActualSpeed_mm_s": 1,
+      "RCON1_AlarmCode": 1,
+      "RCON1_DataValid": 1,
+      "RCON1_IAI_Auto": 3
+    },
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml": {
+      "RCON1_IAI_Auto": 1,
+      "HMI_RCON1_OUT_TargetPos": 1
+    },
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml": {
+      "RCON1_IAI_Auto": 1,
+      "RCON1_OUT_PositionBand_mm": 1,
+      "RCON1_OUT_Speed_mm_s": 1,
+      "RCON1_OUT_AccDec_G": 1,
+      "RCON1_OUT_PushLimit_pct": 1,
+      "RCON1_ActualPos_mm": 1,
+      "RCON1_Current_mA": 1,
+      "RCON1_ActualSpeed_mm_s": 1,
+      "RCON1_AlarmCode": 1,
+      "RCON1_DataValid": 1
+    },
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/f07dd06c-505c-431b-b9fc-098949805b4e.xml": {
+      "RCON1_IAI_Auto": 1,
+      "RCON1_OUT_PositionBand_mm": 1,
+      "RCON1_OUT_Speed_mm_s": 1,
+      "RCON1_OUT_AccDec_G": 1,
+      "RCON1_OUT_PushLimit_pct": 1,
+      "RCON1_ActualPos_mm": 1,
+      "RCON1_Current_mA": 1,
+      "RCON1_ActualSpeed_mm_s": 1,
+      "RCON1_AlarmCode": 1,
+      "RCON1_DataValid": 1,
+      "HMI_RCON1_OUT_TargetPos": 1
+    }
+  },
+  "declaration_renames": [
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "old": "RCON1_IAI_Auto",
+      "new": "RCON1_1_Auto",
+      "type": "ARRAY[0..99] OF Bool",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "old": "HMI_RCON1_OUT_TargetPos",
+      "new": "HMI_RCON1_1_OUT_TargetPos",
+      "type": "ARRAY[0..99] OF LREAL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "old": "RCON1_IAI_Auto",
+      "new": "RCON1_1_Auto",
+      "type": "ARRAY[0..99] OF Bool",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "old": "RCON1_OUT_PositionBand_mm",
+      "new": "RCON1_1_OUT_PositionBand_mm",
+      "type": "LREAL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "old": "RCON1_OUT_Speed_mm_s",
+      "new": "RCON1_1_OUT_Speed_mm_s",
+      "type": "LREAL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "old": "RCON1_OUT_AccDec_G",
+      "new": "RCON1_1_OUT_AccDec_G",
+      "type": "LREAL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "old": "RCON1_OUT_PushLimit_pct",
+      "new": "RCON1_1_OUT_PushLimit_pct",
+      "type": "LREAL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "old": "RCON1_ActualPos_mm",
+      "new": "RCON1_1_ActualPos_mm",
+      "type": "LREAL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "old": "RCON1_Current_mA",
+      "new": "RCON1_1_Current_mA",
+      "type": "DINT",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "old": "RCON1_ActualSpeed_mm_s",
+      "new": "RCON1_1_ActualSpeed_mm_s",
+      "type": "LREAL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "old": "RCON1_AlarmCode",
+      "new": "RCON1_1_AlarmCode",
+      "type": "UINT",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "old": "RCON1_DataValid",
+      "new": "RCON1_1_DataValid",
+      "type": "BOOL",
+      "group": "VAR_EXTERNAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "RCON1_IAI_Auto",
+      "new": "RCON1_1_Auto",
+      "type": "ARRAY[0..99] OF Bool",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "RCON1_OUT_PositionBand_mm",
+      "new": "RCON1_1_OUT_PositionBand_mm",
+      "type": "LREAL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "RCON1_OUT_Speed_mm_s",
+      "new": "RCON1_1_OUT_Speed_mm_s",
+      "type": "LREAL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "RCON1_OUT_AccDec_G",
+      "new": "RCON1_1_OUT_AccDec_G",
+      "type": "LREAL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "RCON1_OUT_PushLimit_pct",
+      "new": "RCON1_1_OUT_PushLimit_pct",
+      "type": "LREAL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "RCON1_ActualPos_mm",
+      "new": "RCON1_1_ActualPos_mm",
+      "type": "LREAL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "RCON1_Current_mA",
+      "new": "RCON1_1_Current_mA",
+      "type": "DINT",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "RCON1_ActualSpeed_mm_s",
+      "new": "RCON1_1_ActualSpeed_mm_s",
+      "type": "LREAL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "RCON1_AlarmCode",
+      "new": "RCON1_1_AlarmCode",
+      "type": "UINT",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "RCON1_DataValid",
+      "new": "RCON1_1_DataValid",
+      "type": "BOOL",
+      "group": "VAR_GLOBAL"
+    },
+    {
+      "entry": "2773c0ae-6861-4cbc-97a2-122192da31c0/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "old": "HMI_RCON1_OUT_TargetPos",
+      "new": "HMI_RCON1_1_OUT_TargetPos",
+      "type": "ARRAY[0..99] OF LREAL",
+      "group": "VAR_GLOBAL"
+    }
+  ],
+  "ladder_reference_counts": {
+    "HMI_RCON1_OUT_TargetPos": 6,
+    "RCON1_IAI_Auto": 6,
+    "RCON1_OUT_PositionBand_mm": 1,
+    "RCON1_OUT_Speed_mm_s": 1,
+    "RCON1_OUT_AccDec_G": 1,
+    "RCON1_OUT_PushLimit_pct": 1,
+    "RCON1_ActualPos_mm": 1,
+    "RCON1_Current_mA": 1,
+    "RCON1_ActualSpeed_mm_s": 1,
+    "RCON1_AlarmCode": 1,
+    "RCON1_DataValid": 1
+  },
+  "ladder_counts": {
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/02fa0618-20f0-422f-b44d-3aba0838a381.xml": 16,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/056f39b5-2372-4d32-b892-634336899ec4.xml": 1,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/08c19951-3bae-402d-a637-be66c221f71b.xml": 6,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml": 316,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/13f086b3-1a09-467f-8cff-eea83144ff00.xml": 3,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml": 5,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml": 18,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml": 2,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml": 1,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/49a83d1d-d863-4a09-a86a-4797edc14a57.xml": 1,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml": 17,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml": 8,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml": 152,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/5ede16be-2114-46c3-84df-a79badb6e32e.xml": 1,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml": 23,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/7b1666c7-ee97-4210-81b2-fed5a6172074.xml": 246,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml": 9,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/98de6707-f996-4f77-aad9-b0569299efb5.xml": 8,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml": 6,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml": 17,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml": 29,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml": 13,
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml": 16
+  },
+  "native_validation": {
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/02fa0618-20f0-422f-b44d-3aba0838a381.xml": "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/056f39b5-2372-4d32-b892-634336899ec4.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/08c19951-3bae-402d-a637-be66c221f71b.xml": "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml": "TOTAL=316 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/13f086b3-1a09-467f-8cff-eea83144ff00.xml": "TOTAL=3 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml": "TOTAL=5 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml": "TOTAL=18 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml": "TOTAL=2 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/49a83d1d-d863-4a09-a86a-4797edc14a57.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml": "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml": "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml": "TOTAL=152 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/5ede16be-2114-46c3-84df-a79badb6e32e.xml": "TOTAL=1 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml": "TOTAL=23 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/7b1666c7-ee97-4210-81b2-fed5a6172074.xml": "TOTAL=246 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml": "TOTAL=9 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/98de6707-f996-4f77-aad9-b0569299efb5.xml": "TOTAL=8 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml": "TOTAL=6 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml": "TOTAL=17 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml": "TOTAL=29 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml": "TOTAL=13 PARSE_FAIL=0 MODEL_FAIL=0",
+    "2773c0ae-6861-4cbc-97a2-122192da31c0/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml": "TOTAL=16 PARSE_FAIL=0 MODEL_FAIL=0"
+  },
+  "native_variables": {
+    "loader": "メーカー同梱SSLightweightDataSerializer",
+    "renamed_declarations": 23,
+    "names_and_type_loaded": true,
+    "constant_readonly_retain_unchanged": true,
+    "full_application_build_verified": false
+  },
+  "names_only_verified": true,
+  "move_direction_unchanged": true,
+  "conditions_comments_types_and_io_unchanged": true,
+  "already_renamed_target_preserved": true,
+  "app_build_verified": false,
+  "machine_transfer_performed": false,
+  "binding_audit": {
+    "metadata_renames_bound": 11,
+    "metadata_names_unique": true,
+    "user_edited_first_row_unchanged": true
+  },
+  "published": true
+}
