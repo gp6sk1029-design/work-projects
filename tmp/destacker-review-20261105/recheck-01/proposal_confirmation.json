@@ -1,0 +1,249 @@
+{
+  "CLs": [
+    {
+      "__type": "LD",
+      "Var": "Destacker_M[13]"
+    },
+    {
+      "__type": "LD",
+      "Ix": 12,
+      "Var": "Out_CYw_Empty_Container_CY_H_Done",
+      "X": 1
+    },
+    {
+      "__type": "LD",
+      "Ix": 13,
+      "Not": true,
+      "Var": "Retry[13]",
+      "X": 1,
+      "Y": 1
+    },
+    {
+      "__type": "F",
+      "In": [
+        {
+          "__type": "PF",
+          "Arg": "In"
+        }
+      ],
+      "Ix": 20,
+      "Name": "Up",
+      "Out": [
+        {
+          "__type": "PF",
+          "Arg": ""
+        }
+      ],
+      "X": 2,
+      "Y": 1,
+      "Id": "57244d62-133e-4025-b50c-ba2800000299"
+    },
+    {
+      "__type": "LD",
+      "Ix": 2,
+      "Var": "Destacker_M[14]",
+      "Y": 2
+    },
+    {
+      "__type": "HL",
+      "X": 2
+    },
+    {
+      "__type": "HL",
+      "X": 1,
+      "Y": 2
+    },
+    {
+      "__type": "HL",
+      "X": 2,
+      "Y": 2
+    },
+    {
+      "__type": "LD",
+      "Ix": 3,
+      "Not": true,
+      "Var": "Retry[13]",
+      "X": 3
+    },
+    {
+      "__type": "LD",
+      "Ix": 1,
+      "Not": true,
+      "Var": "Destacker_M[16]",
+      "X": 4
+    },
+    {
+      "__type": "ST",
+      "Ix": 14,
+      "Var": "Destacker_M[14]",
+      "X": 6
+    },
+    {
+      "__type": "LD",
+      "Ix": 4,
+      "Not": true,
+      "Var": "TimerQ_In_Sen_Supply_Container_Exist",
+      "X": 6,
+      "Y": 1
+    },
+    {
+      "__type": "LD",
+      "Ix": 5,
+      "Var": "TimerQ_In_SenCY_Empty_Container_CY_H",
+      "X": 7,
+      "Y": 1
+    },
+    {
+      "__type": "LD",
+      "Ix": 6,
+      "Var": "TimerQ_In_Sen_Container_Direction_Check",
+      "X": 8,
+      "Y": 1
+    },
+    {
+      "__type": "LD",
+      "Ix": 7,
+      "Var": "TimerQ_In_Sen_Destacker_Stage_01_Exist",
+      "X": 9,
+      "Y": 1
+    },
+    {
+      "__type": "ST",
+      "Ix": 16,
+      "Var": "Destacker_M[15]",
+      "X": 10,
+      "Y": 1
+    },
+    {
+      "__type": "LD",
+      "Ix": 8,
+      "Not": true,
+      "Var": "TimerQ_In_Sen_Supply_Container_Exist",
+      "X": 6,
+      "Y": 2
+    },
+    {
+      "__type": "LD",
+      "Ix": 9,
+      "Var": "TimerQ_In_SenCY_Empty_Container_CY_H",
+      "X": 7,
+      "Y": 2
+    },
+    {
+      "__type": "LD",
+      "Ix": 10,
+      "Not": true,
+      "Var": "TimerQ_In_Sen_Container_Direction_Check",
+      "X": 8,
+      "Y": 2
+    },
+    {
+      "__type": "LD",
+      "Ix": 11,
+      "Not": true,
+      "Var": "TimerQ_In_Sen_Destacker_Stage_01_Exist",
+      "X": 8,
+      "Y": 3
+    },
+    {
+      "__type": "FB",
+      "In": [
+        {
+          "__type": "PF",
+          "Arg": "In"
+        },
+        {
+          "__type": "PRM",
+          "Arg": "PT",
+          "Ix": 17,
+          "Type": "TIME",
+          "Var": "T#5s"
+        }
+      ],
+      "Ix": 19,
+      "Name": "TON",
+      "Out": [
+        {
+          "__type": "PF",
+          "Arg": "Q"
+        },
+        {
+          "__type": "PRM",
+          "Arg": "ET",
+          "Ix": 18,
+          "Type": "TIME",
+          "Var": ""
+        }
+      ],
+      "X": 9,
+      "Y": 2,
+      "Var": "Destacker_TON[1]"
+    },
+    {
+      "__type": "ST",
+      "Ix": 15,
+      "Var": "Destacker_Error",
+      "X": 10,
+      "Y": 2
+    },
+    {
+      "__type": "HL",
+      "X": 7
+    },
+    {
+      "__type": "HL",
+      "X": 8
+    },
+    {
+      "__type": "HL",
+      "X": 9
+    },
+    {
+      "__type": "HL",
+      "X": 10
+    },
+    {
+      "__type": "LD",
+      "Var": "TimerQ_In_SenCY_Empty_Container_CY_H",
+      "X": 5,
+      "Y": 0
+    }
+  ],
+  "CMT": "コンテナ有無・方向確認",
+  "LRI": 21,
+  "RRI": 22,
+  "VLs": [
+    {
+      "Ix": 23,
+      "X": 3
+    },
+    {
+      "Ix": 23,
+      "X": 3,
+      "Y": 1
+    },
+    {
+      "Ix": 24,
+      "X": 6
+    },
+    {
+      "Ix": 24,
+      "X": 6,
+      "Y": 1
+    },
+    {
+      "Ix": 25,
+      "X": 8,
+      "Y": 2
+    },
+    {
+      "Ix": 26,
+      "X": 9,
+      "Y": 2
+    },
+    {
+      "Ix": 27,
+      "X": 1
+    }
+  ]
+}

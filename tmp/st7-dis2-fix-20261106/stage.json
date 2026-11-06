@@ -1,0 +1,22 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I.smc2",
+  "source_sha256": "a7df246e967f3cc8b33e9e9aada56801778badd10e9fc152e37fd3b867e5e2ff",
+  "candidate": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\st7-dis2-fix-20261106\\A_candidate_v6.smc2",
+  "candidate_sha256": "b68d69fca590668fdf1aaad81000e0499ea5eb936db99e890b756faf51e2db0c",
+  "changed_parts": [
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/298443e5-40dc-47d4-95bf-46c8fde7d5ae.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/7b1666c7-ee97-4210-81b2-fed5a6172074.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/298443e5-40dc-47d4-95bf-46c8fde7d5ae.oem",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/298443e5-40dc-47d4-95bf-46c8fde7d5ae.manifest"
+  ],
+  "unchanged_parts": 201,
+  "comment_only": false,
+  "published": false
+}

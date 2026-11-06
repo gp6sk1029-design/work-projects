@@ -1,0 +1,298 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105C.smc2",
+  "output": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105D.smc2",
+  "archive": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\履歴\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105C.smc2",
+  "staged": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\box-normalize42-20261105\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105D.smc2",
+  "source_sha256": "a0f877154a8280833782132dde934a5301a86f5c625c68da046911240c73dd8f",
+  "output_sha256": "172c4754137e1661718f56d4bc0392d1e2a7ff8721405833c061ed6d5d130ea1",
+  "target": "8f3e92a4-7797-49a6-9cf6-5d9e93eadd36/6061835d-1e51-4e92-be1f-d546f44764e3.xml",
+  "row_count": 42,
+  "new_stages": 0,
+  "terminal_coil_preserved": [
+    41,
+    "CLs",
+    3,
+    "Var"
+  ],
+  "mapping": {
+    "43": 42,
+    "44": 43,
+    "45": 44,
+    "46": 45,
+    "47": 46,
+    "48": 47,
+    "49": 48
+  },
+  "changed_refs": 21,
+  "changes": [
+    {
+      "row": 13,
+      "path": [
+        13,
+        "CLs",
+        9,
+        "Var"
+      ],
+      "old": "BoxPacking_M[44]",
+      "new": "BoxPacking_M[43]"
+    },
+    {
+      "row": 14,
+      "path": [
+        14,
+        "CLs",
+        4,
+        "Var"
+      ],
+      "old": "BoxPacking_M[44]",
+      "new": "BoxPacking_M[43]"
+    },
+    {
+      "row": 15,
+      "path": [
+        15,
+        "CLs",
+        4,
+        "Var"
+      ],
+      "old": "BoxPacking_M[44]",
+      "new": "BoxPacking_M[43]"
+    },
+    {
+      "row": 36,
+      "path": [
+        36,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[43]",
+      "new": "BoxPacking_M[42]"
+    },
+    {
+      "row": 36,
+      "path": [
+        36,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[43]",
+      "new": "BoxPacking_M[42]"
+    },
+    {
+      "row": 36,
+      "path": [
+        36,
+        "CLs",
+        7,
+        "Var"
+      ],
+      "old": "BoxPacking_M[44]",
+      "new": "BoxPacking_M[43]"
+    },
+    {
+      "row": 36,
+      "path": [
+        36,
+        "CLs",
+        9,
+        "Var"
+      ],
+      "old": "BoxPacking_M[45]",
+      "new": "BoxPacking_M[44]"
+    },
+    {
+      "row": 37,
+      "path": [
+        37,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[43]",
+      "new": "BoxPacking_M[42]"
+    },
+    {
+      "row": 37,
+      "path": [
+        37,
+        "CLs",
+        1,
+        "Var"
+      ],
+      "old": "BoxPacking_M[45]",
+      "new": "BoxPacking_M[44]"
+    },
+    {
+      "row": 37,
+      "path": [
+        37,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[46]",
+      "new": "BoxPacking_M[45]"
+    },
+    {
+      "row": 37,
+      "path": [
+        37,
+        "CLs",
+        6,
+        "Var"
+      ],
+      "old": "BoxPacking_M[46]",
+      "new": "BoxPacking_M[45]"
+    },
+    {
+      "row": 38,
+      "path": [
+        38,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[46]",
+      "new": "BoxPacking_M[45]"
+    },
+    {
+      "row": 38,
+      "path": [
+        38,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[47]",
+      "new": "BoxPacking_M[46]"
+    },
+    {
+      "row": 38,
+      "path": [
+        38,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[47]",
+      "new": "BoxPacking_M[46]"
+    },
+    {
+      "row": 39,
+      "path": [
+        39,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[47]",
+      "new": "BoxPacking_M[46]"
+    },
+    {
+      "row": 39,
+      "path": [
+        39,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[48]",
+      "new": "BoxPacking_M[47]"
+    },
+    {
+      "row": 39,
+      "path": [
+        39,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[48]",
+      "new": "BoxPacking_M[47]"
+    },
+    {
+      "row": 40,
+      "path": [
+        40,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[48]",
+      "new": "BoxPacking_M[47]"
+    },
+    {
+      "row": 40,
+      "path": [
+        40,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[49]",
+      "new": "BoxPacking_M[48]"
+    },
+    {
+      "row": 40,
+      "path": [
+        40,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[49]",
+      "new": "BoxPacking_M[48]"
+    },
+    {
+      "row": 41,
+      "path": [
+        41,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[49]",
+      "new": "BoxPacking_M[48]"
+    }
+  ],
+  "coil_range_after": [
+    1,
+    49
+  ],
+  "changed_parts": [
+    "8f3e92a4-7797-49a6-9cf6-5d9e93eadd36/6061835d-1e51-4e92-be1f-d546f44764e3.xml"
+  ],
+  "preserved_parts": 211,
+  "native_validation": {
+    "box_section": "TOTAL=42 PARSE_FAIL=0 MODEL_FAIL=0",
+    "application_build_verified": false
+  },
+  "published": true,
+  "archived": true,
+  "full_Sysmac_build": "未実施",
+  "independent_verification": {
+    "new_stages": 0,
+    "rows_before": 42,
+    "rows_after": 42,
+    "changed_refs": 21,
+    "coil_range": [
+      1,
+      49
+    ],
+    "duplicate_coils": 0,
+    "missing_coils": 0,
+    "unmodified_rows_byte_identical": true,
+    "updated_forward_reference_rows": [
+      13,
+      14,
+      15
+    ],
+    "non_number_fields_unchanged": true,
+    "ST_text_unchanged": true,
+    "other_parts_identical": 211,
+    "terminal_stage_49_preserved": true,
+    "source_archived_byte_identical": true
+  }
+}

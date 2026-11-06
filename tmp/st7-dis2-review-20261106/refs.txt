@@ -1,0 +1,507 @@
+﻿SECTIONS [('Initial_初期化処理', 1), ('Origin_原点復帰', 29), ('DummyCheck_ダミーチェック', 1), ('AutoMode_自動運転', 4), ('Manual_手動運転', 1), ('Setting_設定', 1), ('Error_エラー処理', 41), ('Ins_A_Cv_左検査Cv', 13), ('ST0_A_Sup_左供給', 16), ('ST1_A_Ca1_左Ca1検査', 6), ('ST2_A_Hgt_左高さ検査', 9), ('ST3_A_Dis1_左NG1排出', 18), ('ST4_A_Rev1_左反転1', 17), ('ST5_A_Ca2_左Ca2検査', 6), ('ST6_A_Rev2_左反転2', 17), ('ST7_A_Dis2_左SF排出', 32), ('Destacker_段バラシ', 29), ('BoxPacking_箱詰め', 45), ('RCON_IAI', 457), ('DLEP1_GT2', 8), ('FH_5552_10', 16), ('CV2A_KED', 8), ('HMI', 132), ('Input_入力', 152), ('Output_出力', 316)]
+
+SECTION Error_エラー処理 ROW 31 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ / #【A(左側) ST7 SF排出】 /  /  / 再試行：Retry[11] / # 目的：原因別の異常保持と停止を処理する / # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ / エラー発生条件（RESETで解除） / ①検査前ワーク不一致エラー / ②NGストッカー満杯
+{"__type": "LD", "Var": "ST7_A_Dis2_M[11]"}
+{"__type": "LD", "Var": "Error_ST7_A_M[0]", "Y": 1}
+{"__type": "LD", "Var": "In_Sw_RESET", "Not": true, "X": 1}
+{"__type": "ST", "Var": "Error_ST7_A_M[0]", "X": 2}
+VLs [{'Ix': 6, 'X': 1}]
+
+SECTION Ins_A_Cv_左検査Cv ROW 0 #A(左側)全ST 動作完了確認
+{"__type": "LD", "Var": "Auto_A_Start"}
+{"__type": "LD", "Var": "ST0_A_Sup_End", "X": 1}
+{"__type": "LD", "Var": "ST1_A_Ca1_End", "X": 2}
+{"__type": "LD", "Var": "ST2_A_Hgt_End", "X": 3}
+{"__type": "LD", "Var": "ST3_A_Dis1_End", "X": 4}
+{"__type": "LD", "Var": "ST4_A_Rev_End", "X": 5}
+{"__type": "LD", "Var": "ST5_A_Ca2_End", "X": 6}
+{"__type": "LD", "Var": "ST6_A_Rev2_End", "X": 7}
+{"__type": "LD", "Var": "ST7_A_Dis2_End", "X": 8}
+{"__type": "LD", "Var": "Ins_A_End", "Y": 1}
+{"__type": "LD", "Var": "Ins_A_Cv_M[3]", "Not": true, "X": 9}
+{"__type": "ST", "Var": "Ins_A_End", "X": 10}
+VLs [{'Ix': 14, 'X': 9}]
+
+SECTION Ins_A_Cv_左検査Cv ROW 3 #A(左側)Cvデータ⇨STデータへ移動
+{"__type": "LD", "Var": "Ins_A_Cv_M[2]"}
+{"__type": "F", "Name": "Up", "X": 1, "In": [], "Out": []}
+{"__type": "LD", "Var": "Ins_A_Cv_M[3]", "Y": 1}
+{"__type": "LD", "Var": "Ins_A_Next_Cycle", "Not": true, "X": 2}
+{"__type": "ST", "Var": "Ins_A_Cv_M[3]", "X": 3}
+{"__type": "F", "Name": "Up", "X": 3, "Y": 1, "In": [], "Out": []}
+{"__type": "F", "Name": "MOVE", "X": 4, "Y": 1, "In": [["In", "Station_A_Data[6]"]], "Out": [["Out", "Station_A_Data[7]"]]}
+{"__type": "F", "Name": "MOVE", "X": 5, "Y": 1, "In": [["In", "Station_A_Data[5]"]], "Out": [["Out", "Station_A_Data[6]"]]}
+{"__type": "F", "Name": "MOVE", "X": 6, "Y": 1, "In": [["In", "Station_A_Data[4]"]], "Out": [["Out", "Station_A_Data[5]"]]}
+{"__type": "F", "Name": "MOVE", "X": 7, "Y": 1, "In": [["In", "Station_A_Data[3]"]], "Out": [["Out", "Station_A_Data[4]"]]}
+{"__type": "F", "Name": "MOVE", "X": 8, "Y": 1, "In": [["In", "Station_A_Data[2]"]], "Out": [["Out", "Station_A_Data[3]"]]}
+{"__type": "F", "Name": "MOVE", "X": 9, "Y": 1, "In": [["In", "Station_A_Data[1]"]], "Out": [["Out", "Station_A_Data[2]"]]}
+{"__type": "F", "Name": "MOVE", "X": 10, "Y": 1, "In": [["In", "Station_A_Data[0]"]], "Out": [["Out", "Station_A_Data[1]"]]}
+VLs [{'Ix': 29, 'X': 2}, {'Ix': 30, 'X': 3}]
+
+SECTION BoxPacking_箱詰め ROW 15 #【03 ワーク取出し】 /  / 【取出し先の選択】 / ST7の取出し待ちを確認し、A側を優先 / Busy成立まで、判定・選択を保持 /  / 合流元 / ・3／6／14行：コンテナ準備完了 / ・39行：80個未満で繰返し /  / A側選択 →16行：A側Busy / B側選択 →17行：B側Busy
+{"__type": "LD", "Var": "BoxPacking_M[19]"}
+{"__type": "LD", "Var": "BoxPacking_A_Busy", "Not": true, "X": 1}
+{"__type": "LD", "Var": "BoxPacking_B_Busy", "Not": true, "X": 2}
+{"__type": "LD", "Var": "BoxPacking_M[5]", "Y": 1}
+{"__type": "LD", "Var": "BoxPacking_A_Busy", "Not": true, "X": 1, "Y": 1}
+{"__type": "LD", "Var": "BoxPacking_B_Busy", "Not": true, "X": 2, "Y": 1}
+{"__type": "LD", "Var": "BoxPacking_M[11]", "Y": 2}
+{"__type": "LD", "Var": "BoxPacking_A_Busy", "Not": true, "X": 1, "Y": 2}
+{"__type": "LD", "Var": "BoxPacking_B_Busy", "Not": true, "X": 2, "Y": 2}
+{"__type": "LD", "Var": "BoxPacking_M[44]", "Y": 3}
+{"__type": "LD", "Var": "BoxPacking_M[20]", "Y": 4}
+{"__type": "LD", "Var": "BoxPacking_A_Busy", "Not": true, "X": 3}
+{"__type": "LD", "Var": "BoxPacking_B_Busy", "Not": true, "X": 4}
+{"__type": "ST", "Var": "BoxPacking_M[20]", "X": 5}
+{"__type": "LD", "Var": "ST7_A_SF_Wait_Pickup", "X": 5, "Y": 1}
+{"__type": "LD", "Var": "BoxPacking_B_Busy", "Not": true, "X": 6, "Y": 1}
+{"__type": "ST", "Var": "BoxPacking_M[21]", "X": 7, "Y": 1}
+{"__type": "LD", "Var": "ST7_A_SF_Wait_Pickup", "Not": true, "X": 5, "Y": 2}
+{"__type": "LD", "Var": "ST7_B_SF_Wait_Pickup", "X": 6, "Y": 2}
+{"__type": "LD", "Var": "BoxPacking_A_Busy", "Not": true, "X": 7, "Y": 2}
+{"__type": "ST", "Var": "BoxPacking_M[22]", "X": 8, "Y": 2}
+VLs [{'Ix': 23, 'X': 3}, {'Ix': 23, 'X': 3, 'Y': 1}, {'Ix': 23, 'X': 3, 'Y': 2}, {'Ix': 23, 'X': 3, 'Y': 3}, {'Ix': 24, 'X': 5}, {'Ix': 24, 'X': 5, 'Y': 1}]
+
+SECTION BoxPacking_箱詰め ROW 30 【A側：取出し・退避完了】 / チャック後、箱詰めZ軸の上昇完了を確認 / RCON2_4：箱詰めZ軸 /  / → ST7 A側の取出し待ちを解除
+{"__type": "LD", "Var": "BoxPacking_A_Busy"}
+{"__type": "LD", "Var": "BoxPacking_M[34]", "X": 1}
+{"__type": "LD", "Var": "RCON2_4_MoveDone", "X": 2}
+{"__type": "ST", "Var": "BoxPacking_A_Pickup_Done", "X": 3}
+VLs []
+
+SECTION RCON_IAI ROW 109 軸異常
+{"__type": "LD", "Var": "RCON1_IN[3].Status.Alarm"}
+{"__type": "ST", "Var": "RCON1_3_IN_Alarm", "X": 1}
+VLs []
+
+SECTION RCON_IAI ROW 110 サーボON状態
+{"__type": "LD", "Var": "RCON1_IN[3].Status.ServoReady"}
+{"__type": "ST", "Var": "RCON1_3_IN_ServoReady", "X": 1}
+VLs []
+
+SECTION RCON_IAI ROW 111 押付け空振り（未使用）
+{"__type": "LD", "Var": "P_Off"}
+{"__type": "LD", "Var": "RCON1_IN[3].Status.PushMiss", "X": 1}
+{"__type": "ST", "Var": "RCON1_3_IN_PushMiss", "X": 2}
+VLs []
+
+SECTION RCON_IAI ROW 112 過負荷警告
+{"__type": "LD", "Var": "RCON1_IN[3].Status.OverloadWarning"}
+{"__type": "ST", "Var": "RCON1_3_IN_OverloadWarning", "X": 1}
+VLs []
+
+SECTION RCON_IAI ROW 113 指令完了
+{"__type": "LD", "Var": "RCON1_IN[3].Status.CommandDone"}
+{"__type": "ST", "Var": "RCON1_3_IN_CommandDone", "X": 1}
+VLs []
+
+SECTION RCON_IAI ROW 114 ゾーン1内
+{"__type": "LD", "Var": "RCON1_IN[3].Status.Zone1"}
+{"__type": "ST", "Var": "RCON1_3_IN_Zone1", "X": 1}
+VLs []
+
+SECTION RCON_IAI ROW 115 ゾーン2内
+{"__type": "LD", "Var": "RCON1_IN[3].Status.Zone2"}
+{"__type": "ST", "Var": "RCON1_3_IN_Zone2", "X": 1}
+VLs []
+
+SECTION RCON_IAI ROW 116 準備完了
+{"__type": "LD", "Var": "RCON1_IN[3].Status.ControllerReady"}
+{"__type": "ST", "Var": "RCON1_3_IN_ControllerReady", "X": 1}
+VLs []
+
+SECTION RCON_IAI ROW 117 非常停止状態（監視）
+{"__type": "LD", "Var": "RCON1_IN[3].Status.EmergencyStop"}
+{"__type": "ST", "Var": "RCON1_3_IN_EmergencyStop", "X": 1}
+VLs []
+
+SECTION RCON_IAI ROW 118 異常状態
+{"__type": "LD", "Var": "RCON1_3_IN_Alarm"}
+{"__type": "LD", "Var": "RCON1_3_IN_OverloadWarning", "Y": 1}
+{"__type": "LD", "Var": "RCON1_3_IN_EmergencyStop", "Y": 2}
+{"__type": "ST", "Var": "RCON1_3_Error", "X": 1}
+VLs [{'Ix': 6, 'X': 1}, {'Ix': 6, 'X': 1, 'Y': 1}]
+
+SECTION RCON_IAI ROW 119 【動作管理】 / 動作準備（安全許可とは別）
+{"__type": "LD", "Var": "RCON1_3_IN_ControllerReady"}
+{"__type": "LD", "Var": "RCON1_IN[3].Status.Alarm", "Not": true, "X": 1}
+{"__type": "LD", "Var": "RCON1_3_IN_EmergencyStop", "Not": true, "X": 2}
+{"__type": "LD", "Var": "RCON1_3_IN_ServoReady", "X": 3}
+{"__type": "ST", "Var": "RCON1_3_Ready", "X": 4}
+VLs []
+
+SECTION RCON_IAI ROW 120 開始指令保持
+{"__type": "LD", "Var": "RCON1_3_Auto[1]"}
+{"__type": "LD", "Var": "RCON1_3_Auto[2]", "Y": 1}
+{"__type": "LD", "Var": "RCON1_3_Auto[3]", "Y": 2}
+{"__type": "LD", "Var": "RCON1_3_Ready", "X": 1}
+{"__type": "FB", "Var": "RCON1_3_TON[1]", "Name": "TON", "X": 2, "In": [["PT", "T#100ms"]], "Out": []}
+{"__type": "F", "Name": "Up", "X": 3, "In": [], "Out": []}
+{"__type": "LD", "Var": "RCON1_3_M[1]", "Y": 3}
+{"__type": "LD", "Var": "Retry[12]", "Not": true, "X": 4}
+{"__type": "LD", "Var": "RCON1_3_MoveDone", "Not": true, "X": 5}
+{"__type": "ST", "Var": "RCON1_3_M[1]", "X": 6}
+VLs [{'Ix': 14, 'X': 4}, {'Ix': 14, 'X': 4, 'Y': 1}, {'Ix': 14, 'X': 4, 'Y': 2}, {'Ix': 15, 'X': 1}, {'Ix': 15, 'X': 1, 'Y': 1}]
+
+SECTION RCON_IAI ROW 121 動作完了（100ms保持）
+{"__type": "LD", "Var": "RCON1_3_M[1]"}
+{"__type": "LD", "Var": "RCON1_3_IN_PositionDone", "X": 1}
+{"__type": "F", "Name": "Up", "X": 2, "In": [], "Out": []}
+{"__type": "LD", "Var": "RCON1_3_MoveDone", "Y": 1}
+{"__type": "LD", "Var": "Retry[12]", "Not": true, "X": 3}
+{"__type": "LD", "Var": "RCON1_3_TON[2].Q", "Not": true, "X": 4}
+{"__type": "ST", "Var": "RCON1_3_MoveDone", "X": 5}
+{"__type": "FB", "Var": "RCON1_3_TON[2]", "Name": "TON", "X": 5, "Y": 1, "In": [["PT", "T#100ms"]], "Out": []}
+VLs [{'Ix': 12, 'X': 3}, {'Ix': 13, 'X': 5}]
+
+SECTION RCON_IAI ROW 122 #B(右側) RCON1_4 SF/NG2排出(送り) / 【出力値】 / 目標位置 [mm]（未接続）
+{"__type": "LD", "Var": "P_Off"}
+{"__type": "F", "Name": "MOVE", "X": 1, "In": [["In", "RCON1_4_OUT_TargetPos_mm"]], "Out": [["Out", "RCON1_OUT[4].TargetPos_mm"]]}
+VLs []
+
+SECTION RCON_IAI ROW 190 軸異常
+{"__type": "LD", "Var": "RCON1_IN[5].Status.Alarm"}
+{"__type": "ST", "Var": "RCON1_5_IN_Alarm", "X": 1}
+VLs []
+
+SECTION RCON_IAI ROW 191 サーボON状態
+{"__type": "LD", "Var": "RCON1_IN[5].Status.ServoReady"}
+{"__type": "ST", "Var": "RCON1_5_IN_ServoReady", "X": 1}
+VLs []
+
+SECTION RCON_IAI ROW 192 押付け空振り（未使用）
+{"__type": "LD", "Var": "P_Off"}
+{"__type": "LD", "Var": "RCON1_IN[5].Status.PushMiss", "X": 1}
+{"__type": "ST", "Var": "RCON1_5_IN_PushMiss", "X": 2}
+VLs []
+
+SECTION RCON_IAI ROW 193 過負荷警告
+{"__type": "LD", "Var": "RCON1_IN[5].Status.OverloadWarning"}
+{"__type": "ST", "Var": "RCON1_5_IN_OverloadWarning", "X": 1}
+VLs []
+
+SECTION RCON_IAI ROW 194 指令完了
+{"__type": "LD", "Var": "RCON1_IN[5].Status.CommandDone"}
+{"__type": "ST", "Var": "RCON1_5_IN_CommandDone", "X": 1}
+VLs []
+
+SECTION RCON_IAI ROW 195 ゾーン1内
+{"__type": "LD", "Var": "RCON1_IN[5].Status.Zone1"}
+{"__type": "ST", "Var": "RCON1_5_IN_Zone1", "X": 1}
+VLs []
+
+SECTION RCON_IAI ROW 196 ゾーン2内
+{"__type": "LD", "Var": "RCON1_IN[5].Status.Zone2"}
+{"__type": "ST", "Var": "RCON1_5_IN_Zone2", "X": 1}
+VLs []
+
+SECTION RCON_IAI ROW 197 準備完了
+{"__type": "LD", "Var": "RCON1_IN[5].Status.ControllerReady"}
+{"__type": "ST", "Var": "RCON1_5_IN_ControllerReady", "X": 1}
+VLs []
+
+SECTION RCON_IAI ROW 198 非常停止状態（監視）
+{"__type": "LD", "Var": "RCON1_IN[5].Status.EmergencyStop"}
+{"__type": "ST", "Var": "RCON1_5_IN_EmergencyStop", "X": 1}
+VLs []
+
+SECTION RCON_IAI ROW 199 異常状態
+{"__type": "LD", "Var": "RCON1_5_IN_Alarm"}
+{"__type": "LD", "Var": "RCON1_5_IN_OverloadWarning", "Y": 1}
+{"__type": "LD", "Var": "RCON1_5_IN_EmergencyStop", "Y": 2}
+{"__type": "ST", "Var": "RCON1_5_Error", "X": 1}
+VLs [{'Ix': 6, 'X': 1}, {'Ix': 6, 'X': 1, 'Y': 1}]
+
+SECTION RCON_IAI ROW 200 【動作管理】 / 動作準備（安全許可とは別）
+{"__type": "LD", "Var": "RCON1_5_IN_ControllerReady"}
+{"__type": "LD", "Var": "RCON1_IN[5].Status.Alarm", "Not": true, "X": 1}
+{"__type": "LD", "Var": "RCON1_5_IN_EmergencyStop", "Not": true, "X": 2}
+{"__type": "LD", "Var": "RCON1_5_IN_ServoReady", "X": 3}
+{"__type": "ST", "Var": "RCON1_5_Ready", "X": 4}
+VLs []
+
+SECTION RCON_IAI ROW 201 開始指令保持
+{"__type": "LD", "Var": "RCON1_5_Auto[1]"}
+{"__type": "LD", "Var": "RCON1_5_Auto[2]", "Y": 1}
+{"__type": "LD", "Var": "RCON1_5_Auto[3]", "Y": 2}
+{"__type": "LD", "Var": "RCON1_5_Auto[4]", "Y": 3}
+{"__type": "LD", "Var": "RCON1_5_Ready", "X": 1}
+{"__type": "FB", "Var": "RCON1_5_TON[1]", "Name": "TON", "X": 2, "In": [["PT", "T#100ms"]], "Out": []}
+{"__type": "F", "Name": "Up", "X": 3, "In": [], "Out": []}
+{"__type": "LD", "Var": "RCON1_5_M[1]", "Y": 4}
+{"__type": "LD", "Var": "Retry[12]", "Not": true, "X": 4}
+{"__type": "LD", "Var": "RCON1_5_MoveDone", "Not": true, "X": 5}
+{"__type": "ST", "Var": "RCON1_5_M[1]", "X": 6}
+VLs [{'Ix': 15, 'X': 4}, {'Ix': 15, 'X': 4, 'Y': 1}, {'Ix': 15, 'X': 4, 'Y': 2}, {'Ix': 15, 'X': 4, 'Y': 3}, {'Ix': 16, 'X': 1}, {'Ix': 16, 'X': 1, 'Y': 1}, {'Ix': 16, 'X': 1, 'Y': 2}]
+
+SECTION RCON_IAI ROW 202 動作完了（100ms保持）
+{"__type": "LD", "Var": "RCON1_5_M[1]"}
+{"__type": "LD", "Var": "RCON1_5_IN_PositionDone", "X": 1}
+{"__type": "F", "Name": "Up", "X": 2, "In": [], "Out": []}
+{"__type": "LD", "Var": "RCON1_5_MoveDone", "Y": 1}
+{"__type": "LD", "Var": "Retry[12]", "Not": true, "X": 3}
+{"__type": "LD", "Var": "RCON1_5_TON[2].Q", "Not": true, "X": 4}
+{"__type": "ST", "Var": "RCON1_5_MoveDone", "X": 5}
+{"__type": "FB", "Var": "RCON1_5_TON[2]", "Name": "TON", "X": 5, "Y": 1, "In": [["PT", "T#100ms"]], "Out": []}
+VLs [{'Ix': 12, 'X': 3}, {'Ix': 13, 'X': 5}]
+
+SECTION RCON_IAI ROW 203 #B(右側) RCON1_6 SF/NG2排出(上下) / 【出力値】 / 目標位置 [mm]（未接続）
+{"__type": "LD", "Var": "P_Off"}
+{"__type": "F", "Name": "MOVE", "X": 1, "In": [["In", "RCON1_6_OUT_TargetPos_mm"]], "Out": [["Out", "RCON1_OUT[6].TargetPos_mm"]]}
+VLs []
+
+SECTION Input_入力 ROW 12 
+{"__type": "LD", "Var": "In_Sen_NG2_Tray_A_Full"}
+{"__type": "FB", "Var": "Timer_In_Sen_NG2_Tray_A_Full", "Name": "TON", "X": 1, "In": [["PT", "T#1.2s"]], "Out": []}
+{"__type": "ST", "Var": "TimerQ_In_Sen_NG2_Tray_A_Full", "X": 2}
+VLs []
+
+SECTION Input_入力 ROW 13 
+{"__type": "LD", "Var": "In_Sen_NG2_Tray_A_Full_Warn"}
+{"__type": "FB", "Var": "Timer_In_Sen_NG2_Tray_A_Full_Warn", "Name": "TON", "X": 1, "In": [["PT", "T#1.2s"]], "Out": []}
+{"__type": "ST", "Var": "TimerQ_In_Sen_NG2_Tray_A_Full_Warn", "X": 2}
+VLs []
+
+SECTION Input_入力 ROW 14 
+{"__type": "LD", "Var": "In_Sen_SH_A_Ent"}
+{"__type": "FB", "Var": "Timer_In_Sen_SH_A_Ent", "Name": "TON", "X": 1, "In": [["PT", "T#1.2s"]], "Out": []}
+{"__type": "ST", "Var": "TimerQ_In_Sen_SH_A_Ent", "X": 2}
+VLs []
+
+SECTION Input_入力 ROW 15 
+{"__type": "LD", "Var": "In_Sen_SH_A_Ext"}
+{"__type": "FB", "Var": "Timer_In_Sen_SH_A_Ext", "Name": "TON", "X": 1, "In": [["PT", "T#1.2s"]], "Out": []}
+{"__type": "ST", "Var": "TimerQ_In_Sen_SH_A_Ext", "X": 2}
+VLs []
+
+SECTION Input_入力 ROW 16 
+{"__type": "LD", "Var": "In_Sen_SH_A_Type_Ent"}
+{"__type": "FB", "Var": "Timer_In_Sen_SH_A_Type_Ent", "Name": "TON", "X": 1, "In": [["PT", "T#1.2s"]], "Out": []}
+{"__type": "ST", "Var": "TimerQ_In_Sen_SH_A_Type_Ent", "X": 2}
+VLs []
+
+SECTION Input_入力 ROW 17 
+{"__type": "LD", "Var": "In_Sen_SH_A_Type_Ext"}
+{"__type": "FB", "Var": "Timer_In_Sen_SH_A_Type_Ext", "Name": "TON", "X": 1, "In": [["PT", "T#1.2s"]], "Out": []}
+{"__type": "ST", "Var": "TimerQ_In_Sen_SH_A_Type_Ext", "X": 2}
+VLs []
+
+SECTION Input_入力 ROW 72 
+{"__type": "LD", "Var": "In_Sen_NG2_Tray_B_Full"}
+{"__type": "FB", "Var": "Timer_In_Sen_NG2_Tray_B_Full", "Name": "TON", "X": 1, "In": [["PT", "T#1.2s"]], "Out": []}
+{"__type": "ST", "Var": "TimerQ_In_Sen_NG2_Tray_B_Full", "X": 2}
+VLs []
+
+SECTION Input_入力 ROW 73 
+{"__type": "LD", "Var": "In_Sen_NG2_Tray_B_Full_Warn"}
+{"__type": "FB", "Var": "Timer_In_Sen_NG2_Tray_B_Full_Warn", "Name": "TON", "X": 1, "In": [["PT", "T#1.2s"]], "Out": []}
+{"__type": "ST", "Var": "TimerQ_In_Sen_NG2_Tray_B_Full_Warn", "X": 2}
+VLs []
+
+SECTION Input_入力 ROW 74 
+{"__type": "LD", "Var": "In_Sen_SH_B_Ent"}
+{"__type": "FB", "Var": "Timer_In_Sen_SH_B_Ent", "Name": "TON", "X": 1, "In": [["PT", "T#1.2s"]], "Out": []}
+{"__type": "ST", "Var": "TimerQ_In_Sen_SH_B_Ent", "X": 2}
+VLs []
+
+SECTION Input_入力 ROW 75 
+{"__type": "LD", "Var": "In_Sen_SH_B_Ext"}
+{"__type": "FB", "Var": "Timer_In_Sen_SH_B_Ext", "Name": "TON", "X": 1, "In": [["PT", "T#1.2s"]], "Out": []}
+{"__type": "ST", "Var": "TimerQ_In_Sen_SH_B_Ext", "X": 2}
+VLs []
+
+SECTION Input_入力 ROW 76 
+{"__type": "LD", "Var": "In_Sen_SH_B_Type_Ent"}
+{"__type": "FB", "Var": "Timer_In_Sen_SH_B_Type_Ent", "Name": "TON", "X": 1, "In": [["PT", "T#1.2s"]], "Out": []}
+{"__type": "ST", "Var": "TimerQ_In_Sen_SH_B_Type_Ent", "X": 2}
+VLs []
+
+SECTION Input_入力 ROW 77 
+{"__type": "LD", "Var": "In_Sen_SH_B_Type_Ext"}
+{"__type": "FB", "Var": "Timer_In_Sen_SH_B_Type_Ext", "Name": "TON", "X": 1, "In": [["PT", "T#1.2s"]], "Out": []}
+{"__type": "ST", "Var": "TimerQ_In_Sen_SH_B_Type_Ext", "X": 2}
+VLs []
+
+SECTION Output_出力 ROW 100 【Y716】A(左側) 排出チャック閉 戻
+{"__type": "LD", "Var": "Out_CYw_Disc_Chk_A_H_Auto[1]"}
+{"__type": "LD", "Var": "Out_CYw_Disc_Chk_A_H_Auto[2]", "Y": 2}
+{"__type": "LD", "Var": "AutoMode", "X": 1}
+{"__type": "LD", "Var": "Pause[1]", "Not": true, "X": 2}
+{"__type": "F", "Name": "Up", "X": 3, "In": [], "Out": []}
+{"__type": "LD", "Var": "Out_CYw_Disc_Chk_A_H_Manual[1]", "Y": 3}
+{"__type": "LD", "Var": "ManualMode", "X": 1, "Y": 3}
+{"__type": "F", "Name": "Up", "X": 2, "Y": 3, "In": [], "Out": []}
+{"__type": "LD", "Var": "Output_A_M[23]", "Y": 4}
+{"__type": "LD", "Var": "M9999", "Not": true, "X": 4}
+{"__type": "LD", "Var": "Pause[1]", "Not": true, "X": 5}
+{"__type": "LD", "Var": "ManualMode", "X": 5, "Y": 1}
+{"__type": "LD", "Var": "Output_A_Reset_TON[23].Q", "Not": true, "X": 6}
+{"__type": "ST", "Var": "Out_CYw_Disc_Chk_A_H", "X": 7}
+{"__type": "ST", "Var": "Output_A_M[23]", "X": 7, "Y": 2}
+VLs [{'Ix': 16, 'X': 4}, {'Ix': 16, 'X': 4, 'Y': 1}, {'Ix': 16, 'X': 4, 'Y': 2}, {'Ix': 16, 'X': 4, 'Y': 3}, {'Ix': 17, 'X': 7}, {'Ix': 17, 'X': 7, 'Y': 1}, {'Ix': 18, 'X': 1}, {'Ix': 18, 'X': 1, 'Y': 1}, {'Ix': 20, 'X': 5}, {'Ix': 21, 'X': 6}]
+
+SECTION Output_出力 ROW 101 
+{"__type": "LD", "Var": "Output_A_M[23]"}
+{"__type": "LD", "Var": "TimerQ_In_SenCY_Disc_Chk_A_H", "X": 1}
+{"__type": "ST", "Var": "Out_CYw_Disc_Chk_A_H_Done", "X": 2}
+{"__type": "FB", "Var": "Output_A_Reset_TON[23]", "Name": "TON", "X": 2, "Y": 1, "In": [["PT", "T#1s"]], "Out": []}
+VLs [{'Ix': 8, 'X': 2}]
+
+SECTION Output_出力 ROW 102 異常監視（自動指令・到達待ち10秒）
+{"__type": "LD", "Var": "Out_CYw_Disc_Chk_A_H_Auto[1]"}
+{"__type": "LD", "Var": "Out_CYw_Disc_Chk_A_H_Auto[2]", "Y": 1}
+{"__type": "LD", "Var": "AutoMode", "X": 1}
+{"__type": "LD", "Var": "Pause[1]", "Not": true, "X": 2}
+{"__type": "LD", "Var": "TimerQ_In_SenCY_Disc_Chk_A_H", "Not": true, "X": 3}
+{"__type": "FB", "Var": "Output_A_Error_TON[23]", "Name": "TON", "X": 4, "In": [["PT", "T#10s"]], "Out": []}
+{"__type": "F", "Name": "Up", "X": 5, "In": [], "Out": []}
+{"__type": "ST", "Var": "Output_A_Error_M[23]", "X": 6}
+{"__type": "ST", "Var": "HMI_Message_Request[29]", "X": 6, "Y": 1}
+VLs [{'Ix': 12, 'X': 6}, {'Ix': 14, 'X': 1}]
+
+SECTION Output_出力 ROW 103 【Y717】A(左側) 排出チャック開 行
+{"__type": "LD", "Var": "Out_CYw_Disc_Chk_A_F_Auto[1]"}
+{"__type": "LD", "Var": "AutoMode", "X": 1}
+{"__type": "LD", "Var": "Pause[1]", "Not": true, "X": 2}
+{"__type": "F", "Name": "Up", "X": 3, "In": [], "Out": []}
+{"__type": "LD", "Var": "Out_CYw_Disc_Chk_A_F_Manual[1]", "Y": 2}
+{"__type": "LD", "Var": "ManualMode", "X": 1, "Y": 2}
+{"__type": "F", "Name": "Up", "X": 2, "Y": 2, "In": [], "Out": []}
+{"__type": "LD", "Var": "Output_A_M[24]", "Y": 3}
+{"__type": "LD", "Var": "M9999", "Not": true, "X": 4}
+{"__type": "LD", "Var": "Pause[1]", "Not": true, "X": 5}
+{"__type": "LD", "Var": "ManualMode", "X": 5, "Y": 1}
+{"__type": "LD", "Var": "Output_A_Reset_TON[24].Q", "Not": true, "X": 6}
+{"__type": "ST", "Var": "Out_CYw_Disc_Chk_A_F", "X": 7}
+{"__type": "ST", "Var": "Output_A_M[24]", "X": 7, "Y": 2}
+VLs [{'Ix': 15, 'X': 4}, {'Ix': 15, 'X': 4, 'Y': 1}, {'Ix': 15, 'X': 4, 'Y': 2}, {'Ix': 16, 'X': 7}, {'Ix': 16, 'X': 7, 'Y': 1}, {'Ix': 18, 'X': 5}, {'Ix': 19, 'X': 6}]
+
+SECTION Output_出力 ROW 104 
+{"__type": "LD", "Var": "Output_A_M[24]"}
+{"__type": "LD", "Var": "TimerQ_In_SenCY_Disc_Chk_A_F", "X": 1}
+{"__type": "ST", "Var": "Out_CYw_Disc_Chk_A_F_Done", "X": 2}
+{"__type": "FB", "Var": "Output_A_Reset_TON[24]", "Name": "TON", "X": 2, "Y": 1, "In": [["PT", "T#1s"]], "Out": []}
+VLs [{'Ix': 8, 'X': 2}]
+
+SECTION Output_出力 ROW 105 異常監視（自動指令・到達待ち10秒）
+{"__type": "LD", "Var": "Out_CYw_Disc_Chk_A_F_Auto[1]"}
+{"__type": "LD", "Var": "AutoMode", "X": 1}
+{"__type": "LD", "Var": "Pause[1]", "Not": true, "X": 2}
+{"__type": "LD", "Var": "TimerQ_In_SenCY_Disc_Chk_A_F", "Not": true, "X": 3}
+{"__type": "FB", "Var": "Output_A_Error_TON[24]", "Name": "TON", "X": 4, "In": [["PT", "T#10s"]], "Out": []}
+{"__type": "F", "Name": "Up", "X": 5, "In": [], "Out": []}
+{"__type": "ST", "Var": "Output_A_Error_M[24]", "X": 6}
+{"__type": "ST", "Var": "HMI_Message_Request[30]", "X": 6, "Y": 1}
+VLs [{'Ix': 12, 'X': 6}]
+
+SECTION Output_出力 ROW 106 【Y718】A(左側) 排出フォルダ送り戻
+{"__type": "LD", "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[1]"}
+{"__type": "LD", "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[2]", "Y": 2}
+{"__type": "LD", "Var": "AutoMode", "X": 1}
+{"__type": "LD", "Var": "Pause[1]", "Not": true, "X": 2}
+{"__type": "F", "Name": "Up", "X": 3, "In": [], "Out": []}
+{"__type": "LD", "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Manual[1]", "Y": 3}
+{"__type": "LD", "Var": "ManualMode", "X": 1, "Y": 3}
+{"__type": "F", "Name": "Up", "X": 2, "Y": 3, "In": [], "Out": []}
+{"__type": "LD", "Var": "Output_A_M[25]", "Y": 4}
+{"__type": "LD", "Var": "M9999", "Not": true, "X": 4}
+{"__type": "LD", "Var": "Pause[1]", "Not": true, "X": 5}
+{"__type": "LD", "Var": "ManualMode", "X": 5, "Y": 1}
+{"__type": "LD", "Var": "Output_A_Reset_TON[25].Q", "Not": true, "X": 6}
+{"__type": "LD", "Var": "IAI_In_Sample_Busy_MOVE", "Not": true, "X": 7}
+{"__type": "ST", "Var": "Out_CYw_Ejc_Hldr_Feed_A_H", "X": 8}
+{"__type": "ST", "Var": "Output_A_M[25]", "X": 8, "Y": 2}
+VLs [{'Ix': 17, 'X': 4}, {'Ix': 17, 'X': 4, 'Y': 1}, {'Ix': 17, 'X': 4, 'Y': 2}, {'Ix': 17, 'X': 4, 'Y': 3}, {'Ix': 18, 'X': 8}, {'Ix': 18, 'X': 8, 'Y': 1}, {'Ix': 19, 'X': 1}, {'Ix': 19, 'X': 1, 'Y': 1}, {'Ix': 21, 'X': 5}, {'Ix': 22, 'X': 6}]
+
+SECTION Output_出力 ROW 107 
+{"__type": "LD", "Var": "Output_A_M[25]"}
+{"__type": "LD", "Var": "TimerQ_In_SenCY_Ejc_SH_Feed_A_H", "X": 1}
+{"__type": "ST", "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Done", "X": 2}
+{"__type": "FB", "Var": "Output_A_Reset_TON[25]", "Name": "TON", "X": 2, "Y": 1, "In": [["PT", "T#1s"]], "Out": []}
+VLs [{'Ix': 8, 'X': 2}]
+
+SECTION Output_出力 ROW 108 異常監視（自動指令・到達待ち10秒）
+{"__type": "LD", "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[1]"}
+{"__type": "LD", "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[2]", "Y": 1}
+{"__type": "LD", "Var": "AutoMode", "X": 1}
+{"__type": "LD", "Var": "Pause[1]", "Not": true, "X": 2}
+{"__type": "LD", "Var": "TimerQ_In_SenCY_Ejc_SH_Feed_A_H", "Not": true, "X": 3}
+{"__type": "FB", "Var": "Output_A_Error_TON[25]", "Name": "TON", "X": 4, "In": [["PT", "T#10s"]], "Out": []}
+{"__type": "F", "Name": "Up", "X": 5, "In": [], "Out": []}
+{"__type": "ST", "Var": "Output_A_Error_M[25]", "X": 6}
+{"__type": "ST", "Var": "HMI_Message_Request[31]", "X": 6, "Y": 1}
+VLs [{'Ix': 12, 'X': 6}, {'Ix': 14, 'X': 1}]
+
+SECTION Output_出力 ROW 109 【Y719】A(左側) 排出フォルダ送り行
+{"__type": "LD", "Var": "Out_CYw_Ejc_Hldr_Feed_A_F_Auto[1]"}
+{"__type": "LD", "Var": "AutoMode", "X": 1}
+{"__type": "LD", "Var": "Pause[1]", "Not": true, "X": 2}
+{"__type": "F", "Name": "Up", "X": 3, "In": [], "Out": []}
+{"__type": "LD", "Var": "Out_CYw_Ejc_Hldr_Feed_A_F_Manual[1]", "Y": 2}
+{"__type": "LD", "Var": "ManualMode", "X": 1, "Y": 2}
+{"__type": "F", "Name": "Up", "X": 2, "Y": 2, "In": [], "Out": []}
+{"__type": "LD", "Var": "Output_A_M[26]", "Y": 3}
+{"__type": "LD", "Var": "M9999", "Not": true, "X": 4}
+{"__type": "LD", "Var": "Pause[1]", "Not": true, "X": 5}
+{"__type": "LD", "Var": "ManualMode", "X": 5, "Y": 1}
+{"__type": "LD", "Var": "Output_A_Reset_TON[26].Q", "Not": true, "X": 6}
+{"__type": "LD", "Var": "IAI_In_Sample_Busy_MOVE", "Not": true, "X": 7}
+{"__type": "ST", "Var": "Out_CYw_Ejc_Hldr_Feed_A_F", "X": 8}
+{"__type": "ST", "Var": "Output_A_M[26]", "X": 8, "Y": 2}
+VLs [{'Ix': 16, 'X': 4}, {'Ix': 16, 'X': 4, 'Y': 1}, {'Ix': 16, 'X': 4, 'Y': 2}, {'Ix': 17, 'X': 8}, {'Ix': 17, 'X': 8, 'Y': 1}, {'Ix': 19, 'X': 5}, {'Ix': 20, 'X': 6}]
+
+SECTION Output_出力 ROW 110 
+{"__type": "LD", "Var": "Output_A_M[26]"}
+{"__type": "LD", "Var": "TimerQ_In_SenCY_Ejc_SH_Feed_A_F", "X": 1}
+{"__type": "ST", "Var": "Out_CYw_Ejc_Hldr_Feed_A_F_Done", "X": 2}
+{"__type": "FB", "Var": "Output_A_Reset_TON[26]", "Name": "TON", "X": 2, "Y": 1, "In": [["PT", "T#1s"]], "Out": []}
+VLs [{'Ix': 8, 'X': 2}]
+
+SECTION Output_出力 ROW 111 異常監視（自動指令・到達待ち10秒）
+{"__type": "LD", "Var": "Out_CYw_Ejc_Hldr_Feed_A_F_Auto[1]"}
+{"__type": "LD", "Var": "AutoMode", "X": 1}
+{"__type": "LD", "Var": "Pause[1]", "Not": true, "X": 2}
+{"__type": "LD", "Var": "TimerQ_In_SenCY_Ejc_SH_Feed_A_F", "Not": true, "X": 3}
+{"__type": "FB", "Var": "Output_A_Error_TON[26]", "Name": "TON", "X": 4, "In": [["PT", "T#10s"]], "Out": []}
+{"__type": "F", "Name": "Up", "X": 5, "In": [], "Out": []}
+{"__type": "ST", "Var": "Output_A_Error_M[26]", "X": 6}
+{"__type": "ST", "Var": "HMI_Message_Request[32]", "X": 6, "Y": 1}
+VLs [{'Ix': 12, 'X': 6}]
+
+SECTION Output_出力 ROW 148 【Y726】A(左側) ストックフォルダターン戻
+{"__type": "LD", "Var": "Out_CYw_SH_A_Turn_H_Auto[1]"}
+{"__type": "LD", "Var": "AutoMode", "X": 1}
+{"__type": "LD", "Var": "Pause[1]", "Not": true, "X": 2}
+{"__type": "F", "Name": "<", "X": 3, "In": [["In1", "RCON1_5_ActualPos_mm"], ["In2", "RCON1_5_SafePos_mm"]], "Out": []}
+{"__type": "F", "Name": "Up", "X": 4, "In": [], "Out": []}
+{"__type": "LD", "Var": "Out_CYw_SH_A_Turn_H_Manual[1]", "Y": 2}
+{"__type": "LD", "Var": "ManualMode", "X": 1, "Y": 2}
+{"__type": "F", "Name": "<", "X": 2, "Y": 2, "In": [["In1", "RCON1_5_ActualPos_mm"], ["In2", "RCON1_5_SafePos_mm"]], "Out": []}
+{"__type": "F", "Name": "Up", "X": 3, "Y": 2, "In": [], "Out": []}
+{"__type": "LD", "Var": "Output_A_M[39]", "Y": 3}
+{"__type": "LD", "Var": "M9999", "Not": true, "X": 5}
+{"__type": "LD", "Var": "Pause[1]", "Not": true, "X": 6}
+{"__type": "LD", "Var": "ManualMode", "X": 6, "Y": 1}
+{"__type": "LD", "Var": "Output_A_Reset_TON[39].Q", "Not": true, "X": 7}
+{"__type": "ST", "Var": "Out_CYw_SH_A_Turn_H", "X": 8}
+{"__type": "ST", "Var": "Output_A_M[39]", "X": 8, "Y": 2}
+VLs [{'Ix': 21, 'X': 5}, {'Ix': 21, 'X': 5, 'Y': 1}, {'Ix': 21, 'X': 5, 'Y': 2}, {'Ix': 22, 'X': 8}, {'Ix': 22, 'X': 8, 'Y': 1}, {'Ix': 24, 'X': 6}, {'Ix': 25, 'X': 7}]
+
+SECTION Output_出力 ROW 151 【Y727】A(左側) ストックフォルダターン行
+{"__type": "LD", "Var": "Out_CYw_SH_A_Turn_F_Auto[1]"}
+{"__type": "LD", "Var": "AutoMode", "X": 1}
+{"__type": "LD", "Var": "Pause[1]", "Not": true, "X": 2}
+{"__type": "F", "Name": "<", "X": 3, "In": [["In1", "RCON1_5_ActualPos_mm"], ["In2", "RCON1_5_SafePos_mm"]], "Out": []}
+{"__type": "F", "Name": "Up", "X": 4, "In": [], "Out": []}
+{"__type": "LD", "Var": "Out_CYw_SH_A_Turn_F_Manual[1]", "Y": 2}
+{"__type": "LD", "Var": "ManualMode", "X": 1, "Y": 2}
+{"__type": "F", "Name": "<", "X": 2, "Y": 2, "In": [["In1", "RCON1_5_ActualPos_mm"], ["In2", "RCON1_5_SafePos_mm"]], "Out": []}
+{"__type": "F", "Name": "Up", "X": 3, "Y": 2, "In": [], "Out": []}
+{"__type": "LD", "Var": "Output_A_M[40]", "Y": 3}
+{"__type": "LD", "Var": "M9999", "Not": true, "X": 5}
+{"__type": "LD", "Var": "Pause[1]", "Not": true, "X": 6}
+{"__type": "LD", "Var": "ManualMode", "X": 6, "Y": 1}
+{"__type": "LD", "Var": "Output_A_Reset_TON[40].Q", "Not": true, "X": 7}
+{"__type": "ST", "Var": "Out_CYw_SH_A_Turn_F", "X": 8}
+{"__type": "ST", "Var": "Output_A_M[40]", "X": 8, "Y": 2}
+VLs [{'Ix': 21, 'X': 5}, {'Ix': 21, 'X': 5, 'Y': 1}, {'Ix': 21, 'X': 5, 'Y': 2}, {'Ix': 22, 'X': 8}, {'Ix': 22, 'X': 8, 'Y': 1}, {'Ix': 24, 'X': 6}, {'Ix': 25, 'X': 7}]

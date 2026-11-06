@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest manifestSchemaVersion="1" modelSchemaVersion="1">
+  <Application applicationName="sysmac" applicationVersion="Infinity" />
+  <Solution solutionName="3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261106A" id="298443e5-40dc-47d4-95bf-46c8fde7d5ae" trackingId="a787eee9-8a42-416b-933d-e01fffb92fc9" solutionSchemaVersion="2">
+    <ApplicationFeatures>
+      <ApplicationFeature name="HMI" />
+      <ApplicationFeature name="NA5-9W001☐-V2Version:1.19" />
+      <ApplicationFeature name="V102Project" />
+      <ApplicationFeature name="DBCon V2.01" />
+      <ApplicationFeature name="SetUnit NX102-9020 Ver. 1.48" />
+      <ApplicationFeature name="TransferInfoAndBuildResultsEntitiesReduced" />
+    </ApplicationFeatures>
+  </Solution>
+</Manifest>

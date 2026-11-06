@@ -1,0 +1,865 @@
+{
+  "検証": "Auto接点の整合と既存条件保持の確認は合格",
+  "output": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261103E.smc2",
+  "sha256": "e19ec47a6132f11f0f0610813166874c3e9aeb1e41a022efcfdfda03dcbb6e77",
+  "駆動監視照合組数": 100,
+  "修正監視行": 23,
+  "接点追加": 22,
+  "異なる出力参照の修正": 4,
+  "未反映Auto接点": 0,
+  "余分なAuto接点": 0,
+  "異常タイマ・センサ・停止条件・エラー出力・コメント": "全て保持",
+  "局所配線グラフ状態検査": 2112,
+  "同検査制約": "タイマ入口までの導通を確認。メーカーシミュレータ/時間動作の確認ではない",
+  "既存の監視タイマ参照要確認": [
+    {
+      "異常監視行": 306,
+      "タイマ参照": "Output_A_Reset_TON[43]"
+    },
+    {
+      "異常監視行": 309,
+      "タイマ参照": "Output_A_Reset_TON[44]"
+    },
+    {
+      "異常監視行": 312,
+      "タイマ参照": "Output_B_Reset_TON[43]"
+    },
+    {
+      "異常監視行": 315,
+      "タイマ参照": "Output_B_Reset_TON[44]"
+    }
+  ],
+  "その他209部品": "全バイト一致",
+  "D版原本": "ハッシュ一致",
+  "ZIP_CRC": "正常",
+  "Sysmac読込・全体再ビルド": "未実施",
+  "PLC接続と転送": "未実施",
+  "対応表": [
+    {
+      "駆動行": 16,
+      "異常監視行": 18,
+      "Auto接点": [
+        "Out_CYw_Sply_Slide_A_H_Auto[1]",
+        "Out_CYw_Sply_Slide_A_H_Auto[2]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 19,
+      "異常監視行": 21,
+      "Auto接点": [
+        "Out_CYw_Sply_Slide_A_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 22,
+      "異常監視行": 24,
+      "Auto接点": [
+        "Out_CYw_Sply_Pick_A_H_Auto[1]",
+        "Out_CYw_Sply_Pick_A_H_Auto[2]",
+        "Out_CYw_Sply_Pick_A_H_Auto[3]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 25,
+      "異常監視行": 27,
+      "Auto接点": [
+        "Out_CYw_Sply_Pick_A_F_Auto[1]",
+        "Out_CYw_Sply_Pick_A_F_Auto[2]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 28,
+      "異常監視行": 30,
+      "Auto接点": [
+        "Out_CYw_Sup_Chuck_A_Cl_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 31,
+      "異常監視行": 33,
+      "Auto接点": [
+        "Out_CYw_Sup_Chuck_A_Cl_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 34,
+      "異常監視行": 36,
+      "Auto接点": [
+        "Out_CYw_Sply_Slide_B_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 37,
+      "異常監視行": 39,
+      "Auto接点": [
+        "Out_CYw_Sply_Slide_B_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 40,
+      "異常監視行": 42,
+      "Auto接点": [
+        "Out_CYw_Sply_Pick_B_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 43,
+      "異常監視行": 45,
+      "Auto接点": [
+        "Out_CYw_Sply_Pick_B_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 46,
+      "異常監視行": 48,
+      "Auto接点": [
+        "Out_CYw_Sup_Chuck_B_Cl_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 49,
+      "異常監視行": 51,
+      "Auto接点": [
+        "Out_CYw_Sup_Chuck_B_Cl_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 52,
+      "異常監視行": 54,
+      "Auto接点": [
+        "Out_CYw_HgtInsp_Clp_A_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 55,
+      "異常監視行": 57,
+      "Auto接点": [
+        "Out_CYw_HgtInsp_Clp_A_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 58,
+      "異常監視行": 60,
+      "Auto接点": [
+        "Out_CYw_HgtInsp_Lf_A_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 61,
+      "異常監視行": 63,
+      "Auto接点": [
+        "Out_CYw_HgtInsp_Lf_A_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 64,
+      "異常監視行": 66,
+      "Auto接点": [
+        "Out_CYw_NG1_Pick_A_H_Auto[1]",
+        "Out_CYw_NG1_Pick_A_H_Auto[2]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 67,
+      "異常監視行": 69,
+      "Auto接点": [
+        "Out_CYw_NG1_Pick_A_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 70,
+      "異常監視行": 72,
+      "Auto接点": [
+        "Out_CYw_NG1_Chk_A_H_Auto[1]",
+        "Out_CYw_NG1_Chk_A_H_Auto[2]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 73,
+      "異常監視行": 75,
+      "Auto接点": [
+        "Out_CYw_NG1_Chk_A_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 76,
+      "異常監視行": 78,
+      "Auto接点": [
+        "Out_CYw_Rev_01_Chk_A_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 79,
+      "異常監視行": 81,
+      "Auto接点": [
+        "Out_CYw_Rev_01_Chk_A_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 82,
+      "異常監視行": 84,
+      "Auto接点": [
+        "Out_CYw_Rev_01_Pick_A_H_Auto[1]",
+        "Out_CYw_Rev_01_Pick_A_H_Auto[2]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 85,
+      "異常監視行": 87,
+      "Auto接点": [
+        "Out_CYw_Rev_01_Pick_A_F_Auto[1]",
+        "Out_CYw_Rev_01_Pick_A_F_Auto[2]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 88,
+      "異常監視行": 90,
+      "Auto接点": [
+        "Out_CYw_Rev_02_Chk_A_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 91,
+      "異常監視行": 93,
+      "Auto接点": [
+        "Out_CYw_Rev_02_Chk_A_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 94,
+      "異常監視行": 96,
+      "Auto接点": [
+        "Out_CYw_Rev_02_Pick_A_H_Auto[1]",
+        "Out_CYw_Rev_02_Pick_A_H_Auto[2]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 97,
+      "異常監視行": 99,
+      "Auto接点": [
+        "Out_CYw_Rev_02_Pick_A_F_Auto[1]",
+        "Out_CYw_Rev_02_Pick_A_F_Auto[2]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 100,
+      "異常監視行": 102,
+      "Auto接点": [
+        "Out_CYw_Disc_Chk_A_H_Auto[1]",
+        "Out_CYw_Disc_Chk_A_H_Auto[2]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 103,
+      "異常監視行": 105,
+      "Auto接点": [
+        "Out_CYw_Disc_Chk_A_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 106,
+      "異常監視行": 108,
+      "Auto接点": [
+        "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[1]",
+        "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[2]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 109,
+      "異常監視行": 111,
+      "Auto接点": [
+        "Out_CYw_Ejc_Hldr_Feed_A_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 112,
+      "異常監視行": 114,
+      "Auto接点": [
+        "Out_CYS_Pos_01_Stopper_A_H_Auto[1]",
+        "Out_CYS_Pos_01_Stopper_A_H_Auto[2]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 115,
+      "異常監視行": 117,
+      "Auto接点": [
+        "Out_CYS_Pos_01_Stopper_A_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 118,
+      "異常監視行": 120,
+      "Auto接点": [
+        "Out_CYS_Pos_02_Stopper_A_H_Auto[1]",
+        "Out_CYS_Pos_02_Stopper_A_H_Auto[2]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 121,
+      "異常監視行": 123,
+      "Auto接点": [
+        "Out_CYS_Pos_02_Stopper_A_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 124,
+      "異常監視行": 126,
+      "Auto接点": [
+        "Out_CYS_Pos_03_Stopper_A_H_Auto[1]",
+        "Out_CYS_Pos_03_Stopper_A_H_Auto[2]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 127,
+      "異常監視行": 129,
+      "Auto接点": [
+        "Out_CYS_Pos_03_Stopper_A_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 130,
+      "異常監視行": 132,
+      "Auto接点": [
+        "Out_CYS_Pos_04_Stopper_A_H_Auto[1]",
+        "Out_CYS_Pos_04_Stopper_A_H_Auto[2]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 133,
+      "異常監視行": 135,
+      "Auto接点": [
+        "Out_CYS_Pos_04_Stopper_A_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 136,
+      "異常監視行": 138,
+      "Auto接点": [
+        "Out_CYS_Pos_05_Stopper_A_H_Auto[1]",
+        "Out_CYS_Pos_05_Stopper_A_H_Auto[2]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 139,
+      "異常監視行": 141,
+      "Auto接点": [
+        "Out_CYS_Pos_05_Stopper_A_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 142,
+      "異常監視行": 144,
+      "Auto接点": [
+        "Out_CYS_Pos_06_Stopper_A_H_Auto[1]",
+        "Out_CYS_Pos_06_Stopper_A_H_Auto[2]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 145,
+      "異常監視行": 147,
+      "Auto接点": [
+        "Out_CYS_Pos_06_Stopper_A_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 148,
+      "異常監視行": 150,
+      "Auto接点": [
+        "Out_CYw_SH_A_Turn_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 151,
+      "異常監視行": 153,
+      "Auto接点": [
+        "Out_CYw_SH_A_Turn_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 154,
+      "異常監視行": 156,
+      "Auto接点": [
+        "Out_CYw_NG1_Srt_A_H_Auto[1]",
+        "Out_CYw_NG1_Srt_A_H_Auto[2]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 157,
+      "異常監視行": 159,
+      "Auto接点": [
+        "Out_CYw_NG1_Srt_A_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 160,
+      "異常監視行": 162,
+      "Auto接点": [
+        "Out_CYw_HgtInsp_Clp_B_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 163,
+      "異常監視行": 165,
+      "Auto接点": [
+        "Out_CYw_HgtInsp_Clp_B_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 166,
+      "異常監視行": 168,
+      "Auto接点": [
+        "Out_CYw_HgtInsp_Lf_B_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 169,
+      "異常監視行": 171,
+      "Auto接点": [
+        "Out_CYw_HgtInsp_Lf_B_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 172,
+      "異常監視行": 174,
+      "Auto接点": [
+        "Out_CYw_NG1_Pick_B_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 175,
+      "異常監視行": 177,
+      "Auto接点": [
+        "Out_CYw_NG1_Pick_B_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 178,
+      "異常監視行": 180,
+      "Auto接点": [
+        "Out_CYw_NG1_Chk_B_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 181,
+      "異常監視行": 183,
+      "Auto接点": [
+        "Out_CYw_NG1_Chk_B_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 184,
+      "異常監視行": 186,
+      "Auto接点": [
+        "Out_CYw_Rev_01_Chk_B_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 187,
+      "異常監視行": 189,
+      "Auto接点": [
+        "Out_CYw_Rev_01_Chk_B_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 190,
+      "異常監視行": 192,
+      "Auto接点": [
+        "Out_CYw_Rev_01_Pick_B_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 193,
+      "異常監視行": 195,
+      "Auto接点": [
+        "Out_CYw_Rev_01_Pick_B_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 196,
+      "異常監視行": 198,
+      "Auto接点": [
+        "Out_CYw_Rev_02_Chk_B_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 199,
+      "異常監視行": 201,
+      "Auto接点": [
+        "Out_CYw_Rev_02_Chk_B_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 202,
+      "異常監視行": 204,
+      "Auto接点": [
+        "Out_CYw_Rev_02_Pick_B_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 205,
+      "異常監視行": 207,
+      "Auto接点": [
+        "Out_CYw_Rev_02_Pick_B_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 208,
+      "異常監視行": 210,
+      "Auto接点": [
+        "Out_CYw_Disc_Chk_B_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 211,
+      "異常監視行": 213,
+      "Auto接点": [
+        "Out_CYw_Disc_Chk_B_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 214,
+      "異常監視行": 216,
+      "Auto接点": [
+        "Out_CYw_Ejc_Hldr_Feed_B_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 217,
+      "異常監視行": 219,
+      "Auto接点": [
+        "Out_CYw_Ejc_Hldr_Feed_B_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 220,
+      "異常監視行": 222,
+      "Auto接点": [
+        "Out_CYS_Pos_01_Stopper_B_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 223,
+      "異常監視行": 225,
+      "Auto接点": [
+        "Out_CYS_Pos_01_Stopper_B_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 226,
+      "異常監視行": 228,
+      "Auto接点": [
+        "Out_CYS_Pos_02_Stopper_B_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 229,
+      "異常監視行": 231,
+      "Auto接点": [
+        "Out_CYS_Pos_02_Stopper_B_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 232,
+      "異常監視行": 234,
+      "Auto接点": [
+        "Out_CYS_Pos_03_Stopper_B_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 235,
+      "異常監視行": 237,
+      "Auto接点": [
+        "Out_CYS_Pos_03_Stopper_B_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 238,
+      "異常監視行": 240,
+      "Auto接点": [
+        "Out_CYS_Pos_04_Stopper_B_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 241,
+      "異常監視行": 243,
+      "Auto接点": [
+        "Out_CYS_Pos_04_Stopper_B_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 244,
+      "異常監視行": 246,
+      "Auto接点": [
+        "Out_CYS_Pos_05_Stopper_B_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 247,
+      "異常監視行": 249,
+      "Auto接点": [
+        "Out_CYS_Pos_05_Stopper_B_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 250,
+      "異常監視行": 252,
+      "Auto接点": [
+        "Out_CYS_Pos_06_Stopper_B_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 253,
+      "異常監視行": 255,
+      "Auto接点": [
+        "Out_CYS_Pos_06_Stopper_B_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 256,
+      "異常監視行": 258,
+      "Auto接点": [
+        "Out_CYw_SH_B_Turn_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 259,
+      "異常監視行": 261,
+      "Auto接点": [
+        "Out_CYw_SH_B_Turn_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 262,
+      "異常監視行": 264,
+      "Auto接点": [
+        "Out_CYw_NG1_Srt_B_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 265,
+      "異常監視行": 267,
+      "Auto接点": [
+        "Out_CYw_NG1_Srt_B_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 268,
+      "異常監視行": 270,
+      "Auto接点": [
+        "Out_CYw_Empty_Container_CY_H_Auto[1]",
+        "Out_CYw_Empty_Container_CY_H_Auto[2]",
+        "Out_CYw_Empty_Container_CY_H_Auto[3]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 271,
+      "異常監視行": 273,
+      "Auto接点": [
+        "Out_CYw_Empty_Container_CY_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 274,
+      "異常監視行": 276,
+      "Auto接点": [
+        "Out_CYw_Sep_Claw_H_Auto[1]",
+        "Out_CYw_Sep_Claw_H_Auto[2]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 277,
+      "異常監視行": 279,
+      "Auto接点": [
+        "Out_CYw_Sep_Claw_F_Auto[1]",
+        "Out_CYw_Sep_Claw_F_Auto[2]",
+        "Out_CYw_Sep_Claw_F_Auto[3]",
+        "Out_CYw_Sep_Claw_F_Auto[4]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 280,
+      "異常監視行": 282,
+      "Auto接点": [
+        "Out_CYw_Ejc_Cont_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 283,
+      "異常監視行": 285,
+      "Auto接点": [
+        "Out_CYw_Ejc_Cont_F_Auto[1]",
+        "Out_CYw_Ejc_Cont_F_Auto[2]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 286,
+      "異常監視行": 288,
+      "Auto接点": [
+        "Out_CYw_Box_Chuck_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 289,
+      "異常監視行": 291,
+      "Auto接点": [
+        "Out_CYw_Box_Chuck_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 292,
+      "異常監視行": 294,
+      "Auto接点": [
+        "Out_CYw_Srt_Stopper_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 295,
+      "異常監視行": 297,
+      "Auto接点": [
+        "Out_CYw_Srt_Stopper_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 298,
+      "異常監視行": 300,
+      "Auto接点": [
+        "Out_CYw_Srt_Feed_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 301,
+      "異常監視行": 303,
+      "Auto接点": [
+        "Out_CYw_Srt_Feed_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 304,
+      "異常監視行": 306,
+      "Auto接点": [
+        "Out_CYw_Hnd_Feed_A_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 307,
+      "異常監視行": 309,
+      "Auto接点": [
+        "Out_CYw_Hnd_Feed_A_F_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 310,
+      "異常監視行": 312,
+      "Auto接点": [
+        "Out_CYw_Hnd_Feed_B_H_Auto[1]"
+      ],
+      "一致": true
+    },
+    {
+      "駆動行": 313,
+      "異常監視行": 315,
+      "Auto接点": [
+        "Out_CYw_Hnd_Feed_B_F_Auto[1]"
+      ],
+      "一致": true
+    }
+  ]
+}

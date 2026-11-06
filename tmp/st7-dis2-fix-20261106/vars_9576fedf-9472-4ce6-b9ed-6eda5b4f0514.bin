@@ -1,0 +1,937 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=TON	N=Timer_In_Sen_Accum_CV_A_Full	G=VAR
+++D=TON	N=Timer_In_Sen_Accum_CV_A_Arrival	G=VAR
+++D=TON	N=Timer_In_Sen_Work_A_Pos_00	G=VAR
+++D=TON	N=Timer_In_Sen_Work_A_Pos_01	G=VAR
+++D=TON	N=Timer_In_Sen_Work_A_Pos_02	G=VAR
+++D=TON	N=Timer_In_Sen_Work_A_Pos_03	G=VAR
+++D=TON	N=Timer_In_Sen_Work_A_Pos_04	G=VAR
+++D=TON	N=Timer_In_Sen_Work_A_Pos_05	G=VAR
+++D=TON	N=Timer_In_Sen_Work_A_Pos_06	G=VAR
+++D=TON	N=Timer_In_Sen_Work_A_Pos_07	G=VAR
+++D=TON	N=Timer_In_Sen_NG1_Tray_A_Full	G=VAR
+++D=TON	N=Timer_In_Sen_NG1_Tray_A_Full_Warn	G=VAR
+++D=TON	N=Timer_In_Sen_NG2_Tray_A_Full	G=VAR
+++D=TON	N=Timer_In_Sen_NG2_Tray_A_Full_Warn	G=VAR
+++D=TON	N=Timer_In_Sen_SH_A_Ent	G=VAR
+++D=TON	N=Timer_In_Sen_SH_A_Ext	G=VAR
+++D=TON	N=Timer_In_Sen_SH_A_Type_Ent	G=VAR
+++D=TON	N=Timer_In_Sen_SH_A_Type_Ext	G=VAR
+++D=TON	N=Timer_In_SenCY_Sply_Slide_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Sply_Slide_A_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Sply_Pick_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Sply_Pick_A_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Sply_Chk_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Sply_Chk_A_F	G=VAR
+++D=TON	N=Timer_In_SenCY_HgtInsp_Clp_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_HgtInsp_Clp_A_F	G=VAR
+++D=TON	N=Timer_In_SenCY_HgtInsp_Lf_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_HgtInsp_Lf_A_F	G=VAR
+++D=TON	N=Timer_In_SenCY_NG1_Pick_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_NG1_Pick_A_F	G=VAR
+++D=TON	N=Timer_In_SenCY_NG1_Chk_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_NG1_Chk_A_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Rev_01_Chk_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Rev_01_Chk_A_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Rev_01_Pick_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Rev_01_Pick_A_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Rev_02_Chk_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Rev_02_Chk_A_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Rev_02_Pick_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Rev_02_Pick_A_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Disc_Chk_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Disc_Chk_A_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Ejc_SH_Feed_A_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Ejc_SH_Feed_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_01_Stopper_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_01_Stopper_A_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_02_Stopper_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_02_Stopper_A_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_03_Stopper_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_03_Stopper_A_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_04_Stopper_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_04_Stopper_A_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_05_Stopper_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_05_Stopper_A_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_06_Stopper_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_06_Stopper_A_F	G=VAR
+++D=TON	N=Timer_In_SenCY_SH_A_Turn_H	G=VAR
+++D=TON	N=Timer_In_SenCY_SH_A_Turn_F	G=VAR
+++D=TON	N=Timer_In_SenCY_NG1_Srt_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_NG1_Srt_A_F	G=VAR
+++D=TON	N=Timer_In_Sen_Accum_CV_B_Full	G=VAR
+++D=TON	N=Timer_In_Sen_Accum_CV_B_Arrival	G=VAR
+++D=TON	N=Timer_In_Sen_Work_B_Pos_00	G=VAR
+++D=TON	N=Timer_In_Sen_Work_B_Pos_01	G=VAR
+++D=TON	N=Timer_In_Sen_Work_B_Pos_02	G=VAR
+++D=TON	N=Timer_In_Sen_Work_B_Pos_03	G=VAR
+++D=TON	N=Timer_In_Sen_Work_B_Pos_04	G=VAR
+++D=TON	N=Timer_In_Sen_Work_B_Pos_05	G=VAR
+++D=TON	N=Timer_In_Sen_Work_B_Pos_06	G=VAR
+++D=TON	N=Timer_In_Sen_Work_B_Pos_07	G=VAR
+++D=TON	N=Timer_In_Sen_NG1_Tray_B_Full	G=VAR
+++D=TON	N=Timer_In_Sen_NG1_Tray_B_Full_Warn	G=VAR
+++D=TON	N=Timer_In_Sen_NG2_Tray_B_Full	G=VAR
+++D=TON	N=Timer_In_Sen_NG2_Tray_B_Full_Warn	G=VAR
+++D=TON	N=Timer_In_Sen_SH_B_Ent	G=VAR
+++D=TON	N=Timer_In_Sen_SH_B_Ext	G=VAR
+++D=TON	N=Timer_In_Sen_SH_B_Type_Ent	G=VAR
+++D=TON	N=Timer_In_Sen_SH_B_Type_Ext	G=VAR
+++D=TON	N=Timer_In_SenCY_Sply_Slide_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Sply_Slide_B_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Sply_Pick_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Sply_Pick_B_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Sply_Chk_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_HgtInsp_Clp_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Sply_Chk_B_F	G=VAR
+++D=TON	N=Timer_In_SenCY_HgtInsp_Clp_B_F	G=VAR
+++D=TON	N=Timer_In_SenCY_HgtInsp_Lf_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_HgtInsp_Lf_B_F	G=VAR
+++D=TON	N=Timer_In_SenCY_NG1_Pick_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_NG1_Pick_B_F	G=VAR
+++D=TON	N=Timer_In_SenCY_NG1_Chk_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_NG1_Chk_B_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Rev_01_Chk_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Rev_01_Chk_B_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Rev_01_Pick_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Rev_01_Pick_B_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Rev_02_Chk_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Rev_02_Chk_B_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Rev_02_Pick_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Rev_02_Pick_B_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Disc_Chk_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Disc_Chk_B_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Ejc_SH_Feed_B_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Ejc_SH_Feed_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_01_Stopper_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_01_Stopper_B_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_02_Stopper_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_02_Stopper_B_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_03_Stopper_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_03_Stopper_B_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_04_Stopper_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_04_Stopper_B_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_05_Stopper_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_05_Stopper_B_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_06_Stopper_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Pos_06_Stopper_B_F	G=VAR
+++D=TON	N=Timer_In_SenCY_SH_B_Turn_H	G=VAR
+++D=TON	N=Timer_In_SenCY_SH_B_Turn_F	G=VAR
+++D=TON	N=Timer_In_SenCY_NG1_Srt_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_NG1_Srt_B_F	G=VAR
+++D=TON	N=Timer_In_Sen_Supply_Container_Exist	G=VAR
+++D=TON	N=Timer_In_Sen_Destacker_Stage_01_Exist	G=VAR
+++D=TON	N=Timer_In_Sen_Destacker_Stage_02_Exist	G=VAR
+++D=TON	N=Timer_In_Sen_Container_Arrival	G=VAR
+++D=TON	N=Timer_In_Sen_Container_Direction_Check	G=VAR
+++D=TON	N=Timer_In_Sen_Container_Pass	G=VAR
+++D=TON	N=Timer_In_Sen_Container_Full	G=VAR
+++D=TON	N=Timer_In_Sen_Container_Sorting	G=VAR
+++D=TON	N=Timer_In_SenCY_Empty_Container_CY_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Empty_Container_CY_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Sep_Claw1_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Sep_Claw1_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Sep_Claw2_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Sep_Claw2_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Ejc_Cont1_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Ejc_Cont1_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Ejc_Cont2_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Ejc_Cont2_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Box_Chk_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Box_Chk_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Srt_Stopper_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Srt_Stopper_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Srt_Feed_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Srt_Feed_F	G=VAR
+++D=TON	N=Timer_In_Sen_Unl_Conv_A_Pass	G=VAR
+++D=TON	N=Timer_In_Sen_Unl_Conv_B_Pass	G=VAR
+++D=TON	N=Timer_In_Sen_Trs_Conv_A_Arv	G=VAR
+++D=TON	N=Timer_In_Sen_Trs_Conv_A_Arrival	G=VAR
+++D=TON	N=Timer_In_Sen_Trs_Conv_B_Arrival	G=VAR
+++D=TON	N=Timer_In_SenCY_Hnd_Feed_A_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Hnd_Feed_A_F	G=VAR
+++D=TON	N=Timer_In_SenCY_Hnd_Feed_B_H	G=VAR
+++D=TON	N=Timer_In_SenCY_Hnd_Feed_B_F	G=VAR
+++D=ARRAY[0..999] OF TON	N=Output_A_Error_TON	G=VAR	Com=A(左側)出力タイムオーバーエラー：
+++D=ARRAY[0..999] OF Bool	N=Output_A_M	G=VAR	Com=A(左側)出力補助コイル：	EC=<ECs><EC EK="[1]" C="【Y616】A(左側) 供給スライド戻" /><EC EK="[2]" C="【Y617】A(左側) 供給スライド行" /><EC EK="[3]" C="【Y618】A(左側) 供給ピックアップ戻" /><EC EK="[4]" C="【Y619】A(左側) 供給ピックアップ行" /><EC EK="[5]" C="【Y620】A(左側) 供給チャック閉 戻" /><EC EK="[6]" C="【Y621】A(左側) 供給チャック開 行" /><EC EK="[7]" C="【Y700】A(左側) 高さ検査押え戻" /><EC EK="[8]" C="【Y701】A(左側) 高さ検査押え行" /><EC EK="[9]" C="【Y702】A(左側) 高さ検査持上戻" /><EC EK="[10]" C="【Y703】A(左側) 高さ検査持上行" /><EC EK="[11]" C="【Y704】A(左側) NG1ピックアップ戻" /><EC EK="[12]" C="【Y705】A(左側) NG1ピックアップ 行" /><EC EK="[13]" C="【Y706】A(左側) NG1チャック戻" /><EC EK="[14]" C="【Y707】A(左側) NG1チャック行" /><EC EK="[15]" C="【Y708】A(左側)ST4 反転1チャック閉" /><EC EK="[16]" C="【Y709】A(左側)ST4 反転1チャック開" /><EC EK="[17]" C="【Y710】A(左側)ST4 反転1ピックアップ戻" /><EC EK="[18]" C="【Y711】A(左側)ST4 反転1ピックアップ行" /><EC EK="[19]" C="【Y712】A(左側)ST6 反転2チャック閉 戻" /><EC EK="[20]" C="【Y713】A(左側)ST6 反転2チャック開 行" /><EC EK="[21]" C="【Y714】A(左側)ST6 反転2ピックアップ戻" /><EC EK="[22]" C="【Y715】A(左側)ST6 反転2ピックアップ行" /><EC EK="[23]" C="【Y716】A(左側) 排出チャック閉 戻" /><EC EK="[24]" C="【Y717】A(左側) 排出チャック開 行" /><EC EK="[25]" C="【Y718】A(左側) 排出フォルダ送り戻" /><EC EK="[26]" C="【Y719】A(左側) 排出フォルダ送り行" /><EC EK="[27]" C="【Y720】A(左側) 位置1ストッパー 戻" /><EC EK="[28]" C="【Y720】A(左側) 位置1ストッパー 行" /><EC EK="[29]" C="【Y721】A(左側) 位置2ストッパー" /><EC EK="[30]" C="【Y721】A(左側) 位置2ストッパー" /><EC EK="[32]" C="【Y722】A(左側) 位置3ストッパー行" /><EC EK="[34]" C="【Y723】A(左側) 位置4ストッパー行" /><EC EK="[35]" C="【Y724】A(左側) 位置5ストッパー戻" /><EC EK="[36]" C="【Y724】A(左側) 位置5ストッパー行" /><EC EK="[37]" C="【Y725】A(左側) 位置6ストッパー戻" /><EC EK="[38]" C="【Y725】A(左側) 位置6ストッパー行" /><EC EK="[39]" C="【Y726】A(左側) ストックフォルダターン戻" /><EC EK="[40]" C="【Y727】A(左側) ストックフォルダターン行" /><EC EK="[41]" C="【Y728】A(左側) NG1仕分け 戻" /><EC EK="[42]" C="【Y729】A(左側) NG1仕分け 行" /><EC EK="[43]" C="【Y1300】A(左側) コンベア受渡送り戻" /><EC EK="[44]" C="【Y1301】A(左側) コンベア受渡送り行" /></ECs>
+++D=ARRAY[0..999] OF TON	N=Output_B_Error_TON	G=VAR	Com=B(右側)出力タイムオーバーエラー
+++D=ARRAY[0..999] OF Bool	N=Output_B_M	G=VAR	Com=B(右側)出力補助コイル：	EC=<ECs><EC EK="[1]" C="【Y622】B(右側) 供給スライド戻" /><EC EK="[2]" C="【Y623】B(右側) 供給スライド行" /><EC EK="[3]" C="【Y624】B(右側) 供給ピックアップ戻" /><EC EK="[4]" C="【Y625】B(右側) 供給ピックアップ行" /><EC EK="[5]" C="【Y626】B(右側) 供給チャック閉 戻" /><EC EK="[6]" C="【Y627】B(右側) 供給チャック開 行" /><EC EK="[7]" C="【Y800】B(右側) 高さ検査押え戻" /><EC EK="[9]" C="【Y802】B(右側) 高さ検査持上戻" /><EC EK="[11]" C="【Y804】B(右側) NG1ピックアップ戻" /><EC EK="[14]" C="【Y807】B(右側) NG1チャック行" /><EC EK="[18]" C="【Y811】B(右側)ST4 反転1ピックアップ行" /><EC EK="[42]" C="【Y829】B(右側) NG1仕分け 行" /><EC EK="[41]" C="【Y828】B(右側) NG1仕分け 戻" /><EC EK="[40]" C="【Y827】B(右側) ストックフォルダターン行" /><EC EK="[39]" C="【Y826】B(右側) ストックフォルダターン戻" /><EC EK="[38]" C="【Y825】B(右側) 位置6ストッパー行" /><EC EK="[37]" C="【Y825】B(右側) 位置6ストッパー戻" /><EC EK="[36]" C="【Y824】B(右側) 位置5ストッパー行" /><EC EK="[35]" C="【Y824】B(右側) 位置5ストッパー戻" /><EC EK="[34]" C="【Y823】B(右側) 位置4ストッパー行" /><EC EK="[33]" C="【Y823】B(右側) 位置4ストッパー戻" /><EC EK="[32]" C="【Y822】B(右側) 位置3ストッパー行" /><EC EK="[31]" C="【Y822】B(右側) 位置3ストッパー戻" /><EC EK="[30]" C="【Y821】B(右側) 位置2ストッパー行" /><EC EK="[29]" C="【Y821】B(右側) 位置2ストッパー戻" /><EC EK="[28]" C="【Y820】B(右側) 位置1ストッパー 行" /><EC EK="[27]" C="【Y820】B(右側) 位置1ストッパー 戻" /><EC EK="[26]" C="【Y819】B(右側) 排出フォルダ送り行" /><EC EK="[25]" C="【Y818】B(右側) 排出フォルダ送り戻" /><EC EK="[24]" C="【Y817】B(右側) 排出チャック開 行" /><EC EK="[23]" C="【Y816】B(右側) 排出チャック閉 戻" /><EC EK="[22]" C="【Y815】B(右側)ST6 反転2ピックアップ行" /><EC EK="[21]" C="【Y814】B(右側)ST6 反転2ピックアップ戻" /><EC EK="[20]" C="【Y813】B(右側)ST6 反転2チャック開 行" /><EC EK="[19]" C="【Y812】B(右側)ST6 反転2チャック閉 戻" /><EC EK="[17]" C="【Y810】B(右側)ST4 反転1ピックアップ戻" /><EC EK="[16]" C="【Y809】B(右側)ST4 反転1チャック開 戻" /><EC EK="[15]" C="【Y808】B(右側)ST4 反転1チャック閉 戻" /><EC EK="[13]" C="【Y806】B(右側) NG1チャック戻" /><EC EK="[12]" C="【Y805】B(右側) NG1ピックアップ 行" /><EC EK="[10]" C="【Y803】B(右側) 高さ検査持上行" /><EC EK="[8]" C="【Y801】B(右側) 高さ検査押え行" /><EC EK="[43]" C="【Y1302】B(右側) コンベア受渡送り戻" /><EC EK="[44]" C="【Y1303】B(右側) コンベア受渡送り行" /></ECs>
+++D=BOOL	N=Mtr_Flip_02_Busy	G=VAR	Com=A(左側)反転 オリエンタルモータ2 動作中
+++D=ARRAY[0..99] OF TON	N=Output_A_Reset_TON	G=VAR	Com=A(左側)出力リセット ：	EC=<ECs><EC EK="[34]" C="【Y723】A(左側) 位置4ストッパー行" /></ECs>
+++D=ARRAY[0..99] OF TON	N=Output_B_Reset_TON	G=VAR	Com=B(右側)出力リセット ：
+++D=ARRAY[0..99] OF Bool	N=Output_Share_M	G=VAR	Com=共有出力補助コイル：	EC=<ECs><EC EK="[1]" C="【Y1200】空コンテナ送り 戻" /><EC EK="[2]" C="【Y1201】空コンテナ送り 行" /><EC EK="[3]" C="【Y1202】段バラシ爪 戻" /><EC EK="[4]" C="【Y1203】段バラシ爪 行" /><EC EK="[5]" C="【Y1204】コンテナ排出 戻" /><EC EK="[6]" C="【Y1205】コンテナ排出 行" /><EC EK="[7]" C="【Y1206】箱入れチャック 戻" /><EC EK="[8]" C="【Y1207】箱入れチャック 行" /><EC EK="[9]" C="【Y1208】コンテナ仕分けストッパー 戻" /><EC EK="[10]" C="【Y1209】コンテナ仕分けストッパー 行" /><EC EK="[11]" C="【Y1210】コンテナ仕分け送り 戻" /></ECs>
+++D=ARRAY[0..99] OF TON	N=Output_Share_Reset_TON	G=VAR	Com=共有出力リセット:	EC=<ECs><EC EK="[7]" C="【Y1206】箱入れチャック 戻" /></ECs>
+++D=ARRAY[0..99] OF TON	N=Output_Share_Error_TON	G=VAR	Com=共有出力タイムオーバーエラー
+++D=BOOL	N=IAI_In_Sample_Busy_MOVE	G=VAR
+++D=ARRAY[0..99] OF TON	N=Input_T	G=VAR
+++D=TON	N=Timer_In_Sen_Tray_Direction_Check	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=In_Sw_EMS1	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Accum_CV_A_Full	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Accum_CV_A_Full	G=VAR_EXTERNAL	Com=【X200】A(左側) アキュームCV満
+++D=BOOL	N=In_Sen_Accum_CV_A_Arrival	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Accum_CV_A_Arrival	G=VAR_EXTERNAL	Com=【X201】A(左側) アキュームCV着
+++D=BOOL	N=In_Sen_Work_A_Pos_00	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Work_A_Pos_00	G=VAR_EXTERNAL	Com=【X202】A(左側)ワーク位置0
+++D=BOOL	N=In_Sen_Work_A_Pos_01	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Work_A_Pos_01	G=VAR_EXTERNAL	Com=【X203】A(左側)ワーク位置1
+++D=BOOL	N=In_Sen_Work_A_Pos_02	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Work_A_Pos_02	G=VAR_EXTERNAL	Com=【X204】A(左側)ワーク位置2
+++D=BOOL	N=In_Sen_Work_A_Pos_03	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Work_A_Pos_03	G=VAR_EXTERNAL	Com=【X205】A(左側)ワーク位置3
+++D=BOOL	N=In_Sen_Work_A_Pos_04	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Work_A_Pos_04	G=VAR_EXTERNAL	Com=【X206】A(左側)ワーク位置4
+++D=BOOL	N=In_Sen_Work_A_Pos_05	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Work_A_Pos_05	G=VAR_EXTERNAL	Com=【X207】A(左側)ワーク位置5
+++D=BOOL	N=In_Sen_Work_A_Pos_06	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Work_A_Pos_06	G=VAR_EXTERNAL	Com=【X208】A(左側)ワーク位置6
+++D=BOOL	N=In_Sen_Work_A_Pos_07	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Work_A_Pos_07	G=VAR_EXTERNAL	Com=【X209】A(左側)ワーク位置7
+++D=BOOL	N=In_Sen_NG1_Tray_A_Full	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_NG1_Tray_A_Full	G=VAR_EXTERNAL	Com=【X210】A(左側) NG1トレイ満杯停止
+++D=BOOL	N=In_Sen_NG1_Tray_A_Full_Warn	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_NG1_Tray_A_Full_Warn	G=VAR_EXTERNAL	Com=【X211】A(左側) NG1トレイ満杯警告
+++D=BOOL	N=In_Sen_NG2_Tray_A_Full	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_NG2_Tray_A_Full	G=VAR_EXTERNAL	Com=【X212】A(左側) NG2トレイ満杯停止
+++D=BOOL	N=In_Sen_NG2_Tray_A_Full_Warn	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_NG2_Tray_A_Full_Warn	G=VAR_EXTERNAL	Com=【X213】A(左側) NG2トレイ満杯警告
+++D=BOOL	N=In_Sen_SH_A_Ent	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_SH_A_Ent	G=VAR_EXTERNAL	Com=【X214】：A側積み側5個有
+++D=BOOL	N=In_Sen_SH_A_Ext	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_SH_A_Ext	G=VAR_EXTERNAL	Com=【X215】：A側取出し側5個有
+++D=BOOL	N=In_Sen_SH_A_Type_Ent	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_SH_A_Type_Ent	G=VAR_EXTERNAL	Com=【X216】A(左側) ストック機種判別IN
+++D=BOOL	N=In_Sen_SH_A_Type_Ext	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_SH_A_Type_Ext	G=VAR_EXTERNAL	Com=【X217】A(左側) ストック機種判別OUT
+++D=BOOL	N=In_SenCY_Sply_Slide_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Sply_Slide_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Sply_Slide_A_H	G=VAR_EXTERNAL	Com=【X218】A(左側) 供給スライド戻
+++D=BOOL	N=TimerQ_In_SenCY_Sply_Slide_A_F	G=VAR_EXTERNAL	Com=【X219】A(左側) 供給スライド行
+++D=BOOL	N=In_SenCY_Sply_Pick_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Sply_Pick_A_H	G=VAR_EXTERNAL	Com=【X220】A(左側) 供給ピックアップ戻
+++D=BOOL	N=In_SenCY_Sply_Pick_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Sply_Pick_A_F	G=VAR_EXTERNAL	Com=【X221】A(左側) 供給ピックアップ行
+++D=BOOL	N=In_SenCY_Sply_Chk_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Sply_Chk_A_H	G=VAR_EXTERNAL	Com=【X222】A(左側) 供給チャック戻
+++D=BOOL	N=In_SenCY_Sply_Chk_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Sply_Chk_A_F	G=VAR_EXTERNAL	Com=【X223】A(左側) 供給チャック行
+++D=BOOL	N=In_SenCY_HgtInsp_Clp_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_HgtInsp_Clp_A_H	G=VAR_EXTERNAL	Com=【X224】A(左側) 高さ検査押え戻
+++D=BOOL	N=In_SenCY_HgtInsp_Clp_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_HgtInsp_Clp_A_F	G=VAR_EXTERNAL	Com=【X225】A(左側) 高さ検査押え行
+++D=BOOL	N=In_SenCY_HgtInsp_Lf_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_HgtInsp_Lf_A_H	G=VAR_EXTERNAL	Com=【X226】A(左側) 高さ検査持上戻
+++D=BOOL	N=In_SenCY_HgtInsp_Lf_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_HgtInsp_Lf_A_F	G=VAR_EXTERNAL	Com=【X227】A(左側) 高さ検査持上行
+++D=BOOL	N=In_SenCY_NG1_Pick_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_NG1_Pick_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_NG1_Chk_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_NG1_Pick_A_H	G=VAR_EXTERNAL	Com=【X228】A(左側) NG1ピックアップ戻
+++D=BOOL	N=TimerQ_In_SenCY_NG1_Pick_A_F	G=VAR_EXTERNAL	Com=【X229】A(左側) NG1ピックアップ行
+++D=BOOL	N=TimerQ_In_SenCY_NG1_Chk_A_H	G=VAR_EXTERNAL	Com=【X230】A(左側) NG1チャック戻
+++D=BOOL	N=In_SenCY_NG1_Chk_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Rev_01_Chk_A_H	G=VAR_EXTERNAL	Com=【X300】A(左側)ST4 反転1チャック戻
+++D=BOOL	N=In_SenCY_Rev_01_Chk_A_F	G=VAR_EXTERNAL	Com=【X301】A(左側)ST4 反転1チャック行
+++D=BOOL	N=In_SenCY_Rev_01_Pick_A_H	G=VAR_EXTERNAL	Com=【X302】A(左側)ST4 反転1ピックアップ戻
+++D=BOOL	N=In_SenCY_Rev_01_Pick_A_F	G=VAR_EXTERNAL	Com=【X303】A(左側)ST4 反転1ピックアップ行
+++D=BOOL	N=In_SenCY_Rev_02_Chk_A_H	G=VAR_EXTERNAL	Com=【X304】A(左側)ST6 反転2チャック戻
+++D=BOOL	N=In_SenCY_Rev_02_Chk_A_F	G=VAR_EXTERNAL	Com=【X305】A(左側)ST6 反転2チャック行
+++D=BOOL	N=In_SenCY_Rev_02_Pick_A_H	G=VAR_EXTERNAL	Com=【X306】A(左側)ST6 反転2ピックアップ戻
+++D=BOOL	N=TimerQ_In_SenCY_NG1_Chk_A_F	G=VAR_EXTERNAL	Com=【X231】A(左側) NG1チャック行
+++D=BOOL	N=TimerQ_In_SenCY_Rev_01_Chk_A_H	G=VAR_EXTERNAL	Com=【X300】A(左側)ST4 反転1チャック戻
+++D=BOOL	N=TimerQ_In_SenCY_Rev_01_Chk_A_F	G=VAR_EXTERNAL	Com=【X301】A(左側)ST4 反転1チャック行
+++D=BOOL	N=TimerQ_In_SenCY_Rev_01_Pick_A_H	G=VAR_EXTERNAL	Com=【X302】A(左側)ST4 反転1ピックアップ戻
+++D=BOOL	N=TimerQ_In_SenCY_Rev_01_Pick_A_F	G=VAR_EXTERNAL	Com=【X303】A(左側)ST4 反転1ピックアップ行
+++D=BOOL	N=TimerQ_In_SenCY_Rev_02_Chk_A_H	G=VAR_EXTERNAL	Com=【X304】A(左側)ST6 反転2チャック戻
+++D=BOOL	N=TimerQ_In_SenCY_Rev_02_Chk_A_F	G=VAR_EXTERNAL	Com=【X305】A(左側)ST6 反転2チャック行
+++D=BOOL	N=TimerQ_In_SenCY_Rev_02_Pick_A_H	G=VAR_EXTERNAL	Com=【X306】A(左側)ST6 反転2ピックアップ戻
+++D=BOOL	N=In_SenCY_Rev_02_Pick_A_F	G=VAR_EXTERNAL	Com=【X307】A(左側)ST6 反転2ピックアップ行
+++D=BOOL	N=TimerQ_In_SenCY_Rev_02_Pick_A_F	G=VAR_EXTERNAL	Com=【X307】A(左側)ST6 反転2ピックアップ行
+++D=BOOL	N=In_SenCY_Disc_Chk_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Disc_Chk_A_H	G=VAR_EXTERNAL	Com=【X308】A(左側) 排出チャック戻
+++D=BOOL	N=In_SenCY_Disc_Chk_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Disc_Chk_A_F	G=VAR_EXTERNAL	Com=【X309】A(左側) 排出チャック行
+++D=BOOL	N=In_SenCY_Ejc_SH_Feed_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Ejc_SH_Feed_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Ejc_SH_Feed_A_H	G=VAR_EXTERNAL	Com=【X310】A(左側) 排出フォルダ送り戻
+++D=BOOL	N=TimerQ_In_SenCY_Ejc_SH_Feed_A_F	G=VAR_EXTERNAL	Com=【X311】A(左側) 排出フォルダ送り行
+++D=BOOL	N=In_SenCY_Pos_01_Stopper_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Pos_01_Stopper_A_H	G=VAR_EXTERNAL	Com=【X312】A(左側) 位置1ストッパー戻
+++D=BOOL	N=In_SenCY_Pos_01_Stopper_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Pos_01_Stopper_A_F	G=VAR_EXTERNAL	Com=【X313】位置1ストッパー行
+++D=BOOL	N=In_SenCY_Pos_02_Stopper_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Pos_02_Stopper_A_H	G=VAR_EXTERNAL	Com=【X314】A(左側) 位置2ストッパー戻
+++D=BOOL	N=In_SenCY_Pos_02_Stopper_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Pos_02_Stopper_A_F	G=VAR_EXTERNAL	Com=【X315】A(左側) 位置2ストッパー行
+++D=BOOL	N=In_SenCY_Pos_03_Stopper_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Pos_03_Stopper_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Pos_03_Stopper_A_H	G=VAR_EXTERNAL	Com=【X316】A(左側) 位置3ストッパー戻
+++D=BOOL	N=TimerQ_In_SenCY_Pos_03_Stopper_A_F	G=VAR_EXTERNAL	Com=【X317】A(左側) 位置3ストッパー行
+++D=BOOL	N=In_SenCY_Pos_04_Stopper_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Pos_04_Stopper_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Pos_04_Stopper_A_H	G=VAR_EXTERNAL	Com=【X318】A(左側) 位置4ストッパー戻
+++D=BOOL	N=TimerQ_In_SenCY_Pos_04_Stopper_A_F	G=VAR_EXTERNAL	Com=【X319】A(左側) 位置4ストッパー行
+++D=BOOL	N=In_SenCY_Pos_05_Stopper_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Pos_05_Stopper_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Pos_05_Stopper_A_H	G=VAR_EXTERNAL	Com=【X320】A(左側) 位置5ストッパー戻
+++D=BOOL	N=TimerQ_In_SenCY_Pos_05_Stopper_A_F	G=VAR_EXTERNAL	Com=【X321】A(左側) 位置5ストッパー行
+++D=BOOL	N=In_SenCY_Pos_06_Stopper_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Pos_06_Stopper_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Pos_06_Stopper_A_H	G=VAR_EXTERNAL	Com=【X322】A(左側) 位置6ストッパー戻
+++D=BOOL	N=TimerQ_In_SenCY_Pos_06_Stopper_A_F	G=VAR_EXTERNAL	Com=【X323】A(左側) 位置6ストッパー行
+++D=BOOL	N=In_SenCY_SH_A_Turn_H	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_SH_A_Turn_H	G=VAR_EXTERNAL	Com=【X324】A(左側) ストックフォルダターン戻
+++D=BOOL	N=In_SenCY_SH_A_Turn_F	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_SH_A_Turn_F	G=VAR_EXTERNAL	Com=【X325】A(左側) ストックフォルダターン行
+++D=BOOL	N=In_SenCY_NG1_Srt_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_NG1_Srt_A_H	G=VAR_EXTERNAL	Com=【X330】NG1仕分け 戻
+++D=BOOL	N=In_SenCY_NG1_Srt_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_NG1_Srt_A_F	G=VAR_EXTERNAL	Com=【X331】NG1仕分け 行
+++D=BOOL	N=TimerQ_In_Sen_Accum_CV_B_Full	G=VAR_EXTERNAL	Com=【X400】B(右側) アキュームCV満
+++D=BOOL	N=In_Sen_Accum_CV_B_Arrival	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Accum_CV_B_Arrival	G=VAR_EXTERNAL	Com=【X401】B(右側) アキュームCV着
+++D=BOOL	N=In_Sen_Work_B_Pos_00	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Work_B_Pos_00	G=VAR_EXTERNAL	Com=【X402】B(右側)ワーク位置0
+++D=BOOL	N=In_Sen_Work_B_Pos_01	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Work_B_Pos_02	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Work_B_Pos_03	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Work_B_Pos_04	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Work_B_Pos_05	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Work_B_Pos_06	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Work_B_Pos_07	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_NG1_Tray_B_Full	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_NG1_Tray_B_Full_Warn	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_NG2_Tray_B_Full	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_NG2_Tray_B_Full_Warn	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_SH_B_Ent	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_SH_B_Ext	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_SH_B_Type_Ent	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_SH_B_Type_Ext	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Sply_Slide_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Sply_Slide_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Sply_Pick_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Sply_Pick_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Sply_Chk_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_HgtInsp_Clp_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Sply_Chk_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_HgtInsp_Clp_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_HgtInsp_Lf_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_HgtInsp_Lf_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_NG1_Pick_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_NG1_Pick_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_NG1_Chk_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_NG1_Chk_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Rev_01_Chk_B_H	G=VAR_EXTERNAL	Com=【X500】B(右側)ST4 反転1チャック閉 戻
+++D=BOOL	N=In_SenCY_Rev_01_Chk_B_F	G=VAR_EXTERNAL	Com=【X501】B(右側)ST4 反転1チャック開 行
+++D=BOOL	N=In_SenCY_Rev_01_Pick_B_H	G=VAR_EXTERNAL	Com=【X502】B(右側)ST4 反転1ピックアップ戻
+++D=BOOL	N=In_SenCY_Rev_01_Pick_B_F	G=VAR_EXTERNAL	Com=【X503】B(右側)ST4 反転1ピックアップ行
+++D=BOOL	N=In_SenCY_Rev_02_Chk_B_H	G=VAR_EXTERNAL	Com=【X504】B(右側)ST6 反転2チャック閉 戻
+++D=BOOL	N=In_SenCY_Rev_02_Chk_B_F	G=VAR_EXTERNAL	Com=【X505】B(右側)ST6 反転2チャック開 行
+++D=BOOL	N=In_SenCY_Rev_02_Pick_B_H	G=VAR_EXTERNAL	Com=【X506】B(右側)ST6 反転2ピックアップ戻
+++D=BOOL	N=In_SenCY_Rev_02_Pick_B_F	G=VAR_EXTERNAL	Com=【X507】B(右側)ST6 反転2ピックアップ行
+++D=BOOL	N=In_SenCY_Disc_Chk_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Disc_Chk_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Ejc_SH_Feed_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Ejc_SH_Feed_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Pos_01_Stopper_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Pos_01_Stopper_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Pos_02_Stopper_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Pos_02_Stopper_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Pos_03_Stopper_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Pos_03_Stopper_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Pos_04_Stopper_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Pos_04_Stopper_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Pos_05_Stopper_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Pos_05_Stopper_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Pos_06_Stopper_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Pos_06_Stopper_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_SH_B_Turn_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_SH_B_Turn_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_NG1_Srt_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_NG1_Srt_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Work_B_Pos_01	G=VAR_EXTERNAL	Com=【X403】B(右側)ワーク位置1
+++D=BOOL	N=TimerQ_In_Sen_Work_B_Pos_02	G=VAR_EXTERNAL	Com=【X404】B(右側)ワーク位置2
+++D=BOOL	N=TimerQ_In_Sen_Work_B_Pos_03	G=VAR_EXTERNAL	Com=【X405】B(右側)ワーク位置3
+++D=BOOL	N=TimerQ_In_Sen_Work_B_Pos_04	G=VAR_EXTERNAL	Com=【X406】B(右側)ワーク位置4
+++D=BOOL	N=TimerQ_In_Sen_Work_B_Pos_05	G=VAR_EXTERNAL	Com=【X407】B(右側)ワーク位置5
+++D=BOOL	N=TimerQ_In_Sen_Work_B_Pos_06	G=VAR_EXTERNAL	Com=【X408】B(右側)ワーク位置6
+++D=BOOL	N=TimerQ_In_Sen_Work_B_Pos_07	G=VAR_EXTERNAL	Com=【X409】B(右側)ワーク位置7
+++D=BOOL	N=TimerQ_In_Sen_NG1_Tray_B_Full	G=VAR_EXTERNAL	Com=【X410】B(右側) NG1トレイ満杯停止
+++D=BOOL	N=TimerQ_In_Sen_NG1_Tray_B_Full_Warn	G=VAR_EXTERNAL	Com=【X411】B(右側) NG1トレイ満杯警告
+++D=BOOL	N=TimerQ_In_Sen_NG2_Tray_B_Full	G=VAR_EXTERNAL	Com=【X412】B(右側) NG2トレイ満杯停止
+++D=BOOL	N=TimerQ_In_Sen_NG2_Tray_B_Full_Warn	G=VAR_EXTERNAL	Com=【X413】B(右側) NG2トレイ満杯警告
+++D=BOOL	N=TimerQ_In_Sen_SH_B_Ent	G=VAR_EXTERNAL	Com=【X414】B(右側) ストックフォルダIN
+++D=BOOL	N=TimerQ_In_Sen_SH_B_Ext	G=VAR_EXTERNAL	Com=【X415】B(右側) ストックフォルダOut
+++D=BOOL	N=TimerQ_In_Sen_SH_B_Type_Ent	G=VAR_EXTERNAL	Com=【X416】B(右側) ストック機種判別IN
+++D=BOOL	N=TimerQ_In_Sen_SH_B_Type_Ext	G=VAR_EXTERNAL	Com=【X417】B(右側) ストック機種判別OUT
+++D=BOOL	N=TimerQ_In_SenCY_Sply_Slide_B_H	G=VAR_EXTERNAL	Com=【X418】B(右側) 供給スライド戻
+++D=BOOL	N=TimerQ_In_SenCY_Sply_Slide_B_F	G=VAR_EXTERNAL	Com=【X419】B(右側) 供給スライド行
+++D=BOOL	N=TimerQ_In_SenCY_Sply_Pick_B_H	G=VAR_EXTERNAL	Com=【X420】B(右側) 供給ピックアップ戻
+++D=BOOL	N=TimerQ_In_SenCY_Sply_Pick_B_F	G=VAR_EXTERNAL	Com=【X421】B(右側) 供給ピックアップ行
+++D=BOOL	N=TimerQ_In_SenCY_Sply_Chk_B_H	G=VAR_EXTERNAL	Com=【X422】B(右側) 供給チャック閉 戻
+++D=BOOL	N=TimerQ_In_SenCY_HgtInsp_Clp_B_H	G=VAR_EXTERNAL	Com=【X424】B(右側) 高さ検査押え戻
+++D=BOOL	N=TimerQ_In_SenCY_Sply_Chk_B_F	G=VAR_EXTERNAL	Com=【X423】B(右側) 供給チャック開 行
+++D=BOOL	N=TimerQ_In_SenCY_HgtInsp_Clp_B_F	G=VAR_EXTERNAL	Com=【X425】B(右側) 高さ検査押え行
+++D=BOOL	N=TimerQ_In_SenCY_HgtInsp_Lf_B_H	G=VAR_EXTERNAL	Com=【X426】B(右側) 高さ検査持上戻
+++D=BOOL	N=TimerQ_In_SenCY_HgtInsp_Lf_B_F	G=VAR_EXTERNAL	Com=【X427】 B(右側) 高さ検査持上行
+++D=BOOL	N=TimerQ_In_SenCY_NG1_Pick_B_H	G=VAR_EXTERNAL	Com=【X428】B(右側) NG1ピックアップ戻
+++D=BOOL	N=TimerQ_In_SenCY_NG1_Pick_B_F	G=VAR_EXTERNAL	Com=【X429】B(右側) NG1ピックアップ行
+++D=BOOL	N=TimerQ_In_SenCY_NG1_Chk_B_H	G=VAR_EXTERNAL	Com=【X430】 B(右側) NG1チャック閉 戻
+++D=BOOL	N=TimerQ_In_SenCY_NG1_Chk_B_F	G=VAR_EXTERNAL	Com=【X431】B(右側) NG1チャック開 行
+++D=BOOL	N=TimerQ_In_SenCY_Rev_01_Chk_B_H	G=VAR_EXTERNAL	Com=【X500】B(右側)ST4 反転1チャック閉 戻
+++D=BOOL	N=TimerQ_In_SenCY_Rev_01_Pick_B_H	G=VAR_EXTERNAL	Com=【X502】B(右側)ST4 反転1ピックアップ戻
+++D=BOOL	N=TimerQ_In_SenCY_Rev_01_Pick_B_F	G=VAR_EXTERNAL	Com=【X503】B(右側)ST4 反転1ピックアップ行
+++D=BOOL	N=TimerQ_In_SenCY_Rev_02_Chk_B_H	G=VAR_EXTERNAL	Com=【X504】B(右側)ST6 反転2チャック閉 戻
+++D=BOOL	N=TimerQ_In_SenCY_Rev_02_Chk_B_F	G=VAR_EXTERNAL	Com=【X505】B(右側)ST6 反転2チャック開 行
+++D=BOOL	N=TimerQ_In_SenCY_Rev_02_Pick_B_H	G=VAR_EXTERNAL	Com=【X506】B(右側)ST6 反転2ピックアップ戻
+++D=BOOL	N=TimerQ_In_SenCY_Rev_02_Pick_B_F	G=VAR_EXTERNAL	Com=【X507】B(右側)ST6 反転2ピックアップ行
+++D=BOOL	N=TimerQ_In_SenCY_Disc_Chk_B_H	G=VAR_EXTERNAL	Com=【X508】B(右側) 排出チャック閉 戻
+++D=BOOL	N=TimerQ_In_SenCY_Disc_Chk_B_F	G=VAR_EXTERNAL	Com=【X509】B(右側) 排出チャック開 行
+++D=BOOL	N=TimerQ_In_SenCY_Ejc_SH_Feed_B_H	G=VAR_EXTERNAL	Com=【X511】B(右側) 排出フォルダ送り行
+++D=BOOL	N=TimerQ_In_SenCY_Ejc_SH_Feed_B_F	G=VAR_EXTERNAL	Com=【X510】B(右側) 排出フォルダ送り戻
+++D=BOOL	N=TimerQ_In_SenCY_Pos_01_Stopper_B_H	G=VAR_EXTERNAL	Com=【X512】B(右側) 位置1ストッパー戻
+++D=BOOL	N=TimerQ_In_SenCY_Pos_01_Stopper_B_F	G=VAR_EXTERNAL	Com=【X513】B(右側) 位置1ストッパー行
+++D=BOOL	N=TimerQ_In_SenCY_Pos_02_Stopper_B_H	G=VAR_EXTERNAL	Com=【X514】B(右側) 位置2ストッパー戻
+++D=BOOL	N=TimerQ_In_SenCY_Pos_02_Stopper_B_F	G=VAR_EXTERNAL	Com=【X515】B(右側) 位置2ストッパー行
+++D=BOOL	N=TimerQ_In_SenCY_Pos_03_Stopper_B_H	G=VAR_EXTERNAL	Com=【X516】B(右側) 位置3ストッパー戻
+++D=BOOL	N=TimerQ_In_SenCY_Pos_03_Stopper_B_F	G=VAR_EXTERNAL	Com=【X517】B(右側) 位置3ストッパー行
+++D=BOOL	N=TimerQ_In_SenCY_Pos_04_Stopper_B_H	G=VAR_EXTERNAL	Com=【X518】B(右側) 位置4ストッパー戻
+++D=BOOL	N=TimerQ_In_SenCY_Pos_04_Stopper_B_F	G=VAR_EXTERNAL	Com=【X519】B(右側) 位置4ストッパー行
+++D=BOOL	N=TimerQ_In_SenCY_Pos_05_Stopper_B_H	G=VAR_EXTERNAL	Com=【X520】B(右側) 位置5ストッパー戻
+++D=BOOL	N=TimerQ_In_SenCY_Pos_05_Stopper_B_F	G=VAR_EXTERNAL	Com=【X521】B(右側) 位置5ストッパー行
+++D=BOOL	N=TimerQ_In_SenCY_Pos_06_Stopper_B_H	G=VAR_EXTERNAL	Com=【X522】B(右側) 位置6ストッパー戻
+++D=BOOL	N=TimerQ_In_SenCY_Pos_06_Stopper_B_F	G=VAR_EXTERNAL	Com=【X523】B(右側) 位置6ストッパー行
+++D=BOOL	N=TimerQ_In_SenCY_SH_B_Turn_H	G=VAR_EXTERNAL	Com=【X524】B(右側) ストックフォルダターン戻
+++D=BOOL	N=TimerQ_In_SenCY_SH_B_Turn_F	G=VAR_EXTERNAL	Com=【X525】B(右側) ストックフォルダターン行
+++D=BOOL	N=TimerQ_In_SenCY_NG1_Srt_B_H	G=VAR_EXTERNAL	Com=【X530】B(右側) NG1仕分け 戻
+++D=BOOL	N=TimerQ_In_SenCY_NG1_Srt_B_F	G=VAR_EXTERNAL	Com=【X531】B(右側) NG1仕分け 行
+++D=BOOL	N=In_Sen_Supply_Container_Exist	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Destacker_Stage_01_Exist	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Destacker_Stage_02_Exist	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Container_Arrival	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Container_Direction_Check	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Container_Pass	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Container_Full	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Empty_Container_CY_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Empty_Container_CY_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Sep_Claw1_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Sep_Claw1_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Sep_Claw2_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Sep_Claw2_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Ejc_Cont1_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Ejc_Cont1_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Ejc_Cont2_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Ejc_Cont2_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Box_Chk_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Box_Chk_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Srt_Stopper_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Srt_Stopper_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Srt_Feed_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Srt_Feed_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Unl_Conv_A_Pass	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Unl_Conv_B_Pass	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Trs_Conv_A_Arrival	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Trs_Conv_B_Arrival	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Hnd_Feed_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Hnd_Feed_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Hnd_Feed_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=In_SenCY_Hnd_Feed_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Supply_Container_Exist	G=VAR_EXTERNAL	Com=【X1000】供給部コンテナ有
+++D=BOOL	N=TimerQ_In_Sen_Destacker_Stage_01_Exist	G=VAR_EXTERNAL	Com=【X1001】段バラシ1段目有
+++D=BOOL	N=TimerQ_In_Sen_Destacker_Stage_02_Exist	G=VAR_EXTERNAL	Com=【X1002】段バラシ2段目有
+++D=BOOL	N=TimerQ_In_Sen_Container_Arrival	G=VAR_EXTERNAL	Com=【X1003】コンテナ到着
+++D=BOOL	N=TimerQ_In_Sen_Container_Direction_Check	G=VAR_EXTERNAL	Com=【X1004】コンテナ方向確認
+++D=BOOL	N=TimerQ_In_Sen_Container_Pass	G=VAR_EXTERNAL	Com=【X1005】コンテナ通過
+++D=BOOL	N=TimerQ_In_Sen_Container_Full	G=VAR_EXTERNAL	Com=【X1006】コンテナ満杯
+++D=BOOL	N=TimerQ_In_Sen_Container_Sorting	G=VAR_EXTERNAL	Com=【X1007】コンテナ仕分け
+++D=BOOL	N=TimerQ_In_SenCY_Empty_Container_CY_H	G=VAR_EXTERNAL	Com=【X1010】空コンテナ送り 戻
+++D=BOOL	N=TimerQ_In_SenCY_Empty_Container_CY_F	G=VAR_EXTERNAL	Com=【X1011】空コンテナ送り 行
+++D=BOOL	N=TimerQ_In_SenCY_Sep_Claw1_H	G=VAR_EXTERNAL	Com=【X1012】段バラシ爪1 戻
+++D=BOOL	N=TimerQ_In_SenCY_Sep_Claw1_F	G=VAR_EXTERNAL	Com=【X1013】段バラシ爪1 行
+++D=BOOL	N=TimerQ_In_SenCY_Sep_Claw2_F	G=VAR_EXTERNAL	Com=【X1015】段バラシ爪2 行
+++D=BOOL	N=TimerQ_In_SenCY_Sep_Claw2_H	G=VAR_EXTERNAL	Com=【X1014】段バラシ爪2 戻
+++D=BOOL	N=TimerQ_In_SenCY_Ejc_Cont1_H	G=VAR_EXTERNAL	Com=【X1016】コンテナ排出1 戻
+++D=BOOL	N=TimerQ_In_SenCY_Ejc_Cont1_F	G=VAR_EXTERNAL	Com=【X1017】コンテナ排出1 行
+++D=BOOL	N=TimerQ_In_SenCY_Ejc_Cont2_H	G=VAR_EXTERNAL	Com=【X1018】コンテナ排出2 戻
+++D=BOOL	N=TimerQ_In_SenCY_Ejc_Cont2_F	G=VAR_EXTERNAL	Com=【X1019】コンテナ排出2 行
+++D=BOOL	N=TimerQ_In_SenCY_Box_Chk_H	G=VAR_EXTERNAL	Com=【X1020】箱入れチャック 戻
+++D=BOOL	N=TimerQ_In_SenCY_Box_Chk_F	G=VAR_EXTERNAL	Com=【X1021】箱入れチャック 行
+++D=BOOL	N=TimerQ_In_SenCY_Srt_Stopper_H	G=VAR_EXTERNAL	Com=【X1022】コンテナ仕分けストッパー 戻
+++D=BOOL	N=TimerQ_In_SenCY_Srt_Stopper_F	G=VAR_EXTERNAL	Com=【X1023】コンテナ仕分けストッパー 行
+++D=BOOL	N=TimerQ_In_SenCY_Srt_Feed_H	G=VAR_EXTERNAL	Com=【X1024】コンテナ仕分け送り 戻
+++D=BOOL	N=TimerQ_In_SenCY_Srt_Feed_F	G=VAR_EXTERNAL	Com=【X1025】コンテナ仕分け送り 行
+++D=BOOL	N=TimerQ_In_Sen_Unl_Conv_A_Pass	G=VAR_EXTERNAL	Com=【X1100】A(左側) 取出しコンベア 通過
+++D=BOOL	N=TimerQ_In_Sen_Unl_Conv_B_Pass	G=VAR_EXTERNAL	Com=【X1101】B(右側) 取出しコンベア 通過
+++D=BOOL	N=TimerQ_In_Sen_Trs_Conv_B_Arrival	G=VAR_EXTERNAL	Com=【X1103】B(右側) 搬送コンベア到着
+++D=BOOL	N=TimerQ_In_Sen_Trs_Conv_A_Arrival	G=VAR_EXTERNAL	Com=【X1102】A(左側) 搬送コンベア到着
+++D=BOOL	N=TimerQ_In_SenCY_Hnd_Feed_A_H	G=VAR_EXTERNAL	Com=【X1104】A(左側) コンベア受渡送り戻
+++D=BOOL	N=TimerQ_In_SenCY_Hnd_Feed_A_F	G=VAR_EXTERNAL	Com=【X1105】A(左側) コンベア受渡送り行
+++D=BOOL	N=TimerQ_In_SenCY_Hnd_Feed_B_H	G=VAR_EXTERNAL	Com=【X1106】B(右側) コンベア受渡送り戻
+++D=BOOL	N=TimerQ_In_SenCY_Hnd_Feed_B_F	G=VAR_EXTERNAL	Com=【X1107】B(右側) コンベア受渡送り行
+++D=BOOL	N=TimerQ_In_SenCY_Rev_01_Chk_B_F	G=VAR_EXTERNAL	Com=【X501】B(右側)ST4 反転1チャック開 行
+++D=BOOL	N=Out_SW_Start_LP_GREEN	G=VAR_EXTERNAL
+++D=BOOL	N=Out_SW_Stop_LP_RED	G=VAR_EXTERNAL
+++D=BOOL	N=Out_SW_Reset_LP_Orange	G=VAR_EXTERNAL
+++D=BOOL	N=Out_Sg_LP_GREEN	G=VAR_EXTERNAL
+++D=BOOL	N=Out_Sg_LP_RED	G=VAR_EXTERNAL
+++D=BOOL	N=Out_Sg_LP_ORANGE	G=VAR_EXTERNAL
+++D=BOOL	N=Out_Sg_BUZZER	G=VAR_EXTERNAL
+++D=BOOL	N=Out_Accum_Cv_RESET	G=VAR_EXTERNAL
+++D=BOOL	N=Out_Acc_Conv_Run	G=VAR_EXTERNAL
+++D=BOOL	N=Out_Accum_Cv_PowerOn	G=VAR_EXTERNAL
+++D=BOOL	N=Out_Insp_Cv_A_Run	G=VAR_EXTERNAL
+++D=BOOL	N=Out_Insp_Cv_A_RESET	G=VAR_EXTERNAL
+++D=BOOL	N=Out_Insp_Cv_A_PowerOn	G=VAR_EXTERNAL
+++D=BOOL	N=Out_Insp_Cv_B_Run	G=VAR_EXTERNAL
+++D=BOOL	N=Out_Insp_Cv_B_RESET	G=VAR_EXTERNAL
+++D=BOOL	N=Out_Insp_Cv_B_PowerOn	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sply_Slide_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=AutoMode	G=VAR_EXTERNAL	Com=自動運転
+++D=BOOL	N=ManualMode	G=VAR_EXTERNAL	Com=手動運転
+++D=BOOL	N=M9999	G=VAR_EXTERNAL	Com=非常停止
+++D=BOOL	N=Out_CYw_Sply_Slide_A_H_Done	G=VAR_EXTERNAL	Com=【Y616】A(左側) 供給スライド戻 動作完了
+++D=ARRAY[0..99] OF Bool	N=Output_A_Error_M	G=VAR_EXTERNAL	Com=Output一時停止：	EC=<ECs><EC EK="[1]" C="【Y616】A(左側) 供給スライド戻" /></ECs>
+++D=ARRAY[0..99] OF Bool	N=Output_A_Restart_M	G=VAR_EXTERNAL	Com=Output再スタート：
+++D=ARRAY[0..10] OF Bool	N=Out_SW_Start_LP_GREEN_Auto	G=VAR_EXTERNAL	Com=自動 【Y600】SWスタートランプ緑：	EC=<ECs><EC EK="[1]" C="1" /></ECs>
+++D=ARRAY[0..10] OF Bool	N=Out_SW_Start_LP_GREEN_Manual	G=VAR_EXTERNAL	Com=手動 【Y600】SWスタートランプ緑：
+++D=ARRAY[0..10] OF Bool	N=Out_SW_Stop_LP_RED_Auto	G=VAR_EXTERNAL	Com=【Y601】SWストップランプ赤：
+++D=ARRAY[0..10] OF Bool	N=Out_SW_Stop_LP_RED_Manual	G=VAR_EXTERNAL	Com=【Y601】SWストップランプ赤：
+++D=ARRAY[0..10] OF Bool	N=Out_SW_Reset_LP_Orange_Auto	G=VAR_EXTERNAL	Com=【Y602】SW リセットランプ橙：
+++D=ARRAY[0..10] OF Bool	N=Out_SW_Reset_LP_Orange_Manual	G=VAR_EXTERNAL	Com=【Y602】SW リセットランプ橙：
+++D=ARRAY[0..10] OF Bool	N=Out_Sg_LP_GREEN_Auto	G=VAR_EXTERNAL	Com=【Y603】シグナルタワー緑：
+++D=ARRAY[0..10] OF Bool	N=Out_Sg_LP_GREEN_Manual	G=VAR_EXTERNAL	Com=【Y603】シグナルタワー緑：
+++D=ARRAY[0..10] OF Bool	N=Out_Sg_LP_RED_Auto	G=VAR_EXTERNAL	Com=【Y604】シグナルタワー赤：
+++D=ARRAY[0..10] OF Bool	N=Out_Sg_LP_RED_Manual	G=VAR_EXTERNAL	Com=【Y604】シグナルタワー赤：
+++D=ARRAY[0..10] OF Bool	N=Out_Sg_LP_ORANGE_Auto	G=VAR_EXTERNAL	Com=【Y605】シグナルタワー橙：
+++D=ARRAY[0..10] OF Bool	N=Out_Sg_LP_ORANGE_Manual	G=VAR_EXTERNAL	Com=【Y605】シグナルタワー橙：
+++D=ARRAY[0..10] OF Bool	N=Out_Sg_BUZZER_Auto	G=VAR_EXTERNAL	Com=【Y606】シグナルタワーブザー：
+++D=ARRAY[0..10] OF Bool	N=Out_Sg_BUZZER_Manual	G=VAR_EXTERNAL	Com=【Y606】シグナルタワーブザー：
+++D=ARRAY[0..10] OF Bool	N=Out_Accum_Cv_RESET_Manual	G=VAR_EXTERNAL	Com=【Y608】アキューム コンベア リセット：
+++D=ARRAY[0..10] OF Bool	N=Out_Accum_Cv_RESET_Auto	G=VAR_EXTERNAL	Com=【Y608】アキューム コンベア リセット：
+++D=ARRAY[0..10] OF Bool	N=Out_Acc_Conv_Run_Manual	G=VAR_EXTERNAL	Com=【Y607】アキューム コンベア運転ON：
+++D=ARRAY[0..10] OF Bool	N=Out_Acc_Conv_Run_Auto	G=VAR_EXTERNAL	Com=【Y607】アキューム コンベア運転ON：
+++D=ARRAY[0..10] OF Bool	N=Out_Accum_Cv_PowerOn_Auto	G=VAR_EXTERNAL	Com=【Y609】アキューム コンベア電源ON：
+++D=ARRAY[0..10] OF Bool	N=Out_Accum_Cv_PowerOn_Manual	G=VAR_EXTERNAL	Com=【Y609】アキューム コンベア電源ON：
+++D=ARRAY[0..10] OF Bool	N=Out_Insp_Cv_A_Run_Auto	G=VAR_EXTERNAL	Com=【Y610】A(左側) 検査 コンベア運転ON：
+++D=ARRAY[0..10] OF Bool	N=Out_Insp_Cv_A_Run_Manual	G=VAR_EXTERNAL	Com=【Y610】A(左側) 検査 コンベア運転ON：
+++D=ARRAY[0..10] OF Bool	N=Out_Insp_Cv_A_RESET_Auto	G=VAR_EXTERNAL	Com=【Y611】A(左側) 検査 コンベア リセット：
+++D=ARRAY[0..10] OF Bool	N=Out_Insp_Cv_A_RESET_Manual	G=VAR_EXTERNAL	Com=【Y611】A(左側) 検査 コンベア リセット：
+++D=ARRAY[0..10] OF Bool	N=Out_Insp_Cv_A_PowerOn_Auto	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_Insp_Cv_A_PowerOn_Manual	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_Insp_Cv_B_RESET_Auto	G=VAR_EXTERNAL	Com=【Y614】B(右側) 検査 コンベア リセット：
+++D=ARRAY[0..10] OF Bool	N=Out_Insp_Cv_B_RESET_Manual	G=VAR_EXTERNAL	Com=【Y614】B(右側) 検査 コンベア リセット：
+++D=ARRAY[0..10] OF Bool	N=Out_Insp_Cv_B_Run_Manual	G=VAR_EXTERNAL	Com=【Y613】B(右側) 検査 コンベア運転ON：
+++D=ARRAY[0..10] OF Bool	N=Out_Insp_Cv_B_Run_Auto	G=VAR_EXTERNAL	Com=【Y613】B(右側) 検査 コンベア運転ON：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Slide_A_H_Manual	G=VAR_EXTERNAL	Com=【Y616】A(左側) 供給スライド戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Slide_A_H_Auto	G=VAR_EXTERNAL	Com=【Y616】A(左側) 供給スライド戻：
+++D=ARRAY[0..9] OF UINT	N=HMI_MessageNo	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sply_Slide_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sply_Pick_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sply_Slide_A_F_Done	G=VAR_EXTERNAL	Com=【Y617】A(左側) 供給スライド行動作完了
+++D=ARRAY[0..99] OF Bool	N=Pause	G=VAR_EXTERNAL	Com=一時停止	EC=<ECs><EC EK="[3]" C="FH A(左側) ST1" /><EC EK="[9]" C="FH A(左側) ST5" /><EC EK="[10]" C="FH B(右側) ST1" /><EC EK="[11]" C="FH B(右側) ST5" /><EC EK="[12]" C="A(左側) ST6 反転2 ワーク不一致" /></ECs>
+++D=BOOL	N=Out_CYw_Sply_Pick_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sup_Chuck_A_Cl_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sup_Chuck_A_Op_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sply_Slide_B_H	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Bool	N=Output_B_Restart_M	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Bool	N=Output_B_Error_M	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sply_Slide_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sply_Pick_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sply_Pick_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sup_Chuck_B_Cl_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sup_Chuck_B_Op_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_HgtInsp_Clp_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_HgtInsp_Clp_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_HgtInsp_Lf_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_HgtInsp_Lf_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_NG1_Pick_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_NG1_Pick_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_NG1_Chk_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_NG1_Chk_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Rev_01_Chk_A_H	G=VAR_EXTERNAL	Com=【Y708】A(左側)ST4 反転1チャック閉
+++D=BOOL	N=Out_CYw_Rev_01_Chk_A_F	G=VAR_EXTERNAL	Com=【Y709】A(左側)ST4 反転1チャック開
+++D=BOOL	N=Out_CYw_Rev_01_Pick_A_H	G=VAR_EXTERNAL	Com=【Y710】A(左側)ST4 反転1ピックアップ戻
+++D=BOOL	N=Out_CYw_Rev_01_Pick_A_F	G=VAR_EXTERNAL	Com=【Y711】A(左側)ST4 反転1ピックアップ行
+++D=BOOL	N=Out_CYw_Rev_02_Chk_A_H	G=VAR_EXTERNAL	Com=【Y712】A(左側)ST6 反転2チャック閉 戻
+++D=BOOL	N=Out_CYw_Rev_02_Chk_A_F	G=VAR_EXTERNAL	Com=【Y713】A(左側)ST6 反転2チャック開 行
+++D=BOOL	N=Out_CYw_Rev_02_Pick_A_H	G=VAR_EXTERNAL	Com=【Y714】A(左側)ST6 反転2ピックアップ戻
+++D=BOOL	N=Out_CYw_Rev_02_Pick_A_F	G=VAR_EXTERNAL	Com=【Y715】A(左側)ST6 反転2ピックアップ行
+++D=BOOL	N=Out_CYw_Disc_Chk_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Disc_Chk_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Ejc_Hldr_Feed_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Ejc_Hldr_Feed_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYS_Pos_01_Stopper_A	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYS_Pos_02_Stopper_A	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYS_Pos_03_Stopper_A	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYS_Pos_04_Stopper_A	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYS_Pos_05_Stopper_A	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYS_Pos_06_Stopper_A	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_SH_A_Turn_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_SH_A_Turn_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_NG1_Srt_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_NG1_Srt_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_HgtInsp_Clp_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_HgtInsp_Clp_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_HgtInsp_Lf_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_HgtInsp_Lf_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_NG1_Pick_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_NG1_Pick_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_NG1_Chk_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_NG1_Chk_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Rev_01_Chk_B_H	G=VAR_EXTERNAL	Com=【Y808】B(右側)ST4 反転1チャック閉 戻
+++D=BOOL	N=Out_CYw_Rev_01_Chk_B_F	G=VAR_EXTERNAL	Com=【Y809】B(右側)ST4 反転1チャック開 戻
+++D=BOOL	N=Out_CYw_Rev_01_Pick_B_H	G=VAR_EXTERNAL	Com=【Y810】B(右側)ST4 反転1ピックアップ戻
+++D=BOOL	N=Out_CYw_Rev_01_Pick_B_F	G=VAR_EXTERNAL	Com=【Y811】B(右側)ST4 反転1ピックアップ行
+++D=BOOL	N=Out_CYw_Rev_02_Chk_B_H	G=VAR_EXTERNAL	Com=【Y812】B(右側)ST6 反転2チャック閉 戻
+++D=BOOL	N=Out_CYw_Rev_02_Chk_B_F	G=VAR_EXTERNAL	Com=【Y813】B(右側)ST6 反転2チャック開 行
+++D=BOOL	N=Out_CYw_Rev_02_Pick_B_H	G=VAR_EXTERNAL	Com=【Y814】B(右側)ST6 反転2ピックアップ戻
+++D=BOOL	N=Out_CYw_Rev_02_Pick_B_F	G=VAR_EXTERNAL	Com=【Y815】B(右側)ST6 反転2ピックアップ行
+++D=BOOL	N=Out_CYw_Disc_Chk_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Disc_Chk_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Ejc_Hldr_Feed_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Ejc_Hldr_Feed_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYS_Pos_01_Stopper_B	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYS_Pos_02_Stopper_B	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYS_Pos_03_Stopper_B	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYS_Pos_04_Stopper_B	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYS_Pos_05_Stopper_B	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYS_Pos_06_Stopper_B	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_SH_B_Turn_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_SH_B_Turn_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_NG1_Srt_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_NG1_Srt_B_F	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Bool	N=Output_Share_Restart_M	G=VAR_EXTERNAL	Com=共有シリンダ再開：
+++D=ARRAY[0..99] OF Bool	N=Output_Share_Error_M	G=VAR_EXTERNAL	Com=共有シリンダエラー：
+++D=BOOL	N=Out_CYw_Empty_Container_CY_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Empty_Container_CY_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sep_Claw_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sep_Claw_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Ejc_Cont_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Ejc_Cont_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Box_Chuck_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Box_Chuck_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Srt_Stopper_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Srt_Stopper_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Srt_Feed_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Srt_Feed_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Hnd_Feed_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Hnd_Feed_A_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Hnd_Feed_B_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Hnd_Feed_B_F	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Hnd_Feed_B_F_Done	G=VAR_EXTERNAL	Com=【Y1303】B(右側) コンベア受渡送り行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Hnd_Feed_B_F_Manual	G=VAR_EXTERNAL	Com=手動【Y1303】B(右側) コンベア受渡送り行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Hnd_Feed_B_F_Auto	G=VAR_EXTERNAL	Com=自動【Y1303】B(右側) コンベア受渡送り行：
+++D=BOOL	N=Out_CYw_Hnd_Feed_B_H_Done	G=VAR_EXTERNAL	Com=【Y1302】B(右側) コンベア受渡送り戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Hnd_Feed_B_H_Manual	G=VAR_EXTERNAL	Com=手動【Y1302】B(右側) コンベア受渡送り戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Hnd_Feed_B_H_Auto	G=VAR_EXTERNAL	Com=自動【Y1302】B(右側) コンベア受渡送り戻：
+++D=BOOL	N=Out_CYw_Hnd_Feed_A_F_Done	G=VAR_EXTERNAL	Com=【Y1301】A(左側) コンベア受渡送り行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Hnd_Feed_A_F_Manual	G=VAR_EXTERNAL	Com=手動【Y1301】A(左側) コンベア受渡送り行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Srt_Feed_H_Manual	G=VAR_EXTERNAL	Com=手動【Y1210】コンテナ仕分け送り 戻：
+++D=BOOL	N=Out_CYw_Srt_Feed_H_Done	G=VAR_EXTERNAL	Com=【Y1210】コンテナ仕分け送り 戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Srt_Feed_F_Auto	G=VAR_EXTERNAL	Com=自動【Y1211】コンテナ仕分け送り 行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Srt_Feed_F_Manual	G=VAR_EXTERNAL	Com=手動【Y1211】コンテナ仕分け送り 行：
+++D=BOOL	N=Out_CYw_Srt_Feed_F_Done	G=VAR_EXTERNAL	Com=【Y1211】コンテナ仕分け送り 行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Hnd_Feed_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y1300】A(左側) コンベア受渡送り戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Hnd_Feed_A_H_Manual	G=VAR_EXTERNAL	Com=手動【Y1300】A(左側) コンベア受渡送り戻：
+++D=BOOL	N=Out_CYw_Hnd_Feed_A_H_Done	G=VAR_EXTERNAL	Com=【Y1300】A(左側) コンベア受渡送り戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Hnd_Feed_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y1301】A(左側) コンベア受渡送り行：
+++D=BOOL	N=Out_CYw_Empty_Container_CY_F_Done	G=VAR_EXTERNAL	Com=【Y1201】空コンテナ送り 行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sep_Claw_H_Auto	G=VAR_EXTERNAL	Com=自動【Y1202】段バラシ爪 戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sep_Claw_H_Manual	G=VAR_EXTERNAL	Com=手動【Y1202】段バラシ爪 戻：
+++D=BOOL	N=Out_CYw_Sep_Claw_H_Done	G=VAR_EXTERNAL	Com=【Y1202】段バラシ爪 戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sep_Claw_F_Auto	G=VAR_EXTERNAL	Com=自動【Y1203】段バラシ爪 行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sep_Claw_F_Manual	G=VAR_EXTERNAL	Com=手動【Y1203】段バラシ爪 行：
+++D=BOOL	N=Out_CYw_Sep_Claw_F_Done	G=VAR_EXTERNAL	Com=【Y1203】段バラシ爪 行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Ejc_Cont_H_Auto	G=VAR_EXTERNAL	Com=自動【Y1204】コンテナ排出 戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Ejc_Cont_H_Manual	G=VAR_EXTERNAL	Com=手動【Y1204】コンテナ排出 戻：
+++D=BOOL	N=Out_CYw_Ejc_Cont_H_Done	G=VAR_EXTERNAL	Com=【Y1204】コンテナ排出 戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Ejc_Cont_F_Auto	G=VAR_EXTERNAL	Com=自動【Y1205】コンテナ排出 行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Ejc_Cont_F_Manual	G=VAR_EXTERNAL	Com=手動【Y1205】コンテナ排出 行：
+++D=BOOL	N=Out_CYw_Ejc_Cont_F_Done	G=VAR_EXTERNAL	Com=【Y1205】コンテナ排出 行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Box_Chuck_H_Auto	G=VAR_EXTERNAL	Com=自動【Y1206】箱入れチャック 戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Box_Chuck_H_Manual	G=VAR_EXTERNAL	Com=手動【Y1206】箱入れチャック 戻：
+++D=BOOL	N=Out_CYw_Box_Chuck_H_Done	G=VAR_EXTERNAL	Com=【Y1206】箱入れチャック 戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Box_Chuck_F_Auto	G=VAR_EXTERNAL	Com=自動【Y1207】箱入れチャック 行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Box_Chuck_F_Manual	G=VAR_EXTERNAL	Com=手動【Y1207】箱入れチャック 行：
+++D=BOOL	N=Out_CYw_Box_Chuck_F_Done	G=VAR_EXTERNAL	Com=【Y1207】箱入れチャック 行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Srt_Stopper_H_Auto	G=VAR_EXTERNAL	Com=自動【Y1208】コンテナ仕分けストッパー 戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Srt_Stopper_H_Manual	G=VAR_EXTERNAL	Com=手動【Y1208】コンテナ仕分けストッパー 戻 行：
+++D=BOOL	N=Out_CYw_Srt_Stopper_H_Done	G=VAR_EXTERNAL	Com=【Y1208】コンテナ仕分けストッパー 戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Srt_Stopper_F_Auto	G=VAR_EXTERNAL	Com=自動【Y1209】コンテナ仕分けストッパー 行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Srt_Stopper_F_Manual	G=VAR_EXTERNAL	Com=手動【Y1209】コンテナ仕分けストッパー 行：
+++D=BOOL	N=Out_CYw_Srt_Stopper_F_Done	G=VAR_EXTERNAL	Com=【Y1209】コンテナ仕分けストッパー 行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Srt_Feed_H_Auto	G=VAR_EXTERNAL	Com=自動【Y1210】コンテナ仕分け送り 戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_04_Stopper_B_H_Auto	G=VAR_EXTERNAL	Com=自動【Y823】B(右側) 位置4ストッパー戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_04_Stopper_B_H_Manual	G=VAR_EXTERNAL	Com=手動【Y823】B(右側) 位置4ストッパー戻：
+++D=BOOL	N=Out_CYS_Pos_04_Stopper_B_H_Done	G=VAR_EXTERNAL	Com=【Y823】B(右側) 位置4ストッパー戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_04_Stopper_B_F_Auto	G=VAR_EXTERNAL	Com=自動【Y823】B(右側) 位置4ストッパー行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_04_Stopper_B_F_Manual	G=VAR_EXTERNAL	Com=手動【Y823】B(右側) 位置4ストッパー行：
+++D=BOOL	N=Out_CYS_Pos_04_Stopper_B_F_Done	G=VAR_EXTERNAL	Com=【Y823】B(右側) 位置4ストッパー行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_05_Stopper_B_H_Auto	G=VAR_EXTERNAL	Com=自動【Y824】B(右側) 位置5ストッパー戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_05_Stopper_B_H_Manual	G=VAR_EXTERNAL	Com=手動【Y824】B(右側) 位置5ストッパー戻：
+++D=BOOL	N=Out_CYS_Pos_05_Stopper_B_H_Done	G=VAR_EXTERNAL	Com=【Y824】B(右側) 位置5ストッパー戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_05_Stopper_B_F_Auto	G=VAR_EXTERNAL	Com=自動【Y824】B(右側) 位置5ストッパー行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_05_Stopper_B_F_Manual	G=VAR_EXTERNAL	Com=手動【Y824】B(右側) 位置5ストッパー行：
+++D=BOOL	N=Out_CYS_Pos_05_Stopper_B_F_Done	G=VAR_EXTERNAL	Com=【Y824】B(右側) 位置5ストッパー行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_06_Stopper_B_H_Auto	G=VAR_EXTERNAL	Com=自動【Y825】B(右側) 位置6ストッパー戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_06_Stopper_B_H_Manual	G=VAR_EXTERNAL	Com=手動【Y825】B(右側) 位置6ストッパー戻：
+++D=BOOL	N=Out_CYS_Pos_06_Stopper_B_H_Done	G=VAR_EXTERNAL	Com=【Y825】B(右側) 位置6ストッパー戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_06_Stopper_B_F_Auto	G=VAR_EXTERNAL	Com=自動【Y825】B(右側) 位置6ストッパー行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_06_Stopper_B_F_Manual	G=VAR_EXTERNAL	Com=手動【Y825】B(右側) 位置6ストッパー行：
+++D=BOOL	N=Out_CYS_Pos_06_Stopper_B_F_Done	G=VAR_EXTERNAL	Com=【Y825】B(右側) 位置6ストッパー行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_SH_B_Turn_H_Auto	G=VAR_EXTERNAL	Com=自動【Y826】B(右側) ストックフォルダターン戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_SH_B_Turn_H_Manual	G=VAR_EXTERNAL	Com=手動【Y826】B(右側) ストックフォルダターン戻：
+++D=BOOL	N=Out_CYw_SH_B_Turn_H_Done	G=VAR_EXTERNAL	Com=【Y826】B(右側) ストックフォルダターン戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_SH_B_Turn_F_Manual	G=VAR_EXTERNAL	Com=自動【Y827】B(右側) ストックフォルダターン行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_SH_B_Turn_F_Auto	G=VAR_EXTERNAL	Com=手動【Y827】B(右側) ストックフォルダターン行：
+++D=BOOL	N=Out_CYw_SH_B_Turn_F_Done	G=VAR_EXTERNAL	Com=【Y827】B(右側) ストックフォルダターン行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Srt_B_H_Auto	G=VAR_EXTERNAL	Com=自動【Y828】B(右側) NG1仕分け 戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Srt_B_H_Manual	G=VAR_EXTERNAL	Com=手動【Y828】B(右側) NG1仕分け 戻：
+++D=BOOL	N=Out_CYw_NG1_Srt_B_H_Done	G=VAR_EXTERNAL	Com=【Y828】B(右側) NG1仕分け 戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Srt_B_F_Auto	G=VAR_EXTERNAL	Com=自動【Y829】B(右側) NG1仕分け 行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Srt_B_F_Manual	G=VAR_EXTERNAL	Com=手動【Y829】B(右側) NG1仕分け 行：
+++D=BOOL	N=Out_CYw_NG1_Srt_B_F_Done	G=VAR_EXTERNAL	Com=【Y829】B(右側) NG1仕分け 行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Empty_Container_CY_H_Manual	G=VAR_EXTERNAL	Com=手動【Y1200】空コンテナ送り 戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Empty_Container_CY_H_Auto	G=VAR_EXTERNAL	Com=自動【Y1200】空コンテナ送り 戻：
+++D=BOOL	N=Out_CYw_Empty_Container_CY_H_Done	G=VAR_EXTERNAL	Com=【Y1200】空コンテナ送り 戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Empty_Container_CY_F_Auto	G=VAR_EXTERNAL	Com=自動【Y1201】空コンテナ送り 行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Empty_Container_CY_F_Manual	G=VAR_EXTERNAL	Com=手動【Y1201】空コンテナ送り 行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Pick_B_H_Manual	G=VAR_EXTERNAL	Com=手動【Y814】B(右側)ST6 反転2ピックアップ戻：
+++D=BOOL	N=Out_CYw_Rev_02_Pick_B_H_Done	G=VAR_EXTERNAL	Com=【Y814】B(右側)ST6 反転2ピックアップ戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Pick_B_F_Auto	G=VAR_EXTERNAL	Com=自動【Y815】B(右側)ST6 反転2ピックアップ行 ：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Pick_B_F_Manual	G=VAR_EXTERNAL	Com=手動【Y815】B(右側)ST6 反転2ピックアップ行：
+++D=BOOL	N=Out_CYw_Rev_02_Pick_B_F_Done	G=VAR_EXTERNAL	Com=【Y815】B(右側)ST6 反転2ピックアップ行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Disc_Chk_B_H_Auto	G=VAR_EXTERNAL	Com=自動【Y816】B(右側) 排出チャック閉 戻 ：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Disc_Chk_B_H_Manual	G=VAR_EXTERNAL	Com=手動【Y816】B(右側) 排出チャック閉 戻：
+++D=BOOL	N=Out_CYw_Disc_Chk_B_H_Done	G=VAR_EXTERNAL	Com=【Y816】B(右側) 排出チャック閉 戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Disc_Chk_B_F_Auto	G=VAR_EXTERNAL	Com=自動【Y817】B(右側) 排出チャック開 行 ：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Disc_Chk_B_F_Manual	G=VAR_EXTERNAL	Com=手動【Y817】B(右側) 排出チャック開 行：
+++D=BOOL	N=Out_CYw_Disc_Chk_B_F_Done	G=VAR_EXTERNAL	Com=【Y817】B(右側) 排出チャック開 行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Ejc_Hldr_Feed_B_H_Auto	G=VAR_EXTERNAL	Com=自動【Y818】B(右側) 排出フォルダ送り戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Ejc_Hldr_Feed_B_H_Manual	G=VAR_EXTERNAL	Com=手動【Y818】B(右側) 排出フォルダ送り戻：
+++D=BOOL	N=Out_CYw_Ejc_Hldr_Feed_B_H_Done	G=VAR_EXTERNAL	Com=【Y818】B(右側) 排出フォルダ送り戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Ejc_Hldr_Feed_B_F_Auto	G=VAR_EXTERNAL	Com=自動【Y819】B(右側) 排出フォルダ送り行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Ejc_Hldr_Feed_B_F_Manual	G=VAR_EXTERNAL	Com=手動【Y819】B(右側) 排出フォルダ送り行：
+++D=BOOL	N=Out_CYw_Ejc_Hldr_Feed_B_F_Done	G=VAR_EXTERNAL	Com=【Y819】B(右側) 排出フォルダ送り行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_01_Stopper_B_H_Auto	G=VAR_EXTERNAL	Com=自動【Y820】B(右側) 位置1ストッパー戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_01_Stopper_B_H_Manual	G=VAR_EXTERNAL	Com=手動【Y820】B(右側) 位置1ストッパー戻：
+++D=BOOL	N=Out_CYS_Pos_01_Stopper_B_H_Done	G=VAR_EXTERNAL	Com=【Y820】B(右側) 位置1ストッパー戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_01_Stopper_B_F_Auto	G=VAR_EXTERNAL	Com=自動【Y820】B(右側) 位置1ストッパー 行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_01_Stopper_B_F_Manual	G=VAR_EXTERNAL	Com=手動【Y820】B(右側) 位置1ストッパー 行：
+++D=BOOL	N=Out_CYS_Pos_01_Stopper_B_F_Done	G=VAR_EXTERNAL	Com=【Y820】B(右側) 位置1ストッパー 行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_02_Stopper_B_H_Auto	G=VAR_EXTERNAL	Com=自動【Y821】B(右側) 位置2ストッパー戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_02_Stopper_B_H_Manual	G=VAR_EXTERNAL	Com=手動【Y821】B(右側) 位置2ストッパー戻：
+++D=BOOL	N=Out_CYS_Pos_02_Stopper_B_H_Done	G=VAR_EXTERNAL	Com=【Y821】B(右側) 位置2ストッパー戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_02_Stopper_B_F_Auto	G=VAR_EXTERNAL	Com=自動【Y821】B(右側) 位置2ストッパー行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_02_Stopper_B_F_Manual	G=VAR_EXTERNAL	Com=手動【Y821】B(右側) 位置2ストッパー行：
+++D=BOOL	N=Out_CYS_Pos_02_Stopper_B_F_Done	G=VAR_EXTERNAL	Com=【Y821】B(右側) 位置2ストッパー行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_03_Stopper_B_H_Auto	G=VAR_EXTERNAL	Com=自動【Y822】B(右側) 位置3ストッパー戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_03_Stopper_B_H_Manual	G=VAR_EXTERNAL	Com=手動【Y822】B(右側) 位置3ストッパー戻：
+++D=BOOL	N=Out_CYS_Pos_03_Stopper_B_H_Done	G=VAR_EXTERNAL	Com=【Y822】B(右側) 位置3ストッパー戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_03_Stopper_B_F_Auto	G=VAR_EXTERNAL	Com=自動【Y822】B(右側) 位置3ストッパー行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_03_Stopper_B_F_Manual	G=VAR_EXTERNAL	Com=手動【Y822】B(右側) 位置3ストッパー行：
+++D=BOOL	N=Out_CYS_Pos_03_Stopper_B_F_Done	G=VAR_EXTERNAL	Com=【Y822】B(右側) 位置3ストッパー行 動作完了
+++D=BOOL	N=Out_CYw_HgtInsp_Lf_B_H_Done	G=VAR_EXTERNAL	Com=【Y802】B(右側) 高さ検査持上戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_HgtInsp_Lf_B_F_Auto	G=VAR_EXTERNAL	Com=自動【Y803】B(右側) 高さ検査持上行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_HgtInsp_Lf_B_F_Manual	G=VAR_EXTERNAL	Com=手動【Y803】B(右側) 高さ検査持上行：
+++D=BOOL	N=Out_CYw_HgtInsp_Lf_B_F_Done	G=VAR_EXTERNAL	Com=【Y803】B(右側) 高さ検査持上行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Pick_B_H_Auto	G=VAR_EXTERNAL	Com=自動【Y804】B(右側) NG1ピックアップ戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Pick_B_H_Manual	G=VAR_EXTERNAL	Com=手動【Y804】B(右側) NG1ピックアップ戻：
+++D=BOOL	N=Out_CYw_NG1_Pick_B_H_Done	G=VAR_EXTERNAL	Com=【Y804】B(右側) NG1ピックアップ戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Pick_B_F_Auto	G=VAR_EXTERNAL	Com=自動【Y805】B(右側) NG1ピックアップ行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Pick_B_F_Manual	G=VAR_EXTERNAL	Com=手動【Y805】B(右側) NG1ピックアップ行：
+++D=BOOL	N=Out_CYw_NG1_Pick_B_F_Done	G=VAR_EXTERNAL	Com=【Y805】B(右側) NG1ピックアップ行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Chk_B_H_Auto	G=VAR_EXTERNAL	Com=自動【Y806】B(右側) NG1チャック戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Chk_B_H_Manual	G=VAR_EXTERNAL	Com=手動【Y806】B(右側) NG1チャック戻：
+++D=BOOL	N=Out_CYw_NG1_Chk_B_H_Done	G=VAR_EXTERNAL	Com=【Y806】B(右側) NG1チャック戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Chk_B_F_Auto	G=VAR_EXTERNAL	Com=自動【Y807】B(右側) NG1チャック行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Chk_B_F_Manual	G=VAR_EXTERNAL	Com=手動【Y807】B(右側) NG1チャック行：
+++D=BOOL	N=Out_CYw_NG1_Chk_B_F_Done	G=VAR_EXTERNAL	Com=【Y807】B(右側) NG1チャック行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Chk_B_H_Auto	G=VAR_EXTERNAL	Com=自動【Y808】B(右側)ST4 反転1チャック閉 戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Chk_B_H_Manual	G=VAR_EXTERNAL	Com=手動【Y808】B(右側)ST4 反転1チャック閉 戻：
+++D=BOOL	N=Out_CYw_Rev_01_Chk_B_H_Done	G=VAR_EXTERNAL	Com=【Y808】B(右側)ST4 反転1チャック閉 戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Chk_B_F_Auto	G=VAR_EXTERNAL	Com=自動【Y809】B(右側)ST4 反転1チャック開 戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Chk_B_F_Manual	G=VAR_EXTERNAL	Com=手動【Y809】B(右側)ST4 反転1チャック開 戻：
+++D=BOOL	N=Out_CYw_Rev_01_Chk_B_F_Done	G=VAR_EXTERNAL	Com=【Y809】B(右側)ST4 反転1チャック開 戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Pick_B_H_Auto	G=VAR_EXTERNAL	Com=自動【Y810】B(右側)ST4 反転1ピックアップ戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Pick_B_H_Manual	G=VAR_EXTERNAL	Com=手動【Y810】B(右側)ST4 反転1ピックアップ戻：
+++D=BOOL	N=Out_CYw_Rev_01_Pick_B_H_Done	G=VAR_EXTERNAL	Com=【Y810】B(右側)ST4 反転1ピックアップ戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Pick_B_F_Auto	G=VAR_EXTERNAL	Com=自動【Y811】B(右側)ST4 反転1ピックアップ行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Pick_B_F_Manual	G=VAR_EXTERNAL	Com=手動【Y811】B(右側)ST4 反転1ピックアップ行：
+++D=BOOL	N=Out_CYw_Rev_01_Pick_B_F_Done	G=VAR_EXTERNAL	Com=【Y811】B(右側)ST4 反転1ピックアップ行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Chk_B_H_Auto	G=VAR_EXTERNAL	Com=自動【Y812】B(右側)ST6 反転2チャック閉 戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Chk_B_H_Manual	G=VAR_EXTERNAL	Com=手動【Y812】B(右側)ST6 反転2チャック閉 戻：
+++D=BOOL	N=Out_CYw_Rev_02_Chk_B_H_Done	G=VAR_EXTERNAL	Com=【Y812】B(右側)ST6 反転2チャック閉 戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Chk_B_F_Auto	G=VAR_EXTERNAL	Com=自動【Y813】B(右側)ST6 反転2チャック開 行 ：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Chk_B_F_Manual	G=VAR_EXTERNAL	Com=手動【Y813】B(右側)ST6 反転2チャック開 行：
+++D=BOOL	N=Out_CYw_Rev_02_Chk_B_F_Done	G=VAR_EXTERNAL	Com=【Y813】B(右側)ST6 反転2チャック開 行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Pick_B_H_Auto	G=VAR_EXTERNAL	Com=自動【Y814】B(右側)ST6 反転2ピックアップ戻 ：
+++D=BOOL	N=Out_CYw_HgtInsp_Clp_B_H_Done	G=VAR_EXTERNAL	Com=【Y800】B(右側) 高さ検査押え戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_HgtInsp_Clp_B_H_Auto	G=VAR_EXTERNAL	Com=自動【Y800】B(右側) 高さ検査押え戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_HgtInsp_Clp_B_H_Manual	G=VAR_EXTERNAL	Com=手動【Y800】B(右側) 高さ検査押え戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_HgtInsp_Clp_B_F_Auto	G=VAR_EXTERNAL	Com=自動【Y801】B(右側) 高さ検査押え行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_HgtInsp_Clp_B_F_Manual	G=VAR_EXTERNAL	Com=手動【Y801】B(右側) 高さ検査押え行：
+++D=BOOL	N=Out_CYw_HgtInsp_Clp_B_F_Done	G=VAR_EXTERNAL	Com=【Y801】B(右側) 高さ検査押え行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_HgtInsp_Lf_B_H_Auto	G=VAR_EXTERNAL	Com=自動【Y802】B(右側) 高さ検査持上戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_HgtInsp_Lf_B_H_Manual	G=VAR_EXTERNAL	Com=手動【Y802】B(右側) 高さ検査持上戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_03_Stopper_A_H_Manual	G=VAR_EXTERNAL	Com=手動【Y722】A(左側) 位置3ストッパー戻：
+++D=BOOL	N=Out_CYS_Pos_03_Stopper_A_H_Done	G=VAR_EXTERNAL	Com=【Y722】A(左側) 位置3ストッパー戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_03_Stopper_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y722】A(左側) 位置3ストッパー行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_03_Stopper_A_F_Manual	G=VAR_EXTERNAL	Com=手動【Y722】A(左側) 位置3ストッパー行：
+++D=BOOL	N=Out_CYS_Pos_03_Stopper_A_F_Done	G=VAR_EXTERNAL	Com=【Y722】A(左側) 位置3ストッパー行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_04_Stopper_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y723】A(左側) 位置4ストッパー戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_04_Stopper_A_H_Manual	G=VAR_EXTERNAL	Com=手動【Y723】A(左側) 位置4ストッパー戻：
+++D=BOOL	N=Out_CYS_Pos_04_Stopper_A_H_Done	G=VAR_EXTERNAL	Com=【Y723】A(左側) 位置4ストッパー戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_04_Stopper_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y723】A(左側) 位置4ストッパー行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_04_Stopper_A_F_Manual	G=VAR_EXTERNAL	Com=手動【Y723】A(左側) 位置4ストッパー行：
+++D=BOOL	N=Out_CYS_Pos_04_Stopper_A_F_Done	G=VAR_EXTERNAL	Com=【Y723】A(左側) 位置4ストッパー行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_05_Stopper_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y724】A(左側) 位置5ストッパー戻：	EC=<ECs><EC EK="[2]" C="A(左側) ST5 カメラ2検査開始" /></ECs>
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_05_Stopper_A_H_Manual	G=VAR_EXTERNAL	Com=手動【Y724】A(左側) 位置5ストッパー戻：
+++D=BOOL	N=Out_CYS_Pos_05_Stopper_A_H_Done	G=VAR_EXTERNAL	Com=【Y724】A(左側) 位置5ストッパー戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_05_Stopper_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y724】A(左側) 位置5ストッパー行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_05_Stopper_A_F_Manual	G=VAR_EXTERNAL	Com=手動【Y724】A(左側) 位置5ストッパー行：
+++D=BOOL	N=Out_CYS_Pos_05_Stopper_A_F_Done	G=VAR_EXTERNAL	Com=【Y724】A(左側) 位置5ストッパー行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_06_Stopper_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y725】A(左側) 位置6ストッパー戻：	EC=<ECs><EC EK="[1]" C="A(左側)検査完了後" /><EC EK="[2]" C="A(左側) ST6 原点位置移動" /></ECs>
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_06_Stopper_A_H_Manual	G=VAR_EXTERNAL	Com=手動【Y725】A(左側) 位置6ストッパー戻：
+++D=BOOL	N=Out_CYS_Pos_06_Stopper_A_H_Done	G=VAR_EXTERNAL	Com=【Y725】A(左側) 位置6ストッパー戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_06_Stopper_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y725】A(左側) 位置6ストッパー行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_06_Stopper_A_F_Manual	G=VAR_EXTERNAL	Com=手動【Y725】A(左側) 位置6ストッパー行：
+++D=BOOL	N=Out_CYS_Pos_06_Stopper_A_F_Done	G=VAR_EXTERNAL	Com=【Y725】A(左側) 位置6ストッパー行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_SH_A_Turn_H_Auto	G=VAR_EXTERNAL	Com=自動【Y726】A(左側) ストックフォルダターン戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_SH_A_Turn_H_Manual	G=VAR_EXTERNAL	Com=手動【Y726】A(左側) ストックフォルダターン戻：
+++D=BOOL	N=Out_CYw_SH_A_Turn_H_Done	G=VAR_EXTERNAL	Com=【Y726】A(左側) ストックフォルダターン戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_SH_A_Turn_F_Auto	G=VAR_EXTERNAL	Com=自動【Y727】A(左側) ストックフォルダターン行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_SH_A_Turn_F_Manual	G=VAR_EXTERNAL	Com=手動【Y727】A(左側) ストックフォルダターン行：
+++D=BOOL	N=Out_CYw_SH_A_Turn_F_Done	G=VAR_EXTERNAL	Com=【Y727】A(左側) ストックフォルダターン行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Srt_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y728】A(左側) NG1仕分け 戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Srt_A_H_Manual	G=VAR_EXTERNAL	Com=手動【Y728】A(左側) NG1仕分け 戻：
+++D=BOOL	N=Out_CYw_NG1_Srt_A_H_Done	G=VAR_EXTERNAL	Com=【Y728】A(左側) NG1仕分け 戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Srt_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y729】A(左側) NG1仕分け行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Srt_A_F_Manual	G=VAR_EXTERNAL	Com=手動【Y729】A(左側) NG1仕分け行：
+++D=BOOL	N=Out_CYw_NG1_Srt_A_F_Done	G=VAR_EXTERNAL	Com=【Y729】A(左側) NG1仕分け行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_01_Stopper_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y720】A(左側) 位置1ストッパー行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_01_Stopper_A_F_Manual	G=VAR_EXTERNAL	Com=手動【Y720】A(左側) 位置1ストッパー 行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_02_Stopper_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y721】A(左側) 位置2ストッパー戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_02_Stopper_A_H_Manual	G=VAR_EXTERNAL	Com=手動【Y721】A(左側) 位置2ストッパー戻：
+++D=BOOL	N=Out_CYS_Pos_02_Stopper_A_H_Done	G=VAR_EXTERNAL	Com=【Y721】A(左側) 位置2ストッパー戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_02_Stopper_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y721】A(左側) 位置2ストッパー行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_02_Stopper_A_F_Manual	G=VAR_EXTERNAL	Com=手動【Y721】A(左側) 位置2ストッパー行：
+++D=BOOL	N=Out_CYS_Pos_02_Stopper_A_F_Done	G=VAR_EXTERNAL	Com=【Y721】A(左側) 位置2ストッパー行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_03_Stopper_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y722】A(左側) 位置3ストッパー戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Pick_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y714】A(左側)ST6 反転2ピックアップ戻 ：	EC=<ECs><EC EK="[1]" C="A(左側) ST6 反転前戻" /><EC EK="[2]" C="A(左側) ST6 設置後戻" /></ECs>
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Pick_A_H_Manual	G=VAR_EXTERNAL	Com=手動【Y714】A(左側)ST6 反転2ピックアップ戻 ：
+++D=BOOL	N=Out_CYw_Rev_02_Pick_A_H_Done	G=VAR_EXTERNAL	Com=【Y714】A(左側)ST6 反転2ピックアップ戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Pick_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y715】A(左側)ST6 反転2ピックアップ行 ：	EC=<ECs><EC EK="[1]" C="A(左側) ST6 反転前行" /><EC EK="[2]" C="A(左側) ST6 設置行" /></ECs>
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Pick_A_F_Manual	G=VAR_EXTERNAL	Com=手動【Y715】A(左側)ST6 反転2ピックアップ行 ：
+++D=BOOL	N=Out_CYw_Rev_02_Pick_A_F_Done	G=VAR_EXTERNAL	Com=【Y715】A(左側)ST6 反転2ピックアップ行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Disc_Chk_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y716】A(左側) 排出チャック閉 戻 ：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Disc_Chk_A_H_Manual	G=VAR_EXTERNAL	Com=手動【Y716】A(左側) 排出チャック閉 戻 ：
+++D=BOOL	N=Out_CYw_Disc_Chk_A_H_Done	G=VAR_EXTERNAL	Com=【Y716】A(左側) 排出チャック閉 戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Disc_Chk_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y717】A(左側) 排出チャック開 行 ：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Disc_Chk_A_F_Manual	G=VAR_EXTERNAL	Com=手動【Y717】A(左側) 排出チャック開 行 ：
+++D=BOOL	N=Out_CYw_Disc_Chk_A_F_Done	G=VAR_EXTERNAL	Com=【Y717】A(左側) 排出チャック開 行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Ejc_Hldr_Feed_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y719】A(左側) 排出フォルダ送り行 ：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Ejc_Hldr_Feed_A_F_Manual	G=VAR_EXTERNAL	Com=手動【Y719】A(左側) 排出フォルダ送り行 ：
+++D=BOOL	N=Out_CYw_Ejc_Hldr_Feed_A_F_Done	G=VAR_EXTERNAL	Com=【Y719】A(左側) 排出フォルダ送り行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Ejc_Hldr_Feed_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y718】A(左側) 排出フォルダ送り戻 ：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Ejc_Hldr_Feed_A_H_Manual	G=VAR_EXTERNAL	Com=手動【Y718】A(左側) 排出フォルダ送り戻 ：
+++D=BOOL	N=Out_CYw_Ejc_Hldr_Feed_A_H_Done	G=VAR_EXTERNAL	Com=【Y718】A(左側) 排出フォルダ送り戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_01_Stopper_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y720】A(左側) 位置1ストッパー 戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_01_Stopper_A_H_Manual	G=VAR_EXTERNAL	Com=手動【Y720】A(左側) 位置1ストッパー 戻 ：
+++D=BOOL	N=Out_CYS_Pos_01_Stopper_A_F_Done	G=VAR_EXTERNAL	Com=【Y720】A(左側) 位置1ストッパー行 動作完了
+++D=BOOL	N=Out_CYS_Pos_01_Stopper_A_H_Done	G=VAR_EXTERNAL	Com=【Y720】A(左側) 位置1ストッパー戻 動作完了
+++D=BOOL	N=Out_CYw_HgtInsp_Lf_A_F_Done	G=VAR_EXTERNAL	Com=【Y703】A(左側) 高さ検査持上行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Pick_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y704】A(左側) NG1ピックアップ戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Pick_A_H_Manual	G=VAR_EXTERNAL	Com=手動【Y704】A(左側) NG1ピックアップ戻：
+++D=BOOL	N=Out_CYw_NG1_Pick_A_H_Done	G=VAR_EXTERNAL	Com=【Y704】A(左側) NG1ピックアップ戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Pick_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y705】A(左側) NG1ピックアップ 行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Pick_A_F_Manual	G=VAR_EXTERNAL	Com=手動【Y705】A(左側) NG1ピックアップ 行：
+++D=BOOL	N=Out_CYw_NG1_Pick_A_F_Done	G=VAR_EXTERNAL	Com=【Y705】A(左側) NG1ピックアップ 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Chk_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y706】A(左側) NG1チャック戻 ：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Chk_A_H_Manual	G=VAR_EXTERNAL	Com=手動【Y706】A(左側) NG1チャック戻 ：
+++D=BOOL	N=Out_CYw_NG1_Chk_A_H_Done	G=VAR_EXTERNAL	Com=【Y706】A(左側) NG1チャック戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Chk_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y707】A(左側) NG1チャック行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Chk_A_F_Manual	G=VAR_EXTERNAL	Com=手動【Y707】A(左側) NG1チャック行：
+++D=BOOL	N=Out_CYw_NG1_Chk_A_F_Done	G=VAR_EXTERNAL	Com=【Y707】A(左側) NG1チャック行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Chk_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y708】A(左側)ST4 反転1チャック閉：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Chk_A_H_Manual	G=VAR_EXTERNAL	Com=手動【Y708】A(左側)ST4 反転1チャック閉：
+++D=BOOL	N=Out_CYw_Rev_01_Chk_A_H_Done	G=VAR_EXTERNAL	Com=【Y708】A(左側)ST4 反転1チャック閉 動作完了
+++D=BOOL	N=Mtr_Flip_01_Busy	G=VAR_EXTERNAL	Com=A(左側)反転 オリエンタルモータ1 動作中
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Chk_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y709】A(左側)ST4 反転1チャック開：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Chk_A_F_Manual	G=VAR_EXTERNAL	Com=手動【Y709】A(左側)ST4 反転1チャック開：
+++D=BOOL	N=Out_CYw_Rev_01_Chk_A_F_Done	G=VAR_EXTERNAL	Com=【Y709】A(左側)ST4 反転1チャック開 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Pick_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y710】A(左側)ST4 反転1ピックアップ戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Pick_A_H_Manual	G=VAR_EXTERNAL	Com=手動【Y710】A(左側)ST4 反転1ピックアップ戻：
+++D=BOOL	N=Out_CYw_Rev_01_Pick_A_H_Done	G=VAR_EXTERNAL	Com=【Y710】A(左側)ST4 反転1ピックアップ戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Pick_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y711】A(左側)ST4 反転1ピックアップ行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Pick_A_F_Manual	G=VAR_EXTERNAL	Com=手動【Y711】A(左側)ST4 反転1ピックアップ行：
+++D=BOOL	N=Out_CYw_Rev_01_Pick_A_F_Done	G=VAR_EXTERNAL	Com=【Y711】A(左側)ST4 反転1ピックアップ行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Chk_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y712】A(左側)ST6 反転2チャック閉 戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Chk_A_H_Manual	G=VAR_EXTERNAL	Com=手動【Y712】A(左側)ST6 反転2チャック閉 戻：
+++D=BOOL	N=Out_CYw_Rev_02_Chk_A_H_Done	G=VAR_EXTERNAL	Com=【Y712】A(左側)ST6 反転2チャック閉 戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Chk_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y713】A(左側)ST6 反転2チャック開 行 戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Chk_A_F_Manual	G=VAR_EXTERNAL	Com=手動【Y713】A(左側)ST6 反転2チャック開 行 戻：
+++D=BOOL	N=Out_CYw_Rev_02_Chk_A_F_Done	G=VAR_EXTERNAL	Com=【Y713】A(左側)ST6 反転2チャック開 行 動作完了
+++D=BOOL	N=Out_CYw_Sply_Slide_B_F_Done	G=VAR_EXTERNAL	Com=【Y623】B(右側) 供給スライド行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Pick_B_H_Auto	G=VAR_EXTERNAL	Com=自動【Y624】B(右側) 供給ピックアップ戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Pick_B_H_Manual	G=VAR_EXTERNAL	Com=手動【Y624】B(右側) 供給ピックアップ戻：
+++D=BOOL	N=Out_CYw_Sply_Pick_B_H_Done	G=VAR_EXTERNAL	Com=【Y624】B(右側) 供給ピックアップ戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Pick_B_F_Auto	G=VAR_EXTERNAL	Com=自動【Y625】B(右側) 供給ピックアップ行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Pick_B_F_Manual	G=VAR_EXTERNAL	Com=手動【Y625】B(右側) 供給ピックアップ行：
+++D=BOOL	N=Out_CYw_Sply_Pick_B_F_Done	G=VAR_EXTERNAL	Com=【Y625】B(右側) 供給ピックアップ行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sup_Chuck_B_Cl_H_Auto	G=VAR_EXTERNAL	Com=自動【Y626】B(右側) 供給チャック閉 戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sup_Chuck_B_Cl_H_Manual	G=VAR_EXTERNAL	Com=手動【Y626】B(右側) 供給チャック閉 戻：
+++D=BOOL	N=Out_CYw_Sup_Chuck_B_Cl_H_Done	G=VAR_EXTERNAL	Com=【Y626】B(右側) 供給チャック閉 戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sup_Chuck_B_Cl_F_Auto	G=VAR_EXTERNAL	Com=自動【Y627】B(右側) 供給チャック開 行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sup_Chuck_B_Cl_F_Manual	G=VAR_EXTERNAL	Com=手動【Y627】B(右側) 供給チャック開 行：
+++D=BOOL	N=Out_CYw_Sup_Chuck_B_Cl_F_Done	G=VAR_EXTERNAL	Com=【Y627】B(右側) 供給チャック開 行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_HgtInsp_Clp_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y700】A(左側) 高さ検査押え戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_HgtInsp_Clp_A_H_Manual	G=VAR_EXTERNAL	Com=手動【Y700】A(左側) 高さ検査押え戻：
+++D=BOOL	N=Out_CYw_HgtInsp_Clp_A_H_Done	G=VAR_EXTERNAL	Com=【Y700】A(左側) 高さ検査押え戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_HgtInsp_Clp_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y701】A(左側) 高さ検査押え行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_HgtInsp_Clp_A_F_Manual	G=VAR_EXTERNAL	Com=手動【Y701】A(左側) 高さ検査押え行：
+++D=BOOL	N=Out_CYw_HgtInsp_Clp_A_F_Done	G=VAR_EXTERNAL	Com=【Y701】A(左側) 高さ検査押え行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_HgtInsp_Lf_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y702】A(左側) 高さ検査持上戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_HgtInsp_Lf_A_H_Manual	G=VAR_EXTERNAL	Com=手動【Y702】A(左側) 高さ検査持上戻：
+++D=BOOL	N=Out_CYw_HgtInsp_Lf_A_H_Done	G=VAR_EXTERNAL	Com=【Y702】A(左側) 高さ検査持上戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_HgtInsp_Lf_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y703】A(左側) 高さ検査持上行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_HgtInsp_Lf_A_F_Manual	G=VAR_EXTERNAL	Com=手動【Y703】A(左側) 高さ検査持上行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Slide_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y617】A(左側) 供給スライド行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Slide_A_F_Manual	G=VAR_EXTERNAL	Com=手動【Y617】A(左側) 供給スライド行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Pick_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y618】A(左側) 供給ピックアップ戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Pick_A_H_Manual	G=VAR_EXTERNAL	Com=手動【Y618】A(左側) 供給ピックアップ戻：
+++D=BOOL	N=Out_CYw_Sply_Pick_A_H_Done	G=VAR_EXTERNAL	Com=【Y618】A(左側) 供給ピックアップ戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Pick_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y619】A(左側) 供給ピックアップ行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Pick_A_F_Manual	G=VAR_EXTERNAL	Com=自動【Y619】A(左側) 供給ピックアップ行：
+++D=BOOL	N=Out_CYw_Sply_Pick_A_F_Done	G=VAR_EXTERNAL	Com=【Y619】A(左側) 供給ピックアップ行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sup_Chuck_A_Cl_H_Auto	G=VAR_EXTERNAL	Com=自動【Y620】A(左側) 供給チャック閉 戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sup_Chuck_A_Cl_H_Manual	G=VAR_EXTERNAL	Com=手動【Y620】A(左側) 供給チャック閉 戻：
+++D=BOOL	N=Out_CYw_Sup_Chuck_A_Cl_H_Done	G=VAR_EXTERNAL	Com=【Y620】A(左側) 供給チャック閉 戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sup_Chuck_A_Cl_F_Auto	G=VAR_EXTERNAL	Com=自動【Y621】A(左側) 供給チャック開 行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sup_Chuck_A_Cl_F_Manual	G=VAR_EXTERNAL	Com=手動【Y621】A(左側) 供給チャック開 行：
+++D=BOOL	N=Out_CYw_Sup_Chuck_A_Cl_F_Done	G=VAR_EXTERNAL	Com=【Y621】A(左側) 供給チャック開 行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Slide_B_H_Auto	G=VAR_EXTERNAL	Com=自動【Y622】B(右側) 供給スライド戻：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Slide_B_H_Manual	G=VAR_EXTERNAL	Com=手動【Y622】B(右側) 供給スライド行：
+++D=BOOL	N=Out_CYw_Sply_Slide_B_Done	G=VAR_EXTERNAL	Com=【Y622】B(右側) 供給スライド戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Slide_B_F_Auto	G=VAR_EXTERNAL	Com=自動【Y623】B(右側) 供給スライド行：
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Slide_B_F_Manual	G=VAR_EXTERNAL	Com=手動【Y623】B(右側) 供給スライド行：
+++D=BOOL	N=In_Sen_Accum_CV_B_Full	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Tray_Direction_Check	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Tray_Direction_Check	G=VAR_EXTERNAL	Com=【X1007】コンテナトレイ方向
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Pick_A_H_Origin	G=VAR_EXTERNAL	Com=原点復帰【Y710】A(左側)ST4 反転1ピックアップ戻：
+++D=ARRAY[0..99] OF Bool	N=Out_CYw_Rev_01_Pick_A_F_Origin	G=VAR_EXTERNAL	Com=原点復帰【Y711】A(左側)ST4 反転1ピックアップ行：
+++D=ARRAY[0..99] OF Bool	N=Out_CYw_Rev_01_Chk_A_H_Origin	G=VAR_EXTERNAL	Com=原点復帰【Y708】A(左側)ST4 反転1チャック閉：
+++D=ARRAY[0..99] OF Bool	N=Out_CYw_Rev_02_Chk_A_H_Origin	G=VAR_EXTERNAL	Com=原点復帰 【Y712】A(左側)ST6 反転2チャック閉 戻
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Pick_A_H_Origin	G=VAR_EXTERNAL	Com=原点復帰 【Y714】A(左側)ST6 反転2ピックアップ戻
+++D=ARRAY[0..99] OF Bool	N=Out_CYw_Rev_02_Pick_A_F_Origin	G=VAR_EXTERNAL	Com=原点復帰 【Y715】A(左側)ST6 反転2ピックアップ行
+++D=ARRAY[0..99] OF Bool	N=Out_CYw_Rev_01_Chk_B_H_Origin	G=VAR_EXTERNAL	Com=原点復帰 【Y808】B(右側)ST4 反転1チャック閉 戻
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Pick_B_H_Origin	G=VAR_EXTERNAL	Com=原点復帰 【Y810】B(右側)ST4 反転1ピックアップ戻
+++D=ARRAY[0..99] OF Bool	N=Out_CYw_Rev_01_Pick_B_F_Origin	G=VAR_EXTERNAL	Com=原点復帰 【Y811】B(右側)ST4 反転1ピックアップ行
+++D=ARRAY[0..99] OF Bool	N=Out_CYw_Rev_02_Chk_B_H_Origin	G=VAR_EXTERNAL	Com=原点復帰 【Y812】B(右側)ST6 反転2チャック閉 戻
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Pick_B_H_Origin	G=VAR_EXTERNAL	Com=原点復帰 【Y814】B(右側)ST6 反転2ピックアップ戻
+++D=ARRAY[0..99] OF Bool	N=Out_CYw_Rev_02_Pick_B_F_Origin	G=VAR_EXTERNAL	Com=原点復帰 【Y815】B(右側)ST6 反転2ピックアップ行
+++D=LREAL	N=RCON1_5_ActualPos_mm	G=VAR_EXTERNAL
+++D=LREAL	N=RCON1_5_SafePos_mm	G=VAR_EXTERNAL	Com=フォルダストック回転可能高さ
+++D=ARRAY[0..121] OF BOOL	N=HMI_Message_Request	G=VAR_EXTERNAL	Com=#HMI メッセージ表示要求	Const=0	RO=0	EC=<ECs><EC EK="[0]" C="未使用" /><EC EK="[1]" C="【Y616】A(左側) 供給スライド戻 異常表示" /><EC EK="[2]" C="【Y617】A(左側) 供給スライド行 異常表示" /><EC EK="[3]" C="【Y618】A(左側) 供給ピックアップ戻 異常表示" /><EC EK="[4]" C="【Y619】A(左側) 供給ピックアップ行 異常表示" /><EC EK="[5]" C="【Y620】A(左側) 供給チャック閉 戻 異常表示" /><EC EK="[6]" C="【Y621】A(左側) 供給チャック開 行 異常表示" /><EC EK="[7]" C="【Y622】B(右側) 供給スライド戻 異常表示" /><EC EK="[8]" C="【Y623】B(右側) 供給スライド行 異常表示" /><EC EK="[9]" C="【Y624】B(右側) 供給ピックアップ戻 異常表示" /><EC EK="[10]" C="【Y625】B(右側) 供給ピックアップ行 異常表示" /><EC EK="[11]" C="【Y626】B(右側) 供給チャック閉 戻 異常表示" /><EC EK="[12]" C="【Y627】B(右側) 供給チャック開 行 異常表示" /><EC EK="[13]" C="【Y700】A(左側) 高さ検査押え戻 異常表示" /><EC EK="[14]" C="【Y701】A(左側) 高さ検査押え行 異常表示" /><EC EK="[15]" C="【Y702】A(左側) 高さ検査持上戻 異常表示" /><EC EK="[16]" C="【Y703】A(左側) 高さ検査持上行 異常表示" /><EC EK="[17]" C="【Y704】A(左側) NG1ピックアップ戻 異常表示" /><EC EK="[18]" C="【Y705】A(左側) NG1ピックアップ 行 異常表示" /><EC EK="[19]" C="【Y706】A(左側) NG1チャック戻 異常表示" /><EC EK="[20]" C="【Y707】A(左側) NG1チャック行 異常表示" /><EC EK="[21]" C="【Y708】A(左側)ST4 反転1チャック閉 異常表示" /><EC EK="[22]" C="【Y709】A(左側)ST4 反転1チャック開 異常表示" /><EC EK="[23]" C="【Y710】A(左側)ST4 反転1ピックアップ戻 異常表示" /><EC EK="[24]" C="【Y711】A(左側)ST4 反転1ピックアップ行 異常表示" /><EC EK="[25]" C="【Y712】A(左側)ST6 反転2チャック閉 戻 異常表示" /><EC EK="[26]" C="【Y713】A(左側)ST6 反転2チャック開 行 異常表示" /><EC EK="[27]" C="【Y714】A(左側)ST6 反転2ピックアップ戻 異常表示" /><EC EK="[28]" C="【Y715】A(左側)ST6 反転2ピックアップ行 異常表示" /><EC EK="[29]" C="【Y716】A(左側) 排出チャック閉 戻 異常表示" /><EC EK="[30]" C="【Y717】A(左側) 排出チャック開 行 異常表示" /><EC EK="[31]" C="【Y718】A(左側) 排出フォルダ送り戻 異常表示" /><EC EK="[32]" C="【Y719】A(左側) 排出フォルダ送り行 異常表示" /><EC EK="[33]" C="A(左側) 位置1ストッパー戻 異常表示" /><EC EK="[34]" C="【Y720】A(左側) 位置1ストッパー 行 異常表示" /><EC EK="[35]" C="【Y721】A(左側) 位置2ストッパー 異常表示" /><EC EK="[36]" C="【Y721】A(左側) 位置2ストッパー 異常表示" /><EC EK="[37]" C="【Y722】A(左側) 位置3ストッパー戻 異常表示" /><EC EK="[38]" C="【Y722】A(左側) 位置3ストッパー行 異常表示" /><EC EK="[39]" C="Output_A_Error_M[33] 異常表示" /><EC EK="[40]" C="【Y723】A(左側) 位置4ストッパー行 異常表示" /><EC EK="[41]" C="【Y724】A(左側) 位置5ストッパー戻 異常表示" /><EC EK="[42]" C="【Y724】A(左側) 位置5ストッパー行 異常表示" /><EC EK="[43]" C="【Y725】A(左側) 位置6ストッパー戻 異常表示" /><EC EK="[44]" C="【Y725】A(左側) 位置6ストッパー行 異常表示" /><EC EK="[45]" C="【Y726】A(左側) ストックフォルダターン戻 異常表示" /><EC EK="[46]" C="【Y727】A(左側) ストックフォルダターン行 異常表示" /><EC EK="[47]" C="【Y728】A(左側) NG1仕分け 戻 異常表示" /><EC EK="[48]" C="【Y729】A(左側) NG1仕分け 行 異常表示" /><EC EK="[49]" C="【Y800】B(右側) 高さ検査押え戻 異常表示" /><EC EK="[50]" C="【Y801】B(右側) 高さ検査押え行 異常表示" /><EC EK="[51]" C="【Y802】B(右側) 高さ検査持上戻 異常表示" /><EC EK="[52]" C="【Y803】B(右側) 高さ検査持上行 異常表示" /><EC EK="[53]" C="【Y804】B(右側) NG1ピックアップ戻 異常表示" /><EC EK="[54]" C="【Y805】B(右側) NG1ピックアップ 行 異常表示" /><EC EK="[55]" C="【Y806】B(右側) NG1チャック戻 異常表示" /><EC EK="[56]" C="【Y807】B(右側) NG1チャック行 異常表示" /><EC EK="[57]" C="【Y808】B(右側)ST4 反転1チャック閉 戻 異常表示" /><EC EK="[58]" C="【Y809】B(右側)ST4 反転1チャック開 戻 異常表示" /><EC EK="[59]" C="【Y810】B(右側)ST4 反転1ピックアップ戻 異常表示" /><EC EK="[60]" C="【Y811】B(右側)ST4 反転1ピックアップ行 異常表示" /><EC EK="[61]" C="【Y812】B(右側)ST6 反転2チャック閉 戻 異常表示" /><EC EK="[62]" C="【Y813】B(右側)ST6 反転2チャック開 行 異常表示" /><EC EK="[63]" C="【Y814】B(右側)ST6 反転2ピックアップ戻 異常表示" /><EC EK="[64]" C="【Y815】B(右側)ST6 反転2ピックアップ行 異常表示" /><EC EK="[65]" C="【Y816】B(右側) 排出チャック閉 戻 異常表示" /><EC EK="[66]" C="【Y817】B(右側) 排出チャック開 行 異常表示" /><EC EK="[67]" C="【Y818】B(右側) 排出フォルダ送り戻 異常表示" /><EC EK="[68]" C="【Y819】B(右側) 排出フォルダ送り行 異常表示" /><EC EK="[69]" C="【Y820】B(右側) 位置1ストッパー 戻 異常表示" /><EC EK="[70]" C="【Y820】B(右側) 位置1ストッパー 行 異常表示" /><EC EK="[71]" C="【Y821】B(右側) 位置2ストッパー戻 異常表示" /><EC EK="[72]" C="【Y821】B(右側) 位置2ストッパー行 異常表示" /><EC EK="[73]" C="【Y822】B(右側) 位置3ストッパー戻 異常表示" /><EC EK="[74]" C="【Y822】B(右側) 位置3ストッパー行 異常表示" /><EC EK="[75]" C="【Y823】B(右側) 位置4ストッパー戻 異常表示" /><EC EK="[76]" C="【Y823】B(右側) 位置4ストッパー行 異常表示" /><EC EK="[77]" C="【Y824】B(右側) 位置5ストッパー戻 異常表示" /><EC EK="[78]" C="【Y824】B(右側) 位置5ストッパー行 異常表示" /><EC EK="[79]" C="【Y825】B(右側) 位置6ストッパー戻 異常表示" /><EC EK="[80]" C="【Y825】B(右側) 位置6ストッパー行 異常表示" /><EC EK="[81]" C="【Y826】B(右側) ストックフォルダターン戻 異常表示" /><EC EK="[82]" C="【Y827】B(右側) ストックフォルダターン行 異常表示" /><EC EK="[83]" C="【Y828】B(右側) NG1仕分け 戻 異常表示" /><EC EK="[84]" C="【Y829】B(右側) NG1仕分け 行 異常表示" /><EC EK="[85]" C="【Y1200】空コンテナ送り 戻 異常表示" /><EC EK="[86]" C="【Y1201】空コンテナ送り 行 異常表示" /><EC EK="[87]" C="【Y1202】段バラシ爪 戻 異常表示" /><EC EK="[88]" C="【Y1203】段バラシ爪 行 異常表示" /><EC EK="[89]" C="【Y1204】コンテナ排出 戻 異常表示" /><EC EK="[90]" C="【Y1205】コンテナ排出 行 異常表示" /><EC EK="[91]" C="Output_Share_Error_M[7] 異常表示" /><EC EK="[92]" C="【Y1207】箱入れチャック 行 異常表示" /><EC EK="[93]" C="【Y1208】コンテナ仕分けストッパー 戻 異常表示" /><EC EK="[94]" C="【Y1209】コンテナ仕分けストッパー 行 異常表示" /><EC EK="[95]" C="【Y1210】コンテナ仕分け送り 戻 異常表示" /><EC EK="[96]" C="Output_Share_Error_M[12] 異常表示" /><EC EK="[97]" C="【Y1300】A(左側) コンベア受渡送り戻 異常表示" /><EC EK="[98]" C="【Y1301】A(左側) コンベア受渡送り行 異常表示" /><EC EK="[99]" C="【Y1302】B(右側) コンベア受渡送り戻 異常表示" /><EC EK="[100]" C="【Y1303】B(右側) コンベア受渡送り行 異常表示" /><EC EK="[101]" C="ST1 搬送ワーク不一致" /><EC EK="[102]" C="ST2 搬送ワーク不一致" /><EC EK="[103]" C="ST3 搬送ワーク不一致" /><EC EK="[104]" C="ST4 搬送ワーク不一致" /><EC EK="[105]" C="ST5 搬送ワーク不一致" /><EC EK="[106]" C="ST6 搬送ワーク不一致" /><EC EK="[107]" C="ST7 搬送ワーク不一致" /><EC EK="[108]" C="A(左側) ST1 FH測定時間超過" /><EC EK="[109]" C="A(左側) ST1 FH異常" /><EC EK="[110]" C="A(左側) ST5 FH異常" /><EC EK="[111]" C="B(右側) ST1 FH異常" /><EC EK="[112]" C="B(右側) ST5 FH異常" /><EC EK="[113]" C="A(左側) ST1 FH判定OK" /><EC EK="[114]" C="A(左側) ST1 FH判定NG1" /><EC EK="[115]" C="A(左側) ST1 FH判定NG2" /><EC EK="[116]" C="A(左側) ST1 検査前ワーク不一致" /><EC EK="[117]" C="A(左側) ST5 FH測定時間超過" /><EC EK="[118]" C="A(左側) ST5 FH判定OK" /><EC EK="[119]" C="A(左側) ST5 FH判定NG1" /><EC EK="[120]" C="A(左側) ST5 FH判定NG2" /><EC EK="[121]" C="A(左側) ST5 検査前ワーク不一致" /></ECs>

@@ -1,0 +1,4889 @@
+{
+  "sheet_path": "xl/worksheets/sheet8.xml",
+  "sheet_id": "47",
+  "rows": [
+    {
+      "row": "1",
+      "cells": [
+        {
+          "cell": "A1",
+          "value": "【業務報告】ギョウムホウコク",
+          "formula": null,
+          "fattr": null,
+          "style": "34"
+        }
+      ]
+    },
+    {
+      "row": "2",
+      "cells": [
+        {
+          "cell": "B2",
+          "value": "名前ナマエ",
+          "formula": null,
+          "fattr": null,
+          "style": "32"
+        },
+        {
+          "cell": "C2",
+          "value": "幸田",
+          "formula": "年間集計!C2",
+          "fattr": {},
+          "style": "307"
+        }
+      ]
+    },
+    {
+      "row": "3",
+      "cells": [
+        {
+          "cell": "B3",
+          "value": "業務年月ギョウムネンツキ",
+          "formula": null,
+          "fattr": null,
+          "style": "32"
+        },
+        {
+          "cell": "C3",
+          "value": "2026",
+          "formula": "年間集計!C3",
+          "fattr": {},
+          "style": "159"
+        },
+        {
+          "cell": "D3",
+          "value": "10",
+          "formula": null,
+          "fattr": null,
+          "style": "33"
+        },
+        {
+          "cell": "AJ3",
+          "value": "OK 時間一致\n問題なし",
+          "formula": "IF(AK17=AK38,\"OK 時間一致\"&CHAR(10)&\"問題なし\",\"NG 時間不一致\"&CHAR(10)&\"見直し必要\")",
+          "fattr": {},
+          "style": "308"
+        }
+      ]
+    },
+    {
+      "row": "4",
+      "cells": []
+    },
+    {
+      "row": "5",
+      "cells": [
+        {
+          "cell": "B5",
+          "value": "【業務内容】ギョウムナイヨウ",
+          "formula": null,
+          "fattr": null,
+          "style": "127"
+        },
+        {
+          "cell": "D5",
+          "value": "日付ヒヅケ",
+          "formula": null,
+          "fattr": null,
+          "style": "129"
+        },
+        {
+          "cell": "E5",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "F5",
+          "value": "2",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "G5",
+          "value": "3",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "H5",
+          "value": "4",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "I5",
+          "value": "5",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "J5",
+          "value": "6",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "K5",
+          "value": "7",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "L5",
+          "value": "8",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "M5",
+          "value": "9",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "N5",
+          "value": "10",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "O5",
+          "value": "11",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "P5",
+          "value": "12",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "Q5",
+          "value": "13",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "R5",
+          "value": "14",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "S5",
+          "value": "15",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "T5",
+          "value": "16",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "U5",
+          "value": "17",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "V5",
+          "value": "18",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "W5",
+          "value": "19",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "X5",
+          "value": "20",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "Y5",
+          "value": "21",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "Z5",
+          "value": "22",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "AA5",
+          "value": "23",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "AB5",
+          "value": "24",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "AC5",
+          "value": "25",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "AD5",
+          "value": "26",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "AE5",
+          "value": "27",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "AF5",
+          "value": "28",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "AG5",
+          "value": "29",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "AH5",
+          "value": "30",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        },
+        {
+          "cell": "AI5",
+          "value": "31",
+          "formula": null,
+          "fattr": null,
+          "style": "130"
+        }
+      ]
+    },
+    {
+      "row": "6",
+      "cells": [
+        {
+          "cell": "D6",
+          "value": "記入\n状況キニュウジョウキョウ",
+          "formula": null,
+          "fattr": null,
+          "style": "49"
+        },
+        {
+          "cell": "E6",
+          "value": "記入済",
+          "formula": "IF(OR(AND(E7=1,E17=0,E38=0),AND(E7<>1,E17<>0,E17=E38)),\"記入済\",\"未記入\")",
+          "fattr": {
+            "t": "shared",
+            "ref": "E6:AI6",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "F6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "G6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "H6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "I6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "J6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "K6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "L6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "M6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "N6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "O6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "P6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "Q6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "R6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "S6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "T6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "U6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "V6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "W6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "X6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "Y6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "Z6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "AA6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "AB6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "AC6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "AD6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "AE6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "AF6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "AG6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "AH6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "AI6",
+          "value": "記入済",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "0"
+          },
+          "style": "31"
+        },
+        {
+          "cell": "AJ6",
+          "value": "割合(%)ワリアイ",
+          "formula": null,
+          "fattr": null,
+          "style": "133"
+        },
+        {
+          "cell": "AK6",
+          "value": "合計(H)ゴウケイ",
+          "formula": null,
+          "fattr": null,
+          "style": "134"
+        }
+      ]
+    },
+    {
+      "row": "7",
+      "cells": [
+        {
+          "cell": "B7",
+          "value": "休暇(全日)　[休暇の場合1入力]→キュウカゼンジツキュウカバアイニュウリョク",
+          "formula": null,
+          "fattr": null,
+          "style": "309"
+        },
+        {
+          "cell": "G7",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "136"
+        },
+        {
+          "cell": "H7",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "136"
+        },
+        {
+          "cell": "N7",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "136"
+        },
+        {
+          "cell": "O7",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "136"
+        },
+        {
+          "cell": "U7",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "136"
+        },
+        {
+          "cell": "V7",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "136"
+        },
+        {
+          "cell": "AC7",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "136"
+        },
+        {
+          "cell": "AI7",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "136"
+        },
+        {
+          "cell": "AL7",
+          "value": "休暇(全日)キュウカゼンジツ",
+          "formula": null,
+          "fattr": null,
+          "style": "139"
+        }
+      ]
+    },
+    {
+      "row": "8",
+      "cells": [
+        {
+          "cell": "B8",
+          "value": "1.設備/工程 業務[新規]",
+          "formula": "テーブル!E4",
+          "fattr": {},
+          "style": "311"
+        },
+        {
+          "cell": "E8",
+          "value": "9",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "F8",
+          "value": "9",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "I8",
+          "value": "7",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "J8",
+          "value": "9.5",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "K8",
+          "value": "7",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "L8",
+          "value": "10",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "M8",
+          "value": "9",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "P8",
+          "value": "6",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "Q8",
+          "value": "9",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "R8",
+          "value": "9.5",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "S8",
+          "value": "9.75",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "T8",
+          "value": "7.5",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "W8",
+          "value": "10",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "X8",
+          "value": "9.5",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "Y8",
+          "value": "8.5",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "Z8",
+          "value": "10.75",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AA8",
+          "value": "9",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AB8",
+          "value": "5",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AD8",
+          "value": "9.5",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AE8",
+          "value": "8",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AF8",
+          "value": "8.5",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AG8",
+          "value": "7",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AH8",
+          "value": "7",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AJ8",
+          "value": "0.8705357142857143",
+          "formula": "AK8/$AK$17",
+          "fattr": {
+            "t": "shared",
+            "ref": "AJ8:AJ16",
+            "si": "1"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK8",
+          "value": "195",
+          "formula": "SUM(E8:AI8)",
+          "fattr": {
+            "t": "shared",
+            "ref": "AK8:AK16",
+            "si": "2"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL8",
+          "value": "1.新規",
+          "formula": null,
+          "fattr": null,
+          "style": "15"
+        }
+      ]
+    },
+    {
+      "row": "9",
+      "cells": [
+        {
+          "cell": "B9",
+          "value": "2.設備/工程 業務[改善,合理化,安全対策]",
+          "formula": "テーブル!E5",
+          "fattr": {},
+          "style": "313"
+        },
+        {
+          "cell": "AJ9",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "1"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK9",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "2"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL9",
+          "value": "2.改善カイゼン",
+          "formula": null,
+          "fattr": null,
+          "style": "140"
+        }
+      ]
+    },
+    {
+      "row": "10",
+      "cells": [
+        {
+          "cell": "B10",
+          "value": "3.設備/工程 業務[修理,不良対策]",
+          "formula": "テーブル!E6",
+          "fattr": {},
+          "style": "315"
+        },
+        {
+          "cell": "E10",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "F10",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "I10",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "J10",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "K10",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "L10",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "M10",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "P10",
+          "value": "2",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "Q10",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "R10",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "S10",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "T10",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "W10",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "X10",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "Y10",
+          "value": "2",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "Z10",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AA10",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AB10",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AD10",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AE10",
+          "value": "2",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AF10",
+          "value": "2",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AG10",
+          "value": "2",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AH10",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AJ10",
+          "value": "0.125",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "1"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK10",
+          "value": "28",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "2"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL10",
+          "value": "3.修理シュウリ",
+          "formula": null,
+          "fattr": null,
+          "style": "19"
+        }
+      ]
+    },
+    {
+      "row": "11",
+      "cells": [
+        {
+          "cell": "B11",
+          "value": "4.施設関連 業務",
+          "formula": "テーブル!E7",
+          "fattr": {},
+          "style": "317"
+        },
+        {
+          "cell": "AJ11",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "1"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK11",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "2"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL11",
+          "value": "4.施設シセツ",
+          "formula": null,
+          "fattr": null,
+          "style": "41"
+        }
+      ]
+    },
+    {
+      "row": "12",
+      "cells": [
+        {
+          "cell": "B12",
+          "value": "5.事務 業務 (海外支援含む)",
+          "formula": "テーブル!E8",
+          "fattr": {},
+          "style": "319"
+        },
+        {
+          "cell": "AJ12",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "1"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK12",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "2"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL12",
+          "value": "5.事務ジム",
+          "formula": null,
+          "fattr": null,
+          "style": "21"
+        }
+      ]
+    },
+    {
+      "row": "13",
+      "cells": [
+        {
+          "cell": "B13",
+          "value": "6.会議（役員会,決算会,品質会議,社内行事）",
+          "formula": "テーブル!E9",
+          "fattr": {},
+          "style": "321"
+        },
+        {
+          "cell": "AJ13",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "1"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK13",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "2"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL13",
+          "value": "6.会議カイギ",
+          "formula": null,
+          "fattr": null,
+          "style": "25"
+        }
+      ]
+    },
+    {
+      "row": "14",
+      "cells": [
+        {
+          "cell": "B14",
+          "value": "7.研修（勉強会,技術資料作成,展示会）",
+          "formula": "テーブル!E10",
+          "fattr": {},
+          "style": "323"
+        },
+        {
+          "cell": "AJ14",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "1"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK14",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "2"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL14",
+          "value": "7.研修ケンシュウ",
+          "formula": null,
+          "fattr": null,
+          "style": "17"
+        }
+      ]
+    },
+    {
+      "row": "15",
+      "cells": [
+        {
+          "cell": "B15",
+          "value": "8.ISO,IATF関連 業務",
+          "formula": "テーブル!E11",
+          "fattr": {},
+          "style": "325"
+        },
+        {
+          "cell": "AJ15",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "1"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK15",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "2"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL15",
+          "value": "8.ISO 等ナド",
+          "formula": null,
+          "fattr": null,
+          "style": "23"
+        }
+      ]
+    },
+    {
+      "row": "16",
+      "cells": [
+        {
+          "cell": "B16",
+          "value": "9.その他 (来客対応,4S活動,工場応援 等)",
+          "formula": "テーブル!E12",
+          "fattr": {},
+          "style": "305"
+        },
+        {
+          "cell": "T16",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AJ16",
+          "value": "4.464285714285714E-3",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "1"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK16",
+          "value": "1",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "2"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL16",
+          "value": "9.その他タ",
+          "formula": null,
+          "fattr": null,
+          "style": "40"
+        }
+      ]
+    },
+    {
+      "row": "17",
+      "cells": [
+        {
+          "cell": "B17",
+          "value": "合計ゴウケイ",
+          "formula": null,
+          "fattr": null,
+          "style": "327"
+        },
+        {
+          "cell": "E17",
+          "value": "10",
+          "formula": "SUM(E8:E16)",
+          "fattr": {
+            "t": "shared",
+            "ref": "E17:AI17",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "F17",
+          "value": "10",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "G17",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "H17",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "I17",
+          "value": "8",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "J17",
+          "value": "10.5",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "K17",
+          "value": "8",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "L17",
+          "value": "11",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "M17",
+          "value": "10",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "N17",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "O17",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "P17",
+          "value": "8",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "Q17",
+          "value": "10",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "R17",
+          "value": "10.5",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "S17",
+          "value": "10.75",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "T17",
+          "value": "9.5",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "U17",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "V17",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "W17",
+          "value": "11",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "X17",
+          "value": "10.5",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "Y17",
+          "value": "10.5",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "Z17",
+          "value": "11.75",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "AA17",
+          "value": "10",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "AB17",
+          "value": "6",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "AC17",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "AD17",
+          "value": "10.5",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "AE17",
+          "value": "10",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "AF17",
+          "value": "10.5",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "AG17",
+          "value": "9",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "AH17",
+          "value": "8",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "AI17",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "3"
+          },
+          "style": "47"
+        },
+        {
+          "cell": "AJ17",
+          "value": "1",
+          "formula": "SUM(AJ8:AJ16)",
+          "fattr": {},
+          "style": "60"
+        },
+        {
+          "cell": "AK17",
+          "value": "224",
+          "formula": "SUM(AK8:AK16)",
+          "fattr": {},
+          "style": "56"
+        },
+        {
+          "cell": "AL17",
+          "value": "←総合計ソウゴウケイ",
+          "formula": null,
+          "fattr": null,
+          "style": "57"
+        }
+      ]
+    },
+    {
+      "row": "18",
+      "cells": []
+    },
+    {
+      "row": "19",
+      "cells": [
+        {
+          "cell": "B19",
+          "value": "【業務対象部門】ギョウムタイショウブモン",
+          "formula": null,
+          "fattr": null,
+          "style": "67"
+        },
+        {
+          "cell": "D19",
+          "value": "日付ヒヅケ",
+          "formula": null,
+          "fattr": null,
+          "style": "39"
+        },
+        {
+          "cell": "E19",
+          "value": "1",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "F19",
+          "value": "2",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "G19",
+          "value": "3",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "H19",
+          "value": "4",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "I19",
+          "value": "5",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "J19",
+          "value": "6",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "K19",
+          "value": "7",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "L19",
+          "value": "8",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "M19",
+          "value": "9",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "N19",
+          "value": "10",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "O19",
+          "value": "11",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "P19",
+          "value": "12",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "Q19",
+          "value": "13",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "R19",
+          "value": "14",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "S19",
+          "value": "15",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "T19",
+          "value": "16",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "U19",
+          "value": "17",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "V19",
+          "value": "18",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "W19",
+          "value": "19",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "X19",
+          "value": "20",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "Y19",
+          "value": "21",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "Z19",
+          "value": "22",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "AA19",
+          "value": "23",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "AB19",
+          "value": "24",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "AC19",
+          "value": "25",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "AD19",
+          "value": "26",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "AE19",
+          "value": "27",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "AF19",
+          "value": "28",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "AG19",
+          "value": "29",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "AH19",
+          "value": "30",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "AI19",
+          "value": "31",
+          "formula": null,
+          "fattr": null,
+          "style": "48"
+        },
+        {
+          "cell": "AJ19",
+          "value": "割合(%)ワリアイ",
+          "formula": null,
+          "fattr": null,
+          "style": "54"
+        },
+        {
+          "cell": "AK19",
+          "value": "合計(H)ゴウケイ",
+          "formula": null,
+          "fattr": null,
+          "style": "55"
+        }
+      ]
+    },
+    {
+      "row": "20",
+      "cells": [
+        {
+          "cell": "B20",
+          "value": "兵庫第一",
+          "formula": "テーブル!A18",
+          "fattr": {},
+          "style": "297"
+        },
+        {
+          "cell": "D20",
+          "value": "汎用 Hanyo",
+          "formula": "テーブル!C18",
+          "fattr": {},
+          "style": "42"
+        },
+        {
+          "cell": "AJ20",
+          "value": "0",
+          "formula": "AK20/$AK$38",
+          "fattr": {
+            "t": "shared",
+            "ref": "AJ20:AJ37",
+            "si": "4"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK20",
+          "value": "0",
+          "formula": "SUM(E20:AI20)",
+          "fattr": {
+            "t": "shared",
+            "ref": "AK20:AK37",
+            "si": "5"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL20",
+          "value": "汎用 Hanyo",
+          "formula": "D20",
+          "fattr": {
+            "t": "shared",
+            "ref": "AL20:AL34",
+            "si": "6"
+          },
+          "style": "41"
+        }
+      ]
+    },
+    {
+      "row": "21",
+      "cells": [
+        {
+          "cell": "D21",
+          "value": "サーボ Servo",
+          "formula": "テーブル!C19",
+          "fattr": {},
+          "style": "144"
+        },
+        {
+          "cell": "AB21",
+          "value": "6",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AJ21",
+          "value": "2.6785714285714284E-2",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "4"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK21",
+          "value": "6",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "5"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL21",
+          "value": "サーボ Servo",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "6"
+          },
+          "style": "41"
+        }
+      ]
+    },
+    {
+      "row": "22",
+      "cells": [
+        {
+          "cell": "D22",
+          "value": "CS",
+          "formula": "テーブル!C20",
+          "fattr": {},
+          "style": "42"
+        },
+        {
+          "cell": "AJ22",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "4"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK22",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "5"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL22",
+          "value": "CS",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "6"
+          },
+          "style": "41"
+        }
+      ]
+    },
+    {
+      "row": "23",
+      "cells": [
+        {
+          "cell": "B23",
+          "value": "兵庫第二",
+          "formula": "テーブル!A21",
+          "fattr": {},
+          "style": "300"
+        },
+        {
+          "cell": "D23",
+          "value": "光都 Koto",
+          "formula": "テーブル!C21",
+          "fattr": {},
+          "style": "16"
+        },
+        {
+          "cell": "E23",
+          "value": "10",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "F23",
+          "value": "10",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "I23",
+          "value": "8",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "J23",
+          "value": "10.5",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "K23",
+          "value": "8",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "L23",
+          "value": "11",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "M23",
+          "value": "10",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "P23",
+          "value": "8",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "Q23",
+          "value": "10",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "R23",
+          "value": "10.5",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "S23",
+          "value": "10.75",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "T23",
+          "value": "9.5",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "W23",
+          "value": "11",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "X23",
+          "value": "10.5",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "Y23",
+          "value": "10.5",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "Z23",
+          "value": "11.75",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AA23",
+          "value": "10",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AD23",
+          "value": "10.5",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AE23",
+          "value": "10",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AF23",
+          "value": "10.5",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AG23",
+          "value": "9",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AH23",
+          "value": "8",
+          "formula": null,
+          "fattr": null,
+          "style": "45"
+        },
+        {
+          "cell": "AJ23",
+          "value": "0.9732142857142857",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "4"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK23",
+          "value": "218",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "5"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL23",
+          "value": "光都 Koto",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "6"
+          },
+          "style": "17"
+        }
+      ]
+    },
+    {
+      "row": "24",
+      "cells": [
+        {
+          "cell": "D24",
+          "value": "山崎 Yamasaki",
+          "formula": "テーブル!C22",
+          "fattr": {},
+          "style": "16"
+        },
+        {
+          "cell": "AJ24",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "4"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK24",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "5"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL24",
+          "value": "山崎 Yamasaki",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "6"
+          },
+          "style": "17"
+        }
+      ]
+    },
+    {
+      "row": "25",
+      "cells": [
+        {
+          "cell": "D25",
+          "value": "光都第二 KotoⅡ",
+          "formula": "テーブル!C23",
+          "fattr": {},
+          "style": "16"
+        },
+        {
+          "cell": "AJ25",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "4"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK25",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "5"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL25",
+          "value": "光都第二 KotoⅡ",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "6"
+          },
+          "style": "17"
+        }
+      ]
+    },
+    {
+      "row": "26",
+      "cells": [
+        {
+          "cell": "B26",
+          "value": "鳥取",
+          "formula": "テーブル!A24",
+          "fattr": {},
+          "style": "298"
+        },
+        {
+          "cell": "D26",
+          "value": "若桜 Wakasa",
+          "formula": "テーブル!C24",
+          "fattr": {},
+          "style": "18"
+        },
+        {
+          "cell": "AJ26",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "4"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK26",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "5"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL26",
+          "value": "若桜 Wakasa",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "6"
+          },
+          "style": "19"
+        }
+      ]
+    },
+    {
+      "row": "27",
+      "cells": [
+        {
+          "cell": "D27",
+          "value": "シャフト Shaft",
+          "formula": "テーブル!C25",
+          "fattr": {},
+          "style": "18"
+        },
+        {
+          "cell": "AJ27",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "4"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK27",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "5"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL27",
+          "value": "シャフト Shaft",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "6"
+          },
+          "style": "19"
+        }
+      ]
+    },
+    {
+      "row": "28",
+      "cells": [
+        {
+          "cell": "D28",
+          "value": "船岡 Funaoka",
+          "formula": "テーブル!C26",
+          "fattr": {},
+          "style": "18"
+        },
+        {
+          "cell": "AJ28",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "4"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK28",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "5"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL28",
+          "value": "船岡 Funaoka",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "6"
+          },
+          "style": "19"
+        }
+      ]
+    },
+    {
+      "row": "29",
+      "cells": [
+        {
+          "cell": "B29",
+          "value": "海外",
+          "formula": "テーブル!A27",
+          "fattr": {},
+          "style": "161"
+        },
+        {
+          "cell": "D29",
+          "value": "IME-T",
+          "formula": "テーブル!C27",
+          "fattr": {},
+          "style": "20"
+        },
+        {
+          "cell": "AJ29",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "4"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK29",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "5"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL29",
+          "value": "IME-T",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "6"
+          },
+          "style": "21"
+        }
+      ]
+    },
+    {
+      "row": "30",
+      "cells": [
+        {
+          "cell": "D30",
+          "value": "IME-P",
+          "formula": "テーブル!C28",
+          "fattr": {},
+          "style": "20"
+        },
+        {
+          "cell": "AJ30",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "4"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK30",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "5"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL30",
+          "value": "IME-P",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "6"
+          },
+          "style": "21"
+        }
+      ]
+    },
+    {
+      "row": "31",
+      "cells": [
+        {
+          "cell": "B31",
+          "value": "間接部門",
+          "formula": "テーブル!A29",
+          "fattr": {},
+          "style": "296"
+        },
+        {
+          "cell": "D31",
+          "value": "生産技術 Seigi",
+          "formula": "テーブル!C29",
+          "fattr": {},
+          "style": "14"
+        },
+        {
+          "cell": "AJ31",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "4"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK31",
+          "value": "0",
+          "formula": "SUM(E31:AI31)",
+          "fattr": {},
+          "style": "53"
+        },
+        {
+          "cell": "AL31",
+          "value": "生産技術 Seigi",
+          "formula": "D31",
+          "fattr": {},
+          "style": "15"
+        }
+      ]
+    },
+    {
+      "row": "32",
+      "cells": [
+        {
+          "cell": "D32",
+          "value": "設計技術 Sekkei",
+          "formula": "テーブル!C30",
+          "fattr": {},
+          "style": "165"
+        },
+        {
+          "cell": "AJ32",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "4"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK32",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "5"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL32",
+          "value": "設計技術 Sekkei",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "6"
+          },
+          "style": "166"
+        }
+      ]
+    },
+    {
+      "row": "33",
+      "cells": [
+        {
+          "cell": "D33",
+          "value": "品質保証 Hinsyo",
+          "formula": "テーブル!C31",
+          "fattr": {},
+          "style": "165"
+        },
+        {
+          "cell": "AJ33",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "4"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK33",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "5"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL33",
+          "value": "品質保証 Hinsyo",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "6"
+          },
+          "style": "166"
+        }
+      ]
+    },
+    {
+      "row": "34",
+      "cells": [
+        {
+          "cell": "D34",
+          "value": "総務,財務,営業,管理",
+          "formula": "テーブル!C32",
+          "fattr": {},
+          "style": "165"
+        },
+        {
+          "cell": "AJ34",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "4"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK34",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "5"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL34",
+          "value": "総務,財務,営業,管理",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "6"
+          },
+          "style": "166"
+        }
+      ]
+    },
+    {
+      "row": "35",
+      "cells": [
+        {
+          "cell": "D35",
+          "value": "社内全体 IME",
+          "formula": "テーブル!C33",
+          "fattr": {},
+          "style": "163"
+        },
+        {
+          "cell": "AJ35",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "4"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK35",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "5"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL35",
+          "value": "社内全体 IME",
+          "formula": "D35",
+          "fattr": {},
+          "style": "25"
+        }
+      ]
+    },
+    {
+      "row": "36",
+      "cells": [
+        {
+          "cell": "B36",
+          "value": "社外 Outside the company",
+          "formula": "テーブル!C34",
+          "fattr": {},
+          "style": "305"
+        },
+        {
+          "cell": "AJ36",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "4"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK36",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "5"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL36",
+          "value": "社外 Outside the company",
+          "formula": "B36",
+          "fattr": {},
+          "style": "40"
+        }
+      ]
+    },
+    {
+      "row": "37",
+      "cells": [
+        {
+          "cell": "B37",
+          "value": "その他(語学研修 等) Others",
+          "formula": "テーブル!C35",
+          "fattr": {},
+          "style": "305"
+        },
+        {
+          "cell": "AJ37",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "4"
+          },
+          "style": "59"
+        },
+        {
+          "cell": "AK37",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "5"
+          },
+          "style": "53"
+        },
+        {
+          "cell": "AL37",
+          "value": "その他(語学研修 等) Others",
+          "formula": "B37",
+          "fattr": {},
+          "style": "24"
+        }
+      ]
+    },
+    {
+      "row": "38",
+      "cells": [
+        {
+          "cell": "D38",
+          "value": "合計ゴウケイ",
+          "formula": null,
+          "fattr": null,
+          "style": "38"
+        },
+        {
+          "cell": "E38",
+          "value": "10",
+          "formula": "SUM(E20:E37)",
+          "fattr": {},
+          "style": "46"
+        },
+        {
+          "cell": "F38",
+          "value": "10",
+          "formula": "SUM(F20:F37)",
+          "fattr": {
+            "t": "shared",
+            "ref": "F38:AK38",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "G38",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "H38",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "I38",
+          "value": "8",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "J38",
+          "value": "10.5",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "K38",
+          "value": "8",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "L38",
+          "value": "11",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "M38",
+          "value": "10",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "N38",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "O38",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "P38",
+          "value": "8",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "Q38",
+          "value": "10",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "R38",
+          "value": "10.5",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "S38",
+          "value": "10.75",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "T38",
+          "value": "9.5",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "U38",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "V38",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "W38",
+          "value": "11",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "X38",
+          "value": "10.5",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "Y38",
+          "value": "10.5",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "Z38",
+          "value": "11.75",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "AA38",
+          "value": "10",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "AB38",
+          "value": "6",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "AC38",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "AD38",
+          "value": "10.5",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "AE38",
+          "value": "10",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "AF38",
+          "value": "10.5",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "AG38",
+          "value": "9",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "AH38",
+          "value": "8",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "AI38",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "46"
+        },
+        {
+          "cell": "AJ38",
+          "value": "1",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "61"
+        },
+        {
+          "cell": "AK38",
+          "value": "224",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "7"
+          },
+          "style": "58"
+        },
+        {
+          "cell": "AL38",
+          "value": "←総合計ソウゴウケイ",
+          "formula": null,
+          "fattr": null,
+          "style": "57"
+        }
+      ]
+    },
+    {
+      "row": "39",
+      "cells": [
+        {
+          "cell": "D39",
+          "value": "備考ビコウ",
+          "formula": null,
+          "fattr": null,
+          "style": "36"
+        }
+      ]
+    },
+    {
+      "row": "40",
+      "cells": []
+    },
+    {
+      "row": "41",
+      "cells": []
+    },
+    {
+      "row": "42",
+      "cells": []
+    },
+    {
+      "row": "43",
+      "cells": []
+    },
+    {
+      "row": "44",
+      "cells": []
+    },
+    {
+      "row": "45",
+      "cells": [
+        {
+          "cell": "A45",
+          "value": "【業務報告】",
+          "formula": "A1",
+          "fattr": {},
+          "style": "34"
+        }
+      ]
+    },
+    {
+      "row": "46",
+      "cells": [
+        {
+          "cell": "B46",
+          "value": "名前ナマエ",
+          "formula": null,
+          "fattr": null,
+          "style": "32"
+        },
+        {
+          "cell": "C46",
+          "value": "幸田",
+          "formula": "C2",
+          "fattr": {},
+          "style": "307"
+        }
+      ]
+    },
+    {
+      "row": "47",
+      "cells": [
+        {
+          "cell": "B47",
+          "value": "業務年月ギョウムネンツキ",
+          "formula": null,
+          "fattr": null,
+          "style": "32"
+        },
+        {
+          "cell": "C47",
+          "value": "2026",
+          "formula": "C3",
+          "fattr": {},
+          "style": "125"
+        },
+        {
+          "cell": "D47",
+          "value": "10",
+          "formula": "D3",
+          "fattr": {},
+          "style": "33"
+        }
+      ]
+    },
+    {
+      "row": "48",
+      "cells": []
+    },
+    {
+      "row": "49",
+      "cells": [
+        {
+          "cell": "B49",
+          "value": "【業務内容】",
+          "formula": "B5",
+          "fattr": {},
+          "style": "329"
+        },
+        {
+          "cell": "P49",
+          "value": "【業務対象部門】",
+          "formula": "B19",
+          "fattr": {},
+          "style": "68"
+        }
+      ]
+    },
+    {
+      "row": "50",
+      "cells": []
+    },
+    {
+      "row": "51",
+      "cells": [
+        {
+          "cell": "AR51",
+          "value": "時間 hジカン",
+          "formula": null,
+          "fattr": null,
+          "style": "75"
+        },
+        {
+          "cell": "AS51",
+          "value": "割合 %ワリアイ",
+          "formula": null,
+          "fattr": null,
+          "style": "72"
+        },
+        {
+          "cell": "AU51",
+          "value": "事業部別ジギョウブベツ",
+          "formula": null,
+          "fattr": null,
+          "style": "246"
+        },
+        {
+          "cell": "AV51",
+          "value": "時間 hジカン",
+          "formula": null,
+          "fattr": null,
+          "style": "169"
+        },
+        {
+          "cell": "AW51",
+          "value": "割合 %ワリアイ",
+          "formula": null,
+          "fattr": null,
+          "style": "170"
+        },
+        {
+          "cell": "AX51",
+          "value": "部門別ブモンベツ",
+          "formula": null,
+          "fattr": null,
+          "style": "247"
+        },
+        {
+          "cell": "AY51",
+          "value": "時間 hジカン",
+          "formula": null,
+          "fattr": null,
+          "style": "169"
+        },
+        {
+          "cell": "AZ51",
+          "value": "割合 %ワリアイ",
+          "formula": null,
+          "fattr": null,
+          "style": "168"
+        }
+      ]
+    },
+    {
+      "row": "52",
+      "cells": [
+        {
+          "cell": "AP52",
+          "value": "1.新規",
+          "formula": null,
+          "fattr": null,
+          "style": "66"
+        },
+        {
+          "cell": "AQ52",
+          "value": "1.設備/工程 業務[新規]",
+          "formula": "B8",
+          "fattr": {},
+          "style": "66"
+        },
+        {
+          "cell": "AR52",
+          "value": "195",
+          "formula": "AK8",
+          "fattr": {},
+          "style": "277"
+        },
+        {
+          "cell": "AS52",
+          "value": "0.8705357142857143",
+          "formula": "AR52/$AR$61",
+          "fattr": {},
+          "style": "287"
+        },
+        {
+          "cell": "AU52",
+          "value": "兵庫第一ヒョウゴダイイチ",
+          "formula": null,
+          "fattr": null,
+          "style": "171"
+        },
+        {
+          "cell": "AV52",
+          "value": "6",
+          "formula": "SUM(AY52:AY54)",
+          "fattr": {},
+          "style": "172"
+        },
+        {
+          "cell": "AW52",
+          "value": "2.6785714285714284E-2",
+          "formula": "AV52/$AV$70",
+          "fattr": {},
+          "style": "173"
+        },
+        {
+          "cell": "AX52",
+          "value": "汎用 Hanyo",
+          "formula": null,
+          "fattr": null,
+          "style": "209"
+        },
+        {
+          "cell": "AY52",
+          "value": "0",
+          "formula": "AK20",
+          "fattr": {},
+          "style": "210"
+        },
+        {
+          "cell": "AZ52",
+          "value": "0",
+          "formula": "AY52/$AY$70",
+          "fattr": {},
+          "style": "248"
+        }
+      ]
+    },
+    {
+      "row": "53",
+      "cells": [
+        {
+          "cell": "AP53",
+          "value": "2.改善カイゼン",
+          "formula": null,
+          "fattr": null,
+          "style": "145"
+        },
+        {
+          "cell": "AQ53",
+          "value": "2.設備/工程 業務[改善,合理化,安全対策]",
+          "formula": "B9",
+          "fattr": {
+            "t": "shared",
+            "ref": "AQ53:AQ60",
+            "si": "8"
+          },
+          "style": "145"
+        },
+        {
+          "cell": "AR53",
+          "value": "0",
+          "formula": "AK9",
+          "fattr": {
+            "t": "shared",
+            "ref": "AR53:AR60",
+            "si": "9"
+          },
+          "style": "278"
+        },
+        {
+          "cell": "AS53",
+          "value": "0",
+          "formula": "AR53/$AR$61",
+          "fattr": {
+            "t": "shared",
+            "ref": "AS53:AS60",
+            "si": "10"
+          },
+          "style": "288"
+        },
+        {
+          "cell": "AW53",
+          "value": "0",
+          "formula": "AV53/$AV$70",
+          "fattr": {
+            "t": "shared",
+            "ref": "AW53:AW69",
+            "si": "11"
+          },
+          "style": "176"
+        },
+        {
+          "cell": "AX53",
+          "value": "サーボ Servo",
+          "formula": null,
+          "fattr": null,
+          "style": "211"
+        },
+        {
+          "cell": "AY53",
+          "value": "6",
+          "formula": "AK21",
+          "fattr": {
+            "t": "shared",
+            "ref": "AY53:AY69",
+            "si": "12"
+          },
+          "style": "212"
+        },
+        {
+          "cell": "AZ53",
+          "value": "2.6785714285714284E-2",
+          "formula": "AY53/$AY$70",
+          "fattr": {
+            "t": "shared",
+            "ref": "AZ53:AZ69",
+            "si": "13"
+          },
+          "style": "249"
+        }
+      ]
+    },
+    {
+      "row": "54",
+      "cells": [
+        {
+          "cell": "AP54",
+          "value": "3.修理シュウリ",
+          "formula": null,
+          "fattr": null,
+          "style": "93"
+        },
+        {
+          "cell": "AQ54",
+          "value": "3.設備/工程 業務[修理,不良対策]",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "8"
+          },
+          "style": "93"
+        },
+        {
+          "cell": "AR54",
+          "value": "28",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "9"
+          },
+          "style": "279"
+        },
+        {
+          "cell": "AS54",
+          "value": "0.125",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "10"
+          },
+          "style": "289"
+        },
+        {
+          "cell": "AW54",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "11"
+          },
+          "style": "176"
+        },
+        {
+          "cell": "AX54",
+          "value": "CS",
+          "formula": null,
+          "fattr": null,
+          "style": "213"
+        },
+        {
+          "cell": "AY54",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "12"
+          },
+          "style": "214"
+        },
+        {
+          "cell": "AZ54",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "13"
+          },
+          "style": "250"
+        }
+      ]
+    },
+    {
+      "row": "55",
+      "cells": [
+        {
+          "cell": "AP55",
+          "value": "4.施設シセツ",
+          "formula": null,
+          "fattr": null,
+          "style": "83"
+        },
+        {
+          "cell": "AQ55",
+          "value": "4.施設関連 業務",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "8"
+          },
+          "style": "83"
+        },
+        {
+          "cell": "AR55",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "9"
+          },
+          "style": "280"
+        },
+        {
+          "cell": "AS55",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "10"
+          },
+          "style": "290"
+        },
+        {
+          "cell": "AU55",
+          "value": "兵庫第二ヒョウゴダイニ",
+          "formula": null,
+          "fattr": null,
+          "style": "178"
+        },
+        {
+          "cell": "AV55",
+          "value": "218",
+          "formula": "SUM(AY55:AY57)",
+          "fattr": {},
+          "style": "179"
+        },
+        {
+          "cell": "AW55",
+          "value": "0.9732142857142857",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "11"
+          },
+          "style": "180"
+        },
+        {
+          "cell": "AX55",
+          "value": "光都 Koto",
+          "formula": null,
+          "fattr": null,
+          "style": "215"
+        },
+        {
+          "cell": "AY55",
+          "value": "218",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "12"
+          },
+          "style": "216"
+        },
+        {
+          "cell": "AZ55",
+          "value": "0.9732142857142857",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "13"
+          },
+          "style": "251"
+        }
+      ]
+    },
+    {
+      "row": "56",
+      "cells": [
+        {
+          "cell": "AP56",
+          "value": "5.事務ジム",
+          "formula": null,
+          "fattr": null,
+          "style": "98"
+        },
+        {
+          "cell": "AQ56",
+          "value": "5.事務 業務 (海外支援含む)",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "8"
+          },
+          "style": "98"
+        },
+        {
+          "cell": "AR56",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "9"
+          },
+          "style": "281"
+        },
+        {
+          "cell": "AS56",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "10"
+          },
+          "style": "291"
+        },
+        {
+          "cell": "AW56",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "11"
+          },
+          "style": "176"
+        },
+        {
+          "cell": "AX56",
+          "value": "山崎 Yamasaki",
+          "formula": null,
+          "fattr": null,
+          "style": "217"
+        },
+        {
+          "cell": "AY56",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "12"
+          },
+          "style": "218"
+        },
+        {
+          "cell": "AZ56",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "13"
+          },
+          "style": "252"
+        }
+      ]
+    },
+    {
+      "row": "57",
+      "cells": [
+        {
+          "cell": "AP57",
+          "value": "6.会議カイギ",
+          "formula": null,
+          "fattr": null,
+          "style": "108"
+        },
+        {
+          "cell": "AQ57",
+          "value": "6.会議（役員会,決算会,品質会議,社内行事）",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "8"
+          },
+          "style": "108"
+        },
+        {
+          "cell": "AR57",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "9"
+          },
+          "style": "282"
+        },
+        {
+          "cell": "AS57",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "10"
+          },
+          "style": "292"
+        },
+        {
+          "cell": "AW57",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "11"
+          },
+          "style": "176"
+        },
+        {
+          "cell": "AX57",
+          "value": "光都第二 KotoⅡ",
+          "formula": null,
+          "fattr": null,
+          "style": "219"
+        },
+        {
+          "cell": "AY57",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "12"
+          },
+          "style": "220"
+        },
+        {
+          "cell": "AZ57",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "13"
+          },
+          "style": "253"
+        }
+      ]
+    },
+    {
+      "row": "58",
+      "cells": [
+        {
+          "cell": "AP58",
+          "value": "7.研修ケンシュウ",
+          "formula": null,
+          "fattr": null,
+          "style": "88"
+        },
+        {
+          "cell": "AQ58",
+          "value": "7.研修（勉強会,技術資料作成,展示会）",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "8"
+          },
+          "style": "88"
+        },
+        {
+          "cell": "AR58",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "9"
+          },
+          "style": "283"
+        },
+        {
+          "cell": "AS58",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "10"
+          },
+          "style": "293"
+        },
+        {
+          "cell": "AU58",
+          "value": "鳥取",
+          "formula": null,
+          "fattr": null,
+          "style": "183"
+        },
+        {
+          "cell": "AV58",
+          "value": "0",
+          "formula": "SUM(AY58:AY60)",
+          "fattr": {},
+          "style": "184"
+        },
+        {
+          "cell": "AW58",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "11"
+          },
+          "style": "185"
+        },
+        {
+          "cell": "AX58",
+          "value": "若桜 Wakasa",
+          "formula": null,
+          "fattr": null,
+          "style": "221"
+        },
+        {
+          "cell": "AY58",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "12"
+          },
+          "style": "222"
+        },
+        {
+          "cell": "AZ58",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "13"
+          },
+          "style": "254"
+        }
+      ]
+    },
+    {
+      "row": "59",
+      "cells": [
+        {
+          "cell": "AP59",
+          "value": "8.ISO 等ナド",
+          "formula": null,
+          "fattr": null,
+          "style": "103"
+        },
+        {
+          "cell": "AQ59",
+          "value": "8.ISO,IATF関連 業務",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "8"
+          },
+          "style": "103"
+        },
+        {
+          "cell": "AR59",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "9"
+          },
+          "style": "284"
+        },
+        {
+          "cell": "AS59",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "10"
+          },
+          "style": "294"
+        },
+        {
+          "cell": "AW59",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "11"
+          },
+          "style": "176"
+        },
+        {
+          "cell": "AX59",
+          "value": "シャフト Shaft",
+          "formula": null,
+          "fattr": null,
+          "style": "223"
+        },
+        {
+          "cell": "AY59",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "12"
+          },
+          "style": "224"
+        },
+        {
+          "cell": "AZ59",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "13"
+          },
+          "style": "255"
+        }
+      ]
+    },
+    {
+      "row": "60",
+      "cells": [
+        {
+          "cell": "AP60",
+          "value": "9.その他タ",
+          "formula": null,
+          "fattr": null,
+          "style": "112"
+        },
+        {
+          "cell": "AQ60",
+          "value": "9.その他 (来客対応,4S活動,工場応援 等)",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "8"
+          },
+          "style": "112"
+        },
+        {
+          "cell": "AR60",
+          "value": "1",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "9"
+          },
+          "style": "285"
+        },
+        {
+          "cell": "AS60",
+          "value": "4.464285714285714E-3",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "10"
+          },
+          "style": "295"
+        },
+        {
+          "cell": "AW60",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "11"
+          },
+          "style": "176"
+        },
+        {
+          "cell": "AX60",
+          "value": "船岡 Funaoka",
+          "formula": null,
+          "fattr": null,
+          "style": "225"
+        },
+        {
+          "cell": "AY60",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "12"
+          },
+          "style": "226"
+        },
+        {
+          "cell": "AZ60",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "13"
+          },
+          "style": "256"
+        }
+      ]
+    },
+    {
+      "row": "61",
+      "cells": [
+        {
+          "cell": "AQ61",
+          "value": "総合計ソウゴウケイ",
+          "formula": null,
+          "fattr": null,
+          "style": "274"
+        },
+        {
+          "cell": "AR61",
+          "value": "224",
+          "formula": "AK17",
+          "fattr": {},
+          "style": "286"
+        },
+        {
+          "cell": "AS61",
+          "value": "1",
+          "formula": "SUM(AS52:AS60)",
+          "fattr": {},
+          "style": "116"
+        },
+        {
+          "cell": "AU61",
+          "value": "海外",
+          "formula": null,
+          "fattr": null,
+          "style": "189"
+        },
+        {
+          "cell": "AV61",
+          "value": "0",
+          "formula": "SUM(AY61:AY62)",
+          "fattr": {},
+          "style": "190"
+        },
+        {
+          "cell": "AW61",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "11"
+          },
+          "style": "191"
+        },
+        {
+          "cell": "AX61",
+          "value": "IME-T",
+          "formula": null,
+          "fattr": null,
+          "style": "227"
+        },
+        {
+          "cell": "AY61",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "12"
+          },
+          "style": "228"
+        },
+        {
+          "cell": "AZ61",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "13"
+          },
+          "style": "257"
+        }
+      ]
+    },
+    {
+      "row": "62",
+      "cells": [
+        {
+          "cell": "AW62",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "11"
+          },
+          "style": "176"
+        },
+        {
+          "cell": "AX62",
+          "value": "IME-P",
+          "formula": null,
+          "fattr": null,
+          "style": "229"
+        },
+        {
+          "cell": "AY62",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "12"
+          },
+          "style": "230"
+        },
+        {
+          "cell": "AZ62",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "13"
+          },
+          "style": "258"
+        }
+      ]
+    },
+    {
+      "row": "63",
+      "cells": [
+        {
+          "cell": "AU63",
+          "value": "間接",
+          "formula": null,
+          "fattr": null,
+          "style": "193"
+        },
+        {
+          "cell": "AV63",
+          "value": "0",
+          "formula": "SUM(AY63:AY66)",
+          "fattr": {},
+          "style": "194"
+        },
+        {
+          "cell": "AW63",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "11"
+          },
+          "style": "195"
+        },
+        {
+          "cell": "AX63",
+          "value": "生産技術 Seigi",
+          "formula": null,
+          "fattr": null,
+          "style": "231"
+        },
+        {
+          "cell": "AY63",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "12"
+          },
+          "style": "232"
+        },
+        {
+          "cell": "AZ63",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "13"
+          },
+          "style": "259"
+        }
+      ]
+    },
+    {
+      "row": "64",
+      "cells": [
+        {
+          "cell": "AW64",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "11"
+          },
+          "style": "176"
+        },
+        {
+          "cell": "AX64",
+          "value": "設計技術 Sekkei",
+          "formula": null,
+          "fattr": null,
+          "style": "233"
+        },
+        {
+          "cell": "AY64",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "12"
+          },
+          "style": "234"
+        },
+        {
+          "cell": "AZ64",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "13"
+          },
+          "style": "260"
+        }
+      ]
+    },
+    {
+      "row": "65",
+      "cells": [
+        {
+          "cell": "AW65",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "11"
+          },
+          "style": "176"
+        },
+        {
+          "cell": "AX65",
+          "value": "品質保証 Hinsyo",
+          "formula": null,
+          "fattr": null,
+          "style": "233"
+        },
+        {
+          "cell": "AY65",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "12"
+          },
+          "style": "234"
+        },
+        {
+          "cell": "AZ65",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "13"
+          },
+          "style": "260"
+        }
+      ]
+    },
+    {
+      "row": "66",
+      "cells": [
+        {
+          "cell": "AW66",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "11"
+          },
+          "style": "176"
+        },
+        {
+          "cell": "AX66",
+          "value": "総務,財務,営業,管理",
+          "formula": null,
+          "fattr": null,
+          "style": "235"
+        },
+        {
+          "cell": "AY66",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "12"
+          },
+          "style": "236"
+        },
+        {
+          "cell": "AZ66",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "13"
+          },
+          "style": "261"
+        }
+      ]
+    },
+    {
+      "row": "67",
+      "cells": [
+        {
+          "cell": "AU67",
+          "value": "社内全体 IME",
+          "formula": null,
+          "fattr": null,
+          "style": "198"
+        },
+        {
+          "cell": "AV67",
+          "value": "0",
+          "formula": "AY67",
+          "fattr": {},
+          "style": "199"
+        },
+        {
+          "cell": "AW67",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "11"
+          },
+          "style": "200"
+        },
+        {
+          "cell": "AX67",
+          "value": "社内全体 IME",
+          "formula": null,
+          "fattr": null,
+          "style": "237"
+        },
+        {
+          "cell": "AY67",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "12"
+          },
+          "style": "238"
+        },
+        {
+          "cell": "AZ67",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "13"
+          },
+          "style": "262"
+        }
+      ]
+    },
+    {
+      "row": "68",
+      "cells": [
+        {
+          "cell": "AU68",
+          "value": "その他 Other",
+          "formula": null,
+          "fattr": null,
+          "style": "201"
+        },
+        {
+          "cell": "AV68",
+          "value": "0",
+          "formula": "SUM(AY68:AY69)",
+          "fattr": {},
+          "style": "202"
+        },
+        {
+          "cell": "AW68",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "11"
+          },
+          "style": "203"
+        },
+        {
+          "cell": "AX68",
+          "value": "社外 Outside the company",
+          "formula": null,
+          "fattr": null,
+          "style": "239"
+        },
+        {
+          "cell": "AY68",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "12"
+          },
+          "style": "240"
+        },
+        {
+          "cell": "AZ68",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "13"
+          },
+          "style": "263"
+        }
+      ]
+    },
+    {
+      "row": "69",
+      "cells": [
+        {
+          "cell": "AW69",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "11"
+          },
+          "style": "205"
+        },
+        {
+          "cell": "AX69",
+          "value": "その他(語学研修 等) Others",
+          "formula": null,
+          "fattr": null,
+          "style": "241"
+        },
+        {
+          "cell": "AY69",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "12"
+          },
+          "style": "242"
+        },
+        {
+          "cell": "AZ69",
+          "value": "0",
+          "formula": null,
+          "fattr": {
+            "t": "shared",
+            "si": "13"
+          },
+          "style": "264"
+        }
+      ]
+    },
+    {
+      "row": "70",
+      "cells": [
+        {
+          "cell": "AU70",
+          "value": "総合計ソウゴウケイ",
+          "formula": null,
+          "fattr": null,
+          "style": "206"
+        },
+        {
+          "cell": "AV70",
+          "value": "224",
+          "formula": "SUM(AV52:AV69)",
+          "fattr": {},
+          "style": "207"
+        },
+        {
+          "cell": "AW70",
+          "value": "1",
+          "formula": "SUM(AW52:AW69)",
+          "fattr": {},
+          "style": "208"
+        },
+        {
+          "cell": "AY70",
+          "value": "224",
+          "formula": "SUM(AY52:AY69)",
+          "fattr": {},
+          "style": "244"
+        },
+        {
+          "cell": "AZ70",
+          "value": "1",
+          "formula": "SUM(AZ52:AZ69)",
+          "fattr": {},
+          "style": "116"
+        }
+      ]
+    },
+    {
+      "row": "71",
+      "cells": []
+    },
+    {
+      "row": "72",
+      "cells": []
+    },
+    {
+      "row": "73",
+      "cells": []
+    },
+    {
+      "row": "74",
+      "cells": []
+    },
+    {
+      "row": "75",
+      "cells": []
+    },
+    {
+      "row": "76",
+      "cells": []
+    },
+    {
+      "row": "77",
+      "cells": []
+    },
+    {
+      "row": "78",
+      "cells": []
+    },
+    {
+      "row": "79",
+      "cells": []
+    },
+    {
+      "row": "80",
+      "cells": []
+    },
+    {
+      "row": "81",
+      "cells": []
+    },
+    {
+      "row": "82",
+      "cells": []
+    },
+    {
+      "row": "83",
+      "cells": []
+    },
+    {
+      "row": "84",
+      "cells": []
+    },
+    {
+      "row": "85",
+      "cells": []
+    },
+    {
+      "row": "86",
+      "cells": []
+    },
+    {
+      "row": "87",
+      "cells": []
+    },
+    {
+      "row": "88",
+      "cells": []
+    },
+    {
+      "row": "89",
+      "cells": []
+    },
+    {
+      "row": "90",
+      "cells": []
+    },
+    {
+      "row": "91",
+      "cells": []
+    },
+    {
+      "row": "92",
+      "cells": []
+    },
+    {
+      "row": "93",
+      "cells": []
+    },
+    {
+      "row": "94",
+      "cells": []
+    },
+    {
+      "row": "95",
+      "cells": []
+    },
+    {
+      "row": "96",
+      "cells": []
+    },
+    {
+      "row": "97",
+      "cells": []
+    },
+    {
+      "row": "98",
+      "cells": []
+    },
+    {
+      "row": "99",
+      "cells": []
+    },
+    {
+      "row": "100",
+      "cells": []
+    }
+  ],
+  "conditional_formats": [
+    "<ns0:conditionalFormatting xmlns:ns0=\"http://schemas.openxmlformats.org/spreadsheetml/2006/main\" sqref=\"E6:AI6\"><ns0:cfRule type=\"containsText\" dxfId=\"40\" priority=\"3\" operator=\"containsText\" text=\"記入済\"><ns0:formula>NOT(ISERROR(SEARCH(\"記入済\",E6)))</ns0:formula></ns0:cfRule><ns0:cfRule type=\"containsText\" dxfId=\"39\" priority=\"4\" operator=\"containsText\" text=\"未記入\"><ns0:formula>NOT(ISERROR(SEARCH(\"未記入\",E6)))</ns0:formula></ns0:cfRule></ns0:conditionalFormatting>",
+    "<ns0:conditionalFormatting xmlns:ns0=\"http://schemas.openxmlformats.org/spreadsheetml/2006/main\" sqref=\"E7:AI16\"><ns0:cfRule type=\"expression\" dxfId=\"38\" priority=\"2\"><ns0:formula>E$7=1</ns0:formula></ns0:cfRule></ns0:conditionalFormatting>",
+    "<ns0:conditionalFormatting xmlns:ns0=\"http://schemas.openxmlformats.org/spreadsheetml/2006/main\" sqref=\"E20:AI37\"><ns0:cfRule type=\"expression\" dxfId=\"37\" priority=\"1\"><ns0:formula>E$7=1</ns0:formula></ns0:cfRule></ns0:conditionalFormatting>",
+    "<ns0:conditionalFormatting xmlns:ns0=\"http://schemas.openxmlformats.org/spreadsheetml/2006/main\" sqref=\"AJ3\"><ns0:cfRule type=\"expression\" dxfId=\"36\" priority=\"5\"><ns0:formula>$AK$17&lt;&gt;$AK$38</ns0:formula></ns0:cfRule><ns0:cfRule type=\"expression\" dxfId=\"35\" priority=\"6\"><ns0:formula>$AK$17=$AK$38</ns0:formula></ns0:cfRule></ns0:conditionalFormatting>"
+  ],
+  "defined_names": [
+    {
+      "name": "_xlnm.Print_Area",
+      "value": "'10月'!$A$1:$AM$88"
+    },
+    {
+      "name": "_xlnm.Print_Area",
+      "value": "'11月'!$A$1:$AM$88"
+    },
+    {
+      "name": "_xlnm.Print_Area",
+      "value": "'12月'!$A$1:$AM$88"
+    },
+    {
+      "name": "_xlnm.Print_Area",
+      "value": "'1月'!$A$1:$AM$88"
+    },
+    {
+      "name": "_xlnm.Print_Area",
+      "value": "'2月'!$A$1:$AM$88"
+    },
+    {
+      "name": "_xlnm.Print_Area",
+      "value": "'3月'!$A$1:$AM$88"
+    },
+    {
+      "name": "_xlnm.Print_Area",
+      "value": "'4月'!$A$1:$AM$88"
+    },
+    {
+      "name": "_xlnm.Print_Area",
+      "value": "'5月'!$A$1:$AM$88"
+    },
+    {
+      "name": "_xlnm.Print_Area",
+      "value": "'6月'!$A$1:$AM$88"
+    },
+    {
+      "name": "_xlnm.Print_Area",
+      "value": "'7月'!$A$1:$AM$88"
+    },
+    {
+      "name": "_xlnm.Print_Area",
+      "value": "'8月'!$A$1:$AM$88"
+    },
+    {
+      "name": "_xlnm.Print_Area",
+      "value": "'9月'!$A$1:$AM$88"
+    },
+    {
+      "name": "_xlnm.Print_Area",
+      "value": "年間集計!$A$1:$T$88"
+    },
+    {
+      "name": "参照セル",
+      "value": "#REF!,#REF!"
+    }
+  ],
+  "sheet_views": [
+    "<ns0:sheetViews xmlns:ns0=\"http://schemas.openxmlformats.org/spreadsheetml/2006/main\"><ns0:sheetView showGridLines=\"0\" tabSelected=\"1\" zoomScaleNormal=\"100\" zoomScaleSheetLayoutView=\"55\" workbookViewId=\"0\"><ns0:selection activeCell=\"Q8\" sqref=\"Q8\" /></ns0:sheetView></ns0:sheetViews>"
+  ]
+}

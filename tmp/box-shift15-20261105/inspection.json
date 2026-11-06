@@ -1,0 +1,76 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105B.smc2",
+  "sha256": "a428b0b7fa3ba276dfdb45aac6291e6fc7da8ae55abced28c9d8d4d212eda398",
+  "references": [
+    {
+      "section": "BoxPacking_箱詰め",
+      "part": "921a8dcb-33d9-470e-81f9-ea54d3b57793/6061835d-1e51-4e92-be1f-d546f44764e3.xml",
+      "count": 157
+    }
+  ],
+  "declarations": [
+    {
+      "part": "921a8dcb-33d9-470e-81f9-ea54d3b57793/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=ARRAY[0..99] OF Bool\tN=BoxPacking_M\tG=VAR\tCom=箱詰め：\tEC=<ECs><EC EK=\"[3]\" C=\"①コンテナ未設置 状態\" /><EC EK=\"[4]\" C=\"②コンテナ設置 状態\" /><EC EK=\"[5]\" C=\"③コンテナ排出 状態\" /><EC EK=\"[2]\" C=\"コンテナ状態 判定\" /><EC EK=\"[7]\" C=\"【Y1204】コンテナ排出 戻\" /><EC EK=\"[6]\" C=\"④コンテナ位置未確定 状態\" /><EC EK=\"[10]\" C=\"コンテナトレイ方向OK \" /><EC EK=\"[9]\" C=\"コンテナトレイ方向 判定\" /><EC EK=\"[11]\" C=\"コンテナトレイ方向NG\" /><EC EK=\"[12]\" C=\"コンテナ排出可能状態 or コンテナトレイ方向NG の場合\" /><EC EK=\"[13]\" C=\"自動運転 初回動作コンテナ排出完了\" /></ECs>"
+    }
+  ],
+  "target": {
+    "name": "BoxPacking_箱詰め",
+    "part": "921a8dcb-33d9-470e-81f9-ea54d3b57793/6061835d-1e51-4e92-be1f-d546f44764e3.xml"
+  },
+  "row_count": 42,
+  "coils": [
+    "BoxPacking_M[1]",
+    "BoxPacking_M[2]",
+    "BoxPacking_M[3]",
+    "BoxPacking_M[4]",
+    "BoxPacking_M[5]",
+    "BoxPacking_M[6]",
+    "BoxPacking_M[7]",
+    "BoxPacking_M[8]",
+    "BoxPacking_M[9]",
+    "BoxPacking_M[10]",
+    "BoxPacking_M[11]",
+    "BoxPacking_M[12]",
+    "BoxPacking_M[13]",
+    "BoxPacking_M[14]",
+    "BoxPacking_M[15]",
+    "BoxPacking_M[15]",
+    "BoxPacking_M[16]",
+    "BoxPacking_M[17]",
+    "BoxPacking_M[18]",
+    "BoxPacking_M[19]",
+    "BoxPacking_M[20]",
+    "BoxPacking_M[21]",
+    "BoxPacking_M[22]",
+    "BoxPacking_M[23]",
+    "BoxPacking_M[24]",
+    "BoxPacking_M[25]",
+    "BoxPacking_M[26]",
+    "BoxPacking_M[27]",
+    "BoxPacking_M[28]",
+    "BoxPacking_M[29]",
+    "BoxPacking_M[30]",
+    "BoxPacking_M[31]",
+    "BoxPacking_M[32]",
+    "BoxPacking_M[33]",
+    "BoxPacking_M[34]",
+    "BoxPacking_M[35]",
+    "BoxPacking_M[36]",
+    "BoxPacking_M[37]",
+    "BoxPacking_M[38]",
+    "BoxPacking_M[39]",
+    "BoxPacking_M[40]",
+    "BoxPacking_M[41]",
+    "BoxPacking_M[42]",
+    "BoxPacking_M[43]",
+    "BoxPacking_M[44]",
+    "BoxPacking_M[45]",
+    "BoxPacking_M[46]",
+    "BoxPacking_M[47]",
+    "BoxPacking_M[48]"
+  ],
+  "duplicates": {
+    "BoxPacking_M[15]": 2
+  }
+}

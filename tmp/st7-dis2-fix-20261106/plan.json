@@ -1,0 +1,71 @@
+{
+  "source_sha256": "a7df246e967f3cc8b33e9e9aada56801778badd10e9fc152e37fd3b867e5e2ff",
+  "operations": [
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml",
+      "expected_sha256": "13106da52bf27387071f45942ed30630b39d5c5bbbcd832a6c85ccfbc973ea9f",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\st7-dis2-fix-20261106\\section_78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.bin"
+    },
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "expected_sha256": "f23e825482896f91ae87da5464d56b2b3b694a14c906e7549d9e8892f13f31aa",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\st7-dis2-fix-20261106\\section_1c62506a-fffa-4120-bf30-bcfd518c76f9.bin"
+    },
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/7b1666c7-ee97-4210-81b2-fed5a6172074.xml",
+      "expected_sha256": "33cf29a4f4fa3e29ae7f05979628b30a33ae1ee1dfd7a62c3ffa21c8b6bf2a5d",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\st7-dis2-fix-20261106\\section_7b1666c7-ee97-4210-81b2-fed5a6172074.bin"
+    },
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "expected_sha256": "2b3520b2aea60f9ff3f20950f8d9abb91243f620e0e9f02ea4d5f61de6898da2",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\st7-dis2-fix-20261106\\vars_b530d740-9d69-41c3-974a-97c06e823eb2.bin"
+    },
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "expected_sha256": "b65f023edf2694bdf6a23cae047f3b146b3f5c42e846ebb3580b9d0a493986be",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\st7-dis2-fix-20261106\\vars_86df70c5-aaad-4d2c-bba7-04264d7b7f32.bin"
+    },
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "expected_sha256": "c8a227fb936a38c779f0be0134bbf4a8ea42cf5624b7413b221f3e13a71ba337",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\st7-dis2-fix-20261106\\vars_a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.bin"
+    },
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "expected_sha256": "b2ebe0557fe9b3bdf5cd1e7dddcd18c2abb1b4b6aba5fa01b6773f91e952a4eb",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\st7-dis2-fix-20261106\\vars_9576fedf-9472-4ce6-b9ed-6eda5b4f0514.bin"
+    },
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "expected_sha256": "1d30550f8f321e418f6a6ae8437b27c7eba87851fb44905ec1e5c36b9a708d42",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\st7-dis2-fix-20261106\\vars_f07dd06c-505c-431b-b9fc-098949805b4e.bin"
+    },
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/298443e5-40dc-47d4-95bf-46c8fde7d5ae.oem",
+      "expected_sha256": "14d814a1e57884ec253c118db6034298de0eca7fc5123b15c4dea61b5ba1faa6",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\st7-dis2-fix-20261106\\oem.bin"
+    },
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/298443e5-40dc-47d4-95bf-46c8fde7d5ae.xml",
+      "expected_sha256": "f27d809ce05340355d80dc74b705f9c35e48d3d761b931178797db0b88388f95",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\st7-dis2-fix-20261106\\project_meta.bin"
+    },
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/298443e5-40dc-47d4-95bf-46c8fde7d5ae.manifest",
+      "expected_sha256": "05c70f3a9ed4331d4d3611ec2e1c5ae96402543e2cbc5e58de11b4e2a415e6d1",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\st7-dis2-fix-20261106\\manifest_manifest.bin"
+    }
+  ]
+}

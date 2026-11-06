@@ -1,0 +1,47 @@
+{
+  "project": "C:\\OMRON\\Data\\Solution\\6cb83995-6d0c-45b5-ace2-b96278ba04c8",
+  "solution": "3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I",
+  "source": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-comments-20261105\\I_comments.smc2",
+  "source_sha256": "2194920a612d61b00576dad35f8c9a26e276510b5a289a1f70ade9d385abc1bb",
+  "project_sha256_before": "b77bf6ddb2777e5f88376694d639b6403f588d963b5989114d4ce714ab8826d7",
+  "changed": [
+    {
+      "part": "fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml",
+      "key": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    }
+  ],
+  "comment_rows": 29,
+  "applied": false,
+  "ui_reflection_verified": false
+}

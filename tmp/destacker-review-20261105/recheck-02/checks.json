@@ -1,0 +1,74 @@
+{
+  "checks": [
+    {
+      "case": "11→12確認OKの4入力全組合せ",
+      "cases": 16,
+      "result": "確認OK条件に一致する時だけM16開始"
+    },
+    {
+      "case": "送り戻り到着がUpの次走査になる",
+      "first_M14": false,
+      "after_Home_and_EmptyDone": {
+        "Destacker_M[14]": false,
+        "Destacker_M[15]": false,
+        "Destacker_M[16]": false,
+        "Out_CYw_Sep_Claw_H_Done": false,
+        "Out_CYw_Empty_Container_CY_H_Done": true
+      },
+      "result": "誤った爪戻りDoneのままでは確認開始できない反例"
+    },
+    {
+      "case": "同じ反例でDone接点だけ送り戻りへ変更したコピー",
+      "result": "M14/M15/M16が成立。実プロジェクト未変更"
+    },
+    {
+      "case": "11行の既存5秒異常監視",
+      "cases": 3,
+      "result": "方向NG/1段目無しで異常、両方OKでは異常なし。11行単体の条件モデル"
+    },
+    {
+      "case": "8行のM10枝にDone追加",
+      "cases": 2,
+      "result": "Done OFFなら待つ。ONなら新旧を区別せず進む"
+    },
+    {
+      "case": "5→6行、前移動のDoneがONのまま",
+      "result": "同走査でM8とM9がON。旧Done流用の反例は残る"
+    }
+  ],
+  "explanation": [
+    {
+      "phase": "開始直後・前の完了が残る",
+      "M8": 1,
+      "Done": 1,
+      "M28": 0,
+      "next_allowed": false
+    },
+    {
+      "phase": "前の完了が消える",
+      "M8": 1,
+      "Done": 0,
+      "M28": 1,
+      "next_allowed": false
+    },
+    {
+      "phase": "今回の移動が完了",
+      "M8": 1,
+      "Done": 1,
+      "M28": 1,
+      "next_allowed": true
+    },
+    {
+      "phase": "この工程が終了",
+      "M8": 0,
+      "Done": 1,
+      "M28": 0,
+      "next_allowed": false
+    }
+  ],
+  "internal_sha": "03503f0a22b52c46cbc5929e18c3fb6208bc22f67416b82f2d1ed6cc1be0adb3",
+  "internal_after": "03503f0a22b52c46cbc5929e18c3fb6208bc22f67416b82f2d1ed6cc1be0adb3",
+  "internal_unchanged": true,
+  "external_unchanged": true,
+  "scope": "保存ラダー配線の条件検算。実機・PLCシミュレータ未検証。実プロジェクト変更なし。"
+}

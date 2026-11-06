@@ -1,0 +1,1711 @@
+[
+  {
+    "section": "Error_エラー処理",
+    "row": 36,
+    "CMT": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#【段バラシ】\r\n\r\n\r\n再試行：Retry[13]\r\n# 目的：原因別の異常保持と停止を処理する\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\nエラー発生条件（RESETで解除）\r\n①コンテナ方向違い",
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_Error"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Error_Destacker_M[1]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "In_Sw_RESET",
+          "X": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 3,
+          "Var": "Error_Destacker_M[1]",
+          "X": 2
+        }
+      ],
+      "CMT": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#【段バラシ】\r\n\r\n\r\n再試行：Retry[13]\r\n# 目的：原因別の異常保持と停止を処理する\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\nエラー発生条件（RESETで解除）\r\n①コンテナ方向違い",
+      "LRI": 4,
+      "RRI": 5,
+      "VLs": [
+        {
+          "Ix": 6,
+          "X": 1
+        }
+      ]
+    }
+  },
+  {
+    "section": "RCON_IAI",
+    "row": 281,
+    "CMT": "開始指令保持",
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "RCON2_1_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "RCON2_1_Auto[2]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "RCON2_1_Auto[3]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Var": "RCON2_1_Auto[4]",
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 16,
+          "Var": "RCON2_1_Auto[5]",
+          "Y": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 17,
+          "Var": "RCON2_1_Auto[6]",
+          "Y": 5
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "RCON2_1_Ready",
+          "X": 1
+        },
+        {
+          "__type": "FB",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "PT",
+              "Ix": 8,
+              "Type": "TIME",
+              "Var": "T#100ms"
+            }
+          ],
+          "Ix": 10,
+          "Name": "TON",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "Q"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "ET",
+              "Ix": 9,
+              "Type": "TIME",
+              "Var": ""
+            }
+          ],
+          "X": 2,
+          "Var": "RCON2_1_TON[1]"
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 11,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 3,
+          "Id": "6b27b865-48a5-4918-aad9-0c1aaf8f9e75"
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "RCON2_1_M[1]",
+          "Y": 6
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 6
+        },
+        {
+          "__type": "HL",
+          "X": 2,
+          "Y": 6
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 6
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "RCON2_1_MoveDone",
+          "X": 4
+        },
+        {
+          "__type": "ST",
+          "Ix": 7,
+          "Var": "RCON2_1_M[1]",
+          "X": 5
+        }
+      ],
+      "CMT": "開始指令保持",
+      "LRI": 12,
+      "RRI": 13,
+      "VLs": [
+        {
+          "Ix": 14,
+          "X": 4
+        },
+        {
+          "Ix": 14,
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "Ix": 14,
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "Ix": 14,
+          "X": 4,
+          "Y": 3
+        },
+        {
+          "Ix": 14,
+          "X": 4,
+          "Y": 4
+        },
+        {
+          "Ix": 14,
+          "X": 4,
+          "Y": 5
+        },
+        {
+          "Ix": 15,
+          "X": 1
+        },
+        {
+          "Ix": 15,
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "Ix": 15,
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "Ix": 15,
+          "X": 1,
+          "Y": 3
+        },
+        {
+          "Ix": 15,
+          "X": 1,
+          "Y": 4
+        }
+      ]
+    }
+  },
+  {
+    "section": "Output_出力",
+    "row": 268,
+    "CMT": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【共通 コンテナ部｜シリンダ】\r\n#\r\n# 目的：出力・完了判定・異常監視を出力ごとに配置\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n【Y1200】空コンテナ送り 戻",
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Empty_Container_CY_H_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 11,
+          "Var": "Out_CYw_Empty_Container_CY_H_Auto[2]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 12,
+          "Var": "Out_CYw_Empty_Container_CY_H_Auto[3]",
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 10,
+          "Not": true,
+          "Var": "TimerQ_In_Sen_Supply_Container_Exist",
+          "X": 3
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 15,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 4,
+          "Id": "a356d1a5-ba1b-4c3d-925c-3ab4000002e6"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Empty_Container_CY_H_Manual[1]",
+          "Y": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "ManualMode",
+          "X": 1,
+          "Y": 4
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 16,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 2,
+          "Y": 4,
+          "Id": "a356d1a5-ba1b-4c3d-925c-3ab4000002e9"
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "Output_Share_M[1]",
+          "Y": 5
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 4
+        },
+        {
+          "__type": "HL",
+          "X": 4,
+          "Y": 4
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 5
+        },
+        {
+          "__type": "HL",
+          "X": 2,
+          "Y": 5
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 5
+        },
+        {
+          "__type": "HL",
+          "X": 4,
+          "Y": 5
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "M9999",
+          "X": 5
+        },
+        {
+          "__type": "LD",
+          "Ix": 9,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 6
+        },
+        {
+          "__type": "LD",
+          "Ix": 22,
+          "Var": "ManualMode",
+          "X": 6,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 7,
+          "Not": true,
+          "Var": "Output_Share_Reset_TON[1].Q",
+          "X": 7
+        },
+        {
+          "__type": "LD",
+          "Ix": 8,
+          "Not": true,
+          "Var": "TimerQ_In_Sen_Supply_Container_Exist",
+          "X": 8
+        },
+        {
+          "__type": "ST",
+          "Ix": 13,
+          "Var": "Out_CYw_Empty_Container_CY_H",
+          "X": 9
+        },
+        {
+          "__type": "ST",
+          "Ix": 14,
+          "Var": "Output_Share_M[1]",
+          "X": 9,
+          "Y": 2
+        }
+      ],
+      "CMT": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【共通 コンテナ部｜シリンダ】\r\n#\r\n# 目的：出力・完了判定・異常監視を出力ごとに配置\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n【Y1200】空コンテナ送り 戻",
+      "LRI": 17,
+      "RRI": 18,
+      "VLs": [
+        {
+          "Ix": 19,
+          "X": 5
+        },
+        {
+          "Ix": 19,
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "Ix": 19,
+          "X": 5,
+          "Y": 2
+        },
+        {
+          "Ix": 19,
+          "X": 5,
+          "Y": 3
+        },
+        {
+          "Ix": 19,
+          "X": 5,
+          "Y": 4
+        },
+        {
+          "Ix": 20,
+          "X": 9
+        },
+        {
+          "Ix": 20,
+          "X": 9,
+          "Y": 1
+        },
+        {
+          "Ix": 21,
+          "X": 1
+        },
+        {
+          "Ix": 21,
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "Ix": 21,
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "Ix": 23,
+          "X": 6
+        },
+        {
+          "Ix": 24,
+          "X": 7
+        }
+      ]
+    }
+  },
+  {
+    "section": "Output_出力",
+    "row": 270,
+    "CMT": "異常監視（自動指令・到達待ち10秒）",
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Empty_Container_CY_H_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 13,
+          "Var": "Out_CYw_Empty_Container_CY_H_Auto[2]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 14,
+          "Var": "Out_CYw_Empty_Container_CY_H_Auto[3]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_Empty_Container_CY_H",
+          "X": 3
+        },
+        {
+          "__type": "FB",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "PT",
+              "Ix": 5,
+              "Type": "TIME",
+              "Var": "T#10s"
+            }
+          ],
+          "Ix": 4,
+          "Name": "TON",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "Q"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "ET",
+              "Ix": 6,
+              "Type": "TIME",
+              "Var": ""
+            }
+          ],
+          "X": 4,
+          "Var": "Output_Share_Error_TON[1]"
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 7,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 5,
+          "Id": "a356d1a5-ba1b-4c3d-925c-3ab400000417"
+        },
+        {
+          "__type": "ST",
+          "Ix": 8,
+          "S": true,
+          "Var": "Output_Share_Error_M[1]",
+          "X": 6
+        },
+        {
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "HMI_Message_Request[85]",
+          "X": 6,
+          "Y": 1
+        }
+      ],
+      "CMT": "異常監視（自動指令・到達待ち10秒）",
+      "LRI": 10,
+      "RRI": 11,
+      "VLs": [
+        {
+          "Ix": 12,
+          "X": 6
+        },
+        {
+          "Ix": 15,
+          "X": 1
+        },
+        {
+          "Ix": 15,
+          "X": 1,
+          "Y": 1
+        }
+      ]
+    }
+  },
+  {
+    "section": "Output_出力",
+    "row": 271,
+    "CMT": "【Y1201】空コンテナ送り 行",
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Empty_Container_CY_F_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 13,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 3,
+          "Id": "a356d1a5-ba1b-4c3d-925c-3ab4000005e2"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Empty_Container_CY_F_Manual[1]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "ManualMode",
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 14,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 2,
+          "Y": 2,
+          "Id": "a356d1a5-ba1b-4c3d-925c-3ab4000005e5"
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "Output_Share_M[2]",
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 2
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 2,
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "M9999",
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 10,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 5
+        },
+        {
+          "__type": "LD",
+          "Ix": 19,
+          "Var": "ManualMode",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 7,
+          "Not": true,
+          "Var": "Output_Share_Reset_TON[2].Q",
+          "X": 6
+        },
+        {
+          "__type": "LD",
+          "Ix": 9,
+          "Not": true,
+          "Var": "IAI_In_Sample_Busy_MOVE",
+          "X": 7
+        },
+        {
+          "__type": "LD",
+          "Ix": 8,
+          "Not": true,
+          "Var": "In_Sen_Container_Arrival",
+          "X": 8
+        },
+        {
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Out_CYw_Empty_Container_CY_F",
+          "X": 9
+        },
+        {
+          "__type": "ST",
+          "Ix": 12,
+          "Var": "Output_Share_M[2]",
+          "X": 9,
+          "Y": 2
+        }
+      ],
+      "CMT": "【Y1201】空コンテナ送り 行",
+      "LRI": 15,
+      "RRI": 16,
+      "VLs": [
+        {
+          "Ix": 17,
+          "X": 4
+        },
+        {
+          "Ix": 17,
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "Ix": 17,
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "Ix": 18,
+          "X": 9
+        },
+        {
+          "Ix": 18,
+          "X": 9,
+          "Y": 1
+        },
+        {
+          "Ix": 20,
+          "X": 5
+        },
+        {
+          "Ix": 21,
+          "X": 6
+        }
+      ]
+    }
+  },
+  {
+    "section": "Output_出力",
+    "row": 273,
+    "CMT": "異常監視（自動指令・到達待ち10秒）",
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Empty_Container_CY_F_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_Empty_Container_CY_F",
+          "X": 3
+        },
+        {
+          "__type": "FB",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "PT",
+              "Ix": 5,
+              "Type": "TIME",
+              "Var": "T#10s"
+            }
+          ],
+          "Ix": 4,
+          "Name": "TON",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "Q"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "ET",
+              "Ix": 6,
+              "Type": "TIME",
+              "Var": ""
+            }
+          ],
+          "X": 4,
+          "Var": "Output_Share_Error_TON[2]"
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 7,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 5,
+          "Id": "a356d1a5-ba1b-4c3d-925c-3ab400000713"
+        },
+        {
+          "__type": "ST",
+          "Ix": 8,
+          "S": true,
+          "Var": "Output_Share_Error_M[2]",
+          "X": 6
+        },
+        {
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "HMI_Message_Request[86]",
+          "X": 6,
+          "Y": 1
+        }
+      ],
+      "CMT": "異常監視（自動指令・到達待ち10秒）",
+      "LRI": 10,
+      "RRI": 11,
+      "VLs": [
+        {
+          "Ix": 12,
+          "X": 6
+        }
+      ]
+    }
+  },
+  {
+    "section": "Output_出力",
+    "row": 274,
+    "CMT": "【Y1202】段バラシ爪 戻",
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Sep_Claw_H_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 9,
+          "Var": "Out_CYw_Sep_Claw_H_Auto[2]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 12,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 3,
+          "Id": "a356d1a5-ba1b-4c3d-925c-3ab400001129"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Sep_Claw_H_Manual[1]",
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "ManualMode",
+          "X": 1,
+          "Y": 3
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 13,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 2,
+          "Y": 3,
+          "Id": "a356d1a5-ba1b-4c3d-925c-3ab40000112c"
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "Output_Share_M[3]",
+          "Y": 4
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 4
+        },
+        {
+          "__type": "HL",
+          "X": 2,
+          "Y": 4
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "M9999",
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 8,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 5
+        },
+        {
+          "__type": "LD",
+          "Ix": 19,
+          "Var": "ManualMode",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 7,
+          "Not": true,
+          "Var": "Output_Share_Reset_TON[3].Q",
+          "X": 6
+        },
+        {
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_Sep_Claw_H",
+          "X": 7
+        },
+        {
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Output_Share_M[3]",
+          "X": 7,
+          "Y": 2
+        }
+      ],
+      "CMT": "【Y1202】段バラシ爪 戻",
+      "LRI": 14,
+      "RRI": 15,
+      "VLs": [
+        {
+          "Ix": 16,
+          "X": 4
+        },
+        {
+          "Ix": 16,
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "Ix": 16,
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "Ix": 16,
+          "X": 4,
+          "Y": 3
+        },
+        {
+          "Ix": 17,
+          "X": 7
+        },
+        {
+          "Ix": 17,
+          "X": 7,
+          "Y": 1
+        },
+        {
+          "Ix": 18,
+          "X": 1
+        },
+        {
+          "Ix": 18,
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "Ix": 20,
+          "X": 5
+        },
+        {
+          "Ix": 21,
+          "X": 6
+        }
+      ]
+    }
+  },
+  {
+    "section": "Output_出力",
+    "row": 276,
+    "CMT": "異常監視（自動指令・到達待ち10秒）",
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Sep_Claw_H_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 20,
+          "Var": "Out_CYw_Sep_Claw_H_Auto[2]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_Sep_Claw1_H",
+          "X": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_Sep_Claw2_H",
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "TimerQ_In_SenCY_Sep_Claw1_H",
+          "X": 3,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_Sep_Claw2_H",
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 7,
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_Sep_Claw1_H",
+          "X": 3,
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 8,
+          "Var": "TimerQ_In_SenCY_Sep_Claw2_H",
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "__type": "FB",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "PT",
+              "Ix": 10,
+              "Type": "TIME",
+              "Var": "T#10s"
+            }
+          ],
+          "Ix": 9,
+          "Name": "TON",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "Q"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "ET",
+              "Ix": 11,
+              "Type": "TIME",
+              "Var": ""
+            }
+          ],
+          "X": 5,
+          "Var": "Output_Share_Error_TON[3]"
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 12,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 6,
+          "Id": "a356d1a5-ba1b-4c3d-925c-3ab40000125f"
+        },
+        {
+          "__type": "ST",
+          "Ix": 13,
+          "S": true,
+          "Var": "Output_Share_Error_M[3]",
+          "X": 7
+        },
+        {
+          "__type": "ST",
+          "Ix": 14,
+          "Var": "HMI_Message_Request[87]",
+          "X": 7,
+          "Y": 1
+        }
+      ],
+      "CMT": "異常監視（自動指令・到達待ち10秒）",
+      "LRI": 15,
+      "RRI": 16,
+      "VLs": [
+        {
+          "Ix": 17,
+          "X": 3
+        },
+        {
+          "Ix": 17,
+          "X": 3,
+          "Y": 1
+        },
+        {
+          "Ix": 18,
+          "X": 5
+        },
+        {
+          "Ix": 18,
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "Ix": 19,
+          "X": 7
+        },
+        {
+          "Ix": 21,
+          "X": 1
+        }
+      ]
+    }
+  },
+  {
+    "section": "Output_出力",
+    "row": 277,
+    "CMT": "【Y1203】段バラシ爪 行",
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 9,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[2]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 10,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[3]",
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 20,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[4]",
+          "Y": 4
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 13,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 3,
+          "Id": "a356d1a5-ba1b-4c3d-925c-3ab400001f48"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Sep_Claw_F_Manual[1]",
+          "Y": 5
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "ManualMode",
+          "X": 1,
+          "Y": 5
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 14,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 2,
+          "Y": 5,
+          "Id": "a356d1a5-ba1b-4c3d-925c-3ab400001f4b"
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "Output_Share_M[4]",
+          "Y": 6
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 5
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 6
+        },
+        {
+          "__type": "HL",
+          "X": 2,
+          "Y": 6
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 6
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "M9999",
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 8,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 5
+        },
+        {
+          "__type": "LD",
+          "Ix": 21,
+          "Var": "ManualMode",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 7,
+          "Not": true,
+          "Var": "Output_Share_Reset_TON[4].Q",
+          "X": 6
+        },
+        {
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Out_CYw_Sep_Claw_F",
+          "X": 7
+        },
+        {
+          "__type": "ST",
+          "Ix": 12,
+          "Var": "Output_Share_M[4]",
+          "X": 7,
+          "Y": 2
+        }
+      ],
+      "CMT": "【Y1203】段バラシ爪 行",
+      "LRI": 15,
+      "RRI": 16,
+      "VLs": [
+        {
+          "Ix": 17,
+          "X": 4
+        },
+        {
+          "Ix": 17,
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "Ix": 17,
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "Ix": 17,
+          "X": 4,
+          "Y": 3
+        },
+        {
+          "Ix": 17,
+          "X": 4,
+          "Y": 4
+        },
+        {
+          "Ix": 17,
+          "X": 4,
+          "Y": 5
+        },
+        {
+          "Ix": 18,
+          "X": 7
+        },
+        {
+          "Ix": 18,
+          "X": 7,
+          "Y": 1
+        },
+        {
+          "Ix": 19,
+          "X": 1
+        },
+        {
+          "Ix": 19,
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "Ix": 19,
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "Ix": 19,
+          "X": 1,
+          "Y": 3
+        },
+        {
+          "Ix": 22,
+          "X": 5
+        },
+        {
+          "Ix": 23,
+          "X": 6
+        }
+      ]
+    }
+  },
+  {
+    "section": "Output_出力",
+    "row": 279,
+    "CMT": "異常監視（自動指令・到達待ち10秒）",
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Sep_Claw_F_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 9,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[2]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 10,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[3]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 23,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[4]",
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_Sep_Claw1_F",
+          "X": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_Sep_Claw2_F",
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "TimerQ_In_SenCY_Sep_Claw1_F",
+          "X": 3,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_Sep_Claw2_F",
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 7,
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_Sep_Claw1_F",
+          "X": 3,
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 8,
+          "Var": "TimerQ_In_SenCY_Sep_Claw2_F",
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "__type": "FB",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "PT",
+              "Ix": 13,
+              "Type": "TIME",
+              "Var": "T#10s"
+            }
+          ],
+          "Ix": 15,
+          "Name": "TON",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "Q"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "ET",
+              "Ix": 14,
+              "Type": "TIME",
+              "Var": ""
+            }
+          ],
+          "X": 5,
+          "Var": "Output_Share_Error_TON[4]"
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 16,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 6,
+          "Id": "a356d1a5-ba1b-4c3d-925c-3ab400002093"
+        },
+        {
+          "__type": "ST",
+          "Ix": 11,
+          "S": true,
+          "Var": "Output_Share_Error_M[4]",
+          "X": 7
+        },
+        {
+          "__type": "ST",
+          "Ix": 12,
+          "Var": "HMI_Message_Request[88]",
+          "X": 7,
+          "Y": 1
+        }
+      ],
+      "CMT": "異常監視（自動指令・到達待ち10秒）",
+      "LRI": 17,
+      "RRI": 18,
+      "VLs": [
+        {
+          "Ix": 19,
+          "X": 3
+        },
+        {
+          "Ix": 19,
+          "X": 3,
+          "Y": 1
+        },
+        {
+          "Ix": 20,
+          "X": 5
+        },
+        {
+          "Ix": 20,
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "Ix": 21,
+          "X": 7
+        },
+        {
+          "Ix": 22,
+          "X": 1
+        },
+        {
+          "Ix": 22,
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "Ix": 22,
+          "X": 1,
+          "Y": 2
+        }
+      ]
+    }
+  }
+]

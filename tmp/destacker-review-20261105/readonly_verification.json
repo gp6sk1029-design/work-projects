@@ -1,0 +1,17 @@
+{
+  "internal_before": "4723059ede8d6b7dade0ad070ec3d7b7b579343630099e39a1ec597070179e85",
+  "internal_after": "4723059ede8d6b7dade0ad070ec3d7b7b579343630099e39a1ec597070179e85",
+  "internal_unchanged": true,
+  "external_before": "6361aef586c488d9c56729460cefcd37af8df7c08452798e3801152eb0716e02",
+  "external_after": "6361aef586c488d9c56729460cefcd37af8df7c08452798e3801152eb0716e02",
+  "external_unchanged": true,
+  "comparison": {
+    "source_sha256": "4723059ede8d6b7dade0ad070ec3d7b7b579343630099e39a1ec597070179e85",
+    "target_sha256": "6361aef586c488d9c56729460cefcd37af8df7c08452798e3801152eb0716e02",
+    "sections": [],
+    "control_difference": false,
+    "variable_declarations_equal": true,
+    "comment_rows": 0
+  },
+  "internal_destacker_unchanged": true
+}

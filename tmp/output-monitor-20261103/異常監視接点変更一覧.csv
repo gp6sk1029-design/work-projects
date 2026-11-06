@@ -1,0 +1,24 @@
+﻿駆動行,異常監視行,出力区分,出力番号,修正前Auto,修正後Auto,追加接点,変数修正
+16,18,A,1,['Out_CYw_Sply_Slide_A_H_Auto[1]'],"['Out_CYw_Sply_Slide_A_H_Auto[1]', 'Out_CYw_Sply_Slide_A_H_Auto[2]']",['Out_CYw_Sply_Slide_A_H_Auto[2]'],[]
+22,24,A,3,['Out_CYw_Sply_Pick_A_H_Auto[1]'],"['Out_CYw_Sply_Pick_A_H_Auto[1]', 'Out_CYw_Sply_Pick_A_H_Auto[2]', 'Out_CYw_Sply_Pick_A_H_Auto[3]']","['Out_CYw_Sply_Pick_A_H_Auto[2]', 'Out_CYw_Sply_Pick_A_H_Auto[3]']",[]
+25,27,A,4,['Out_CYw_Sply_Pick_A_F_Auto[1]'],"['Out_CYw_Sply_Pick_A_F_Auto[1]', 'Out_CYw_Sply_Pick_A_F_Auto[2]']",['Out_CYw_Sply_Pick_A_F_Auto[2]'],[]
+64,66,A,11,['Out_CYw_HgtInsp_Lf_A_H_Auto[1]'],"['Out_CYw_NG1_Pick_A_H_Auto[1]', 'Out_CYw_NG1_Pick_A_H_Auto[2]']",['Out_CYw_NG1_Pick_A_H_Auto[2]'],"[('Out_CYw_HgtInsp_Lf_A_H_Auto[1]', 'Out_CYw_NG1_Pick_A_H_Auto[1]')]"
+70,72,A,13,['Out_CYw_NG1_Chk_A_H_Auto[1]'],"['Out_CYw_NG1_Chk_A_H_Auto[1]', 'Out_CYw_NG1_Chk_A_H_Auto[2]']",['Out_CYw_NG1_Chk_A_H_Auto[2]'],[]
+82,84,A,17,['Out_CYw_Rev_01_Pick_A_H_Auto[1]'],"['Out_CYw_Rev_01_Pick_A_H_Auto[1]', 'Out_CYw_Rev_01_Pick_A_H_Auto[2]']",['Out_CYw_Rev_01_Pick_A_H_Auto[2]'],[]
+85,87,A,18,['Out_CYw_Rev_01_Pick_A_F_Auto[1]'],"['Out_CYw_Rev_01_Pick_A_F_Auto[1]', 'Out_CYw_Rev_01_Pick_A_F_Auto[2]']",['Out_CYw_Rev_01_Pick_A_F_Auto[2]'],[]
+94,96,A,21,['Out_CYw_Rev_02_Pick_A_H_Auto[1]'],"['Out_CYw_Rev_02_Pick_A_H_Auto[1]', 'Out_CYw_Rev_02_Pick_A_H_Auto[2]']",['Out_CYw_Rev_02_Pick_A_H_Auto[2]'],[]
+97,99,A,22,['Out_CYw_Rev_02_Pick_A_F_Auto[1]'],"['Out_CYw_Rev_02_Pick_A_F_Auto[1]', 'Out_CYw_Rev_02_Pick_A_F_Auto[2]']",['Out_CYw_Rev_02_Pick_A_F_Auto[2]'],[]
+100,102,A,23,['Out_CYw_Disc_Chk_A_H_Auto[1]'],"['Out_CYw_Disc_Chk_A_H_Auto[1]', 'Out_CYw_Disc_Chk_A_H_Auto[2]']",['Out_CYw_Disc_Chk_A_H_Auto[2]'],[]
+106,108,A,25,['Out_CYw_Ejc_Hldr_Feed_A_H_Auto[1]'],"['Out_CYw_Ejc_Hldr_Feed_A_H_Auto[1]', 'Out_CYw_Ejc_Hldr_Feed_A_H_Auto[2]']",['Out_CYw_Ejc_Hldr_Feed_A_H_Auto[2]'],[]
+112,114,A,27,['Out_CYS_Pos_01_Stopper_A_H_Auto[1]'],"['Out_CYS_Pos_01_Stopper_A_H_Auto[1]', 'Out_CYS_Pos_01_Stopper_A_H_Auto[2]']",['Out_CYS_Pos_01_Stopper_A_H_Auto[2]'],[]
+118,120,A,29,['Out_CYS_Pos_02_Stopper_A_H_Auto[1]'],"['Out_CYS_Pos_02_Stopper_A_H_Auto[1]', 'Out_CYS_Pos_02_Stopper_A_H_Auto[2]']",['Out_CYS_Pos_02_Stopper_A_H_Auto[2]'],[]
+121,123,A,30,['Out_CYS_Pos_02_Stopper_A_H_Auto[1]'],['Out_CYS_Pos_02_Stopper_A_F_Auto[1]'],[],"[('Out_CYS_Pos_02_Stopper_A_H_Auto[1]', 'Out_CYS_Pos_02_Stopper_A_F_Auto[1]')]"
+124,126,A,31,['Out_CYS_Pos_03_Stopper_A_H_Auto[1]'],"['Out_CYS_Pos_03_Stopper_A_H_Auto[1]', 'Out_CYS_Pos_03_Stopper_A_H_Auto[2]']",['Out_CYS_Pos_03_Stopper_A_H_Auto[2]'],[]
+130,132,A,33,['Out_CYS_Pos_04_Stopper_A_H_Auto[1]'],"['Out_CYS_Pos_04_Stopper_A_H_Auto[1]', 'Out_CYS_Pos_04_Stopper_A_H_Auto[2]']",['Out_CYS_Pos_04_Stopper_A_H_Auto[2]'],[]
+136,138,A,35,['Out_CYS_Pos_05_Stopper_A_H_Auto[1]'],"['Out_CYS_Pos_05_Stopper_A_H_Auto[1]', 'Out_CYS_Pos_05_Stopper_A_H_Auto[2]']",['Out_CYS_Pos_05_Stopper_A_H_Auto[2]'],[]
+142,144,A,37,['Out_CYS_Pos_06_Stopper_A_H_Auto[1]'],"['Out_CYS_Pos_06_Stopper_A_H_Auto[1]', 'Out_CYS_Pos_06_Stopper_A_H_Auto[2]']",['Out_CYS_Pos_06_Stopper_A_H_Auto[2]'],[]
+154,156,A,41,['Out_CYw_NG1_Srt_A_H_Auto[1]'],"['Out_CYw_NG1_Srt_A_H_Auto[1]', 'Out_CYw_NG1_Srt_A_H_Auto[2]']",['Out_CYw_NG1_Srt_A_H_Auto[2]'],[]
+172,174,B,11,['Out_CYw_HgtInsp_Lf_B_H_Auto[1]'],['Out_CYw_NG1_Pick_B_H_Auto[1]'],[],"[('Out_CYw_HgtInsp_Lf_B_H_Auto[1]', 'Out_CYw_NG1_Pick_B_H_Auto[1]')]"
+229,231,B,30,['Out_CYS_Pos_02_Stopper_B_H_Auto[1]'],['Out_CYS_Pos_02_Stopper_B_F_Auto[1]'],[],"[('Out_CYS_Pos_02_Stopper_B_H_Auto[1]', 'Out_CYS_Pos_02_Stopper_B_F_Auto[1]')]"
+268,270,Share,1,['Out_CYw_Empty_Container_CY_H_Auto[1]'],"['Out_CYw_Empty_Container_CY_H_Auto[1]', 'Out_CYw_Empty_Container_CY_H_Auto[2]', 'Out_CYw_Empty_Container_CY_H_Auto[3]']","['Out_CYw_Empty_Container_CY_H_Auto[2]', 'Out_CYw_Empty_Container_CY_H_Auto[3]']",[]
+283,285,Share,6,['Out_CYw_Ejc_Cont_F_Auto[1]'],"['Out_CYw_Ejc_Cont_F_Auto[1]', 'Out_CYw_Ejc_Cont_F_Auto[2]']",['Out_CYw_Ejc_Cont_F_Auto[2]'],[]

@@ -1,0 +1,35 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261104D.smc2",
+  "output": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261104D.smc2",
+  "backup": "C:\\Users\\SEIGI-N13\\work-projects\\outputs\\box-y-row28-20261104\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261104D_Y軸行分離前.smc2",
+  "staged": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\box-y-row28-20261104\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261104D.smc2",
+  "source_sha256": "e159b3841a58b973b3ae01fc6cf68e8c95ee26da9ce97ed86b817f22ef39ec3b",
+  "output_sha256": "896b930eff9d267e35802467226221434e53ed9cc06d1c0172ab41ceeeb4c6e0",
+  "target": "ae62d256-5da6-4995-b63e-7a135575a042/6061835d-1e51-4e92-be1f-d546f44764e3.xml",
+  "changed_parts": [
+    "ae62d256-5da6-4995-b63e-7a135575a042/6061835d-1e51-4e92-be1f-d546f44764e3.xml"
+  ],
+  "preserved_parts": 209,
+  "new_row": 28,
+  "old_row_count": 28,
+  "new_row_count": 29,
+  "new_IST_ID": "e8710a85-d851-48db-945c-b618466fa2d1",
+  "native_validation": {
+    "box_section": "TOTAL=29 PARSE_FAIL=0 MODEL_FAIL=0",
+    "row28_IST_input_edges": 1,
+    "application_build_verified": false
+  },
+  "published": true,
+  "full_Sysmac_build": "未実施",
+  "independent_verification": {
+    "other_parts_identical": 209,
+    "original_ST_text_preserved": true,
+    "Y_calculation_occurrences": 1,
+    "X_row": 27,
+    "Y_row": 28,
+    "same_scan_gate_cases": 16,
+    "variable_tables_unchanged": true,
+    "D_overwritten": true,
+    "backup_verified": true
+  }
+}

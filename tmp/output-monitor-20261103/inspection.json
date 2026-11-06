@@ -1,0 +1,1601 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261103D.smc2",
+  "sha256": "75201e9ff85577f0b2e60ea9e568a3d822815747f35be401d810a0affe41089c",
+  "part": "7c15e655-c2eb-4a0d-a923-d08fae0d8a43/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml",
+  "parts": 210,
+  "rows": 316,
+  "pairs": [
+    {
+      "group": "A",
+      "index": 1,
+      "drive_row": 16,
+      "monitor_row": 18,
+      "expected": [
+        "Out_CYw_Sply_Slide_A_H_Auto[1]",
+        "Out_CYw_Sply_Slide_A_H_Auto[2]"
+      ],
+      "existing": [
+        "Out_CYw_Sply_Slide_A_H_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYw_Sply_Slide_A_H_Auto[2]"
+      ],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 2,
+      "drive_row": 19,
+      "monitor_row": 21,
+      "expected": [
+        "Out_CYw_Sply_Slide_A_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Sply_Slide_A_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 3,
+      "drive_row": 22,
+      "monitor_row": 24,
+      "expected": [
+        "Out_CYw_Sply_Pick_A_H_Auto[1]",
+        "Out_CYw_Sply_Pick_A_H_Auto[2]",
+        "Out_CYw_Sply_Pick_A_H_Auto[3]"
+      ],
+      "existing": [
+        "Out_CYw_Sply_Pick_A_H_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYw_Sply_Pick_A_H_Auto[2]",
+        "Out_CYw_Sply_Pick_A_H_Auto[3]"
+      ],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 4,
+      "drive_row": 25,
+      "monitor_row": 27,
+      "expected": [
+        "Out_CYw_Sply_Pick_A_F_Auto[1]",
+        "Out_CYw_Sply_Pick_A_F_Auto[2]"
+      ],
+      "existing": [
+        "Out_CYw_Sply_Pick_A_F_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYw_Sply_Pick_A_F_Auto[2]"
+      ],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 5,
+      "drive_row": 28,
+      "monitor_row": 30,
+      "expected": [
+        "Out_CYw_Sup_Chuck_A_Cl_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Sup_Chuck_A_Cl_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 6,
+      "drive_row": 31,
+      "monitor_row": 33,
+      "expected": [
+        "Out_CYw_Sup_Chuck_A_Cl_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Sup_Chuck_A_Cl_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 1,
+      "drive_row": 34,
+      "monitor_row": 36,
+      "expected": [
+        "Out_CYw_Sply_Slide_B_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Sply_Slide_B_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 2,
+      "drive_row": 37,
+      "monitor_row": 39,
+      "expected": [
+        "Out_CYw_Sply_Slide_B_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Sply_Slide_B_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 3,
+      "drive_row": 40,
+      "monitor_row": 42,
+      "expected": [
+        "Out_CYw_Sply_Pick_B_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Sply_Pick_B_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 4,
+      "drive_row": 43,
+      "monitor_row": 45,
+      "expected": [
+        "Out_CYw_Sply_Pick_B_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Sply_Pick_B_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 5,
+      "drive_row": 46,
+      "monitor_row": 48,
+      "expected": [
+        "Out_CYw_Sup_Chuck_B_Cl_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Sup_Chuck_B_Cl_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 6,
+      "drive_row": 49,
+      "monitor_row": 51,
+      "expected": [
+        "Out_CYw_Sup_Chuck_B_Cl_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Sup_Chuck_B_Cl_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 7,
+      "drive_row": 52,
+      "monitor_row": 54,
+      "expected": [
+        "Out_CYw_HgtInsp_Clp_A_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_HgtInsp_Clp_A_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 8,
+      "drive_row": 55,
+      "monitor_row": 57,
+      "expected": [
+        "Out_CYw_HgtInsp_Clp_A_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_HgtInsp_Clp_A_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 9,
+      "drive_row": 58,
+      "monitor_row": 60,
+      "expected": [
+        "Out_CYw_HgtInsp_Lf_A_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_HgtInsp_Lf_A_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 10,
+      "drive_row": 61,
+      "monitor_row": 63,
+      "expected": [
+        "Out_CYw_HgtInsp_Lf_A_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_HgtInsp_Lf_A_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 11,
+      "drive_row": 64,
+      "monitor_row": 66,
+      "expected": [
+        "Out_CYw_NG1_Pick_A_H_Auto[1]",
+        "Out_CYw_NG1_Pick_A_H_Auto[2]"
+      ],
+      "existing": [
+        "Out_CYw_HgtInsp_Lf_A_H_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYw_NG1_Pick_A_H_Auto[1]",
+        "Out_CYw_NG1_Pick_A_H_Auto[2]"
+      ],
+      "extra": [
+        "Out_CYw_HgtInsp_Lf_A_H_Auto[1]"
+      ],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 12,
+      "drive_row": 67,
+      "monitor_row": 69,
+      "expected": [
+        "Out_CYw_NG1_Pick_A_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_NG1_Pick_A_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 13,
+      "drive_row": 70,
+      "monitor_row": 72,
+      "expected": [
+        "Out_CYw_NG1_Chk_A_H_Auto[1]",
+        "Out_CYw_NG1_Chk_A_H_Auto[2]"
+      ],
+      "existing": [
+        "Out_CYw_NG1_Chk_A_H_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYw_NG1_Chk_A_H_Auto[2]"
+      ],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 14,
+      "drive_row": 73,
+      "monitor_row": 75,
+      "expected": [
+        "Out_CYw_NG1_Chk_A_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_NG1_Chk_A_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 15,
+      "drive_row": 76,
+      "monitor_row": 78,
+      "expected": [
+        "Out_CYw_Rev_01_Chk_A_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Rev_01_Chk_A_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 16,
+      "drive_row": 79,
+      "monitor_row": 81,
+      "expected": [
+        "Out_CYw_Rev_01_Chk_A_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Rev_01_Chk_A_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 17,
+      "drive_row": 82,
+      "monitor_row": 84,
+      "expected": [
+        "Out_CYw_Rev_01_Pick_A_H_Auto[1]",
+        "Out_CYw_Rev_01_Pick_A_H_Auto[2]"
+      ],
+      "existing": [
+        "Out_CYw_Rev_01_Pick_A_H_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYw_Rev_01_Pick_A_H_Auto[2]"
+      ],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 18,
+      "drive_row": 85,
+      "monitor_row": 87,
+      "expected": [
+        "Out_CYw_Rev_01_Pick_A_F_Auto[1]",
+        "Out_CYw_Rev_01_Pick_A_F_Auto[2]"
+      ],
+      "existing": [
+        "Out_CYw_Rev_01_Pick_A_F_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYw_Rev_01_Pick_A_F_Auto[2]"
+      ],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 19,
+      "drive_row": 88,
+      "monitor_row": 90,
+      "expected": [
+        "Out_CYw_Rev_02_Chk_A_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Rev_02_Chk_A_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 20,
+      "drive_row": 91,
+      "monitor_row": 93,
+      "expected": [
+        "Out_CYw_Rev_02_Chk_A_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Rev_02_Chk_A_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 21,
+      "drive_row": 94,
+      "monitor_row": 96,
+      "expected": [
+        "Out_CYw_Rev_02_Pick_A_H_Auto[1]",
+        "Out_CYw_Rev_02_Pick_A_H_Auto[2]"
+      ],
+      "existing": [
+        "Out_CYw_Rev_02_Pick_A_H_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYw_Rev_02_Pick_A_H_Auto[2]"
+      ],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 22,
+      "drive_row": 97,
+      "monitor_row": 99,
+      "expected": [
+        "Out_CYw_Rev_02_Pick_A_F_Auto[1]",
+        "Out_CYw_Rev_02_Pick_A_F_Auto[2]"
+      ],
+      "existing": [
+        "Out_CYw_Rev_02_Pick_A_F_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYw_Rev_02_Pick_A_F_Auto[2]"
+      ],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 23,
+      "drive_row": 100,
+      "monitor_row": 102,
+      "expected": [
+        "Out_CYw_Disc_Chk_A_H_Auto[1]",
+        "Out_CYw_Disc_Chk_A_H_Auto[2]"
+      ],
+      "existing": [
+        "Out_CYw_Disc_Chk_A_H_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYw_Disc_Chk_A_H_Auto[2]"
+      ],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 24,
+      "drive_row": 103,
+      "monitor_row": 105,
+      "expected": [
+        "Out_CYw_Disc_Chk_A_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Disc_Chk_A_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 25,
+      "drive_row": 106,
+      "monitor_row": 108,
+      "expected": [
+        "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[1]",
+        "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[2]"
+      ],
+      "existing": [
+        "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[2]"
+      ],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 26,
+      "drive_row": 109,
+      "monitor_row": 111,
+      "expected": [
+        "Out_CYw_Ejc_Hldr_Feed_A_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Ejc_Hldr_Feed_A_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 27,
+      "drive_row": 112,
+      "monitor_row": 114,
+      "expected": [
+        "Out_CYS_Pos_01_Stopper_A_H_Auto[1]",
+        "Out_CYS_Pos_01_Stopper_A_H_Auto[2]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_01_Stopper_A_H_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYS_Pos_01_Stopper_A_H_Auto[2]"
+      ],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 28,
+      "drive_row": 115,
+      "monitor_row": 117,
+      "expected": [
+        "Out_CYS_Pos_01_Stopper_A_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_01_Stopper_A_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 29,
+      "drive_row": 118,
+      "monitor_row": 120,
+      "expected": [
+        "Out_CYS_Pos_02_Stopper_A_H_Auto[1]",
+        "Out_CYS_Pos_02_Stopper_A_H_Auto[2]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_02_Stopper_A_H_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYS_Pos_02_Stopper_A_H_Auto[2]"
+      ],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 30,
+      "drive_row": 121,
+      "monitor_row": 123,
+      "expected": [
+        "Out_CYS_Pos_02_Stopper_A_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_02_Stopper_A_H_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYS_Pos_02_Stopper_A_F_Auto[1]"
+      ],
+      "extra": [
+        "Out_CYS_Pos_02_Stopper_A_H_Auto[1]"
+      ],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 31,
+      "drive_row": 124,
+      "monitor_row": 126,
+      "expected": [
+        "Out_CYS_Pos_03_Stopper_A_H_Auto[1]",
+        "Out_CYS_Pos_03_Stopper_A_H_Auto[2]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_03_Stopper_A_H_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYS_Pos_03_Stopper_A_H_Auto[2]"
+      ],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 32,
+      "drive_row": 127,
+      "monitor_row": 129,
+      "expected": [
+        "Out_CYS_Pos_03_Stopper_A_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_03_Stopper_A_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 33,
+      "drive_row": 130,
+      "monitor_row": 132,
+      "expected": [
+        "Out_CYS_Pos_04_Stopper_A_H_Auto[1]",
+        "Out_CYS_Pos_04_Stopper_A_H_Auto[2]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_04_Stopper_A_H_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYS_Pos_04_Stopper_A_H_Auto[2]"
+      ],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 34,
+      "drive_row": 133,
+      "monitor_row": 135,
+      "expected": [
+        "Out_CYS_Pos_04_Stopper_A_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_04_Stopper_A_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 35,
+      "drive_row": 136,
+      "monitor_row": 138,
+      "expected": [
+        "Out_CYS_Pos_05_Stopper_A_H_Auto[1]",
+        "Out_CYS_Pos_05_Stopper_A_H_Auto[2]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_05_Stopper_A_H_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYS_Pos_05_Stopper_A_H_Auto[2]"
+      ],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 36,
+      "drive_row": 139,
+      "monitor_row": 141,
+      "expected": [
+        "Out_CYS_Pos_05_Stopper_A_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_05_Stopper_A_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 37,
+      "drive_row": 142,
+      "monitor_row": 144,
+      "expected": [
+        "Out_CYS_Pos_06_Stopper_A_H_Auto[1]",
+        "Out_CYS_Pos_06_Stopper_A_H_Auto[2]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_06_Stopper_A_H_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYS_Pos_06_Stopper_A_H_Auto[2]"
+      ],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 38,
+      "drive_row": 145,
+      "monitor_row": 147,
+      "expected": [
+        "Out_CYS_Pos_06_Stopper_A_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_06_Stopper_A_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 39,
+      "drive_row": 148,
+      "monitor_row": 150,
+      "expected": [
+        "Out_CYw_SH_A_Turn_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_SH_A_Turn_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 40,
+      "drive_row": 151,
+      "monitor_row": 153,
+      "expected": [
+        "Out_CYw_SH_A_Turn_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_SH_A_Turn_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 41,
+      "drive_row": 154,
+      "monitor_row": 156,
+      "expected": [
+        "Out_CYw_NG1_Srt_A_H_Auto[1]",
+        "Out_CYw_NG1_Srt_A_H_Auto[2]"
+      ],
+      "existing": [
+        "Out_CYw_NG1_Srt_A_H_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYw_NG1_Srt_A_H_Auto[2]"
+      ],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 42,
+      "drive_row": 157,
+      "monitor_row": 159,
+      "expected": [
+        "Out_CYw_NG1_Srt_A_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_NG1_Srt_A_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 7,
+      "drive_row": 160,
+      "monitor_row": 162,
+      "expected": [
+        "Out_CYw_HgtInsp_Clp_B_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_HgtInsp_Clp_B_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 8,
+      "drive_row": 163,
+      "monitor_row": 165,
+      "expected": [
+        "Out_CYw_HgtInsp_Clp_B_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_HgtInsp_Clp_B_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 9,
+      "drive_row": 166,
+      "monitor_row": 168,
+      "expected": [
+        "Out_CYw_HgtInsp_Lf_B_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_HgtInsp_Lf_B_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 10,
+      "drive_row": 169,
+      "monitor_row": 171,
+      "expected": [
+        "Out_CYw_HgtInsp_Lf_B_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_HgtInsp_Lf_B_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 11,
+      "drive_row": 172,
+      "monitor_row": 174,
+      "expected": [
+        "Out_CYw_NG1_Pick_B_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_HgtInsp_Lf_B_H_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYw_NG1_Pick_B_H_Auto[1]"
+      ],
+      "extra": [
+        "Out_CYw_HgtInsp_Lf_B_H_Auto[1]"
+      ],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 12,
+      "drive_row": 175,
+      "monitor_row": 177,
+      "expected": [
+        "Out_CYw_NG1_Pick_B_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_NG1_Pick_B_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 13,
+      "drive_row": 178,
+      "monitor_row": 180,
+      "expected": [
+        "Out_CYw_NG1_Chk_B_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_NG1_Chk_B_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 14,
+      "drive_row": 181,
+      "monitor_row": 183,
+      "expected": [
+        "Out_CYw_NG1_Chk_B_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_NG1_Chk_B_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 15,
+      "drive_row": 184,
+      "monitor_row": 186,
+      "expected": [
+        "Out_CYw_Rev_01_Chk_B_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Rev_01_Chk_B_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 16,
+      "drive_row": 187,
+      "monitor_row": 189,
+      "expected": [
+        "Out_CYw_Rev_01_Chk_B_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Rev_01_Chk_B_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 17,
+      "drive_row": 190,
+      "monitor_row": 192,
+      "expected": [
+        "Out_CYw_Rev_01_Pick_B_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Rev_01_Pick_B_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 18,
+      "drive_row": 193,
+      "monitor_row": 195,
+      "expected": [
+        "Out_CYw_Rev_01_Pick_B_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Rev_01_Pick_B_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 19,
+      "drive_row": 196,
+      "monitor_row": 198,
+      "expected": [
+        "Out_CYw_Rev_02_Chk_B_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Rev_02_Chk_B_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 20,
+      "drive_row": 199,
+      "monitor_row": 201,
+      "expected": [
+        "Out_CYw_Rev_02_Chk_B_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Rev_02_Chk_B_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 21,
+      "drive_row": 202,
+      "monitor_row": 204,
+      "expected": [
+        "Out_CYw_Rev_02_Pick_B_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Rev_02_Pick_B_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 22,
+      "drive_row": 205,
+      "monitor_row": 207,
+      "expected": [
+        "Out_CYw_Rev_02_Pick_B_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Rev_02_Pick_B_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 23,
+      "drive_row": 208,
+      "monitor_row": 210,
+      "expected": [
+        "Out_CYw_Disc_Chk_B_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Disc_Chk_B_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 24,
+      "drive_row": 211,
+      "monitor_row": 213,
+      "expected": [
+        "Out_CYw_Disc_Chk_B_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Disc_Chk_B_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 25,
+      "drive_row": 214,
+      "monitor_row": 216,
+      "expected": [
+        "Out_CYw_Ejc_Hldr_Feed_B_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Ejc_Hldr_Feed_B_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 26,
+      "drive_row": 217,
+      "monitor_row": 219,
+      "expected": [
+        "Out_CYw_Ejc_Hldr_Feed_B_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Ejc_Hldr_Feed_B_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 27,
+      "drive_row": 220,
+      "monitor_row": 222,
+      "expected": [
+        "Out_CYS_Pos_01_Stopper_B_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_01_Stopper_B_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 28,
+      "drive_row": 223,
+      "monitor_row": 225,
+      "expected": [
+        "Out_CYS_Pos_01_Stopper_B_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_01_Stopper_B_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 29,
+      "drive_row": 226,
+      "monitor_row": 228,
+      "expected": [
+        "Out_CYS_Pos_02_Stopper_B_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_02_Stopper_B_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 30,
+      "drive_row": 229,
+      "monitor_row": 231,
+      "expected": [
+        "Out_CYS_Pos_02_Stopper_B_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_02_Stopper_B_H_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYS_Pos_02_Stopper_B_F_Auto[1]"
+      ],
+      "extra": [
+        "Out_CYS_Pos_02_Stopper_B_H_Auto[1]"
+      ],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 31,
+      "drive_row": 232,
+      "monitor_row": 234,
+      "expected": [
+        "Out_CYS_Pos_03_Stopper_B_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_03_Stopper_B_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 32,
+      "drive_row": 235,
+      "monitor_row": 237,
+      "expected": [
+        "Out_CYS_Pos_03_Stopper_B_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_03_Stopper_B_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 33,
+      "drive_row": 238,
+      "monitor_row": 240,
+      "expected": [
+        "Out_CYS_Pos_04_Stopper_B_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_04_Stopper_B_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 34,
+      "drive_row": 241,
+      "monitor_row": 243,
+      "expected": [
+        "Out_CYS_Pos_04_Stopper_B_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_04_Stopper_B_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 35,
+      "drive_row": 244,
+      "monitor_row": 246,
+      "expected": [
+        "Out_CYS_Pos_05_Stopper_B_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_05_Stopper_B_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 36,
+      "drive_row": 247,
+      "monitor_row": 249,
+      "expected": [
+        "Out_CYS_Pos_05_Stopper_B_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_05_Stopper_B_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 37,
+      "drive_row": 250,
+      "monitor_row": 252,
+      "expected": [
+        "Out_CYS_Pos_06_Stopper_B_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_06_Stopper_B_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 38,
+      "drive_row": 253,
+      "monitor_row": 255,
+      "expected": [
+        "Out_CYS_Pos_06_Stopper_B_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYS_Pos_06_Stopper_B_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 39,
+      "drive_row": 256,
+      "monitor_row": 258,
+      "expected": [
+        "Out_CYw_SH_B_Turn_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_SH_B_Turn_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 40,
+      "drive_row": 259,
+      "monitor_row": 261,
+      "expected": [
+        "Out_CYw_SH_B_Turn_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_SH_B_Turn_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 41,
+      "drive_row": 262,
+      "monitor_row": 264,
+      "expected": [
+        "Out_CYw_NG1_Srt_B_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_NG1_Srt_B_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 42,
+      "drive_row": 265,
+      "monitor_row": 267,
+      "expected": [
+        "Out_CYw_NG1_Srt_B_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_NG1_Srt_B_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "Share",
+      "index": 1,
+      "drive_row": 268,
+      "monitor_row": 270,
+      "expected": [
+        "Out_CYw_Empty_Container_CY_H_Auto[1]",
+        "Out_CYw_Empty_Container_CY_H_Auto[2]",
+        "Out_CYw_Empty_Container_CY_H_Auto[3]"
+      ],
+      "existing": [
+        "Out_CYw_Empty_Container_CY_H_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYw_Empty_Container_CY_H_Auto[2]",
+        "Out_CYw_Empty_Container_CY_H_Auto[3]"
+      ],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "Share",
+      "index": 2,
+      "drive_row": 271,
+      "monitor_row": 273,
+      "expected": [
+        "Out_CYw_Empty_Container_CY_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Empty_Container_CY_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "Share",
+      "index": 3,
+      "drive_row": 274,
+      "monitor_row": 276,
+      "expected": [
+        "Out_CYw_Sep_Claw_H_Auto[1]",
+        "Out_CYw_Sep_Claw_H_Auto[2]"
+      ],
+      "existing": [
+        "Out_CYw_Sep_Claw_H_Auto[1]",
+        "Out_CYw_Sep_Claw_H_Auto[2]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "Share",
+      "index": 4,
+      "drive_row": 277,
+      "monitor_row": 279,
+      "expected": [
+        "Out_CYw_Sep_Claw_F_Auto[1]",
+        "Out_CYw_Sep_Claw_F_Auto[2]",
+        "Out_CYw_Sep_Claw_F_Auto[3]",
+        "Out_CYw_Sep_Claw_F_Auto[4]"
+      ],
+      "existing": [
+        "Out_CYw_Sep_Claw_F_Auto[1]",
+        "Out_CYw_Sep_Claw_F_Auto[2]",
+        "Out_CYw_Sep_Claw_F_Auto[3]",
+        "Out_CYw_Sep_Claw_F_Auto[4]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "Share",
+      "index": 5,
+      "drive_row": 280,
+      "monitor_row": 282,
+      "expected": [
+        "Out_CYw_Ejc_Cont_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Ejc_Cont_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "Share",
+      "index": 6,
+      "drive_row": 283,
+      "monitor_row": 285,
+      "expected": [
+        "Out_CYw_Ejc_Cont_F_Auto[1]",
+        "Out_CYw_Ejc_Cont_F_Auto[2]"
+      ],
+      "existing": [
+        "Out_CYw_Ejc_Cont_F_Auto[1]"
+      ],
+      "missing": [
+        "Out_CYw_Ejc_Cont_F_Auto[2]"
+      ],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "Share",
+      "index": 7,
+      "drive_row": 286,
+      "monitor_row": 288,
+      "expected": [
+        "Out_CYw_Box_Chuck_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Box_Chuck_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "Share",
+      "index": 8,
+      "drive_row": 289,
+      "monitor_row": 291,
+      "expected": [
+        "Out_CYw_Box_Chuck_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Box_Chuck_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "Share",
+      "index": 9,
+      "drive_row": 292,
+      "monitor_row": 294,
+      "expected": [
+        "Out_CYw_Srt_Stopper_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Srt_Stopper_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "Share",
+      "index": 10,
+      "drive_row": 295,
+      "monitor_row": 297,
+      "expected": [
+        "Out_CYw_Srt_Stopper_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Srt_Stopper_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "Share",
+      "index": 11,
+      "drive_row": 298,
+      "monitor_row": 300,
+      "expected": [
+        "Out_CYw_Srt_Feed_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Srt_Feed_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "Share",
+      "index": 12,
+      "drive_row": 301,
+      "monitor_row": 303,
+      "expected": [
+        "Out_CYw_Srt_Feed_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Srt_Feed_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 43,
+      "drive_row": 304,
+      "monitor_row": 306,
+      "expected": [
+        "Out_CYw_Hnd_Feed_A_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Hnd_Feed_A_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "A",
+      "index": 44,
+      "drive_row": 307,
+      "monitor_row": 309,
+      "expected": [
+        "Out_CYw_Hnd_Feed_A_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Hnd_Feed_A_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 43,
+      "drive_row": 310,
+      "monitor_row": 312,
+      "expected": [
+        "Out_CYw_Hnd_Feed_B_H_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Hnd_Feed_B_H_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "group": "B",
+      "index": 44,
+      "drive_row": 313,
+      "monitor_row": 315,
+      "expected": [
+        "Out_CYw_Hnd_Feed_B_F_Auto[1]"
+      ],
+      "existing": [
+        "Out_CYw_Hnd_Feed_B_F_Auto[1]"
+      ],
+      "missing": [],
+      "extra": [],
+      "monitor_comment": "異常監視（自動指令・到達待ち10秒）"
+    }
+  ],
+  "pair_count": 100,
+  "missing_rows": 23,
+  "missing_contacts": 26,
+  "already_matching": 77,
+  "extra_contacts": 4
+}

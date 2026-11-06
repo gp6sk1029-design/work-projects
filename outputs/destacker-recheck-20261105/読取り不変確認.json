@@ -1,0 +1,45 @@
+{
+  "internal_before": "194b1addd23f6d2222a47947d43cb82e3d09c190f184a739a0d23a7f87b79d49",
+  "internal_after": "194b1addd23f6d2222a47947d43cb82e3d09c190f184a739a0d23a7f87b79d49",
+  "internal_unchanged": true,
+  "external_before": "6361aef586c488d9c56729460cefcd37af8df7c08452798e3801152eb0716e02",
+  "external_after": "6361aef586c488d9c56729460cefcd37af8df7c08452798e3801152eb0716e02",
+  "external_unchanged": true,
+  "comparison": {
+    "source_sha256": "194b1addd23f6d2222a47947d43cb82e3d09c190f184a739a0d23a7f87b79d49",
+    "target_sha256": "6361aef586c488d9c56729460cefcd37af8df7c08452798e3801152eb0716e02",
+    "sections": [
+      {
+        "key": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+        "row_count_changed": false,
+        "logic_rows": [
+          7,
+          9,
+          11
+        ],
+        "comment_rows": []
+      }
+    ],
+    "control_difference": true,
+    "variable_declarations_equal": true,
+    "comment_rows": 0
+  },
+  "images": {
+    "01-confirmation.png": [
+      1600,
+      1450
+    ],
+    "02-initial-cycle.png": [
+      1600,
+      1260
+    ],
+    "03-fresh-completion.png": [
+      1600,
+      1490
+    ],
+    "04-rcon-receiver.png": [
+      1700,
+      1520
+    ]
+  }
+}

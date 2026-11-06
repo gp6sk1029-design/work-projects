@@ -1,0 +1,29 @@
+[
+  {
+    "section": "ST7_A_Dis2_左SF排出",
+    "old_count": 32,
+    "new_count": 32,
+    "changes": [
+      {
+        "op": "replace",
+        "old_rows": [
+          15,
+          16
+        ],
+        "new_rows": [
+          15,
+          16
+        ]
+      },
+      {
+        "op": "replace",
+        "old_rows": [
+          31
+        ],
+        "new_rows": [
+          31
+        ]
+      }
+    ]
+  }
+]

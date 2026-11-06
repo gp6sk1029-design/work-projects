@@ -1,0 +1,154 @@
+{
+  "current_sha": "03503f0a22b52c46cbc5929e18c3fb6208bc22f67416b82f2d1ed6cc1be0adb3",
+  "oldF_sha": "2eb307ad8c1063d65e2ca8e77864f51c429af8843e06a93a2cda1fae0d6770eb",
+  "G_sha": "8a53676bc04b41d143be56f888eff3de127c6301b672996e01e3560984a7df53",
+  "current_RCON_control_equal_G": true,
+  "flags": [
+    {
+      "tag": "RCON2_CommOK",
+      "ladder_writes": [],
+      "ST_assignment_candidates": [],
+      "global_definitions": [
+        {
+          "D": "BOOL",
+          "N": "RCON2_CommOK",
+          "G": "VAR_GLOBAL",
+          "Com": "通信正常（外部判定・固定ON不可）"
+        }
+      ]
+    },
+    {
+      "tag": "RCON2_WriteEnable",
+      "ladder_writes": [],
+      "ST_assignment_candidates": [],
+      "global_definitions": [
+        {
+          "D": "BOOL",
+          "N": "RCON2_WriteEnable",
+          "G": "VAR_GLOBAL",
+          "Com": "実出力書込み許可（OFF=前値保持・停止不可）"
+        }
+      ]
+    },
+    {
+      "tag": "RCON2_LayoutConfirmed",
+      "ladder_writes": [],
+      "ST_assignment_candidates": [],
+      "global_definitions": [
+        {
+          "D": "BOOL",
+          "N": "RCON2_LayoutConfirmed",
+          "G": "VAR_GLOBAL",
+          "Com": "I/O配置確認済み（初期OFF）"
+        }
+      ]
+    },
+    {
+      "tag": "RCON2_ByteOrderConfirmed",
+      "ladder_writes": [],
+      "ST_assignment_candidates": [],
+      "global_definitions": [
+        {
+          "D": "BOOL",
+          "N": "RCON2_ByteOrderConfirmed",
+          "G": "VAR_GLOBAL",
+          "Com": "ワード・バイト順確認済み（初期OFF）"
+        }
+      ]
+    },
+    {
+      "tag": "RCON2_AxisApply[2]",
+      "ladder_writes": [],
+      "ST_assignment_candidates": [],
+      "global_definitions": [
+        {
+          "D": "ARRAY[1..5] OF BOOL",
+          "N": "RCON2_AxisApply",
+          "G": "VAR_GLOBAL",
+          "Com": "軸別出力更新許可（OFF=前値保持）",
+          "EC": "<ECs><EC EK=\"[1]\" C=\"1軸目（No.0）出力更新許可（OFF=前値保持）\" /><EC EK=\"[2]\" C=\"2軸目（No.1）出力更新許可（OFF=前値保持）\" /><EC EK=\"[3]\" C=\"3軸目（No.2）出力更新許可（OFF=前値保持）\" /><EC EK=\"[4]\" C=\"4軸目（No.3）出力更新許可（OFF=前値保持）\" /><EC EK=\"[5]\" C=\"5軸目（No.4）出力更新許可（OFF=前値保持）\" /></ECs>"
+        }
+      ]
+    },
+    {
+      "tag": "RCON2_MotionPermit[2]",
+      "ladder_writes": [],
+      "ST_assignment_candidates": [],
+      "global_definitions": [
+        {
+          "D": "ARRAY[1..5] OF BOOL",
+          "N": "RCON2_MotionPermit",
+          "G": "VAR_GLOBAL",
+          "Com": "軸別運転許可（外部判定・初期OFF）",
+          "EC": "<ECs><EC EK=\"[1]\" C=\"1軸目（No.0）運転許可（外部判定）\" /><EC EK=\"[2]\" C=\"2軸目（No.1）運転許可（外部判定）\" /><EC EK=\"[3]\" C=\"3軸目（No.2）運転許可（外部判定）\" /><EC EK=\"[4]\" C=\"4軸目（No.3）運転許可（外部判定）\" /><EC EK=\"[5]\" C=\"5軸目（No.4）運転許可（外部判定）\" /></ECs>"
+        }
+      ]
+    },
+    {
+      "tag": "RCON2_IN[2].DataValid",
+      "ladder_writes": [],
+      "ST_assignment_candidates": [
+        [
+          "RCON_IAI",
+          454
+        ]
+      ],
+      "global_definitions": [
+        {
+          "D": "ARRAY[1..5] OF ST_RCON_Direct_IN_Axis",
+          "N": "RCON2_IN",
+          "G": "VAR_GLOBAL",
+          "Com": "#RCON2 入力値",
+          "EC": "<ECs><EC EK=\"[1]\" C=\"#RCON2_1 段バラシ\" /><EC EK=\"[2]\" C=\"#RCON2_2 箱詰めX\" /><EC EK=\"[3]\" C=\"#RCON2_3 箱詰めY\" /><EC EK=\"[4]\" C=\"#RCON2_4 箱詰めZ\" /><EC EK=\"[5]\" C=\"#RCON2_5 コンテナ設置\" /></ECs>"
+        }
+      ]
+    },
+    {
+      "tag": "RCON2_EncodeOK[2]",
+      "ladder_writes": [],
+      "ST_assignment_candidates": [
+        [
+          "RCON_IAI",
+          455
+        ]
+      ],
+      "global_definitions": [
+        {
+          "D": "ARRAY[1..5] OF BOOL",
+          "N": "RCON2_EncodeOK",
+          "G": "VAR_GLOBAL",
+          "Com": "軸別変換正常（運転許可とは別）",
+          "EC": "<ECs><EC EK=\"[1]\" C=\"1軸目（No.0）変換正常\" /><EC EK=\"[2]\" C=\"2軸目（No.1）変換正常\" /><EC EK=\"[3]\" C=\"3軸目（No.2）変換正常\" /><EC EK=\"[4]\" C=\"4軸目（No.3）変換正常\" /><EC EK=\"[5]\" C=\"5軸目（No.4）変換正常\" /></ECs>"
+        }
+      ]
+    },
+    {
+      "tag": "RCON2_2_Ready",
+      "ladder_writes": [
+        [
+          "RCON_IAI",
+          321,
+          "ST"
+        ]
+      ],
+      "ST_assignment_candidates": [],
+      "global_definitions": [
+        {
+          "D": "BOOL",
+          "N": "RCON2_2_Ready",
+          "G": "VAR_GLOBAL",
+          "Com": "動作準備（安全許可とは別）"
+        }
+      ]
+    }
+  ],
+  "scope": "明示的なラダー書込みとST代入候補の検索。HMI/外部書込みや間接参照の動作は未確認。",
+  "permission_names_defined_in_F": {
+    "RCON2_CommOK": true,
+    "RCON2_WriteEnable": true,
+    "RCON2_LayoutConfirmed": true,
+    "RCON2_ByteOrderConfirmed": true,
+    "RCON2_AxisApply": true,
+    "RCON2_MotionPermit": true
+  }
+}

@@ -1,0 +1,4845 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261103C.smc2",
+  "sha256": "386f626f48b2af9812219f1cf25be1116b2c987471865202ff115dda8bfe6685",
+  "parts": 210,
+  "sections": {
+    "Destacker_段バラシ": "7c15e655-c2eb-4a0d-a923-d08fae0d8a43/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml",
+    "RCON_IAI": "7c15e655-c2eb-4a0d-a923-d08fae0d8a43/7b1666c7-ee97-4210-81b2-fed5a6172074.xml",
+    "Output_出力": "7c15e655-c2eb-4a0d-a923-d08fae0d8a43/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml"
+  },
+  "destacker": [
+    {
+      "row": 0,
+      "coils": [
+        "Destacker_M[1]"
+      ],
+      "contacts": [
+        "Destacker_M[1]",
+        "Destacker_M[2]"
+      ]
+    },
+    {
+      "row": 1,
+      "coils": [
+        "Destacker_M[2]"
+      ],
+      "contacts": [
+        "Destacker_M[1]",
+        "Destacker_M[2]",
+        "Destacker_M[3]"
+      ]
+    },
+    {
+      "row": 2,
+      "coils": [
+        "Destacker_M[3]",
+        "Destacker_M[4]",
+        "Destacker_M[5]"
+      ],
+      "contacts": [
+        "Destacker_M[2]",
+        "Destacker_M[3]",
+        "Destacker_M[6]",
+        "Destacker_M[11]"
+      ]
+    },
+    {
+      "row": 3,
+      "coils": [
+        "Destacker_M[6]"
+      ],
+      "contacts": [
+        "Destacker_M[3]",
+        "Destacker_M[5]",
+        "Destacker_M[6]",
+        "Destacker_M[7]"
+      ]
+    },
+    {
+      "row": 4,
+      "coils": [
+        "Destacker_M[7]"
+      ],
+      "contacts": [
+        "Destacker_M[6]",
+        "Destacker_M[7]",
+        "Destacker_M[8]"
+      ]
+    },
+    {
+      "row": 5,
+      "coils": [
+        "Destacker_M[8]"
+      ],
+      "contacts": [
+        "Destacker_M[7]",
+        "Destacker_M[8]",
+        "Destacker_M[9]"
+      ]
+    },
+    {
+      "row": 6,
+      "coils": [
+        "Destacker_M[9]"
+      ],
+      "contacts": [
+        "Destacker_M[8]",
+        "Destacker_M[9]",
+        "Destacker_M[10]"
+      ]
+    },
+    {
+      "row": 7,
+      "coils": [
+        "Destacker_M[10]"
+      ],
+      "contacts": [
+        "Destacker_M[9]",
+        "Destacker_M[10]",
+        "Destacker_M[11]"
+      ]
+    },
+    {
+      "row": 8,
+      "coils": [
+        "Destacker_M[11]"
+      ],
+      "contacts": [
+        "Destacker_M[10]",
+        "Destacker_M[3]",
+        "Destacker_M[4]",
+        "Destacker_M[11]",
+        "Destacker_M[12]"
+      ]
+    },
+    {
+      "row": 9,
+      "coils": [
+        "Destacker_M[12]"
+      ],
+      "contacts": [
+        "Destacker_M[11]",
+        "Destacker_M[12]",
+        "Destacker_M[13]"
+      ]
+    },
+    {
+      "row": 10,
+      "coils": [
+        "Destacker_M[13]"
+      ],
+      "contacts": [
+        "Destacker_M[12]",
+        "Destacker_M[13]",
+        "Destacker_M[14]"
+      ]
+    },
+    {
+      "row": 11,
+      "coils": [
+        "Destacker_M[14]",
+        "Destacker_M[15]"
+      ],
+      "contacts": [
+        "Destacker_M[13]",
+        "Destacker_M[14]",
+        "Destacker_M[15]"
+      ]
+    },
+    {
+      "row": 12,
+      "coils": [
+        "Destacker_M[15]"
+      ],
+      "contacts": [
+        "Destacker_M[14]",
+        "Destacker_M[15]",
+        "Destacker_M[16]"
+      ]
+    },
+    {
+      "row": 13,
+      "coils": [
+        "Destacker_M[16]"
+      ],
+      "contacts": [
+        "Destacker_M[15]",
+        "Destacker_M[16]",
+        "Destacker_M[17]"
+      ]
+    },
+    {
+      "row": 14,
+      "coils": [
+        "Destacker_M[17]",
+        "Destacker_M[18]",
+        "Destacker_M[19]"
+      ],
+      "contacts": [
+        "Destacker_M[16]",
+        "Destacker_M[17]",
+        "Destacker_M[20]",
+        "Destacker_M[22]"
+      ]
+    },
+    {
+      "row": 15,
+      "coils": [
+        "Destacker_M[20]"
+      ],
+      "contacts": [
+        "Destacker_M[17]",
+        "Destacker_M[18]",
+        "Destacker_M[20]",
+        "Destacker_M[21]"
+      ]
+    },
+    {
+      "row": 16,
+      "coils": [
+        "Destacker_M[21]"
+      ],
+      "contacts": [
+        "Destacker_M[20]",
+        "Destacker_M[21]",
+        "Destacker_M[22]"
+      ]
+    },
+    {
+      "row": 17,
+      "coils": [
+        "Destacker_M[22]"
+      ],
+      "contacts": [
+        "Destacker_M[21]",
+        "Destacker_M[19]",
+        "Destacker_M[22]",
+        "Destacker_M[23]"
+      ]
+    },
+    {
+      "row": 18,
+      "coils": [
+        "Destacker_M[23]"
+      ],
+      "contacts": [
+        "Destacker_M[22]",
+        "Destacker_M[23]",
+        "Destacker_M[24]"
+      ]
+    },
+    {
+      "row": 19,
+      "coils": [
+        "Destacker_M[24]"
+      ],
+      "contacts": [
+        "Destacker_M[23]",
+        "Destacker_M[24]"
+      ]
+    },
+    {
+      "row": 20,
+      "coils": [],
+      "contacts": [
+        "Destacker_M[24]",
+        "Destacker_M[12]"
+      ]
+    }
+  ],
+  "output_row_count": 316,
+  "pause": [
+    {
+      "row": 7,
+      "var": "Pause[2]",
+      "ix": 2,
+      "x": 1,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_Acc_Conv_Run"
+      ],
+      "comment": "#コンベア"
+    },
+    {
+      "row": 7,
+      "var": "Pause[1]",
+      "ix": 3,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_Acc_Conv_Run"
+      ],
+      "comment": "#コンベア"
+    },
+    {
+      "row": 10,
+      "var": "Pause[2]",
+      "ix": 2,
+      "x": 1,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_Insp_Cv_A_Run"
+      ],
+      "comment": ""
+    },
+    {
+      "row": 10,
+      "var": "Pause[1]",
+      "ix": 3,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_Insp_Cv_A_Run"
+      ],
+      "comment": ""
+    },
+    {
+      "row": 13,
+      "var": "Pause[2]",
+      "ix": 2,
+      "x": 1,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_Insp_Cv_B_Run"
+      ],
+      "comment": ""
+    },
+    {
+      "row": 13,
+      "var": "Pause[1]",
+      "ix": 3,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_Insp_Cv_B_Run"
+      ],
+      "comment": ""
+    },
+    {
+      "row": 16,
+      "var": "Pause[1]",
+      "ix": 7,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sply_Slide_A_H",
+        "Output_A_M[1]"
+      ],
+      "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【A(左側) 供給ユニット｜シリンダ】\r\n#\r\n# 目的：出力・完了判定・異常監視を出力ごとに配置\r\n# ━"
+    },
+    {
+      "row": 16,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [
+        {
+          "__type": "LD",
+          "Ix": 11,
+          "Var": "ManualMode",
+          "X": 5,
+          "Y": 1
+        }
+      ],
+      "coils": [
+        "Out_CYw_Sply_Slide_A_H",
+        "Output_A_M[1]"
+      ],
+      "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【A(左側) 供給ユニット｜シリンダ】\r\n#\r\n# 目的：出力・完了判定・異常監視を出力ごとに配置\r\n# ━"
+    },
+    {
+      "row": 18,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[1]",
+        "HMI_Message_Request[1]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 19,
+      "var": "Pause[1]",
+      "ix": 7,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sply_Slide_A_F",
+        "Output_A_M[2]"
+      ],
+      "comment": "【Y617】A(左側) 供給スライド行"
+    },
+    {
+      "row": 19,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sply_Slide_A_F",
+        "Output_A_M[2]"
+      ],
+      "comment": "【Y617】A(左側) 供給スライド行"
+    },
+    {
+      "row": 21,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[2]",
+        "HMI_Message_Request[2]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 22,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sply_Pick_A_H",
+        "Output_A_M[3]"
+      ],
+      "comment": "【Y618】A(左側) 供給ピックアップ戻"
+    },
+    {
+      "row": 22,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sply_Pick_A_H",
+        "Output_A_M[3]"
+      ],
+      "comment": "【Y618】A(左側) 供給ピックアップ戻"
+    },
+    {
+      "row": 24,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[3]",
+        "HMI_Message_Request[3]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 25,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sply_Pick_A_F",
+        "Output_A_M[4]"
+      ],
+      "comment": "【Y619】A(左側) 供給ピックアップ行"
+    },
+    {
+      "row": 25,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sply_Pick_A_F",
+        "Output_A_M[4]"
+      ],
+      "comment": "【Y619】A(左側) 供給ピックアップ行"
+    },
+    {
+      "row": 27,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[4]",
+        "HMI_Message_Request[4]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 28,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sup_Chuck_A_Cl_H",
+        "Output_A_M[5]"
+      ],
+      "comment": "【Y620】A(左側) 供給チャック閉 戻"
+    },
+    {
+      "row": 28,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sup_Chuck_A_Cl_H",
+        "Output_A_M[5]"
+      ],
+      "comment": "【Y620】A(左側) 供給チャック閉 戻"
+    },
+    {
+      "row": 30,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[5]",
+        "HMI_Message_Request[5]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 31,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sup_Chuck_A_Op_F",
+        "Output_A_M[6]"
+      ],
+      "comment": "【Y621】A(左側) 供給チャック開 行"
+    },
+    {
+      "row": 31,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sup_Chuck_A_Op_F",
+        "Output_A_M[6]"
+      ],
+      "comment": "【Y621】A(左側) 供給チャック開 行"
+    },
+    {
+      "row": 33,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[6]",
+        "HMI_Message_Request[6]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 34,
+      "var": "Pause[1]",
+      "ix": 7,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sply_Slide_B_H",
+        "Output_B_M[1]"
+      ],
+      "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【B(右側) 供給ユニット｜シリンダ】\r\n#\r\n# 目的：出力・完了判定・異常監視を出力ごとに配置\r\n# ━"
+    },
+    {
+      "row": 34,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sply_Slide_B_H",
+        "Output_B_M[1]"
+      ],
+      "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【B(右側) 供給ユニット｜シリンダ】\r\n#\r\n# 目的：出力・完了判定・異常監視を出力ごとに配置\r\n# ━"
+    },
+    {
+      "row": 36,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[1]",
+        "HMI_Message_Request[7]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 37,
+      "var": "Pause[1]",
+      "ix": 7,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sply_Slide_B_F",
+        "Output_B_M[2]"
+      ],
+      "comment": "【Y623】B(右側) 供給スライド行"
+    },
+    {
+      "row": 37,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sply_Slide_B_F",
+        "Output_B_M[2]"
+      ],
+      "comment": "【Y623】B(右側) 供給スライド行"
+    },
+    {
+      "row": 39,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[2]",
+        "HMI_Message_Request[8]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 40,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sply_Pick_B_H",
+        "Output_B_M[3]"
+      ],
+      "comment": "【Y624】B(右側) 供給ピックアップ戻"
+    },
+    {
+      "row": 40,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sply_Pick_B_H",
+        "Output_B_M[3]"
+      ],
+      "comment": "【Y624】B(右側) 供給ピックアップ戻"
+    },
+    {
+      "row": 42,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[3]",
+        "HMI_Message_Request[9]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 43,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sply_Pick_B_F",
+        "Output_B_M[4]"
+      ],
+      "comment": "【Y625】B(右側) 供給ピックアップ行"
+    },
+    {
+      "row": 43,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sply_Pick_B_F",
+        "Output_B_M[4]"
+      ],
+      "comment": "【Y625】B(右側) 供給ピックアップ行"
+    },
+    {
+      "row": 45,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[4]",
+        "HMI_Message_Request[10]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 46,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sup_Chuck_B_Cl_H",
+        "Output_B_M[5]"
+      ],
+      "comment": "【Y626】B(右側) 供給チャック閉 戻"
+    },
+    {
+      "row": 46,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sup_Chuck_B_Cl_H",
+        "Output_B_M[5]"
+      ],
+      "comment": "【Y626】B(右側) 供給チャック閉 戻"
+    },
+    {
+      "row": 48,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[5]",
+        "HMI_Message_Request[11]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 49,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sup_Chuck_B_Op_F",
+        "Output_B_M[6]"
+      ],
+      "comment": "【Y627】B(右側) 供給チャック開 行"
+    },
+    {
+      "row": 49,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sup_Chuck_B_Op_F",
+        "Output_B_M[6]"
+      ],
+      "comment": "【Y627】B(右側) 供給チャック開 行"
+    },
+    {
+      "row": 51,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[6]",
+        "HMI_Message_Request[12]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 52,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_HgtInsp_Clp_A_H",
+        "Output_A_M[7]"
+      ],
+      "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【A(左側) 検査・排出ユニット｜シリンダ】\r\n#\r\n# 目的：出力・完了判定・異常監視を出力ごとに配置\r\n"
+    },
+    {
+      "row": 52,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_HgtInsp_Clp_A_H",
+        "Output_A_M[7]"
+      ],
+      "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【A(左側) 検査・排出ユニット｜シリンダ】\r\n#\r\n# 目的：出力・完了判定・異常監視を出力ごとに配置\r\n"
+    },
+    {
+      "row": 54,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[7]",
+        "HMI_Message_Request[13]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 55,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_HgtInsp_Clp_A_F",
+        "Output_A_M[8]"
+      ],
+      "comment": "【Y701】A(左側) 高さ検査押え行"
+    },
+    {
+      "row": 55,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_HgtInsp_Clp_A_F",
+        "Output_A_M[8]"
+      ],
+      "comment": "【Y701】A(左側) 高さ検査押え行"
+    },
+    {
+      "row": 57,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[8]",
+        "HMI_Message_Request[14]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 58,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_HgtInsp_Lf_A_H",
+        "Output_A_M[9]"
+      ],
+      "comment": "【Y702】A(左側) 高さ検査持上戻"
+    },
+    {
+      "row": 58,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_HgtInsp_Lf_A_H",
+        "Output_A_M[9]"
+      ],
+      "comment": "【Y702】A(左側) 高さ検査持上戻"
+    },
+    {
+      "row": 60,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[9]",
+        "HMI_Message_Request[15]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 61,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_HgtInsp_Lf_A_F",
+        "Output_A_M[10]"
+      ],
+      "comment": "【Y703】A(左側) 高さ検査持上行"
+    },
+    {
+      "row": 61,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_HgtInsp_Lf_A_F",
+        "Output_A_M[10]"
+      ],
+      "comment": "【Y703】A(左側) 高さ検査持上行"
+    },
+    {
+      "row": 63,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[10]",
+        "HMI_Message_Request[16]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 64,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Pick_A_H",
+        "Output_A_M[11]"
+      ],
+      "comment": "【Y704】A(左側) NG1ピックアップ戻 "
+    },
+    {
+      "row": 64,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Pick_A_H",
+        "Output_A_M[11]"
+      ],
+      "comment": "【Y704】A(左側) NG1ピックアップ戻 "
+    },
+    {
+      "row": 66,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[11]",
+        "HMI_Message_Request[17]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 67,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Pick_A_F",
+        "Output_A_M[12]"
+      ],
+      "comment": "【Y705】A(左側) NG1ピックアップ 行"
+    },
+    {
+      "row": 67,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Pick_A_F",
+        "Output_A_M[12]"
+      ],
+      "comment": "【Y705】A(左側) NG1ピックアップ 行"
+    },
+    {
+      "row": 69,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[12]",
+        "HMI_Message_Request[18]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 70,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Chk_A_H",
+        "Output_A_M[13]"
+      ],
+      "comment": "【Y706】A(左側) NG1チャック戻"
+    },
+    {
+      "row": 70,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Chk_A_H",
+        "Output_A_M[13]"
+      ],
+      "comment": "【Y706】A(左側) NG1チャック戻"
+    },
+    {
+      "row": 72,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[13]",
+        "HMI_Message_Request[19]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 73,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Chk_A_F",
+        "Output_A_M[14]"
+      ],
+      "comment": "【Y707】A(左側) NG1チャック行"
+    },
+    {
+      "row": 73,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Chk_A_F",
+        "Output_A_M[14]"
+      ],
+      "comment": "【Y707】A(左側) NG1チャック行"
+    },
+    {
+      "row": 75,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[14]",
+        "HMI_Message_Request[20]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 76,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_01_Chk_A_H",
+        "Output_A_M[15]"
+      ],
+      "comment": "【Y708】A(左側)ST4 反転1チャック閉 戻"
+    },
+    {
+      "row": 76,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_01_Chk_A_H",
+        "Output_A_M[15]"
+      ],
+      "comment": "【Y708】A(左側)ST4 反転1チャック閉 戻"
+    },
+    {
+      "row": 78,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[15]",
+        "HMI_Message_Request[21]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 79,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_01_Chk_A_F",
+        "Output_A_M[16]"
+      ],
+      "comment": "【Y709】A(左側)ST4 反転1チャック開 行"
+    },
+    {
+      "row": 79,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_01_Chk_A_F",
+        "Output_A_M[16]"
+      ],
+      "comment": "【Y709】A(左側)ST4 反転1チャック開 行"
+    },
+    {
+      "row": 81,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[16]",
+        "HMI_Message_Request[22]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 82,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_01_Pick_A_H",
+        "Output_A_M[17]"
+      ],
+      "comment": "【Y710】A(左側)ST4 反転1ピックアップ戻"
+    },
+    {
+      "row": 82,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_01_Pick_A_H",
+        "Output_A_M[17]"
+      ],
+      "comment": "【Y710】A(左側)ST4 反転1ピックアップ戻"
+    },
+    {
+      "row": 84,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[17]",
+        "HMI_Message_Request[23]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 85,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_01_Pick_A_F",
+        "Output_A_M[18]"
+      ],
+      "comment": "【Y711】A(左側)ST4 反転1ピックアップ行"
+    },
+    {
+      "row": 85,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_01_Pick_A_F",
+        "Output_A_M[18]"
+      ],
+      "comment": "【Y711】A(左側)ST4 反転1ピックアップ行"
+    },
+    {
+      "row": 87,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[18]",
+        "HMI_Message_Request[24]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 88,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_02_Chk_A_H",
+        "Output_A_M[19]"
+      ],
+      "comment": "【Y712】A(左側)ST6 反転2チャック閉 戻"
+    },
+    {
+      "row": 88,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_02_Chk_A_H",
+        "Output_A_M[19]"
+      ],
+      "comment": "【Y712】A(左側)ST6 反転2チャック閉 戻"
+    },
+    {
+      "row": 90,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[19]",
+        "HMI_Message_Request[25]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 91,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_02_Chk_A_F",
+        "Output_A_M[20]"
+      ],
+      "comment": "【Y713】A(左側)ST6 反転2チャック開 行"
+    },
+    {
+      "row": 91,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_02_Chk_A_F",
+        "Output_A_M[20]"
+      ],
+      "comment": "【Y713】A(左側)ST6 反転2チャック開 行"
+    },
+    {
+      "row": 93,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[20]",
+        "HMI_Message_Request[26]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 94,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_02_Pick_A_H",
+        "Output_A_M[21]"
+      ],
+      "comment": "【Y714】A(左側)ST6 反転2ピックアップ戻"
+    },
+    {
+      "row": 94,
+      "var": "Pause[1]",
+      "ix": 11,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_02_Pick_A_H",
+        "Output_A_M[21]"
+      ],
+      "comment": "【Y714】A(左側)ST6 反転2ピックアップ戻"
+    },
+    {
+      "row": 96,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[21]",
+        "HMI_Message_Request[27]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 97,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_02_Pick_A_F",
+        "Output_A_M[22]"
+      ],
+      "comment": "【Y715】A(左側)ST6 反転2ピックアップ行"
+    },
+    {
+      "row": 97,
+      "var": "Pause[1]",
+      "ix": 11,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_02_Pick_A_F",
+        "Output_A_M[22]"
+      ],
+      "comment": "【Y715】A(左側)ST6 反転2ピックアップ行"
+    },
+    {
+      "row": 99,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[22]",
+        "HMI_Message_Request[28]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 100,
+      "var": "Pause[1]",
+      "ix": 5,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Disc_Chk_A_H",
+        "Output_A_M[23]"
+      ],
+      "comment": "【Y716】A(左側) 排出チャック閉 戻"
+    },
+    {
+      "row": 100,
+      "var": "Pause[1]",
+      "ix": 7,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Disc_Chk_A_H",
+        "Output_A_M[23]"
+      ],
+      "comment": "【Y716】A(左側) 排出チャック閉 戻"
+    },
+    {
+      "row": 102,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[23]",
+        "HMI_Message_Request[29]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 103,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Disc_Chk_A_F",
+        "Output_A_M[24]"
+      ],
+      "comment": "【Y717】A(左側) 排出チャック開 行"
+    },
+    {
+      "row": 103,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Disc_Chk_A_F",
+        "Output_A_M[24]"
+      ],
+      "comment": "【Y717】A(左側) 排出チャック開 行"
+    },
+    {
+      "row": 105,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[24]",
+        "HMI_Message_Request[30]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 106,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Ejc_Hldr_Feed_A_H",
+        "Output_A_M[25]"
+      ],
+      "comment": "【Y718】A(左側) 排出フォルダ送り戻"
+    },
+    {
+      "row": 106,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Ejc_Hldr_Feed_A_H",
+        "Output_A_M[25]"
+      ],
+      "comment": "【Y718】A(左側) 排出フォルダ送り戻"
+    },
+    {
+      "row": 108,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[25]",
+        "HMI_Message_Request[31]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 109,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Ejc_Hldr_Feed_A_F",
+        "Output_A_M[26]"
+      ],
+      "comment": "【Y719】A(左側) 排出フォルダ送り行"
+    },
+    {
+      "row": 109,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Ejc_Hldr_Feed_A_F",
+        "Output_A_M[26]"
+      ],
+      "comment": "【Y719】A(左側) 排出フォルダ送り行"
+    },
+    {
+      "row": 111,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[26]",
+        "HMI_Message_Request[32]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 112,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_01_Stopper_A",
+        "Output_A_M[27]"
+      ],
+      "comment": "【Y720】A(左側) 位置1ストッパー 戻"
+    },
+    {
+      "row": 112,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_01_Stopper_A",
+        "Output_A_M[27]"
+      ],
+      "comment": "【Y720】A(左側) 位置1ストッパー 戻"
+    },
+    {
+      "row": 114,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[27]",
+        "HMI_Message_Request[33]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 115,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_01_Stopper_A",
+        "Output_A_M[28]"
+      ],
+      "comment": "【Y720】A(左側) 位置1ストッパー 行"
+    },
+    {
+      "row": 115,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_01_Stopper_A",
+        "Output_A_M[28]"
+      ],
+      "comment": "【Y720】A(左側) 位置1ストッパー 行"
+    },
+    {
+      "row": 117,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[28]",
+        "HMI_Message_Request[34]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 118,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_02_Stopper_A",
+        "Output_A_M[29]"
+      ],
+      "comment": "【Y721】A(左側) 位置2ストッパー戻"
+    },
+    {
+      "row": 118,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_02_Stopper_A",
+        "Output_A_M[29]"
+      ],
+      "comment": "【Y721】A(左側) 位置2ストッパー戻"
+    },
+    {
+      "row": 120,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[29]",
+        "HMI_Message_Request[35]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 121,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_02_Stopper_A",
+        "Output_A_M[30]"
+      ],
+      "comment": "【Y721】A(左側) 位置2ストッパー行"
+    },
+    {
+      "row": 121,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_02_Stopper_A",
+        "Output_A_M[30]"
+      ],
+      "comment": "【Y721】A(左側) 位置2ストッパー行"
+    },
+    {
+      "row": 123,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[30]",
+        "HMI_Message_Request[36]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 124,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_03_Stopper_A",
+        "Output_A_M[31]"
+      ],
+      "comment": "【Y722】A(左側) 位置3ストッパー戻"
+    },
+    {
+      "row": 124,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_03_Stopper_A",
+        "Output_A_M[31]"
+      ],
+      "comment": "【Y722】A(左側) 位置3ストッパー戻"
+    },
+    {
+      "row": 126,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[31]",
+        "HMI_Message_Request[37]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 127,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_03_Stopper_A",
+        "Output_A_M[32]"
+      ],
+      "comment": "【Y722】A(左側) 位置3ストッパー行"
+    },
+    {
+      "row": 127,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_03_Stopper_A",
+        "Output_A_M[32]"
+      ],
+      "comment": "【Y722】A(左側) 位置3ストッパー行"
+    },
+    {
+      "row": 129,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[32]",
+        "HMI_Message_Request[38]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 130,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_04_Stopper_A",
+        "Output_A_M[33]"
+      ],
+      "comment": "【Y723】A(左側) 位置4ストッパー戻"
+    },
+    {
+      "row": 130,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_04_Stopper_A",
+        "Output_A_M[33]"
+      ],
+      "comment": "【Y723】A(左側) 位置4ストッパー戻"
+    },
+    {
+      "row": 132,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[33]",
+        "HMI_Message_Request[39]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 133,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_04_Stopper_A",
+        "Output_A_M[34]"
+      ],
+      "comment": "【Y723】A(左側) 位置4ストッパー行"
+    },
+    {
+      "row": 133,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_04_Stopper_A",
+        "Output_A_M[34]"
+      ],
+      "comment": "【Y723】A(左側) 位置4ストッパー行"
+    },
+    {
+      "row": 135,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[34]",
+        "HMI_Message_Request[40]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 136,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_05_Stopper_A",
+        "Output_A_M[35]"
+      ],
+      "comment": "【Y724】A(左側) 位置5ストッパー戻"
+    },
+    {
+      "row": 136,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_05_Stopper_A",
+        "Output_A_M[35]"
+      ],
+      "comment": "【Y724】A(左側) 位置5ストッパー戻"
+    },
+    {
+      "row": 138,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[35]",
+        "HMI_Message_Request[41]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 139,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_05_Stopper_A",
+        "Output_A_M[36]"
+      ],
+      "comment": "【Y724】A(左側) 位置5ストッパー行"
+    },
+    {
+      "row": 139,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_05_Stopper_A",
+        "Output_A_M[36]"
+      ],
+      "comment": "【Y724】A(左側) 位置5ストッパー行"
+    },
+    {
+      "row": 141,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[36]",
+        "HMI_Message_Request[42]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 142,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_06_Stopper_A",
+        "Output_A_M[37]"
+      ],
+      "comment": "【Y725】A(左側) 位置6ストッパー戻"
+    },
+    {
+      "row": 142,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_06_Stopper_A",
+        "Output_A_M[37]"
+      ],
+      "comment": "【Y725】A(左側) 位置6ストッパー戻"
+    },
+    {
+      "row": 144,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[37]",
+        "HMI_Message_Request[43]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 145,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_06_Stopper_A",
+        "Output_A_M[38]"
+      ],
+      "comment": "【Y725】A(左側) 位置6ストッパー行"
+    },
+    {
+      "row": 145,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_06_Stopper_A",
+        "Output_A_M[38]"
+      ],
+      "comment": "【Y725】A(左側) 位置6ストッパー行"
+    },
+    {
+      "row": 147,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[38]",
+        "HMI_Message_Request[44]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 148,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_SH_A_Turn_H",
+        "Output_A_M[39]"
+      ],
+      "comment": "【Y726】A(左側) ストックフォルダターン戻"
+    },
+    {
+      "row": 148,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 6,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_SH_A_Turn_H",
+        "Output_A_M[39]"
+      ],
+      "comment": "【Y726】A(左側) ストックフォルダターン戻"
+    },
+    {
+      "row": 150,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[39]",
+        "HMI_Message_Request[45]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 151,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_SH_A_Turn_F",
+        "Output_A_M[40]"
+      ],
+      "comment": "【Y727】A(左側) ストックフォルダターン行"
+    },
+    {
+      "row": 151,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 6,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_SH_A_Turn_F",
+        "Output_A_M[40]"
+      ],
+      "comment": "【Y727】A(左側) ストックフォルダターン行"
+    },
+    {
+      "row": 153,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[40]",
+        "HMI_Message_Request[46]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 154,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Srt_A_H",
+        "Output_A_M[41]"
+      ],
+      "comment": "【Y728】A(左側) NG1仕分け 戻"
+    },
+    {
+      "row": 154,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Srt_A_H",
+        "Output_A_M[41]"
+      ],
+      "comment": "【Y728】A(左側) NG1仕分け 戻"
+    },
+    {
+      "row": 156,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[41]",
+        "HMI_Message_Request[47]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 157,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Srt_A_F",
+        "Output_A_M[42]"
+      ],
+      "comment": "【Y729】A(左側) NG1仕分け 行"
+    },
+    {
+      "row": 157,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Srt_A_F",
+        "Output_A_M[42]"
+      ],
+      "comment": "【Y729】A(左側) NG1仕分け 行"
+    },
+    {
+      "row": 159,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[42]",
+        "HMI_Message_Request[48]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 160,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_HgtInsp_Clp_B_H",
+        "Output_B_M[7]"
+      ],
+      "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【B(右側) 検査・排出ユニット｜シリンダ】\r\n#\r\n# 目的：出力・完了判定・異常監視を出力ごとに配置\r\n"
+    },
+    {
+      "row": 160,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_HgtInsp_Clp_B_H",
+        "Output_B_M[7]"
+      ],
+      "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【B(右側) 検査・排出ユニット｜シリンダ】\r\n#\r\n# 目的：出力・完了判定・異常監視を出力ごとに配置\r\n"
+    },
+    {
+      "row": 162,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[7]",
+        "HMI_Message_Request[49]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 163,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_HgtInsp_Clp_B_F",
+        "Output_B_M[8]"
+      ],
+      "comment": "【Y801】B(右側) 高さ検査押え行"
+    },
+    {
+      "row": 163,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_HgtInsp_Clp_B_F",
+        "Output_B_M[8]"
+      ],
+      "comment": "【Y801】B(右側) 高さ検査押え行"
+    },
+    {
+      "row": 165,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[8]",
+        "HMI_Message_Request[50]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 166,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_HgtInsp_Lf_B_H",
+        "Output_B_M[9]"
+      ],
+      "comment": "【Y802】B(右側) 高さ検査持上戻"
+    },
+    {
+      "row": 166,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_HgtInsp_Lf_B_H",
+        "Output_B_M[9]"
+      ],
+      "comment": "【Y802】B(右側) 高さ検査持上戻"
+    },
+    {
+      "row": 168,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[9]",
+        "HMI_Message_Request[51]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 169,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_HgtInsp_Lf_B_F",
+        "Output_B_M[10]"
+      ],
+      "comment": "【Y803】B(右側) 高さ検査持上行"
+    },
+    {
+      "row": 169,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_HgtInsp_Lf_B_F",
+        "Output_B_M[10]"
+      ],
+      "comment": "【Y803】B(右側) 高さ検査持上行"
+    },
+    {
+      "row": 171,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[10]",
+        "HMI_Message_Request[52]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 172,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Pick_B_H",
+        "Output_B_M[11]"
+      ],
+      "comment": "【Y804】B(右側) NG1ピックアップ戻"
+    },
+    {
+      "row": 172,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Pick_B_H",
+        "Output_B_M[11]"
+      ],
+      "comment": "【Y804】B(右側) NG1ピックアップ戻"
+    },
+    {
+      "row": 174,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[11]",
+        "HMI_Message_Request[53]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 175,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Pick_B_F",
+        "Output_B_M[12]"
+      ],
+      "comment": "【Y805】B(右側) NG1ピックアップ 行"
+    },
+    {
+      "row": 175,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Pick_B_F",
+        "Output_B_M[12]"
+      ],
+      "comment": "【Y805】B(右側) NG1ピックアップ 行"
+    },
+    {
+      "row": 177,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[12]",
+        "HMI_Message_Request[54]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 178,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Chk_B_H",
+        "Output_B_M[13]"
+      ],
+      "comment": "【Y806】B(右側) NG1チャック戻"
+    },
+    {
+      "row": 178,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Chk_B_H",
+        "Output_B_M[13]"
+      ],
+      "comment": "【Y806】B(右側) NG1チャック戻"
+    },
+    {
+      "row": 180,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[13]",
+        "HMI_Message_Request[55]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 181,
+      "var": "Pause[1]",
+      "ix": 7,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Chk_B_F",
+        "Output_B_M[14]"
+      ],
+      "comment": "【Y807】B(右側) NG1チャック行"
+    },
+    {
+      "row": 181,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Chk_B_F",
+        "Output_B_M[14]"
+      ],
+      "comment": "【Y807】B(右側) NG1チャック行"
+    },
+    {
+      "row": 183,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[14]",
+        "HMI_Message_Request[56]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 184,
+      "var": "Pause[1]",
+      "ix": 7,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_01_Chk_B_H",
+        "Output_B_M[15]"
+      ],
+      "comment": "【Y808】B(右側)ST4 反転1チャック閉 戻"
+    },
+    {
+      "row": 184,
+      "var": "Pause[1]",
+      "ix": 10,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_01_Chk_B_H",
+        "Output_B_M[15]"
+      ],
+      "comment": "【Y808】B(右側)ST4 反転1チャック閉 戻"
+    },
+    {
+      "row": 186,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[15]",
+        "HMI_Message_Request[57]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 187,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_01_Chk_B_F",
+        "Output_B_M[16]"
+      ],
+      "comment": "【Y809】B(右側)ST4 反転1チャック開 戻"
+    },
+    {
+      "row": 187,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_01_Chk_B_F",
+        "Output_B_M[16]"
+      ],
+      "comment": "【Y809】B(右側)ST4 反転1チャック開 戻"
+    },
+    {
+      "row": 189,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[16]",
+        "HMI_Message_Request[58]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 190,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_01_Pick_B_H",
+        "Output_B_M[17]"
+      ],
+      "comment": "【Y810】B(右側)ST4 反転1ピックアップ戻"
+    },
+    {
+      "row": 190,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_01_Pick_B_H",
+        "Output_B_M[17]"
+      ],
+      "comment": "【Y810】B(右側)ST4 反転1ピックアップ戻"
+    },
+    {
+      "row": 192,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[17]",
+        "HMI_Message_Request[59]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 193,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_01_Pick_B_F",
+        "Output_B_M[18]"
+      ],
+      "comment": "【Y811】B(右側)ST4 反転1ピックアップ行"
+    },
+    {
+      "row": 193,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_01_Pick_B_F",
+        "Output_B_M[18]"
+      ],
+      "comment": "【Y811】B(右側)ST4 反転1ピックアップ行"
+    },
+    {
+      "row": 195,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[18]",
+        "HMI_Message_Request[60]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 196,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_02_Chk_B_H",
+        "Output_B_M[19]"
+      ],
+      "comment": "【Y812】B(右側)ST6 反転2チャック閉 戻"
+    },
+    {
+      "row": 196,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_02_Chk_B_H",
+        "Output_B_M[19]"
+      ],
+      "comment": "【Y812】B(右側)ST6 反転2チャック閉 戻"
+    },
+    {
+      "row": 198,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[19]",
+        "HMI_Message_Request[61]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 199,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_02_Chk_B_F",
+        "Output_B_M[20]"
+      ],
+      "comment": "【Y813】B(右側)ST6 反転2チャック開 行"
+    },
+    {
+      "row": 199,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_02_Chk_B_F",
+        "Output_B_M[20]"
+      ],
+      "comment": "【Y813】B(右側)ST6 反転2チャック開 行"
+    },
+    {
+      "row": 201,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[20]",
+        "HMI_Message_Request[62]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 202,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_02_Pick_B_H",
+        "Output_B_M[21]"
+      ],
+      "comment": "【Y814】B(右側)ST6 反転2ピックアップ戻"
+    },
+    {
+      "row": 202,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_02_Pick_B_H",
+        "Output_B_M[21]"
+      ],
+      "comment": "【Y814】B(右側)ST6 反転2ピックアップ戻"
+    },
+    {
+      "row": 204,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[21]",
+        "HMI_Message_Request[63]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 205,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_02_Pick_B_F",
+        "Output_B_M[22]"
+      ],
+      "comment": "【Y815】B(右側)ST6 反転2ピックアップ行"
+    },
+    {
+      "row": 205,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Rev_02_Pick_B_F",
+        "Output_B_M[22]"
+      ],
+      "comment": "【Y815】B(右側)ST6 反転2ピックアップ行"
+    },
+    {
+      "row": 207,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[22]",
+        "HMI_Message_Request[64]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 208,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Disc_Chk_B_H",
+        "Output_B_M[23]"
+      ],
+      "comment": "【Y816】B(右側) 排出チャック閉 戻"
+    },
+    {
+      "row": 208,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Disc_Chk_B_H",
+        "Output_B_M[23]"
+      ],
+      "comment": "【Y816】B(右側) 排出チャック閉 戻"
+    },
+    {
+      "row": 210,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[23]",
+        "HMI_Message_Request[65]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 211,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Disc_Chk_B_F",
+        "Output_B_M[24]"
+      ],
+      "comment": "【Y817】B(右側) 排出チャック開 行"
+    },
+    {
+      "row": 211,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Disc_Chk_B_F",
+        "Output_B_M[24]"
+      ],
+      "comment": "【Y817】B(右側) 排出チャック開 行"
+    },
+    {
+      "row": 213,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[24]",
+        "HMI_Message_Request[66]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 214,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Ejc_Hldr_Feed_B_H",
+        "Output_B_M[25]"
+      ],
+      "comment": "【Y818】B(右側) 排出フォルダ送り戻"
+    },
+    {
+      "row": 214,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Ejc_Hldr_Feed_B_H",
+        "Output_B_M[25]"
+      ],
+      "comment": "【Y818】B(右側) 排出フォルダ送り戻"
+    },
+    {
+      "row": 216,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[25]",
+        "HMI_Message_Request[67]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 217,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Ejc_Hldr_Feed_B_F",
+        "Output_B_M[26]"
+      ],
+      "comment": "【Y819】B(右側) 排出フォルダ送り行"
+    },
+    {
+      "row": 217,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Ejc_Hldr_Feed_B_F",
+        "Output_B_M[26]"
+      ],
+      "comment": "【Y819】B(右側) 排出フォルダ送り行"
+    },
+    {
+      "row": 219,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[26]",
+        "HMI_Message_Request[68]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 220,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_01_Stopper_B",
+        "Output_B_M[27]"
+      ],
+      "comment": "【Y820】B(右側) 位置1ストッパー 戻"
+    },
+    {
+      "row": 220,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_01_Stopper_B",
+        "Output_B_M[27]"
+      ],
+      "comment": "【Y820】B(右側) 位置1ストッパー 戻"
+    },
+    {
+      "row": 222,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[27]",
+        "HMI_Message_Request[69]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 223,
+      "var": "Pause[1]",
+      "ix": 5,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_01_Stopper_B",
+        "Output_B_M[28]"
+      ],
+      "comment": "【Y820】B(右側) 位置1ストッパー 行"
+    },
+    {
+      "row": 223,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_01_Stopper_B",
+        "Output_B_M[28]"
+      ],
+      "comment": "【Y820】B(右側) 位置1ストッパー 行"
+    },
+    {
+      "row": 225,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[28]",
+        "HMI_Message_Request[70]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 226,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_02_Stopper_B",
+        "Output_B_M[29]"
+      ],
+      "comment": "【Y821】B(右側) 位置2ストッパー戻"
+    },
+    {
+      "row": 226,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_02_Stopper_B",
+        "Output_B_M[29]"
+      ],
+      "comment": "【Y821】B(右側) 位置2ストッパー戻"
+    },
+    {
+      "row": 228,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[29]",
+        "HMI_Message_Request[71]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 229,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_02_Stopper_B",
+        "Output_B_M[30]"
+      ],
+      "comment": "【Y821】B(右側) 位置2ストッパー行"
+    },
+    {
+      "row": 229,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_02_Stopper_B",
+        "Output_B_M[30]"
+      ],
+      "comment": "【Y821】B(右側) 位置2ストッパー行"
+    },
+    {
+      "row": 231,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[30]",
+        "HMI_Message_Request[72]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 232,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_03_Stopper_B",
+        "Output_B_M[31]"
+      ],
+      "comment": "【Y822】B(右側) 位置3ストッパー戻"
+    },
+    {
+      "row": 232,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_03_Stopper_B",
+        "Output_B_M[31]"
+      ],
+      "comment": "【Y822】B(右側) 位置3ストッパー戻"
+    },
+    {
+      "row": 234,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[31]",
+        "HMI_Message_Request[73]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 235,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_03_Stopper_B",
+        "Output_B_M[32]"
+      ],
+      "comment": "【Y822】B(右側) 位置3ストッパー行"
+    },
+    {
+      "row": 235,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_03_Stopper_B",
+        "Output_B_M[32]"
+      ],
+      "comment": "【Y822】B(右側) 位置3ストッパー行"
+    },
+    {
+      "row": 237,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[32]",
+        "HMI_Message_Request[74]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 238,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_04_Stopper_B",
+        "Output_B_M[33]"
+      ],
+      "comment": "【Y823】B(右側) 位置4ストッパー戻"
+    },
+    {
+      "row": 238,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_04_Stopper_B",
+        "Output_B_M[33]"
+      ],
+      "comment": "【Y823】B(右側) 位置4ストッパー戻"
+    },
+    {
+      "row": 240,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[33]",
+        "HMI_Message_Request[75]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 241,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_04_Stopper_B",
+        "Output_B_M[34]"
+      ],
+      "comment": "【Y823】B(右側) 位置4ストッパー行"
+    },
+    {
+      "row": 241,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_04_Stopper_B",
+        "Output_B_M[34]"
+      ],
+      "comment": "【Y823】B(右側) 位置4ストッパー行"
+    },
+    {
+      "row": 243,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[34]",
+        "HMI_Message_Request[76]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 244,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_05_Stopper_B",
+        "Output_B_M[35]"
+      ],
+      "comment": "【Y824】B(右側) 位置5ストッパー戻"
+    },
+    {
+      "row": 244,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_05_Stopper_B",
+        "Output_B_M[35]"
+      ],
+      "comment": "【Y824】B(右側) 位置5ストッパー戻"
+    },
+    {
+      "row": 246,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[35]",
+        "HMI_Message_Request[77]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 247,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_05_Stopper_B",
+        "Output_B_M[36]"
+      ],
+      "comment": "【Y824】B(右側) 位置5ストッパー行"
+    },
+    {
+      "row": 247,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_05_Stopper_B",
+        "Output_B_M[36]"
+      ],
+      "comment": "【Y824】B(右側) 位置5ストッパー行"
+    },
+    {
+      "row": 249,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[36]",
+        "HMI_Message_Request[78]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 250,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_06_Stopper_B",
+        "Output_B_M[37]"
+      ],
+      "comment": "【Y825】B(右側) 位置6ストッパー戻"
+    },
+    {
+      "row": 250,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_06_Stopper_B",
+        "Output_B_M[37]"
+      ],
+      "comment": "【Y825】B(右側) 位置6ストッパー戻"
+    },
+    {
+      "row": 252,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[37]",
+        "HMI_Message_Request[79]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 253,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_06_Stopper_B",
+        "Output_B_M[38]"
+      ],
+      "comment": "【Y825】B(右側) 位置6ストッパー行"
+    },
+    {
+      "row": 253,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYS_Pos_06_Stopper_B",
+        "Output_B_M[38]"
+      ],
+      "comment": "【Y825】B(右側) 位置6ストッパー行"
+    },
+    {
+      "row": 255,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[38]",
+        "HMI_Message_Request[80]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 256,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_SH_B_Turn_H",
+        "Output_B_M[39]"
+      ],
+      "comment": "【Y826】B(右側) ストックフォルダターン戻"
+    },
+    {
+      "row": 256,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_SH_B_Turn_H",
+        "Output_B_M[39]"
+      ],
+      "comment": "【Y826】B(右側) ストックフォルダターン戻"
+    },
+    {
+      "row": 258,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[39]",
+        "HMI_Message_Request[81]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 259,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_SH_B_Turn_F",
+        "Output_B_M[40]"
+      ],
+      "comment": "【Y827】B(右側) ストックフォルダターン行"
+    },
+    {
+      "row": 259,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_SH_B_Turn_F",
+        "Output_B_M[40]"
+      ],
+      "comment": "【Y827】B(右側) ストックフォルダターン行"
+    },
+    {
+      "row": 261,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[40]",
+        "HMI_Message_Request[82]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 262,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Srt_B_H",
+        "Output_B_M[41]"
+      ],
+      "comment": "【Y828】B(右側) NG1仕分け 戻"
+    },
+    {
+      "row": 262,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Srt_B_H",
+        "Output_B_M[41]"
+      ],
+      "comment": "【Y828】B(右側) NG1仕分け 戻"
+    },
+    {
+      "row": 264,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[41]",
+        "HMI_Message_Request[83]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 265,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Srt_B_F",
+        "Output_B_M[42]"
+      ],
+      "comment": "【Y829】B(右側) NG1仕分け 行"
+    },
+    {
+      "row": 265,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_NG1_Srt_B_F",
+        "Output_B_M[42]"
+      ],
+      "comment": "【Y829】B(右側) NG1仕分け 行"
+    },
+    {
+      "row": 267,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[42]",
+        "HMI_Message_Request[84]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 268,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Empty_Container_CY_H",
+        "Output_Share_M[1]"
+      ],
+      "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【共通 コンテナ部｜シリンダ】\r\n#\r\n# 目的：出力・完了判定・異常監視を出力ごとに配置\r\n# ━━━━━"
+    },
+    {
+      "row": 268,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 6,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Empty_Container_CY_H",
+        "Output_Share_M[1]"
+      ],
+      "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【共通 コンテナ部｜シリンダ】\r\n#\r\n# 目的：出力・完了判定・異常監視を出力ごとに配置\r\n# ━━━━━"
+    },
+    {
+      "row": 270,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_Share_Error_M[1]",
+        "HMI_Message_Request[85]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 271,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Empty_Container_CY_F",
+        "Output_Share_M[2]"
+      ],
+      "comment": "【Y1201】空コンテナ送り 行"
+    },
+    {
+      "row": 271,
+      "var": "Pause[1]",
+      "ix": 10,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Empty_Container_CY_F",
+        "Output_Share_M[2]"
+      ],
+      "comment": "【Y1201】空コンテナ送り 行"
+    },
+    {
+      "row": 273,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_Share_Error_M[2]",
+        "HMI_Message_Request[86]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 274,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sep_Claw_H",
+        "Output_Share_M[3]"
+      ],
+      "comment": "【Y1202】段バラシ爪 戻"
+    },
+    {
+      "row": 274,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sep_Claw_H",
+        "Output_Share_M[3]"
+      ],
+      "comment": "【Y1202】段バラシ爪 戻"
+    },
+    {
+      "row": 276,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_Share_Error_M[3]",
+        "HMI_Message_Request[87]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 277,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sep_Claw_F",
+        "Output_Share_M[4]"
+      ],
+      "comment": "【Y1203】段バラシ爪 行"
+    },
+    {
+      "row": 277,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Sep_Claw_F",
+        "Output_Share_M[4]"
+      ],
+      "comment": "【Y1203】段バラシ爪 行"
+    },
+    {
+      "row": 279,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_Share_Error_M[4]",
+        "HMI_Message_Request[88]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 280,
+      "var": "Pause[1]",
+      "ix": 6,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Ejc_Cont_H",
+        "Output_Share_M[5]"
+      ],
+      "comment": "【Y1204】コンテナ排出 戻"
+    },
+    {
+      "row": 280,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Ejc_Cont_H",
+        "Output_Share_M[5]"
+      ],
+      "comment": "【Y1204】コンテナ排出 戻"
+    },
+    {
+      "row": 282,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_Share_Error_M[5]",
+        "HMI_Message_Request[89]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 283,
+      "var": "Pause[1]",
+      "ix": 5,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Ejc_Cont_F",
+        "Output_Share_M[6]"
+      ],
+      "comment": "【Y1205】コンテナ排出 行"
+    },
+    {
+      "row": 283,
+      "var": "Pause[1]",
+      "ix": 9,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Ejc_Cont_F",
+        "Output_Share_M[6]"
+      ],
+      "comment": "【Y1205】コンテナ排出 行"
+    },
+    {
+      "row": 285,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_Share_Error_M[6]",
+        "HMI_Message_Request[90]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 286,
+      "var": "Pause[1]",
+      "ix": 5,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Box_Chuck_H",
+        "Output_Share_M[7]"
+      ],
+      "comment": "【Y1206】箱入れチャック 戻"
+    },
+    {
+      "row": 286,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Box_Chuck_H",
+        "Output_Share_M[7]"
+      ],
+      "comment": "【Y1206】箱入れチャック 戻"
+    },
+    {
+      "row": 288,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_Share_Error_M[7]",
+        "HMI_Message_Request[91]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 289,
+      "var": "Pause[1]",
+      "ix": 5,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Box_Chuck_F",
+        "Output_Share_M[8]"
+      ],
+      "comment": "【Y1207】箱入れチャック 行"
+    },
+    {
+      "row": 289,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Box_Chuck_F",
+        "Output_Share_M[8]"
+      ],
+      "comment": "【Y1207】箱入れチャック 行"
+    },
+    {
+      "row": 291,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_Share_Error_M[8]",
+        "HMI_Message_Request[92]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 292,
+      "var": "Pause[1]",
+      "ix": 5,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Srt_Stopper_H",
+        "Output_Share_M[9]"
+      ],
+      "comment": "【Y1208】コンテナ仕分けストッパー 戻"
+    },
+    {
+      "row": 292,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Srt_Stopper_H",
+        "Output_Share_M[9]"
+      ],
+      "comment": "【Y1208】コンテナ仕分けストッパー 戻"
+    },
+    {
+      "row": 294,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_Share_Error_M[9]",
+        "HMI_Message_Request[93]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 295,
+      "var": "Pause[1]",
+      "ix": 5,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Srt_Stopper_F",
+        "Output_Share_M[10]"
+      ],
+      "comment": "【Y1209】コンテナ仕分けストッパー 行"
+    },
+    {
+      "row": 295,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Srt_Stopper_F",
+        "Output_Share_M[10]"
+      ],
+      "comment": "【Y1209】コンテナ仕分けストッパー 行"
+    },
+    {
+      "row": 297,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_Share_Error_M[10]",
+        "HMI_Message_Request[94]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 298,
+      "var": "Pause[1]",
+      "ix": 5,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Srt_Feed_H",
+        "Output_Share_M[11]"
+      ],
+      "comment": "【Y1210】コンテナ仕分け送り 戻"
+    },
+    {
+      "row": 298,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Srt_Feed_H",
+        "Output_Share_M[11]"
+      ],
+      "comment": "【Y1210】コンテナ仕分け送り 戻"
+    },
+    {
+      "row": 300,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_Share_Error_M[11]",
+        "HMI_Message_Request[95]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 301,
+      "var": "Pause[1]",
+      "ix": 5,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Srt_Feed_F",
+        "Output_Share_M[12]"
+      ],
+      "comment": "【Y1211】コンテナ仕分け送り 行"
+    },
+    {
+      "row": 301,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Srt_Feed_F",
+        "Output_Share_M[12]"
+      ],
+      "comment": "【Y1211】コンテナ仕分け送り 行"
+    },
+    {
+      "row": 303,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_Share_Error_M[12]",
+        "HMI_Message_Request[96]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 304,
+      "var": "Pause[1]",
+      "ix": 5,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Hnd_Feed_A_H",
+        "Output_A_M[43]"
+      ],
+      "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【A(左側) 受渡送り｜シリンダ】\r\n#\r\n# 目的：出力・完了判定・異常監視を出力ごとに配置\r\n# ━━━"
+    },
+    {
+      "row": 304,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Hnd_Feed_A_H",
+        "Output_A_M[43]"
+      ],
+      "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【A(左側) 受渡送り｜シリンダ】\r\n#\r\n# 目的：出力・完了判定・異常監視を出力ごとに配置\r\n# ━━━"
+    },
+    {
+      "row": 306,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[43]",
+        "HMI_Message_Request[97]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 307,
+      "var": "Pause[1]",
+      "ix": 5,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Hnd_Feed_A_F",
+        "Output_A_M[44]"
+      ],
+      "comment": "【Y1301】A(左側) コンベア受渡送り行"
+    },
+    {
+      "row": 307,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Hnd_Feed_A_F",
+        "Output_A_M[44]"
+      ],
+      "comment": "【Y1301】A(左側) コンベア受渡送り行"
+    },
+    {
+      "row": 309,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_A_Error_M[44]",
+        "HMI_Message_Request[98]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 310,
+      "var": "Pause[1]",
+      "ix": 5,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Hnd_Feed_B_H",
+        "Output_B_M[43]"
+      ],
+      "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【B(右側) 受渡送り｜シリンダ】\r\n#\r\n# 目的：出力・完了判定・異常監視を出力ごとに配置\r\n# ━━━"
+    },
+    {
+      "row": 310,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Hnd_Feed_B_H",
+        "Output_B_M[43]"
+      ],
+      "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【B(右側) 受渡送り｜シリンダ】\r\n#\r\n# 目的：出力・完了判定・異常監視を出力ごとに配置\r\n# ━━━"
+    },
+    {
+      "row": 312,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[43]",
+        "HMI_Message_Request[99]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    },
+    {
+      "row": 313,
+      "var": "Pause[1]",
+      "ix": 5,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Hnd_Feed_B_F",
+        "Output_B_M[44]"
+      ],
+      "comment": "【Y1301】A(左側) コンベア受渡送り行"
+    },
+    {
+      "row": 313,
+      "var": "Pause[1]",
+      "ix": 8,
+      "x": 5,
+      "y": 0,
+      "Not": true,
+      "common": true,
+      "same_x_manual": [],
+      "coils": [
+        "Out_CYw_Hnd_Feed_B_F",
+        "Output_B_M[44]"
+      ],
+      "comment": "【Y1301】A(左側) コンベア受渡送り行"
+    },
+    {
+      "row": 315,
+      "var": "Pause[1]",
+      "ix": 2,
+      "x": 2,
+      "y": 0,
+      "Not": true,
+      "common": false,
+      "same_x_manual": [],
+      "coils": [
+        "Output_B_Error_M[44]",
+        "HMI_Message_Request[100]"
+      ],
+      "comment": "異常監視（自動指令・到達待ち10秒）"
+    }
+  ]
+}

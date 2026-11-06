@@ -1,0 +1,23 @@
+{
+  "internal": "C:\\OMRON\\Data\\Solution\\6cb83995-6d0c-45b5-ace2-b96278ba04c8",
+  "internal_sha": "d6291985f5ff3fdf6ea130bc88f8131bc731951a2be0573b3ae4fbd1f0c065a0",
+  "external": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I.smc2",
+  "external_sha": "1a69caa301b435e05785041f91f759e216faf10cef691512bfe49f7c4cb0d06c",
+  "solution": "3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I",
+  "iso_jst": "2026-11-05T20:30:13.766787+09:00",
+  "oem_date": "11/05/2026 20:30:13",
+  "internal_metadata": [
+    {
+      "part": "6cb83995-6d0c-45b5-ace2-b96278ba04c8.oem",
+      "before_sha": "84cc3bf2cc16d226a5c1764bd3ccd8d3e7122222d4006df7be29ea689a69298b",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-comments-20261105\\reconcile\\internal_oem.bin"
+    },
+    {
+      "part": "6cb83995-6d0c-45b5-ace2-b96278ba04c8.xml",
+      "before_sha": "ad1627834f9439088248e0a144f252fc19fc46dba47903256d527a9c87eb1bdf",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-comments-20261105\\reconcile\\internal_xml.bin"
+    }
+  ],
+  "user_confirmed_comment_visible": true,
+  "changes_are_actual_comment_sync_and_save_metadata": true
+}

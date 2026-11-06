@@ -1,0 +1,1483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sysmac schemaVersion="1">
+  <Entity type="Solution" subtype="" id="298443e5-40dc-47d4-95bf-46c8fde7d5ae" name="3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261106A" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="11/06/2026 09:44:53" trackingId="a787eee9-8a42-416b-933d-e01fffb92fc9">
+    <AccessInfos />
+    <ChildEntities>
+      <Entity type="SolutionCustomColors" subtype="" id="4514e2ed-d881-4af8-b33c-d1707801625d" name="" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:32" trackingId="56e05ed3-38a2-45d5-864a-7f8fe5e1f3be">
+        <AccessInfos />
+        <ChildEntities />
+      </Entity>
+      <Entity type="EntityDefinedColor" subtype="" id="045b952a-a294-4048-8360-ff7dad518903" name="EntityDefinedColor" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:32" trackingId="dce30eee-66a6-492e-8670-d7cdb21cc8cb">
+        <AccessInfos />
+        <ChildEntities />
+      </Entity>
+      <Entity type="EntityDefinedCheckBox" subtype="" id="e2b1a436-2e10-4a84-aaa6-4c36bd7c658a" name="EntityDefinedCheckBox" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:32" trackingId="3972c18b-f871-416b-8280-4443a6932f0a">
+        <AccessInfos />
+        <ChildEntities />
+      </Entity>
+      <Entity type="ProjectShortcut" subtype="" id="34d0bc42-d3d4-4bf2-802f-606212dc3148" name="プロジェクトショートカット" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:32" trackingId="50a50659-8abc-4961-ada9-76820f7e13fb" SDName="プロジェクトショートカット">
+        <AccessInfos />
+        <ChildEntities />
+      </Entity>
+      <Entity type="VirtualDisplaySetting" subtype="" id="3b13f405-0162-4302-89bf-c49f6660f5ec" name="3DVisualizerSettings" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:32" trackingId="88f28db7-39e0-479a-93f3-ca0436a766ac">
+        <AccessInfos />
+        <ChildEntities />
+      </Entity>
+      <Entity type="Sharing" subtype="" id="fb9449e8-1468-4a4e-87d4-f10086b2a4e0" name="EntitySharing" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:32" trackingId="2b9ee9d3-dfd5-41fb-bd69-87faf4cc6e63" SDName="デバイス間共有設定">
+        <AccessInfos />
+        <ChildEntities />
+      </Entity>
+      <Entity type="Watch" subtype="MCWatchSubType" id="9d4600b4-98b3-462f-b47b-06d62f39baed" name="ウォッチウィンドウ（プロジェクト）" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:32" trackingId="657fa809-4dc4-423c-ba02-655fca81c5d2">
+        <AccessInfos />
+        <ChildEntities />
+      </Entity>
+      <Entity type="Device" subtype="NJ501" id="5e9126d6-8f87-494e-bf44-c84712e3509e" name="new_Controller_0" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="10/23/2026 13:32:40" trackingId="ea0c07d4-ce06-4cfa-a480-1e4483647cbd" DN="new_Controller_0">
+        <AccessInfos />
+        <ChildEntities>
+          <Entity type="Watch" subtype="" id="97c1a326-8c0d-4847-9c29-aa8aab1cb7ba" name="ウォッチウィンドウ" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:32" trackingId="c9b9938e-4ffa-4968-b612-5c05cb670aa6">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="CommsSettings" subtype="" id="7869c358-82f2-49de-b3de-aad3307c8e31" name="通信設定" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:32" trackingId="6bcce715-d38d-49d4-8438-6c5080ead15a">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="NexEcatConfiguration" subtype="EcatConfigurationSubstance" id="22aaf14a-1b6b-4d6b-8ef3-92d6b44c6fa5" name="EtherCAT" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="10/23/2026 18:23:18" trackingId="9fd796a8-a247-49e4-b675-82def8577bd0" SDName="EtherCAT構成">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="NexEcatConfiguration" subtype="EcatConfigurationProxy" id="96399d2d-7096-4f7e-9de9-7b70abc167d0" name="EtherCAT" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="10/23/2026 18:23:18" trackingId="559964de-c123-412a-a70c-60df98b3be4a" DN="EtherCAT" SDName="EtherCAT構成設定">
+            <AccessInfos />
+            <ChildEntities>
+              <Entity type="NexEcatConfiguration" subtype="SlaveProxy" id="8c2b1519-f80a-4c81-a10f-7f840fe4ea61" name="N/A2" version="0" dateCreated="10/23/2026 17:59:15" dateLastModified="10/23/2026 18:01:02" trackingId="339f55f3-c6d3-413d-b7de-1954362ccb30" DN="Node1 : RCGW-ECT(112Byte/112Byte) (E001)">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+              <Entity type="NexEcatConfiguration" subtype="SlaveProxy" id="fcc69278-8d06-4c1d-baa1-fc63ebc33bac" name="N/A0" version="0" dateCreated="08/28/2026 16:55:06" dateLastModified="10/23/2026 18:23:18" trackingId="3091934e-1ee5-47ad-8e82-e0b3dcc30e39" DN="Node2 : CVD2A-KED (E002)">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+              <Entity type="NexEcatConfiguration" subtype="SlaveProxy" id="d7751902-46b4-444a-94f9-48f57ca81370" name="N/A1" version="0" dateCreated="08/28/2026 17:21:44" dateLastModified="10/23/2026 18:23:18" trackingId="6c88dc06-4470-474f-9184-2d3d291a0e1f" DN="Node3 : CVD2A-KED (E003)">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+              <Entity type="VTSysmacSensorDevice" subtype="NexECAT" id="e9ccf753-86b2-4867-9f72-64e96b7eb61e" name="Node4 : FH-5552-10-v6.60 (E004)" version="0" dateCreated="08/28/2026 17:22:14" dateLastModified="10/23/2026 18:23:18" trackingId="e4440e23-a511-46b5-a2ed-4efc76c55f6f">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="Configuration" subtype="PrintFHItem" id="6ddd8607-d695-4042-8a20-282935aa2553" name="パラメータ印刷" version="0" dateCreated="08/28/2026 17:22:14" dateLastModified="08/28/2026 17:22:14" trackingId="8566a245-2f5b-4f97-9e51-0a7dbaf17ff2">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="Configuration" subtype="LineItem" id="41bcda81-4aeb-410e-a70e-9d56087dea2c" name="Line 0" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:50:54" trackingId="6aaf8d29-f561-489e-b169-2b206668ebce" DN="Line 0">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="Configuration" subtype="VTSceneItem" id="a8038060-2ba7-4371-8bf9-567301262dd8" name="シーンデータ" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="5a4bf7f2-e62d-4bec-8340-874af0544521">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                      <Entity type="Configuration" subtype="VTSystemData" id="b9a6c7cb-53f3-411d-aef7-4c8749b74919" name="システムデータ" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="6feb9d9c-530c-4c79-8484-4f11194238e0" DN="システムデータ">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                      <Entity type="Configuration" subtype="VTToolData" id="db8f2b8e-268f-403e-86ff-8361c8568993" name="ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:50:54" trackingId="d990f9cb-18cf-4f8e-834f-de88c88f67bf">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="Configuration" subtype="VTCommunicationData" id="b2767520-4528-4f0a-b341-fcbf0767036b" name="通信コマンドマクロ" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="551aa6a1-d8b7-4772-8ef2-f9db6b6744ec">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTCalibrationData" id="fac1a545-3e60-4f9d-b115-4405b0ac5d09" name="キャリブレーションサポートツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="472df3d9-148d-4497-93a8-a33096329047">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTUserData" id="790a1c6e-2419-4e8a-ad02-517996ed08f0" name="ユーザデータ" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="6aadf8c7-534d-4af6-b27a-edf7a6ac1869">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTFileSave" id="8dd30f1a-9707-4ae7-ba0e-c939e49e90b9" name="ファイル保存" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="162b115b-ccba-487e-91fa-74bdbee73da7">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTConveyorPanoramaMonitorTool" id="c8d88108-30e9-4183-876a-f9439d2b4e78" name="コンベアパノラマ表示" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="0055e943-d871-45df-8184-d15a857f95c1">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTImageFileSave" id="adee625b-af76-4817-bd38-ce407a9f6af7" name="画像ファイル保存" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="84f06624-ad7f-4905-b244-3966fe376c5c">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTSceneMacroData" id="5dbc5a0e-f337-4ad5-a3ce-e717b5fcc6d0" name="シーン制御マクロツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="bc5b9a0e-469c-44e1-a30b-64fc3818dda6">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTConveyorCalibrationWizardData" id="b73609e2-c01d-481b-a241-f3791debab2a" name="コンベアキャリブレーションウィザード" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="0359589f-4d38-45bf-b141-8a7129492c32">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTScgDataSaveDestination" id="57333b22-ef03-46a3-be20-b0963f37f061" name="シーングループ保存先設定" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="0c63b42d-6c34-443d-842b-3c6ed0d6a7f6">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTCalibPlatePrint" id="54788110-74d1-4434-afa4-18fbdd4b082d" name="キャリブレーションプレート印刷" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="36b8a960-1dd3-4c10-8539-390e3f95c684">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTSecurityData" id="5d30732c-a116-4c8c-874a-f4341fc4b2cc" name="セキュリティ設定" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="79b86c03-779a-433c-b84a-820ac50a5642">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTRegisteredImageManager" id="2324c4a4-8349-4887-b346-92781171e42e" name="登録画像管理ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="e51c1e67-0158-449a-915d-10f0e8f79f84">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTUpdateStandardPositionTool" id="9b6e08a5-6a17-4955-bff8-405e900bce85" name="基準位置一括更新ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="6217afcd-eac9-4eb1-bb14-dce9546695d2">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTConversionSceneGroupDataTool" id="d3e1e7c5-8f94-4528-972e-6a42231a26cb" name="シーングループデータ変換ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="08ff1077-f373-4e43-a9d7-bdb509149de3">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTVariableAssignmentList" id="c6488235-87d8-47a7-9b88-fac9bfda8f69" name="変数割付一覧" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="8941abba-0140-4ab2-a887-7acbee02a525">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTQuickAccessManager" id="f88c5dc8-96f6-4ead-8122-976108eb3de5" name="クイックアクセス設定ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="36e5840e-c82a-4554-a4b3-00fb6b8168ac">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTErrorLog" id="df0ef4a1-d962-4d24-8b99-bf482cca54e2" name="エラーログ管理ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="8af61d98-0d1d-4a39-ba98-1ec1dfb7b7b0">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="Configuration" subtype="PrintFHItem" id="3ab5ed62-e301-4786-8688-3b5b13b73636" name="印刷" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="47c5d96e-667f-4f1a-b5e2-915f75efe86d">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
+                  <Entity type="Configuration" subtype="LineItem" id="481ba5dc-e24c-4166-b6c6-7705dcc80db3" name="Line 1" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:50:54" trackingId="01da4441-d1e1-416e-abb1-d697d3b4be19" DN="Line 1">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="Configuration" subtype="VTSceneItem" id="1b582d1e-1c12-44aa-951d-23f8588c4e04" name="シーンデータ" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="0ed20b9c-99ca-4e9a-8858-2512507375c0">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                      <Entity type="Configuration" subtype="VTSystemData" id="e71a1048-a2a6-4d42-aeaf-31bf562a0078" name="システムデータ" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="845e7c6f-1b15-474a-bb11-0cc0229235d3" DN="1.システムデータ">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                      <Entity type="Configuration" subtype="VTToolData" id="b1245c25-50ae-46c8-af2f-2c502e256c7c" name="ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:50:54" trackingId="604990d3-cc38-4b5b-98e0-974e5576f1f1">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="Configuration" subtype="VTCommunicationData" id="3cbd2fb8-ccde-4285-bbe2-0017dbccd5dc" name="通信コマンドマクロ" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="31e0a573-c596-45e0-897a-8b562b724fed">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTCalibrationData" id="148ea079-1fa9-4efb-9b80-8552b16fb86e" name="キャリブレーションサポートツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="91be96dc-39d2-43c4-8431-5e30fe4652a2">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTUserData" id="38db4d7d-778a-44ff-9fc7-103a30e9dcb4" name="ユーザデータ" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="4bb27685-f94f-4af5-9659-ab8b815838bb">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTFileSave" id="54f586a6-faa4-48a6-8013-bd7cacad5886" name="ファイル保存" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="63f34b4e-5987-45e4-89e3-5c4bf2a588eb">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTConveyorPanoramaMonitorTool" id="789b2cb5-c31d-4e24-a41b-bf55ca343d15" name="コンベアパノラマ表示" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="b56927cb-66b9-4457-ad48-167cf237ba3b">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTImageFileSave" id="4d6aebe7-a646-488c-a476-b0fbb34239b8" name="画像ファイル保存" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="545c622d-523c-4be2-a639-4c1be4e9fb74">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTSceneMacroData" id="253fead7-9c5a-4bbb-9eac-5c4a402bb99b" name="シーン制御マクロツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="35886e0e-cd13-4408-9338-8955633003d2">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTConveyorCalibrationWizardData" id="9dcd3045-0522-495e-aa8f-f68b2ce13936" name="コンベアキャリブレーションウィザード" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="ebee3fe9-f4a9-4053-ba98-3c26396f2cca">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTScgDataSaveDestination" id="a3d7a5f0-46d8-44c3-9ea3-572412794d68" name="シーングループ保存先設定" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="dce4683b-f5bc-4040-b206-c426bf4e19c5">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTCalibPlatePrint" id="2cfc60bd-de65-4bee-b213-c3b26bf7a3ff" name="キャリブレーションプレート印刷" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="ac376c83-abee-4cbc-aa6a-a671cc048200">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTSecurityData" id="90480736-694e-417e-b9d4-d8d1180c57b5" name="セキュリティ設定" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="2e3f1bc6-ed9c-473e-9576-aa5833ddab13">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTRegisteredImageManager" id="a9789d67-e04a-4ea4-9c4b-1d30fe54dce1" name="登録画像管理ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="6cea9575-43b8-4f58-a287-680aa955f808">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTUpdateStandardPositionTool" id="d859e251-f390-4344-8d5c-aed15e97d4e0" name="基準位置一括更新ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="caef180d-3ad3-418e-8071-a49df8183316">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTConversionSceneGroupDataTool" id="acff6dc4-fd59-413b-ad61-3132ee519046" name="シーングループデータ変換ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="81068407-6964-49ae-b99d-e2cc4a1b0ab7">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTVariableAssignmentList" id="e5a48b2d-2b64-4ae6-bd30-b5a8d7d2926f" name="変数割付一覧" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="ebbde9e7-2be6-41b2-b014-b76a70d1293a">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTQuickAccessManager" id="ca930bdd-28b1-4e0a-9a0b-1ca35f12a5f8" name="クイックアクセス設定ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="332fd1e9-bd24-4403-a58d-e4829a5d01ea">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTErrorLog" id="58b3fdf3-52b2-4a25-a72f-8bfc4147bd58" name="エラーログ管理ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="f28e26f3-3392-457e-8fc5-db2a5bacf76d">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="Configuration" subtype="PrintFHItem" id="f2c6ff82-459a-4675-82df-14ce53401d10" name="印刷" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="7b010e70-b497-4ce6-b34b-d55a222eed06">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
+                  <Entity type="Configuration" subtype="LineItem" id="58d7a929-a7f2-42dd-88ba-e2d6c2b829ef" name="Line 2" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:50:54" trackingId="dcbd65ec-6ed6-4c31-b12b-7c50aa6cfba8" DN="Line 2">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="Configuration" subtype="VTSceneItem" id="1a37cbcf-acb8-4ecf-972f-19a6e9e62c19" name="シーンデータ" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="bf0e4012-a985-4ef4-a43a-d695d3445d20">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                      <Entity type="Configuration" subtype="VTSystemData" id="1f70f969-8e1b-40c9-8968-203a78349eb6" name="システムデータ" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="b541053c-f7c4-45a2-9bf5-d7c05d3d940b" DN="2.システムデータ">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                      <Entity type="Configuration" subtype="VTToolData" id="3ff7e66e-6281-479e-a52f-b8f8a7fa44a1" name="ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:50:54" trackingId="8d2aebbb-85e0-4248-a943-b48442844b50">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="Configuration" subtype="VTCommunicationData" id="107bb911-2483-4245-8a44-db4850fe2e4f" name="通信コマンドマクロ" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="b45706ee-8c9a-4652-83ef-5d06bdbaf30c">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTCalibrationData" id="7548d7e0-fd1c-4f87-bb03-66c556cf507c" name="キャリブレーションサポートツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="f4de16bc-086e-4a65-992a-2d93dbcac8b2">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTUserData" id="0fdb5053-b2ba-48a6-a7fb-c7c59bdd5ca6" name="ユーザデータ" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="4a913740-7991-4e69-abf5-e0433932fc29">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTFileSave" id="525bea18-3099-4d4b-9a5e-b58b7642554b" name="ファイル保存" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="507639c6-6e90-4971-9fa9-0e4f6dfdfbbf">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTConveyorPanoramaMonitorTool" id="64d9f90b-752c-4464-a57e-6ab68c27ee8d" name="コンベアパノラマ表示" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="85d05803-f437-4885-910f-214641eb3b3d">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTImageFileSave" id="9699d9ed-5f6d-4630-b4b0-8ca887d1fa9c" name="画像ファイル保存" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="56d67425-de89-4619-9b06-5898d42b303c">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTSceneMacroData" id="446c5972-1e38-4c25-babe-4e0af8ac06e6" name="シーン制御マクロツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="46b096f0-5969-41fc-9a2a-9666f46bdd25">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTConveyorCalibrationWizardData" id="4f1ef75c-3895-4543-bf3c-bdfddf72c140" name="コンベアキャリブレーションウィザード" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="18ffef58-6107-4921-af02-42129f363c60">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTScgDataSaveDestination" id="535cd9c6-3284-495e-a42d-88c32b3168c1" name="シーングループ保存先設定" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="5b6f679b-c712-43f1-8f0f-16312b5da158">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTCalibPlatePrint" id="d8329c13-f500-4740-9af1-dd94c2d541de" name="キャリブレーションプレート印刷" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="80e1b2ba-243a-4667-a044-67500470c657">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTSecurityData" id="03bb61d1-7dbb-4d97-ab17-b8a32f65d2f8" name="セキュリティ設定" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="e07043f8-0844-471a-bd0d-1f14167581cf">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTRegisteredImageManager" id="6335c5ae-1690-4f9c-b04e-419d2715cd79" name="登録画像管理ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="511cf22d-7136-4be1-aa78-a17df4da0dd9">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTUpdateStandardPositionTool" id="56df12b1-b79b-4d06-a2d1-24eadd9778b8" name="基準位置一括更新ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="696d7e3b-f1e7-4cb9-964d-ddacf568a45f">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTConversionSceneGroupDataTool" id="35198486-5199-4950-8014-9fe50c9d0fe8" name="シーングループデータ変換ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="c72acfc8-588a-463f-9838-52e3b4032820">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTVariableAssignmentList" id="a3460121-d4b2-465a-a628-a738dec2939c" name="変数割付一覧" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="fa4edb94-a673-41c3-84d3-5b5b1dfa0d63">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTQuickAccessManager" id="93ddc2a0-76ea-479f-b646-597ba38264df" name="クイックアクセス設定ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="69ddae85-43e5-4986-8c6a-624a7d635743">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTErrorLog" id="4304855f-f120-4d98-b62a-c3821b49423e" name="エラーログ管理ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="7ae5fc36-f114-4eec-91cc-2703404f79b9">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="Configuration" subtype="PrintFHItem" id="994c94a9-ed85-4f4d-abf0-22f097d51dbe" name="印刷" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="47667f3e-6d9a-4599-b080-8fddf0ecae52">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
+                  <Entity type="Configuration" subtype="LineItem" id="991def20-efe1-4542-acb9-ec82ec86efbc" name="Line 3" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:50:54" trackingId="fc057d8c-3aa2-472b-b695-3009f0f074fe" DN="Line 3">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="Configuration" subtype="VTSceneItem" id="fc071db7-0dc3-4eda-8a54-ff68aa648990" name="シーンデータ" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="d2da87e6-ba24-4059-ba7f-eb5b7db635dc">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                      <Entity type="Configuration" subtype="VTSystemData" id="140521f6-e1f0-4e5f-8e6b-5ada6e31d121" name="システムデータ" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="dabcdde6-8649-41fe-b82b-1ebce4c99906" DN="3.システムデータ">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                      <Entity type="Configuration" subtype="VTToolData" id="4c26e3b4-7407-4db4-bf53-8926a63c77d8" name="ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:50:54" trackingId="fcd84978-d58d-481b-8c51-54e637198d58">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="Configuration" subtype="VTCommunicationData" id="1a1b2881-ccb3-4be4-84c7-f79294cb198b" name="通信コマンドマクロ" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="4b60174f-c87a-42a7-a882-1acd835aed9e">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTCalibrationData" id="b799cfbf-4554-4ff4-9a89-4eab68f414cb" name="キャリブレーションサポートツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="22699788-d93b-4df4-a009-926eea254338">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTUserData" id="a918d95d-a785-464e-bc78-72666f296ae4" name="ユーザデータ" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="64d7b3c8-99df-4341-b43d-f906e08627a9">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTFileSave" id="a1bae72e-6a12-4b5a-94ef-32e850b53fbc" name="ファイル保存" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="4ac98fe8-50cb-409f-b099-77ac566e5a58">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTConveyorPanoramaMonitorTool" id="adfbe3eb-bc25-4fa5-8d01-f1d922bab558" name="コンベアパノラマ表示" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="39095b70-e794-483f-bec6-4791340ba1d5">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTImageFileSave" id="431ee154-ca14-4c33-86b9-1db51d7a8772" name="画像ファイル保存" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="8e8fea56-68d4-4f1c-a9a1-5671b0bc7bc3">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTSceneMacroData" id="1c99cc8d-5404-4acb-8cb0-96377010311c" name="シーン制御マクロツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="6c3bbf51-1a0c-42be-9353-2e4308674857">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTConveyorCalibrationWizardData" id="f9e5b80d-355b-4456-b454-cea09ac12d4f" name="コンベアキャリブレーションウィザード" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="4e17d296-461e-4983-b630-4f047b22a2e7">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTScgDataSaveDestination" id="7422c1dd-d198-4759-9641-242c90273963" name="シーングループ保存先設定" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="3a56478e-6cce-496d-8c0c-a934d2484f19">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTCalibPlatePrint" id="8d2a4ac3-6154-45d3-a3b1-37e194f47335" name="キャリブレーションプレート印刷" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="1bbcba11-8f1f-4280-aa4a-6aea33d3a079">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTSecurityData" id="45c407a9-647e-49fd-8d43-1b8c436d5fef" name="セキュリティ設定" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="167e06d5-1afc-4802-bc28-504f8d3fc674">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTRegisteredImageManager" id="69300e21-aba0-4761-b770-1c47305e795c" name="登録画像管理ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="e5ff2358-4ca9-43fb-8b5a-98b2413943ce">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTUpdateStandardPositionTool" id="2826fc11-1d99-42a6-9b82-078298ac5718" name="基準位置一括更新ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="2d50ecbc-e826-4523-a34a-bd42998d6d2f">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTConversionSceneGroupDataTool" id="73e78816-b0bf-412d-b2c1-a5a1d91aa193" name="シーングループデータ変換ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="e36f16cb-c98f-4d33-b06f-7074406d170b">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTVariableAssignmentList" id="6a536579-95ca-4210-b0d8-57198af7a92a" name="変数割付一覧" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="13657e14-4c68-4219-a3e5-e40bcbc9d393">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTQuickAccessManager" id="6e3b3d7a-816c-4099-b0d5-13663d39bea5" name="クイックアクセス設定ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="955c5ea3-82e9-4bca-aa44-048ead63c247">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Configuration" subtype="VTErrorLog" id="024de534-ab14-495f-b9a8-a69d1b7b267f" name="エラーログ管理ツール" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="6ba88254-c7e0-423d-84cd-35c5ead37eba">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="Configuration" subtype="PrintFHItem" id="6a47d09f-bb64-4a1e-bab3-0914b9d0fe7f" name="印刷" version="0" dateCreated="10/09/2026 18:46:30" dateLastModified="10/09/2026 18:46:30" trackingId="5839b4d3-f725-428c-ac3b-b6b1ed64af60">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+              <Entity type="NexEcatConfiguration" subtype="SlaveProxy" id="c70c52ce-e1c9-401d-b5fc-98da37d3e7c6" name="N/A10" version="0" dateCreated="10/17/2026 11:35:08" dateLastModified="10/23/2026 18:23:18" trackingId="8474ce3d-9612-414a-b48c-6a3ab0507ec1" DN="Node5 : RCGW-ECT(112Byte/112Byte) (E005)">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+              <Entity type="NexEcatConfiguration" subtype="SlaveWithNonvolatileParameterProxy" id="b61f3910-6181-411c-834b-f9ff6320d92a" name="N/A4" version="0" dateCreated="08/28/2026 17:29:58" dateLastModified="10/23/2026 18:23:18" trackingId="57c2cef3-f016-41c0-b0a2-92aa02f4ecc6" DN="Node6 : GX-ID1612 (E006)">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="NexEcatConfiguration" subtype="SlaveNonvolatileParameterProxy" id="0b2a3f67-676c-4376-bf3a-c43df8d3fcb3" name="パラメータ" version="0" dateCreated="08/28/2026 17:29:58" dateLastModified="08/28/2026 17:29:58" trackingId="2938be80-c157-4fc4-bf1e-b9edd6046b1e" DN="パラメータ">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+              <Entity type="NexEcatConfiguration" subtype="SlaveWithNonvolatileParameterProxy" id="8a34ed48-e99e-4f70-b16d-4b4551e900f3" name="N/A5" version="0" dateCreated="09/30/2026 13:18:58" dateLastModified="10/23/2026 18:23:18" trackingId="148db194-77dd-494e-943c-f38111d18d36" DN="Node7 : GX-ID1612 (E007)">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="NexEcatConfiguration" subtype="SlaveNonvolatileParameterProxy" id="ac8d60df-c316-4e80-ada5-1d98b03d3aa6" name="パラメータ" version="0" dateCreated="09/30/2026 13:18:58" dateLastModified="09/30/2026 13:18:58" trackingId="4bef4acf-0bc5-47a2-a8a7-e44f75bebca3" DN="パラメータ">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+              <Entity type="NexEcatConfiguration" subtype="SlaveWithNonvolatileParameterProxy" id="531f879a-5bcb-4e45-b8b6-d61467973d06" name="N/A6" version="0" dateCreated="08/28/2026 17:30:59" dateLastModified="10/23/2026 18:23:18" trackingId="6f8391d3-5860-4313-9b7b-32453f448ac1" DN="Node8 : GX-OD1612 (E008)">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="NexEcatConfiguration" subtype="SlaveNonvolatileParameterProxy" id="19663b82-fbda-4121-816b-4c563b05e6c7" name="パラメータ" version="0" dateCreated="08/28/2026 17:30:59" dateLastModified="08/28/2026 17:30:59" trackingId="abbbd978-f834-4a4f-8df7-8c57dbb487c3" DN="パラメータ">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+              <Entity type="NexEcatConfiguration" subtype="SlaveWithNonvolatileParameterProxy" id="4f2cb62e-d830-4d5d-b05b-b73b78fbf290" name="N/A3" version="0" dateCreated="10/23/2026 18:21:05" dateLastModified="10/23/2026 18:23:18" trackingId="a21741fc-7c63-4346-be21-1e94e8cdf85e" DN="Node9 : GX-ID1612 (E011)">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="NexEcatConfiguration" subtype="SlaveNonvolatileParameterProxy" id="4fbb9e29-6d54-4730-a154-48cc1721b53d" name="パラメータ" version="0" dateCreated="10/23/2026 18:21:05" dateLastModified="10/23/2026 18:21:05" trackingId="7edeba14-ee6c-4f1a-83b3-74d438c9a78c" DN="パラメータ">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+              <Entity type="NexEcatConfiguration" subtype="SlaveWithNonvolatileParameterProxy" id="dad2c9a3-5ae6-4410-8f19-2f6bfb58f659" name="N/A8" version="0" dateCreated="08/28/2026 17:31:31" dateLastModified="10/23/2026 18:23:18" trackingId="b8697c0f-4c73-4c17-a6dc-f99b4fa85fab" DN="Node10 : GX-OD1612 (E010)">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="NexEcatConfiguration" subtype="SlaveNonvolatileParameterProxy" id="d953605b-c2da-401d-b84d-dd6b0188c34c" name="パラメータ" version="0" dateCreated="08/28/2026 17:31:31" dateLastModified="08/28/2026 17:31:31" trackingId="85360af5-c1da-44b1-bafa-2313b672cec4" DN="パラメータ">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+            </ChildEntities>
+          </Entity>
+          <Entity type="TroubleShoot" subtype="" id="1fa45f7f-162c-4b97-afc8-fea0a139d5b6" name="トラブルシュート、イベントログ" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="f8f4b029-0c29-4d68-b823-c9c0a27ca748">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="ConditionMonitor" subtype="" id="88800355-0637-49e1-8c25-32465abf7583" name="" version="1" dateCreated="08/07/2026 09:28:32" dateLastModified="10/14/2026 16:01:58" trackingId="dc3cc404-5634-467b-9f87-e73e116a5b0e">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="Simulation" subtype="MachineModelConfiguration" id="53e14a68-6f1b-4aba-aa29-e5fda98b86ab" name="MachineModelConfiguration" version="2" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="0d9415d4-fba1-4e16-a699-d61c2e903e06" SDName="3D装置モデル">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="UserProgramId" subtype="" id="62f37fcc-d6a2-4b2d-aaea-9f645e45ff39" name="UserProgramId" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="901d5a58-f342-4928-a2dd-74a042fcd9eb">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="SourceCompareId" subtype="Configuration" id="66f5d9e3-b814-4fbb-b4bb-019d822cb793" name="構成・設定の照合ID" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="10/23/2026 18:23:18" trackingId="a8044aec-cb72-442b-bb86-a0dc8c7d2537" SDName="構成・設定の照合ID">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="OpcUaServerSimulationSettings" subtype="SubSettings" id="05f23f20-ec27-4091-8323-1aa9cb87689c" name="OpcUaServerSimulationSettings" version="1" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="165f6d04-72c2-41a6-972e-bbc835f39808">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="NxCpuRack" subtype="CpuRack" id="b17ea972-d641-4a87-8ea8-3aa1dd28e5ff" name="CPU Rack0" version="0" dateCreated="08/07/2026 09:28:33" dateLastModified="10/17/2026 11:28:41" trackingId="03c47ad4-dd38-4148-9a9e-da75bac4cbe9" DN="CPU・増設ラック">
+            <AccessInfos />
+            <ChildEntities>
+              <Entity type="NxCpuRack" subtype="NXBusPrintTarget" id="fb676ef4-413b-4d2f-a523-5f624b704a7b" name="NXBus" version="0" dateCreated="08/07/2026 09:28:33" dateLastModified="08/07/2026 09:28:33" trackingId="959d9221-998b-4116-af6e-05384ef74c19">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+              <Entity type="NxCpuRack" subtype="NXBus" id="0b2d733c-69a9-40c6-b77f-4970ade53a28" name="NXBus0" version="0" dateCreated="08/07/2026 09:28:33" dateLastModified="10/17/2026 11:28:41" trackingId="ec443455-707e-4a6c-95d7-1ee92ff8c0ee" DN="CPUラック">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="NexNXBusConfiguration" subtype="MasterUnit" id="edc8a6d8-2846-400b-9b1a-5b63aa408177" name="Master unit" version="0" dateCreated="08/07/2026 09:28:33" dateLastModified="08/07/2026 09:28:33" trackingId="fc97e645-d8ed-4692-913c-aa1772767f52">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="NexNXBusConfiguration" subtype="SlaveTerminal" id="e4444048-67ed-48b5-a109-c9e914f3ad67" name="SlaveTerminal" version="0" dateCreated="08/07/2026 09:28:33" dateLastModified="10/17/2026 11:28:41" trackingId="1780a3ef-0b19-497f-b4a5-5cf9be4d5196">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="NexNXBusConfiguration" subtype="NXUnit" id="f0af8686-46d7-4bb6-8bc9-dd2c5f67e276" name="NXUnit0" version="0" dateCreated="08/28/2026 14:50:11" dateLastModified="08/28/2026 16:29:14" trackingId="a36551be-a7e7-4524-ae0d-6b5fe487b878" DN="ユニット1 : NX-ID6142-6(N1)">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="NexNXBusConfiguration" subtype="NXUnitParameters" id="2bcf6982-a6ae-46a4-b819-05a6cc027ac6" name="ユニット動作設定" version="0" dateCreated="08/28/2026 14:50:11" dateLastModified="08/28/2026 14:50:11" trackingId="630c2640-39df-4dfb-ad2a-41dcc829062e">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
+                  <Entity type="NexNXBusConfiguration" subtype="NXUnit" id="540c00ba-01ea-48a1-b87a-17bc2e5431f6" name="NXUnit1" version="0" dateCreated="08/28/2026 14:50:14" dateLastModified="08/28/2026 16:29:14" trackingId="c02cd60b-423e-4c60-aec8-3fe4c61cec75" DN="ユニット2 : NX-ID6142-6(N2)">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="NexNXBusConfiguration" subtype="NXUnitParameters" id="0eb654e5-36d7-4653-82a4-c568301d064b" name="ユニット動作設定" version="0" dateCreated="08/28/2026 14:50:14" dateLastModified="08/28/2026 14:50:14" trackingId="5e724527-e3bb-4c4f-8b51-2f3ae3b4f1f0">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
+                  <Entity type="NexNXBusConfiguration" subtype="NXUnit" id="d175d38e-7a5d-4289-a055-4903fd2f8169" name="NXUnit2" version="0" dateCreated="08/28/2026 14:50:21" dateLastModified="08/28/2026 16:29:14" trackingId="98b14f7e-9901-48ff-aeff-cac8784120e7" DN="ユニット3 : NX-ID6142-6(N3)">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="NexNXBusConfiguration" subtype="NXUnitParameters" id="a971a84f-160c-4f3d-85f3-c5475a2730f6" name="ユニット動作設定" version="0" dateCreated="08/28/2026 14:50:21" dateLastModified="08/28/2026 14:50:21" trackingId="18de71c4-c29e-4c13-b5e6-746d0cfd628a">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
+                  <Entity type="NexNXBusConfiguration" subtype="NXUnit" id="3de1600d-db4b-48fe-9799-98370f007972" name="NXUnit3" version="0" dateCreated="08/28/2026 14:50:43" dateLastModified="08/28/2026 16:29:14" trackingId="5f952967-84b1-47e5-801a-8f209ffa5c1c" DN="ユニット4 : NX-ID6142-6(N4)">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="NexNXBusConfiguration" subtype="NXUnitParameters" id="28c6c284-01ff-44f0-8273-18858819800b" name="ユニット動作設定" version="0" dateCreated="08/28/2026 14:50:43" dateLastModified="08/28/2026 14:50:43" trackingId="f2963cc8-1d45-4ac7-a12d-0fcb70606c2b">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
+                  <Entity type="NexNXBusConfiguration" subtype="NXUnit" id="dc18baf7-45c9-4810-8893-5e5fb22bf5dd" name="NXUnit4" version="0" dateCreated="08/28/2026 14:50:45" dateLastModified="08/28/2026 16:29:14" trackingId="b0e87f5f-8403-48b2-ba2f-b32c98639600" DN="ユニット5 : NX-ID6142-6(N5)">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="NexNXBusConfiguration" subtype="NXUnitParameters" id="4652a630-dfb6-4ee1-a09b-7cc20ec07053" name="ユニット動作設定" version="0" dateCreated="08/28/2026 14:50:45" dateLastModified="08/28/2026 14:50:45" trackingId="0847a079-7aa8-46bd-bf7b-67f5bdf0683f">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
+                  <Entity type="NexNXBusConfiguration" subtype="NXUnit" id="2377a162-0727-4483-ba82-a1c4b1edc497" name="NXUnit5" version="0" dateCreated="08/28/2026 14:51:12" dateLastModified="08/28/2026 16:29:14" trackingId="11f80e64-e3ca-4963-8a30-64428e75caa4" DN="ユニット6 : NX-OD6121-6(N6)">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="NexNXBusConfiguration" subtype="NXUnitParameters" id="5202c22a-77c0-4ec8-b3f4-fad26181e644" name="ユニット動作設定" version="0" dateCreated="08/28/2026 14:51:12" dateLastModified="08/28/2026 14:51:12" trackingId="9cfa020d-2c4d-4154-a1b8-03f8637863b0">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
+                  <Entity type="NexNXBusConfiguration" subtype="NXUnit" id="0a0137af-1586-411f-9a2a-421a228ea467" name="NXUnit6" version="0" dateCreated="08/28/2026 14:51:19" dateLastModified="08/28/2026 16:29:14" trackingId="69162b30-862b-4ce2-a98b-55683da8a923" DN="ユニット7 : NX-OD6121-6(N7)">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="NexNXBusConfiguration" subtype="NXUnitParameters" id="799cb459-7dc3-4557-ab90-51b16a83e26e" name="ユニット動作設定" version="0" dateCreated="08/28/2026 14:51:19" dateLastModified="08/28/2026 14:51:19" trackingId="1978cd18-7914-46bb-a4a1-a2ecdacd6f96">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
+                  <Entity type="NexNXBusConfiguration" subtype="NXUnit" id="ec3250ee-1f95-4f76-ba83-009d82e397b8" name="NXUnit7" version="0" dateCreated="08/28/2026 14:51:21" dateLastModified="08/28/2026 16:29:14" trackingId="adf8816d-3988-487c-8a27-823b23f984df" DN="ユニット8 : NX-OD6121-6(N8)">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="NexNXBusConfiguration" subtype="NXUnitParameters" id="dfc6c43e-39c3-460e-8709-50819d4eec4c" name="ユニット動作設定" version="0" dateCreated="08/28/2026 14:51:21" dateLastModified="08/28/2026 14:51:21" trackingId="536eb458-60de-404d-9a02-17e3be3c943e">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+            </ChildEntities>
+          </Entity>
+          <Entity type="IOMap" subtype="" id="5ea94063-20f6-41d6-bdbf-11bd0195bd9f" name="I/Oマップ" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="10/23/2026 18:23:18" trackingId="12655349-71a6-4033-ac06-b8ffd01df4fd" DN="I/Oマップ">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="NexControllerSetup" subtype="" id="dfa99505-0489-4e33-a2ac-f38e66afe7ba" name="コントローラ設定" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="6cdf43ca-7758-43b5-9fb2-e656d697fd05" DN="コントローラ設定">
+            <AccessInfos />
+            <ChildEntities>
+              <Entity type="NexControllerSetupActionSetting" subtype="" id="2fcf5624-5327-44f0-81c3-c920ba5cc6f9" name="動作設定" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="10/17/2026 11:28:41" trackingId="18baea7d-8733-48bd-aeac-97db44fb88ae" DN="動作設定">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+              <Entity type="NexControllerSetupEipSetting" subtype="" id="a82e6d22-1f4e-4afb-9151-5029a16128ca" name="内蔵EtherNet/IPポート設定" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="10/17/2026 11:28:41" trackingId="a0039fac-c072-4553-bc0a-2e3d860c1d82" DN="内蔵EtherNet/IPポート設定">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+              <Entity type="NexControllerSetupMemorySetting" subtype="" id="7d30b6b8-f96b-4258-9dc4-a849f4b4470c" name="メモリ設定0" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="5f89b824-40a7-466f-a462-e4b22c6bb8a1" DN="メモリ設定">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+            </ChildEntities>
+          </Entity>
+          <Entity type="MotionSettingEntity" subtype="" id="46bb53f3-aa30-4829-ba80-ce99526d8e47" name="モーション制御設定" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="10/17/2026 11:28:41" trackingId="8553fea5-e50c-4f57-83ca-6b668accb3b0" DN="モーション制御設定">
+            <AccessInfos />
+            <ChildEntities>
+              <Entity type="AxesRootEntity" subtype="" id="26ba4fad-aabc-415d-8ff3-3a6edde10746" name="軸設定" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="10/17/2026 11:28:41" trackingId="371a9657-1bf3-437b-8a0a-9682b26a63a9" DN="軸設定">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="AxesMonitorTableEntity" subtype="" id="fc78d5ec-3d59-4f72-9ca7-9b8ea099bc7b" name="軸モニタテーブル" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="9f5edd90-066f-4db1-9fdc-806fc890a93a">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="AxesSettingTableEntity" subtype="" id="c7ba0b51-547a-4bdb-a182-7bfa4ed7f6fd" name="全軸設定テーブル" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="f85aa6b4-8ac6-4052-9ffc-679b14410707">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="AxisSettingEntity" subtype="" id="0f918458-44dc-49cc-bfb1-43fc5c3b46da" name="Stm_A_Rev_Axis000" version="0" dateCreated="10/01/2026 10:42:00" dateLastModified="10/22/2026 16:24:23" trackingId="67434893-7299-434b-a292-2371ff634791" DN="Stm_A_Rev_Axis000 (0,MC1)">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="AxisSettingEntity" subtype="" id="15ef122e-3c67-4a90-aa64-b741a11b23b9" name="Stm_A_Rev_Axis001" version="0" dateCreated="10/01/2026 14:09:28" dateLastModified="10/22/2026 16:29:50" trackingId="2d7179b3-2c6e-469e-9638-c61a1d3ab5c4" DN="Stm_A_Rev_Axis001 (1,MC1)">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="AxisSettingEntity" subtype="" id="80606d92-a33a-443f-8a75-f1cd5ad118da" name="Stm_B_Rev_Axis002" version="0" dateCreated="10/01/2026 10:42:00" dateLastModified="10/22/2026 16:29:50" trackingId="863134d0-50a5-42a7-ad82-1a52fcd563d1" DN="Stm_B_Rev_Axis002 (2,MC1)">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="AxisSettingEntity" subtype="" id="57062c64-cc68-42aa-beb2-d0f6391f70b1" name="Stm_B_Rev_Axis003" version="0" dateCreated="10/01/2026 10:42:00" dateLastModified="10/22/2026 16:29:50" trackingId="8218960b-eb72-4249-b659-ec770682dd76" DN="Stm_B_Rev_Axis003 (3,MC1)">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+              <Entity type="AxesGroupsRootEntity" subtype="" id="322e7369-fb1c-47d7-b2e1-5cab9cc292e9" name="軸グループ設定" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="10/17/2026 11:28:41" trackingId="b8efa527-c888-431d-a682-f3fb54d71da9" DN="軸グループ設定">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+            </ChildEntities>
+          </Entity>
+          <Entity type="AxesTestEntity" subtype="" id="7d4ba961-5430-4d9a-8157-7df1aee1b8ff" name="AxesTestEntity" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="de74d644-e994-4648-8561-ce7a93391679">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="CamEditor" subtype="" id="7c1e137a-e95d-492a-959a-f2424cda4d7f" name="カムデータ設定" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="bdd0ee01-e091-4bdb-a856-0660dfcf9e61" DN="カムデータ設定">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="EventTable" subtype="" id="eed8c42a-48e3-4023-8669-4c78f251a667" name="イベント設定" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="b36cab21-05d1-4f2b-ba36-20ffbe93b9dc" DN="イベント設定">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="TaskConfiguration" subtype="" id="c3ff0ff8-c7b4-43f7-9ce0-3f87fd0e1067" name="タスク設定" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="10/23/2026 18:23:18" trackingId="2abbc5aa-7a6d-4aa3-b68e-ede5033b2033" DN="タスク設定">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="DataTraces" subtype="Nex" id="ad2953ba-a8ff-4a99-ae8b-26a0d0f8b8b0" name="データトレース設定" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="c7fea249-361d-4113-9f07-d6b98ad3325b" DN="データトレース設定">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="OpcUaSetting" subtype="" id="4ec30bbc-a494-44ec-901d-8c1030de4edd" name="OPC UA設定0" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="10/17/2026 11:28:41" trackingId="546f285a-d3fa-46de-8ec1-1edfa9b1fa40" DN="OPC UA設定">
+            <AccessInfos />
+            <ChildEntities>
+              <Entity type="OpcUaServerSetting" subtype="" id="a681db43-d7a8-4ab3-b00f-7db8b56fa88d" name="OPC UAサーバ設定" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="5dcfb4c8-09fb-4dbe-81fd-603f73b5c942" DN="OPC UAサーバ設定">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="OpcUaServerStatus" subtype="" id="e585db19-b1eb-4cbb-b960-f4923dede20d" name="サーバステータス" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="c6702125-3e25-4447-b593-fb70d1be216b">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="OpcUaServerCertificateSetting" subtype="" id="5b9a0a22-b5ac-4fa4-be02-cf5cf2a73df4" name="サーバ証明書" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="96c2aec9-cdad-497e-9fe5-6f18fb58ddbd">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="OpcUaClientSetting" subtype="" id="c428e35e-22cc-436f-9db6-7e9989e2569d" name="クライアント認証" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="bead3857-a174-47be-bcef-3ace163574fb">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="OpcUaIssuerSetting" subtype="" id="7c0aeeb1-cb74-48a2-b100-d217c03261c1" name="発行者認証" version="0" dateCreated="08/07/2026 09:28:33" dateLastModified="08/07/2026 09:28:33" trackingId="c4a4203a-0571-42d7-8903-36126d60702f">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+            </ChildEntities>
+          </Entity>
+          <Entity type="HostConnections" subtype="" id="4f1f9ea6-91a3-4c51-8c0b-27f58654b73e" name="上位接続設定0" version="0" dateCreated="08/07/2026 09:28:33" dateLastModified="08/07/2026 09:28:33" trackingId="10bd4944-b2cc-4ae5-9d55-15f1ba425ca2" DN="上位接続設定">
+            <AccessInfos />
+            <ChildEntities>
+              <Entity type="DbConnection" subtype="" id="e501d3c5-e407-47d8-b7fc-fe2f2158019e" name="DB接続0" version="0" dateCreated="08/07/2026 09:28:33" dateLastModified="08/07/2026 09:28:33" trackingId="0792fe6a-7602-4717-9f19-bfcf0fcbd215" DN="DB接続">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="DbServiceSetting" subtype="" id="f7a6dfe0-c14a-4479-9006-1e9b707cf743" name="DB接続サービス設定" version="1" dateCreated="08/07/2026 09:28:33" dateLastModified="08/07/2026 09:28:33" trackingId="f24a25ac-2212-4af4-bf33-e8b20a2a04f7" DN="DB接続サービス設定">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="DbServiceOnlineSetting" subtype="" id="389b24e4-0571-44a2-a84e-ebfe4be50aa5" name="オンライン設定" version="0" dateCreated="08/07/2026 09:28:33" dateLastModified="08/07/2026 09:28:33" trackingId="6e9f2017-f800-4703-8edb-a151a6010049">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                      <Entity type="DbServiceMonitor" subtype="" id="e7ca6fa7-fe9b-4c16-9c22-f57b89e0ef9e" name="DB接続サービスモニタ" version="0" dateCreated="08/07/2026 09:28:33" dateLastModified="08/07/2026 09:28:33" trackingId="db0ed247-141d-43e0-bd71-24419cdd4643">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
+                  <Entity type="DbConnectionSettingRoot" subtype="" id="55cfe1df-7df1-4b79-a648-1a1695dda2d5" name="DBコネクション設定" version="0" dateCreated="08/07/2026 09:28:33" dateLastModified="08/07/2026 09:28:33" trackingId="fddb9a97-db58-4bec-a346-9dd79a8d005b" DN="DBコネクション設定">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="DbConnectionMonitor" subtype="" id="a3b7d723-7beb-4ed4-9998-982f9dfc2d71" name="コネクションモニタテーブル" version="0" dateCreated="08/07/2026 09:28:33" dateLastModified="08/07/2026 09:28:33" trackingId="2d2a931b-a268-492a-a97f-35fb5f4adaa9">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+            </ChildEntities>
+          </Entity>
+          <Entity type="Group" subtype="IecPous" id="cf9dba10-ad0f-4ef2-95eb-5b88f84c9da5" name="POU" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="a2d91ec2-efda-4147-9d2c-aaa3413d2225" DN="POU">
+            <AccessInfos />
+            <ChildEntities>
+              <Entity type="Group" subtype="IecPrograms" id="a842e07d-c563-4fb0-a828-04f21d84dd5a" name="プログラム" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="10/09/2026 15:56:32" trackingId="849771ac-12e9-4e8b-9a75-46db7ce6a60e" DN="プログラム">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="Program" subtype="MultipartLadder" id="cfa8adea-9bd6-4e80-a765-2c085139e6da" name="ModeManagement_モード管理" version="0" dateCreated="08/07/2026 09:28:33" dateLastModified="10/23/2026 12:05:28" author="SEIGI-N13" trackingId="363e329f-f8c5-4731-b7f7-5d7983c65597" DN="ModeManagement_モード管理">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="DebugProgramSetting" subtype="" id="7a558314-cf26-41c5-8649-d5084c67ccaa" name="DebugProgramSetting0.00" version="0" dateCreated="08/07/2026 09:28:33" dateLastModified="10/08/2026 14:13:23" trackingId="e6812045-c4da-4eeb-98cc-90b3cdf682b5">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                      <Entity type="Variables" subtype="Ladder" id="b530d740-9d69-41c3-974a-97c06e823eb2" name="変数テーブル" version="0" dateCreated="08/07/2026 09:28:33" dateLastModified="11/03/2026 14:47:18" trackingId="8b9bb662-4dca-482a-a110-1bf01289574a">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="0bbb6cb2-1f06-4d16-ab32-51e00c39b344" name="Source" version="0" dateCreated="08/07/2026 09:28:33" dateLastModified="10/08/2026 14:13:23" trackingId="5fa78f3c-9990-4373-bcec-30b0cbb57761">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="5ede16be-2114-46c3-84df-a79badb6e32e" name="Initial_初期化処理" version="0" dateCreated="10/01/2026 15:54:13" dateLastModified="10/02/2026 13:47:45" trackingId="dc4d5b84-4530-4b2d-b0c7-c521aed8da54" DN="Initial_初期化処理">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="fc469a10-cb69-4f1d-bddf-1906352071bf" name="Source" version="0" dateCreated="10/01/2026 15:54:13" dateLastModified="10/01/2026 15:54:13" trackingId="10190832-697b-4233-b4a3-c85adf0d59b0">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="6174e0a3-43a7-4b3e-8d1a-e7844ab1f90d" name="PouBodySourceHolder" version="0" dateCreated="10/01/2026 15:54:13" dateLastModified="11/04/2026 14:33:31" trackingId="19fb76cd-ce2d-439a-97fb-6625a3059909">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8" name="Origin_原点復帰" version="0" dateCreated="10/23/2026 09:43:01" dateLastModified="10/23/2026 14:07:53" trackingId="c9ac4d7a-571f-45d9-b76c-ea42cf9fb584" DN="Origin_原点復帰">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="675eaa3b-1115-45a5-80e1-cf155d48d4af" name="Source" version="0" dateCreated="10/23/2026 09:43:01" dateLastModified="10/23/2026 09:43:01" trackingId="71f8371c-fc3b-499d-aab9-ce0d50da7705">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="0c8d3c8e-e4b2-4250-a059-790a749456f9" name="PouBodySourceHolder" version="0" dateCreated="10/23/2026 09:43:02" dateLastModified="11/04/2026 14:33:31" trackingId="45eeb6bf-9a5b-470a-9a96-452403d1616e">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="349c35e0-3c7b-4393-8d2c-13adafb2adc0" name="DummyCheck_ダミーチェック" version="0" dateCreated="10/01/2026 16:06:25" dateLastModified="10/02/2026 13:47:45" trackingId="a15b32e2-d4c3-4832-bdf8-3442ba227fe6" DN="DummyCheck_ダミーチェック">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="eb32710a-5490-43bc-a3f8-7174d2536de4" name="Source" version="0" dateCreated="10/01/2026 16:06:25" dateLastModified="10/01/2026 16:06:25" trackingId="e36200d0-6cc7-4002-a828-136423191281">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="e228c29d-3b77-4574-a3b1-cd58e4648443" name="PouBodySourceHolder" version="0" dateCreated="10/01/2026 16:06:25" dateLastModified="11/04/2026 14:33:31" trackingId="de5efdd1-163a-44d4-ae72-4c1c4fa28967">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="13f086b3-1a09-467f-8cff-eea83144ff00" name="AutoMode_自動運転" version="0" dateCreated="08/07/2026 09:28:33" dateLastModified="10/30/2026 15:27:42" trackingId="33e89ac7-5e77-4dc5-b7f9-78d1fccfa649" DN="AutoMode_自動運転">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="cb4465b4-1a5c-4b47-91e2-cd2b72e446af" name="Source" version="0" dateCreated="08/07/2026 09:28:33" dateLastModified="08/07/2026 09:28:33" trackingId="b6cc9562-7c5a-412a-870e-f217434ccbc3">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="ef53c27a-7795-4801-b931-e79cc4097f16" name="PouBodySourceHolder" version="0" dateCreated="08/07/2026 09:28:33" dateLastModified="11/04/2026 14:33:31" trackingId="ddd7702e-e2a8-423b-885b-cbe4045f18e2">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="056f39b5-2372-4d32-b892-634336899ec4" name="Manual_手動運転" version="0" dateCreated="10/01/2026 16:07:03" dateLastModified="10/02/2026 13:47:45" trackingId="acbeb821-c958-4402-a25d-a93744be2010" DN="Manual_手動運転">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="531293fb-f5bd-4e27-a070-9994dfaf11b6" name="Source" version="0" dateCreated="10/01/2026 16:07:03" dateLastModified="10/01/2026 16:07:03" trackingId="db7d2226-bcbc-4d0d-b856-954394ac42c4">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="cdd329fa-7f50-4e0e-8ccf-5e1ed319bf5f" name="PouBodySourceHolder" version="0" dateCreated="10/01/2026 16:07:03" dateLastModified="11/04/2026 14:33:31" trackingId="31aaedde-ce4f-411a-a536-8d93bb4c5e86">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="49a83d1d-d863-4a09-a86a-4797edc14a57" name="Setting_設定" version="0" dateCreated="10/01/2026 16:10:09" dateLastModified="10/02/2026 13:47:45" trackingId="5d7ea6fc-5db5-4d4f-b463-f8aa152a677b" DN="Setting_設定">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="45eef570-ab3c-4358-b88e-08531a96e3bd" name="Source" version="0" dateCreated="10/01/2026 16:10:09" dateLastModified="10/01/2026 16:10:09" trackingId="738ef09c-ec09-4c7f-9b99-0d642993f451">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="7f35a849-a052-42f1-9ddf-7386516ecc2d" name="PouBodySourceHolder" version="0" dateCreated="10/01/2026 16:10:09" dateLastModified="11/04/2026 14:33:31" trackingId="ae1ea0cd-a1ef-4054-81df-e15cf653abef">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4" name="Error_エラー処理" version="0" dateCreated="10/01/2026 16:10:36" dateLastModified="11/03/2026 14:47:18" trackingId="6f780eed-2f26-4244-8c35-148ae66eecc2" DN="Error_エラー処理">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="01e7823a-4211-46dc-ae8a-e230ca27873c" name="Source" version="0" dateCreated="10/01/2026 16:10:36" dateLastModified="10/08/2026 14:13:23" trackingId="2dd521a2-25e0-477e-9083-818a89507a07">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="dce97d22-c1df-4feb-9970-15ade280751b" name="PouBodySourceHolder" version="0" dateCreated="10/01/2026 16:10:36" dateLastModified="11/04/2026 14:33:31" trackingId="9835385a-84ab-4460-aa5d-09ee6075d967">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
+                  <Entity type="Program" subtype="MultipartLadder" id="53b4f5d0-45c9-4402-b45f-1dce5f3c35e6" name="Movements_動作" version="0" dateCreated="10/01/2026 15:47:55" dateLastModified="11/04/2026 11:49:01" author="SEIGI-N13" trackingId="4d1d58f7-b328-4eb1-b99a-d548dcf433b1" DN="Movements_動作">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="DebugProgramSetting" subtype="" id="7642d3f9-379e-4236-b1cd-1d4284049e3b" name="DebugProgramSetting0.00" version="0" dateCreated="10/01/2026 15:47:55" dateLastModified="10/01/2026 16:19:41" trackingId="cecb0282-a9c3-465d-ba00-56e2acc056c4">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                      <Entity type="Variables" subtype="Ladder" id="86df70c5-aaad-4d2c-bba7-04264d7b7f32" name="変数テーブル" version="0" dateCreated="10/01/2026 15:47:55" dateLastModified="11/05/2026 14:25:08" trackingId="21eb0a74-507c-4257-b367-5da88ba452d4">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="5c6910d1-8bbf-4c91-8ac9-cb761beabc70" name="Source" version="0" dateCreated="10/01/2026 15:47:55" dateLastModified="10/01/2026 15:47:55" trackingId="0f4f1836-6a9f-4135-aec2-8abf6c05e297">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="cc6ea326-2efd-437a-a0b6-6d1b9340d3f7" name="Ins_A_Cv_左検査Cv" version="0" dateCreated="10/09/2026 10:26:56" dateLastModified="10/30/2026 11:57:12" trackingId="7805f118-138f-48a5-ac0b-8223821ba52c" DN="Ins_A_Cv_左検査Cv">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="f9768653-5e33-4714-bcf1-15fbc4a535d5" name="Source" version="0" dateCreated="10/09/2026 10:26:56" dateLastModified="10/09/2026 10:26:56" trackingId="bb177c56-cbd5-45f0-a120-6c9a433a31f6">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="d282164d-e00c-4e35-be68-f2ef4b1d9bd5" name="PouBodySourceHolder" version="0" dateCreated="10/09/2026 10:26:56" dateLastModified="11/04/2026 18:03:32" trackingId="d971a50f-fb95-4d57-8e3c-1d316c50953d">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="02fa0618-20f0-422f-b44d-3aba0838a381" name="ST0_A_Sup_左供給" version="0" dateCreated="10/01/2026 15:47:55" dateLastModified="10/23/2026 13:32:40" trackingId="98505719-91f6-41b5-bc45-f316b326b3d9" DN="ST0_A_Sup_左供給">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="e2d8acb0-01b8-4bae-9ee2-5c5e60e70904" name="Source" version="0" dateCreated="10/01/2026 15:47:55" dateLastModified="10/01/2026 15:47:55" trackingId="91d78a53-2e03-4887-b24d-d108536a20e8">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="193c6786-4278-4751-88c5-53cd98761dd6" name="PouBodySourceHolder" version="0" dateCreated="10/01/2026 15:47:55" dateLastModified="11/04/2026 18:03:32" trackingId="412109c5-2100-41ee-8a9f-e12e6fef2336">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="08c19951-3bae-402d-a637-be66c221f71b" name="ST1_A_Ca1_左Ca1検査" version="0" dateCreated="10/13/2026 14:48:25" dateLastModified="11/03/2026 14:47:18" trackingId="90423e20-28b0-4232-81a3-a86dae13c9dd" DN="ST1_A_Ca1_左Ca1検査">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="0d031af3-cca0-417d-81ce-c0d7493b0492" name="Source" version="0" dateCreated="10/13/2026 14:48:25" dateLastModified="10/13/2026 14:48:25" trackingId="d7f03c31-6d36-4dbe-b2c5-cb0406b79e59">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="bb02ad4d-3928-409e-bd90-0786971cd31d" name="PouBodySourceHolder" version="0" dateCreated="10/13/2026 14:48:25" dateLastModified="11/04/2026 18:03:32" trackingId="1d0da566-1d10-4626-89c5-58b8b306567e">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="910f90f5-80d6-4e6f-ba4f-5e9862fd5171" name="ST2_A_Hgt_左高さ検査" version="0" dateCreated="10/14/2026 13:30:24" dateLastModified="11/04/2026 11:49:01" trackingId="fc610b45-607d-4aa1-9ccd-93ddb53cbb63" DN="ST2_A_Hgt_左高さ検査">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="9b7ead33-c731-4318-9160-614725435c03" name="Source" version="0" dateCreated="10/14/2026 13:30:24" dateLastModified="10/14/2026 13:30:24" trackingId="0ed7240c-ba5a-4dba-866b-f3e3af698731">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="ae9f1385-f300-4cf9-beb5-5b7fdd1d56da" name="PouBodySourceHolder" version="0" dateCreated="10/14/2026 13:30:24" dateLastModified="11/04/2026 18:03:32" trackingId="f76f756f-4c13-4bed-92e0-888ded11aafc">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Inline" subtype="StructuredText" id="98395ea0-86b1-462b-859b-156248ddfb84" name="17886125-c9c8-411e-84a4-1fdc7c7e89b0" version="0" dateCreated="10/15/2026 11:27:01" dateLastModified="11/04/2026 11:49:01" trackingId="17886125-c9c8-411e-84a4-1fdc7c7e89b0">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="281f52aa-7828-40bc-9b12-baa5848a3b7a" name="ST3_A_Dis1_左NG1排出" version="0" dateCreated="10/15/2026 14:40:06" dateLastModified="11/03/2026 14:47:18" trackingId="0d2e8fc0-50a6-4a9a-b6aa-b4999543e143" DN="ST3_A_Dis1_左NG1排出">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="72c97bd7-2b32-4b09-9fb6-5c754fa2a3db" name="Source" version="0" dateCreated="10/15/2026 14:40:06" dateLastModified="10/15/2026 14:40:06" trackingId="917d62eb-c24a-4ac0-8e17-b9e2f33cf542">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="e66e599c-8aac-4619-802d-d1084b80d1a0" name="PouBodySourceHolder" version="0" dateCreated="10/15/2026 14:40:06" dateLastModified="11/04/2026 18:03:32" trackingId="e350ed9f-c00f-4bdb-9aa3-cae021280574">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc" name="ST4_A_Rev1_左反転1" version="0" dateCreated="10/23/2026 14:13:52" dateLastModified="11/03/2026 14:47:18" trackingId="5f9a45cf-e1f5-4443-817c-150248f47238" DN="ST4_A_Rev1_左反転1">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="f98c451d-71d1-4681-b468-b877f314d1c1" name="Source" version="0" dateCreated="10/23/2026 14:13:52" dateLastModified="10/23/2026 14:13:52" trackingId="7bf3641d-add4-4211-b1ce-f6cc3843d628">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="4c56bd68-1d53-433e-bb8e-0e2b8f42da7a" name="PouBodySourceHolder" version="0" dateCreated="10/23/2026 14:13:52" dateLastModified="11/04/2026 18:03:32" trackingId="7c817110-dce5-4b4f-be8b-66c6352d9269">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="9d70f8e1-594f-4023-b6ae-7d63d464a215" name="ST5_A_Ca2_左Ca2検査" version="0" dateCreated="10/13/2026 14:48:25" dateLastModified="11/03/2026 14:47:18" trackingId="6e2de9cb-ee34-4961-bae6-67674d9f6a4c" DN="ST5_A_Ca2_左Ca2検査">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="720f2055-7812-4f90-9108-449b2cc68c22" name="Source" version="0" dateCreated="10/13/2026 14:48:25" dateLastModified="10/26/2026 12:05:39" trackingId="3fa20ede-c2e3-45bf-95b4-1e0f43c27e7f">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="4485e2e2-2df1-4c23-b05a-735425ca1728" name="PouBodySourceHolder" version="0" dateCreated="10/13/2026 14:48:25" dateLastModified="11/04/2026 18:03:32" trackingId="3e1125e4-98d0-4911-b4d0-15814914add0">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="a21ed85c-6215-4d9f-82fa-9123c6fd7db3" name="ST6_A_Rev2_左反転2" version="0" dateCreated="10/23/2026 14:13:52" dateLastModified="11/03/2026 14:47:18" trackingId="63926564-a29d-408a-8c83-95e14cf8e917" DN="ST6_A_Rev2_左反転2">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="4ccd96db-77bb-49ed-8023-aba3fba698d7" name="Source" version="0" dateCreated="10/23/2026 14:13:52" dateLastModified="10/26/2026 15:18:20" trackingId="20d388d8-102a-4e9f-ac1e-ec5eab2e44d2">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="b22f8c0a-3d71-4251-b56a-c459cb0fd4ba" name="PouBodySourceHolder" version="0" dateCreated="10/23/2026 14:13:52" dateLastModified="11/04/2026 18:03:32" trackingId="9d6ed81d-770c-4be5-93f9-9381e69383b6">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="1c62506a-fffa-4120-bf30-bcfd518c76f9" name="ST7_A_Dis2_左SF排出" version="0" dateCreated="10/26/2026 16:13:03" dateLastModified="11/04/2026 14:33:31" trackingId="8346d940-2485-4819-a343-599a2142269e" DN="ST7_A_Dis2_左SF排出">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="878b04bf-0f5e-48d8-88c7-548a84954e4a" name="Source" version="0" dateCreated="10/26/2026 16:13:03" dateLastModified="10/26/2026 16:13:03" trackingId="f47bb048-4192-4800-8ff2-a4659e35266a">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="a1ac5bd3-867c-4bde-8d11-8355d579ba12" name="PouBodySourceHolder" version="0" dateCreated="10/26/2026 16:13:03" dateLastModified="11/04/2026 18:03:32" trackingId="b2380426-a40a-4b78-baec-7da3ea808266">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="fb95842e-fdb2-46b7-9a81-473d52d66cbf" name="Destacker_段バラシ" version="0" dateCreated="10/30/2026 11:58:53" dateLastModified="11/04/2026 14:33:31" trackingId="c9b606ca-1d07-43bb-996a-98de19ddafa1" DN="Destacker_段バラシ">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="828fa874-637c-4d73-86b1-ef5b6734dad2" name="Source" version="0" dateCreated="10/30/2026 11:58:53" dateLastModified="10/30/2026 11:58:53" trackingId="41a37446-4227-4891-bd2b-eb7b7c097003">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="a5955a6c-38d8-4005-8602-2146b1eae66c" name="PouBodySourceHolder" version="0" dateCreated="10/30/2026 11:58:53" dateLastModified="11/04/2026 18:03:32" trackingId="13b98033-19d2-4695-af43-e608c03a228e">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="6061835d-1e51-4e92-be1f-d546f44764e3" name="BoxPacking_箱詰め" version="0" dateCreated="11/02/2026 11:40:09" dateLastModified="11/05/2026 14:39:04" trackingId="b46f1742-64ac-47f5-ad2d-4f20f3ac664e" DN="BoxPacking_箱詰め">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="fcaac475-d8da-45d2-b90c-ef5e5519c552" name="Source" version="0" dateCreated="11/02/2026 11:40:09" dateLastModified="11/02/2026 11:40:09" trackingId="a197931e-921b-47cf-8346-b84d06d1c843">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="047d6ee5-1e46-4a5f-bae0-4a239a079116" name="PouBodySourceHolder" version="0" dateCreated="11/02/2026 11:40:09" dateLastModified="11/02/2026 11:40:09" trackingId="fef8e312-9853-4746-9f63-2ac15bef088f">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Inline" subtype="StructuredText" id="edb1f474-60a8-4fa8-829d-8f3a710fe484" name="2b1e7be3-48e4-4148-865c-4630898e0cc5" version="0" dateCreated="11/04/2026 18:33:42" dateLastModified="11/05/2026 14:39:04" trackingId="440d37cf-7b83-4dba-aea3-2f5de0051c19">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Inline" subtype="StructuredText" id="1814223e-aea3-4460-86e8-37bf89bf0f92" name="39afe2f7-c7b6-48fb-a17c-e27392165d72" version="0" dateCreated="11/04/2026 18:39:13" dateLastModified="11/05/2026 14:39:04" trackingId="39afe2f7-c7b6-48fb-a17c-e27392165d72">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
+                  <Entity type="Program" subtype="MultipartLadder" id="0fe7f9c6-eab4-465d-bb5c-054ab06c6003" name="OtherDevice_外部機器" version="0" dateCreated="10/01/2026 15:50:47" dateLastModified="10/22/2026 16:24:23" author="SEIGI-N13" trackingId="0bc36f50-6f3b-479c-a128-de8c4f5859b4" DN="OtherDevice_外部機器">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="DebugProgramSetting" subtype="" id="e25830e5-852a-4e44-80ef-f447fe7ccd9e" name="DebugProgramSetting0.00" version="0" dateCreated="10/01/2026 15:50:47" dateLastModified="10/01/2026 16:19:41" trackingId="04daa694-0c77-4a88-83e0-a5389b81a177">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                      <Entity type="Variables" subtype="Ladder" id="a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10" name="変数テーブル" version="0" dateCreated="10/01/2026 15:50:47" dateLastModified="10/29/2026 17:29:45" trackingId="89220536-cbaa-479e-a164-22b8a667f71f">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="c525870b-a775-4c55-8878-2c0315a9d315" name="Source" version="0" dateCreated="10/01/2026 15:50:47" dateLastModified="10/01/2026 15:50:47" trackingId="3a1c5e49-c266-4b43-88d6-e3479feb0955">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="7b1666c7-ee97-4210-81b2-fed5a6172074" name="RCON_IAI" version="0" dateCreated="10/01/2026 15:50:47" dateLastModified="11/02/2026 14:50:25" trackingId="697c7521-48bd-4421-91ea-bb92a433a50e" DN="RCON_IAI">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="34f6688b-dff7-4c01-860e-34378fd27b9c" name="Source" version="0" dateCreated="10/01/2026 15:50:47" dateLastModified="10/01/2026 15:50:47" trackingId="40f71c79-d336-4da0-9187-f641f48151d1">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="c58a0379-e2dd-4728-9169-d233109e2594" name="PouBodySourceHolder" version="0" dateCreated="10/01/2026 15:50:47" dateLastModified="11/04/2026 14:33:31" trackingId="a58927e4-52a6-42da-9932-505b49b611e5">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Inline" subtype="StructuredText" id="6480c56f-a6b0-498a-aa2f-1a6ff419b356" name="ea1c9d89-4b83-4af9-8fae-174e5f5bf08f" version="0" dateCreated="10/19/2026 13:22:45" dateLastModified="11/02/2026 14:50:25" trackingId="ea1c9d89-4b83-4af9-8fae-174e5f5bf08f">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Inline" subtype="StructuredText" id="4091467c-4e7d-43eb-8d49-ce6332690e8d" name="ca3fc88d-425e-4f46-aefd-91a91eba86ee" version="0" dateCreated="10/19/2026 13:22:45" dateLastModified="11/02/2026 14:50:25" trackingId="ca3fc88d-425e-4f46-aefd-91a91eba86ee">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Inline" subtype="StructuredText" id="4d8b7395-9af0-47ba-83f6-b07bd1a5a8b4" name="5ef53eef-0f62-4f97-a2eb-14d2cf4c5315" version="0" dateCreated="10/19/2026 13:22:45" dateLastModified="11/02/2026 14:50:25" trackingId="5ef53eef-0f62-4f97-a2eb-14d2cf4c5315">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Inline" subtype="StructuredText" id="65c8bb4b-e646-4242-9780-3ce0e3295b8c" name="82207a16-2e2b-48d4-930c-d2c6542cab6c" version="0" dateCreated="10/19/2026 13:22:45" dateLastModified="11/02/2026 14:50:25" trackingId="82207a16-2e2b-48d4-930c-d2c6542cab6c">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Inline" subtype="StructuredText" id="0fe49a6c-9905-4a79-a526-fed19cb69372" name="d2113234-9d15-496e-b1b2-a71c3e6dee2d" version="0" dateCreated="10/19/2026 13:22:45" dateLastModified="11/02/2026 14:50:25" trackingId="d2113234-9d15-496e-b1b2-a71c3e6dee2d">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Inline" subtype="StructuredText" id="a3ed80d3-2977-485d-9f7e-7c7a44c400ec" name="cad147a6-525e-48ba-8097-18c37bfce10c" version="0" dateCreated="10/19/2026 13:22:45" dateLastModified="11/02/2026 14:50:25" trackingId="cad147a6-525e-48ba-8097-18c37bfce10c">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="98de6707-f996-4f77-aad9-b0569299efb5" name="DLEP1_GT2" version="0" dateCreated="10/01/2026 16:13:40" dateLastModified="10/23/2026 13:32:40" trackingId="98470e39-e283-4223-adfb-d3de7076df6d" DN="DLEP1_GT2">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="1f5c8381-4541-4dce-97a6-5522d5b2c88f" name="Source" version="0" dateCreated="10/01/2026 16:13:40" dateLastModified="10/01/2026 16:13:40" trackingId="1c21a33c-5244-4435-877e-7dfa40016590">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="42621698-977a-49f3-9f49-be5a314eb32d" name="PouBodySourceHolder" version="0" dateCreated="10/01/2026 16:13:40" dateLastModified="11/04/2026 14:33:31" trackingId="c7d895e1-8686-439b-8019-9455dd1e7d13">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Inline" subtype="StructuredText" id="76d6fc6a-f4a4-46b3-8891-ff16aa25214c" name="f661ac2f-0786-4690-ade9-b74094572f0c" version="0" dateCreated="10/15/2026 10:59:33" dateLastModified="10/15/2026 11:51:16" trackingId="f661ac2f-0786-4690-ade9-b74094572f0c">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Inline" subtype="StructuredText" id="5455357b-f8f7-4b15-b825-2ceca787a3f2" name="93715059-f400-45fd-888b-7fb67b2e36e2" version="0" dateCreated="10/15/2026 11:05:00" dateLastModified="10/15/2026 11:51:16" trackingId="93715059-f400-45fd-888b-7fb67b2e36e2">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="fdce7b3c-0b49-4708-9024-8a98fe6b24b5" name="FH_5552_10" version="0" dateCreated="10/01/2026 16:14:10" dateLastModified="10/29/2026 17:29:45" trackingId="d1c38b8d-afa3-4dff-bac8-b56baf003c78" DN="FH_5552_10">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="e75fe0f2-274b-478c-8a74-b867c1f91c18" name="Source" version="0" dateCreated="10/01/2026 16:14:10" dateLastModified="10/01/2026 16:14:10" trackingId="ca1fd1a8-8f35-4cf5-8865-708798ad0cae">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="d645cd96-bc23-42b2-a3db-868ba6ff7df6" name="PouBodySourceHolder" version="0" dateCreated="10/01/2026 16:14:10" dateLastModified="11/04/2026 14:33:31" trackingId="47a3645d-612d-4df1-88d3-58ddfa6d5e20">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="4bc99ae0-7ace-4891-a17a-c3fe2079278d" name="CV2A_KED" version="0" dateCreated="10/22/2026 15:49:56" dateLastModified="10/29/2026 17:29:45" trackingId="eabe1f90-1e8b-4995-85ec-f2facb0b2aa6" DN="CV2A_KED">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="89916e4c-e6d4-4e8d-affe-8fdf93e3b2a0" name="Source" version="0" dateCreated="10/22/2026 15:49:56" dateLastModified="10/22/2026 15:49:56" trackingId="8a2958c4-cacd-4fbf-8319-c147ffdc4376">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="e946c75f-9b8c-41c0-aa90-d42576216563" name="PouBodySourceHolder" version="0" dateCreated="10/22/2026 15:49:56" dateLastModified="11/04/2026 14:33:31" trackingId="90ead302-a4da-4daa-845d-f9f461e8946d">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Inline" subtype="StructuredText" id="c7c1c603-b5f3-4b95-8761-8139607f4f00" name="b34d4a40-0df9-459d-88af-2aa7bf8d8347" version="0" dateCreated="10/23/2026 08:45:25" dateLastModified="10/29/2026 17:29:45" trackingId="b34d4a40-0df9-459d-88af-2aa7bf8d8347">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Inline" subtype="StructuredText" id="f882be68-c93b-4a8c-858a-3d71ff06fa30" name="d9bee799-8610-43ec-96ba-363ab37f5e5f" version="0" dateCreated="10/23/2026 08:45:25" dateLastModified="10/29/2026 17:29:45" trackingId="d9bee799-8610-43ec-96ba-363ab37f5e5f">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="2b857527-a5b5-49c0-9233-e70f3ae89ba1" name="HMI" version="0" dateCreated="10/01/2026 16:19:03" dateLastModified="10/02/2026 17:43:07" trackingId="54bc7272-8792-47b7-a5cd-aa802166e795" DN="HMI">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="21ff142c-37dc-4772-8546-b1927326758b" name="Source" version="0" dateCreated="10/01/2026 16:19:03" dateLastModified="10/01/2026 16:19:03" trackingId="00b5f6a1-dcac-4a53-91e2-55293a5e70ab">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="51486247-9ad2-442a-ac2d-6c2ea23dcc99" name="PouBodySourceHolder" version="0" dateCreated="10/01/2026 16:19:03" dateLastModified="11/04/2026 14:33:31" trackingId="ab458a43-44d6-438d-908a-4e87a56fd74b">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Inline" subtype="StructuredText" id="475f980b-4f41-48e7-857e-d2799ec39443" name="5455c459-637e-4ae3-a2d3-6b94526029c1" version="0" dateCreated="10/02/2026 15:26:18" dateLastModified="10/02/2026 17:43:07" trackingId="5455c459-637e-4ae3-a2d3-6b94526029c1">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="Inline" subtype="StructuredText" id="9595673c-004e-4c97-b19b-ffbec2c7f927" name="fd08cf79-bab1-4358-868d-996108444801" version="0" dateCreated="10/02/2026 15:26:19" dateLastModified="10/02/2026 17:43:07" trackingId="fd08cf79-bab1-4358-868d-996108444801">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
+                  <Entity type="Program" subtype="MultipartLadder" id="386a0c96-8f1f-4e16-af62-3e158a6366e7" name="IO_入出力" version="0" dateCreated="10/01/2026 15:51:03" dateLastModified="10/01/2026 16:19:41" author="SEIGI-N13" trackingId="bbf3e222-4664-48b5-88b7-ef25854c75a8" DN="IO_入出力">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="DebugProgramSetting" subtype="" id="4e49abc4-dd79-4ada-87ff-5e1603b4c9cf" name="DebugProgramSetting0.00" version="0" dateCreated="10/01/2026 15:51:03" dateLastModified="10/01/2026 16:19:41" trackingId="20d944d1-aa73-40cd-b542-1ca32ce8ea4d">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                      <Entity type="Variables" subtype="Ladder" id="9576fedf-9472-4ce6-b9ed-6eda5b4f0514" name="変数テーブル" version="0" dateCreated="10/01/2026 15:51:03" dateLastModified="10/27/2026 18:23:19" trackingId="5b91e9cc-7ae3-4d9e-998f-981cb016de70">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="31541b38-01a0-48b9-89bb-0eefe6efb71c" name="Source" version="0" dateCreated="10/01/2026 15:51:03" dateLastModified="10/01/2026 15:51:03" trackingId="c8cc28a1-a41a-45c2-89e4-b7b85e9a9e43">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="4d635fff-69bb-41a0-8d26-1fb52a2b1d50" name="Input_入力" version="0" dateCreated="10/01/2026 15:51:03" dateLastModified="10/23/2026 13:32:40" trackingId="5b142749-3626-4b43-b027-d90752bd5b37" DN="Input_入力">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="f71ddfc0-d1d2-4da2-9cd4-8642a444ce56" name="Source" version="0" dateCreated="10/01/2026 15:51:03" dateLastModified="10/01/2026 15:51:03" trackingId="dfaa2c61-2690-4055-8f91-528a2f0c5ae2">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="27fefcb0-e15d-4a55-927d-0ebcc70757ac" name="PouBodySourceHolder" version="0" dateCreated="10/01/2026 15:51:03" dateLastModified="11/04/2026 14:33:31" trackingId="d9934465-3fda-4fae-9117-b75fe30c9464">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="09c1f70b-b9ac-4e5d-884f-9779e69a597a" name="Output_出力" version="0" dateCreated="10/01/2026 16:18:07" dateLastModified="11/03/2026 14:47:18" trackingId="d6c875f0-75bb-4df3-86b9-4ed4b5f5203b" DN="Output_出力">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="c4d2238a-843d-4ae8-ad07-65af6f85d13e" name="Source" version="0" dateCreated="10/01/2026 16:18:07" dateLastModified="10/01/2026 16:18:07" trackingId="e1ec4fdc-7ff3-40e2-8aef-a95037852816">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="e83bf09d-5713-48ac-ad78-fef008e7498a" name="PouBodySourceHolder" version="0" dateCreated="10/01/2026 16:18:07" dateLastModified="11/04/2026 14:33:31" trackingId="2dcaaf29-cc3e-4644-8ea7-3ee187522d42">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+              <Entity type="Group" subtype="IecFunctions" id="f5168066-77a7-4e16-880b-7b765abd7b59" name="ファンクション" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="097b5a2f-2439-4f63-9d7a-1a957d23b39b" DN="ファンクション">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+              <Entity type="Group" subtype="IecFunctionBlocks" id="47f2c640-bd69-4697-845c-d203c8a86798" name="ファンクションブロック" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="752b1e36-c75c-42c2-9488-30911e087281" DN="ファンクションブロック">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+            </ChildEntities>
+          </Entity>
+          <Entity type="Group" subtype="IecData" id="e1c36e8b-a957-4d1c-b4b6-14f89cad222f" name="データ" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="9eecad58-db59-475a-8ba7-dac11d3c81b5" DN="データ">
+            <AccessInfos />
+            <ChildEntities>
+              <Entity type="DataType" subtype="" id="4bdcdc10-734d-4589-b299-075e93db9b10" name="データ型" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="10/19/2026 19:53:16" trackingId="08a14c5f-b72e-4aea-857f-3db74d1c84d2" DN="データ型">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="SourceHolder" subtype="" id="697b6445-e08e-4fcb-b23a-75150c2fb9ae" name="Source" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="4402129e-35f8-4ed6-a98e-5df6bd34fdfc">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+              <Entity type="ControllerNamespaces" subtype="" id="f022f0a9-966d-4517-a855-b8cdc896588a" name="" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:32" trackingId="f2c52126-0741-4191-82d8-2e0142cac6f5">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+              <Entity type="Variables" subtype="Global" id="f07dd06c-505c-431b-b9fc-098949805b4e" name="グローバル変数" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="11/05/2026 13:57:06" trackingId="1ca6fdcb-dfb0-4d99-b707-8f2a6fbbd90f" DN="グローバル変数">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="SourceHolder" subtype="" id="9d29b164-0205-4727-a8d7-9bebd0f7171a" name="Source" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="10/08/2026 14:13:23" trackingId="328c4a69-555a-4a0b-b06e-6e19d960a902">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+            </ChildEntities>
+          </Entity>
+          <Entity type="Group" subtype="NexIecTasks" id="0e919e19-da5d-4394-92ac-77cf8cc38e72" name="タスク" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="1b5baac7-74cd-45a4-9855-4fd90365ed22" DN="タスク">
+            <AccessInfos />
+            <ChildEntities>
+              <Entity type="NexTask" subtype="Base" id="e2e4c044-641e-49ac-a486-71b29b0e7c87" name="PrimaryTask" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="10/23/2026 18:23:18" trackingId="9d43b620-cd9c-4671-be8e-cb1dc0c07481" DN="PrimaryTask">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="NexAssociatedProgram" subtype="MultipartLadder" id="2bd4b7a7-4da4-42fd-8860-b3809223a5a2" name="ModeManagement_モード管理" version="0" dateCreated="08/07/2026 09:28:33" dateLastModified="10/01/2026 16:19:41" trackingId="605499ee-473b-45d9-84b9-4440db8aa565" DN="ModeManagement_モード管理">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="NexAssociatedProgram" subtype="MultipartLadder" id="2aca5afb-9842-4219-a079-dfe3d66646d0" name="Movements_動作" version="0" dateCreated="10/02/2026 13:49:48" dateLastModified="10/09/2026 17:12:27" trackingId="0d364b56-10ec-4fc7-aa8b-6b180a91dadd" DN="Movements_動作">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="NexAssociatedProgram" subtype="MultipartLadder" id="7f010930-598d-4445-b9da-efd5d7cbdc44" name="OtherDevice_外部機器" version="0" dateCreated="10/02/2026 13:49:52" dateLastModified="10/02/2026 14:29:01" trackingId="617d9932-89e0-428b-8102-d63245e920de" DN="OtherDevice_外部機器">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="NexAssociatedProgram" subtype="MultipartLadder" id="ecb94cae-b524-494c-8270-dc527969cf0a" name="IO_入出力" version="0" dateCreated="10/02/2026 13:49:56" dateLastModified="10/02/2026 14:29:01" trackingId="15028b4b-2b77-4e29-8833-fedf76078e17" DN="IO_入出力">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+            </ChildEntities>
+          </Entity>
+          <Entity type="ReferredLibraries" subtype="Nex" id="6aa0081c-13ed-4a0a-95ff-0348c995908a" name="ライブラリ" version="0" dateCreated="08/07/2026 09:28:32" dateLastModified="08/07/2026 09:28:33" trackingId="2f65f691-27a0-44b9-9883-01373565c0db">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="EipList" subtype="" id="65ea2ee8-7864-4635-8e27-9583fccd22a4" name="EtherNet/IPコネクション設定0" version="0" dateCreated="10/14/2026 18:28:53" dateLastModified="10/14/2026 18:41:16" trackingId="610514ea-898f-40da-86ea-1fa273a0396e" SDName="EtherNet/IPコネクション設定">
+            <AccessInfos />
+            <ChildEntities>
+              <Entity type="EipConnectionSetting" subtype="" id="c7331836-e58e-4c45-9ba9-6a8ca411a784" name="0" version="0" dateCreated="10/14/2026 18:28:57" dateLastModified="10/14/2026 18:41:16" trackingId="0299aca2-db20-4204-a28d-149212250da0" SDName="内蔵EtherNet/IPポート設定 - ポート1 コネクション設定">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+              <Entity type="EipConnectionSetting" subtype="" id="54651b1e-f513-4e26-b93d-8c969bd99982" name="1" version="0" dateCreated="10/14/2026 18:28:57" dateLastModified="10/14/2026 18:41:16" trackingId="c6ee0f5d-971b-4591-9805-c28e9adb30e3" SDName="内蔵EtherNet/IPポート設定 - ポート2 コネクション設定">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+            </ChildEntities>
+          </Entity>
+        </ChildEntities>
+      </Entity>
+      <Entity type="GridWatch" subtype="" id="e5038af8-be99-4ebd-b250-3f41d9cdbc8d" name="ウォッチウィンドウ (テーブル)1" version="0" dateCreated="10/02/2026 14:48:32" dateLastModified="10/08/2026 16:28:34" trackingId="c4a545c0-cb9c-4143-a9c7-5dcf79f0f8e3">
+        <AccessInfos />
+        <ChildEntities />
+      </Entity>
+      <Entity type="GridWatch" subtype="" id="7b4b1484-2dd4-40d7-a3cf-c5ce19597ecf" name="ウォッチウィンドウ (テーブル)2" version="0" dateCreated="10/02/2026 14:50:56" dateLastModified="10/21/2026 16:09:11" trackingId="de28f37c-e42f-4555-8158-bfff9abbeab5">
+        <AccessInfos />
+        <ChildEntities />
+      </Entity>
+      <Entity type="Device" subtype="NA" id="669f7513-65c7-4b09-8701-c40ab52d5502" name="HMI_NA5_0" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 14:56:15" trackingId="395ba775-f26f-4e4e-887e-edb903695eb9" DN="HMI_NA5_0">
+        <AccessInfos />
+        <ChildEntities>
+          <Entity type="Watch" subtype="" id="0b82f739-042b-4a9c-aee5-b2fff84e7d09" name="ウォッチウィンドウ" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 13:06:45" trackingId="c0a4cfaa-32be-495e-92ff-2d6959841eb4">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="CommsSettings" subtype="" id="06e7bc0b-e633-4ca7-a95f-64f658c22976" name="通信設定" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 13:06:45" trackingId="58d9624a-6144-4755-9280-0513c6063db7">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="DeviceReferences" subtype="" id="51ac305e-d8f1-49a5-9932-9814414dba4d" name="デバイスリファレンス" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 14:56:15" trackingId="45a4b6de-e876-4268-ab6e-fbcee2ebedd9" DN="デバイスリファレンス">
+            <AccessInfos />
+            <ChildEntities>
+              <Entity type="InternalDeviceReferences" subtype="" id="d2c35082-7c20-449f-89c1-18f93313ae17" name="内部デバイス" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 14:56:15" trackingId="cfcd3484-655f-4bb8-892d-9b26dc2eefda" DN="内部デバイス">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="DeviceReference" subtype="InternalDevice" id="8fd0b559-d652-4d1a-a6b2-64d7a68ba821" name="new_Controller_0" version="0" dateCreated="10/16/2026 13:06:46" dateLastModified="11/04/2026 18:03:32" trackingId="40982538-bb9e-4b0a-98c4-ac1966c57445" DN="new_Controller_0">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="DataType" subtype="" id="d3de365a-4b73-43db-8b40-ea9441f65ea2" name="データ型0" version="0" dateCreated="10/16/2026 13:06:47" dateLastModified="10/16/2026 13:06:47" trackingId="7bfdcb6a-0976-456f-8cca-9211d35c2301">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="bcbd967c-0bf6-4409-be8c-05ce4291dc21" name="Source" version="0" dateCreated="10/16/2026 13:06:47" dateLastModified="10/16/2026 13:06:47" trackingId="ce59c89f-89f1-481b-a94b-e712e54ea863">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+            </ChildEntities>
+          </Entity>
+          <Entity type="IOMap" subtype="" id="2862a8ee-003b-4cb4-880b-62e95b225958" name="変数マッピング" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="11/05/2026 13:57:06" trackingId="b2b00eb3-c098-481d-a489-585a55501cab" DN="変数マッピング">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="HmiPagesGroup" subtype="MainPagesGroup" id="e06152a6-e7ed-42f8-8d5f-de9b05792d04" name="ページ" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 14:56:15" trackingId="10d862e0-352c-48a1-ad67-8be6461f8b2e" DN="ページ">
+            <AccessInfos />
+            <ChildEntities>
+              <Entity type="HmiPage" subtype="GraphicalPage" id="5e13e241-19e5-4373-8c9b-2c8ec05c02ba" name="MAIN" version="0" dateCreated="10/16/2026 13:06:46" dateLastModified="10/16/2026 14:56:15" trackingId="c472d9da-634c-472f-8a9d-4e727f9cd42d">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="HmiPage" subtype="VisualBasicPage" id="21bf1aad-e1f7-46e9-97c3-d9d3709b5233" name="MAIN.vb" version="0" dateCreated="10/16/2026 13:06:46" dateLastModified="10/16/2026 14:56:15" trackingId="6fb4286a-06d4-4f3e-a349-2bf29ec79f42">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+              <Entity type="HmiPage" subtype="GraphicalPage" id="e18b20d4-e03b-476c-b9f2-c2f0b48db3c4" name="IOモニタ" version="0" dateCreated="10/16/2026 14:40:11" dateLastModified="10/23/2026 15:39:08" trackingId="c8a8ea2e-fcb7-4a93-83d1-55a2883d50de">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="HmiPage" subtype="VisualBasicPage" id="75be1706-88fd-4cb7-8700-3c7c764ea643" name="IOモニタ.vb" version="0" dateCreated="10/16/2026 14:40:11" dateLastModified="10/16/2026 14:56:15" trackingId="3e827ac9-652c-4bbc-a8d6-77f004f9f87e">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+            </ChildEntities>
+          </Entity>
+          <Entity type="HmiAlarms" subtype="" id="ec3a147f-5692-483f-8585-022313938821" name="ユーザアラーム" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 14:56:15" trackingId="8c714dd1-a7b3-46fc-82e6-1ed297f47b8b" DN="ユーザアラーム">
+            <AccessInfos />
+            <ChildEntities>
+              <Entity type="AlarmGroup" subtype="SubAlarmGroup" id="512872db-2149-4da5-930a-24fa6a1be0cf" name="Group0" version="0" dateCreated="10/16/2026 13:06:46" dateLastModified="10/16/2026 14:56:15" trackingId="ca373e57-9f41-46df-8683-2ec2b5be6a2f" DN="Group0">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+            </ChildEntities>
+          </Entity>
+          <Entity type="ProjectSettings" subtype="" id="74f429cf-08e7-4c94-890c-18337114fd77" name="HMI設定" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 14:56:15" trackingId="8de4c940-ce78-4d54-99f6-6d0ed64cfddd" DN="HMI設定">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="HmiControllerEvents" subtype="" id="09b13d44-557e-4546-ac7d-4c0004ae5828" name="コントローライベント" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 14:56:15" trackingId="34d2ca57-eeb2-404e-9ee8-ae4144a41e63" DN="コントローライベント">
+            <AccessInfos />
+            <ChildEntities>
+              <Entity type="HmiControllerUserEvents" subtype="" id="8fae3ac8-6757-4273-b345-7110f5d72f3d" name="ユーザイベント" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 13:06:45" trackingId="0dc6181c-a3f6-4102-b4f3-2f9b4e4fbe1d" DN="ユーザイベント">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+            </ChildEntities>
+          </Entity>
+          <Entity type="HmiDataLogging" subtype="" id="5aa8c8f0-f66c-4940-8c16-e20d2cc3d601" name="データログ" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 13:06:45" trackingId="dda1cede-db71-4bb3-8abf-7a6dbd1ebdd0" DN="データログ">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="SecuritySettings" subtype="" id="cc86b495-7256-48a9-93e4-8dd7dca325b0" name="セキュリティ設定" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 14:56:15" trackingId="ed72d9c6-5783-4b1c-b209-8a6e5eab6b65" DN="セキュリティ設定">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="HmiTroubleShooter" subtype="" id="0a097eac-7bdf-4735-94b5-8e670b6c81cb" name="トラブルシュータ" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 14:56:15" trackingId="24e5aa8d-b409-4887-9ddf-943b97e6aa7f" DN="トラブルシュータ">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="HmiGraphDataGroups" subtype="" id="852ea27e-8c94-45e7-8f6c-ad1bc279cc7b" name="データグループ" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 13:06:45" trackingId="765d6eb6-38e5-4527-b44b-f8c3a48c4296" DN="データグループ">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="Multilanguage" subtype="" id="7feae7b3-205a-4495-82c8-31b9acb00501" name="言語設定" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 14:56:15" trackingId="59db0f37-4c76-4191-8ed2-7260be43c11a" DN="言語設定">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="HmiRecipesGroup" subtype="" id="e125a0bc-737e-4d26-89ab-90991b699041" name="レシピ" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 13:06:45" trackingId="25fd48b8-80a7-4063-be47-dda2cb1cf1a0" DN="レシピ">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="HmiKeypadsGroup" subtype="MainPagesGroup" id="be0c39fc-20ad-4725-b098-f17804647ee0" name="カスタムキーパッド" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 13:06:45" trackingId="6d6c0dd1-b678-4667-a6a2-7c197745c3ab" DN="カスタムキーパッド">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="HmiOperationLog" subtype="" id="44b9c5c3-a186-43c1-bfec-06895d09f742" name="操作ログ設定" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 13:06:45" trackingId="2394a046-845c-4ba7-a6d6-9c485b435692" DN="操作ログ設定">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="HmiDataGroup" subtype="HmiDataGroupSubType" id="be47df19-e82f-4dc6-aaca-7730173a9a2a" name="データ" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 14:56:15" trackingId="ca979958-ac32-459e-be09-bdbf14c94bd7" DN="データ">
+            <AccessInfos />
+            <ChildEntities>
+              <Entity type="DataType" subtype="" id="0f61ddf8-65fc-4e6c-aa23-55e98fb585ca" name="データ型" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 14:56:15" trackingId="fa717fdd-8e7e-4bcc-bfbc-b9dec7dbf1eb" DN="データ型">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="SourceHolder" subtype="" id="e2a72aca-d869-4f63-aed5-c6253ce2b32a" name="Source" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 13:06:45" trackingId="a416a36e-7296-4f66-a352-be29277acc92">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+              <Entity type="Variables" subtype="MemoryVariables" id="20a6b651-4c34-401a-965e-db3e18414d5c" name="グローバル変数" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="11/05/2026 13:57:06" trackingId="7dce8dd9-a893-4d1c-bc7c-ae09a51f92cc" DN="グローバル変数">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+              <Entity type="ResourceUsageType" subtype="ResourceUsageSubtype" id="a5e5b688-48b2-4b9f-8e52-cf8f75fa439d" name="リソース使用状況" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 13:06:45" trackingId="ad521067-6dce-445d-a818-c377a0f4afb2">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+              <Entity type="DataType" subtype="" id="96294e97-ef4c-44fb-ad75-a34d20e7ecf4" name="データ型0" version="0" dateCreated="10/16/2026 13:06:47" dateLastModified="11/05/2026 13:57:06" namespace="new_Controller_0" trackingId="5319ae46-c8f9-4662-9b95-755f41c1db75">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="SourceHolder" subtype="" id="124d1315-18ae-4018-8c9b-cbb8c96105e1" name="Source" version="0" dateCreated="10/16/2026 13:06:47" dateLastModified="10/16/2026 13:06:47" trackingId="c6f087b1-1eb5-4e42-9805-a37f50f50bad">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+            </ChildEntities>
+          </Entity>
+          <Entity type="GlobalEvents" subtype="" id="3e16b0f1-c376-4f8f-a227-5846700185e3" name="グローバルイベント" version="0" dateCreated="10/16/2026 13:06:45" dateLastModified="10/16/2026 13:06:45" trackingId="70fd072d-5c49-48b4-a3f1-cec43a209809" DN="グローバルイベント">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="GlobalSubroutinesGroupEntity" subtype="GlobalSubroutinesGroupEntitySubtype" id="3fe364ca-4916-46a1-b72c-65fadce7510c" name="グローバルサブルーチン" version="0" dateCreated="10/16/2026 13:06:46" dateLastModified="10/16/2026 14:56:15" trackingId="1449f00b-8dd7-4d76-b981-b89acd4d6271" DN="グローバルサブルーチン">
+            <AccessInfos />
+            <ChildEntities>
+              <Entity type="GlobalSubroutinesEntity" subtype="GlobalSubroutinesSubtype" id="ed60cfac-f6c0-42b4-86af-81056773535d" name="SubroutineGroup0" version="0" dateCreated="10/16/2026 13:06:46" dateLastModified="10/16/2026 14:56:15" trackingId="921b8799-a552-4a0f-94b6-ea385d3da3c5" DN="SubroutineGroup0">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+            </ChildEntities>
+          </Entity>
+          <Entity type="ResourceGroup" subtype="" id="1ad41ac2-ccf2-46bc-915e-c679fd172db5" name="リソース" version="0" dateCreated="10/16/2026 13:06:46" dateLastModified="10/16/2026 14:56:15" trackingId="3f5d3f68-e94c-4fab-a217-0f087cb4149b" DN="リソース">
+            <AccessInfos />
+            <ChildEntities>
+              <Entity type="LocalisationResources" subtype="" id="508fadff-168f-41f5-b7a2-a80b4184f04c" name="ルート" version="0" dateCreated="10/16/2026 13:06:47" dateLastModified="10/23/2026 15:39:08" trackingId="bbe446d2-3d82-45b1-8404-dff2adc4eb7d" DN="ルート">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+            </ChildEntities>
+          </Entity>
+          <Entity type="ImportedIagsEntityType" subtype="ImportedIagsEntitySubtype" id="a70f4e6b-eb84-4972-a114-4d0538cde3a0" name="IAGリソース" version="0" dateCreated="10/16/2026 13:06:46" dateLastModified="10/16/2026 13:06:46" trackingId="2684e648-16f6-4e67-83da-cfd4c33e4137" DN="IAGリソース">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="PageImageOutPutType" subtype="PageImageOutPutSubtype" id="477c6ef0-c39f-49b5-afd3-9e1b2fe3804c" name="画像ファイル出力" version="0" dateCreated="10/16/2026 13:06:46" dateLastModified="10/16/2026 13:06:46" trackingId="bc87128e-e92e-4263-9742-7a47f6895f10">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="HmiScaleTransformations" subtype="" id="24173920-725e-4504-9305-6b258bdb8668" name="スケール変換" version="0" dateCreated="10/16/2026 13:06:46" dateLastModified="10/16/2026 13:06:46" trackingId="bdff3781-2f8f-4e10-809d-21927b9456af" DN="スケール変換">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+        </ChildEntities>
+      </Entity>
+      <Entity type="VisibleIagCollectionsEntityType" subtype="VisibleIagCollectionsEntitySubType" id="cc6cffcf-f9a0-4268-be15-2ee4f1d47314" name="" version="0" dateCreated="10/16/2026 13:06:47" dateLastModified="10/16/2026 14:56:15" trackingId="ee68cd62-40fe-414d-9f3a-91da42285847" SDName="IAG コレクション設定">
+        <AccessInfos />
+        <ChildEntities />
+      </Entity>
+    </ChildEntities>
+  </Entity>
+</sysmac>

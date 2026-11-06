@@ -1,0 +1,316 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105D.smc2",
+  "staged": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\box-improve-20261105\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105E.smc2",
+  "output": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105E.smc2",
+  "archive": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\履歴\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105D.smc2",
+  "source_sha256": "7981b1e4bb18a25f32a7748445bdcf727d3ca7f37a0800c10b35d8d67913c9b7",
+  "output_sha256": "6ac7c24b1fceaa04c93b08bb511b1ec9c9aabc1b1d5c083c93f2caaa5474271b",
+  "changed_parts": [
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/6061835d-1e51-4e92-be1f-d546f44764e3.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/7b1666c7-ee97-4210-81b2-fed5a6172074.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml"
+  ],
+  "preserved_parts": 207,
+  "box_part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/6061835d-1e51-4e92-be1f-d546f44764e3.xml",
+  "rcon_part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/7b1666c7-ee97-4210-81b2-fed5a6172074.xml",
+  "output_part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml",
+  "output_rows": 316,
+  "output_changed_rows": [
+    280,
+    282,
+    286,
+    288
+  ],
+  "box_rows": 43,
+  "rcon_rows": 453,
+  "native_validation": {
+    "box": "TOTAL=43 PARSE_FAIL=0 MODEL_FAIL=0",
+    "rcon": "TOTAL=453 PARSE_FAIL=0 MODEL_FAIL=0",
+    "output": "TOTAL=316 PARSE_FAIL=0 MODEL_FAIL=0",
+    "connections": "TOTAL_RUNGS=1361 COILS=1576 MISSING=0 PARSE_MODEL_FAIL=0",
+    "full_application_build": false
+  },
+  "independent_audit": {
+    "requests_unique": true,
+    "all_requests_have_receiver": true,
+    "source_permission_definitions_unchanged": true,
+    "handshake_model_scenarios": 24,
+    "model_results": {
+      "axis2_normal": [
+        [
+          "start",
+          10
+        ],
+        [
+          "start_off",
+          40
+        ],
+        [
+          "done",
+          100
+        ]
+      ],
+      "axis2_blocked": [],
+      "axis2_stale": [
+        [
+          "start",
+          10
+        ]
+      ],
+      "axis2_loss": [
+        [
+          "start",
+          10
+        ],
+        [
+          "start_off",
+          30
+        ]
+      ],
+      "axis2_reset": [
+        [
+          "start",
+          10
+        ],
+        [
+          "start_off",
+          30
+        ]
+      ],
+      "axis2_queue": [
+        [
+          "start",
+          10
+        ],
+        [
+          "start_off",
+          40
+        ],
+        [
+          "done",
+          100
+        ],
+        [
+          "start",
+          220
+        ],
+        [
+          "start_off",
+          260
+        ],
+        [
+          "done",
+          320
+        ]
+      ],
+      "axis3_normal": [
+        [
+          "start",
+          10
+        ],
+        [
+          "start_off",
+          40
+        ],
+        [
+          "done",
+          100
+        ]
+      ],
+      "axis3_blocked": [],
+      "axis3_stale": [
+        [
+          "start",
+          10
+        ]
+      ],
+      "axis3_loss": [
+        [
+          "start",
+          10
+        ],
+        [
+          "start_off",
+          30
+        ]
+      ],
+      "axis3_reset": [
+        [
+          "start",
+          10
+        ],
+        [
+          "start_off",
+          30
+        ]
+      ],
+      "axis3_queue": [
+        [
+          "start",
+          10
+        ],
+        [
+          "start_off",
+          40
+        ],
+        [
+          "done",
+          100
+        ],
+        [
+          "start",
+          220
+        ],
+        [
+          "start_off",
+          260
+        ],
+        [
+          "done",
+          320
+        ]
+      ],
+      "axis4_normal": [
+        [
+          "start",
+          10
+        ],
+        [
+          "start_off",
+          40
+        ],
+        [
+          "done",
+          100
+        ]
+      ],
+      "axis4_blocked": [],
+      "axis4_stale": [
+        [
+          "start",
+          10
+        ]
+      ],
+      "axis4_loss": [
+        [
+          "start",
+          10
+        ],
+        [
+          "start_off",
+          30
+        ]
+      ],
+      "axis4_reset": [
+        [
+          "start",
+          10
+        ],
+        [
+          "start_off",
+          30
+        ]
+      ],
+      "axis4_queue": [
+        [
+          "start",
+          10
+        ],
+        [
+          "start_off",
+          40
+        ],
+        [
+          "done",
+          100
+        ],
+        [
+          "start",
+          220
+        ],
+        [
+          "start_off",
+          260
+        ],
+        [
+          "done",
+          320
+        ]
+      ],
+      "axis5_normal": [
+        [
+          "start",
+          10
+        ],
+        [
+          "start_off",
+          40
+        ],
+        [
+          "done",
+          100
+        ]
+      ],
+      "axis5_blocked": [],
+      "axis5_stale": [
+        [
+          "start",
+          10
+        ]
+      ],
+      "axis5_loss": [
+        [
+          "start",
+          10
+        ],
+        [
+          "start_off",
+          30
+        ]
+      ],
+      "axis5_reset": [
+        [
+          "start",
+          10
+        ],
+        [
+          "start_off",
+          30
+        ]
+      ],
+      "axis5_queue": [
+        [
+          "start",
+          10
+        ],
+        [
+          "start_off",
+          40
+        ],
+        [
+          "done",
+          100
+        ],
+        [
+          "start",
+          220
+        ],
+        [
+          "start_off",
+          260
+        ],
+        [
+          "done",
+          320
+        ]
+      ]
+    },
+    "output_OR_equivalence_cases": 1024,
+    "box_count_cases": 96,
+    "note": "保存STと接続の条件モデル検査。PLCシミュレーター/全体コンパイルではない。"
+  },
+  "published": true,
+  "archived": true
+}

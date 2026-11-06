@@ -1,0 +1,115 @@
+{
+  "source_B": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261103B.smc2",
+  "source_B_sha256": "2384a14ae61897f265b3671c39d6f5368179e0c439fd143ce80df1f7f4447dcb",
+  "output": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261103C.smc2",
+  "prior_C_sha256": "6d01a10e5ef4744b1d507e1de0867d35b5bb10825d4403f65d8e0c7365a0b40d",
+  "final_C_sha256": "6082d233dddb22c45cfea4157f5c7937dcb7c0b51270a0786545d167ffb939b3",
+  "command_renames": [
+    {
+      "section": "Destacker_段バラシ",
+      "row": 9,
+      "old": "Out_CYw_Sep_Claw_F_Auto[2]",
+      "new": "Out_CYw_Sep_Claw_F_Auto[4]"
+    },
+    {
+      "section": "Destacker_段バラシ",
+      "row": 13,
+      "old": "Out_CYw_Sep_Claw_H_Auto[1]",
+      "new": "Out_CYw_Sep_Claw_H_Auto[2]"
+    },
+    {
+      "section": "Destacker_段バラシ",
+      "row": 12,
+      "old": "RCON2_1_Auto[2]",
+      "new": "RCON2_1_Auto[5]"
+    },
+    {
+      "section": "Destacker_段バラシ",
+      "row": 15,
+      "old": "RCON2_1_Auto[3]",
+      "new": "RCON2_1_Auto[6]"
+    }
+  ],
+  "new_contacts": [
+    {
+      "prefix": "Out_CYw_Sep_Claw_F_Auto",
+      "added": [
+        "Out_CYw_Sep_Claw_F_Auto[4]"
+      ],
+      "original_parallel_count": 3,
+      "new_parallel_count": 4,
+      "shifted_lower_rows": true,
+      "new_contact_ids": [
+        20
+      ],
+      "merge_vertical_id": 19
+    },
+    {
+      "prefix": "Out_CYw_Sep_Claw_F_Auto",
+      "added": [
+        "Out_CYw_Sep_Claw_F_Auto[4]"
+      ],
+      "original_parallel_count": 3,
+      "new_parallel_count": 4,
+      "shifted_lower_rows": false,
+      "new_contact_ids": [
+        23
+      ],
+      "merge_vertical_id": 22
+    },
+    {
+      "prefix": "Out_CYw_Sep_Claw_H_Auto",
+      "added": [
+        "Out_CYw_Sep_Claw_H_Auto[2]"
+      ],
+      "original_parallel_count": 1,
+      "new_parallel_count": 2,
+      "shifted_lower_rows": false,
+      "new_contact_ids": [
+        20
+      ],
+      "merge_vertical_id": 21
+    },
+    {
+      "prefix": "RCON2_1_Auto",
+      "added": [
+        "RCON2_1_Auto[5]",
+        "RCON2_1_Auto[6]"
+      ],
+      "original_parallel_count": 4,
+      "new_parallel_count": 6,
+      "shifted_lower_rows": true,
+      "new_contact_ids": [
+        16,
+        17
+      ],
+      "merge_vertical_id": 15
+    }
+  ],
+  "changed_rows": {
+    "Destacker_段バラシ": [
+      9,
+      12,
+      13,
+      15
+    ],
+    "RCON_IAI": [
+      281
+    ],
+    "Output_出力": [
+      276,
+      277,
+      279
+    ]
+  },
+  "changed_parts": [
+    "d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml",
+    "d12ff733-4f31-46ee-8e8a-659eb8891990/7b1666c7-ee97-4210-81b2-fed5a6172074.xml",
+    "d12ff733-4f31-46ee-8e8a-659eb8891990/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml"
+  ],
+  "untouched_parts_vs_B": 207,
+  "Destacker_coils_total": 41,
+  "Destacker_coil_duplicates": [],
+  "seconds": 0.453,
+  "native_Sysmac_build": "未実施"
+}

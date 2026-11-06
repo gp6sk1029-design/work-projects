@@ -1,0 +1,1001 @@
+{
+  "対象": "a171e655-68f3-4650-8b9f-6d33ff2eccf1/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml",
+  "行別": [
+    {
+      "表示行": 0,
+      "コイル": [
+        "Destacker_M[1]"
+      ],
+      "7行目以降の候補": [],
+      "接点と命令": [
+        {
+          "__type": "LD",
+          "Var": "Auto_Com_Start"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[1]",
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Destacker_M[1]",
+          "X": 1
+        }
+      ]
+    },
+    {
+      "表示行": 1,
+      "コイル": [
+        "Destacker_M[2]"
+      ],
+      "7行目以降の候補": [],
+      "接点と命令": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "TimerQ_In_Sen_Supply_Container_Exist",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[2]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Destacker_M[3]",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[2]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[1]",
+          "X": 3,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "表示行": 2,
+      "コイル": [
+        "Destacker_M[3]",
+        "Destacker_M[4]",
+        "Destacker_M[5]",
+        "Destacker_M[6]"
+      ],
+      "7行目以降の候補": [],
+      "接点と命令": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[2]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Sep_Claw_F_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[3]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Destacker_M[3]",
+          "X": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Not": true,
+          "Var": "TimerQ_In_Sen_Supply_Container_Exist",
+          "X": 3,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_Empty_Container_CY_H",
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Not": true,
+          "Var": "TimerQ_In_Sen_Destacker_Stage_01_Exist",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "PRM",
+          "Ix": 14,
+          "Var": "RCON2_1_ActualPos_mm"
+        },
+        {
+          "__type": "PRM",
+          "Ix": 15,
+          "Var": "HMI_RCON2_1_OUT_TargetPos[1]"
+        },
+        {
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Destacker_M[4]",
+          "X": 7,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 7,
+          "Not": true,
+          "Var": "TimerQ_In_Sen_Supply_Container_Exist",
+          "X": 3,
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 8,
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_Empty_Container_CY_H",
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 9,
+          "Var": "TimerQ_In_Sen_Destacker_Stage_01_Exist",
+          "X": 5,
+          "Y": 2
+        },
+        {
+          "__type": "PRM",
+          "Ix": 16,
+          "Var": "RCON2_1_ActualPos_mm"
+        },
+        {
+          "__type": "PRM",
+          "Ix": 17,
+          "Var": "HMI_RCON2_1_OUT_TargetPos[1]"
+        },
+        {
+          "__type": "ST",
+          "Ix": 12,
+          "Var": "Destacker_M[5]",
+          "X": 7,
+          "Y": 2
+        },
+        {
+          "__type": "PRM",
+          "Ix": 18,
+          "Var": "RCON2_1_ActualPos_mm"
+        },
+        {
+          "__type": "PRM",
+          "Ix": 19,
+          "Var": "HMI_RCON2_1_OUT_TargetPos[1]"
+        },
+        {
+          "__type": "ST",
+          "Ix": 13,
+          "Var": "Destacker_M[6]",
+          "X": 4,
+          "Y": 3
+        }
+      ]
+    },
+    {
+      "表示行": 3,
+      "コイル": [
+        "Destacker_M[7]"
+      ],
+      "7行目以降の候補": [],
+      "接点と命令": [
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[3]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[4]",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Destacker_M[7]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "PRM",
+          "Ix": 6,
+          "Var": "HMI_RCON2_1_OUT_TargetPos[1]"
+        },
+        {
+          "__type": "PRM",
+          "Ix": 7,
+          "Var": "RCON2_1_OUT_TargetPos_mm"
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[7]",
+          "X": 4
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "RCON2_1_Auto[1]",
+          "X": 4,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "表示行": 4,
+      "コイル": [
+        "Destacker_M[8]"
+      ],
+      "7行目以降の候補": [],
+      "接点と命令": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[3]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[6]",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Destacker_M[8]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[8]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "Out_CYw_Sep_Claw_H_Auto[1]",
+          "X": 3,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "表示行": 5,
+      "コイル": [
+        "Destacker_M[9]"
+      ],
+      "7行目以降の候補": [],
+      "接点と命令": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[7]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Out_CYw_Sep_Claw_H_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[9]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "PRM",
+          "Ix": 5,
+          "Var": "HMI_RCON2_1_OUT_TargetPos[2]"
+        },
+        {
+          "__type": "PRM",
+          "Ix": 6,
+          "Var": "RCON2_1_OUT_TargetPos_mm"
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[9]",
+          "X": 4
+        }
+      ]
+    },
+    {
+      "表示行": 6,
+      "コイル": [
+        "Destacker_M[10]"
+      ],
+      "7行目以降の候補": [],
+      "接点と命令": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[9]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "RCON2_1_MoveDone",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Destacker_M[10]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[10]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[2]",
+          "X": 3,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "表示行": 7,
+      "コイル": [
+        "Destacker_M[7]"
+      ],
+      "7行目以降の候補": [
+        "Destacker_M[11]"
+      ],
+      "接点と命令": [
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[7]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "RCON2_1_MoveDone",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Destacker_M[3]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "Destacker_M[5]",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 9,
+          "Var": "Destacker_M[10]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 10,
+          "Var": "Out_CYw_Sep_Claw_F_Done",
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 8,
+          "Var": "Destacker_End",
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Not": true,
+          "Var": "TimerQ_In_Sen_Supply_Container_Exist",
+          "X": 1,
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 7,
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_Empty_Container_CY_H",
+          "X": 2,
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[7]",
+          "Y": 4
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Destacker_M[7]",
+          "X": 4
+        },
+        {
+          "__type": "ST",
+          "Ix": 12,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[2]",
+          "X": 4,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "表示行": 8,
+      "コイル": [
+        "Destacker_M[8]"
+      ],
+      "7行目以降の候補": [
+        "Destacker_M[12]"
+      ],
+      "接点と命令": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[7]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Out_CYw_Sep_Claw_F_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Destacker_M[8]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[8]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "表示行": 9,
+      "コイル": [
+        "Destacker_M[9]"
+      ],
+      "7行目以降の候補": [
+        "Destacker_M[13]"
+      ],
+      "接点と命令": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[8]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "TimerQ_In_Sen_Supply_Container_Exist",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_Empty_Container_CY_H",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "TimerQ_In_Sen_Container_Direction_Check",
+          "X": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 8,
+          "Var": "TimerQ_In_Sen_Destacker_Stage_01_Exist",
+          "X": 4
+        },
+        {
+          "__type": "FB",
+          "Ix": 12,
+          "X": 5,
+          "Var": "Destacker_TON[1]"
+        },
+        {
+          "__type": "PRM",
+          "Ix": 10,
+          "Var": "T#5s"
+        },
+        {
+          "__type": "PRM",
+          "Ix": 11,
+          "Var": ""
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Not": true,
+          "Var": "",
+          "X": 6
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[9]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 7,
+          "Not": true,
+          "Var": "",
+          "X": 7
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Not": true,
+          "Var": "",
+          "X": 8
+        },
+        {
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Destacker_M[9]",
+          "X": 9
+        }
+      ]
+    },
+    {
+      "表示行": 10,
+      "コイル": [
+        "Destacker_M[10]"
+      ],
+      "7行目以降の候補": [
+        "Destacker_M[14]"
+      ],
+      "接点と命令": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[9]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[10]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "",
+          "X": 1
+        },
+        {
+          "__type": "PRM",
+          "Ix": 5,
+          "Var": "HMI_RCON2_1_OUT_TargetPos[2]"
+        },
+        {
+          "__type": "PRM",
+          "Ix": 6,
+          "Var": "RCON2_1_OUT_TargetPos_mm"
+        },
+        {
+          "__type": "ST",
+          "Ix": 3,
+          "Var": "Destacker_M[10]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "RCON2_1_Auto[2]",
+          "X": 3,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "表示行": 11,
+      "コイル": [
+        "Destacker_M[11]"
+      ],
+      "7行目以降の候補": [
+        "Destacker_M[15]"
+      ],
+      "接点と命令": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[10]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "RCON2_1_MoveDone",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Destacker_M[11]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[11]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "Out_CYw_Sep_Claw_H_Auto[1]",
+          "X": 3,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "表示行": 12,
+      "コイル": [
+        "Destacker_M[12]",
+        "Destacker_M[13]",
+        "Destacker_M[14]"
+      ],
+      "7行目以降の候補": [
+        "Destacker_M[16]",
+        "Destacker_M[17]",
+        "Destacker_M[18]"
+      ],
+      "接点と命令": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[11]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Out_CYw_Sep_Claw_H_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Destacker_M[12]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 6,
+          "Var": "Destacker_M[12]",
+          "X": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "TimerQ_In_Sen_Destacker_Stage_02_Exist",
+          "X": 3,
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 7,
+          "Var": "Destacker_M[13]",
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Not": true,
+          "Var": "TimerQ_In_Sen_Destacker_Stage_02_Exist",
+          "X": 3,
+          "Y": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 8,
+          "Var": "Destacker_M[14]",
+          "X": 4,
+          "Y": 2
+        }
+      ]
+    },
+    {
+      "表示行": 13,
+      "コイル": [
+        "Destacker_M[15]"
+      ],
+      "7行目以降の候補": [
+        "Destacker_M[19]"
+      ],
+      "接点と命令": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[12]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[13]",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[15]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "PRM",
+          "Ix": 6,
+          "Var": "HMI_RCON2_1_OUT_TargetPos[3]"
+        },
+        {
+          "__type": "PRM",
+          "Ix": 7,
+          "Var": "RCON2_1_OUT_TargetPos_mm"
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[15]",
+          "X": 4
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "RCON2_1_Auto[3]",
+          "X": 4,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "表示行": 14,
+      "コイル": [
+        "Destacker_M[16]"
+      ],
+      "7行目以降の候補": [
+        "Destacker_M[20]"
+      ],
+      "接点と命令": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[15]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "RCON2_1_MoveDone",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[16]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[16]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[3]",
+          "X": 3,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "表示行": 15,
+      "コイル": [
+        "Destacker_M[17]"
+      ],
+      "7行目以降の候補": [
+        "Destacker_M[21]"
+      ],
+      "接点と命令": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[16]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Out_CYw_Sep_Claw_F_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Destacker_M[14]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[17]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "PRM",
+          "Ix": 7,
+          "Var": "HMI_RCON2_1_OUT_TargetPos[1]"
+        },
+        {
+          "__type": "PRM",
+          "Ix": 8,
+          "Var": "RCON2_1_OUT_TargetPos_mm"
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "Destacker_M[17]",
+          "X": 4
+        },
+        {
+          "__type": "ST",
+          "Ix": 6,
+          "Var": "RCON2_1_Auto[4]",
+          "X": 4,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "表示行": 16,
+      "コイル": [],
+      "7行目以降の候補": [],
+      "接点と命令": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[17]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "TimerQ_In_Sen_Supply_Container_Exist",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_End",
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 3,
+          "Var": "Destacker_End",
+          "X": 2
+        }
+      ]
+    }
+  ],
+  "対象外添字参照": []
+}

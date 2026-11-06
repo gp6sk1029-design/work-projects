@@ -1,0 +1,311 @@
+﻿part,kind,name,index,old,new
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,0,,"【開始受付｜段1】
+共通自動運転開始で初動を受け付け、段1を自己保持する。段2成立で段1を解除する。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,1,"#初動動作
+
+
+【Y1203】段バラシ爪 ","【初動｜段2：爪を行方向へ】
+段1と供給部コンテナ無の条件で開始。爪行要求F_Auto[1]をOutput_出力へ送り、段3まで保持する。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,2,"初動 判定
+①初動 段バラシセイフティPos  有
+②初動 段バラシセイフティPos  無","【初動判定｜段3・4・5】
+爪行完了で段3。段バラシ軸の現在位置と位置設定[1]を比較し、一致側を段4、不一致側を段5に分ける。比較は既存の＝／≠条件。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,3,"②初動 段バラシセイフティPos  無
+【Y1202】段バラシ爪 戻 コンテナ切り離し","【初動・位置不一致側｜段6：コンテナ切り離し】
+段3と段5で爪戻要求H_Auto[1]を出す。爪を戻してコンテナを切り離す。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,4,"RCON2_1 
+セイフティPos移動","【初動｜段7：セイフティ位置へ移動要求】
+段6と爪戻完了で、位置設定[1]をRCON2_1_OUT_TargetPos_mmへ代入。RCON2_1_Auto[1]を要求する。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,5,"RCON2_1 
+1段目 Pos移動","【初動｜段8：1段目位置へ移動要求】
+段7の移動完了後、位置設定[2]を目標位置へ代入。RCON2_1_Auto[2]を要求する。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,6,【Y1203】段バラシ爪 行 コンテナ保持,"【初動｜段9：コンテナ保持】
+段8の移動完了で爪行要求F_Auto[2]を出す。1段目位置でコンテナを保持する。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,7,"RCON2_1 
+セイフティPos移動","【初動｜段10：爪行完了後の移動要求】
+段9と爪行完了でRCON2_1_Auto[3]を要求する。
+要確認：元の行名はセイフティPos移動だが、この行に目標位置の代入はない。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,8,"初動動作完了
+【Y1200】空コンテナ送り 戻","【初動合流｜段11：空コンテナ送り戻】
+段10成立または初動位置一致の段4から合流。送り戻要求H_Auto[1]をOutput_出力へ送る。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,9,"#段バラシ動作 
+
+①初動動作 完了後
+②繰返し動作
+【Y1203】段バラシ爪 行","【繰返し開始｜段12：爪を行方向へ】
+初動後の送り戻完了、または前サイクル完了と既存のコンテナ条件で開始。爪行要求F_Auto[4]を出す。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,10,【Y1200】空コンテナ送り 戻,"【繰返し｜段13：空コンテナ送り戻】
+段12と爪行完了で、送り戻要求H_Auto[2]を出す。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,11,コンテナ有無・方向確認,"【繰返し｜段14：コンテナ有無・方向確認】
+段13から、供給部・送り戻・方向・1段目有の接点条件を確認する。Destacker_TON[1]の設定時間は5秒。接点の正負は既存回路に従う。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,12,"RCON2_1 
+1段目 Pos移動","【繰返し｜段15：1段目位置へ移動要求】
+段14から位置設定[2]を目標位置へ代入。RCON2_1_Auto[5]を要求する。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,13,"コンテナ切り離し
+【Y1202】段バラシ爪 戻","【繰返し｜段16：コンテナ切り離し】
+段15の移動完了で爪戻要求H_Auto[2]を出す。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,14,"コンテナ段積み確認
+①段積み2段以上
+②段積み1段のみ","【段積み判定｜段17・18・19】
+段16と爪戻完了で段17。2段目有センサONは段18（2段以上）、OFFは段19（1段のみ）へ分岐する。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,15,"①段積み2段以上
+RCON2_1 
+2段目 Pos移動","【2段以上の分岐｜段20：2段目位置へ移動要求】
+段17と段18で、位置設定[3]を目標位置へ代入。RCON2_1_Auto[6]を要求する。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,16,"コンテナ保持
+【Y1203】段バラシ爪 行","【2段以上の分岐｜段21：上側コンテナ保持】
+段20の移動完了で爪行要求F_Auto[3]を出す。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,17,#コンテナ排出動作,"【排出準備｜段22：セイフティ・排出位置へ】
+段21と爪行完了、または1段のみの段19から合流。位置設定[1]を代入し、RCON2_1_Auto[4]を要求する。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,18,"RCON2_5 コンテナ設置位置 確認後
+【Y1201】空コンテナ送り 行","【排出｜段23：空コンテナ送り行】
+段22の移動完了で段23。供給部コンテナ有と、RCON2_5現在位置＝設置位置設定[1]で送り行要求F_Auto[1]を出す。
+要確認：設置位置設定はLREALの単一値宣言だが、回路では[1]付きで参照している。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,19,,"【排出後｜段24：空コンテナ送り戻】
+段23と送り行完了で段24。到着センサONと、RCON2_5現在位置＝設置位置設定[1]で送り戻要求H_Auto[3]を出す。設定値の型は18行目の要確認事項を参照。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml,行コメント,Destacker_段バラシ,20,,"【1サイクル完了】
+段24と送り戻完了でDestacker_Endを自己保持する。完了信号は次の繰返し開始条件にも使う。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml,行コメント,Output_出力,268,"# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 【共通 コンテナ部｜シリンダ】
+#
+# 目的：出力・完了判定・異常監視を出力ごとに配置
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+【Y1200】空コンテナ送り 戻","【Y1200｜空コンテナ送り・戻の駆動】
+自動要求H_Auto[1]～[3]を同じ出力へ集約する。自動／手動の受付と自己保持、停止・解除・供給部条件は既存接点に従う。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml,行コメント,Output_出力,269,,"【Y1200｜送り戻の完了判定】
+出力保持中に戻センサONでH_Doneを立てる。完了後の保持解除タイマは1秒。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml,行コメント,Output_出力,270,異常監視（自動指令・到達待ち10秒）,"【Y1200｜送り戻の到達待ち監視】
+現回路の監視対象はH_Auto[1]。自動・非一時停止中に戻センサ未到達が10秒続くと異常保持とメッセージ要求85を出す。H_Auto[2][3]はこの監視行に含まれていない。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml,行コメント,Output_出力,271,【Y1201】空コンテナ送り 行,"【Y1201｜空コンテナ送り・行の駆動】
+自動要求F_Auto[1]を受け付ける。自動／手動・自己保持のほか、停止・解除・移動中・コンテナ到着の既存条件を通して出力する。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml,行コメント,Output_出力,272,,"【Y1201｜送り行の完了判定】
+出力保持中に行センサONでF_Doneを立てる。完了後の保持解除タイマは1秒。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml,行コメント,Output_出力,273,異常監視（自動指令・到達待ち10秒）,"【Y1201｜送り行の到達待ち監視】
+F_Auto[1]受付中、行センサ未到達が10秒続くと異常保持とメッセージ要求86を出す。自動・一時停止条件は既存回路に従う。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml,行コメント,Output_出力,274,【Y1202】段バラシ爪 戻,"【Y1202｜段バラシ爪・戻の駆動】
+初動のH_Auto[1]と繰返しのH_Auto[2]を同じ爪戻出力へ集約する。停止・解除と自己保持は既存回路に従う。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml,行コメント,Output_出力,275,,"【Y1202｜爪戻の完了判定】
+出力保持中に爪1・爪2の戻センサが両方ONでH_Doneを立てる。完了後の保持解除タイマは1秒。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml,行コメント,Output_出力,276,異常監視（自動指令・到達待ち10秒）,"【Y1202｜爪戻の到達待ち監視】
+H_Auto[1]または[2]受付中、戻センサの未到達を10秒監視する。両方未到達または片側のみ到達の既存条件で異常保持とメッセージ要求87を出す。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml,行コメント,Output_出力,277,【Y1203】段バラシ爪 行,"【Y1203｜段バラシ爪・行の駆動】
+F_Auto[1]～[4]を同じ爪行出力へ集約する。各添字は段バラシの別工程からの要求。停止・解除と自己保持は既存回路に従う。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml,行コメント,Output_出力,278,,"【Y1203｜爪行の完了判定】
+出力保持中に爪1・爪2の行センサが両方ONでF_Doneを立てる。完了後の保持解除タイマは1秒。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml,行コメント,Output_出力,279,異常監視（自動指令・到達待ち10秒）,"【Y1203｜爪行の到達待ち監視】
+F_Auto[1]～[4]受付中、行センサの未到達を10秒監視する。両方未到達または片側のみ到達の既存条件で異常保持とメッセージ要求88を出す。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/7b1666c7-ee97-4210-81b2-fed5a6172074.xml,行コメント,RCON_IAI,268,"【入力信号】
+位置決め完了","【段バラシ軸｜位置決め完了入力】
+RCON2_IN[1].Status.PositionDoneを工程用のIN_PositionDoneへ受け渡す。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/7b1666c7-ee97-4210-81b2-fed5a6172074.xml,行コメント,RCON_IAI,269,原点復帰完了,"【段バラシ軸｜原点復帰完了入力】
+RCON受信状態HomeDoneを工程用信号へ受け渡す。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/7b1666c7-ee97-4210-81b2-fed5a6172074.xml,行コメント,RCON_IAI,270,移動中,"【段バラシ軸｜移動中入力】
+RCON受信状態Movingを工程用信号へ受け渡す。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/7b1666c7-ee97-4210-81b2-fed5a6172074.xml,行コメント,RCON_IAI,271,軸異常,"【段バラシ軸｜軸異常入力】
+RCON受信状態Alarmを工程用信号へ受け渡す。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/7b1666c7-ee97-4210-81b2-fed5a6172074.xml,行コメント,RCON_IAI,272,サーボON状態,"【段バラシ軸｜サーボON状態入力】
+RCON受信状態ServoReadyを工程用信号へ受け渡す。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/7b1666c7-ee97-4210-81b2-fed5a6172074.xml,行コメント,RCON_IAI,273,押付け空振り（未使用）,"【段バラシ軸｜押付け空振り監視・未使用】
+P_Offが直列にあるため、現回路ではこの信号の出力を無効にしている。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/7b1666c7-ee97-4210-81b2-fed5a6172074.xml,行コメント,RCON_IAI,274,過負荷警告,"【段バラシ軸｜過負荷警告入力】
+RCON受信状態OverloadWarningを工程用信号へ受け渡す。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/7b1666c7-ee97-4210-81b2-fed5a6172074.xml,行コメント,RCON_IAI,275,指令完了,"【段バラシ軸｜指令完了入力】
+RCON受信状態CommandDoneを工程用信号へ受け渡す。位置決め完了入力とは別の状態信号。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/7b1666c7-ee97-4210-81b2-fed5a6172074.xml,行コメント,RCON_IAI,276,ゾーン1内,"【段バラシ軸｜ゾーン1内入力】
+RCON受信状態Zone1を工程用信号へ受け渡す。ゾーンの位置設定はこの行では行わない。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/7b1666c7-ee97-4210-81b2-fed5a6172074.xml,行コメント,RCON_IAI,277,ゾーン2内,"【段バラシ軸｜ゾーン2内入力】
+RCON受信状態Zone2を工程用信号へ受け渡す。ゾーンの位置設定はこの行では行わない。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/7b1666c7-ee97-4210-81b2-fed5a6172074.xml,行コメント,RCON_IAI,278,準備完了,"【段バラシ軸｜コントローラ準備完了入力】
+RCON受信状態ControllerReadyを工程用信号へ受け渡す。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/7b1666c7-ee97-4210-81b2-fed5a6172074.xml,行コメント,RCON_IAI,279,非常停止状態（監視）,"【段バラシ軸｜非常停止状態入力・監視用】
+RCON受信状態EmergencyStopを工程用信号へ受け渡す。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/7b1666c7-ee97-4210-81b2-fed5a6172074.xml,行コメント,RCON_IAI,280,"【動作管理】
+動作準備（安全許可とは別）","【段バラシ軸｜動作準備判定】
+ControllerReady・サーボON状態・異常なし・非常停止状態なしでReadyを立てる。このReadyは独立した安全許可信号ではない。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/7b1666c7-ee97-4210-81b2-fed5a6172074.xml,行コメント,RCON_IAI,281,開始指令保持,"【段バラシ軸｜自動移動要求の受付・保持】
+Auto[1]～[6]をORで受け付け、Readyと100ms確認後の立上りでM[1]を保持する。MoveDoneで保持解除する。目標位置は段バラシ側の別行から渡される。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/7b1666c7-ee97-4210-81b2-fed5a6172074.xml,行コメント,RCON_IAI,282,動作完了（100ms保持）,"【段バラシ軸｜工程へ返す移動完了】
+開始保持M[1]と位置決め完了入力の立上りからMoveDoneを立て、100ms保持する。Destacker側の完了待ち接点に使う。"
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,変数コメント,Destacker_TON,,,段バラシの条件確認タイマ
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_TON,1,,有無・方向・1段目確認（設定5秒）
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,変数コメント,HMI_RCON2_5_OUT_TargetPos,,,コンテナ設置位置設定 [mm]（単一値宣言と[1]参照の整合要確認）
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,変数コメント,Destacker_M,,段バラシ：,段バラシ工程の保持状態（1～24）
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,1,,段01：開始受付・段2待ち
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,2,,段02：初動：爪行要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,3,,段03：初動：位置判定の保持
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,4,,段04：初動：設定1と現在位置が一致
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,5,,段05：初動：設定1と現在位置が不一致
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,6,,段06：初動：爪戻・コンテナ切り離し
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,7,,段07：初動：設定1へ移動要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,8,,段08：初動：設定2へ移動要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,9,,段09：初動：爪行・コンテナ保持
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,10,,段10：初動：爪行完了後の移動要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,11,,段11：初動合流：空コンテナ送り戻
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,12,,段12：繰返し開始：爪行要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,13,,段13：繰返し：空コンテナ送り戻
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,14,,段14：コンテナ有無・方向・1段目確認
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,15,,段15：繰返し：設定2へ移動要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,16,,段16：繰返し：爪戻・切り離し
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,17,,段17：段積み判定の保持
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,18,,段18：2段目有：2段以上の分岐
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,19,,段19：2段目無：1段のみの分岐
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,20,,段20：2段以上：設定3へ移動要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,21,,段21：2段以上：爪行・コンテナ保持
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,22,,段22：排出準備：設定1へ移動要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,23,,段23：送り行完了待ち
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Destacker_M,24,,段24：送り戻完了待ち
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,変数コメント,Out_CYw_Sep_Claw_F_Auto,,,自動【Y1203】段バラシ爪 行要求（Output_出力へ）
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Out_CYw_Sep_Claw_F_Auto,1,,初動：爪行
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Out_CYw_Sep_Claw_F_Auto,2,,初動：1段目位置でコンテナ保持
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Out_CYw_Sep_Claw_F_Auto,3,,繰返し：2段目位置でコンテナ保持
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Out_CYw_Sep_Claw_F_Auto,4,,繰返し開始：爪行
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,変数コメント,Out_CYw_Sep_Claw_F_Done,,,【Y1203】爪行完了（保持中＋爪1・2の行センサON）
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,変数コメント,RCON2_1_OUT_TargetPos_mm,,,段バラシ軸へ渡す目標位置 [mm]（MOVE書込先）
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,変数コメント,HMI_RCON2_1_OUT_TargetPos,,段バラシ 目標位置 [mm],段バラシ軸の位置設定 [mm]
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,HMI_RCON2_1_OUT_TargetPos,1,,セイフティ・排出位置 [mm]
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,HMI_RCON2_1_OUT_TargetPos,2,,1段目位置 [mm]
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,HMI_RCON2_1_OUT_TargetPos,3,,2段目位置 [mm]
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,変数コメント,RCON2_1_Auto,,,段バラシ軸 自動移動要求（RCON_IAIへ）
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,RCON2_1_Auto,1,,初動：設定1へ（セイフティ位置）
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,RCON2_1_Auto,2,,初動：設定2へ（1段目位置）
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,RCON2_1_Auto,3,,初動：爪行完了後移動（位置代入なし）
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,RCON2_1_Auto,4,,排出準備：設定1へ
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,RCON2_1_Auto,5,,繰返し：設定2へ（1段目位置）
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,RCON2_1_Auto,6,,2段以上：設定3へ（2段目位置）
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,変数コメント,RCON2_1_MoveDone,,,段バラシ軸の工程用移動完了（100ms保持）
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,変数コメント,Out_CYw_Sep_Claw_H_Auto,,,自動【Y1202】段バラシ爪 戻要求（Output_出力へ）
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Out_CYw_Sep_Claw_H_Auto,1,,初動：コンテナ切り離し
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Out_CYw_Sep_Claw_H_Auto,2,,繰返し：1段目移動後の切り離し
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,変数コメント,Out_CYw_Sep_Claw_H_Done,,,【Y1202】爪戻完了（保持中＋爪1・2の戻センサON）
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,変数コメント,Destacker_End,,段バラシ完了,段バラシ1サイクル完了（次サイクルの開始条件にも使用）
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,変数コメント,RCON2_1_ActualPos_mm,,,段バラシ軸の現在位置 [mm]
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,変数コメント,Out_CYw_Empty_Container_CY_H_Auto,,,自動【Y1200】空コンテナ送り 戻要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Out_CYw_Empty_Container_CY_H_Auto,1,,初動完了後：送り戻
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Out_CYw_Empty_Container_CY_H_Auto,2,,繰返し開始：送り戻
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Out_CYw_Empty_Container_CY_H_Auto,3,,コンテナ到着後：送り戻
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,変数コメント,Out_CYw_Empty_Container_CY_H_Done,,,【Y1200】送り戻完了（保持中＋戻センサON）
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,変数コメント,Out_CYw_Empty_Container_CY_F_Auto,,,自動【Y1201】空コンテナ送り 行要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,配列要素コメント,Out_CYw_Empty_Container_CY_F_Auto,1,,排出：コンテナ送り行
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,変数コメント,RCON2_5_ActualPos_mm,,,コンテナ設置軸の現在位置 [mm]
+d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml,変数コメント,Out_CYw_Empty_Container_CY_F_Done,,,【Y1201】送り行完了（保持中＋行センサON）
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Output_Share_M,1,【Y1200】空コンテナ送り 戻,空コンテナ送り戻 出力保持
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Output_Share_M,2,【Y1201】空コンテナ送り 行,空コンテナ送り行 出力保持
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Output_Share_M,3,【Y1202】段バラシ爪 戻,段バラシ爪戻 出力保持
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Output_Share_M,4,【Y1203】段バラシ爪 行,段バラシ爪行 出力保持
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Output_Share_Reset_TON,1,,送り戻完了後の保持解除（1秒）
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Output_Share_Reset_TON,2,,送り行完了後の保持解除（1秒）
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Output_Share_Reset_TON,3,,爪戻完了後の保持解除（1秒）
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Output_Share_Reset_TON,4,,爪行完了後の保持解除（1秒）
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Output_Share_Error_TON,1,,送り戻Auto[1]の到達待ち（10秒）
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Output_Share_Error_TON,2,,送り行Auto[1]の到達待ち（10秒）
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Output_Share_Error_TON,3,,爪戻Auto[1][2]の到達待ち（10秒）
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Output_Share_Error_TON,4,,爪行Auto[1]～[4]の到達待ち（10秒）
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Output_Share_Error_M,1,,空コンテナ送り戻 到達待ち異常
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Output_Share_Error_M,2,,空コンテナ送り行 到達待ち異常
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Output_Share_Error_M,3,,段バラシ爪戻 到達待ち異常
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Output_Share_Error_M,4,,段バラシ爪行 到達待ち異常
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,変数コメント,Out_CYw_Empty_Container_CY_F_Done,,【Y1201】空コンテナ送り 行 動作完了,【Y1201】送り行完了（保持中＋行センサON）
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,変数コメント,Out_CYw_Sep_Claw_H_Auto,,自動【Y1202】段バラシ爪 戻：,自動【Y1202】段バラシ爪 戻要求（Output_出力へ）
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Out_CYw_Sep_Claw_H_Auto,1,,初動：コンテナ切り離し
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Out_CYw_Sep_Claw_H_Auto,2,,繰返し：1段目移動後の切り離し
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,変数コメント,Out_CYw_Sep_Claw_H_Done,,【Y1202】段バラシ爪 戻 動作完了,【Y1202】爪戻完了（保持中＋爪1・2の戻センサON）
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,変数コメント,Out_CYw_Sep_Claw_F_Auto,,自動【Y1203】段バラシ爪 行：,自動【Y1203】段バラシ爪 行要求（Output_出力へ）
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Out_CYw_Sep_Claw_F_Auto,1,,初動：爪行
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Out_CYw_Sep_Claw_F_Auto,2,,初動：1段目位置でコンテナ保持
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Out_CYw_Sep_Claw_F_Auto,3,,繰返し：2段目位置でコンテナ保持
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Out_CYw_Sep_Claw_F_Auto,4,,繰返し開始：爪行
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,変数コメント,Out_CYw_Sep_Claw_F_Done,,【Y1203】段バラシ爪 行 動作完了,【Y1203】爪行完了（保持中＋爪1・2の行センサON）
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,変数コメント,Out_CYw_Empty_Container_CY_H_Auto,,自動【Y1200】空コンテナ送り 戻：,自動【Y1200】空コンテナ送り 戻要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Out_CYw_Empty_Container_CY_H_Auto,1,,初動完了後：送り戻
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Out_CYw_Empty_Container_CY_H_Auto,2,,繰返し開始：送り戻
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Out_CYw_Empty_Container_CY_H_Auto,3,,コンテナ到着後：送り戻
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,変数コメント,Out_CYw_Empty_Container_CY_H_Done,,【Y1200】空コンテナ送り 戻 動作完了,【Y1200】送り戻完了（保持中＋戻センサON）
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,変数コメント,Out_CYw_Empty_Container_CY_F_Auto,,自動【Y1201】空コンテナ送り 行：,自動【Y1201】空コンテナ送り 行要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml,配列要素コメント,Out_CYw_Empty_Container_CY_F_Auto,1,,排出：コンテナ送り行
+d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml,変数コメント,RCON2_1_TON,,準備・完了タイマー,段バラシ軸の動作管理タイマ
+d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml,配列要素コメント,RCON2_1_TON,1,準備100ms確認,開始要求確認（100ms）
+d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml,配列要素コメント,RCON2_1_TON,2,動作完了100ms保持,移動完了保持（100ms）
+d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml,変数コメント,RCON2_1_M,,#RCON2_1 段バラシ,段バラシ軸の動作管理用保持
+d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml,配列要素コメント,RCON2_1_M,1,開始指令保持,自動開始要求の保持（MoveDoneで解除）
+d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml,変数コメント,RCON2_1_Ready,,動作準備（安全許可とは別）,段バラシ軸の動作準備成立（安全許可とは別）
+d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml,変数コメント,RCON2_1_MoveDone,,動作完了,段バラシ軸の工程用移動完了（100ms保持）
+d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml,変数コメント,RCON2_1_OUT_TargetPos_mm,,目標位置 [mm],段バラシ軸へ渡す目標位置 [mm]（MOVE書込先）
+d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml,変数コメント,RCON2_1_ActualPos_mm,,現在位置 [mm],段バラシ軸の現在位置 [mm]
+d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml,変数コメント,RCON2_1_Auto,,自動移動要求,段バラシ軸 自動移動要求（RCON_IAIへ）
+d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml,配列要素コメント,RCON2_1_Auto,1,自動要求1（未接続）,初動：設定1へ（セイフティ位置）
+d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml,配列要素コメント,RCON2_1_Auto,2,自動要求2（未接続）,初動：設定2へ（1段目位置）
+d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml,配列要素コメント,RCON2_1_Auto,3,自動要求3（未接続）,初動：爪行完了後移動（位置代入なし）
+d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml,配列要素コメント,RCON2_1_Auto,4,,排出準備：設定1へ
+d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml,配列要素コメント,RCON2_1_Auto,5,,繰返し：設定2へ（1段目位置）
+d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml,配列要素コメント,RCON2_1_Auto,6,,2段以上：設定3へ（2段目位置）
+d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml,変数コメント,RCON2_5_ActualPos_mm,,現在位置 [mm],コンテナ設置軸の現在位置 [mm]
+d12ff733-4f31-46ee-8e8a-659eb8891990/b530d740-9d69-41c3-974a-97c06e823eb2.xml,配列要素コメント,Output_Share_Error_M,1,,空コンテナ送り戻 到達待ち異常
+d12ff733-4f31-46ee-8e8a-659eb8891990/b530d740-9d69-41c3-974a-97c06e823eb2.xml,配列要素コメント,Output_Share_Error_M,2,,空コンテナ送り行 到達待ち異常
+d12ff733-4f31-46ee-8e8a-659eb8891990/b530d740-9d69-41c3-974a-97c06e823eb2.xml,配列要素コメント,Output_Share_Error_M,3,,段バラシ爪戻 到達待ち異常
+d12ff733-4f31-46ee-8e8a-659eb8891990/b530d740-9d69-41c3-974a-97c06e823eb2.xml,配列要素コメント,Output_Share_Error_M,4,,段バラシ爪行 到達待ち異常
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Output_Share_Error_M,1,【Y1200】空コンテナ送り 戻,空コンテナ送り戻 到達待ち異常
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Output_Share_Error_M,2,【Y1201】空コンテナ送り 行,空コンテナ送り行 到達待ち異常
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Output_Share_Error_M,3,【Y1202】段バラシ爪 戻,段バラシ爪戻 到達待ち異常
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Output_Share_Error_M,4,【Y1203】段バラシ爪 行,段バラシ爪行 到達待ち異常
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,変数コメント,Out_CYw_Empty_Container_CY_F_Done,,【Y1201】空コンテナ送り 行 動作完了,【Y1201】送り行完了（保持中＋行センサON）
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,変数コメント,Out_CYw_Sep_Claw_H_Auto,,自動【Y1202】段バラシ爪 戻：,自動【Y1202】段バラシ爪 戻要求（Output_出力へ）
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Out_CYw_Sep_Claw_H_Auto,1,コンテナ切り離し,初動：コンテナ切り離し
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Out_CYw_Sep_Claw_H_Auto,2,,繰返し：1段目移動後の切り離し
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,変数コメント,Out_CYw_Sep_Claw_H_Done,,【Y1202】段バラシ爪 戻 動作完了,【Y1202】爪戻完了（保持中＋爪1・2の戻センサON）
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,変数コメント,Out_CYw_Sep_Claw_F_Auto,,自動【Y1203】段バラシ爪 行：,自動【Y1203】段バラシ爪 行要求（Output_出力へ）
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Out_CYw_Sep_Claw_F_Auto,1,初動 段バラシ,初動：爪行
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Out_CYw_Sep_Claw_F_Auto,2,コンテナ保持,初動：1段目位置でコンテナ保持
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Out_CYw_Sep_Claw_F_Auto,3,2段目以上保持,繰返し：2段目位置でコンテナ保持
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Out_CYw_Sep_Claw_F_Auto,4,,繰返し開始：爪行
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,変数コメント,Out_CYw_Sep_Claw_F_Done,,【Y1203】段バラシ爪 行 動作完了,【Y1203】爪行完了（保持中＋爪1・2の行センサON）
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,変数コメント,Out_CYw_Empty_Container_CY_H_Auto,,自動【Y1200】空コンテナ送り 戻：,自動【Y1200】空コンテナ送り 戻要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Out_CYw_Empty_Container_CY_H_Auto,1,,初動完了後：送り戻
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Out_CYw_Empty_Container_CY_H_Auto,2,,繰返し開始：送り戻
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Out_CYw_Empty_Container_CY_H_Auto,3,,コンテナ到着後：送り戻
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,変数コメント,Out_CYw_Empty_Container_CY_H_Done,,【Y1200】空コンテナ送り 戻 動作完了,【Y1200】送り戻完了（保持中＋戻センサON）
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,変数コメント,Out_CYw_Empty_Container_CY_F_Auto,,自動【Y1201】空コンテナ送り 行：,自動【Y1201】空コンテナ送り 行要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Out_CYw_Empty_Container_CY_F_Auto,1,,排出：コンテナ送り行
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,変数コメント,RCON2_1_M,,#RCON2_1 段バラシ,段バラシ軸の動作管理用保持
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,RCON2_1_M,1,開始指令保持,自動開始要求の保持（MoveDoneで解除）
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,変数コメント,RCON2_1_Ready,,動作準備（安全許可とは別）,段バラシ軸の動作準備成立（安全許可とは別）
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,変数コメント,RCON2_1_MoveDone,,動作完了,段バラシ軸の工程用移動完了（100ms保持）
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,変数コメント,RCON2_1_OUT_TargetPos_mm,,目標位置 [mm],段バラシ軸へ渡す目標位置 [mm]（MOVE書込先）
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,変数コメント,RCON2_1_ActualPos_mm,,現在位置 [mm],段バラシ軸の現在位置 [mm]
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,変数コメント,RCON2_1_Auto,,自動移動要求,段バラシ軸 自動移動要求（RCON_IAIへ）
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,RCON2_1_Auto,1,初期動作① セイフティ,初動：設定1へ（セイフティ位置）
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,RCON2_1_Auto,2,1段目 Pos,初動：設定2へ（1段目位置）
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,RCON2_1_Auto,3,初期動作② セイフティ,初動：爪行完了後移動（位置代入なし）
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,RCON2_1_Auto,4,コンテナ排出,排出準備：設定1へ
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,RCON2_1_Auto,5,,繰返し：設定2へ（1段目位置）
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,RCON2_1_Auto,6,,2段以上：設定3へ（2段目位置）
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,変数コメント,RCON2_5_ActualPos_mm,,現在位置 [mm],コンテナ設置軸の現在位置 [mm]
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,変数コメント,Destacker_M,,段バラシ：,段バラシ工程の保持状態（1～24）
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,1,,段01：開始受付・段2待ち
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,2,,段02：初動：爪行要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,3,,段03：初動：位置判定の保持
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,4,①初動 段バラシセイフティPos  有,段04：初動：設定1と現在位置が一致
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,5,②初動 段バラシセイフティPos  無,段05：初動：設定1と現在位置が不一致
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,6,,段06：初動：爪戻・コンテナ切り離し
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,7,,段07：初動：設定1へ移動要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,8,,段08：初動：設定2へ移動要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,9,,段09：初動：爪行・コンテナ保持
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,10,,段10：初動：爪行完了後の移動要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,11,,段11：初動合流：空コンテナ送り戻
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,12,,段12：繰返し開始：爪行要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,13,,段13：繰返し：空コンテナ送り戻
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,14,,段14：コンテナ有無・方向・1段目確認
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,15,,段15：繰返し：設定2へ移動要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,16,,段16：繰返し：爪戻・切り離し
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,17,,段17：段積み判定の保持
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,18,,段18：2段目有：2段以上の分岐
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,19,,段19：2段目無：1段のみの分岐
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,20,,段20：2段以上：設定3へ移動要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,21,,段21：2段以上：爪行・コンテナ保持
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,22,,段22：排出準備：設定1へ移動要求
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,23,,段23：送り行完了待ち
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,Destacker_M,24,,段24：送り戻完了待ち
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,変数コメント,HMI_RCON2_1_OUT_TargetPos,,段バラシ 目標位置 [mm],段バラシ軸の位置設定 [mm]
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,HMI_RCON2_1_OUT_TargetPos,1,①④セイフティ・排出 Pos,セイフティ・排出位置 [mm]
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,HMI_RCON2_1_OUT_TargetPos,2,②1段目 Pos,1段目位置 [mm]
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,配列要素コメント,HMI_RCON2_1_OUT_TargetPos,3,③2段目 Pos,2段目位置 [mm]
+d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml,変数コメント,Destacker_End,,段バラシ完了,段バラシ1サイクル完了（次サイクルの開始条件にも使用）

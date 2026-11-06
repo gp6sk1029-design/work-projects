@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sysmac Studio編集"
+  short_description: "SMC2編集・ラダー分析・コメント整形・内部プロジェクト反映を行う"
+  default_prompt: "$sysmac-studio を使って、対象のSysmacプロジェクトを確認し、依頼した範囲を編集・検証・保存してください。"

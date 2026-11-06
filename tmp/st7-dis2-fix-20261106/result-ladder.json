@@ -1,0 +1,338 @@
+{
+  "width": 1740,
+  "height": 1030,
+  "elements": [
+    {
+      "type": "text",
+      "x": 60,
+      "y": 30,
+      "text": "20261106A：ワークなしの完了と、次サイクルの解除",
+      "size": 34,
+      "color": "ink",
+      "width": 1580
+    },
+    {
+      "type": "text",
+      "x": 60,
+      "y": 94,
+      "text": "ST7_A_Dis2_左SF排出／新42行｜黒：維持した回路　青：追加した条件・枝",
+      "size": 24,
+      "color": "ink",
+      "width": 1580
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          60,
+          175
+        ],
+        [
+          60,
+          590
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1680,
+          175
+        ],
+        [
+          1680,
+          590
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          60,
+          270
+        ],
+        [
+          100,
+          270
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 100,
+      "y": 270,
+      "width": 180,
+      "label": "M33",
+      "nc": false,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          280,
+          270
+        ],
+        [
+          400,
+          270
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 400,
+      "y": 270,
+      "width": 230,
+      "label": "送り戻Done",
+      "nc": false,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          630,
+          270
+        ],
+        [
+          900,
+          270
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          60,
+          385
+        ],
+        [
+          100,
+          385
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 100,
+      "y": 385,
+      "width": 180,
+      "label": "M8",
+      "nc": false,
+      "color": "change"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          280,
+          385
+        ],
+        [
+          400,
+          385
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 400,
+      "y": 385,
+      "width": 230,
+      "label": "M10：なし",
+      "nc": false,
+      "color": "change"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          630,
+          385
+        ],
+        [
+          900,
+          385
+        ],
+        [
+          900,
+          270
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          60,
+          505
+        ],
+        [
+          100,
+          505
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 100,
+      "y": 505,
+      "width": 180,
+      "label": "End",
+      "nc": false,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          280,
+          505
+        ],
+        [
+          900,
+          505
+        ],
+        [
+          900,
+          270
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          900,
+          270
+        ],
+        [
+          970,
+          270
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 970,
+      "y": 270,
+      "width": 180,
+      "label": "Retry[12]",
+      "nc": true,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1150,
+          270
+        ],
+        [
+          1210,
+          270
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 1210,
+      "y": 270,
+      "width": 180,
+      "label": "Next",
+      "nc": true,
+      "color": "change"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1390,
+          270
+        ],
+        [
+          1510,
+          270
+        ]
+      ]
+    },
+    {
+      "type": "coil",
+      "x": 1510,
+      "y": 270,
+      "width": 130,
+      "label": "End"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1640,
+          270
+        ],
+        [
+          1680,
+          270
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "x": 80,
+      "y": 645,
+      "text": "M8＝ワーク有無判定中／M10＝実物もデータもなし／M33＝最後の送り戻工程",
+      "size": 24,
+      "color": "ink",
+      "width": 1580
+    },
+    {
+      "type": "text",
+      "x": 80,
+      "y": 700,
+      "text": "M＝ST7_A_Dis2_M／End＝ST7_A_Dis2_End／Next＝Ins_A_Next_Cycle",
+      "size": 24,
+      "color": "ink",
+      "width": 1580
+    },
+    {
+      "type": "text",
+      "x": 80,
+      "y": 755,
+      "text": "送り戻Done＝Out_CYw_Ejc_Hldr_Feed_A_H_Done",
+      "size": 24,
+      "color": "ink",
+      "width": 1580
+    },
+    {
+      "type": "text",
+      "x": 80,
+      "y": 820,
+      "text": "有無判定は今回の初期位置確認済みM46で許可。起動直後のRetry解除だけでは開始しない。",
+      "size": 25,
+      "color": "change",
+      "width": 1580
+    },
+    {
+      "type": "text",
+      "x": 80,
+      "y": 880,
+      "text": "有無判定の保持もEndで解除。最後の送り戻要求は、受け接点のあるAuto[2]へ修正。",
+      "size": 25,
+      "color": "change",
+      "width": 1580
+    },
+    {
+      "type": "text",
+      "x": 80,
+      "y": 970,
+      "text": "A版ファイルへ反映｜局所検算・仮想応答モデルで確認。登録Jは未変更、実機未確認。",
+      "size": 22,
+      "color": "ink",
+      "width": 1580
+    }
+  ]
+}

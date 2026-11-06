@@ -1,0 +1,243 @@
+{
+  "file": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261103C.smc2",
+  "sha256": "6082d233dddb22c45cfea4157f5c7937dcb7c0b51270a0786545d167ffb939b3",
+  "stage_coils": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "stage_missing": [],
+  "stage_duplicates": [],
+  "all_Destacker_coil_count": 41,
+  "all_Destacker_duplicate_coils": [],
+  "command_coils": 16,
+  "Output_routes": 10,
+  "RCON_routes": 6,
+  "unconnected_routes": [],
+  "global_command_write_duplicates": [],
+  "added_receiver_contacts": 5,
+  "parallel_graph_checks": 4,
+  "stage_reference_changes": 53,
+  "command_reference_changes": 4,
+  "unchanged_parts": 207,
+  "B_original_unchanged": true,
+  "array_bounds": "全16指令で適合",
+  "ZIP_CRC": "正常",
+  "native_Sysmac_build": "未実施",
+  "PLC接続と転送": "未実施",
+  "routes": [
+    {
+      "変数": "Out_CYw_Sep_Claw_F_Auto[1]",
+      "段バラシ行": 1,
+      "接続先": "Output_出力",
+      "駆動接点行": [
+        277
+      ],
+      "監視等接点行": [
+        279
+      ],
+      "駆動コイル": "Out_CYw_Sep_Claw_F",
+      "判定": "一致"
+    },
+    {
+      "変数": "Out_CYw_Sep_Claw_H_Auto[1]",
+      "段バラシ行": 3,
+      "接続先": "Output_出力",
+      "駆動接点行": [
+        274
+      ],
+      "監視等接点行": [
+        276
+      ],
+      "駆動コイル": "Out_CYw_Sep_Claw_H",
+      "判定": "一致"
+    },
+    {
+      "変数": "RCON2_1_Auto[1]",
+      "段バラシ行": 4,
+      "接続先": "RCON_IAI",
+      "駆動接点行": [
+        281
+      ],
+      "監視等接点行": [],
+      "駆動コイル": "RCON2_1_M[1]",
+      "判定": "一致"
+    },
+    {
+      "変数": "RCON2_1_Auto[2]",
+      "段バラシ行": 5,
+      "接続先": "RCON_IAI",
+      "駆動接点行": [
+        281
+      ],
+      "監視等接点行": [],
+      "駆動コイル": "RCON2_1_M[1]",
+      "判定": "一致"
+    },
+    {
+      "変数": "Out_CYw_Sep_Claw_F_Auto[2]",
+      "段バラシ行": 6,
+      "接続先": "Output_出力",
+      "駆動接点行": [
+        277
+      ],
+      "監視等接点行": [
+        279
+      ],
+      "駆動コイル": "Out_CYw_Sep_Claw_F",
+      "判定": "一致"
+    },
+    {
+      "変数": "RCON2_1_Auto[3]",
+      "段バラシ行": 7,
+      "接続先": "RCON_IAI",
+      "駆動接点行": [
+        281
+      ],
+      "監視等接点行": [],
+      "駆動コイル": "RCON2_1_M[1]",
+      "判定": "一致"
+    },
+    {
+      "変数": "Out_CYw_Empty_Container_CY_H_Auto[1]",
+      "段バラシ行": 8,
+      "接続先": "Output_出力",
+      "駆動接点行": [
+        268
+      ],
+      "監視等接点行": [
+        270
+      ],
+      "駆動コイル": "Out_CYw_Empty_Container_CY_H",
+      "判定": "一致"
+    },
+    {
+      "変数": "Out_CYw_Sep_Claw_F_Auto[4]",
+      "段バラシ行": 9,
+      "接続先": "Output_出力",
+      "駆動接点行": [
+        277
+      ],
+      "監視等接点行": [
+        279
+      ],
+      "駆動コイル": "Out_CYw_Sep_Claw_F",
+      "判定": "一致"
+    },
+    {
+      "変数": "Out_CYw_Empty_Container_CY_H_Auto[2]",
+      "段バラシ行": 10,
+      "接続先": "Output_出力",
+      "駆動接点行": [
+        268
+      ],
+      "監視等接点行": [],
+      "駆動コイル": "Out_CYw_Empty_Container_CY_H",
+      "判定": "一致"
+    },
+    {
+      "変数": "RCON2_1_Auto[5]",
+      "段バラシ行": 12,
+      "接続先": "RCON_IAI",
+      "駆動接点行": [
+        281
+      ],
+      "監視等接点行": [],
+      "駆動コイル": "RCON2_1_M[1]",
+      "判定": "一致"
+    },
+    {
+      "変数": "Out_CYw_Sep_Claw_H_Auto[2]",
+      "段バラシ行": 13,
+      "接続先": "Output_出力",
+      "駆動接点行": [
+        274
+      ],
+      "監視等接点行": [
+        276
+      ],
+      "駆動コイル": "Out_CYw_Sep_Claw_H",
+      "判定": "一致"
+    },
+    {
+      "変数": "RCON2_1_Auto[6]",
+      "段バラシ行": 15,
+      "接続先": "RCON_IAI",
+      "駆動接点行": [
+        281
+      ],
+      "監視等接点行": [],
+      "駆動コイル": "RCON2_1_M[1]",
+      "判定": "一致"
+    },
+    {
+      "変数": "Out_CYw_Sep_Claw_F_Auto[3]",
+      "段バラシ行": 16,
+      "接続先": "Output_出力",
+      "駆動接点行": [
+        277
+      ],
+      "監視等接点行": [
+        279
+      ],
+      "駆動コイル": "Out_CYw_Sep_Claw_F",
+      "判定": "一致"
+    },
+    {
+      "変数": "RCON2_1_Auto[4]",
+      "段バラシ行": 17,
+      "接続先": "RCON_IAI",
+      "駆動接点行": [
+        281
+      ],
+      "監視等接点行": [],
+      "駆動コイル": "RCON2_1_M[1]",
+      "判定": "一致"
+    },
+    {
+      "変数": "Out_CYw_Empty_Container_CY_F_Auto[1]",
+      "段バラシ行": 18,
+      "接続先": "Output_出力",
+      "駆動接点行": [
+        271
+      ],
+      "監視等接点行": [
+        273
+      ],
+      "駆動コイル": "Out_CYw_Empty_Container_CY_F",
+      "判定": "一致"
+    },
+    {
+      "変数": "Out_CYw_Empty_Container_CY_H_Auto[3]",
+      "段バラシ行": 19,
+      "接続先": "Output_出力",
+      "駆動接点行": [
+        268
+      ],
+      "監視等接点行": [],
+      "駆動コイル": "Out_CYw_Empty_Container_CY_H",
+      "判定": "一致"
+    }
+  ]
+}

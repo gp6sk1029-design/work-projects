@@ -1,0 +1,45 @@
+{
+  "project": "C:\\OMRON\\Data\\Solution\\6cb83995-6d0c-45b5-ace2-b96278ba04c8",
+  "solution": "3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I",
+  "user_confirmed_closed": true,
+  "backup": "C:\\Users\\SEIGI-N13\\work-projects\\outputs\\destacker-comments-20261105\\names-before_20261105T110753Z_23a20d.zip",
+  "backup_files": 423,
+  "before_sha": "a4b922ba745be034b83dd130ab3dd4516c9e059065606d425add089afb0e5302",
+  "after_sha": "d6291985f5ff3fdf6ea130bc88f8131bc731951a2be0573b3ae4fbd1f0c065a0",
+  "changed": [
+    {
+      "part": "b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "names": [
+        "Destacker_Error"
+      ],
+      "before_sha": "d0835678e22e366d54271f617fb86127e9dc996f172734021941773b74ed91dc",
+      "after_sha": "2b3520b2aea60f9ff3f20950f8d9abb91243f620e0e9f02ea4d5f61de6898da2"
+    },
+    {
+      "part": "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "names": [
+        "Destacker_Init_Busy",
+        "Destacker_M",
+        "Destacker_End",
+        "Destacker_Error"
+      ],
+      "before_sha": "7e92b8e5617b861c8a2d81361e3287318492a3dc0ebb3bed4486fde8e94bd869",
+      "after_sha": "b65f023edf2694bdf6a23cae047f3b146b3f5c42e846ebb3580b9d0a493986be"
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "names": [
+        "Destacker_M",
+        "Destacker_End",
+        "Destacker_Error"
+      ],
+      "before_sha": "b963e4f49cbe39746fe001c69bf65ed336270ec4828c0abb08753804334531ab",
+      "after_sha": "1d30550f8f321e418f6a6ae8437b27c7eba87851fb44905ec1e5c36b9a708d42"
+    }
+  ],
+  "comment_attributes_only": true,
+  "variable_declarations_identical": true,
+  "all_ladder_fields_identical": true,
+  "element_comments": 32,
+  "ui_reflection_verified": false
+}

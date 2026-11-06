@@ -1,0 +1,660 @@
+{
+  "checks": [
+    {
+      "name": "10→19行：回収下降要求がON→OFFに上書き",
+      "evidence": {
+        "after_10": true,
+        "after_19": false
+      }
+    },
+    {
+      "name": "25行：送り戻要求[3]の受け接点0",
+      "evidence": {
+        "request": "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[3]",
+        "contacts": [],
+        "output_rows": [
+          106,
+          108
+        ]
+      }
+    },
+    {
+      "name": "8行：ワークなし経路で8走査保持しても完了しない",
+      "evidence": {
+        "M8": true,
+        "M10": true,
+        "End": false
+      }
+    },
+    {
+      "name": "26行：NextCycleでEndが残る、25行M33を阻害",
+      "evidence": {
+        "End": true,
+        "M33": false
+      }
+    },
+    {
+      "name": "8行：A/B満杯の参照不一致4組",
+      "evidence": [
+        {
+          "A_full": false,
+          "B_full": false,
+          "M9": true,
+          "M11": false
+        },
+        {
+          "A_full": false,
+          "B_full": true,
+          "M9": false,
+          "M11": false
+        },
+        {
+          "A_full": true,
+          "B_full": false,
+          "M9": true,
+          "M11": true
+        },
+        {
+          "A_full": true,
+          "B_full": true,
+          "M9": false,
+          "M11": true
+        }
+      ]
+    },
+    {
+      "name": "16行：NG枝だけ送り完了を待たない",
+      "evidence": [
+        {
+          "choice": 18,
+          "feed_done": false,
+          "move": false
+        },
+        {
+          "choice": 19,
+          "feed_done": false,
+          "move": true
+        },
+        {
+          "choice": 20,
+          "feed_done": false,
+          "move": true
+        }
+      ]
+    },
+    {
+      "name": "13→14行：旧Done ONで仕分けへ即通過",
+      "evidence": {
+        "M16": true,
+        "M17": true,
+        "count": 1.0
+      }
+    },
+    {
+      "name": "27行：A回転をB側INで開始、積数1でも開始",
+      "evidence": [
+        {
+          "count": 1,
+          "A_ent": true,
+          "B_ent": false,
+          "M1": false
+        },
+        {
+          "count": 1,
+          "A_ent": false,
+          "B_ent": true,
+          "M1": true
+        },
+        {
+          "count": 5,
+          "A_ent": true,
+          "B_ent": false,
+          "M1": false
+        },
+        {
+          "count": 5,
+          "A_ent": false,
+          "B_ent": true,
+          "M1": true
+        }
+      ]
+    },
+    {
+      "name": "27～31行：ターン両端OFFでBusyだけ保持",
+      "evidence": {
+        "Busy": true,
+        "turn_H": false,
+        "turn_F": false
+      }
+    },
+    {
+      "name": "14行：同一ワークでRetry後の再進入は再加算",
+      "evidence": {
+        "count_after_retry": 2.0
+      }
+    },
+    {
+      "name": "21行：5個目解放後、回転前に積数0",
+      "evidence": {
+        "A_SF_CT": 0.0
+      }
+    },
+    {
+      "name": "17～18行：基準[3]、範囲0/6は前目標保持",
+      "evidence": [
+        {
+          "count": 0,
+          "calculated": 110.0,
+          "transfer": 777,
+          "ready": false
+        },
+        {
+          "count": 1,
+          "calculated": 100.0,
+          "transfer": 100.0,
+          "ready": true
+        },
+        {
+          "count": 2,
+          "calculated": 90.0,
+          "transfer": 90.0,
+          "ready": true
+        },
+        {
+          "count": 3,
+          "calculated": 80.0,
+          "transfer": 80.0,
+          "ready": true
+        },
+        {
+          "count": 4,
+          "calculated": 70.0,
+          "transfer": 70.0,
+          "ready": true
+        },
+        {
+          "count": 5,
+          "calculated": 60.0,
+          "transfer": 60.0,
+          "ready": true
+        },
+        {
+          "count": 6,
+          "calculated": 50.0,
+          "transfer": 777,
+          "ready": false
+        }
+      ]
+    }
+  ],
+  "request_audit": {
+    "Out_CYw_Disc_Chk_A_F_Auto[1]": {
+      "writers": [
+        {
+          "section": "ST7_A_Dis2_左SF排出",
+          "row": 11,
+          "S": false,
+          "RS": false
+        }
+      ],
+      "contacts": [
+        {
+          "section": "Output_出力",
+          "row": 103
+        },
+        {
+          "section": "Output_出力",
+          "row": 105
+        }
+      ]
+    },
+    "Out_CYw_Disc_Chk_A_H_Auto[1]": {
+      "writers": [
+        {
+          "section": "ST7_A_Dis2_左SF排出",
+          "row": 2,
+          "S": false,
+          "RS": false
+        }
+      ],
+      "contacts": [
+        {
+          "section": "Output_出力",
+          "row": 100
+        },
+        {
+          "section": "Output_出力",
+          "row": 102
+        }
+      ]
+    },
+    "Out_CYw_Disc_Chk_A_H_Auto[2]": {
+      "writers": [
+        {
+          "section": "ST7_A_Dis2_左SF排出",
+          "row": 20,
+          "S": false,
+          "RS": false
+        }
+      ],
+      "contacts": [
+        {
+          "section": "Output_出力",
+          "row": 100
+        },
+        {
+          "section": "Output_出力",
+          "row": 102
+        }
+      ]
+    },
+    "Out_CYw_Ejc_Hldr_Feed_A_F_Auto[1]": {
+      "writers": [
+        {
+          "section": "ST7_A_Dis2_左SF排出",
+          "row": 15,
+          "S": false,
+          "RS": false
+        }
+      ],
+      "contacts": [
+        {
+          "section": "Output_出力",
+          "row": 109
+        },
+        {
+          "section": "Output_出力",
+          "row": 111
+        }
+      ]
+    },
+    "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[1]": {
+      "writers": [
+        {
+          "section": "ST7_A_Dis2_左SF排出",
+          "row": 7,
+          "S": false,
+          "RS": false
+        }
+      ],
+      "contacts": [
+        {
+          "section": "Output_出力",
+          "row": 106
+        },
+        {
+          "section": "Output_出力",
+          "row": 108
+        }
+      ]
+    },
+    "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[3]": {
+      "writers": [
+        {
+          "section": "ST7_A_Dis2_左SF排出",
+          "row": 25,
+          "S": false,
+          "RS": false
+        }
+      ],
+      "contacts": []
+    },
+    "Out_CYw_SH_A_Turn_F_Auto[1]": {
+      "writers": [
+        {
+          "section": "ST7_A_Dis2_左SF排出",
+          "row": 30,
+          "S": false,
+          "RS": false
+        }
+      ],
+      "contacts": [
+        {
+          "section": "Output_出力",
+          "row": 151
+        },
+        {
+          "section": "Output_出力",
+          "row": 153
+        }
+      ]
+    },
+    "Out_CYw_SH_A_Turn_H_Auto[1]": {
+      "writers": [
+        {
+          "section": "ST7_A_Dis2_左SF排出",
+          "row": 29,
+          "S": false,
+          "RS": false
+        }
+      ],
+      "contacts": [
+        {
+          "section": "Output_出力",
+          "row": 148
+        },
+        {
+          "section": "Output_出力",
+          "row": 150
+        }
+      ]
+    },
+    "RCON1_3_Auto[1]": {
+      "writers": [
+        {
+          "section": "ST7_A_Dis2_左SF排出",
+          "row": 6,
+          "S": false,
+          "RS": false
+        }
+      ],
+      "contacts": [
+        {
+          "section": "RCON_IAI",
+          "row": 120
+        }
+      ]
+    },
+    "RCON1_3_Auto[2]": {
+      "writers": [
+        {
+          "section": "ST7_A_Dis2_左SF排出",
+          "row": 16,
+          "S": false,
+          "RS": false
+        }
+      ],
+      "contacts": [
+        {
+          "section": "RCON_IAI",
+          "row": 120
+        }
+      ]
+    },
+    "RCON1_3_Auto[3]": {
+      "writers": [
+        {
+          "section": "ST7_A_Dis2_左SF排出",
+          "row": 24,
+          "S": false,
+          "RS": false
+        }
+      ],
+      "contacts": [
+        {
+          "section": "RCON_IAI",
+          "row": 120
+        }
+      ]
+    },
+    "RCON1_5_Auto[1]": {
+      "writers": [
+        {
+          "section": "ST7_A_Dis2_左SF排出",
+          "row": 4,
+          "S": false,
+          "RS": false
+        }
+      ],
+      "contacts": [
+        {
+          "section": "RCON_IAI",
+          "row": 201
+        }
+      ]
+    },
+    "RCON1_5_Auto[2]": {
+      "writers": [
+        {
+          "section": "ST7_A_Dis2_左SF排出",
+          "row": 10,
+          "S": false,
+          "RS": false
+        },
+        {
+          "section": "ST7_A_Dis2_左SF排出",
+          "row": 19,
+          "S": false,
+          "RS": false
+        }
+      ],
+      "contacts": [
+        {
+          "section": "RCON_IAI",
+          "row": 201
+        }
+      ]
+    },
+    "RCON1_5_Auto[3]": {
+      "writers": [
+        {
+          "section": "ST7_A_Dis2_左SF排出",
+          "row": 13,
+          "S": false,
+          "RS": false
+        }
+      ],
+      "contacts": [
+        {
+          "section": "RCON_IAI",
+          "row": 201
+        }
+      ]
+    },
+    "RCON1_5_Auto[4]": {
+      "writers": [
+        {
+          "section": "ST7_A_Dis2_左SF排出",
+          "row": 22,
+          "S": false,
+          "RS": false
+        }
+      ],
+      "contacts": [
+        {
+          "section": "RCON_IAI",
+          "row": 201
+        }
+      ]
+    }
+  },
+  "physical_transfer_rows": [
+    {
+      "row": 81,
+      "CMT": "#A(左側) RCON1_3 SF/NG2仕分け(左右)\r\n【出力値】\r\n目標位置 [mm]",
+      "rung": {
+        "CLs": [
+          {
+            "__type": "LD",
+            "Var": "P_On"
+          },
+          {
+            "__type": "F",
+            "In": [
+              {
+                "__type": "PF",
+                "Arg": "EN"
+              },
+              {
+                "__type": "PRM",
+                "Arg": "In",
+                "Ix": 1,
+                "Type": "ANY",
+                "Var": "RCON1_3_OUT_TargetPos_mm"
+              }
+            ],
+            "Ix": 3,
+            "Name": "MOVE",
+            "Out": [
+              {
+                "__type": "PF",
+                "Arg": "ENO"
+              },
+              {
+                "__type": "PRM",
+                "Arg": "Out",
+                "Ix": 2,
+                "Type": "ANY",
+                "Var": "RCON1_OUT[3].TargetPos_mm"
+              }
+            ],
+            "X": 1
+          }
+        ],
+        "CMT": "#A(左側) RCON1_3 SF/NG2仕分け(左右)\r\n【出力値】\r\n目標位置 [mm]",
+        "LRI": 4,
+        "RRI": 5,
+        "VLs": []
+      }
+    },
+    {
+      "row": 87,
+      "CMT": "原点復帰（未接続）",
+      "rung": {
+        "CLs": [
+          {
+            "__type": "LD",
+            "Var": "P_Off"
+          },
+          {
+            "__type": "LD",
+            "Ix": 1,
+            "Var": "P_Off",
+            "X": 1
+          },
+          {
+            "__type": "ST",
+            "Ix": 2,
+            "Var": "RCON1_OUT[3].Control.Home",
+            "X": 2
+          }
+        ],
+        "CMT": "原点復帰（未接続）",
+        "LRI": 3,
+        "RRI": 4,
+        "VLs": []
+      }
+    },
+    {
+      "row": 89,
+      "CMT": "異常リセット",
+      "rung": {
+        "CLs": [
+          {
+            "__type": "LD",
+            "Var": "RCON1_3_Error_Clear"
+          },
+          {
+            "__type": "ST",
+            "Ix": 1,
+            "Var": "RCON1_OUT[3].Control.Reset",
+            "X": 1
+          }
+        ],
+        "CMT": "異常リセット",
+        "LRI": 2,
+        "RRI": 3,
+        "VLs": []
+      }
+    },
+    {
+      "row": 162,
+      "CMT": "#A(左側) RCON1_5 SF/NG2排出(上下)\r\n【出力値】\r\n目標位置 [mm]（未接続）",
+      "rung": {
+        "CLs": [
+          {
+            "__type": "LD",
+            "Var": "P_Off"
+          },
+          {
+            "__type": "F",
+            "In": [
+              {
+                "__type": "PF",
+                "Arg": "EN"
+              },
+              {
+                "__type": "PRM",
+                "Arg": "In",
+                "Ix": 1,
+                "Type": "ANY",
+                "Var": "RCON1_5_OUT_TargetPos_mm"
+              }
+            ],
+            "Ix": 3,
+            "Name": "MOVE",
+            "Out": [
+              {
+                "__type": "PF",
+                "Arg": "ENO"
+              },
+              {
+                "__type": "PRM",
+                "Arg": "Out",
+                "Ix": 2,
+                "Type": "ANY",
+                "Var": "RCON1_OUT[5].TargetPos_mm"
+              }
+            ],
+            "X": 1
+          }
+        ],
+        "CMT": "#A(左側) RCON1_5 SF/NG2排出(上下)\r\n【出力値】\r\n目標位置 [mm]（未接続）",
+        "LRI": 4,
+        "RRI": 5,
+        "VLs": []
+      }
+    },
+    {
+      "row": 168,
+      "CMT": "原点復帰（未接続）",
+      "rung": {
+        "CLs": [
+          {
+            "__type": "LD",
+            "Var": "P_Off"
+          },
+          {
+            "__type": "LD",
+            "Ix": 1,
+            "Var": "P_Off",
+            "X": 1
+          },
+          {
+            "__type": "ST",
+            "Ix": 2,
+            "Var": "RCON1_OUT[5].Control.Home",
+            "X": 2
+          }
+        ],
+        "CMT": "原点復帰（未接続）",
+        "LRI": 3,
+        "RRI": 4,
+        "VLs": []
+      }
+    },
+    {
+      "row": 170,
+      "CMT": "異常リセット",
+      "rung": {
+        "CLs": [
+          {
+            "__type": "LD",
+            "Var": "RCON1_5_Error_Clear"
+          },
+          {
+            "__type": "ST",
+            "Ix": 1,
+            "Var": "RCON1_OUT[5].Control.Reset",
+            "X": 1
+          }
+        ],
+        "CMT": "異常リセット",
+        "LRI": 2,
+        "RRI": 3,
+        "VLs": []
+      }
+    }
+  ],
+  "scope": "局所の結線・通常コイル書込み順・算術・状態保持の条件モデル。10msは仮刻み。実機、全体ビルド、通信は未検証。原本は変更しない。"
+}

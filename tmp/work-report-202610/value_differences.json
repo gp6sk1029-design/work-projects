@@ -1,0 +1,110 @@
+[
+  {
+    "sheet": "年間集計",
+    "cell": "K8",
+    "before": 195,
+    "after": 196
+  },
+  {
+    "sheet": "年間集計",
+    "cell": "Q8",
+    "before": 986.5,
+    "after": 987.5
+  },
+  {
+    "sheet": "年間集計",
+    "cell": "K16",
+    "before": 1,
+    "after": 0
+  },
+  {
+    "sheet": "年間集計",
+    "cell": "Q16",
+    "before": 38,
+    "after": 37
+  },
+  {
+    "sheet": "年間集計",
+    "cell": "AC52",
+    "before": 986.5,
+    "after": 987.5
+  },
+  {
+    "sheet": "年間集計",
+    "cell": "AD52",
+    "before": 0.761482053261289,
+    "after": 0.7622539560015438
+  },
+  {
+    "sheet": "年間集計",
+    "cell": "AC60",
+    "before": 38,
+    "after": 37
+  },
+  {
+    "sheet": "年間集計",
+    "cell": "AD60",
+    "before": 0.02933230412967966,
+    "after": 0.028560401389424932
+  },
+  {
+    "sheet": "10月",
+    "cell": "T8",
+    "before": 7.5,
+    "after": 8.5
+  },
+  {
+    "sheet": "10月",
+    "cell": "AJ8",
+    "before": 0.8705357142857143,
+    "after": 0.875
+  },
+  {
+    "sheet": "10月",
+    "cell": "AK8",
+    "before": 195,
+    "after": 196
+  },
+  {
+    "sheet": "10月",
+    "cell": "T16",
+    "before": 1,
+    "after": 0
+  },
+  {
+    "sheet": "10月",
+    "cell": "AJ16",
+    "before": 0.004464285714285714,
+    "after": 0
+  },
+  {
+    "sheet": "10月",
+    "cell": "AK16",
+    "before": 1,
+    "after": 0
+  },
+  {
+    "sheet": "10月",
+    "cell": "AR52",
+    "before": 195,
+    "after": 196
+  },
+  {
+    "sheet": "10月",
+    "cell": "AS52",
+    "before": 0.8705357142857143,
+    "after": 0.875
+  },
+  {
+    "sheet": "10月",
+    "cell": "AR60",
+    "before": 1,
+    "after": 0
+  },
+  {
+    "sheet": "10月",
+    "cell": "AS60",
+    "before": 0.004464285714285714,
+    "after": 0
+  }
+]

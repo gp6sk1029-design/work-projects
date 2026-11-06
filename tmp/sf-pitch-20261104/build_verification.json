@@ -1,0 +1,88 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261104A.smc2",
+  "output": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261104B.smc2",
+  "source_sha256": "fbeab173e1469f512ed40794290747f83636ea4af8b479748213574e176efd6c",
+  "output_sha256": "af5b5bd8523b74b4019c53b9796fa059816873a678619f09c4bfcfe533a1b2dd",
+  "changed_parts": [
+    "97ac0aed-b229-441b-92ea-aa099dcb7938/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+    "97ac0aed-b229-441b-92ea-aa099dcb7938/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+    "97ac0aed-b229-441b-92ea-aa099dcb7938/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+  ],
+  "preserved_parts": 207,
+  "target_section": "ST7_A_Dis2_左SF排出",
+  "added_calculation_row": 17,
+  "old_selection_row": 17,
+  "new_selection_row": 18,
+  "retained_count_branches": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "replaced_MOVE_inputs": [
+    {
+      "Ix": 52,
+      "旧": "HMI_RCON1_5_OUT_TargetPos[2]",
+      "新": "A_SF_StackTarget_mm"
+    },
+    {
+      "Ix": 54,
+      "旧": "HMI_RCON1_5_OUT_TargetPos[3]",
+      "新": "A_SF_StackTarget_mm"
+    },
+    {
+      "Ix": 56,
+      "旧": "HMI_RCON1_5_OUT_TargetPos[4]",
+      "新": "A_SF_StackTarget_mm"
+    },
+    {
+      "Ix": 58,
+      "旧": "HMI_RCON1_5_OUT_TargetPos[5]",
+      "新": "A_SF_StackTarget_mm"
+    },
+    {
+      "Ix": 60,
+      "旧": "HMI_RCON1_5_OUT_TargetPos[6]",
+      "新": "A_SF_StackTarget_mm"
+    }
+  ],
+  "pitch_setting": {
+    "N": "HMI_A_SF_StackPitch_mm",
+    "D": "LREAL",
+    "R": "1",
+    "G": "VAR_GLOBAL",
+    "Com": "左SF積みピッチ [mm]。正=位置増、負=位置減。既定0、使用前に設定。1個目は位置設定[2]。"
+  },
+  "new_local_variables": [
+    {
+      "N": "A_SF_StackStepOffset",
+      "D": "LREAL",
+      "G": "VAR",
+      "Com": "SF積み計算用：カウント−1（1個目は0）"
+    },
+    {
+      "N": "A_SF_StackDelta_mm",
+      "D": "LREAL",
+      "G": "VAR",
+      "Com": "SF積み計算用：符号付きピッチ×段数 [mm]"
+    },
+    {
+      "N": "A_SF_StackTarget_mm",
+      "D": "LREAL",
+      "G": "VAR",
+      "Com": "SF積み計算位置：設定[2]＋ピッチ×(カウント−1) [mm]"
+    }
+  ],
+  "new_external_reference": {
+    "N": "HMI_A_SF_StackPitch_mm",
+    "D": "LREAL",
+    "G": "VAR_EXTERNAL",
+    "Com": "左SF積みピッチ [mm]。正=位置増、負=位置減。既定0、使用前に設定。1個目は位置設定[2]。"
+  },
+  "formula": "HMI_RCON1_5_OUT_TargetPos[2] + HMI_A_SF_StackPitch_mm * (A_SF_CT - 1)",
+  "NG_positions_7_8": "保持",
+  "counter_increment_reset": "保持",
+  "native_Sysmac_build": "未実施",
+  "seconds": 0.625
+}

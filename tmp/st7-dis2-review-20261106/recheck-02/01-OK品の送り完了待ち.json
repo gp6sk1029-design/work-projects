@@ -1,0 +1,598 @@
+{
+  "width": 1740,
+  "height": 1050,
+  "elements": [
+    {
+      "type": "text",
+      "x": 60,
+      "y": 28,
+      "text": "① OK品：送り行が完了してから、左右軸を動かす",
+      "size": 34,
+      "color": "ink",
+      "width": 1580
+    },
+    {
+      "type": "text",
+      "x": 60,
+      "y": 90,
+      "text": "J版・ST7_A_Dis2／16行｜RCON1_3：A側SF/NG2左右軸｜青：変更する接点",
+      "size": 24,
+      "color": "ink",
+      "width": 1580
+    },
+    {
+      "type": "text",
+      "x": 80,
+      "y": 150,
+      "text": "現状：M21は送りの開始工程。到達を待たず、横移動要求が出る。",
+      "size": 26,
+      "color": "ink",
+      "width": 1580
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          60,
+          178
+        ],
+        [
+          60,
+          412
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1680,
+          178
+        ],
+        [
+          1680,
+          412
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          60,
+          270
+        ],
+        [
+          100,
+          270
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 100,
+      "y": 270,
+      "width": 160,
+      "label": "M17",
+      "nc": false,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          260,
+          270
+        ],
+        [
+          380,
+          270
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 380,
+      "y": 270,
+      "width": 220,
+      "label": "M21",
+      "nc": false,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          600,
+          270
+        ],
+        [
+          690,
+          270
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 690,
+      "y": 270,
+      "width": 160,
+      "label": "M18：OK",
+      "nc": false,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          850,
+          270
+        ],
+        [
+          970,
+          270
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          60,
+          378
+        ],
+        [
+          100,
+          378
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 100,
+      "y": 378,
+      "width": 160,
+      "label": "M22",
+      "nc": false,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          260,
+          378
+        ],
+        [
+          970,
+          378
+        ],
+        [
+          970,
+          270
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          970,
+          270
+        ],
+        [
+          1000,
+          270
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 1000,
+      "y": 270,
+      "width": 180,
+      "label": "Retry[12]",
+      "nc": true,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1180,
+          270
+        ],
+        [
+          1230,
+          270
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 1230,
+      "y": 270,
+      "width": 160,
+      "label": "M23",
+      "nc": true,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1390,
+          270
+        ],
+        [
+          1510,
+          270
+        ]
+      ]
+    },
+    {
+      "type": "coil",
+      "x": 1510,
+      "y": 270,
+      "width": 130,
+      "label": "M22",
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1640,
+          270
+        ],
+        [
+          1680,
+          270
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1460,
+          270
+        ],
+        [
+          1460,
+          378
+        ],
+        [
+          1510,
+          378
+        ]
+      ]
+    },
+    {
+      "type": "coil",
+      "x": 1510,
+      "y": 378,
+      "width": 130,
+      "label": "Auto[2]",
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1640,
+          378
+        ],
+        [
+          1680,
+          378
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "x": 80,
+      "y": 470,
+      "text": "対策案：M21の接点1個を「送り行Done」へ戻す。15行のOK限定は維持。",
+      "size": 26,
+      "color": "change",
+      "width": 1580
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          60,
+          508
+        ],
+        [
+          60,
+          742
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1680,
+          508
+        ],
+        [
+          1680,
+          742
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          60,
+          600
+        ],
+        [
+          100,
+          600
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 100,
+      "y": 600,
+      "width": 160,
+      "label": "M17",
+      "nc": false,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          260,
+          600
+        ],
+        [
+          380,
+          600
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 380,
+      "y": 600,
+      "width": 220,
+      "label": "送り行Done",
+      "nc": false,
+      "color": "change"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          600,
+          600
+        ],
+        [
+          690,
+          600
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 690,
+      "y": 600,
+      "width": 160,
+      "label": "M18：OK",
+      "nc": false,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          850,
+          600
+        ],
+        [
+          970,
+          600
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          60,
+          708
+        ],
+        [
+          100,
+          708
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 100,
+      "y": 708,
+      "width": 160,
+      "label": "M22",
+      "nc": false,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          260,
+          708
+        ],
+        [
+          970,
+          708
+        ],
+        [
+          970,
+          600
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          970,
+          600
+        ],
+        [
+          1000,
+          600
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 1000,
+      "y": 600,
+      "width": 180,
+      "label": "Retry[12]",
+      "nc": true,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1180,
+          600
+        ],
+        [
+          1230,
+          600
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 1230,
+      "y": 600,
+      "width": 160,
+      "label": "M23",
+      "nc": true,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1390,
+          600
+        ],
+        [
+          1510,
+          600
+        ]
+      ]
+    },
+    {
+      "type": "coil",
+      "x": 1510,
+      "y": 600,
+      "width": 130,
+      "label": "M22",
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1640,
+          600
+        ],
+        [
+          1680,
+          600
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1460,
+          600
+        ],
+        [
+          1460,
+          708
+        ],
+        [
+          1510,
+          708
+        ]
+      ]
+    },
+    {
+      "type": "coil",
+      "x": 1510,
+      "y": 708,
+      "width": 130,
+      "label": "Auto[2]",
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1640,
+          708
+        ],
+        [
+          1680,
+          708
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "x": 80,
+      "y": 810,
+      "text": "M17＝仕分け判定中／M18＝OK選択／M21＝送り行開始／M22＝左右移動中",
+      "size": 24,
+      "color": "ink",
+      "width": 1580
+    },
+    {
+      "type": "text",
+      "x": 80,
+      "y": 862,
+      "text": "送り行Done＝Out_CYw_Ejc_Hldr_Feed_A_F_Done／Auto[2]＝RCON1_3_Auto[2]",
+      "size": 24,
+      "color": "ink",
+      "width": 1580
+    },
+    {
+      "type": "text",
+      "x": 80,
+      "y": 914,
+      "text": "M表記＝ST7_A_Dis2_M。NGのM19/M20枝は省略：送り行を使わず、完了待ちも追加しない。",
+      "size": 24,
+      "color": "ink",
+      "width": 1580
+    },
+    {
+      "type": "text",
+      "x": 80,
+      "y": 994,
+      "text": "提案・未反映｜局所6条件で確認。旧Done対策・通信・実機検証は別。",
+      "size": 22,
+      "color": "ink",
+      "width": 1580
+    }
+  ]
+}

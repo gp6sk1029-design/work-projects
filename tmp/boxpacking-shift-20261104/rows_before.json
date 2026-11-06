@@ -1,0 +1,2219 @@
+[
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "Auto_Com_Start"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "BoxPacking_M[1]",
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Not": true,
+        "Var": "BoxPacking_M[2]",
+        "X": 1
+      },
+      {
+        "__type": "ST",
+        "Ix": 3,
+        "Var": "BoxPacking_M[1]",
+        "X": 2
+      }
+    ],
+    "LRI": 4,
+    "RRI": 5,
+    "VLs": [
+      {
+        "Ix": 6,
+        "X": 1
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[1]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Not": true,
+        "Var": "TimerQ_In_SenCY_Empty_Container_CY_H",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "BoxPacking_M[2]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Not": true,
+        "Var": "",
+        "X": 2
+      },
+      {
+        "__type": "ST",
+        "Ix": 5,
+        "Var": "BoxPacking_M[2]",
+        "X": 3
+      },
+      {
+        "__type": "LD",
+        "Ix": 4,
+        "Var": "TimerQ_In_Sen_Container_Arrival",
+        "X": 3,
+        "Y": 1
+      },
+      {
+        "__type": "F",
+        "In": [
+          {
+            "__type": "PF",
+            "Arg": "EN"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In1",
+            "Ix": 9,
+            "Type": "ANY_ELEMENTARY, ENUM",
+            "Var": "RCON2_5_ActualPos_mm"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In2",
+            "Ix": 10,
+            "Type": "ANY_ELEMENTARY, ENUM",
+            "Var": "HMI_RCON2_5_OUT_TargetPos[1]"
+          }
+        ],
+        "Ix": 15,
+        "Name": "=",
+        "Out": [
+          {
+            "__type": "PF",
+            "Arg": ""
+          }
+        ],
+        "X": 4,
+        "Y": 1,
+        "PL": true
+      },
+      {
+        "__type": "ST",
+        "Ix": 6,
+        "Var": "BoxPacking_M[3]",
+        "X": 5,
+        "Y": 1
+      },
+      {
+        "__type": "F",
+        "In": [
+          {
+            "__type": "PF",
+            "Arg": "EN"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In1",
+            "Ix": 11,
+            "Type": "ANY_ELEMENTARY, ENUM",
+            "Var": "RCON2_5_ActualPos_mm"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In2",
+            "Ix": 12,
+            "Type": "ANY_ELEMENTARY, ENUM",
+            "Var": "HMI_RCON2_5_OUT_TargetPos[2]"
+          }
+        ],
+        "Ix": 16,
+        "Name": "=",
+        "Out": [
+          {
+            "__type": "PF",
+            "Arg": ""
+          }
+        ],
+        "X": 3,
+        "Y": 2,
+        "PL": true
+      },
+      {
+        "__type": "ST",
+        "Ix": 7,
+        "Var": "BoxPacking_M[4]",
+        "X": 4,
+        "Y": 2
+      },
+      {
+        "__type": "F",
+        "In": [
+          {
+            "__type": "PF",
+            "Arg": "EN"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In1",
+            "Ix": 13,
+            "Type": "ANY_ELEMENTARY, ENUM",
+            "Var": "RCON2_5_ActualPos_mm"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In2",
+            "Ix": 14,
+            "Type": "ANY_ELEMENTARY, ENUM",
+            "Var": "HMI_RCON2_5_OUT_TargetPos[3]"
+          }
+        ],
+        "Ix": 17,
+        "Name": "=",
+        "Out": [
+          {
+            "__type": "PF",
+            "Arg": ""
+          }
+        ],
+        "X": 3,
+        "Y": 3,
+        "PL": true
+      },
+      {
+        "__type": "ST",
+        "Ix": 8,
+        "Var": "BoxPacking_M[5]",
+        "X": 4,
+        "Y": 3
+      },
+      {
+        "__type": "HL",
+        "X": 4
+      },
+      {
+        "__type": "HL",
+        "X": 5
+      },
+      {
+        "__type": "HL",
+        "X": 5,
+        "Y": 2
+      },
+      {
+        "__type": "HL",
+        "X": 5,
+        "Y": 3
+      }
+    ],
+    "CMT": "#自動運転 初回動作\r\n\r\nコンテナ状態 判定\r\n①コンテナ設置可能\r\n②コンテナ設置\r\n③コンテナ排出",
+    "LRI": 18,
+    "RRI": 19,
+    "VLs": [
+      {
+        "Ix": 20,
+        "X": 2
+      },
+      {
+        "Ix": 21,
+        "X": 3
+      },
+      {
+        "Ix": 21,
+        "X": 3,
+        "Y": 1
+      },
+      {
+        "Ix": 21,
+        "X": 3,
+        "Y": 2
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[2]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "BoxPacking_M[3]",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Var": "BoxPacking_M[6]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Not": true,
+        "Var": "",
+        "X": 2
+      },
+      {
+        "__type": "ST",
+        "Ix": 4,
+        "Var": "BoxPacking_M[6]",
+        "X": 3
+      },
+      {
+        "__type": "ST",
+        "Ix": 5,
+        "Var": "Out_CYw_Ejc_Cont_H_Auto[1]",
+        "X": 3,
+        "Y": 1
+      }
+    ],
+    "CMT": "①コンテナ設置可能\r\n【Y1204】コンテナ排出 戻",
+    "LRI": 6,
+    "RRI": 7,
+    "VLs": [
+      {
+        "Ix": 8,
+        "X": 2
+      },
+      {
+        "Ix": 9,
+        "X": 3
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[2]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "Out_CYw_Ejc_Cont_H_Done",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Var": "BoxPacking_M[7]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Not": true,
+        "Var": "",
+        "X": 2
+      },
+      {
+        "__type": "F",
+        "In": [
+          {
+            "__type": "PF",
+            "Arg": "EN"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In",
+            "Ix": 6,
+            "Type": "ANY",
+            "Var": "HMI_RCON2_5_OUT_TargetPos[2]"
+          }
+        ],
+        "Ix": 8,
+        "Name": "MOVE",
+        "Out": [
+          {
+            "__type": "PF",
+            "Arg": "ENO"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "Out",
+            "Ix": 7,
+            "Type": "ANY",
+            "Var": "RCON2_5_OUT_TargetPos_mm"
+          }
+        ],
+        "X": 3
+      },
+      {
+        "__type": "ST",
+        "Ix": 4,
+        "Var": "BoxPacking_M[7]",
+        "X": 4
+      },
+      {
+        "__type": "ST",
+        "Ix": 5,
+        "Var": "RCON2_5_Auto[1]",
+        "X": 4,
+        "Y": 1
+      }
+    ],
+    "CMT": "RCON2_5\r\nコンテナ設置 Pos移動",
+    "LRI": 9,
+    "RRI": 10,
+    "VLs": [
+      {
+        "Ix": 11,
+        "X": 2
+      },
+      {
+        "Ix": 12,
+        "X": 4
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[7]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "RCON2_5_MoveDone",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Var": "BoxPacking_M[8]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Not": true,
+        "Var": "",
+        "X": 2
+      },
+      {
+        "__type": "ST",
+        "Ix": 6,
+        "Var": "BoxPacking_M[8]",
+        "X": 3
+      },
+      {
+        "__type": "LD",
+        "Ix": 4,
+        "Var": "TimerQ_In_Sen_Tray_Direction_Check",
+        "X": 3,
+        "Y": 1
+      },
+      {
+        "__type": "ST",
+        "Ix": 8,
+        "Var": "BoxPacking_M[9]",
+        "X": 4,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 5,
+        "Not": true,
+        "Var": "TimerQ_In_Sen_Tray_Direction_Check",
+        "X": 3,
+        "Y": 2
+      },
+      {
+        "__type": "FB",
+        "In": [
+          {
+            "__type": "PF",
+            "Arg": "In"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "PT",
+            "Ix": 9,
+            "Type": "TIME",
+            "Var": "T#10s"
+          }
+        ],
+        "Ix": 11,
+        "Name": "TON",
+        "Out": [
+          {
+            "__type": "PF",
+            "Arg": "Q"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "ET",
+            "Ix": 10,
+            "Type": "TIME",
+            "Var": ""
+          }
+        ],
+        "X": 4,
+        "Y": 2,
+        "Var": "BoxPacking_TON[1]"
+      },
+      {
+        "__type": "ST",
+        "Ix": 7,
+        "Var": "BoxPacking_Error",
+        "X": 5,
+        "Y": 2
+      },
+      {
+        "__type": "HL",
+        "X": 4
+      },
+      {
+        "__type": "HL",
+        "X": 5
+      },
+      {
+        "__type": "HL",
+        "X": 5,
+        "Y": 1
+      }
+    ],
+    "CMT": "コンテナトレイ方向 判定\r\n①方向OK \r\n②方向NG ",
+    "LRI": 12,
+    "RRI": 13,
+    "VLs": [
+      {
+        "Ix": 14,
+        "X": 2
+      },
+      {
+        "Ix": 15,
+        "X": 3
+      },
+      {
+        "Ix": 15,
+        "X": 3,
+        "Y": 1
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[8]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "BoxPacking_Error",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Var": "BoxPacking_M[10]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Not": true,
+        "Var": "",
+        "X": 2
+      },
+      {
+        "__type": "F",
+        "In": [
+          {
+            "__type": "PF",
+            "Arg": "EN"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In",
+            "Ix": 6,
+            "Type": "ANY",
+            "Var": "HMI_RCON2_5_OUT_TargetPos[3]"
+          }
+        ],
+        "Ix": 8,
+        "Name": "MOVE",
+        "Out": [
+          {
+            "__type": "PF",
+            "Arg": "ENO"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "Out",
+            "Ix": 7,
+            "Type": "ANY",
+            "Var": "RCON2_5_OUT_TargetPos_mm"
+          }
+        ],
+        "X": 3
+      },
+      {
+        "__type": "ST",
+        "Ix": 4,
+        "Var": "BoxPacking_M[10]",
+        "X": 4
+      },
+      {
+        "__type": "ST",
+        "Ix": 5,
+        "Var": "RCON2_5_Auto[1]",
+        "X": 4,
+        "Y": 1
+      }
+    ],
+    "CMT": "RCON2_5\r\nコンテナ排出 Pos移動",
+    "LRI": 9,
+    "RRI": 10,
+    "VLs": [
+      {
+        "Ix": 11,
+        "X": 2
+      },
+      {
+        "Ix": 12,
+        "X": 4
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[10]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "RCON2_5_MoveDone",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Var": "BoxPacking_M[11]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Not": true,
+        "Var": "",
+        "X": 2
+      },
+      {
+        "__type": "ST",
+        "Ix": 4,
+        "Var": "BoxPacking_M[11]",
+        "X": 3
+      },
+      {
+        "__type": "ST",
+        "Ix": 5,
+        "Var": "Out_CYw_Ejc_Cont_F_Auto[1]",
+        "X": 3,
+        "Y": 1
+      }
+    ],
+    "CMT": "【Y1205】コンテナ排出 行",
+    "LRI": 6,
+    "RRI": 7,
+    "VLs": [
+      {
+        "Ix": 8,
+        "X": 2
+      },
+      {
+        "Ix": 9,
+        "X": 3
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[11]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "Out_CYw_Ejc_Cont_F_Done",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Var": "TimerQ_In_Sen_Container_Pass",
+        "X": 2
+      },
+      {
+        "__type": "LD",
+        "Ix": 4,
+        "Var": "BoxPacking_M[12]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 2,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Not": true,
+        "Var": "",
+        "X": 3
+      },
+      {
+        "__type": "ST",
+        "Ix": 5,
+        "Var": "BoxPacking_M[12]",
+        "X": 4
+      }
+    ],
+    "CMT": "自動運転 初回動作コンテナ排出完了",
+    "LRI": 6,
+    "RRI": 7,
+    "VLs": [
+      {
+        "Ix": 8,
+        "X": 3
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[12]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Not": true,
+        "Var": "TimerQ_In_SenCY_Empty_Container_CY_H",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "BoxPacking_M[13]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Not": true,
+        "Var": "",
+        "X": 2
+      },
+      {
+        "__type": "ST",
+        "Ix": 5,
+        "Var": "BoxPacking_M[13]",
+        "X": 3
+      },
+      {
+        "__type": "LD",
+        "Ix": 4,
+        "Var": "TimerQ_In_Sen_Container_Arrival",
+        "X": 3,
+        "Y": 1
+      },
+      {
+        "__type": "F",
+        "In": [
+          {
+            "__type": "PF",
+            "Arg": "EN"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In1",
+            "Ix": 7,
+            "Type": "ANY_ELEMENTARY, ENUM",
+            "Var": "RCON2_5_ActualPos_mm"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In2",
+            "Ix": 8,
+            "Type": "ANY_ELEMENTARY, ENUM",
+            "Var": "HMI_RCON2_5_OUT_TargetPos[1]"
+          }
+        ],
+        "Ix": 9,
+        "Name": "=",
+        "Out": [
+          {
+            "__type": "PF",
+            "Arg": ""
+          }
+        ],
+        "X": 4,
+        "Y": 1,
+        "PL": true
+      },
+      {
+        "__type": "ST",
+        "Ix": 6,
+        "Var": "Out_CYw_Ejc_Cont_H_Auto[2]",
+        "X": 5,
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 4
+      },
+      {
+        "__type": "HL",
+        "X": 5
+      }
+    ],
+    "CMT": "#箱詰め 連続動作\r\n\r\nコンテナ設置開始\r\n【Y1204】コンテナ排出 戻",
+    "LRI": 10,
+    "RRI": 11,
+    "VLs": [
+      {
+        "Ix": 12,
+        "X": 2
+      },
+      {
+        "Ix": 13,
+        "X": 3
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[13]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "Out_CYw_Ejc_Cont_H_Done",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Var": "BoxPacking_M[14]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Not": true,
+        "Var": "",
+        "X": 2
+      },
+      {
+        "__type": "ST",
+        "Ix": 4,
+        "Var": "BoxPacking_M[14]",
+        "X": 3
+      },
+      {
+        "__type": "ST",
+        "Ix": 5,
+        "Var": "Out_CYw_Box_Chuck_H_Auto[1]",
+        "X": 3,
+        "Y": 1
+      }
+    ],
+    "CMT": "【Y1206】箱入れチャック 戻 ",
+    "LRI": 6,
+    "RRI": 7,
+    "VLs": [
+      {
+        "Ix": 8,
+        "X": 3
+      },
+      {
+        "Ix": 9,
+        "X": 2
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[13]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "Out_CYw_Box_Chuck_H_Done",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Var": "BoxPacking_M[14]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Not": true,
+        "Var": "",
+        "X": 2
+      },
+      {
+        "__type": "F",
+        "In": [
+          {
+            "__type": "PF",
+            "Arg": "EN"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In",
+            "Ix": 6,
+            "Type": "ANY",
+            "Var": "HMI_RCON2_5_OUT_TargetPos[2]"
+          }
+        ],
+        "Ix": 8,
+        "Name": "MOVE",
+        "Out": [
+          {
+            "__type": "PF",
+            "Arg": "ENO"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "Out",
+            "Ix": 7,
+            "Type": "ANY",
+            "Var": "RCON2_5_OUT_TargetPos_mm"
+          }
+        ],
+        "X": 3
+      },
+      {
+        "__type": "ST",
+        "Ix": 4,
+        "Var": "BoxPacking_M[14]",
+        "X": 4
+      },
+      {
+        "__type": "ST",
+        "Ix": 5,
+        "Var": "RCON2_5_Auto[2]",
+        "X": 4,
+        "Y": 1
+      }
+    ],
+    "CMT": "RCON2_5\r\nコンテナ設置 Pos移動",
+    "LRI": 9,
+    "RRI": 10,
+    "VLs": [
+      {
+        "Ix": 11,
+        "X": 2
+      },
+      {
+        "Ix": 12,
+        "X": 4
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[14]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "RCON2_5_MoveDone",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Var": "BoxPacking_M[15]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Not": true,
+        "Var": "",
+        "X": 2
+      },
+      {
+        "__type": "ST",
+        "Ix": 4,
+        "Var": "BoxPacking_M[15]",
+        "X": 3
+      }
+    ],
+    "CMT": "コンテナ設置完了",
+    "LRI": 5,
+    "RRI": 6,
+    "VLs": [
+      {
+        "Ix": 7,
+        "X": 2
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[15]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Var": "BoxPacking_M[9]",
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "BoxPacking_M[16]",
+        "Y": 2
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Not": true,
+        "Var": "",
+        "X": 1
+      },
+      {
+        "__type": "ST",
+        "Ix": 9,
+        "Var": "BoxPacking_M[16]",
+        "X": 2
+      },
+      {
+        "__type": "LD",
+        "Ix": 4,
+        "Var": "ST7_A_SF_Wait_Pickup",
+        "X": 2,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 8,
+        "Not": true,
+        "Var": "BoxPacking_B_Busy",
+        "X": 3,
+        "Y": 1
+      },
+      {
+        "__type": "ST",
+        "Ix": 10,
+        "Var": "BoxPacking_M[17]",
+        "X": 4,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 6,
+        "Not": true,
+        "Var": "ST7_A_SF_Wait_Pickup",
+        "X": 2,
+        "Y": 2
+      },
+      {
+        "__type": "LD",
+        "Ix": 5,
+        "Var": "ST7_B_SF_Wait_Pickup",
+        "X": 3,
+        "Y": 2
+      },
+      {
+        "__type": "LD",
+        "Ix": 7,
+        "Not": true,
+        "Var": "BoxPacking_A_Busy",
+        "X": 4,
+        "Y": 2
+      },
+      {
+        "__type": "ST",
+        "Ix": 11,
+        "Var": "BoxPacking_M[18]",
+        "X": 5,
+        "Y": 2
+      },
+      {
+        "__type": "HL",
+        "X": 3
+      },
+      {
+        "__type": "HL",
+        "X": 4
+      },
+      {
+        "__type": "HL",
+        "X": 5
+      },
+      {
+        "__type": "HL",
+        "X": 5,
+        "Y": 1
+      }
+    ],
+    "CMT": "ストックフォルダ 取出し順 判定",
+    "LRI": 12,
+    "RRI": 13,
+    "VLs": [
+      {
+        "Ix": 14,
+        "X": 1
+      },
+      {
+        "Ix": 14,
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "Ix": 15,
+        "X": 2
+      },
+      {
+        "Ix": 15,
+        "X": 2,
+        "Y": 1
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[16]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "BoxPacking_M[17]",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Var": "BoxPacking_A_Busy",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "ST",
+        "Ix": 3,
+        "Var": "BoxPacking_A_Busy",
+        "X": 2
+      }
+    ],
+    "LRI": 4,
+    "RRI": 5,
+    "VLs": [
+      {
+        "Ix": 6,
+        "X": 2
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[16]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "BoxPacking_M[18]",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Var": "BoxPacking_B_Busy",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "ST",
+        "Ix": 3,
+        "Var": "BoxPacking_B_Busy",
+        "X": 2
+      }
+    ],
+    "LRI": 4,
+    "RRI": 5,
+    "VLs": [
+      {
+        "Ix": 6,
+        "X": 2
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Var": "BoxPacking_M[17]"
+      },
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[19]",
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Not": true,
+        "Var": "",
+        "X": 1
+      },
+      {
+        "__type": "F",
+        "In": [
+          {
+            "__type": "PF",
+            "Arg": "EN"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In",
+            "Ix": 5,
+            "Type": "ANY",
+            "Var": "HMI_RCON2_4_OUT_TargetPos[1]"
+          }
+        ],
+        "Ix": 7,
+        "Name": "MOVE",
+        "Out": [
+          {
+            "__type": "PF",
+            "Arg": "ENO"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "Out",
+            "Ix": 6,
+            "Type": "ANY",
+            "Var": "RCON2_4_OUT_TargetPos_mm"
+          }
+        ],
+        "X": 2
+      },
+      {
+        "__type": "ST",
+        "Ix": 3,
+        "Var": "BoxPacking_M[19]",
+        "X": 3
+      },
+      {
+        "__type": "ST",
+        "Ix": 4,
+        "Var": "RCON2_4_Auto[1]",
+        "X": 3,
+        "Y": 1
+      }
+    ],
+    "CMT": "ストックフォルダ 取出し開始\r\nRCON2_4：箱詰めZ\r\nセイフティ 上昇 Pos移動",
+    "LRI": 8,
+    "RRI": 9,
+    "VLs": [
+      {
+        "Ix": 10,
+        "X": 1
+      },
+      {
+        "Ix": 11,
+        "X": 3
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[19]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "RCON2_4_MoveDone",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 4,
+        "Var": "BoxPacking_A_Busy",
+        "X": 2
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Var": "BoxPacking_M[20]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 2,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Not": true,
+        "Var": "",
+        "X": 3
+      },
+      {
+        "__type": "F",
+        "In": [
+          {
+            "__type": "PF",
+            "Arg": "EN"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In",
+            "Ix": 8,
+            "Type": "ANY",
+            "Var": "HMI_RCON2_2_OUT_TargetPos[1]"
+          }
+        ],
+        "Ix": 12,
+        "Name": "MOVE",
+        "Out": [
+          {
+            "__type": "PF",
+            "Arg": "ENO"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "Out",
+            "Ix": 9,
+            "Type": "ANY",
+            "Var": "RCON2_2_OUT_TargetPos_mm"
+          }
+        ],
+        "X": 4
+      },
+      {
+        "__type": "F",
+        "In": [
+          {
+            "__type": "PF",
+            "Arg": "EN"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In",
+            "Ix": 10,
+            "Type": "ANY",
+            "Var": "HMI_RCON2_3_OUT_TargetPos[1]"
+          }
+        ],
+        "Ix": 13,
+        "Name": "MOVE",
+        "Out": [
+          {
+            "__type": "PF",
+            "Arg": "ENO"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "Out",
+            "Ix": 11,
+            "Type": "ANY",
+            "Var": "RCON2_3_OUT_TargetPos_mm"
+          }
+        ],
+        "X": 4,
+        "Y": 1
+      },
+      {
+        "__type": "ST",
+        "Ix": 5,
+        "Var": "BoxPacking_M[20]",
+        "X": 5
+      },
+      {
+        "__type": "ST",
+        "Ix": 6,
+        "Var": "RCON2_2_Auto[1]",
+        "X": 5,
+        "Y": 1
+      },
+      {
+        "__type": "ST",
+        "Ix": 7,
+        "Var": "RCON2_3_Auto[1]",
+        "X": 5,
+        "Y": 2
+      }
+    ],
+    "CMT": "A(左側) ストックフォルダ\r\n\r\nRCON2_2：箱詰めX\r\nRCON2_3：箱詰めY\r\nA(左側)フォルダストック 取出し Pos移動",
+    "LRI": 14,
+    "RRI": 15,
+    "VLs": [
+      {
+        "Ix": 16,
+        "X": 3
+      },
+      {
+        "Ix": 17,
+        "X": 4
+      },
+      {
+        "Ix": 18,
+        "X": 5
+      },
+      {
+        "Ix": 18,
+        "X": 5,
+        "Y": 1
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[20]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "RCON2_2_MoveDone",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Var": "BoxPacking_M[21]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Not": true,
+        "Var": "",
+        "X": 2
+      },
+      {
+        "__type": "ST",
+        "Ix": 4,
+        "Var": "BoxPacking_M[21]",
+        "X": 3
+      }
+    ],
+    "LRI": 5,
+    "RRI": 6,
+    "VLs": [
+      {
+        "Ix": 7,
+        "X": 2
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[20]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "RCON2_3_MoveDone",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Var": "BoxPacking_M[22]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Not": true,
+        "Var": "",
+        "X": 2
+      },
+      {
+        "__type": "ST",
+        "Ix": 4,
+        "Var": "BoxPacking_M[22]",
+        "X": 3
+      }
+    ],
+    "LRI": 5,
+    "RRI": 6,
+    "VLs": [
+      {
+        "Ix": 7,
+        "X": 2
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Ix": 4,
+        "Var": "BoxPacking_M[20]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "BoxPacking_M[21]",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[22]",
+        "X": 2
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Var": "BoxPacking_M[23]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 2,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Not": true,
+        "Var": "",
+        "X": 3
+      },
+      {
+        "__type": "ST",
+        "Ix": 5,
+        "Var": "BoxPacking_M[23]",
+        "X": 4
+      }
+    ],
+    "LRI": 6,
+    "RRI": 7,
+    "VLs": [
+      {
+        "Ix": 8,
+        "X": 3
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[19]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "RCON2_4_MoveDone",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 4,
+        "Var": "BoxPacking_B_Busy",
+        "X": 2
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Var": "BoxPacking_M[20]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 2,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Not": true,
+        "Var": "",
+        "X": 3
+      },
+      {
+        "__type": "F",
+        "In": [
+          {
+            "__type": "PF",
+            "Arg": "EN"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In",
+            "Ix": 8,
+            "Type": "ANY",
+            "Var": "HMI_RCON2_2_OUT_TargetPos[2]"
+          }
+        ],
+        "Ix": 12,
+        "Name": "MOVE",
+        "Out": [
+          {
+            "__type": "PF",
+            "Arg": "ENO"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "Out",
+            "Ix": 9,
+            "Type": "ANY",
+            "Var": "RCON2_2_OUT_TargetPos_mm"
+          }
+        ],
+        "X": 4
+      },
+      {
+        "__type": "F",
+        "In": [
+          {
+            "__type": "PF",
+            "Arg": "EN"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In",
+            "Ix": 10,
+            "Type": "ANY",
+            "Var": "HMI_RCON2_3_OUT_TargetPos[2]"
+          }
+        ],
+        "Ix": 13,
+        "Name": "MOVE",
+        "Out": [
+          {
+            "__type": "PF",
+            "Arg": "ENO"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "Out",
+            "Ix": 11,
+            "Type": "ANY",
+            "Var": "RCON2_3_OUT_TargetPos_mm"
+          }
+        ],
+        "X": 4,
+        "Y": 1
+      },
+      {
+        "__type": "ST",
+        "Ix": 5,
+        "Var": "BoxPacking_M[24]",
+        "X": 5
+      },
+      {
+        "__type": "ST",
+        "Ix": 6,
+        "Var": "RCON2_2_Auto[2]",
+        "X": 5,
+        "Y": 1
+      },
+      {
+        "__type": "ST",
+        "Ix": 7,
+        "Var": "RCON2_3_Auto[2]",
+        "X": 5,
+        "Y": 2
+      }
+    ],
+    "CMT": "B(右側) ストックフォルダ\r\n\r\nRCON2_2：箱詰めX\r\nRCON2_3：箱詰めY\r\nA(左側)フォルダストック 取出し Pos移動",
+    "LRI": 14,
+    "RRI": 15,
+    "VLs": [
+      {
+        "Ix": 16,
+        "X": 3
+      },
+      {
+        "Ix": 17,
+        "X": 4
+      },
+      {
+        "Ix": 18,
+        "X": 5
+      },
+      {
+        "Ix": 18,
+        "X": 5,
+        "Y": 1
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[20]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "RCON2_2_MoveDone",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Var": "BoxPacking_M[25]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Not": true,
+        "Var": "",
+        "X": 2
+      },
+      {
+        "__type": "ST",
+        "Ix": 4,
+        "Var": "BoxPacking_M[25]",
+        "X": 3
+      }
+    ],
+    "LRI": 5,
+    "RRI": 6,
+    "VLs": [
+      {
+        "Ix": 7,
+        "X": 2
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[20]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "RCON2_3_MoveDone",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Var": "BoxPacking_M[26]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Not": true,
+        "Var": "",
+        "X": 2
+      },
+      {
+        "__type": "ST",
+        "Ix": 4,
+        "Var": "BoxPacking_M[26]",
+        "X": 3
+      }
+    ],
+    "LRI": 5,
+    "RRI": 6,
+    "VLs": [
+      {
+        "Ix": 7,
+        "X": 2
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Ix": 4,
+        "Var": "BoxPacking_M[20]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "BoxPacking_M[21]",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[22]",
+        "X": 2
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Var": "BoxPacking_M[27]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 2,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Not": true,
+        "Var": "",
+        "X": 3
+      },
+      {
+        "__type": "ST",
+        "Ix": 5,
+        "Var": "BoxPacking_M[27]",
+        "X": 4
+      }
+    ],
+    "LRI": 6,
+    "RRI": 7,
+    "VLs": [
+      {
+        "Ix": 8,
+        "X": 3
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "BoxPacking_M[23]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Var": "BoxPacking_M[27]",
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[28]",
+        "Y": 2
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Not": true,
+        "Var": "",
+        "X": 1
+      },
+      {
+        "__type": "F",
+        "In": [
+          {
+            "__type": "PF",
+            "Arg": "EN"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In",
+            "Ix": 6,
+            "Type": "ANY",
+            "Var": "HMI_RCON2_4_OUT_TargetPos[2]"
+          }
+        ],
+        "Ix": 8,
+        "Name": "MOVE",
+        "Out": [
+          {
+            "__type": "PF",
+            "Arg": "ENO"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "Out",
+            "Ix": 7,
+            "Type": "ANY",
+            "Var": "RCON2_4_OUT_TargetPos_mm"
+          }
+        ],
+        "X": 2
+      },
+      {
+        "__type": "ST",
+        "Ix": 4,
+        "Var": "BoxPacking_M[28]",
+        "X": 3
+      },
+      {
+        "__type": "ST",
+        "Ix": 5,
+        "Var": "RCON2_4_Auto[2]",
+        "X": 3,
+        "Y": 1
+      }
+    ],
+    "CMT": "ストックフォルダ 取出し開始\r\nRCON2_4：箱詰めZ\r\nフォルダストック 取出し降下Pos",
+    "LRI": 9,
+    "RRI": 10,
+    "VLs": [
+      {
+        "Ix": 11,
+        "X": 1
+      },
+      {
+        "Ix": 11,
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "Ix": 12,
+        "X": 3
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[28]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "RCON2_4_MoveDone",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Var": "BoxPacking_M[29]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Not": true,
+        "Var": "",
+        "X": 2
+      },
+      {
+        "__type": "ST",
+        "Ix": 4,
+        "Var": "BoxPacking_M[29]",
+        "X": 3
+      },
+      {
+        "__type": "ST",
+        "Ix": 5,
+        "Var": "Out_CYw_Box_Chuck_F_Auto[1]",
+        "X": 3,
+        "Y": 1
+      }
+    ],
+    "LRI": 6,
+    "RRI": 7,
+    "VLs": [
+      {
+        "Ix": 8,
+        "X": 2
+      },
+      {
+        "Ix": 9,
+        "X": 3
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[29]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "Out_CYw_Box_Chuck_F_Done",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Var": "BoxPacking_M[30]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Not": true,
+        "Var": "",
+        "X": 2
+      },
+      {
+        "__type": "F",
+        "In": [
+          {
+            "__type": "PF",
+            "Arg": "EN"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In",
+            "Ix": 5,
+            "Type": "ANY",
+            "Var": "HMI_RCON2_4_OUT_TargetPos[1]"
+          }
+        ],
+        "Ix": 7,
+        "Name": "MOVE",
+        "Out": [
+          {
+            "__type": "PF",
+            "Arg": "ENO"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "Out",
+            "Ix": 6,
+            "Type": "ANY",
+            "Var": "RCON2_4_OUT_TargetPos_mm"
+          }
+        ],
+        "X": 3
+      },
+      {
+        "__type": "ST",
+        "Ix": 4,
+        "Var": "BoxPacking_M[30]",
+        "X": 4
+      }
+    ],
+    "LRI": 8,
+    "RRI": 9,
+    "VLs": [
+      {
+        "Ix": 10,
+        "X": 2
+      }
+    ]
+  },
+  {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "BoxPacking_M[30]"
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "RCON2_4_MoveDone",
+        "X": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Var": "BoxPacking_M[31]",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 2,
+        "Not": true,
+        "Var": "",
+        "X": 2
+      },
+      {
+        "__type": "F",
+        "In": [
+          {
+            "__type": "PF",
+            "Arg": "EN"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In",
+            "Ix": 5,
+            "Type": "ANY",
+            "Var": "HMI_RCON2_4_OUT_TargetPos[1]"
+          }
+        ],
+        "Ix": 7,
+        "Name": "MOVE",
+        "Out": [
+          {
+            "__type": "PF",
+            "Arg": "ENO"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "Out",
+            "Ix": 6,
+            "Type": "ANY",
+            "Var": "RCON2_4_OUT_TargetPos_mm"
+          }
+        ],
+        "X": 3
+      },
+      {
+        "__type": "ST",
+        "Ix": 4,
+        "Var": "BoxPacking_M[31]",
+        "X": 4
+      }
+    ],
+    "LRI": 8,
+    "RRI": 9,
+    "VLs": [
+      {
+        "Ix": 10,
+        "X": 2
+      }
+    ]
+  }
+]

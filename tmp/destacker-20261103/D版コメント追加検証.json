@@ -1,0 +1,144 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261103C.smc2",
+  "output": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261103D.smc2",
+  "source_sha256": "6082d233dddb22c45cfea4157f5c7937dcb7c0b51270a0786545d167ffb939b3",
+  "output_sha256": "506d2c5bbb6546224d81da4ca9d497ec22a039c200db109adea1312fa5266cbf",
+  "changed_parts": [
+    "d12ff733-4f31-46ee-8e8a-659eb8891990/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml",
+    "d12ff733-4f31-46ee-8e8a-659eb8891990/7b1666c7-ee97-4210-81b2-fed5a6172074.xml",
+    "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+    "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+    "d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+    "d12ff733-4f31-46ee-8e8a-659eb8891990/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+    "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+    "d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml"
+  ],
+  "preserved_parts": 202,
+  "counts": {
+    "行コメント": 48,
+    "変数コメント": 52,
+    "配列要素コメント": 131
+  },
+  "row_comments_by_section": {
+    "Destacker_段バラシ": 21,
+    "Output_出力": 12,
+    "RCON_IAI": 15
+  },
+  "distinct_variable_names": 25,
+  "distinct_array_elements": 63,
+  "logic_and_definitions_unchanged": true,
+  "C_original_unchanged": true,
+  "ZIP_CRC": "正常",
+  "native_Sysmac_read_and_build": "未実施",
+  "seconds": 0.766,
+  "covered": {
+    "Destacker_TON": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml"
+    ],
+    "HMI_RCON2_5_OUT_TargetPos": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml"
+    ],
+    "Destacker_M": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+    ],
+    "Out_CYw_Sep_Claw_F_Auto": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+    ],
+    "Out_CYw_Sep_Claw_F_Done": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+    ],
+    "RCON2_1_OUT_TargetPos_mm": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+    ],
+    "HMI_RCON2_1_OUT_TargetPos": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+    ],
+    "RCON2_1_Auto": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+    ],
+    "RCON2_1_MoveDone": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+    ],
+    "Out_CYw_Sep_Claw_H_Auto": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+    ],
+    "Out_CYw_Sep_Claw_H_Done": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+    ],
+    "Destacker_End": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+    ],
+    "RCON2_1_ActualPos_mm": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+    ],
+    "Out_CYw_Empty_Container_CY_H_Auto": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+    ],
+    "Out_CYw_Empty_Container_CY_H_Done": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+    ],
+    "Out_CYw_Empty_Container_CY_F_Auto": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+    ],
+    "RCON2_5_ActualPos_mm": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+    ],
+    "Out_CYw_Empty_Container_CY_F_Done": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+    ],
+    "Output_Share_M": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml"
+    ],
+    "Output_Share_Reset_TON": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml"
+    ],
+    "Output_Share_Error_TON": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml"
+    ],
+    "Output_Share_Error_M": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+    ],
+    "RCON2_1_TON": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml"
+    ],
+    "RCON2_1_M": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+    ],
+    "RCON2_1_Ready": [
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+    ]
+  }
+}

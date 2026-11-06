@@ -1,0 +1,99 @@
+E版 Output異常監視Auto接点の反映（2026-11-03）
+
+保存ファイル：3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261103E.smc2
+保存先：元D版と同じOMRONフォルダ
+SHA256：e19ec47a6132f11f0f0610813166874c3e9aeb1e41a022efcfdfda03dcbb6e77
+
+【実施内容】
+- Outputの全100組で、駆動側と異常監視側のAuto接点を比較。
+- 保持コイルOutput_A/B/Share_M[n]と異常コイルOutput_A/B/Share_Error_M[n]の区分・番号で対応付け。
+- 77組は変更不要、23行を修正した。
+- 新しい並列接点22個を追加し、別の出力を参照していた4個のAuto接点を置換。
+- 例の24行目はOut_CYw_Sply_Pick_A_H_Auto[2]と[3]を追加。
+- 全100組でAuto接点の変数名・添字が駆動側と一致。未反映0、余分なAuto接点0。
+- 追加はその駆動回路で実際に使われている添字に限り、使われていない番号は追加していない。
+
+【異なる出力参照を修正した4行】
+66行：Out_CYw_HgtInsp_Lf_A_H_Auto[1] → Out_CYw_NG1_Pick_A_H_Auto[1]
+       同行へOut_CYw_NG1_Pick_A_H_Auto[2]も追加。
+123行：Out_CYS_Pos_02_Stopper_A_H_Auto[1] → Out_CYS_Pos_02_Stopper_A_F_Auto[1]
+174行：Out_CYw_HgtInsp_Lf_B_H_Auto[1] → Out_CYw_NG1_Pick_B_H_Auto[1]
+231行：Out_CYS_Pos_02_Stopper_B_H_Auto[1] → Out_CYS_Pos_02_Stopper_B_F_Auto[1]
+
+【追加したAuto接点】
+18行：Out_CYw_Sply_Slide_A_H_Auto[2]
+24行：Out_CYw_Sply_Pick_A_H_Auto[2][3]
+27行：Out_CYw_Sply_Pick_A_F_Auto[2]
+66行：Out_CYw_NG1_Pick_A_H_Auto[2]
+72行：Out_CYw_NG1_Chk_A_H_Auto[2]
+84行：Out_CYw_Rev_01_Pick_A_H_Auto[2]
+87行：Out_CYw_Rev_01_Pick_A_F_Auto[2]
+96行：Out_CYw_Rev_02_Pick_A_H_Auto[2]
+99行：Out_CYw_Rev_02_Pick_A_F_Auto[2]
+102行：Out_CYw_Disc_Chk_A_H_Auto[2]
+108行：Out_CYw_Ejc_Hldr_Feed_A_H_Auto[2]
+114行：Out_CYS_Pos_01_Stopper_A_H_Auto[2]
+120行：Out_CYS_Pos_02_Stopper_A_H_Auto[2]
+126行：Out_CYS_Pos_03_Stopper_A_H_Auto[2]
+132行：Out_CYS_Pos_04_Stopper_A_H_Auto[2]
+138行：Out_CYS_Pos_05_Stopper_A_H_Auto[2]
+144行：Out_CYS_Pos_06_Stopper_A_H_Auto[2]
+156行：Out_CYw_NG1_Srt_A_H_Auto[2]
+270行：Out_CYw_Empty_Container_CY_H_Auto[2][3]
+285行：Out_CYw_Ejc_Cont_F_Auto[2]
+
+【保持した内容】
+- 自動運転・Pause・到達センサ・TONインスタンス/設定時間・Up命令・異常保持・HMIメッセージ番号・コメントは元D版と同じ。
+- 前回の出力共通PauseへのManualMode並列とDestacker_M[1]～[25]の変更も保持。
+- 駆動回路、完了回路、RCON、変数定義は変更していない。
+- 元D版のハッシュ不変。変更はOutputの1構成ファイル、他209構成ファイルは全バイト一致。
+
+【検証】
+- 保存済みE版を再読込みし、全100組のAuto接点集合を駆動側と再照合。
+- 修正23行は追加接点・指定変数の置換を取り除けば元の全命令と座標に一致。
+- 既存縦線を保持し、新しいAuto並列枝をX=1の縦線へ連結。ID衝突なし。
+- 全Auto入力の組合せと自動・一時停止・到達状態の組合せ、計2112ケースでタイマ入口までの配線グラフを検査。
+- この検査はタイマ入口の導通確認であり、タイマの時間動作・メーカーシミュレータ・実機動作の確認ではない。
+- JSON再読込み、ZIP CRC、E版の保存後ハッシュを確認。
+
+【別途、確認が必要な既存箇所（今回未変更）】
+異常監視の次の4行でError_TONではなくReset_TONを参照している。
+306行：Output_A_Reset_TON[43]
+309行：Output_A_Reset_TON[44]
+312行：Output_B_Reset_TON[43]
+315行：Output_B_Reset_TON[44]
+今回はAuto接点の反映依頼のため、タイマ参照は変更していない。
+
+参考：237行の位置3ストッパB行監視はIn_SenCY_Pos_03_Stopper_B_F、236行の完了判定はTimerQ_In_SenCY_Pos_03_Stopper_B_Fを参照している。意図を断定できないため保持。
+
+Sysmac Studioでの読込み・全体再ビルド・実機動作確認は未実施。PLC接続・転送は行っていない。
+
+【振り返りレポート】
+エージェント名：生産技術主任補佐PDM_261102／PLCプログラム編集担当
+業務・タスク内容：Output異常監視の不足Auto接点と誤参照の修正
+実行日：2026-11-03
+
+✅ 良かった点
+- 画像例だけでなく全100組を駆動側の実際の接点と照合した。
+- 22接点追加と4参照置換を行い、同じ出力番号の監視へ揃えた。
+- 全既存条件と209部品を保持し、2112ケースの局所配線を独立検証した。
+
+⚠️ 改善点
+- Sysmac Studioでの時間動作・全体再ビルドは未確認。
+- 既存のタイマ参照4か所など、今回のAuto接点以外に確認が必要な点がある。
+
+🔄 次回試すこと
+- 出力の駆動・完了・異常監視を同じ区分/出力番号で一覧化し、Auto・センサ・タイマを別々に照合する。
+
+📝 SKILL.md更新提案
+- 該当セクション：PLC出力の異常監視整備（今後整備）
+- 変更内容：最大添字を一律追加せず、対応する駆動行のAuto接点集合を正として不足・余分・誤参照を判定。センサ/タイマの相違は別項目として扱う。提案のみ。
+
+💾 MEMORY.md追記内容
+- カテゴリ：駆動と監視のAuto接点整合
+- 内容：全100組の一致、23行修正、追加22/誤参照修正4、D版保全、監視タイマ参照の要確認4箇所を記録。
+
+💰 ROI評価
+- 投じた時間・コスト：生成0.485秒、追加有料APIなし。総対応時間は未計測。
+- 得られたリターン：全100組を一括照合し、23行の監視条件へのAuto接点の反映漏れ・誤参照を解消。
+- 次回改善でROIを上げる方法：対応表と集合比較・配線検証を再利用し、コピー元の接点が残る問題を納品前に検出する。

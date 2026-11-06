@@ -1,0 +1,39 @@
+{
+  "検証": "合格",
+  "対象セクション": "Destacker_段バラシ",
+  "表示行": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "参照照合数": 136,
+  "変更数": 33,
+  "変換別件数": {
+    "Destacker_M[7]→Destacker_M[11]": 4,
+    "Destacker_M[10]→Destacker_M[14]": 4,
+    "Destacker_M[8]→Destacker_M[12]": 3,
+    "Destacker_M[9]→Destacker_M[13]": 3,
+    "Destacker_M[11]→Destacker_M[15]": 3,
+    "Destacker_M[12]→Destacker_M[16]": 3,
+    "Destacker_M[13]→Destacker_M[17]": 2,
+    "Destacker_M[14]→Destacker_M[18]": 2,
+    "Destacker_M[15]→Destacker_M[19]": 3,
+    "Destacker_M[16]→Destacker_M[20]": 3,
+    "Destacker_M[17]→Destacker_M[21]": 3
+  },
+  "対象外209エントリ": "全バイト一致",
+  "0～6行目": "全バイト一致",
+  "JSON要素と構造": "指定Var以外はすべて保持",
+  "原本ハッシュ": "一致",
+  "保存後ハッシュ": "一致",
+  "ZIP_CRC": "両版正常",
+  "Sysmac読込・全体再ビルド": "未実施",
+  "PLC接続・転送": "未実施"
+}

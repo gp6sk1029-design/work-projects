@@ -1,0 +1,176 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=Setting_M	G=VAR
+++D=BOOL	N=Manual_M	G=VAR
+++D=BOOL	N=Auto_M	G=VAR
+++D=BOOL	N=Dummy_M	G=VAR
+++D=BOOL	N=Inital_M	G=VAR
+++D=ARRAY[0..99] OF Bool	N=Output_Error_M	G=VAR
+++D=DINT	N=Index_Error_001	G=VAR
+++D=DINT	N=Index_B_001	G=VAR
+++D=DINT	N=Index_Share_001	G=VAR
+++D=ARRAY[0..99] OF TON	N=Error_TON	G=VAR	EC=<ECs><EC EK="[2]" C="A(左側) ST1 測定タイムアウト" /><EC EK="[4]" C="A(左側) ST5 測定タイムアウト" /></ECs>
+++D=ARRAY[0..99] OF TOF	N=Error_TOF	G=VAR
+++D=ARRAY[0..99] OF Bool	N=AutoMode_A_M	G=VAR
+++D=DINT	N=６	G=VAR
+++D=ARRAY[0..99] OF Bool	N=ST4_A_Rev_01_Origin_M	G=VAR	Com=A(左側) ST4 反転1 原点復帰工程	EC=<ECs><EC EK="[1]" C="A(左側) ST4 反転1 原点復帰開始" /><EC EK="[2]" C="A(左側) ST4 反転1 原点復帰中" /><EC EK="[3]" C="A(左側) ST4 反転1 ピックアップ戻" /><EC EK="[4]" C="A(左側) ST4 反転1 モータ原点復帰開始" /><EC EK="[5]" C="A(左側) ST4 反転1 ピックアップ行" /><EC EK="[6]" C="A(左側) ST4 反転1 チャック閉" /><EC EK="[7]" C="A(左側) ST4 反転1 原点復帰完了（ワーク無）" /></ECs>
+++D=BOOL	N=ST4_A_Rev_01_OriginDone	G=VAR	Com=A(左側) ST4 反転1 原点復帰完了
+++D=ARRAY[0..99] OF Bool	N=ST4_A_Rev_02_Origin_M	G=VAR	Com=A(左側) ST6 反転2 原点復帰工程	EC=<ECs><EC EK="[1]" C="A(左側) ST6 反転2 原点復帰開始" /><EC EK="[2]" C="A(左側) ST6 反転2 原点復帰中" /><EC EK="[3]" C="A(左側) ST6 反転2 ピックアップ戻" /><EC EK="[4]" C="A(左側) ST6 反転2 モータ原点復帰開始" /><EC EK="[5]" C="A(左側) ST6 反転2 ピックアップ行" /><EC EK="[6]" C="A(左側) ST6 反転2 チャック閉" /><EC EK="[7]" C="A(左側) ST6 反転2 原点復帰完了（ワーク無）" /></ECs>
+++D=BOOL	N=ST4_A_Rev_02_OriginDone	G=VAR	Com=A(左側) ST6 反転2 原点復帰完了
+++D=ARRAY[0..99] OF Bool	N=ST4_B_Rev_01_Origin_M	G=VAR	Com=B(右側) ST4 反転1 原点復帰工程	EC=<ECs><EC EK="[1]" C="B(右側) ST4 反転1 原点復帰開始" /><EC EK="[2]" C="B(右側) ST4 反転1 原点復帰中" /><EC EK="[3]" C="B(右側) ST4 反転1 ピックアップ戻" /><EC EK="[4]" C="B(右側) ST4 反転1 モータ原点復帰開始" /><EC EK="[5]" C="B(右側) ST4 反転1 ピックアップ行" /><EC EK="[6]" C="B(右側) ST4 反転1 チャック閉" /><EC EK="[7]" C="B(右側) ST4 反転1 原点復帰完了（ワーク無）" /></ECs>
+++D=BOOL	N=ST4_B_Rev_01_OriginDone	G=VAR	Com=B(右側) ST4 反転1 原点復帰完了
+++D=ARRAY[0..99] OF Bool	N=ST4_B_Rev_02_Origin_M	G=VAR	Com=B(右側) ST6 反転2 原点復帰工程	EC=<ECs><EC EK="[1]" C="B(右側) ST6 反転2 原点復帰開始" /><EC EK="[2]" C="B(右側) ST6 反転2 原点復帰中" /><EC EK="[3]" C="B(右側) ST6 反転2 ピックアップ戻" /><EC EK="[4]" C="B(右側) ST6 反転2 モータ原点復帰開始" /><EC EK="[5]" C="B(右側) ST6 反転2 ピックアップ行" /><EC EK="[6]" C="B(右側) ST6 反転2 チャック閉" /><EC EK="[7]" C="B(右側) ST6 反転2 原点復帰完了（ワーク無）" /></ECs>
+++D=BOOL	N=ST4_B_Rev_02_OriginDone	G=VAR	Com=B(右側) ST6 反転2 原点復帰完了
+++D=BOOL	N=ST1_B_Ca1_M	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[0..99] OF Bool	N=Output_A_Error_M	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Bool	N=Output_A_Restart_M	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sw_RESET	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sw_START	G=VAR_EXTERNAL
+++D=BOOL	N=ManualMode	G=VAR_EXTERNAL
+++D=BOOL	N=M9999	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Bool	N=Output_B_Error_M	G=VAR_EXTERNAL	Com=B(右側)シリンダエラー
+++D=ARRAY[0..99] OF Bool	N=Output_B_Restart_M	G=VAR_EXTERNAL	Com=B(右側)シリンダ再開：
+++D=ARRAY[0..99] OF Bool	N=Output_Share_Error_M	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Bool	N=Output_Share_Restart_M	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Accum_CV_A_Full	G=VAR_EXTERNAL
+++D=BOOL	N=Out_TDC_Stop	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Unl_Conv_A_Pass	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Accum_CV_A_Full	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Unl_Conv_B_Pass	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Bool	N=Pause	G=VAR_EXTERNAL	EC=<ECs><EC EK="[3]" C="FH A(左側) ST1" /><EC EK="[9]" C="FH A(左側) ST5" /><EC EK="[10]" C="FH B(右側) ST1" /><EC EK="[11]" C="FH B(右側) ST5" /><EC EK="[12]" C="A(左側) ST6 反転2 ワーク不一致" /></ECs>
+++D=BOOL	N=AutoMode	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_DOOR_01	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_DOOR_02	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_DOOR_03	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_DOOR_04	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_DOOR_05	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_DOOR_06	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sw_EMS1	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sw_EMS2	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sw_EMS3	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_AIR１_Pressure_01	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_AIR１_Pressure_02	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_AIR１_Pressure_03	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Bool	N=TEST_M	G=VAR_EXTERNAL
+++D=BOOL	N=ST0_Sup_Start	G=VAR_EXTERNAL	Com=ST0_動作開始
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Pick_A_H_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sply_Pick_A_H_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Slide_A_H_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sply_Slide_A_H_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sup_Chuck_A_Cl_H_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sup_Chuck_A_Cl_H_Done	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Accum_CV_A_Arrival	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Work_A_Pos_00	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Pick_A_F_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sply_Pick_A_F_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sup_Chuck_A_Cl_F_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sup_Chuck_A_Cl_F_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Slide_A_F_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sply_Slide_A_F_Done	G=VAR_EXTERNAL
+++D=BOOL	N=Ins_A_Cv_Error	G=VAR_EXTERNAL
+++D=ARRAY[0..8] OF sData	N=Station_A_Data	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Bool	N=Ins_A_Cv_M	G=VAR_EXTERNAL
+++D=ARRAY[0..9] OF UINT	N=HMI_MessageNo	G=VAR_EXTERNAL
+++D=BOOL	N=FH_A_ST1_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Accum_CV_B_Full	G=VAR_EXTERNAL
+++D=BOOL	N=FH_Line3_Error_Status_1	G=VAR_EXTERNAL
+++D=BOOL	N=FH_Line0_Error_Status_1	G=VAR_EXTERNAL
+++D=BOOL	N=FH_Line1_Error_Status_1	G=VAR_EXTERNAL
+++D=BOOL	N=FH_Line2_Error_Status_1	G=VAR_EXTERNAL
+++D=BOOL	N=FH_Line0_Error_Clear_1	G=VAR_EXTERNAL
+++D=BOOL	N=FH_Line1_Error_Clear_1	G=VAR_EXTERNAL
+++D=BOOL	N=FH_Line2_Error_Clear_1	G=VAR_EXTERNAL
+++D=BOOL	N=FH_Line3_Error_Clear_1	G=VAR_EXTERNAL
+++D=BOOL	N=Ins_A_Next_Cycle	G=VAR_EXTERNAL
+++D=BOOL	N=OriginDone	G=VAR_EXTERNAL	Com=原点復帰完了
+++D=BOOL	N=DummyDone	G=VAR_EXTERNAL	Com=ダミーチェック完了
+++D=STRING[256]	N=HMI_CurrentPage	G=VAR_EXTERNAL
+++D=BOOL	N=Ins_A_End	G=VAR_EXTERNAL
+++D=BOOL	N=Auto_A_Start	G=VAR_EXTERNAL	Com=自動運転 開始
+++D=BOOL	N=Auto_Ready	G=VAR_EXTERNAL	Com=自動運転可能
+++D=BOOL	N=ST0_A_Sup_Busy	G=VAR_EXTERNAL
+++D=BOOL	N=ST1_A_Ca1_Busy	G=VAR_EXTERNAL
+++D=BOOL	N=RCON1_1_IN_Alarm	G=VAR_EXTERNAL	Com=軸異常
+++D=BOOL	N=RCON1_1_IN_EmergencyStop	G=VAR_EXTERNAL	Com=非常停止状態（監視）
+++D=BOOL	N=RCON1_1_Error	G=VAR_EXTERNAL	Com=異常予備（未接続）
+++D=BOOL	N=RCON1_1_IN_HomeDone	G=VAR_EXTERNAL	Com=原点復帰完了
+++D=BOOL	N=RCON1_1_Error_Clear	G=VAR_EXTERNAL	Com=解除予備（未接続）
+++D=ARRAY[0..99] OF Bool	N=Error_M	G=VAR_EXTERNAL	Com=エラー：	EC=<ECs><EC EK="[1]" C="シリンダ" /><EC EK="[2]" C="コンベア＆ドアセンサ" /><EC EK="[3]" C="未使用：Error_ST1_A_M[0]へ移行" /><EC EK="[4]" C="A(左側)検査コンベア ワーク不一致" /><EC EK="[5]" C="未使用：Error_ST3_A_M[1]へ移行" /><EC EK="[9]" C="未使用：Error_ST5_A_M[0]へ移行" /><EC EK="[10]" C="未使用：Error_ST1_B_M[0]へ移行" /><EC EK="[11]" C="未使用：Error_ST5_B_M[0]へ移行" /><EC EK="[12]" C="未使用：Error_ST6_A_M[0]へ移行" /></ECs>
+++D=ARRAY[0..99] OF Bool	N=ST1_A_Ca1_M	G=VAR_EXTERNAL	EC=<ECs><EC EK="[6]" C="A(左側) ST1 検査前ワーク不一致" /></ECs>
+++D=ARRAY[0..99] OF Bool	N=ST2_A_Hgt_M	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Bool	N=ST3_A_Dis1_M	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_Home_SW	G=VAR_EXTERNAL
+++D=BOOL	N=Origin_Busy	G=VAR_EXTERNAL	Com=原点復帰中
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Pick_A_H_Origin	G=VAR_EXTERNAL	Com=原点復帰【Y710】A(左側)ST4 反転1ピックアップ戻：
+++D=BOOL	N=Out_CYw_Rev_01_Pick_A_H_Done	G=VAR_EXTERNAL	Com=【Y710】A(左側)ST4 反転1ピックアップ戻 動作完了
+++D=BOOL	N=Stm_A_Rev_Axis000_Origin	G=VAR_EXTERNAL	Com=A(左側) ST4 反転1 モータ原点復帰開始
+++D=BOOL	N=Stm_A_Rev_Axis000_OriginDone	G=VAR_EXTERNAL	Com=A(左側) ST4 反転1 モータ原点復帰完了
+++D=ARRAY[0..99] OF Bool	N=Out_CYw_Rev_01_Pick_A_F_Origin	G=VAR_EXTERNAL	Com=原点復帰【Y711】A(左側)ST4 反転1ピックアップ行：
+++D=BOOL	N=Out_CYw_Rev_01_Pick_A_F_Done	G=VAR_EXTERNAL	Com=【Y711】A(左側)ST4 反転1ピックアップ行 動作完了
+++D=ARRAY[0..99] OF Bool	N=Out_CYw_Rev_01_Chk_A_H_Origin	G=VAR_EXTERNAL	Com=原点復帰【Y708】A(左側)ST4 反転1チャック閉：
+++D=BOOL	N=Out_CYw_Rev_01_Chk_A_H_Done	G=VAR_EXTERNAL	Com=【Y708】A(左側)ST4 反転1チャック閉 動作完了
+++D=BOOL	N=TimerQ_In_Sen_Work_A_Pos_04	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Pick_A_H_Origin	G=VAR_EXTERNAL	Com=原点復帰 【Y714】A(左側)ST6 反転2ピックアップ戻
+++D=BOOL	N=Out_CYw_Rev_02_Pick_A_H_Done	G=VAR_EXTERNAL	Com=【Y714】A(左側)ST6 反転2ピックアップ戻 動作完了
+++D=BOOL	N=Stm_A_Rev_Axis001_Origin	G=VAR_EXTERNAL	Com=A(左側) ST6 反転2 モータ原点復帰開始
+++D=BOOL	N=Stm_A_Rev_Axis001_OriginDone	G=VAR_EXTERNAL	Com=A(左側) ST6 反転2 モータ原点復帰完了
+++D=ARRAY[0..99] OF Bool	N=Out_CYw_Rev_02_Pick_A_F_Origin	G=VAR_EXTERNAL	Com=原点復帰 【Y715】A(左側)ST6 反転2ピックアップ行
+++D=BOOL	N=Out_CYw_Rev_02_Pick_A_F_Done	G=VAR_EXTERNAL	Com=【Y715】A(左側)ST6 反転2ピックアップ行 動作完了
+++D=ARRAY[0..99] OF Bool	N=Out_CYw_Rev_02_Chk_A_H_Origin	G=VAR_EXTERNAL	Com=原点復帰 【Y712】A(左側)ST6 反転2チャック閉 戻
+++D=BOOL	N=Out_CYw_Rev_02_Chk_A_H_Done	G=VAR_EXTERNAL	Com=【Y712】A(左側)ST6 反転2チャック閉 戻 動作完了
+++D=BOOL	N=TimerQ_In_Sen_Work_A_Pos_06	G=VAR_EXTERNAL	Com=【X208】A(左側)ワーク位置6
+++D=BOOL	N=Auto_B_Start	G=VAR_EXTERNAL	Com=B(右側)自動運転開始（後続処理未接続）
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Pick_B_H_Origin	G=VAR_EXTERNAL	Com=原点復帰 【Y810】B(右側)ST4 反転1ピックアップ戻
+++D=BOOL	N=Out_CYw_Rev_01_Pick_B_H_Done	G=VAR_EXTERNAL	Com=【Y810】B(右側)ST4 反転1ピックアップ戻 動作完了
+++D=BOOL	N=Stm_B_Rev_Axis002_Origin	G=VAR_EXTERNAL	Com=B(右側) ST4 反転1 モータ原点復帰開始
+++D=BOOL	N=Stm_B_Rev_Axis002_OriginDone	G=VAR_EXTERNAL	Com=B(右側) ST4 反転1 モータ原点復帰完了
+++D=ARRAY[0..99] OF Bool	N=Out_CYw_Rev_01_Pick_B_F_Origin	G=VAR_EXTERNAL	Com=原点復帰 【Y811】B(右側)ST4 反転1ピックアップ行
+++D=BOOL	N=Out_CYw_Rev_01_Pick_B_F_Done	G=VAR_EXTERNAL	Com=【Y811】B(右側)ST4 反転1ピックアップ行 動作完了
+++D=ARRAY[0..99] OF Bool	N=Out_CYw_Rev_01_Chk_B_H_Origin	G=VAR_EXTERNAL	Com=原点復帰 【Y808】B(右側)ST4 反転1チャック閉 戻
+++D=BOOL	N=Out_CYw_Rev_01_Chk_B_H_Done	G=VAR_EXTERNAL	Com=【Y808】B(右側)ST4 反転1チャック閉 戻 動作完了
+++D=BOOL	N=TimerQ_In_Sen_Work_B_Pos_04	G=VAR_EXTERNAL	Com=【X406】B(右側)ワーク位置4
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Pick_B_H_Origin	G=VAR_EXTERNAL	Com=原点復帰 【Y814】B(右側)ST6 反転2ピックアップ戻
+++D=BOOL	N=Out_CYw_Rev_02_Pick_B_H_Done	G=VAR_EXTERNAL	Com=【Y814】B(右側)ST6 反転2ピックアップ戻 動作完了
+++D=BOOL	N=Stm_B_Rev_Axis003_Origin	G=VAR_EXTERNAL	Com=B(右側) ST6 反転2 モータ原点復帰開始
+++D=BOOL	N=Stm_B_Rev_Axis003_OriginDone	G=VAR_EXTERNAL	Com=B(右側) ST6 反転2 モータ原点復帰完了
+++D=ARRAY[0..99] OF Bool	N=Out_CYw_Rev_02_Pick_B_F_Origin	G=VAR_EXTERNAL	Com=原点復帰 【Y815】B(右側)ST6 反転2ピックアップ行
+++D=BOOL	N=Out_CYw_Rev_02_Pick_B_F_Done	G=VAR_EXTERNAL	Com=【Y815】B(右側)ST6 反転2ピックアップ行 動作完了
+++D=ARRAY[0..99] OF Bool	N=Out_CYw_Rev_02_Chk_B_H_Origin	G=VAR_EXTERNAL	Com=原点復帰 【Y812】B(右側)ST6 反転2チャック閉 戻
+++D=BOOL	N=Out_CYw_Rev_02_Chk_B_H_Done	G=VAR_EXTERNAL	Com=【Y812】B(右側)ST6 反転2チャック閉 戻 動作完了
+++D=BOOL	N=TimerQ_In_Sen_Work_B_Pos_06	G=VAR_EXTERNAL	Com=【X408】B(右側)ワーク位置6
+++D=ARRAY[0..99] OF Bool	N=ST4_A_Rev1_M	G=VAR_EXTERNAL	EC=<ECs><EC EK="[10]" C="A(左側) ST4 ワーク不一致エラー" /><EC EK="[12]" C="【Y708】A(左側) ST4 反転1チャック閉" /></ECs>
+++D=ARRAY[0..99] OF Bool	N=ST5_A_Ca2_M	G=VAR_EXTERNAL	Com=A(左側) ST5 カメラ2工程	EC=<ECs><EC EK="[1]" C="A(左側) ST5 カメラ2検査開始" /><EC EK="[2]" C="【Y724】A(左側) ST5 ストッパー戻" /><EC EK="[3]" C="A(左側) ST5 ワーク有無判定" /><EC EK="[4]" C="A(左側) ST5 ワーク有" /><EC EK="[5]" C="A(左側) ST5 ワーク無" /><EC EK="[6]" C="A(左側) ST5 検査前ワーク不一致" /><EC EK="[7]" C="A(左側) ST5 FH測定開始" /></ECs>
+++D=BOOL	N=FH_A_ST5_Auto	G=VAR_EXTERNAL	Com=A(左側) ST5 FH自動測定
+++D=ARRAY[0..99] OF Bool	N=ST6_A_Rev2_M	Const=1	G=VAR_EXTERNAL	Com=A(左側) ST6 反転2工程	EC=<ECs><EC EK="[1]" C="A(左側) ST6 反転2 動作開始" /><EC EK="[2]" C="A(左側) ST6 反転2 【Y714】ピックアップ戻" /><EC EK="[3]" C="A(左側) ST6 反転2 【Y725】位置6ストッパー戻" /><EC EK="[4]" C="A(左側) ST6 反転2 原点角度転送" /><EC EK="[5]" C="A(左側) ST6 反転2 原点位置移動開始" /><EC EK="[6]" C="A(左側) ST6 反転2 原点位置移動完了" /><EC EK="[7]" C="A(左側) ST6 反転2 ワーク有無判定" /><EC EK="[8]" C="A(左側) ST6 反転2 ワーク有・前工程OK" /><EC EK="[9]" C="A(左側) ST6 反転2 ワーク無・前工程NG" /><EC EK="[10]" C="A(左側) ST6 反転2 ワーク不一致エラー" /><EC EK="[11]" C="A(左側) ST6 反転2 【Y715】反転前ピックアップ行" /><EC EK="[12]" C="A(左側) ST6 反転2 【Y712】チャック閉" /><EC EK="[13]" C="A(左側) ST6 反転2 【Y714】反転前ピックアップ戻" /><EC EK="[14]" C="A(左側) ST6 反転2 反転角度転送" /><EC EK="[15]" C="A(左側) ST6 反転2 反転位置移動完了" /><EC EK="[16]" C="A(左側) ST6 反転2 【Y715】設置ピックアップ行" /><EC EK="[17]" C="A(左側) ST6 反転2 【Y713】チャック開" /><EC EK="[18]" C="A(左側) ST6 反転2 【Y714】設置ピックアップ戻" /></ECs>
+++D=ARRAY[0..99] OF Bool	N=ST7_A_Dis2_M	G=VAR_EXTERNAL	EC=<ECs><EC EK="[9]" C="ワーク有" /><EC EK="[10]" C="ワーク無" /><EC EK="[11]" C="有無・NG満杯異常" /><EC EK="[12]" C="回収下降位置転送" /><EC EK="[13]" C="回収下降要求" /><EC EK="[14]" C="ワーク保持" /><EC EK="[15]" C="保持後上昇位置転送" /><EC EK="[16]" C="保持後上昇要求" /><EC EK="[17]" C="仕分け位置選択" /><EC EK="[18]" C="OK選択" /><EC EK="[19]" C="キズNG選択" /><EC EK="[20]" C="姿NG選択" /><EC EK="[21]" C="OK送り行開始" /><EC EK="[22]" C="仕分け左右移動中" /><EC EK="[23]" C="下降位置選択" /><EC EK="[24]" C="OK積み位置" /><EC EK="[25]" C="キズNG下降位置" /><EC EK="[26]" C="姿NG下降位置" /><EC EK="[27]" C="配置下降要求" /><EC EK="[28]" C="ワーク解放" /><EC EK="[29]" C="解放後上昇位置転送" /><EC EK="[30]" C="解放後上昇要求" /><EC EK="[31]" C="左右原点位置転送" /><EC EK="[32]" C="左右原点移動要求" /><EC EK="[33]" C="最後の送り戻" /><EC EK="[1]" C="排出動作開始" /><EC EK="[2]" C="初期チャック戻" /><EC EK="[3]" C="初期上昇位置転送" /><EC EK="[4]" C="初期上昇要求" /><EC EK="[5]" C="初期左右位置転送" /><EC EK="[6]" C="初期左右移動要求" /><EC EK="[7]" C="初期送り戻" /><EC EK="[8]" C="ワーク有無判定" /><EC EK="[42]" C="今回ワーク加算済み" /><EC EK="[43]" C="積み設定・判定異常" /><EC EK="[44]" C="フォルダ回転異常" /><EC EK="[45]" C="ワーク回収開始許可" /><EC EK="[46]" C="今回の初期位置確認済み" /><EC EK="[34]" C="初期上昇 前完了解除" /><EC EK="[35]" C="初期左右 前完了解除" /><EC EK="[36]" C="回収下降 前完了解除" /><EC EK="[37]" C="保持後上昇 前完了解除" /><EC EK="[38]" C="仕分け左右 前完了解除" /><EC EK="[39]" C="配置下降 前完了解除" /><EC EK="[40]" C="解放後上昇 前完了解除" /><EC EK="[41]" C="左右戻り 前完了解除" /></ECs>
+++D=ARRAY[0..4] OF BOOL	N=Error_ST1_A_M	G=VAR_EXTERNAL	Com=#A(左側) ST1 カメラ1 異常	EC=<ECs><EC EK="[0]" C="総合異常" /><EC EK="[1]" C="機器異常" /><EC EK="[2]" C="タイムアウト" /><EC EK="[3]" C="ワーク不一致" /><EC EK="[4]" C="予備（監視なし）" /></ECs>
+++D=ARRAY[0..4] OF BOOL	N=Error_ST1_B_M	G=VAR_EXTERNAL	Com=#B(右側) ST1 カメラ1 異常	EC=<ECs><EC EK="[0]" C="総合異常" /><EC EK="[1]" C="機器異常" /><EC EK="[2]" C="予備（監視なし）" /><EC EK="[3]" C="予備（監視なし）" /><EC EK="[4]" C="予備（監視なし）" /></ECs>
+++D=ARRAY[0..4] OF BOOL	N=Error_ST2_A_M	G=VAR_EXTERNAL	Com=#A(左側) ST2 高さ検査 異常	EC=<ECs><EC EK="[0]" C="総合異常" /><EC EK="[1]" C="予備（監視なし）" /><EC EK="[2]" C="予備（監視なし）" /><EC EK="[3]" C="ワーク不一致" /><EC EK="[4]" C="予備（監視なし）" /></ECs>
+++D=ARRAY[0..4] OF BOOL	N=Error_ST3_A_M	G=VAR_EXTERNAL	Com=#A(左側) ST3 NG1排出 異常	EC=<ECs><EC EK="[0]" C="総合異常" /><EC EK="[1]" C="機器異常" /><EC EK="[2]" C="予備（監視なし）" /><EC EK="[3]" C="ワーク不一致" /><EC EK="[4]" C="予備（監視なし）" /></ECs>
+++D=ARRAY[0..4] OF BOOL	N=Error_ST4_A_M	G=VAR_EXTERNAL	Com=#A(左側) ST4 反転1 異常	EC=<ECs><EC EK="[0]" C="総合異常" /><EC EK="[1]" C="予備（監視なし）" /><EC EK="[2]" C="予備（監視なし）" /><EC EK="[3]" C="ワーク不一致" /><EC EK="[4]" C="予備（監視なし）" /></ECs>
+++D=ARRAY[0..4] OF BOOL	N=Error_ST5_A_M	G=VAR_EXTERNAL	Com=#A(左側) ST5 カメラ2 異常	EC=<ECs><EC EK="[0]" C="総合異常" /><EC EK="[1]" C="機器異常" /><EC EK="[2]" C="タイムアウト" /><EC EK="[3]" C="ワーク不一致" /><EC EK="[4]" C="予備（監視なし）" /></ECs>
+++D=ARRAY[0..4] OF BOOL	N=Error_ST5_B_M	G=VAR_EXTERNAL	Com=#B(右側) ST5 カメラ2 異常	EC=<ECs><EC EK="[0]" C="総合異常" /><EC EK="[1]" C="機器異常" /><EC EK="[2]" C="予備（監視なし）" /><EC EK="[3]" C="予備（監視なし）" /><EC EK="[4]" C="予備（監視なし）" /></ECs>
+++D=ARRAY[0..4] OF BOOL	N=Error_ST6_A_M	G=VAR_EXTERNAL	Com=#A(左側) ST6 反転2 異常	EC=<ECs><EC EK="[0]" C="総合異常" /><EC EK="[1]" C="予備（監視なし）" /><EC EK="[2]" C="予備（監視なし）" /><EC EK="[3]" C="ワーク不一致" /><EC EK="[4]" C="予備（監視なし）" /></ECs>
+++D=ARRAY[0..4] OF BOOL	N=Error_ST7_A_M	G=VAR_EXTERNAL	Com=#A(左側) ST7 SF排出 異常	EC=<ECs><EC EK="[0]" C="総合異常" /><EC EK="[1]" C="予備（監視なし）" /><EC EK="[2]" C="予備（監視なし）" /><EC EK="[3]" C="ワーク不一致" /><EC EK="[4]" C="満杯" /></ECs>
+++D=ARRAY[0..4] OF BOOL	N=Error_ST7_A_Source_M	G=VAR_EXTERNAL	Com=#A(左側) ST7 発生理由（内部保持）	EC=<ECs><EC EK="[3]" C="ワーク不一致" /><EC EK="[4]" C="満杯（既存B側入力）" /></ECs>
+++D=ARRAY[0..121] OF BOOL	N=HMI_Message_Request	G=VAR_EXTERNAL	Com=#HMI メッセージ表示要求	EC=<ECs><EC EK="[0]" C="未使用" /><EC EK="[1]" C="【Y616】A(左側) 供給スライド戻 異常表示" /><EC EK="[2]" C="【Y617】A(左側) 供給スライド行 異常表示" /><EC EK="[3]" C="【Y618】A(左側) 供給ピックアップ戻 異常表示" /><EC EK="[4]" C="【Y619】A(左側) 供給ピックアップ行 異常表示" /><EC EK="[5]" C="【Y620】A(左側) 供給チャック閉 戻 異常表示" /><EC EK="[6]" C="【Y621】A(左側) 供給チャック開 行 異常表示" /><EC EK="[7]" C="【Y622】B(右側) 供給スライド戻 異常表示" /><EC EK="[8]" C="【Y623】B(右側) 供給スライド行 異常表示" /><EC EK="[9]" C="【Y624】B(右側) 供給ピックアップ戻 異常表示" /><EC EK="[10]" C="【Y625】B(右側) 供給ピックアップ行 異常表示" /><EC EK="[11]" C="【Y626】B(右側) 供給チャック閉 戻 異常表示" /><EC EK="[12]" C="【Y627】B(右側) 供給チャック開 行 異常表示" /><EC EK="[13]" C="【Y700】A(左側) 高さ検査押え戻 異常表示" /><EC EK="[14]" C="【Y701】A(左側) 高さ検査押え行 異常表示" /><EC EK="[15]" C="【Y702】A(左側) 高さ検査持上戻 異常表示" /><EC EK="[16]" C="【Y703】A(左側) 高さ検査持上行 異常表示" /><EC EK="[17]" C="【Y704】A(左側) NG1ピックアップ戻 異常表示" /><EC EK="[18]" C="【Y705】A(左側) NG1ピックアップ 行 異常表示" /><EC EK="[19]" C="【Y706】A(左側) NG1チャック戻 異常表示" /><EC EK="[20]" C="【Y707】A(左側) NG1チャック行 異常表示" /><EC EK="[21]" C="【Y708】A(左側)ST4 反転1チャック閉 異常表示" /><EC EK="[22]" C="【Y709】A(左側)ST4 反転1チャック開 異常表示" /><EC EK="[23]" C="【Y710】A(左側)ST4 反転1ピックアップ戻 異常表示" /><EC EK="[24]" C="【Y711】A(左側)ST4 反転1ピックアップ行 異常表示" /><EC EK="[25]" C="【Y712】A(左側)ST6 反転2チャック閉 戻 異常表示" /><EC EK="[26]" C="【Y713】A(左側)ST6 反転2チャック開 行 異常表示" /><EC EK="[27]" C="【Y714】A(左側)ST6 反転2ピックアップ戻 異常表示" /><EC EK="[28]" C="【Y715】A(左側)ST6 反転2ピックアップ行 異常表示" /><EC EK="[29]" C="【Y716】A(左側) 排出チャック閉 戻 異常表示" /><EC EK="[30]" C="【Y717】A(左側) 排出チャック開 行 異常表示" /><EC EK="[31]" C="【Y718】A(左側) 排出フォルダ送り戻 異常表示" /><EC EK="[32]" C="【Y719】A(左側) 排出フォルダ送り行 異常表示" /><EC EK="[33]" C="A(左側) 位置1ストッパー戻 異常表示" /><EC EK="[34]" C="【Y720】A(左側) 位置1ストッパー 行 異常表示" /><EC EK="[35]" C="【Y721】A(左側) 位置2ストッパー 異常表示" /><EC EK="[36]" C="【Y721】A(左側) 位置2ストッパー 異常表示" /><EC EK="[37]" C="【Y722】A(左側) 位置3ストッパー戻 異常表示" /><EC EK="[38]" C="【Y722】A(左側) 位置3ストッパー行 異常表示" /><EC EK="[39]" C="Output_A_Error_M[33] 異常表示" /><EC EK="[40]" C="【Y723】A(左側) 位置4ストッパー行 異常表示" /><EC EK="[41]" C="【Y724】A(左側) 位置5ストッパー戻 異常表示" /><EC EK="[42]" C="【Y724】A(左側) 位置5ストッパー行 異常表示" /><EC EK="[43]" C="【Y725】A(左側) 位置6ストッパー戻 異常表示" /><EC EK="[44]" C="【Y725】A(左側) 位置6ストッパー行 異常表示" /><EC EK="[45]" C="【Y726】A(左側) ストックフォルダターン戻 異常表示" /><EC EK="[46]" C="【Y727】A(左側) ストックフォルダターン行 異常表示" /><EC EK="[47]" C="【Y728】A(左側) NG1仕分け 戻 異常表示" /><EC EK="[48]" C="【Y729】A(左側) NG1仕分け 行 異常表示" /><EC EK="[49]" C="【Y800】B(右側) 高さ検査押え戻 異常表示" /><EC EK="[50]" C="【Y801】B(右側) 高さ検査押え行 異常表示" /><EC EK="[51]" C="【Y802】B(右側) 高さ検査持上戻 異常表示" /><EC EK="[52]" C="【Y803】B(右側) 高さ検査持上行 異常表示" /><EC EK="[53]" C="【Y804】B(右側) NG1ピックアップ戻 異常表示" /><EC EK="[54]" C="【Y805】B(右側) NG1ピックアップ 行 異常表示" /><EC EK="[55]" C="【Y806】B(右側) NG1チャック戻 異常表示" /><EC EK="[56]" C="【Y807】B(右側) NG1チャック行 異常表示" /><EC EK="[57]" C="【Y808】B(右側)ST4 反転1チャック閉 戻 異常表示" /><EC EK="[58]" C="【Y809】B(右側)ST4 反転1チャック開 戻 異常表示" /><EC EK="[59]" C="【Y810】B(右側)ST4 反転1ピックアップ戻 異常表示" /><EC EK="[60]" C="【Y811】B(右側)ST4 反転1ピックアップ行 異常表示" /><EC EK="[61]" C="【Y812】B(右側)ST6 反転2チャック閉 戻 異常表示" /><EC EK="[62]" C="【Y813】B(右側)ST6 反転2チャック開 行 異常表示" /><EC EK="[63]" C="【Y814】B(右側)ST6 反転2ピックアップ戻 異常表示" /><EC EK="[64]" C="【Y815】B(右側)ST6 反転2ピックアップ行 異常表示" /><EC EK="[65]" C="【Y816】B(右側) 排出チャック閉 戻 異常表示" /><EC EK="[66]" C="【Y817】B(右側) 排出チャック開 行 異常表示" /><EC EK="[67]" C="【Y818】B(右側) 排出フォルダ送り戻 異常表示" /><EC EK="[68]" C="【Y819】B(右側) 排出フォルダ送り行 異常表示" /><EC EK="[69]" C="【Y820】B(右側) 位置1ストッパー 戻 異常表示" /><EC EK="[70]" C="【Y820】B(右側) 位置1ストッパー 行 異常表示" /><EC EK="[71]" C="【Y821】B(右側) 位置2ストッパー戻 異常表示" /><EC EK="[72]" C="【Y821】B(右側) 位置2ストッパー行 異常表示" /><EC EK="[73]" C="【Y822】B(右側) 位置3ストッパー戻 異常表示" /><EC EK="[74]" C="【Y822】B(右側) 位置3ストッパー行 異常表示" /><EC EK="[75]" C="【Y823】B(右側) 位置4ストッパー戻 異常表示" /><EC EK="[76]" C="【Y823】B(右側) 位置4ストッパー行 異常表示" /><EC EK="[77]" C="【Y824】B(右側) 位置5ストッパー戻 異常表示" /><EC EK="[78]" C="【Y824】B(右側) 位置5ストッパー行 異常表示" /><EC EK="[79]" C="【Y825】B(右側) 位置6ストッパー戻 異常表示" /><EC EK="[80]" C="【Y825】B(右側) 位置6ストッパー行 異常表示" /><EC EK="[81]" C="【Y826】B(右側) ストックフォルダターン戻 異常表示" /><EC EK="[82]" C="【Y827】B(右側) ストックフォルダターン行 異常表示" /><EC EK="[83]" C="【Y828】B(右側) NG1仕分け 戻 異常表示" /><EC EK="[84]" C="【Y829】B(右側) NG1仕分け 行 異常表示" /><EC EK="[85]" C="【Y1200】空コンテナ送り 戻 異常表示" /><EC EK="[86]" C="【Y1201】空コンテナ送り 行 異常表示" /><EC EK="[87]" C="【Y1202】段バラシ爪 戻 異常表示" /><EC EK="[88]" C="【Y1203】段バラシ爪 行 異常表示" /><EC EK="[89]" C="【Y1204】コンテナ排出 戻 異常表示" /><EC EK="[90]" C="【Y1205】コンテナ排出 行 異常表示" /><EC EK="[91]" C="Output_Share_Error_M[7] 異常表示" /><EC EK="[92]" C="【Y1207】箱入れチャック 行 異常表示" /><EC EK="[93]" C="【Y1208】コンテナ仕分けストッパー 戻 異常表示" /><EC EK="[94]" C="【Y1209】コンテナ仕分けストッパー 行 異常表示" /><EC EK="[95]" C="【Y1210】コンテナ仕分け送り 戻 異常表示" /><EC EK="[96]" C="Output_Share_Error_M[12] 異常表示" /><EC EK="[97]" C="【Y1300】A(左側) コンベア受渡送り戻 異常表示" /><EC EK="[98]" C="【Y1301】A(左側) コンベア受渡送り行 異常表示" /><EC EK="[99]" C="【Y1302】B(右側) コンベア受渡送り戻 異常表示" /><EC EK="[100]" C="【Y1303】B(右側) コンベア受渡送り行 異常表示" /><EC EK="[101]" C="ST1 搬送ワーク不一致" /><EC EK="[102]" C="ST2 搬送ワーク不一致" /><EC EK="[103]" C="ST3 搬送ワーク不一致" /><EC EK="[104]" C="ST4 搬送ワーク不一致" /><EC EK="[105]" C="ST5 搬送ワーク不一致" /><EC EK="[106]" C="ST6 搬送ワーク不一致" /><EC EK="[107]" C="ST7 搬送ワーク不一致" /><EC EK="[108]" C="A(左側) ST1 FH測定時間超過" /><EC EK="[109]" C="A(左側) ST1 FH異常" /><EC EK="[110]" C="A(左側) ST5 FH異常" /><EC EK="[111]" C="B(右側) ST1 FH異常" /><EC EK="[112]" C="B(右側) ST5 FH異常" /><EC EK="[113]" C="A(左側) ST1 FH判定OK" /><EC EK="[114]" C="A(左側) ST1 FH判定NG1" /><EC EK="[115]" C="A(左側) ST1 FH判定NG2" /><EC EK="[116]" C="A(左側) ST1 検査前ワーク不一致" /><EC EK="[117]" C="A(左側) ST5 FH測定時間超過" /><EC EK="[118]" C="A(左側) ST5 FH判定OK" /><EC EK="[119]" C="A(左側) ST5 FH判定NG1" /><EC EK="[120]" C="A(左側) ST5 FH判定NG2" /><EC EK="[121]" C="A(左側) ST5 検査前ワーク不一致" /></ECs>
+++D=ARRAY[0..1] OF BOOL	N=HMI_Error_WorkSample	G=VAR_EXTERNAL	Com=#HMI 再開前のワーク不一致	EC=<ECs><EC EK="[0]" C="A(左側) ST1" /><EC EK="[1]" C="A(左側) ST5" /></ECs>
+++D=BOOL	N=Error_ST1_A_Timeout	G=VAR_EXTERNAL	Com=FHタイムアウト（非保持）
+++D=BOOL	N=Error_ST5_A_Timeout	G=VAR_EXTERNAL	Com=FHタイムアウト（非保持）
+++D=BOOL	N=TimerQ_In_Sen_Work_A_Pos_07	G=VAR_EXTERNAL	Com=【X209】A(左側)ワーク位置7
+++D=BOOL	N=TimerQ_In_Sen_NG2_Tray_B_Full	G=VAR_EXTERNAL	Com=【X412】B(右側) NG2トレイ満杯停止
+++D=ARRAY[0..99] OF BOOL	N=Retry	G=VAR_EXTERNAL
+++D=BOOL	N=Stm_A_Rev1_Axis000_Power_Error	G=VAR_EXTERNAL
+++D=BOOL	N=Stm_A_Rev_Axis000_MoveError	G=VAR_EXTERNAL
+++D=BOOL	N=RCON1_3_Error	G=VAR_EXTERNAL
+++D=BOOL	N=RCON1_3_Error_Clear	G=VAR_EXTERNAL
+++D=BOOL	N=RCON1_3_IN_Alarm	G=VAR_EXTERNAL
+++D=BOOL	N=RCON1_3_IN_EmergencyStop	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_NG2_Tray_A_Full	G=VAR_EXTERNAL
+++D=BOOL	N=RCON1_5_Error	G=VAR_EXTERNAL
+++D=BOOL	N=RCON1_5_Error_Clear	G=VAR_EXTERNAL
+++D=BOOL	N=Auto_Com_Start	G=VAR_EXTERNAL	Com=共通ユニット自動運転開始
+++D=BOOL	N=Destacker_Error	G=VAR_EXTERNAL	Com=方向・1段目確認異常
+++D=ARRAY[0..99] OF Bool	N=Error_Destacker_M	G=VAR_EXTERNAL	Com=段バラシエラー：

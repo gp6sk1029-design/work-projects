@@ -1,0 +1,12 @@
+{
+  "a_wait_reset": "z_up_complete",
+  "count_reset": "container_return_complete",
+  "initial_arrival": "preserve",
+  "initial_arrival_reason": "ユーザー確認：HMI_RCON2_5_OUT_TargetPos[2]/[3]ではX1003は感知しない。位置[1]の受渡でのみ到着を確認する。",
+  "initial_done": "BoxPacking_M[2]",
+  "b_side": "既存の共通改番参照のみ整合、B動作の新規作成・検証は対象外",
+  "output_version": "20261105G",
+  "comments": "大工程#・中工程・分岐合流・I/O名称・RCON軸名を反映",
+  "z_return_done": "梱包後の入数判定はRCON2_4_MoveDoneのONで進める",
+  "rcon2_enable": "RCON2_2～5の動作経路をラダーで接続する。実機通信・単軸動作は未確認。既存の通信確認・運転許可を固定ONにしない。"
+}

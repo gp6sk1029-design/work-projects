@@ -1,0 +1,4886 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261103B.smc2",
+  "sha256": "2384a14ae61897f265b3671c39d6f5368179e0c439fd143ce80df1f7f4447dcb",
+  "sections": [
+    {
+      "name": "変数テーブル",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/b530d740-9d69-41c3-974a-97c06e823eb2.xml"
+    },
+    {
+      "name": "Initial_初期化処理",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/5ede16be-2114-46c3-84df-a79badb6e32e.xml"
+    },
+    {
+      "name": "Origin_原点復帰",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml"
+    },
+    {
+      "name": "DummyCheck_ダミーチェック",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml"
+    },
+    {
+      "name": "AutoMode_自動運転",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/13f086b3-1a09-467f-8cff-eea83144ff00.xml"
+    },
+    {
+      "name": "Manual_手動運転",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/056f39b5-2372-4d32-b892-634336899ec4.xml"
+    },
+    {
+      "name": "Setting_設定",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/49a83d1d-d863-4a09-a86a-4797edc14a57.xml"
+    },
+    {
+      "name": "Error_エラー処理",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml"
+    },
+    {
+      "name": "変数テーブル",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml"
+    },
+    {
+      "name": "Ins_A_Cv_左検査Cv",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml"
+    },
+    {
+      "name": "ST0_A_Sup_左供給",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/02fa0618-20f0-422f-b44d-3aba0838a381.xml"
+    },
+    {
+      "name": "ST1_A_Ca1_左Ca1検査",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/08c19951-3bae-402d-a637-be66c221f71b.xml"
+    },
+    {
+      "name": "ST3_A_Dis1_左NG1排出",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml"
+    },
+    {
+      "name": "ST4_A_Rev1_左反転1",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml"
+    },
+    {
+      "name": "ST5_A_Ca2_左Ca2検査",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml"
+    },
+    {
+      "name": "ST6_A_Rev2_左反転2",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml"
+    },
+    {
+      "name": "ST7_A_Dis2_左SF排出",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml"
+    },
+    {
+      "name": "ST2_A_Hgt_左高さ検査",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml"
+    },
+    {
+      "name": "Destacker_段バラシ",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml"
+    },
+    {
+      "name": "BoxPacking_箱詰め",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/6061835d-1e51-4e92-be1f-d546f44764e3.xml"
+    },
+    {
+      "name": "変数テーブル",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml"
+    },
+    {
+      "name": "RCON_IAI",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/7b1666c7-ee97-4210-81b2-fed5a6172074.xml"
+    },
+    {
+      "name": "DLEP1_GT2",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/98de6707-f996-4f77-aad9-b0569299efb5.xml"
+    },
+    {
+      "name": "FH_5552_10",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml"
+    },
+    {
+      "name": "CV2A_KED",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml"
+    },
+    {
+      "name": "HMI",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml"
+    },
+    {
+      "name": "変数テーブル",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml"
+    },
+    {
+      "name": "Input_入力",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml"
+    },
+    {
+      "name": "Output_出力",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml"
+    }
+  ],
+  "outgoing": [
+    {
+      "path": [
+        1,
+        "CLs",
+        6
+      ],
+      "__type": "ST",
+      "Ix": 5,
+      "Var": "Out_CYw_Sep_Claw_F_Auto[1]",
+      "X": 3,
+      "Y": 1
+    },
+    {
+      "path": [
+        3,
+        "CLs",
+        6
+      ],
+      "__type": "ST",
+      "Ix": 5,
+      "Var": "Out_CYw_Sep_Claw_H_Auto[1]",
+      "X": 3,
+      "Y": 1
+    },
+    {
+      "path": [
+        4,
+        "CLs",
+        7
+      ],
+      "__type": "ST",
+      "Ix": 5,
+      "Var": "RCON2_1_Auto[1]",
+      "X": 4,
+      "Y": 1
+    },
+    {
+      "path": [
+        5,
+        "CLs",
+        7
+      ],
+      "__type": "ST",
+      "Ix": 5,
+      "Var": "RCON2_1_Auto[2]",
+      "X": 4,
+      "Y": 1
+    },
+    {
+      "path": [
+        6,
+        "CLs",
+        6
+      ],
+      "__type": "ST",
+      "Ix": 5,
+      "Var": "Out_CYw_Sep_Claw_F_Auto[2]",
+      "X": 3,
+      "Y": 1
+    },
+    {
+      "path": [
+        7,
+        "CLs",
+        6
+      ],
+      "__type": "ST",
+      "Ix": 5,
+      "Var": "RCON2_1_Auto[3]",
+      "X": 3,
+      "Y": 1
+    },
+    {
+      "path": [
+        8,
+        "CLs",
+        5
+      ],
+      "__type": "ST",
+      "Ix": 5,
+      "Var": "Out_CYw_Empty_Container_CY_H_Auto[1]",
+      "X": 2,
+      "Y": 1
+    },
+    {
+      "path": [
+        9,
+        "CLs",
+        11
+      ],
+      "__type": "ST",
+      "Ix": 8,
+      "Var": "Out_CYw_Sep_Claw_F_Auto[2]",
+      "X": 4,
+      "Y": 1
+    },
+    {
+      "path": [
+        10,
+        "CLs",
+        6
+      ],
+      "__type": "ST",
+      "Ix": 5,
+      "Var": "Out_CYw_Empty_Container_CY_H_Auto[2]",
+      "X": 3,
+      "Y": 1
+    },
+    {
+      "path": [
+        12,
+        "CLs",
+        5
+      ],
+      "__type": "ST",
+      "Ix": 4,
+      "Var": "RCON2_1_Auto[2]",
+      "X": 3,
+      "Y": 1
+    },
+    {
+      "path": [
+        13,
+        "CLs",
+        6
+      ],
+      "__type": "ST",
+      "Ix": 5,
+      "Var": "Out_CYw_Sep_Claw_H_Auto[1]",
+      "X": 3,
+      "Y": 1
+    },
+    {
+      "path": [
+        15,
+        "CLs",
+        7
+      ],
+      "__type": "ST",
+      "Ix": 5,
+      "Var": "RCON2_1_Auto[3]",
+      "X": 4,
+      "Y": 1
+    },
+    {
+      "path": [
+        16,
+        "CLs",
+        6
+      ],
+      "__type": "ST",
+      "Ix": 5,
+      "Var": "Out_CYw_Sep_Claw_F_Auto[3]",
+      "X": 3,
+      "Y": 1
+    },
+    {
+      "path": [
+        17,
+        "CLs",
+        9
+      ],
+      "__type": "ST",
+      "Ix": 6,
+      "Var": "RCON2_1_Auto[4]",
+      "X": 4,
+      "Y": 1
+    },
+    {
+      "path": [
+        18,
+        "CLs",
+        8
+      ],
+      "__type": "ST",
+      "Ix": 6,
+      "Var": "Out_CYw_Empty_Container_CY_F_Auto[1]",
+      "X": 5,
+      "Y": 1
+    },
+    {
+      "path": [
+        19,
+        "CLs",
+        8
+      ],
+      "__type": "ST",
+      "Ix": 6,
+      "Var": "Out_CYw_Empty_Container_CY_H_Auto[3]",
+      "X": 5,
+      "Y": 1
+    },
+    {
+      "path": [
+        20,
+        "CLs",
+        5
+      ],
+      "__type": "ST",
+      "Ix": 4,
+      "Var": "Destacker_End",
+      "X": 3
+    }
+  ],
+  "results": [
+    {
+      "name": "RCON_IAI",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/7b1666c7-ee97-4210-81b2-fed5a6172074.xml",
+      "row_count": 449,
+      "exact_matches": [
+        {
+          "path": [
+            281,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "RCON2_1_Auto[1]"
+        },
+        {
+          "path": [
+            281,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "RCON2_1_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            281,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "RCON2_1_Auto[3]",
+          "Y": 2
+        },
+        {
+          "path": [
+            281,
+            "CLs",
+            3
+          ],
+          "__type": "LD",
+          "Ix": 6,
+          "Var": "RCON2_1_Auto[4]",
+          "Y": 3
+        }
+      ],
+      "related": [
+        {
+          "path": [
+            281,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "RCON2_1_Auto[1]"
+        },
+        {
+          "path": [
+            281,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "RCON2_1_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            281,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "RCON2_1_Auto[3]",
+          "Y": 2
+        },
+        {
+          "path": [
+            281,
+            "CLs",
+            3
+          ],
+          "__type": "LD",
+          "Ix": 6,
+          "Var": "RCON2_1_Auto[4]",
+          "Y": 3
+        }
+      ]
+    },
+    {
+      "name": "Output_出力",
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml",
+      "row_count": 316,
+      "exact_matches": [
+        {
+          "path": [
+            268,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Empty_Container_CY_H_Auto[1]"
+        },
+        {
+          "path": [
+            268,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 11,
+          "Var": "Out_CYw_Empty_Container_CY_H_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            268,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 12,
+          "Var": "Out_CYw_Empty_Container_CY_H_Auto[3]",
+          "Y": 2
+        },
+        {
+          "path": [
+            270,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Empty_Container_CY_H_Auto[1]"
+        },
+        {
+          "path": [
+            271,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Empty_Container_CY_F_Auto[1]"
+        },
+        {
+          "path": [
+            273,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Empty_Container_CY_F_Auto[1]"
+        },
+        {
+          "path": [
+            274,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Sep_Claw_H_Auto[1]"
+        },
+        {
+          "path": [
+            276,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Sep_Claw_H_Auto[1]"
+        },
+        {
+          "path": [
+            277,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[1]"
+        },
+        {
+          "path": [
+            277,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 9,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            277,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 10,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[3]",
+          "Y": 2
+        },
+        {
+          "path": [
+            279,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Sep_Claw_F_Auto[1]"
+        },
+        {
+          "path": [
+            279,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 9,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            279,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 10,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[3]",
+          "Y": 2
+        }
+      ],
+      "related": [
+        {
+          "path": [
+            16,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Sply_Slide_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            16,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 10,
+          "Var": "Out_CYw_Sply_Slide_A_H_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            16,
+            "CLs",
+            5
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Sply_Slide_A_H_Manual[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            16,
+            "CLs",
+            17
+          ],
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Out_CYw_Sply_Slide_A_H",
+          "X": 8
+        },
+        {
+          "path": [
+            17,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Sply_Slide_A_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            18,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Sply_Slide_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            19,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Sply_Slide_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            19,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Sply_Slide_A_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            19,
+            "CLs",
+            16
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_Sply_Slide_A_F",
+          "X": 8
+        },
+        {
+          "path": [
+            20,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Sply_Slide_A_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            21,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Sply_Slide_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            22,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Sply_Pick_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            22,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 9,
+          "Var": "Out_CYw_Sply_Pick_A_H_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            22,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 10,
+          "Var": "Out_CYw_Sply_Pick_A_H_Auto[3]",
+          "Y": 2
+        },
+        {
+          "path": [
+            22,
+            "CLs",
+            6
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Sply_Pick_A_H_Manual[1]",
+          "Y": 3
+        },
+        {
+          "path": [
+            22,
+            "CLs",
+            17
+          ],
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Out_CYw_Sply_Pick_A_H",
+          "X": 7
+        },
+        {
+          "path": [
+            23,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Sply_Pick_A_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            24,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Sply_Pick_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            25,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Sply_Pick_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            25,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 9,
+          "Var": "Out_CYw_Sply_Pick_A_F_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            25,
+            "CLs",
+            5
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Sply_Pick_A_F_Manual[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            25,
+            "CLs",
+            16
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_Sply_Pick_A_F",
+          "X": 7
+        },
+        {
+          "path": [
+            26,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Sply_Pick_A_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            27,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Sply_Pick_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            28,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Sup_Chuck_A_Cl_H_Auto[1]"
+        },
+        {
+          "path": [
+            28,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Sup_Chuck_A_Cl_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            28,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_Sup_Chuck_A_Cl_H",
+          "X": 7
+        },
+        {
+          "path": [
+            29,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Sup_Chuck_A_Cl_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            30,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Sup_Chuck_A_Cl_H_Auto[1]"
+        },
+        {
+          "path": [
+            31,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Sup_Chuck_A_Cl_F_Auto[1]"
+        },
+        {
+          "path": [
+            31,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Sup_Chuck_A_Cl_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            31,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_Sup_Chuck_A_Op_F",
+          "X": 7
+        },
+        {
+          "path": [
+            32,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Sup_Chuck_A_Cl_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            33,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Sup_Chuck_A_Cl_F_Auto[1]"
+        },
+        {
+          "path": [
+            34,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Sply_Slide_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            34,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Sply_Slide_B_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            34,
+            "CLs",
+            16
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_Sply_Slide_B_H",
+          "X": 8
+        },
+        {
+          "path": [
+            35,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Sply_Slide_B_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            36,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Sply_Slide_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            37,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Sply_Slide_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            37,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Sply_Slide_B_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            37,
+            "CLs",
+            16
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_Sply_Slide_B_F",
+          "X": 8
+        },
+        {
+          "path": [
+            38,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Sply_Slide_B_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            39,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Sply_Slide_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            40,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Sply_Pick_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            40,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Sply_Pick_B_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            40,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_Sply_Pick_B_H",
+          "X": 7
+        },
+        {
+          "path": [
+            41,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Sply_Pick_B_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            42,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Sply_Pick_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            43,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Sply_Pick_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            43,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Sply_Pick_B_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            43,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_Sply_Pick_B_F",
+          "X": 7
+        },
+        {
+          "path": [
+            44,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Sply_Pick_B_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            45,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Sply_Pick_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            46,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Sup_Chuck_B_Cl_H_Auto[1]"
+        },
+        {
+          "path": [
+            46,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Sup_Chuck_B_Cl_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            46,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_Sup_Chuck_B_Cl_H",
+          "X": 7
+        },
+        {
+          "path": [
+            47,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Sup_Chuck_B_Cl_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            48,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Sup_Chuck_B_Cl_H_Auto[1]"
+        },
+        {
+          "path": [
+            49,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Sup_Chuck_B_Cl_F_Auto[1]"
+        },
+        {
+          "path": [
+            49,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Sup_Chuck_B_Cl_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            49,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_Sup_Chuck_B_Op_F",
+          "X": 7
+        },
+        {
+          "path": [
+            50,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Sup_Chuck_B_Cl_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            51,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Sup_Chuck_B_Cl_F_Auto[1]"
+        },
+        {
+          "path": [
+            52,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_HgtInsp_Clp_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            52,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_HgtInsp_Clp_A_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            52,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_HgtInsp_Clp_A_H",
+          "X": 7
+        },
+        {
+          "path": [
+            53,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_HgtInsp_Clp_A_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            54,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_HgtInsp_Clp_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            55,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_HgtInsp_Clp_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            55,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_HgtInsp_Clp_A_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            55,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_HgtInsp_Clp_A_F",
+          "X": 7
+        },
+        {
+          "path": [
+            56,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_HgtInsp_Clp_A_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            57,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_HgtInsp_Clp_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            58,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_HgtInsp_Lf_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            58,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_HgtInsp_Lf_A_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            58,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_HgtInsp_Lf_A_H",
+          "X": 7
+        },
+        {
+          "path": [
+            59,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_HgtInsp_Lf_A_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            60,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_HgtInsp_Lf_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            61,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_HgtInsp_Lf_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            61,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_HgtInsp_Lf_A_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            61,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_HgtInsp_Lf_A_F",
+          "X": 7
+        },
+        {
+          "path": [
+            62,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_HgtInsp_Lf_A_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            63,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_HgtInsp_Lf_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            64,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_NG1_Pick_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            64,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 10,
+          "Var": "Out_CYw_NG1_Pick_A_H_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            64,
+            "CLs",
+            5
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_NG1_Pick_A_H_Manual[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            64,
+            "CLs",
+            17
+          ],
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Out_CYw_NG1_Pick_A_H",
+          "X": 8
+        },
+        {
+          "path": [
+            65,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_NG1_Pick_A_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            66,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_HgtInsp_Lf_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            67,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_NG1_Pick_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            67,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_NG1_Pick_A_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            67,
+            "CLs",
+            16
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_NG1_Pick_A_F",
+          "X": 8
+        },
+        {
+          "path": [
+            68,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_NG1_Pick_A_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            69,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_NG1_Pick_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            70,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_NG1_Chk_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            70,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 9,
+          "Var": "Out_CYw_NG1_Chk_A_H_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            70,
+            "CLs",
+            5
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_NG1_Chk_A_H_Manual[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            70,
+            "CLs",
+            16
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_NG1_Chk_A_H",
+          "X": 7
+        },
+        {
+          "path": [
+            71,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_NG1_Chk_A_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            72,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_NG1_Chk_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            73,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_NG1_Chk_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            73,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_NG1_Chk_A_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            73,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_NG1_Chk_A_F",
+          "X": 7
+        },
+        {
+          "path": [
+            74,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_NG1_Chk_A_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            75,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_NG1_Chk_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            76,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Rev_01_Chk_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            76,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 10,
+          "Var": "Out_CYw_Rev_01_Chk_A_H_Origin[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            76,
+            "CLs",
+            6
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Rev_01_Chk_A_H_Manual[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            76,
+            "CLs",
+            20
+          ],
+          "__type": "ST",
+          "Ix": 12,
+          "Var": "Out_CYw_Rev_01_Chk_A_H",
+          "X": 8
+        },
+        {
+          "path": [
+            77,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Rev_01_Chk_A_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            78,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Rev_01_Chk_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            79,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Rev_01_Chk_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            79,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Rev_01_Chk_A_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            79,
+            "CLs",
+            16
+          ],
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Out_CYw_Rev_01_Chk_A_F",
+          "X": 8
+        },
+        {
+          "path": [
+            80,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Rev_01_Chk_A_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            81,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Rev_01_Chk_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            82,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Rev_01_Pick_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            82,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 11,
+          "Var": "Out_CYw_Rev_01_Pick_A_H_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            82,
+            "CLs",
+            5
+          ],
+          "__type": "LD",
+          "Ix": 10,
+          "Var": "Out_CYw_Rev_01_Pick_A_H_Origin[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            82,
+            "CLs",
+            7
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Rev_01_Pick_A_H_Manual[1]",
+          "Y": 3
+        },
+        {
+          "path": [
+            82,
+            "CLs",
+            21
+          ],
+          "__type": "ST",
+          "Ix": 13,
+          "Var": "Out_CYw_Rev_01_Pick_A_H",
+          "X": 8
+        },
+        {
+          "path": [
+            83,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Rev_01_Pick_A_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            84,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Rev_01_Pick_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            85,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Rev_01_Pick_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            85,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 11,
+          "Var": "Out_CYw_Rev_01_Pick_A_F_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            85,
+            "CLs",
+            5
+          ],
+          "__type": "LD",
+          "Ix": 10,
+          "Var": "Out_CYw_Rev_01_Pick_A_F_Origin[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            85,
+            "CLs",
+            7
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Rev_01_Pick_A_F_Manual[1]",
+          "Y": 3
+        },
+        {
+          "path": [
+            85,
+            "CLs",
+            21
+          ],
+          "__type": "ST",
+          "Ix": 13,
+          "Var": "Out_CYw_Rev_01_Pick_A_F",
+          "X": 8
+        },
+        {
+          "path": [
+            86,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Rev_01_Pick_A_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            87,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Rev_01_Pick_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            88,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Rev_02_Chk_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            88,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 14,
+          "Var": "Out_CYw_Rev_02_Chk_A_H_Origin[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            88,
+            "CLs",
+            6
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Rev_02_Chk_A_H_Manual[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            88,
+            "CLs",
+            20
+          ],
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Out_CYw_Rev_02_Chk_A_H",
+          "X": 8
+        },
+        {
+          "path": [
+            89,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Rev_02_Chk_A_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            90,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Rev_02_Chk_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            91,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Rev_02_Chk_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            91,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Rev_02_Chk_A_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            91,
+            "CLs",
+            16
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_Rev_02_Chk_A_F",
+          "X": 8
+        },
+        {
+          "path": [
+            92,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Rev_02_Chk_A_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            93,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Rev_02_Chk_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            94,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Rev_02_Pick_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            94,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 16,
+          "Var": "Out_CYw_Rev_02_Pick_A_H_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            94,
+            "CLs",
+            5
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Rev_02_Pick_A_H_Origin[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            94,
+            "CLs",
+            7
+          ],
+          "__type": "LD",
+          "Ix": 6,
+          "Var": "Out_CYw_Rev_02_Pick_A_H_Manual[1]",
+          "Y": 3
+        },
+        {
+          "path": [
+            94,
+            "CLs",
+            21
+          ],
+          "__type": "ST",
+          "Ix": 14,
+          "Var": "Out_CYw_Rev_02_Pick_A_H",
+          "X": 8
+        },
+        {
+          "path": [
+            95,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Rev_02_Pick_A_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            96,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Rev_02_Pick_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            97,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Rev_02_Pick_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            97,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 16,
+          "Var": "Out_CYw_Rev_02_Pick_A_F_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            97,
+            "CLs",
+            5
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Rev_02_Pick_A_F_Origin[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            97,
+            "CLs",
+            7
+          ],
+          "__type": "LD",
+          "Ix": 6,
+          "Var": "Out_CYw_Rev_02_Pick_A_F_Manual[1]",
+          "Y": 3
+        },
+        {
+          "path": [
+            97,
+            "CLs",
+            21
+          ],
+          "__type": "ST",
+          "Ix": 14,
+          "Var": "Out_CYw_Rev_02_Pick_A_F",
+          "X": 8
+        },
+        {
+          "path": [
+            98,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Rev_02_Pick_A_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            99,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Rev_02_Pick_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            100,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 8,
+          "Var": "Out_CYw_Disc_Chk_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            100,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 9,
+          "Var": "Out_CYw_Disc_Chk_A_H_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            100,
+            "CLs",
+            5
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Disc_Chk_A_H_Manual[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            100,
+            "CLs",
+            16
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_Disc_Chk_A_H",
+          "X": 7
+        },
+        {
+          "path": [
+            101,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Disc_Chk_A_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            102,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Disc_Chk_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            103,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Disc_Chk_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            103,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Disc_Chk_A_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            103,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_Disc_Chk_A_F",
+          "X": 7
+        },
+        {
+          "path": [
+            104,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Disc_Chk_A_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            105,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Disc_Chk_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            106,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            106,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 10,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            106,
+            "CLs",
+            5
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Manual[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            106,
+            "CLs",
+            17
+          ],
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_H",
+          "X": 8
+        },
+        {
+          "path": [
+            107,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            108,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            109,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            109,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            109,
+            "CLs",
+            16
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_F",
+          "X": 8
+        },
+        {
+          "path": [
+            110,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            111,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            148,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_SH_A_Turn_H_Auto[1]"
+        },
+        {
+          "path": [
+            148,
+            "CLs",
+            5
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_SH_A_Turn_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            148,
+            "CLs",
+            18
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_SH_A_Turn_H",
+          "X": 8
+        },
+        {
+          "path": [
+            149,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_SH_A_Turn_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            150,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_SH_A_Turn_H_Auto[1]"
+        },
+        {
+          "path": [
+            151,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_SH_A_Turn_F_Auto[1]"
+        },
+        {
+          "path": [
+            151,
+            "CLs",
+            5
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_SH_A_Turn_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            151,
+            "CLs",
+            18
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_SH_A_Turn_F",
+          "X": 8
+        },
+        {
+          "path": [
+            152,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_SH_A_Turn_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            153,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_SH_A_Turn_F_Auto[1]"
+        },
+        {
+          "path": [
+            154,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_NG1_Srt_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            154,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 9,
+          "Var": "Out_CYw_NG1_Srt_A_H_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            154,
+            "CLs",
+            5
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_NG1_Srt_A_H_Manual[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            154,
+            "CLs",
+            16
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_NG1_Srt_A_H",
+          "X": 7
+        },
+        {
+          "path": [
+            155,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_NG1_Srt_A_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            156,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_NG1_Srt_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            157,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_NG1_Srt_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            157,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_NG1_Srt_A_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            157,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_NG1_Srt_A_F",
+          "X": 7
+        },
+        {
+          "path": [
+            158,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_NG1_Srt_A_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            159,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_NG1_Srt_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            160,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_HgtInsp_Clp_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            160,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_HgtInsp_Clp_B_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            160,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_HgtInsp_Clp_B_H",
+          "X": 7
+        },
+        {
+          "path": [
+            161,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_HgtInsp_Clp_B_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            162,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_HgtInsp_Clp_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            163,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_HgtInsp_Clp_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            163,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_HgtInsp_Clp_B_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            163,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_HgtInsp_Clp_B_F",
+          "X": 7
+        },
+        {
+          "path": [
+            164,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_HgtInsp_Clp_B_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            165,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_HgtInsp_Clp_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            166,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_HgtInsp_Lf_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            166,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_HgtInsp_Lf_B_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            166,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_HgtInsp_Lf_B_H",
+          "X": 7
+        },
+        {
+          "path": [
+            167,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_HgtInsp_Lf_B_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            168,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_HgtInsp_Lf_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            169,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_HgtInsp_Lf_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            169,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_HgtInsp_Lf_B_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            169,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_HgtInsp_Lf_B_F",
+          "X": 7
+        },
+        {
+          "path": [
+            170,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_HgtInsp_Lf_B_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            171,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_HgtInsp_Lf_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            172,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_NG1_Pick_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            172,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_NG1_Pick_B_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            172,
+            "CLs",
+            16
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_NG1_Pick_B_H",
+          "X": 8
+        },
+        {
+          "path": [
+            173,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_NG1_Pick_B_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            174,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_HgtInsp_Lf_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            175,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_NG1_Pick_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            175,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_NG1_Pick_B_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            175,
+            "CLs",
+            16
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_NG1_Pick_B_F",
+          "X": 8
+        },
+        {
+          "path": [
+            176,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_NG1_Pick_B_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            177,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_NG1_Pick_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            178,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_NG1_Chk_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            178,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_NG1_Chk_B_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            178,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_NG1_Chk_B_H",
+          "X": 7
+        },
+        {
+          "path": [
+            179,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_NG1_Chk_B_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            180,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_NG1_Chk_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            181,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_NG1_Chk_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            181,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_NG1_Chk_B_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            181,
+            "CLs",
+            16
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_NG1_Chk_B_F",
+          "X": 8
+        },
+        {
+          "path": [
+            182,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_NG1_Chk_B_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            183,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_NG1_Chk_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            184,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Rev_01_Chk_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            184,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 15,
+          "Var": "Out_CYw_Rev_01_Chk_B_H_Origin[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            184,
+            "CLs",
+            6
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Rev_01_Chk_B_H_Manual[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            184,
+            "CLs",
+            21
+          ],
+          "__type": "ST",
+          "Ix": 12,
+          "Var": "Out_CYw_Rev_01_Chk_B_H",
+          "X": 9
+        },
+        {
+          "path": [
+            185,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Rev_01_Chk_B_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            186,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Rev_01_Chk_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            187,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Rev_01_Chk_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            187,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Rev_01_Chk_B_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            187,
+            "CLs",
+            16
+          ],
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Out_CYw_Rev_01_Chk_B_F",
+          "X": 8
+        },
+        {
+          "path": [
+            188,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Rev_01_Chk_B_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            189,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Rev_01_Chk_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            190,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Rev_01_Pick_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            190,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 14,
+          "Var": "Out_CYw_Rev_01_Pick_B_H_Origin[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            190,
+            "CLs",
+            6
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Rev_01_Pick_B_H_Manual[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            190,
+            "CLs",
+            20
+          ],
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Out_CYw_Rev_01_Pick_B_H",
+          "X": 8
+        },
+        {
+          "path": [
+            191,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Rev_01_Pick_B_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            192,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Rev_01_Pick_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            193,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Rev_01_Pick_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            193,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 14,
+          "Var": "Out_CYw_Rev_01_Pick_B_F_Origin[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            193,
+            "CLs",
+            6
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Rev_01_Pick_B_F_Manual[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            193,
+            "CLs",
+            20
+          ],
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Out_CYw_Rev_01_Pick_B_F",
+          "X": 8
+        },
+        {
+          "path": [
+            194,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Rev_01_Pick_B_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            195,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Rev_01_Pick_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            196,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Rev_02_Chk_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            196,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 14,
+          "Var": "Out_CYw_Rev_02_Chk_B_H_Origin[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            196,
+            "CLs",
+            6
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Rev_02_Chk_B_H_Manual[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            196,
+            "CLs",
+            20
+          ],
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Out_CYw_Rev_02_Chk_B_H",
+          "X": 8
+        },
+        {
+          "path": [
+            197,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Rev_02_Chk_B_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            198,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Rev_02_Chk_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            199,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Rev_02_Chk_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            199,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Rev_02_Chk_B_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            199,
+            "CLs",
+            16
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_Rev_02_Chk_B_F",
+          "X": 8
+        },
+        {
+          "path": [
+            200,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Rev_02_Chk_B_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            201,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Rev_02_Chk_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            202,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Rev_02_Pick_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            202,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 14,
+          "Var": "Out_CYw_Rev_02_Pick_B_H_Origin[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            202,
+            "CLs",
+            6
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Rev_02_Pick_B_H_Manual[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            202,
+            "CLs",
+            20
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_Rev_02_Pick_B_H",
+          "X": 8
+        },
+        {
+          "path": [
+            203,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Rev_02_Pick_B_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            204,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Rev_02_Pick_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            205,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Rev_02_Pick_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            205,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 14,
+          "Var": "Out_CYw_Rev_02_Pick_B_F_Origin[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            205,
+            "CLs",
+            6
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Rev_02_Pick_B_F_Manual[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            205,
+            "CLs",
+            20
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_Rev_02_Pick_B_F",
+          "X": 8
+        },
+        {
+          "path": [
+            206,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Rev_02_Pick_B_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            207,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Rev_02_Pick_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            208,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Disc_Chk_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            208,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Disc_Chk_B_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            208,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_Disc_Chk_B_H",
+          "X": 7
+        },
+        {
+          "path": [
+            209,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Disc_Chk_B_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            210,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Disc_Chk_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            211,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Disc_Chk_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            211,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Disc_Chk_B_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            211,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_Disc_Chk_B_F",
+          "X": 7
+        },
+        {
+          "path": [
+            212,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Disc_Chk_B_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            213,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Disc_Chk_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            214,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            214,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_B_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            214,
+            "CLs",
+            16
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_B_H",
+          "X": 8
+        },
+        {
+          "path": [
+            215,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_B_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            216,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Ejc_Hldr_Feed_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            217,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            217,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_B_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            217,
+            "CLs",
+            16
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_B_F",
+          "X": 8
+        },
+        {
+          "path": [
+            218,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_B_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            219,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Ejc_Hldr_Feed_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            256,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_SH_B_Turn_H_Auto[1]"
+        },
+        {
+          "path": [
+            256,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_SH_B_Turn_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            256,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_SH_B_Turn_H",
+          "X": 7
+        },
+        {
+          "path": [
+            257,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_SH_B_Turn_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            258,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_SH_B_Turn_H_Auto[1]"
+        },
+        {
+          "path": [
+            259,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_SH_B_Turn_F_Auto[1]"
+        },
+        {
+          "path": [
+            259,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_SH_B_Turn_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            259,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_SH_B_Turn_F",
+          "X": 7
+        },
+        {
+          "path": [
+            260,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_SH_B_Turn_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            261,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_SH_B_Turn_F_Auto[1]"
+        },
+        {
+          "path": [
+            262,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_NG1_Srt_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            262,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_NG1_Srt_B_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            262,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_NG1_Srt_B_H",
+          "X": 7
+        },
+        {
+          "path": [
+            263,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_NG1_Srt_B_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            264,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_NG1_Srt_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            265,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_NG1_Srt_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            265,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_NG1_Srt_B_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            265,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_NG1_Srt_B_F",
+          "X": 7
+        },
+        {
+          "path": [
+            266,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_NG1_Srt_B_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            267,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_NG1_Srt_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            268,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Empty_Container_CY_H_Auto[1]"
+        },
+        {
+          "path": [
+            268,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 11,
+          "Var": "Out_CYw_Empty_Container_CY_H_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            268,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 12,
+          "Var": "Out_CYw_Empty_Container_CY_H_Auto[3]",
+          "Y": 2
+        },
+        {
+          "path": [
+            268,
+            "CLs",
+            7
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Empty_Container_CY_H_Manual[1]",
+          "Y": 3
+        },
+        {
+          "path": [
+            268,
+            "CLs",
+            21
+          ],
+          "__type": "ST",
+          "Ix": 13,
+          "Var": "Out_CYw_Empty_Container_CY_H",
+          "X": 9
+        },
+        {
+          "path": [
+            269,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Empty_Container_CY_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            270,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Empty_Container_CY_H_Auto[1]"
+        },
+        {
+          "path": [
+            271,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Empty_Container_CY_F_Auto[1]"
+        },
+        {
+          "path": [
+            271,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Empty_Container_CY_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            271,
+            "CLs",
+            17
+          ],
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Out_CYw_Empty_Container_CY_F",
+          "X": 9
+        },
+        {
+          "path": [
+            272,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Empty_Container_CY_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            273,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Empty_Container_CY_F_Auto[1]"
+        },
+        {
+          "path": [
+            274,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Sep_Claw_H_Auto[1]"
+        },
+        {
+          "path": [
+            274,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 9,
+          "Var": "Out_CYw_Sep_Claw_H_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            274,
+            "CLs",
+            5
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Sep_Claw_H_Manual[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            274,
+            "CLs",
+            16
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_Sep_Claw_H",
+          "X": 7
+        },
+        {
+          "path": [
+            275,
+            "CLs",
+            3
+          ],
+          "__type": "ST",
+          "Ix": 3,
+          "Var": "Out_CYw_Sep_Claw_H_Done",
+          "X": 3
+        },
+        {
+          "path": [
+            276,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Sep_Claw_H_Auto[1]"
+        },
+        {
+          "path": [
+            277,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[1]"
+        },
+        {
+          "path": [
+            277,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 9,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            277,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 10,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[3]",
+          "Y": 2
+        },
+        {
+          "path": [
+            277,
+            "CLs",
+            6
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Sep_Claw_F_Manual[1]",
+          "Y": 3
+        },
+        {
+          "path": [
+            277,
+            "CLs",
+            17
+          ],
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Out_CYw_Sep_Claw_F",
+          "X": 7
+        },
+        {
+          "path": [
+            278,
+            "CLs",
+            3
+          ],
+          "__type": "ST",
+          "Ix": 3,
+          "Var": "Out_CYw_Sep_Claw_F_Done",
+          "X": 3
+        },
+        {
+          "path": [
+            279,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Sep_Claw_F_Auto[1]"
+        },
+        {
+          "path": [
+            279,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 9,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            279,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 10,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[3]",
+          "Y": 2
+        },
+        {
+          "path": [
+            280,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Ejc_Cont_H_Auto[1]"
+        },
+        {
+          "path": [
+            280,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Ejc_Cont_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            280,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_Ejc_Cont_H",
+          "X": 7
+        },
+        {
+          "path": [
+            281,
+            "CLs",
+            3
+          ],
+          "__type": "ST",
+          "Ix": 3,
+          "Var": "Out_CYw_Ejc_Cont_H_Done",
+          "X": 3
+        },
+        {
+          "path": [
+            282,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Ejc_Cont_H_Auto[1]"
+        },
+        {
+          "path": [
+            283,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 7,
+          "Var": "Out_CYw_Ejc_Cont_F_Auto[1]"
+        },
+        {
+          "path": [
+            283,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 10,
+          "Var": "Out_CYw_Ejc_Cont_F_Auto[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            283,
+            "CLs",
+            5
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Ejc_Cont_F_Manual[1]",
+          "Y": 2
+        },
+        {
+          "path": [
+            283,
+            "CLs",
+            17
+          ],
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Out_CYw_Ejc_Cont_F",
+          "X": 8
+        },
+        {
+          "path": [
+            284,
+            "CLs",
+            3
+          ],
+          "__type": "ST",
+          "Ix": 3,
+          "Var": "Out_CYw_Ejc_Cont_F_Done",
+          "X": 3
+        },
+        {
+          "path": [
+            285,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Ejc_Cont_F_Auto[1]"
+        },
+        {
+          "path": [
+            286,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 7,
+          "Var": "Out_CYw_Box_Chuck_H_Auto[1]"
+        },
+        {
+          "path": [
+            286,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Box_Chuck_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            286,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_Box_Chuck_H",
+          "X": 7
+        },
+        {
+          "path": [
+            287,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Box_Chuck_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            288,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Box_Chuck_H_Auto[1]"
+        },
+        {
+          "path": [
+            289,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 7,
+          "Var": "Out_CYw_Box_Chuck_F_Auto[1]"
+        },
+        {
+          "path": [
+            289,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Box_Chuck_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            289,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_Box_Chuck_F",
+          "X": 7
+        },
+        {
+          "path": [
+            290,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Box_Chuck_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            291,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Box_Chuck_F_Auto[1]"
+        },
+        {
+          "path": [
+            292,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 7,
+          "Var": "Out_CYw_Srt_Stopper_H_Auto[1]"
+        },
+        {
+          "path": [
+            292,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Srt_Stopper_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            292,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_Srt_Stopper_H",
+          "X": 7
+        },
+        {
+          "path": [
+            293,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Srt_Stopper_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            294,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Srt_Stopper_H_Auto[1]"
+        },
+        {
+          "path": [
+            295,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 7,
+          "Var": "Out_CYw_Srt_Stopper_F_Auto[1]"
+        },
+        {
+          "path": [
+            295,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Srt_Stopper_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            295,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_Srt_Stopper_F",
+          "X": 7
+        },
+        {
+          "path": [
+            296,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Srt_Stopper_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            297,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Srt_Stopper_F_Auto[1]"
+        },
+        {
+          "path": [
+            298,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 7,
+          "Var": "Out_CYw_Srt_Feed_H_Auto[1]"
+        },
+        {
+          "path": [
+            298,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Srt_Feed_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            298,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_Srt_Feed_H",
+          "X": 7
+        },
+        {
+          "path": [
+            299,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Srt_Feed_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            300,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Srt_Feed_H_Auto[1]"
+        },
+        {
+          "path": [
+            301,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 7,
+          "Var": "Out_CYw_Srt_Feed_F_Auto[1]"
+        },
+        {
+          "path": [
+            301,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Srt_Feed_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            301,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_Srt_Feed_F",
+          "X": 7
+        },
+        {
+          "path": [
+            302,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Srt_Feed_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            303,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Srt_Feed_F_Auto[1]"
+        },
+        {
+          "path": [
+            304,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 7,
+          "Var": "Out_CYw_Hnd_Feed_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            304,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Hnd_Feed_A_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            304,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_Hnd_Feed_A_H",
+          "X": 7
+        },
+        {
+          "path": [
+            305,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Hnd_Feed_A_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            306,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Hnd_Feed_A_H_Auto[1]"
+        },
+        {
+          "path": [
+            307,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 7,
+          "Var": "Out_CYw_Hnd_Feed_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            307,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Hnd_Feed_A_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            307,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_Hnd_Feed_A_F",
+          "X": 7
+        },
+        {
+          "path": [
+            308,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Hnd_Feed_A_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            309,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Hnd_Feed_A_F_Auto[1]"
+        },
+        {
+          "path": [
+            310,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 7,
+          "Var": "Out_CYw_Hnd_Feed_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            310,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Hnd_Feed_B_H_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            310,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_Hnd_Feed_B_H",
+          "X": 7
+        },
+        {
+          "path": [
+            311,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Hnd_Feed_B_H_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            312,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Hnd_Feed_B_H_Auto[1]"
+        },
+        {
+          "path": [
+            313,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 7,
+          "Var": "Out_CYw_Hnd_Feed_B_F_Auto[1]"
+        },
+        {
+          "path": [
+            313,
+            "CLs",
+            4
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Hnd_Feed_B_F_Manual[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            313,
+            "CLs",
+            15
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_Hnd_Feed_B_F",
+          "X": 7
+        },
+        {
+          "path": [
+            314,
+            "CLs",
+            2
+          ],
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Out_CYw_Hnd_Feed_B_F_Done",
+          "X": 2
+        },
+        {
+          "path": [
+            315,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "Out_CYw_Hnd_Feed_B_F_Auto[1]"
+        }
+      ]
+    }
+  ]
+}

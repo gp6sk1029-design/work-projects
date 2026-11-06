@@ -1,0 +1,29 @@
+{
+  "project": "3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I",
+  "internal_directory": "C:\\OMRON\\Data\\Solution\\6cb83995-6d0c-45b5-ace2-b96278ba04c8",
+  "before_sha": "b77bf6ddb2777e5f88376694d639b6403f588d963b5989114d4ce714ab8826d7",
+  "after_sha": "d6291985f5ff3fdf6ea130bc88f8131bc731951a2be0573b3ae4fbd1f0c065a0",
+  "backup": "C:\\Users\\SEIGI-N13\\work-projects\\outputs\\destacker-comments-20261105\\internal-before_20261105T110551Z_aa3541.zip",
+  "backup_files": 423,
+  "changed_files": [
+    "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+    "b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+    "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+    "fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml"
+  ],
+  "unchanged_files": 419,
+  "row_comments_updated": 29,
+  "step_element_comments_updated": 32,
+  "logic_identical": true,
+  "variable_declarations_identical": true,
+  "only_CMT_Com_EC_changed": true,
+  "native": {
+    "rows": 1375,
+    "parse_fail": 0,
+    "model_fail": 0,
+    "missing_connections": 0
+  },
+  "user_confirmed_closed": true,
+  "ui_reflection_verified": false,
+  "external_desktop_smc2_updated": false
+}

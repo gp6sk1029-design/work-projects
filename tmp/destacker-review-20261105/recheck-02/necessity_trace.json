@@ -1,0 +1,91 @@
+{
+  "without_M2": {
+    "memory": false,
+    "first_Start_ms": 100,
+    "first_Done_ms": 90,
+    "events": [
+      {
+        "model_ms": 0,
+        "RCON2_2_M[1]": false,
+        "RCON2_2_M[2]": false,
+        "RCON2_2_IN_PositionDone": true,
+        "RCON2_OUT[2].Control.Start": false,
+        "RCON2_2_MoveDone": false
+      },
+      {
+        "model_ms": 90,
+        "RCON2_2_M[1]": true,
+        "RCON2_2_M[2]": false,
+        "RCON2_2_IN_PositionDone": true,
+        "RCON2_OUT[2].Control.Start": false,
+        "RCON2_2_MoveDone": true
+      },
+      {
+        "model_ms": 100,
+        "RCON2_2_M[1]": false,
+        "RCON2_2_M[2]": false,
+        "RCON2_2_IN_PositionDone": true,
+        "RCON2_OUT[2].Control.Start": true,
+        "RCON2_2_MoveDone": true
+      }
+    ]
+  },
+  "with_M2": {
+    "memory": true,
+    "first_Start_ms": 100,
+    "first_Done_ms": 280,
+    "events": [
+      {
+        "model_ms": 0,
+        "RCON2_2_M[1]": false,
+        "RCON2_2_M[2]": false,
+        "RCON2_2_IN_PositionDone": true,
+        "RCON2_OUT[2].Control.Start": false,
+        "RCON2_2_MoveDone": false
+      },
+      {
+        "model_ms": 90,
+        "RCON2_2_M[1]": true,
+        "RCON2_2_M[2]": false,
+        "RCON2_2_IN_PositionDone": true,
+        "RCON2_OUT[2].Control.Start": false,
+        "RCON2_2_MoveDone": false
+      },
+      {
+        "model_ms": 100,
+        "RCON2_2_M[1]": true,
+        "RCON2_2_M[2]": false,
+        "RCON2_2_IN_PositionDone": true,
+        "RCON2_OUT[2].Control.Start": true,
+        "RCON2_2_MoveDone": false
+      },
+      {
+        "model_ms": 120,
+        "RCON2_2_M[1]": true,
+        "RCON2_2_M[2]": true,
+        "RCON2_2_IN_PositionDone": false,
+        "RCON2_OUT[2].Control.Start": true,
+        "RCON2_2_MoveDone": false
+      },
+      {
+        "model_ms": 200,
+        "RCON2_2_M[1]": true,
+        "RCON2_2_M[2]": true,
+        "RCON2_2_IN_PositionDone": false,
+        "RCON2_OUT[2].Control.Start": false,
+        "RCON2_2_MoveDone": false
+      },
+      {
+        "model_ms": 280,
+        "RCON2_2_M[1]": true,
+        "RCON2_2_M[2]": true,
+        "RCON2_2_IN_PositionDone": true,
+        "RCON2_OUT[2].Control.Start": false,
+        "RCON2_2_MoveDone": true
+      }
+    ]
+  },
+  "scope": "対象283/289/322/323/324の保存配線条件モデル。10msは検算刻みで実PLC周期・通信遅延の測定値ではない。許可成立とPEND初期ONを仮定。実機反応の遅延は比較用外部入力。",
+  "source_sha": "03503f0a22b52c46cbc5929e18c3fb6208bc22f67416b82f2d1ed6cc1be0adb3",
+  "source_unchanged": true
+}

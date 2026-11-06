@@ -1,0 +1,550 @@
+{
+  "scan_seconds": 22.91,
+  "folders": {
+    "fp7-diff": {
+      "files": 6992,
+      "bytes": 1838673964
+    },
+    "farewell-reception": {
+      "files": 44696,
+      "bytes": 1038608719
+    },
+    "plc-debugger": {
+      "files": 15155,
+      "bytes": 325045590
+    },
+    "tmp": {
+      "files": 561,
+      "bytes": 302443915
+    },
+    "drawing-checker": {
+      "files": 6562,
+      "bytes": 289467081
+    },
+    ".git": {
+      "files": 1252,
+      "bytes": 193178135
+    },
+    "outputs": {
+      "files": 125,
+      "bytes": 30160596
+    },
+    ".claude": {
+      "files": 684,
+      "bytes": 5529804
+    },
+    "MEMORY.md": {
+      "files": 1,
+      "bytes": 464169
+    },
+    "output": {
+      "files": 4,
+      "bytes": 386818
+    },
+    "media-transcriber": {
+      "files": 47,
+      "bytes": 379652
+    },
+    "tools": {
+      "files": 11,
+      "bytes": 105644
+    },
+    "winding-report": {
+      "files": 9,
+      "bytes": 101623
+    },
+    ".agents": {
+      "files": 10,
+      "bytes": 76643
+    },
+    "email-assistant": {
+      "files": 10,
+      "bytes": 66038
+    },
+    "farewell-docs": {
+      "files": 6,
+      "bytes": 60657
+    },
+    "AGENTS.md": {
+      "files": 1,
+      "bytes": 17937
+    },
+    "CLAUDE.md": {
+      "files": 1,
+      "bytes": 17635
+    },
+    "SETUP.md": {
+      "files": 1,
+      "bytes": 3696
+    },
+    ".codex": {
+      "files": 1,
+      "bytes": 1526
+    },
+    "setup_mac.sh": {
+      "files": 1,
+      "bytes": 784
+    },
+    ".gitignore": {
+      "files": 1,
+      "bytes": 707
+    },
+    "requirements.txt": {
+      "files": 1,
+      "bytes": 427
+    },
+    ".gitattributes": {
+      "files": 1,
+      "bytes": 119
+    }
+  },
+  "largest_files": [
+    {
+      "path": "farewell-reception\\node_modules\\@next\\swc-win32-x64-msvc\\next-swc.win32-x64-msvc.node",
+      "bytes": 136870912
+    },
+    {
+      "path": "farewell-reception\\node_modules\\@cloudflare\\workerd-windows-64\\bin\\workerd.exe",
+      "bytes": 90648064
+    },
+    {
+      "path": "drawing-checker\\client\\node_modules\\@napi-rs\\canvas-win32-x64-msvc\\skia.win32-x64-msvc.node",
+      "bytes": 28348928
+    },
+    {
+      "path": "farewell-reception\\.next\\dev\\cache\\turbopack\\v16.2.10\\00000028.sst",
+      "bytes": 19131222
+    },
+    {
+      "path": "farewell-reception\\node_modules\\@img\\sharp-win32-x64\\lib\\libvips-42.dll",
+      "bytes": 19112960
+    },
+    {
+      "path": "farewell-reception\\.next\\standalone\\node_modules\\@img\\sharp-win32-x64\\lib\\libvips-42.dll",
+      "bytes": 19112960
+    },
+    {
+      "path": "farewell-reception\\node_modules\\wrangler\\wrangler-dist\\cli.js",
+      "bytes": 14997815
+    },
+    {
+      "path": "farewell-reception\\.next\\cache\\webpack\\client-production\\0.pack",
+      "bytes": 14745315
+    },
+    {
+      "path": "drawing-checker\\client\\node_modules\\canvas\\build\\Release\\librsvg-2-2.dll",
+      "bytes": 14018786
+    },
+    {
+      "path": "farewell-reception\\.next\\cache\\webpack\\client-production\\2.pack",
+      "bytes": 12857283
+    },
+    {
+      "path": "farewell-reception\\.next\\cache\\webpack\\server-production\\0.pack",
+      "bytes": 12418097
+    },
+    {
+      "path": "plc-debugger\\client\\node_modules\\mermaid\\dist\\mermaid.min.js.map",
+      "bytes": 12193816
+    },
+    {
+      "path": "plc-debugger\\client\\node_modules\\mermaid\\dist\\mermaid.js.map",
+      "bytes": 12156049
+    },
+    {
+      "path": "farewell-reception\\.next\\dev\\cache\\turbopack\\v16.2.10\\00000012.sst",
+      "bytes": 12051973
+    },
+    {
+      "path": "farewell-reception\\node_modules\\wrangler\\node_modules\\@esbuild\\win32-x64\\esbuild.exe",
+      "bytes": 11670528
+    }
+  ],
+  "skipped_links": [
+    "tmp\\work-report-202610\\node_modules",
+    "tmp\\rcon-sysmac-io-20261017\\node_modules",
+    "tmp\\rcon-direct-io-20261017\\node_modules",
+    "tmp\\rcon-bible-20261017\\node_modules",
+    "tmp\\quote-fukunishi-20261019\\node_modules",
+    "tmp\\quote-20261019\\node_modules",
+    "tmp\\order-2717-techno\\node_modules",
+    "tmp\\order-2717-model1200\\node_modules",
+    "tmp\\order-2717-fukunishi\\node_modules",
+    "tmp\\order-2717-fit-equipment\\node_modules",
+    "tmp\\order-2717-2610A\\node_modules",
+    "tmp\\nts-20261028\\node_modules",
+    "tmp\\nts-20261021\\node_modules",
+    "tmp\\io-comments-20261023\\node_modules",
+    "tmp\\fukunishi-afpg804-20261030\\node_modules",
+    "tmp\\codex-file-test-20261102\\node_modules",
+    "outputs\\io_comment_prefix_20260828\\node_modules",
+    "outputs\\io2_unit8_20260828\\node_modules",
+    "outputs\\io-left-20260930\\node_modules",
+    "outputs\\circular_fix_20260915\\node_modules"
+  ],
+  "tracked_count": 948,
+  "tracked_types": [
+    [
+      ".py",
+      221
+    ],
+    [
+      ".png",
+      188
+    ],
+    [
+      ".json",
+      141
+    ],
+    [
+      ".ts",
+      84
+    ],
+    [
+      ".tsx",
+      56
+    ],
+    [
+      ".smc2",
+      33
+    ],
+    [
+      ".md",
+      23
+    ],
+    [
+      ".mjs",
+      23
+    ],
+    [
+      ".ps1",
+      21
+    ],
+    [
+      ".txt",
+      20
+    ],
+    [
+      ".ndjson",
+      20
+    ],
+    [
+      ".xml",
+      18
+    ],
+    [
+      ".bat",
+      15
+    ],
+    [
+      "",
+      10
+    ],
+    [
+      ".rels",
+      10
+    ]
+  ],
+  "tracked_large_files": [
+    {
+      "path": "tmp/section-merge-20261029/inspection.json",
+      "bytes": 7274836
+    },
+    {
+      "path": "tmp/section-organize-20261028/inspection.json",
+      "bytes": 7267464
+    },
+    {
+      "path": "tmp/error-proposal-20261028/inspection.json",
+      "bytes": 7125091
+    },
+    {
+      "path": "tmp/error-station-20261028/inspection.json",
+      "bytes": 7096481
+    },
+    {
+      "path": "tmp/cylinder-inline-20261029/inspection.json",
+      "bytes": 6601770
+    },
+    {
+      "path": "tmp/io-station-20261028/inspection.json",
+      "bytes": 6432322
+    },
+    {
+      "path": "tmp/tray-rename-20261028/inspection.json",
+      "bytes": 6431911
+    },
+    {
+      "path": "tmp/rcon-axis-names-20261027/inspection.json",
+      "bytes": 6352208
+    },
+    {
+      "path": "tmp/rcon2-five-20261030/inspection.json",
+      "bytes": 5983872
+    },
+    {
+      "path": "tmp/rcon3-role-20261027/inspection.json",
+      "bytes": 5640191
+    },
+    {
+      "path": "tmp/rcon-simple-20261026/inspection.json",
+      "bytes": 5586578
+    },
+    {
+      "path": "tmp/rcon1-six-20261026/inspection.json",
+      "bytes": 5448561
+    },
+    {
+      "path": "tmp/st6-rev2-20261026/inspection.json",
+      "bytes": 5390793
+    },
+    {
+      "path": "tmp/st5-ca2-20261026/inspection.json",
+      "bytes": 5319441
+    },
+    {
+      "path": "tmp/rcon-rebind-20261023/inspection.json",
+      "bytes": 5178006
+    }
+  ],
+  "git_log_command_count": 49,
+  "git_log_max_ms": 1411.0,
+  "git_errors": [
+    {
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-25940-t0-i1-011317-0.log",
+      "line": 19,
+      "time": "2026-11-02T01:26:09.569Z",
+      "kind": "git-error",
+      "duration": "110",
+      "command": ""
+    },
+    {
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-25940-t0-i1-011317-0.log",
+      "line": 20,
+      "time": "2026-11-02T01:26:13.646Z",
+      "kind": "git-error",
+      "duration": "119",
+      "command": "git -c attr.tree= -c core.attributesFile= -c filter.lfs.clean= -c filter.lfs.smudge= -c filter.lfs.process= -c filter.lfs.required=false -c safe.bareRepository=explicit -c core.hoo"
+    },
+    {
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-25940-t0-i1-011317-0.log",
+      "line": 21,
+      "time": "2026-11-02T01:28:09.512Z",
+      "kind": "git-error",
+      "duration": "177",
+      "command": "git -c attr.tree= -c core.attributesFile= -c filter.lfs.clean= -c filter.lfs.smudge= -c filter.lfs.process= -c filter.lfs.required=false -c safe.bareRepository=explicit -c core.hoo"
+    },
+    {
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-25940-t0-i1-011317-0.log",
+      "line": 22,
+      "time": "2026-11-02T01:28:31.009Z",
+      "kind": "git-error",
+      "duration": "277",
+      "command": "git -c safe.bareRepository=explicit -c core.hooksPath=NUL -c core.fsmonitor= hash-object --stdin-paths"
+    },
+    {
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-25940-t0-i1-011317-0.log",
+      "line": 23,
+      "time": "2026-11-02T01:28:32.188Z",
+      "kind": "git-error",
+      "duration": "234",
+      "command": "git -c diff.mnemonicPrefix=false -c diff.noprefix=false -c core.quotePath=false -c safe.bareRepository=explicit -c core.hooksPath=NUL -c core.fsmonitor= diff --no-ext-diff --no-tex"
+    },
+    {
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-25940-t0-i1-011317-0.log",
+      "line": 24,
+      "time": "2026-11-02T01:28:36.759Z",
+      "kind": "git-error",
+      "duration": "133",
+      "command": "git -c diff.mnemonicPrefix=false -c diff.noprefix=false -c core.quotePath=false -c safe.bareRepository=explicit -c core.hooksPath=NUL -c core.fsmonitor= diff --no-ext-diff --no-tex"
+    },
+    {
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-25940-t0-i1-011317-0.log",
+      "line": 25,
+      "time": "2026-11-02T01:28:37.114Z",
+      "kind": "git-error",
+      "duration": "32",
+      "command": "git -c diff.mnemonicPrefix=false -c diff.noprefix=false -c core.quotePath=false -c safe.bareRepository=explicit -c core.hooksPath=NUL -c core.fsmonitor= diff --no-ext-diff --no-tex"
+    },
+    {
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-25940-t0-i1-011317-0.log",
+      "line": 26,
+      "time": "2026-11-02T01:28:48.415Z",
+      "kind": "git-error",
+      "duration": "106",
+      "command": "git -c diff.mnemonicPrefix=false -c diff.noprefix=false -c core.quotePath=false -c safe.bareRepository=explicit -c core.hooksPath=NUL -c core.fsmonitor= diff --no-ext-diff --no-tex"
+    },
+    {
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-25940-t0-i1-011317-0.log",
+      "line": 27,
+      "time": "2026-11-02T01:28:48.815Z",
+      "kind": "git-error",
+      "duration": "118",
+      "command": "git -c diff.mnemonicPrefix=false -c diff.noprefix=false -c core.quotePath=false -c safe.bareRepository=explicit -c core.hooksPath=NUL -c core.fsmonitor= diff --no-ext-diff --no-tex"
+    },
+    {
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-25940-t0-i1-011317-0.log",
+      "line": 28,
+      "time": "2026-11-02T01:28:49.874Z",
+      "kind": "git-error",
+      "duration": "38",
+      "command": ""
+    },
+    {
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-25940-t0-i1-011317-0.log",
+      "line": 29,
+      "time": "2026-11-02T01:28:52.213Z",
+      "kind": "git-error",
+      "duration": "90",
+      "command": "git -c diff.mnemonicPrefix=false -c diff.noprefix=false -c core.quotePath=false -c safe.bareRepository=explicit -c core.hooksPath=NUL -c core.fsmonitor= diff --no-ext-diff --no-tex"
+    },
+    {
+      "file": "codex-desktop-df40ce0d-4117-477e-a394-cd85bdd60566-19496-t0-i1-001325-0.log",
+      "line": 4,
+      "time": "2026-11-02T00:13:32.594Z",
+      "kind": "git-error",
+      "duration": "525",
+      "command": "git -c diff.mnemonicPrefix=false -c diff.noprefix=false -c core.quotePath=false -c safe.bareRepository=explicit -c core.hooksPath=NUL -c core.fsmonitor= diff --no-ext-diff --no-tex"
+    },
+    {
+      "file": "codex-desktop-df40ce0d-4117-477e-a394-cd85bdd60566-19496-t0-i1-001325-0.log",
+      "line": 10,
+      "time": "2026-11-02T00:16:15.415Z",
+      "kind": "git-error",
+      "duration": "1411",
+      "command": "git -c safe.bareRepository=explicit -c core.hooksPath=NUL -c core.fsmonitor= add --sparse --pathspec-from-file=- --pathspec-file-nul"
+    },
+    {
+      "file": "codex-desktop-df40ce0d-4117-477e-a394-cd85bdd60566-19496-t0-i1-001325-0.log",
+      "line": 12,
+      "time": "2026-11-02T00:17:16.728Z",
+      "kind": "git-error",
+      "duration": "69",
+      "command": ""
+    },
+    {
+      "file": "codex-desktop-df40ce0d-4117-477e-a394-cd85bdd60566-19496-t0-i1-001325-0.log",
+      "line": 14,
+      "time": "2026-11-02T00:20:25.934Z",
+      "kind": "git-error",
+      "duration": "1287",
+      "command": "git -c safe.bareRepository=explicit -c core.hooksPath=NUL -c core.fsmonitor= add --sparse --pathspec-from-file=- --pathspec-file-nul"
+    }
+  ],
+  "attachment_events": [
+    {
+      "file": "codex-desktop-5371e537-a2a7-4be3-afe4-bfeb7e60a2d9-29264-t0-i1-000027-0.log",
+      "line": 144,
+      "prefix": "2026-11-02T00:08:12.170Z warning [electron-message-handler] sa_server_request_failed attachAuth=true errorCode=undefined errorMessage=\"Authenticated workspace changed\" errorName=Error errorStack=\"Error: Authenticated workspace changed\\n    at udt (app://-/assets/app-initial-4267e52fe5b0.js:203:197520)\\n    at async e.fetch (app://-/assets/app-initi"
+    },
+    {
+      "file": "codex-desktop-5371e537-a2a7-4be3-afe4-bfeb7e60a2d9-29264-t0-i1-000027-0.log",
+      "line": 145,
+      "prefix": "2026-11-02T00:08:12.232Z warning [electron-message-handler] sa_server_request_failed attachAuth=true errorCode=undefined errorMessage=\"Authenticated workspace changed\" errorName=Error errorStack=\"Error: Authenticated workspace changed\\n    at udt (app://-/assets/app-initial-4267e52fe5b0.js:203:197520)\\n    at async e.fetch (app://-/assets/app-initi"
+    },
+    {
+      "file": "codex-desktop-5371e537-a2a7-4be3-afe4-bfeb7e60a2d9-29264-t0-i1-000027-0.log",
+      "line": 146,
+      "prefix": "2026-11-02T00:08:12.233Z warning [electron-message-handler] sa_server_request_failed attachAuth=true errorCode=undefined errorMessage=\"Authenticated workspace changed\" errorName=Error errorStack=\"Error: Authenticated workspace changed\\n    at udt (app://-/assets/app-initial-4267e52fe5b0.js:203:197520)\\n    at async e.fetch (app://-/assets/app-initi"
+    }
+  ],
+  "send_timeouts": [
+    {
+      "file": "codex-desktop-58ba094a-3461-4cfa-83e0-1ff42843b894-24312-t0-i1-003829-0.log",
+      "line": 2599,
+      "time": "2026-11-02T00:49:24.910Z",
+      "request": "772a7a1c-1aab-45ce-8912-11dd8858eca2",
+      "durationMs": "300016.2000000002",
+      "stage": "client.first_response"
+    },
+    {
+      "file": "codex-desktop-58ba094a-3461-4cfa-83e0-1ff42843b894-24312-t0-i1-003829-0.log",
+      "line": 2600,
+      "time": "2026-11-02T00:49:24.910Z",
+      "request": "772a7a1c-1aab-45ce-8912-11dd8858eca2",
+      "durationMs": "300016.2000000002",
+      "stage": "client.round_trip"
+    },
+    {
+      "file": "codex-desktop-58ba094a-3461-4cfa-83e0-1ff42843b894-24312-t0-i1-003829-0.log",
+      "line": 2637,
+      "time": "2026-11-02T00:49:38.709Z",
+      "request": "5c177ebb-5cea-4948-9fe7-18905194831d",
+      "durationMs": "300000.69999999995",
+      "stage": "client.first_response"
+    },
+    {
+      "file": "codex-desktop-58ba094a-3461-4cfa-83e0-1ff42843b894-24312-t0-i1-003829-0.log",
+      "line": 2638,
+      "time": "2026-11-02T00:49:38.710Z",
+      "request": "5c177ebb-5cea-4948-9fe7-18905194831d",
+      "durationMs": "300000.69999999995",
+      "stage": "client.round_trip"
+    },
+    {
+      "file": "codex-desktop-58ba094a-3461-4cfa-83e0-1ff42843b894-24312-t0-i1-003829-0.log",
+      "line": 2750,
+      "time": "2026-11-02T00:50:04.333Z",
+      "request": "60da4cd2-f104-4a94-a32d-94a172210215",
+      "durationMs": "300015.8999999999",
+      "stage": "client.first_response"
+    },
+    {
+      "file": "codex-desktop-58ba094a-3461-4cfa-83e0-1ff42843b894-24312-t0-i1-003829-0.log",
+      "line": 2751,
+      "time": "2026-11-02T00:50:04.334Z",
+      "request": "60da4cd2-f104-4a94-a32d-94a172210215",
+      "durationMs": "300015.8999999999",
+      "stage": "client.round_trip"
+    },
+    {
+      "file": "codex-desktop-58ba094a-3461-4cfa-83e0-1ff42843b894-24312-t0-i1-003829-0.log",
+      "line": 2877,
+      "time": "2026-11-02T00:52:32.929Z",
+      "request": "ba76ec87-7ddf-43d3-8dcf-b9bc8b378bf7",
+      "durationMs": "300811.6000000001",
+      "stage": "client.first_response"
+    },
+    {
+      "file": "codex-desktop-58ba094a-3461-4cfa-83e0-1ff42843b894-24312-t0-i1-003829-0.log",
+      "line": 2878,
+      "time": "2026-11-02T00:52:32.929Z",
+      "request": "ba76ec87-7ddf-43d3-8dcf-b9bc8b378bf7",
+      "durationMs": "300811.6000000001",
+      "stage": "client.round_trip"
+    },
+    {
+      "file": "codex-desktop-8b37118e-ac01-42b5-b0a2-e7e324cb1bc4-12432-t0-i1-002345-0.log",
+      "line": 1418,
+      "time": "2026-11-02T00:34:53.219Z",
+      "request": "c5585dac-fd31-4f1f-9f33-ce517c2de4db",
+      "durationMs": "300010.8999999999",
+      "stage": "client.first_response"
+    },
+    {
+      "file": "codex-desktop-8b37118e-ac01-42b5-b0a2-e7e324cb1bc4-12432-t0-i1-002345-0.log",
+      "line": 1419,
+      "time": "2026-11-02T00:34:53.219Z",
+      "request": "c5585dac-fd31-4f1f-9f33-ce517c2de4db",
+      "durationMs": "300010.8999999999",
+      "stage": "client.round_trip"
+    },
+    {
+      "file": "codex-desktop-8b37118e-ac01-42b5-b0a2-e7e324cb1bc4-12432-t0-i1-002345-0.log",
+      "line": 1948,
+      "time": "2026-11-02T00:37:32.543Z",
+      "request": "7a8938eb-d8cf-4584-ae94-a862f8b61722",
+      "durationMs": "300008.19999999995",
+      "stage": "client.first_response"
+    },
+    {
+      "file": "codex-desktop-8b37118e-ac01-42b5-b0a2-e7e324cb1bc4-12432-t0-i1-002345-0.log",
+      "line": 1949,
+      "time": "2026-11-02T00:37:32.544Z",
+      "request": "7a8938eb-d8cf-4584-ae94-a862f8b61722",
+      "durationMs": "300008.19999999995",
+      "stage": "client.round_trip"
+    }
+  ],
+  "unique_timeout_requests": 10
+}

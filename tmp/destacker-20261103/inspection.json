@@ -1,0 +1,510 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261103A.smc2",
+  "sha256": "a84be805a1b95f52694e48c5e7db3fca2b2419fa03622c4b80fccc5c68d51d86",
+  "target": "4d40b48b-c7cd-4fe0-a325-38bbc4574a45/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml",
+  "row_count": 19,
+  "view": [
+    {
+      "行": 0,
+      "コイル": [
+        "Destacker_M[1]"
+      ],
+      "参照": [
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[1]",
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 2,
+          "Var": "Destacker_M[1]",
+          "X": 1
+        }
+      ]
+    },
+    {
+      "行": 1,
+      "コイル": [
+        "Destacker_M[2]"
+      ],
+      "参照": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[2]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[3]",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[2]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "行": 2,
+      "コイル": [
+        "Destacker_M[3]",
+        "Destacker_M[4]",
+        "Destacker_M[5]"
+      ],
+      "参照": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[2]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[3]",
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[3]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "Destacker_M[4]",
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 6,
+          "Var": "Destacker_M[5]",
+          "X": 4,
+          "Y": 2
+        }
+      ]
+    },
+    {
+      "行": 3,
+      "コイル": [
+        "Destacker_M[7]"
+      ],
+      "参照": [
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[3]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[5]",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Destacker_M[7]",
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[7]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "行": 4,
+      "コイル": [
+        "Destacker_M[8]"
+      ],
+      "参照": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[7]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[8]",
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[8]",
+          "X": 4
+        }
+      ]
+    },
+    {
+      "行": 5,
+      "コイル": [
+        "Destacker_M[8]"
+      ],
+      "参照": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[8]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Destacker_M[8]",
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[8]",
+          "X": 4
+        }
+      ]
+    },
+    {
+      "行": 6,
+      "コイル": [
+        "Destacker_M[10]"
+      ],
+      "参照": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[9]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Destacker_M[10]",
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[10]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "行": 7,
+      "コイル": [
+        "Destacker_M[11]"
+      ],
+      "参照": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[10]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[11]",
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[11]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "行": 8,
+      "コイル": [
+        "Destacker_M[12]"
+      ],
+      "参照": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[11]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Destacker_M[4]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[12]",
+          "Y": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[12]",
+          "X": 2
+        }
+      ]
+    },
+    {
+      "行": 9,
+      "コイル": [
+        "Destacker_M[11]"
+      ],
+      "参照": [
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[12]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[11]",
+          "Y": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 7,
+          "Var": "Destacker_M[11]",
+          "X": 4
+        }
+      ]
+    },
+    {
+      "行": 10,
+      "コイル": [
+        "Destacker_M[12]"
+      ],
+      "参照": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[11]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Destacker_M[12]",
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[12]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "行": 11,
+      "コイル": [
+        "Destacker_M[13]"
+      ],
+      "参照": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[12]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[13]",
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Destacker_M[13]",
+          "X": 9
+        }
+      ]
+    },
+    {
+      "行": 12,
+      "コイル": [
+        "Destacker_M[14]"
+      ],
+      "参照": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[13]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[14]",
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 3,
+          "Var": "Destacker_M[14]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "行": 13,
+      "コイル": [
+        "Destacker_M[15]"
+      ],
+      "参照": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[14]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Destacker_M[15]",
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[15]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "行": 14,
+      "コイル": [
+        "Destacker_M[16]",
+        "Destacker_M[17]",
+        "Destacker_M[18]"
+      ],
+      "参照": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[15]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Destacker_M[16]",
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 6,
+          "Var": "Destacker_M[16]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 7,
+          "Var": "Destacker_M[17]",
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 8,
+          "Var": "Destacker_M[18]",
+          "X": 4,
+          "Y": 2
+        }
+      ]
+    },
+    {
+      "行": 15,
+      "コイル": [
+        "Destacker_M[19]"
+      ],
+      "参照": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[16]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[17]",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[19]",
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[19]",
+          "X": 4
+        }
+      ]
+    },
+    {
+      "行": 16,
+      "コイル": [
+        "Destacker_M[20]"
+      ],
+      "参照": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[19]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[20]",
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[20]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "行": 17,
+      "コイル": [
+        "Destacker_M[21]"
+      ],
+      "参照": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[20]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Destacker_M[18]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[21]",
+          "Y": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "Destacker_M[21]",
+          "X": 4
+        }
+      ]
+    },
+    {
+      "行": 18,
+      "コイル": [],
+      "参照": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[21]"
+        }
+      ]
+    }
+  ],
+  "outside_references": []
+}

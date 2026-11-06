@@ -1,0 +1,72 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105A.smc2",
+  "sha256": "eb5453f3f45201ade83143691b009904fec462a03e706407e4235b53d1acd91c",
+  "sections": [],
+  "references": [
+    {
+      "section": "BoxPacking_箱詰め",
+      "part": "958400db-250a-402f-af2f-b9d770ce691a/6061835d-1e51-4e92-be1f-d546f44764e3.xml",
+      "indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "reference_count": 141
+    }
+  ],
+  "declarations": [
+    {
+      "part": "958400db-250a-402f-af2f-b9d770ce691a/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=ARRAY[0..99] OF Bool\tN=BoxPacking_M\tG=VAR\tCom=箱詰め："
+    }
+  ],
+  "target": {
+    "name": "BoxPacking_箱詰め",
+    "part": "958400db-250a-402f-af2f-b9d770ce691a/6061835d-1e51-4e92-be1f-d546f44764e3.xml"
+  },
+  "row_count": 41
+}

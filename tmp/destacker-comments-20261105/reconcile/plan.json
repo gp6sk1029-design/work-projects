@@ -1,0 +1,41 @@
+{
+  "source_sha256": "1a69caa301b435e05785041f91f759e216faf10cef691512bfe49f7c4cb0d06c",
+  "operations": [
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml",
+      "expected_sha256": "7728d8966c52383461f863de642b2ab6a44fbde1c8d91699be219ac755418ca9",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-comments-20261105\\reconcile\\ladder.bin"
+    },
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "expected_sha256": "d0835678e22e366d54271f617fb86127e9dc996f172734021941773b74ed91dc",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-comments-20261105\\reconcile\\b530d740-9d69-41c3-974a-97c06e823eb2.bin"
+    },
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "expected_sha256": "7e92b8e5617b861c8a2d81361e3287318492a3dc0ebb3bed4486fde8e94bd869",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-comments-20261105\\reconcile\\86df70c5-aaad-4d2c-bba7-04264d7b7f32.bin"
+    },
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "expected_sha256": "b963e4f49cbe39746fe001c69bf65ed336270ec4828c0abb08753804334531ab",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-comments-20261105\\reconcile\\f07dd06c-505c-431b-b9fc-098949805b4e.bin"
+    },
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/298443e5-40dc-47d4-95bf-46c8fde7d5ae.oem",
+      "expected_sha256": "3a8565bae551f78a36895834650c42b5ba6f20ac08b1712b1884a09eaae2f9eb",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-comments-20261105\\reconcile\\external_oem.bin"
+    },
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/298443e5-40dc-47d4-95bf-46c8fde7d5ae.xml",
+      "expected_sha256": "14a292b18c4b507b89a2fd0a1b3e9a84f3df67998195a93141477fdc52ffb739",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-comments-20261105\\reconcile\\external_root.bin"
+    }
+  ]
+}

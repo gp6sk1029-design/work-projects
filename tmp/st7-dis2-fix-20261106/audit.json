@@ -1,0 +1,175 @@
+{
+  "candidate": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\st7-dis2-fix-20261106\\A_candidate_v6.smc2",
+  "sha256": "b68d69fca590668fdf1aaad81000e0499ea5eb936db99e890b756faf51e2db0c",
+  "sections": [
+    {
+      "section": "Error_エラー処理",
+      "old_rows": 41,
+      "new_rows": 41
+    },
+    {
+      "section": "ST7_A_Dis2_左SF排出",
+      "old_rows": 32,
+      "new_rows": 54
+    },
+    {
+      "section": "RCON_IAI",
+      "old_rows": 457,
+      "new_rows": 459
+    }
+  ],
+  "other_22_sections_identical": true,
+  "user_modified_row16_preserved": true,
+  "request_writers_and_receivers_verified": 16,
+  "B_side_sensor_references_in_ST7": 0,
+  "existing_variable_declarations_unchanged": true,
+  "added_declarations": [
+    {
+      "table": "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "declaration": {
+        "D": "BOOL",
+        "N": "TimerQ_In_Sen_SH_A_Ext",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "table": "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "declaration": {
+        "D": "BOOL",
+        "N": "In_Sw_RESET",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "table": "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "declaration": {
+        "D": "TON",
+        "N": "ST7_A_SF_Watch_TON",
+        "G": "VAR",
+        "R": "0",
+        "Const": "0",
+        "RO": "0"
+      }
+    },
+    {
+      "table": "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "declaration": {
+        "D": "BOOL",
+        "N": "TimerQ_In_Sen_SH_A_Ent",
+        "G": "VAR_EXTERNAL"
+      }
+    }
+  ],
+  "RCON_physical_output_and_other_rows_unchanged": true,
+  "source_J_unchanged": true,
+  "turn_endpoint_cases": [
+    {
+      "H": false,
+      "F": false,
+      "start": false,
+      "error": true
+    },
+    {
+      "H": false,
+      "F": true,
+      "start": true,
+      "error": false
+    },
+    {
+      "H": true,
+      "F": false,
+      "start": true,
+      "error": false
+    },
+    {
+      "H": true,
+      "F": true,
+      "start": false,
+      "error": true
+    }
+  ],
+  "rotation_timeout_10s_test": true,
+  "invalid_pitch_count_reset_tests": 3,
+  "initialization_gate_cases": 2,
+  "local_conditions": {
+    "candidate_sha": "b68d69fca590668fdf1aaad81000e0499ea5eb936db99e890b756faf51e2db0c",
+    "results": [
+      {
+        "test": "OKだけ送り行・NGは送り不要、OKだけ送り完了待ち",
+        "cases": 6,
+        "passed": true
+      },
+      {
+        "test": "OK/キズNG/姿NGの下降要求",
+        "cases": 3,
+        "passed": true
+      },
+      {
+        "test": "上下軸5要求各1コイル",
+        "cases": 5,
+        "passed": true
+      },
+      {
+        "test": "A側有無・満杯・空ワーク完了",
+        "cases": 8,
+        "passed": true
+      },
+      {
+        "test": "8移動のDone OFF記憶・保持・工程終了で解除",
+        "cases": 32,
+        "passed": true
+      },
+      {
+        "test": "全下降枝の設定異常/回転中禁止",
+        "cases": 12,
+        "passed": true
+      },
+      {
+        "test": "初回と再試行の段数許可",
+        "cases": 4,
+        "passed": true
+      },
+      {
+        "test": "同一ワークRetryでも加算1回",
+        "cases": 4,
+        "passed": true
+      },
+      {
+        "test": "基準3とピッチ計算",
+        "cases": 7,
+        "passed": true
+      },
+      {
+        "test": "End保持とNext解除",
+        "cases": 8,
+        "passed": true
+      },
+      {
+        "test": "RCON2軸の今回PEND OFF/ON確認",
+        "cases": 2,
+        "passed": true
+      },
+      {
+        "test": "要求ORが連続でも2移動を再受付",
+        "cases": 2,
+        "passed": true
+      }
+    ],
+    "scope": "局所条件モデル。10msは仮刻み。実出力P_Offは維持したまま内部受付を検算。全体ビルド/実機ではない。"
+  },
+  "flow": {
+    "runs": 4,
+    "items_per_run": 15,
+    "scope": "主工程54行と対象2軸の内部受付・今回完了を接続。シリンダDone/PEND/センサーは仮想外部応答。実出力P_Offは解除せず、実通信/Output全体との機械結合は未検証。10msはモデル刻み。"
+  },
+  "native": {
+    "rows": 1399,
+    "coils": 1620,
+    "parse_fail": 0,
+    "model_fail": 0,
+    "missing_connections": 0,
+    "verified": true
+  },
+  "full_application_build": false,
+  "machine_test": false
+}

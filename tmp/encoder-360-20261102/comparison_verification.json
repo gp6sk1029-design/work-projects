@@ -1,0 +1,22 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\encoder-360-20261102\\G列変更前バックアップ.xlsx",
+  "output": "C:\\Users\\SEIGI-N13\\work-projects\\outputs\\encoder-comparison-20261102\\1029_1332エンコーダ基準_比較グラフ.xlsx",
+  "desktop": "C:\\Users\\SEIGI-N13\\Desktop\\1029_1332エンコーダ基準_比較グラフ_G列.xlsx",
+  "source_sha256": "deeabddc373e8ef859bf2aef42b4e5a97fdcd0ef08827e5edae69604ed9190bc",
+  "output_sha256": "52a1361f351ec31f90142dc9f6d84317c650a9738b2bd52ca082e63993073340",
+  "changed_parts": [
+    "xl/charts/chart5.xml"
+  ],
+  "all_other_parts_byte_identical": true,
+  "original_series_preserved": true,
+  "added_points": 360,
+  "x_degrees": [
+    0,
+    359
+  ],
+  "y_reference": "Sheet1!$G$4:$G$363",
+  "color": "ED7D31",
+  "line": "solid",
+  "all_XML_parse": true,
+  "native_excel_open_check": "未実施"
+}

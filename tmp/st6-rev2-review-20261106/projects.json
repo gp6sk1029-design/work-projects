@@ -1,0 +1,29 @@
+[
+  {
+    "name": "3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I",
+    "path": "C:\\OMRON\\Data\\Solution\\6cb83995-6d0c-45b5-ace2-b96278ba04c8",
+    "sha": "b39252a91cecd5d3bcfbbfa6e0c4783201884e6f3c8617feb6a15b541505fe80",
+    "date": "2026-11-05T20:30:13.766787+09:00",
+    "section_sha": "d80c8e8435ec32e6e19ad50a4a17cadfe8d7fab59b5c38ac51ff7b151f47570f",
+    "part": "a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml",
+    "rows": 17
+  },
+  {
+    "name": "3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105J",
+    "path": "C:\\OMRON\\Data\\Solution\\85803125-b6b9-4b89-9876-9e69c63c283a",
+    "sha": "465a630dd6be6c76e3d34090bcb305cf6dc4df079c78f68963431357d88ead36",
+    "date": "2026-11-05T20:35:24.0938243+09:00",
+    "section_sha": "d80c8e8435ec32e6e19ad50a4a17cadfe8d7fab59b5c38ac51ff7b151f47570f",
+    "part": "a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml",
+    "rows": 17
+  },
+  {
+    "name": "3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I_4",
+    "path": "C:\\OMRON\\Data\\Solution\\92520fc5-27a3-404e-be18-19be28d9b648",
+    "sha": "f537b85bd5d5c415b5d2bb64837ea0150b24b38cf9fa9a7048596fcec8aace82",
+    "date": "2026-11-05T20:30:13.766787+09:00",
+    "section_sha": "d80c8e8435ec32e6e19ad50a4a17cadfe8d7fab59b5c38ac51ff7b151f47570f",
+    "part": "a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml",
+    "rows": 17
+  }
+]

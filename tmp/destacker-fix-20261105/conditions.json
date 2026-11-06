@@ -1,0 +1,231 @@
+{
+  "candidate_sha": "1a69caa301b435e05785041f91f759e216faf10cef691512bfe49f7c4cb0d06c",
+  "results": [
+    {
+      "test": "6移動のDone OFF確認と完了待ち・自己保持",
+      "cases": 288
+    },
+    {
+      "test": "初回開始のBusy/完了共通条件",
+      "cases": 32
+    },
+    {
+      "test": "初回Busyの保持と解除",
+      "cases": 8
+    },
+    {
+      "test": "初回から通常への受渡し後に初回済みを保持",
+      "cases": 16
+    },
+    {
+      "test": "初回済みで開始・爪保持・判定を解除",
+      "cases": 3
+    },
+    {
+      "test": "既存工程番号保持・ユーザー修正12行保全・他24節不変・M1～32各1コイル",
+      "cases": 1
+    },
+    {
+      "test": "初回1回→段バラシ3サイクル→次入口の条件モデル",
+      "cases": 16,
+      "scope": "全29行。軸・シリンダの完了とセンサー変化は外部供給。RCON受け側・Output駆動・通信・実機の結合モデルではない。"
+    }
+  ],
+  "runs": [
+    {
+      "initial_position": 0,
+      "two_stages": false,
+      "axis_delay": 3,
+      "cyl_delay": 5,
+      "done_hold": 1,
+      "initial_wait": 0,
+      "model_scans": 92,
+      "initial_runs": 1,
+      "ends": 3,
+      "entries": 4
+    },
+    {
+      "initial_position": 0,
+      "two_stages": false,
+      "axis_delay": 3,
+      "cyl_delay": 5,
+      "done_hold": 1,
+      "initial_wait": 5,
+      "model_scans": 97,
+      "initial_runs": 1,
+      "ends": 3,
+      "entries": 4
+    },
+    {
+      "initial_position": 0,
+      "two_stages": false,
+      "axis_delay": 3,
+      "cyl_delay": 5,
+      "done_hold": 10,
+      "initial_wait": 0,
+      "model_scans": 102,
+      "initial_runs": 1,
+      "ends": 3,
+      "entries": 4
+    },
+    {
+      "initial_position": 0,
+      "two_stages": false,
+      "axis_delay": 3,
+      "cyl_delay": 5,
+      "done_hold": 10,
+      "initial_wait": 5,
+      "model_scans": 107,
+      "initial_runs": 1,
+      "ends": 3,
+      "entries": 4
+    },
+    {
+      "initial_position": 0,
+      "two_stages": true,
+      "axis_delay": 3,
+      "cyl_delay": 5,
+      "done_hold": 1,
+      "initial_wait": 0,
+      "model_scans": 116,
+      "initial_runs": 1,
+      "ends": 3,
+      "entries": 4
+    },
+    {
+      "initial_position": 0,
+      "two_stages": true,
+      "axis_delay": 3,
+      "cyl_delay": 5,
+      "done_hold": 1,
+      "initial_wait": 5,
+      "model_scans": 121,
+      "initial_runs": 1,
+      "ends": 3,
+      "entries": 4
+    },
+    {
+      "initial_position": 0,
+      "two_stages": true,
+      "axis_delay": 3,
+      "cyl_delay": 5,
+      "done_hold": 10,
+      "initial_wait": 0,
+      "model_scans": 141,
+      "initial_runs": 1,
+      "ends": 3,
+      "entries": 4
+    },
+    {
+      "initial_position": 0,
+      "two_stages": true,
+      "axis_delay": 3,
+      "cyl_delay": 5,
+      "done_hold": 10,
+      "initial_wait": 5,
+      "model_scans": 146,
+      "initial_runs": 1,
+      "ends": 3,
+      "entries": 4
+    },
+    {
+      "initial_position": 50,
+      "two_stages": false,
+      "axis_delay": 3,
+      "cyl_delay": 5,
+      "done_hold": 1,
+      "initial_wait": 0,
+      "model_scans": 112,
+      "initial_runs": 1,
+      "ends": 3,
+      "entries": 4
+    },
+    {
+      "initial_position": 50,
+      "two_stages": false,
+      "axis_delay": 3,
+      "cyl_delay": 5,
+      "done_hold": 1,
+      "initial_wait": 5,
+      "model_scans": 117,
+      "initial_runs": 1,
+      "ends": 3,
+      "entries": 4
+    },
+    {
+      "initial_position": 50,
+      "two_stages": false,
+      "axis_delay": 3,
+      "cyl_delay": 5,
+      "done_hold": 10,
+      "initial_wait": 0,
+      "model_scans": 141,
+      "initial_runs": 1,
+      "ends": 3,
+      "entries": 4
+    },
+    {
+      "initial_position": 50,
+      "two_stages": false,
+      "axis_delay": 3,
+      "cyl_delay": 5,
+      "done_hold": 10,
+      "initial_wait": 5,
+      "model_scans": 146,
+      "initial_runs": 1,
+      "ends": 3,
+      "entries": 4
+    },
+    {
+      "initial_position": 50,
+      "two_stages": true,
+      "axis_delay": 3,
+      "cyl_delay": 5,
+      "done_hold": 1,
+      "initial_wait": 0,
+      "model_scans": 136,
+      "initial_runs": 1,
+      "ends": 3,
+      "entries": 4
+    },
+    {
+      "initial_position": 50,
+      "two_stages": true,
+      "axis_delay": 3,
+      "cyl_delay": 5,
+      "done_hold": 1,
+      "initial_wait": 5,
+      "model_scans": 141,
+      "initial_runs": 1,
+      "ends": 3,
+      "entries": 4
+    },
+    {
+      "initial_position": 50,
+      "two_stages": true,
+      "axis_delay": 3,
+      "cyl_delay": 5,
+      "done_hold": 10,
+      "initial_wait": 0,
+      "model_scans": 180,
+      "initial_runs": 1,
+      "ends": 3,
+      "entries": 4
+    },
+    {
+      "initial_position": 50,
+      "two_stages": true,
+      "axis_delay": 3,
+      "cyl_delay": 5,
+      "done_hold": 10,
+      "initial_wait": 5,
+      "model_scans": 185,
+      "initial_runs": 1,
+      "ends": 3,
+      "entries": 4
+    }
+  ],
+  "full_application_build": false,
+  "plc_simulation": false,
+  "machine_test": false
+}

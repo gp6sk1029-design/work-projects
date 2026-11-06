@@ -1,0 +1,2522 @@
+[
+  {
+    "number": 1,
+    "source": "E14",
+    "destination": "G5",
+    "value": -0.011711111111111113,
+    "match": true
+  },
+  {
+    "number": 2,
+    "source": "E24",
+    "destination": "G6",
+    "value": -0.018411111111111135,
+    "match": true
+  },
+  {
+    "number": 3,
+    "source": "E34",
+    "destination": "G7",
+    "value": -0.007549999999999997,
+    "match": true
+  },
+  {
+    "number": 4,
+    "source": "E44",
+    "destination": "G8",
+    "value": -0.0010888888888889326,
+    "match": true
+  },
+  {
+    "number": 5,
+    "source": "E54",
+    "destination": "G9",
+    "value": 0.011966666666666608,
+    "match": true
+  },
+  {
+    "number": 6,
+    "source": "E64",
+    "destination": "G10",
+    "value": 0.02722222222222214,
+    "match": true
+  },
+  {
+    "number": 7,
+    "source": "E74",
+    "destination": "G11",
+    "value": 0.031494444444444394,
+    "match": true
+  },
+  {
+    "number": 8,
+    "source": "E84",
+    "destination": "G12",
+    "value": 0.0335722222222222,
+    "match": true
+  },
+  {
+    "number": 9,
+    "source": "E94",
+    "destination": "G13",
+    "value": 0.031249999999999972,
+    "match": true
+  },
+  {
+    "number": 10,
+    "source": "E104",
+    "destination": "G14",
+    "value": 0.026722222222222196,
+    "match": true
+  },
+  {
+    "number": 11,
+    "source": "E114",
+    "destination": "G15",
+    "value": 0.028794444444444373,
+    "match": true
+  },
+  {
+    "number": 12,
+    "source": "E124",
+    "destination": "G16",
+    "value": 0.03306111111111109,
+    "match": true
+  },
+  {
+    "number": 13,
+    "source": "E134",
+    "destination": "G17",
+    "value": 0.02854444444444438,
+    "match": true
+  },
+  {
+    "number": 14,
+    "source": "E144",
+    "destination": "G18",
+    "value": 0.026227777777777666,
+    "match": true
+  },
+  {
+    "number": 15,
+    "source": "E154",
+    "destination": "G19",
+    "value": 0.030494444444444397,
+    "match": true
+  },
+  {
+    "number": 16,
+    "source": "E164",
+    "destination": "G20",
+    "value": 0.03696111111111093,
+    "match": true
+  },
+  {
+    "number": 17,
+    "source": "E174",
+    "destination": "G21",
+    "value": 0.04343333333333314,
+    "match": true
+  },
+  {
+    "number": 18,
+    "source": "E184",
+    "destination": "G22",
+    "value": 0.045500000000000054,
+    "match": true
+  },
+  {
+    "number": 19,
+    "source": "E194",
+    "destination": "G23",
+    "value": 0.05196666666666659,
+    "match": true
+  },
+  {
+    "number": 20,
+    "source": "E204",
+    "destination": "G24",
+    "value": 0.05843888888888871,
+    "match": true
+  },
+  {
+    "number": 21,
+    "source": "E214",
+    "destination": "G25",
+    "value": 0.06050555555555541,
+    "match": true
+  },
+  {
+    "number": 22,
+    "source": "E224",
+    "destination": "G26",
+    "value": 0.06038333333333336,
+    "match": true
+  },
+  {
+    "number": 23,
+    "source": "E234",
+    "destination": "G27",
+    "value": 0.05147222222222238,
+    "match": true
+  },
+  {
+    "number": 24,
+    "source": "E244",
+    "destination": "G28",
+    "value": 0.038166666666666633,
+    "match": true
+  },
+  {
+    "number": 25,
+    "source": "E254",
+    "destination": "G29",
+    "value": 0.03803888888888869,
+    "match": true
+  },
+  {
+    "number": 26,
+    "source": "E264",
+    "destination": "G30",
+    "value": 0.04008888888888877,
+    "match": true
+  },
+  {
+    "number": 27,
+    "source": "E274",
+    "destination": "G31",
+    "value": 0.028966666666666512,
+    "match": true
+  },
+  {
+    "number": 28,
+    "source": "E284",
+    "destination": "G32",
+    "value": 0.01786111111111089,
+    "match": true
+  },
+  {
+    "number": 29,
+    "source": "E294",
+    "destination": "G33",
+    "value": 0.011149999999999622,
+    "match": true
+  },
+  {
+    "number": 30,
+    "source": "E304",
+    "destination": "G34",
+    "value": 0.0066333333333330035,
+    "match": true
+  },
+  {
+    "number": 31,
+    "source": "E314",
+    "destination": "G35",
+    "value": -7.777777777806035e-05,
+    "match": true
+  },
+  {
+    "number": 32,
+    "source": "E324",
+    "destination": "G36",
+    "value": -0.011188888888888958,
+    "match": true
+  },
+  {
+    "number": 33,
+    "source": "E334",
+    "destination": "G37",
+    "value": -0.02449999999999977,
+    "match": true
+  },
+  {
+    "number": 34,
+    "source": "E344",
+    "destination": "G38",
+    "value": -0.03561111111111108,
+    "match": true
+  },
+  {
+    "number": 35,
+    "source": "E354",
+    "destination": "G39",
+    "value": -0.04672222222222238,
+    "match": true
+  },
+  {
+    "number": 36,
+    "source": "E364",
+    "destination": "G40",
+    "value": -0.06223333333333372,
+    "match": true
+  },
+  {
+    "number": 37,
+    "source": "E374",
+    "destination": "G41",
+    "value": -0.07334444444444502,
+    "match": true
+  },
+  {
+    "number": 38,
+    "source": "E384",
+    "destination": "G42",
+    "value": -0.07565555555555566,
+    "match": true
+  },
+  {
+    "number": 39,
+    "source": "E394",
+    "destination": "G43",
+    "value": -0.0779833333333331,
+    "match": true
+  },
+  {
+    "number": 40,
+    "source": "E404",
+    "destination": "G44",
+    "value": -0.07592777777777751,
+    "match": true
+  },
+  {
+    "number": 41,
+    "source": "E414",
+    "destination": "G45",
+    "value": -0.08483888888888833,
+    "match": true
+  },
+  {
+    "number": 42,
+    "source": "E424",
+    "destination": "G46",
+    "value": -0.0915499999999996,
+    "match": true
+  },
+  {
+    "number": 43,
+    "source": "E434",
+    "destination": "G47",
+    "value": -0.08508888888888871,
+    "match": true
+  },
+  {
+    "number": 44,
+    "source": "E444",
+    "destination": "G48",
+    "value": -0.08960555555555516,
+    "match": true
+  },
+  {
+    "number": 45,
+    "source": "E454",
+    "destination": "G49",
+    "value": -0.09632222222222189,
+    "match": true
+  },
+  {
+    "number": 46,
+    "source": "E464",
+    "destination": "G50",
+    "value": -0.1008388888888887,
+    "match": true
+  },
+  {
+    "number": 47,
+    "source": "E474",
+    "destination": "G51",
+    "value": -0.10974999999999949,
+    "match": true
+  },
+  {
+    "number": 48,
+    "source": "E484",
+    "destination": "G52",
+    "value": -0.1186722222222216,
+    "match": true
+  },
+  {
+    "number": 49,
+    "source": "E494",
+    "destination": "G53",
+    "value": -0.12099999999999947,
+    "match": true
+  },
+  {
+    "number": 50,
+    "source": "E504",
+    "destination": "G54",
+    "value": -0.11892777777777752,
+    "match": true
+  },
+  {
+    "number": 51,
+    "source": "E514",
+    "destination": "G55",
+    "value": -0.121244444444444,
+    "match": true
+  },
+  {
+    "number": 52,
+    "source": "E524",
+    "destination": "G56",
+    "value": -0.13674444444444395,
+    "match": true
+  },
+  {
+    "number": 53,
+    "source": "E534",
+    "destination": "G57",
+    "value": -0.150055555555555,
+    "match": true
+  },
+  {
+    "number": 54,
+    "source": "E544",
+    "destination": "G58",
+    "value": -0.1589777777777771,
+    "match": true
+  },
+  {
+    "number": 55,
+    "source": "E554",
+    "destination": "G59",
+    "value": -0.17229444444444447,
+    "match": true
+  },
+  {
+    "number": 56,
+    "source": "E564",
+    "destination": "G60",
+    "value": -0.19000000000000022,
+    "match": true
+  },
+  {
+    "number": 57,
+    "source": "E574",
+    "destination": "G61",
+    "value": -0.2120944444444445,
+    "match": true
+  },
+  {
+    "number": 58,
+    "source": "E584",
+    "destination": "G62",
+    "value": -0.21661111111111092,
+    "match": true
+  },
+  {
+    "number": 59,
+    "source": "E594",
+    "destination": "G63",
+    "value": -0.21453888888888892,
+    "match": true
+  },
+  {
+    "number": 60,
+    "source": "E604",
+    "destination": "G64",
+    "value": -0.23445000000000013,
+    "match": true
+  },
+  {
+    "number": 61,
+    "source": "E614",
+    "destination": "G65",
+    "value": -0.26314999999999994,
+    "match": true
+  },
+  {
+    "number": 62,
+    "source": "E624",
+    "destination": "G66",
+    "value": -0.28084999999999993,
+    "match": true
+  },
+  {
+    "number": 63,
+    "source": "E634",
+    "destination": "G67",
+    "value": -0.2831666666666663,
+    "match": true
+  },
+  {
+    "number": 64,
+    "source": "E644",
+    "destination": "G68",
+    "value": -0.27890555555555546,
+    "match": true
+  },
+  {
+    "number": 65,
+    "source": "E654",
+    "destination": "G69",
+    "value": -0.2922166666666664,
+    "match": true
+  },
+  {
+    "number": 66,
+    "source": "E664",
+    "destination": "G70",
+    "value": -0.33188888888888857,
+    "match": true
+  },
+  {
+    "number": 67,
+    "source": "E674",
+    "destination": "G71",
+    "value": -0.3627833333333333,
+    "match": true
+  },
+  {
+    "number": 68,
+    "source": "E684",
+    "destination": "G72",
+    "value": -0.33654444444444465,
+    "match": true
+  },
+  {
+    "number": 69,
+    "source": "E694",
+    "destination": "G73",
+    "value": -0.2751388888888882,
+    "match": true
+  },
+  {
+    "number": 70,
+    "source": "E704",
+    "destination": "G74",
+    "value": -0.25767777777777734,
+    "match": true
+  },
+  {
+    "number": 71,
+    "source": "E714",
+    "destination": "G75",
+    "value": -0.32591666666666674,
+    "match": true
+  },
+  {
+    "number": 72,
+    "source": "E724",
+    "destination": "G76",
+    "value": -0.3985611111111106,
+    "match": true
+  },
+  {
+    "number": 73,
+    "source": "E734",
+    "destination": "G77",
+    "value": -0.3811111111111115,
+    "match": true
+  },
+  {
+    "number": 74,
+    "source": "E744",
+    "destination": "G78",
+    "value": -0.31970555555555513,
+    "match": true
+  },
+  {
+    "number": 75,
+    "source": "E754",
+    "destination": "G79",
+    "value": -0.27147777777777704,
+    "match": true
+  },
+  {
+    "number": 76,
+    "source": "E764",
+    "destination": "G80",
+    "value": -0.27160000000000073,
+    "match": true
+  },
+  {
+    "number": 77,
+    "source": "E774",
+    "destination": "G81",
+    "value": -0.3244722222222235,
+    "match": true
+  },
+  {
+    "number": 78,
+    "source": "E784",
+    "destination": "G82",
+    "value": -0.37954444444444585,
+    "match": true
+  },
+  {
+    "number": 79,
+    "source": "E794",
+    "destination": "G83",
+    "value": -0.40603888888888917,
+    "match": true
+  },
+  {
+    "number": 80,
+    "source": "E804",
+    "destination": "G84",
+    "value": -0.37978888888888906,
+    "match": true
+  },
+  {
+    "number": 81,
+    "source": "E814",
+    "destination": "G85",
+    "value": -0.3205833333333339,
+    "match": true
+  },
+  {
+    "number": 82,
+    "source": "E824",
+    "destination": "G86",
+    "value": -0.28114444444444525,
+    "match": true
+  },
+  {
+    "number": 83,
+    "source": "E834",
+    "destination": "G87",
+    "value": -0.2966555555555562,
+    "match": true
+  },
+  {
+    "number": 84,
+    "source": "E844",
+    "destination": "G88",
+    "value": -0.3429388888888882,
+    "match": true
+  },
+  {
+    "number": 85,
+    "source": "E854",
+    "destination": "G89",
+    "value": -0.36064444444444443,
+    "match": true
+  },
+  {
+    "number": 86,
+    "source": "E864",
+    "destination": "G90",
+    "value": -0.3124222222222222,
+    "match": true
+  },
+  {
+    "number": 87,
+    "source": "E874",
+    "destination": "G91",
+    "value": -0.2795722222222213,
+    "match": true
+  },
+  {
+    "number": 88,
+    "source": "E884",
+    "destination": "G92",
+    "value": -0.31265555555555535,
+    "match": true
+  },
+  {
+    "number": 89,
+    "source": "E894",
+    "destination": "G93",
+    "value": -0.3149888888888896,
+    "match": true
+  },
+  {
+    "number": 90,
+    "source": "E904",
+    "destination": "G94",
+    "value": -0.2689666666666677,
+    "match": true
+  },
+  {
+    "number": 91,
+    "source": "E914",
+    "destination": "G95",
+    "value": -0.23392777777777818,
+    "match": true
+  },
+  {
+    "number": 92,
+    "source": "E924",
+    "destination": "G96",
+    "value": -0.25162777777777773,
+    "match": true
+  },
+  {
+    "number": 93,
+    "source": "E934",
+    "destination": "G97",
+    "value": -0.2605500000000003,
+    "match": true
+  },
+  {
+    "number": 94,
+    "source": "E944",
+    "destination": "G98",
+    "value": -0.2255166666666666,
+    "match": true
+  },
+  {
+    "number": 95,
+    "source": "E954",
+    "destination": "G99",
+    "value": -0.20806111111111117,
+    "match": true
+  },
+  {
+    "number": 96,
+    "source": "E964",
+    "destination": "G100",
+    "value": -0.18181111111111128,
+    "match": true
+  },
+  {
+    "number": 97,
+    "source": "E974",
+    "destination": "G101",
+    "value": -0.1511722222222216,
+    "match": true
+  },
+  {
+    "number": 98,
+    "source": "E984",
+    "destination": "G102",
+    "value": -0.1315333333333319,
+    "match": true
+  },
+  {
+    "number": 99,
+    "source": "E994",
+    "destination": "G103",
+    "value": -0.10747777777777638,
+    "match": true
+  },
+  {
+    "number": 100,
+    "source": "E1004",
+    "destination": "G104",
+    "value": -0.08342777777777673,
+    "match": true
+  },
+  {
+    "number": 101,
+    "source": "E1014",
+    "destination": "G105",
+    "value": -0.054983333333333106,
+    "match": true
+  },
+  {
+    "number": 102,
+    "source": "E1024",
+    "destination": "G106",
+    "value": -0.04412222222222202,
+    "match": true
+  },
+  {
+    "number": 103,
+    "source": "E1034",
+    "destination": "G107",
+    "value": -0.03326111111111012,
+    "match": true
+  },
+  {
+    "number": 104,
+    "source": "E1044",
+    "destination": "G108",
+    "value": -0.015799999999998853,
+    "match": true
+  },
+  {
+    "number": 105,
+    "source": "E1054",
+    "destination": "G109",
+    "value": -0.009338888888888395,
+    "match": true
+  },
+  {
+    "number": 106,
+    "source": "E1064",
+    "destination": "G110",
+    "value": 0.00370555555555539,
+    "match": true
+  },
+  {
+    "number": 107,
+    "source": "E1074",
+    "destination": "G111",
+    "value": 0.018972222222222203,
+    "match": true
+  },
+  {
+    "number": 108,
+    "source": "E1084",
+    "destination": "G112",
+    "value": 0.023255555555555855,
+    "match": true
+  },
+  {
+    "number": 109,
+    "source": "E1094",
+    "destination": "G113",
+    "value": 0.031922222222222504,
+    "match": true
+  },
+  {
+    "number": 110,
+    "source": "E1104",
+    "destination": "G114",
+    "value": 0.05156666666666726,
+    "match": true
+  },
+  {
+    "number": 111,
+    "source": "E1114",
+    "destination": "G115",
+    "value": 0.06681666666666725,
+    "match": true
+  },
+  {
+    "number": 112,
+    "source": "E1124",
+    "destination": "G116",
+    "value": 0.07329444444444454,
+    "match": true
+  },
+  {
+    "number": 113,
+    "source": "E1134",
+    "destination": "G117",
+    "value": 0.07976666666666593,
+    "match": true
+  },
+  {
+    "number": 114,
+    "source": "E1144",
+    "destination": "G118",
+    "value": 0.08402777777777609,
+    "match": true
+  },
+  {
+    "number": 115,
+    "source": "E1154",
+    "destination": "G119",
+    "value": 0.09927777777777687,
+    "match": true
+  },
+  {
+    "number": 116,
+    "source": "E1164",
+    "destination": "G120",
+    "value": 0.12114444444444464,
+    "match": true
+  },
+  {
+    "number": 117,
+    "source": "E1174",
+    "destination": "G121",
+    "value": 0.12982222222222145,
+    "match": true
+  },
+  {
+    "number": 118,
+    "source": "E1184",
+    "destination": "G122",
+    "value": 0.13188333333333208,
+    "match": true
+  },
+  {
+    "number": 119,
+    "source": "E1194",
+    "destination": "G123",
+    "value": 0.13832777777777733,
+    "match": true
+  },
+  {
+    "number": 120,
+    "source": "E1204",
+    "destination": "G124",
+    "value": 0.14038888888888876,
+    "match": true
+  },
+  {
+    "number": 121,
+    "source": "E1214",
+    "destination": "G125",
+    "value": 0.14247777777777798,
+    "match": true
+  },
+  {
+    "number": 122,
+    "source": "E1224",
+    "destination": "G126",
+    "value": 0.14896111111111116,
+    "match": true
+  },
+  {
+    "number": 123,
+    "source": "E1234",
+    "destination": "G127",
+    "value": 0.1466388888888887,
+    "match": true
+  },
+  {
+    "number": 124,
+    "source": "E1244",
+    "destination": "G128",
+    "value": 0.15090555555555557,
+    "match": true
+  },
+  {
+    "number": 125,
+    "source": "E1254",
+    "destination": "G129",
+    "value": 0.1617555555555557,
+    "match": true
+  },
+  {
+    "number": 126,
+    "source": "E1264",
+    "destination": "G130",
+    "value": 0.16381666666666556,
+    "match": true
+  },
+  {
+    "number": 127,
+    "source": "E1274",
+    "destination": "G131",
+    "value": 0.1702999999999995,
+    "match": true
+  },
+  {
+    "number": 128,
+    "source": "E1284",
+    "destination": "G132",
+    "value": 0.18336666666666684,
+    "match": true
+  },
+  {
+    "number": 129,
+    "source": "E1294",
+    "destination": "G133",
+    "value": 0.1964111111111106,
+    "match": true
+  },
+  {
+    "number": 130,
+    "source": "E1304",
+    "destination": "G134",
+    "value": 0.20507222222222138,
+    "match": true
+  },
+  {
+    "number": 131,
+    "source": "E1314",
+    "destination": "G135",
+    "value": 0.2049555555555544,
+    "match": true
+  },
+  {
+    "number": 132,
+    "source": "E1324",
+    "destination": "G136",
+    "value": 0.21583333333333315,
+    "match": true
+  },
+  {
+    "number": 133,
+    "source": "E1334",
+    "destination": "G137",
+    "value": 0.22669444444444503,
+    "match": true
+  },
+  {
+    "number": 134,
+    "source": "E1344",
+    "destination": "G138",
+    "value": 0.23535000000000075,
+    "match": true
+  },
+  {
+    "number": 135,
+    "source": "E1354",
+    "destination": "G139",
+    "value": 0.24180555555555613,
+    "match": true
+  },
+  {
+    "number": 136,
+    "source": "E1364",
+    "destination": "G140",
+    "value": 0.24168333333333405,
+    "match": true
+  },
+  {
+    "number": 137,
+    "source": "E1374",
+    "destination": "G141",
+    "value": 0.24377222222222167,
+    "match": true
+  },
+  {
+    "number": 138,
+    "source": "E1384",
+    "destination": "G142",
+    "value": 0.24804444444444357,
+    "match": true
+  },
+  {
+    "number": 139,
+    "source": "E1394",
+    "destination": "G143",
+    "value": 0.256711111111111,
+    "match": true
+  },
+  {
+    "number": 140,
+    "source": "E1404",
+    "destination": "G144",
+    "value": 0.25877777777777833,
+    "match": true
+  },
+  {
+    "number": 141,
+    "source": "E1414",
+    "destination": "G145",
+    "value": 0.2652277777777786,
+    "match": true
+  },
+  {
+    "number": 142,
+    "source": "E1424",
+    "destination": "G146",
+    "value": 0.27168888888888826,
+    "match": true
+  },
+  {
+    "number": 143,
+    "source": "E1434",
+    "destination": "G147",
+    "value": 0.2627833333333326,
+    "match": true
+  },
+  {
+    "number": 144,
+    "source": "E1444",
+    "destination": "G148",
+    "value": 0.2604666666666676,
+    "match": true
+  },
+  {
+    "number": 145,
+    "source": "E1454",
+    "destination": "G149",
+    "value": 0.2559500000000009,
+    "match": true
+  },
+  {
+    "number": 146,
+    "source": "E1464",
+    "destination": "G150",
+    "value": 0.24044444444444424,
+    "match": true
+  },
+  {
+    "number": 147,
+    "source": "E1474",
+    "destination": "G151",
+    "value": 0.23811666666666512,
+    "match": true
+  },
+  {
+    "number": 148,
+    "source": "E1484",
+    "destination": "G152",
+    "value": 0.23798888888888806,
+    "match": true
+  },
+  {
+    "number": 149,
+    "source": "E1494",
+    "destination": "G153",
+    "value": 0.22907777777777727,
+    "match": true
+  },
+  {
+    "number": 150,
+    "source": "E1504",
+    "destination": "G154",
+    "value": 0.21576666666666583,
+    "match": true
+  },
+  {
+    "number": 151,
+    "source": "E1514",
+    "destination": "G155",
+    "value": 0.20685000000000078,
+    "match": true
+  },
+  {
+    "number": 152,
+    "source": "E1524",
+    "destination": "G156",
+    "value": 0.213322222222223,
+    "match": true
+  },
+  {
+    "number": 153,
+    "source": "E1534",
+    "destination": "G157",
+    "value": 0.2087999999999995,
+    "match": true
+  },
+  {
+    "number": 154,
+    "source": "E1544",
+    "destination": "G158",
+    "value": 0.1910944444444433,
+    "match": true
+  },
+  {
+    "number": 155,
+    "source": "E1554",
+    "destination": "G159",
+    "value": 0.17998333333333214,
+    "match": true
+  },
+  {
+    "number": 156,
+    "source": "E1564",
+    "destination": "G160",
+    "value": 0.157877777777777,
+    "match": true
+  },
+  {
+    "number": 157,
+    "source": "E1574",
+    "destination": "G161",
+    "value": 0.13577777777777603,
+    "match": true
+  },
+  {
+    "number": 158,
+    "source": "E1584",
+    "destination": "G162",
+    "value": 0.12466666666666493,
+    "match": true
+  },
+  {
+    "number": 159,
+    "source": "E1594",
+    "destination": "G163",
+    "value": 0.11575555555555417,
+    "match": true
+  },
+  {
+    "number": 160,
+    "source": "E1604",
+    "destination": "G164",
+    "value": 0.10464444444444305,
+    "match": true
+  },
+  {
+    "number": 161,
+    "source": "E1614",
+    "destination": "G165",
+    "value": 0.09133333333333163,
+    "match": true
+  },
+  {
+    "number": 162,
+    "source": "E1624",
+    "destination": "G166",
+    "value": 0.09779444444444532,
+    "match": true
+  },
+  {
+    "number": 163,
+    "source": "E1634",
+    "destination": "G167",
+    "value": 0.11525000000000314,
+    "match": true
+  },
+  {
+    "number": 164,
+    "source": "E1644",
+    "destination": "G168",
+    "value": 0.126111111111111,
+    "match": true
+  },
+  {
+    "number": 165,
+    "source": "E1654",
+    "destination": "G169",
+    "value": 0.12378888888888942,
+    "match": true
+  },
+  {
+    "number": 166,
+    "source": "E1664",
+    "destination": "G170",
+    "value": 0.09948888888889137,
+    "match": true
+  },
+  {
+    "number": 167,
+    "source": "E1674",
+    "destination": "G171",
+    "value": 0.08397777777777964,
+    "match": true
+  },
+  {
+    "number": 168,
+    "source": "E1684",
+    "destination": "G172",
+    "value": 0.0816666666666666,
+    "match": true
+  },
+  {
+    "number": 169,
+    "source": "E1694",
+    "destination": "G173",
+    "value": 0.08153888888888947,
+    "match": true
+  },
+  {
+    "number": 170,
+    "source": "E1704",
+    "destination": "G174",
+    "value": 0.08140555555555644,
+    "match": true
+  },
+  {
+    "number": 171,
+    "source": "E1714",
+    "destination": "G175",
+    "value": 0.07688333333333294,
+    "match": true
+  },
+  {
+    "number": 172,
+    "source": "E1724",
+    "destination": "G176",
+    "value": 0.06797222222222375,
+    "match": true
+  },
+  {
+    "number": 173,
+    "source": "E1734",
+    "destination": "G177",
+    "value": 0.05686666666666693,
+    "match": true
+  },
+  {
+    "number": 174,
+    "source": "E1744",
+    "destination": "G178",
+    "value": 0.05673888888888819,
+    "match": true
+  },
+  {
+    "number": 175,
+    "source": "E1754",
+    "destination": "G179",
+    "value": 0.05661666666666855,
+    "match": true
+  },
+  {
+    "number": 176,
+    "source": "E1764",
+    "destination": "G180",
+    "value": 0.04989999999999899,
+    "match": true
+  },
+  {
+    "number": 177,
+    "source": "E1774",
+    "destination": "G181",
+    "value": 0.043172222222220884,
+    "match": true
+  },
+  {
+    "number": 178,
+    "source": "E1784",
+    "destination": "G182",
+    "value": 0.040850000000000934,
+    "match": true
+  },
+  {
+    "number": 179,
+    "source": "E1794",
+    "destination": "G183",
+    "value": 0.042927777777778384,
+    "match": true
+  },
+  {
+    "number": 180,
+    "source": "E1804",
+    "destination": "G184",
+    "value": 0.04499999999999995,
+    "match": true
+  },
+  {
+    "number": 181,
+    "source": "E1814",
+    "destination": "G185",
+    "value": 0.03828333333333363,
+    "match": true
+  },
+  {
+    "number": 182,
+    "source": "E1824",
+    "destination": "G186",
+    "value": 0.033766666666667604,
+    "match": true
+  },
+  {
+    "number": 183,
+    "source": "E1834",
+    "destination": "G187",
+    "value": 0.0468277777777774,
+    "match": true
+  },
+  {
+    "number": 184,
+    "source": "E1844",
+    "destination": "G188",
+    "value": 0.055477777777774816,
+    "match": true
+  },
+  {
+    "number": 185,
+    "source": "E1854",
+    "destination": "G189",
+    "value": 0.06633333333333002,
+    "match": true
+  },
+  {
+    "number": 186,
+    "source": "E1864",
+    "destination": "G190",
+    "value": 0.08379444444444212,
+    "match": true
+  },
+  {
+    "number": 187,
+    "source": "E1874",
+    "destination": "G191",
+    "value": 0.08807222222222147,
+    "match": true
+  },
+  {
+    "number": 188,
+    "source": "E1884",
+    "destination": "G192",
+    "value": 0.08137222222222443,
+    "match": true
+  },
+  {
+    "number": 189,
+    "source": "E1894",
+    "destination": "G193",
+    "value": 0.07684444444444179,
+    "match": true
+  },
+  {
+    "number": 190,
+    "source": "E1904",
+    "destination": "G194",
+    "value": 0.07890555555554997,
+    "match": true
+  },
+  {
+    "number": 191,
+    "source": "E1914",
+    "destination": "G195",
+    "value": 0.08097777777777802,
+    "match": true
+  },
+  {
+    "number": 192,
+    "source": "E1924",
+    "destination": "G196",
+    "value": 0.07425555555555742,
+    "match": true
+  },
+  {
+    "number": 193,
+    "source": "E1934",
+    "destination": "G197",
+    "value": 0.06973888888888655,
+    "match": true
+  },
+  {
+    "number": 194,
+    "source": "E1944",
+    "destination": "G198",
+    "value": 0.07621111111110876,
+    "match": true
+  },
+  {
+    "number": 195,
+    "source": "E1954",
+    "destination": "G199",
+    "value": 0.08267222222222084,
+    "match": true
+  },
+  {
+    "number": 196,
+    "source": "E1964",
+    "destination": "G200",
+    "value": 0.08475555555555095,
+    "match": true
+  },
+  {
+    "number": 197,
+    "source": "E1974",
+    "destination": "G201",
+    "value": 0.08464444444443822,
+    "match": true
+  },
+  {
+    "number": 198,
+    "source": "E1984",
+    "destination": "G202",
+    "value": 0.08451111111111005,
+    "match": true
+  },
+  {
+    "number": 199,
+    "source": "E1994",
+    "destination": "G203",
+    "value": 0.0909611111111136,
+    "match": true
+  },
+  {
+    "number": 200,
+    "source": "E2004",
+    "destination": "G204",
+    "value": 0.10400555555555901,
+    "match": true
+  },
+  {
+    "number": 201,
+    "source": "E2014",
+    "destination": "G205",
+    "value": 0.10607777777777896,
+    "match": true
+  },
+  {
+    "number": 202,
+    "source": "E2024",
+    "destination": "G206",
+    "value": 0.10157222222221984,
+    "match": true
+  },
+  {
+    "number": 203,
+    "source": "E2034",
+    "destination": "G207",
+    "value": 0.09706666666666561,
+    "match": true
+  },
+  {
+    "number": 204,
+    "source": "E2044",
+    "destination": "G208",
+    "value": 0.09034999999999926,
+    "match": true
+  },
+  {
+    "number": 205,
+    "source": "E2054",
+    "destination": "G209",
+    "value": 0.09461666666666689,
+    "match": true
+  },
+  {
+    "number": 206,
+    "source": "E2064",
+    "destination": "G210",
+    "value": 0.09228888888888945,
+    "match": true
+  },
+  {
+    "number": 207,
+    "source": "E2074",
+    "destination": "G211",
+    "value": 0.07678888888888948,
+    "match": true
+  },
+  {
+    "number": 208,
+    "source": "E2084",
+    "destination": "G212",
+    "value": 0.06787777777777868,
+    "match": true
+  },
+  {
+    "number": 209,
+    "source": "E2094",
+    "destination": "G213",
+    "value": 0.0589666666666679,
+    "match": true
+  },
+  {
+    "number": 210,
+    "source": "E2104",
+    "destination": "G214",
+    "value": 0.050055555555557116,
+    "match": true
+  },
+  {
+    "number": 211,
+    "source": "E2114",
+    "destination": "G215",
+    "value": 0.04333333333333491,
+    "match": true
+  },
+  {
+    "number": 212,
+    "source": "E2124",
+    "destination": "G216",
+    "value": 0.03660000000000093,
+    "match": true
+  },
+  {
+    "number": 213,
+    "source": "E2134",
+    "destination": "G217",
+    "value": 0.02986111111111108,
+    "match": true
+  },
+  {
+    "number": 214,
+    "source": "E2144",
+    "destination": "G218",
+    "value": 0.016555555555555542,
+    "match": true
+  },
+  {
+    "number": 215,
+    "source": "E2154",
+    "destination": "G219",
+    "value": 0.0010555555555555542,
+    "match": true
+  },
+  {
+    "number": 216,
+    "source": "E2164",
+    "destination": "G220",
+    "value": -0.005661111111110782,
+    "match": true
+  },
+  {
+    "number": 217,
+    "source": "E2174",
+    "destination": "G221",
+    "value": -0.010166666666666655,
+    "match": true
+  },
+  {
+    "number": 218,
+    "source": "E2184",
+    "destination": "G222",
+    "value": -0.021272222222223493,
+    "match": true
+  },
+  {
+    "number": 219,
+    "source": "E2194",
+    "destination": "G223",
+    "value": -0.02800000000000159,
+    "match": true
+  },
+  {
+    "number": 220,
+    "source": "E2204",
+    "destination": "G224",
+    "value": -0.028133333333332976,
+    "match": true
+  },
+  {
+    "number": 221,
+    "source": "E2214",
+    "destination": "G225",
+    "value": -0.03265555555555326,
+    "match": true
+  },
+  {
+    "number": 222,
+    "source": "E2224",
+    "destination": "G226",
+    "value": -0.03497777777777483,
+    "match": true
+  },
+  {
+    "number": 223,
+    "source": "E2234",
+    "destination": "G227",
+    "value": -0.03290555555555164,
+    "match": true
+  },
+  {
+    "number": 224,
+    "source": "E2244",
+    "destination": "G228",
+    "value": -0.033033333333328765,
+    "match": true
+  },
+  {
+    "number": 225,
+    "source": "E2254",
+    "destination": "G229",
+    "value": -0.041944444444441176,
+    "match": true
+  },
+  {
+    "number": 226,
+    "source": "E2264",
+    "destination": "G230",
+    "value": -0.05963333333333133,
+    "match": true
+  },
+  {
+    "number": 227,
+    "source": "E2274",
+    "destination": "G231",
+    "value": -0.06636111111111107,
+    "match": true
+  },
+  {
+    "number": 228,
+    "source": "E2284",
+    "destination": "G232",
+    "value": -0.07088888888889207,
+    "match": true
+  },
+  {
+    "number": 229,
+    "source": "E2294",
+    "destination": "G233",
+    "value": -0.08419444444444758,
+    "match": true
+  },
+  {
+    "number": 230,
+    "source": "E2304",
+    "destination": "G234",
+    "value": -0.08212222222222441,
+    "match": true
+  },
+  {
+    "number": 231,
+    "source": "E2314",
+    "destination": "G235",
+    "value": -0.07565000000000058,
+    "match": true
+  },
+  {
+    "number": 232,
+    "source": "E2324",
+    "destination": "G236",
+    "value": -0.08674999999999991,
+    "match": true
+  },
+  {
+    "number": 233,
+    "source": "E2334",
+    "destination": "G237",
+    "value": -0.1110444444444453,
+    "match": true
+  },
+  {
+    "number": 234,
+    "source": "E2344",
+    "destination": "G238",
+    "value": -0.139755555555559,
+    "match": true
+  },
+  {
+    "number": 235,
+    "source": "E2354",
+    "destination": "G239",
+    "value": -0.15966666666667134,
+    "match": true
+  },
+  {
+    "number": 236,
+    "source": "E2364",
+    "destination": "G240",
+    "value": -0.1641777777777815,
+    "match": true
+  },
+  {
+    "number": 237,
+    "source": "E2374",
+    "destination": "G241",
+    "value": -0.16428888888889098,
+    "match": true
+  },
+  {
+    "number": 238,
+    "source": "E2384",
+    "destination": "G242",
+    "value": -0.17100000000000146,
+    "match": true
+  },
+  {
+    "number": 239,
+    "source": "E2394",
+    "destination": "G243",
+    "value": -0.18211111111111253,
+    "match": true
+  },
+  {
+    "number": 240,
+    "source": "E2404",
+    "destination": "G244",
+    "value": -0.20422222222222525,
+    "match": true
+  },
+  {
+    "number": 241,
+    "source": "E2414",
+    "destination": "G245",
+    "value": -0.2329333333333389,
+    "match": true
+  },
+  {
+    "number": 242,
+    "source": "E2424",
+    "destination": "G246",
+    "value": -0.24844444444445068,
+    "match": true
+  },
+  {
+    "number": 243,
+    "source": "E2434",
+    "destination": "G247",
+    "value": -0.2529555555555608,
+    "match": true
+  },
+  {
+    "number": 244,
+    "source": "E2444",
+    "destination": "G248",
+    "value": -0.266266666666669,
+    "match": true
+  },
+  {
+    "number": 245,
+    "source": "E2454",
+    "destination": "G249",
+    "value": -0.29276666666666734,
+    "match": true
+  },
+  {
+    "number": 246,
+    "source": "E2464",
+    "destination": "G250",
+    "value": -0.31047222222222187,
+    "match": true
+  },
+  {
+    "number": 247,
+    "source": "E2474",
+    "destination": "G251",
+    "value": -0.31719444444444417,
+    "match": true
+  },
+  {
+    "number": 248,
+    "source": "E2484",
+    "destination": "G252",
+    "value": -0.32611111111111074,
+    "match": true
+  },
+  {
+    "number": 249,
+    "source": "E2494",
+    "destination": "G253",
+    "value": -0.34382222222222125,
+    "match": true
+  },
+  {
+    "number": 250,
+    "source": "E2504",
+    "destination": "G254",
+    "value": -0.3615333333333301,
+    "match": true
+  },
+  {
+    "number": 251,
+    "source": "E2514",
+    "destination": "G255",
+    "value": -0.34186666666666504,
+    "match": true
+  },
+  {
+    "number": 252,
+    "source": "E2524",
+    "destination": "G256",
+    "value": -0.3156166666666699,
+    "match": true
+  },
+  {
+    "number": 253,
+    "source": "E2534",
+    "destination": "G257",
+    "value": -0.32452777777778075,
+    "match": true
+  },
+  {
+    "number": 254,
+    "source": "E2544",
+    "destination": "G258",
+    "value": -0.3378333333333362,
+    "match": true
+  },
+  {
+    "number": 255,
+    "source": "E2554",
+    "destination": "G259",
+    "value": -0.34894444444444733,
+    "match": true
+  },
+  {
+    "number": 256,
+    "source": "E2564",
+    "destination": "G260",
+    "value": -0.3490777777777804,
+    "match": true
+  },
+  {
+    "number": 257,
+    "source": "E2574",
+    "destination": "G261",
+    "value": -0.3360222222222232,
+    "match": true
+  },
+  {
+    "number": 258,
+    "source": "E2584",
+    "destination": "G262",
+    "value": -0.3295388888888876,
+    "match": true
+  },
+  {
+    "number": 259,
+    "source": "E2594",
+    "destination": "G263",
+    "value": -0.32526666666666404,
+    "match": true
+  },
+  {
+    "number": 260,
+    "source": "E2604",
+    "destination": "G264",
+    "value": -0.32099999999999645,
+    "match": true
+  },
+  {
+    "number": 261,
+    "source": "E2614",
+    "destination": "G265",
+    "value": -0.3211222222222193,
+    "match": true
+  },
+  {
+    "number": 262,
+    "source": "E2624",
+    "destination": "G266",
+    "value": -0.32563888888888853,
+    "match": true
+  },
+  {
+    "number": 263,
+    "source": "E2634",
+    "destination": "G267",
+    "value": -0.32797222222222516,
+    "match": true
+  },
+  {
+    "number": 264,
+    "source": "E2644",
+    "destination": "G268",
+    "value": -0.32150555555555727,
+    "match": true
+  },
+  {
+    "number": 265,
+    "source": "E2654",
+    "destination": "G269",
+    "value": -0.3106444444444445,
+    "match": true
+  },
+  {
+    "number": 266,
+    "source": "E2664",
+    "destination": "G270",
+    "value": -0.301983333333332,
+    "match": true
+  },
+  {
+    "number": 267,
+    "source": "E2674",
+    "destination": "G271",
+    "value": -0.28671666666666773,
+    "match": true
+  },
+  {
+    "number": 268,
+    "source": "E2684",
+    "destination": "G272",
+    "value": -0.2758555555555582,
+    "match": true
+  },
+  {
+    "number": 269,
+    "source": "E2694",
+    "destination": "G273",
+    "value": -0.27158333333333473,
+    "match": true
+  },
+  {
+    "number": 270,
+    "source": "E2704",
+    "destination": "G274",
+    "value": -0.26951666666666735,
+    "match": true
+  },
+  {
+    "number": 271,
+    "source": "E2714",
+    "destination": "G275",
+    "value": -0.2674500000000001,
+    "match": true
+  },
+  {
+    "number": 272,
+    "source": "E2724",
+    "destination": "G276",
+    "value": -0.2521944444444442,
+    "match": true
+  },
+  {
+    "number": 273,
+    "source": "E2734",
+    "destination": "G277",
+    "value": -0.23033333333333314,
+    "match": true
+  },
+  {
+    "number": 274,
+    "source": "E2744",
+    "destination": "G278",
+    "value": -0.21066666666666647,
+    "match": true
+  },
+  {
+    "number": 275,
+    "source": "E2754",
+    "destination": "G279",
+    "value": -0.18882777777777565,
+    "match": true
+  },
+  {
+    "number": 276,
+    "source": "E2764",
+    "destination": "G280",
+    "value": -0.16697777777777795,
+    "match": true
+  },
+  {
+    "number": 277,
+    "source": "E2774",
+    "destination": "G281",
+    "value": -0.15172777777777957,
+    "match": true
+  },
+  {
+    "number": 278,
+    "source": "E2784",
+    "destination": "G282",
+    "value": -0.12988888888888875,
+    "match": true
+  },
+  {
+    "number": 279,
+    "source": "E2794",
+    "destination": "G283",
+    "value": -0.105844444444445,
+    "match": true
+  },
+  {
+    "number": 280,
+    "source": "E2804",
+    "destination": "G284",
+    "value": -0.08180555555555709,
+    "match": true
+  },
+  {
+    "number": 281,
+    "source": "E2814",
+    "destination": "G285",
+    "value": -0.06215555555555648,
+    "match": true
+  },
+  {
+    "number": 282,
+    "source": "E2824",
+    "destination": "G286",
+    "value": -0.04908888888888917,
+    "match": true
+  },
+  {
+    "number": 283,
+    "source": "E2834",
+    "destination": "G287",
+    "value": -0.036016666666669216,
+    "match": true
+  },
+  {
+    "number": 284,
+    "source": "E2844",
+    "destination": "G288",
+    "value": -0.025144444444446364,
+    "match": true
+  },
+  {
+    "number": 285,
+    "source": "E2854",
+    "destination": "G289",
+    "value": -0.016483333333333967,
+    "match": true
+  },
+  {
+    "number": 286,
+    "source": "E2864",
+    "destination": "G290",
+    "value": -0.0056277777777771236,
+    "match": true
+  },
+  {
+    "number": 287,
+    "source": "E2874",
+    "destination": "G291",
+    "value": 0.003027777777779391,
+    "match": true
+  },
+  {
+    "number": 288,
+    "source": "E2884",
+    "destination": "G292",
+    "value": 0.01169444444444605,
+    "match": true
+  },
+  {
+    "number": 289,
+    "source": "E2894",
+    "destination": "G293",
+    "value": 0.03136111111111269,
+    "match": true
+  },
+  {
+    "number": 290,
+    "source": "E2904",
+    "destination": "G294",
+    "value": 0.042222222222222175,
+    "match": true
+  },
+  {
+    "number": 291,
+    "source": "E2914",
+    "destination": "G295",
+    "value": 0.05087777777777708,
+    "match": true
+  },
+  {
+    "number": 292,
+    "source": "E2924",
+    "destination": "G296",
+    "value": 0.05734444444444181,
+    "match": true
+  },
+  {
+    "number": 293,
+    "source": "E2934",
+    "destination": "G297",
+    "value": 0.057227777777776434,
+    "match": true
+  },
+  {
+    "number": 294,
+    "source": "E2944",
+    "destination": "G298",
+    "value": 0.06809444444444827,
+    "match": true
+  },
+  {
+    "number": 295,
+    "source": "E2954",
+    "destination": "G299",
+    "value": 0.08333333333333973,
+    "match": true
+  },
+  {
+    "number": 296,
+    "source": "E2964",
+    "destination": "G300",
+    "value": 0.10298888888889138,
+    "match": true
+  },
+  {
+    "number": 297,
+    "source": "E2974",
+    "destination": "G301",
+    "value": 0.10727777777777767,
+    "match": true
+  },
+  {
+    "number": 298,
+    "source": "E2984",
+    "destination": "G302",
+    "value": 0.10275555555555413,
+    "match": true
+  },
+  {
+    "number": 299,
+    "source": "E2994",
+    "destination": "G303",
+    "value": 0.11579999999999471,
+    "match": true
+  },
+  {
+    "number": 300,
+    "source": "E3004",
+    "destination": "G304",
+    "value": 0.11566666666666334,
+    "match": true
+  },
+  {
+    "number": 301,
+    "source": "E3014",
+    "destination": "G305",
+    "value": 0.11334999999999924,
+    "match": true
+  },
+  {
+    "number": 302,
+    "source": "E3024",
+    "destination": "G306",
+    "value": 0.1242166666666646,
+    "match": true
+  },
+  {
+    "number": 303,
+    "source": "E3034",
+    "destination": "G307",
+    "value": 0.1284944444444456,
+    "match": true
+  },
+  {
+    "number": 304,
+    "source": "E3044",
+    "destination": "G308",
+    "value": 0.12617777777777506,
+    "match": true
+  },
+  {
+    "number": 305,
+    "source": "E3054",
+    "destination": "G309",
+    "value": 0.13264999999999405,
+    "match": true
+  },
+  {
+    "number": 306,
+    "source": "E3064",
+    "destination": "G310",
+    "value": 0.1456944444444475,
+    "match": true
+  },
+  {
+    "number": 307,
+    "source": "E3074",
+    "destination": "G311",
+    "value": 0.1543500000000057,
+    "match": true
+  },
+  {
+    "number": 308,
+    "source": "E3084",
+    "destination": "G312",
+    "value": 0.16522222222222208,
+    "match": true
+  },
+  {
+    "number": 309,
+    "source": "E3094",
+    "destination": "G313",
+    "value": 0.1738888888888887,
+    "match": true
+  },
+  {
+    "number": 310,
+    "source": "E3104",
+    "destination": "G314",
+    "value": 0.18474444444444557,
+    "match": true
+  },
+  {
+    "number": 311,
+    "source": "E3114",
+    "destination": "G315",
+    "value": 0.18462222222222593,
+    "match": true
+  },
+  {
+    "number": 312,
+    "source": "E3124",
+    "destination": "G316",
+    "value": 0.19550000000000303,
+    "match": true
+  },
+  {
+    "number": 313,
+    "source": "E3134",
+    "destination": "G317",
+    "value": 0.21734444444444168,
+    "match": true
+  },
+  {
+    "number": 314,
+    "source": "E3144",
+    "destination": "G318",
+    "value": 0.21501111111110832,
+    "match": true
+  },
+  {
+    "number": 315,
+    "source": "E3154",
+    "destination": "G319",
+    "value": 0.2192777777777711,
+    "match": true
+  },
+  {
+    "number": 316,
+    "source": "E3164",
+    "destination": "G320",
+    "value": 0.2257444444444423,
+    "match": true
+  },
+  {
+    "number": 317,
+    "source": "E3174",
+    "destination": "G321",
+    "value": 0.2256277777777834,
+    "match": true
+  },
+  {
+    "number": 318,
+    "source": "E3184",
+    "destination": "G322",
+    "value": 0.22989444444443974,
+    "match": true
+  },
+  {
+    "number": 319,
+    "source": "E3194",
+    "destination": "G323",
+    "value": 0.24075555555554437,
+    "match": true
+  },
+  {
+    "number": 320,
+    "source": "E3204",
+    "destination": "G324",
+    "value": 0.25162777777777046,
+    "match": true
+  },
+  {
+    "number": 321,
+    "source": "E3214",
+    "destination": "G325",
+    "value": 0.24709999999999593,
+    "match": true
+  },
+  {
+    "number": 322,
+    "source": "E3224",
+    "destination": "G326",
+    "value": 0.24257777777778528,
+    "match": true
+  },
+  {
+    "number": 323,
+    "source": "E3234",
+    "destination": "G327",
+    "value": 0.24465555555556442,
+    "match": true
+  },
+  {
+    "number": 324,
+    "source": "E3244",
+    "destination": "G328",
+    "value": 0.24013888888888216,
+    "match": true
+  },
+  {
+    "number": 325,
+    "source": "E3254",
+    "destination": "G329",
+    "value": 0.231227777777773,
+    "match": true
+  },
+  {
+    "number": 326,
+    "source": "E3264",
+    "destination": "G330",
+    "value": 0.22450555555556373,
+    "match": true
+  },
+  {
+    "number": 327,
+    "source": "E3274",
+    "destination": "G331",
+    "value": 0.2419611111111167,
+    "match": true
+  },
+  {
+    "number": 328,
+    "source": "E3284",
+    "destination": "G332",
+    "value": 0.21986111111111417,
+    "match": true
+  },
+  {
+    "number": 329,
+    "source": "E3294",
+    "destination": "G333",
+    "value": 0.18018333333333894,
+    "match": true
+  },
+  {
+    "number": 330,
+    "source": "E3304",
+    "destination": "G334",
+    "value": 0.20642777777778148,
+    "match": true
+  },
+  {
+    "number": 331,
+    "source": "E3314",
+    "destination": "G335",
+    "value": 0.22387222222222594,
+    "match": true
+  },
+  {
+    "number": 332,
+    "source": "E3324",
+    "destination": "G336",
+    "value": 0.1951833333333357,
+    "match": true
+  },
+  {
+    "number": 333,
+    "source": "E3334",
+    "destination": "G337",
+    "value": 0.17088333333333122,
+    "match": true
+  },
+  {
+    "number": 334,
+    "source": "E3344",
+    "destination": "G338",
+    "value": 0.17734999999999917,
+    "match": true
+  },
+  {
+    "number": 335,
+    "source": "E3354",
+    "destination": "G339",
+    "value": 0.1574499999999953,
+    "match": true
+  },
+  {
+    "number": 336,
+    "source": "E3364",
+    "destination": "G340",
+    "value": 0.12874999999999667,
+    "match": true
+  },
+  {
+    "number": 337,
+    "source": "E3374",
+    "destination": "G341",
+    "value": 0.12642777777777825,
+    "match": true
+  },
+  {
+    "number": 338,
+    "source": "E3384",
+    "destination": "G342",
+    "value": 0.11092222222221756,
+    "match": true
+  },
+  {
+    "number": 339,
+    "source": "E3394",
+    "destination": "G343",
+    "value": 0.0910222222222234,
+    "match": true
+  },
+  {
+    "number": 340,
+    "source": "E3404",
+    "destination": "G344",
+    "value": 0.09090000000000381,
+    "match": true
+  },
+  {
+    "number": 341,
+    "source": "E3414",
+    "destination": "G345",
+    "value": 0.09077777777777123,
+    "match": true
+  },
+  {
+    "number": 342,
+    "source": "E3424",
+    "destination": "G346",
+    "value": 0.08404444444444047,
+    "match": true
+  },
+  {
+    "number": 343,
+    "source": "E3434",
+    "destination": "G347",
+    "value": 0.09708888888889398,
+    "match": true
+  },
+  {
+    "number": 344,
+    "source": "E3444",
+    "destination": "G348",
+    "value": 0.11896111111111358,
+    "match": true
+  },
+  {
+    "number": 345,
+    "source": "E3454",
+    "destination": "G349",
+    "value": 0.11445000000000183,
+    "match": true
+  },
+  {
+    "number": 346,
+    "source": "E3464",
+    "destination": "G350",
+    "value": 0.08795000000000187,
+    "match": true
+  },
+  {
+    "number": 347,
+    "source": "E3474",
+    "destination": "G351",
+    "value": 0.07682777777777898,
+    "match": true
+  },
+  {
+    "number": 348,
+    "source": "E3484",
+    "destination": "G352",
+    "value": 0.08329444444444697,
+    "match": true
+  },
+  {
+    "number": 349,
+    "source": "E3494",
+    "destination": "G353",
+    "value": 0.08097777777777966,
+    "match": true
+  },
+  {
+    "number": 350,
+    "source": "E3504",
+    "destination": "G354",
+    "value": 0.06986666666666205,
+    "match": true
+  },
+  {
+    "number": 351,
+    "source": "E3514",
+    "destination": "G355",
+    "value": 0.06974444444444243,
+    "match": true
+  },
+  {
+    "number": 352,
+    "source": "E3524",
+    "destination": "G356",
+    "value": 0.0718111111111162,
+    "match": true
+  },
+  {
+    "number": 353,
+    "source": "E3534",
+    "destination": "G357",
+    "value": 0.06729444444443726,
+    "match": true
+  },
+  {
+    "number": 354,
+    "source": "E3544",
+    "destination": "G358",
+    "value": 0.05838888888888235,
+    "match": true
+  },
+  {
+    "number": 355,
+    "source": "E3554",
+    "destination": "G359",
+    "value": 0.049466666666664674,
+    "match": true
+  },
+  {
+    "number": 356,
+    "source": "E3564",
+    "destination": "G360",
+    "value": 0.05153333333332877,
+    "match": true
+  },
+  {
+    "number": 357,
+    "source": "E3574",
+    "destination": "G361",
+    "value": 0.03822222222222542,
+    "match": true
+  },
+  {
+    "number": 358,
+    "source": "E3584",
+    "destination": "G362",
+    "value": 0.027111111111107845,
+    "match": true
+  },
+  {
+    "number": 359,
+    "source": "E3594",
+    "destination": "G363",
+    "value": 0.03138333333333137,
+    "match": true
+  },
+  {
+    "number": 360,
+    "source": "E3604",
+    "destination": "G364",
+    "value": 0,
+    "match": true
+  }
+]

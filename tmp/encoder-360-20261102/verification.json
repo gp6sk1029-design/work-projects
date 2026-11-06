@@ -1,0 +1,75 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\1029_1332エンコーダ基準.xlsx",
+  "output": "C:\\Users\\SEIGI-N13\\work-projects\\outputs\\encoder-360-20261102\\1029_1332エンコーダ基準.xlsx",
+  "backup": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\encoder-360-20261102\\編集前バックアップ.xlsx",
+  "count": 360,
+  "target_range": "Sheet1!G5:G364",
+  "source_range": "Sheet1!E14,E24,...,E3604",
+  "zero_degree_G4_preserved": true,
+  "all_values_match": true,
+  "all_numbers_in_order": true,
+  "changed_zip_entries": [
+    "xl/worksheets/sheet8.xml",
+    "xl/calcChain.xml"
+  ],
+  "all_other_entries_byte_identical": true,
+  "all_sheet_names_preserved": [
+    "回転１",
+    "絶対精度",
+    "回転１（移動平均）",
+    "絶対精度（移動平均）",
+    "グラフ作業用データ（移動平均）",
+    "グラフ作業用データ",
+    "回転（1°毎）１",
+    "絶対精度（1°毎）",
+    "回転（1°毎）１（移動平均）",
+    "絶対精度（1°毎）（移動平均）",
+    "グラフ作業用データ（1°毎）（移動平均）",
+    "Sheet1",
+    "グラフ作業用データ（1°毎）"
+  ],
+  "calc_chain_added": 357,
+  "before_sha256": "d1c4cbcdaa92f1495aba0881f88b0439459d1ecb4ab865be2d8ca6bd07c2f01c",
+  "after_sha256": "ca0b2584961260c145e79dffac6c2e221e556e81a4f720cc2b79a7f97d08268e",
+  "native_excel_opened": false,
+  "first": [
+    {
+      "number": 1,
+      "source": "E14",
+      "target": "G5",
+      "value": -0.011711111111111113
+    },
+    {
+      "number": 2,
+      "source": "E24",
+      "target": "G6",
+      "value": -0.018411111111111135
+    },
+    {
+      "number": 3,
+      "source": "E34",
+      "target": "G7",
+      "value": -0.007549999999999997
+    }
+  ],
+  "last": [
+    {
+      "number": 358,
+      "source": "E3584",
+      "target": "G362",
+      "value": 0.027111111111107845
+    },
+    {
+      "number": 359,
+      "source": "E3594",
+      "target": "G363",
+      "value": 0.03138333333333137
+    },
+    {
+      "number": 360,
+      "source": "E3604",
+      "target": "G364",
+      "value": 0
+    }
+  ]
+}

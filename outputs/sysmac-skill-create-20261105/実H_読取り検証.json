@@ -1,0 +1,27 @@
+{
+  "read_only": true,
+  "external_sha256": "6361aef586c488d9c56729460cefcd37af8df7c08452798e3801152eb0716e02",
+  "sections": 25,
+  "rows": 1367,
+  "variable_tables": 5,
+  "inspect_seconds": 0.1191,
+  "internal_compare_seconds": 0.5815,
+  "native_seconds": 1.4967,
+  "internal_comparison": {
+    "source_sha256": "6361aef586c488d9c56729460cefcd37af8df7c08452798e3801152eb0716e02",
+    "target_sha256": "4723059ede8d6b7dade0ad070ec3d7b7b579343630099e39a1ec597070179e85",
+    "sections": [],
+    "control_difference": false,
+    "variable_declarations_equal": true,
+    "comment_rows": 0
+  },
+  "native": {
+    "rows": 1367,
+    "coils": 1591,
+    "parse_fail": 0,
+    "model_fail": 0,
+    "missing_connections": 0,
+    "verified": true
+  },
+  "real_projects_unchanged": true
+}

@@ -1,0 +1,32 @@
+{
+  "tests": [
+    {
+      "folder": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\codex-freeze-20261102\\inside-test",
+      "seconds": 5.613,
+      "exit_code": 0,
+      "input_sha256": "4c923c600d2d7d2f1b6d51d6d37a0509c6edab4e6655f45e6a0cb2db47a64a5a",
+      "saved": true,
+      "stdout": "{\"stage\":\"import\",\"seconds\":2.719}\nInspect result written to file: C:\\Users\\SEIGI-N13\\work-projects\\tmp\\codex-freeze-20261102\\inside-test/freeze-test-only.xlsx.inspect.ndjson\n{\"stage\":\"probe_saved\",\"seconds\":4.724,\"cell\":\"BS100\",\"before\":[[null]]}"
+    },
+    {
+      "folder": "C:\\Users\\SEIGI-N13\\Codex-Diagnostics\\freeze-20261102",
+      "seconds": 5.888,
+      "exit_code": 0,
+      "input_sha256": "4c923c600d2d7d2f1b6d51d6d37a0509c6edab4e6655f45e6a0cb2db47a64a5a",
+      "saved": true,
+      "stdout": "{\"stage\":\"import\",\"seconds\":2.968}\nInspect result written to file: C:\\Users\\SEIGI-N13\\Codex-Diagnostics\\freeze-20261102/freeze-test-only.xlsx.inspect.ndjson\n{\"stage\":\"probe_saved\",\"seconds\":5.025,\"cell\":\"BS100\",\"before\":[[null]]}"
+    }
+  ],
+  "original_unchanged": true,
+  "source_write_operations": 0,
+  "config": {
+    "hooks_feature": "未指定",
+    "deprecated_codex_hooks_feature": "未指定",
+    "global_hook_events": [
+      "state"
+    ],
+    "user_hooks_json_exists": false,
+    "project_hooks_json_exists": true
+  },
+  "scope": "Node上の読込・コピー変更・保存の比較。Codexの添付/送信やhooksの動作を再現する試験ではない。"
+}

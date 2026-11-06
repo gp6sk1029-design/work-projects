@@ -1,0 +1,118 @@
+{
+    "rows":  1375,
+    "coils":  1599,
+    "parse_fail":  0,
+    "model_fail":  0,
+    "missing_connections":  0,
+    "parts":  [
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/02fa0618-20f0-422f-b44d-3aba0838a381.xml",
+                      "rows":  16
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/056f39b5-2372-4d32-b892-634336899ec4.xml",
+                      "rows":  1
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/08c19951-3bae-402d-a637-be66c221f71b.xml",
+                      "rows":  6
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml",
+                      "rows":  316
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/13f086b3-1a09-467f-8cff-eea83144ff00.xml",
+                      "rows":  4
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+                      "rows":  32
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml",
+                      "rows":  18
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml",
+                      "rows":  132
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml",
+                      "rows":  1
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/49a83d1d-d863-4a09-a86a-4797edc14a57.xml",
+                      "rows":  1
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+                      "rows":  17
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml",
+                      "rows":  8
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml",
+                      "rows":  152
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/5ede16be-2114-46c3-84df-a79badb6e32e.xml",
+                      "rows":  1
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/6061835d-1e51-4e92-be1f-d546f44764e3.xml",
+                      "rows":  45
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml",
+                      "rows":  41
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/7b1666c7-ee97-4210-81b2-fed5a6172074.xml",
+                      "rows":  457
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml",
+                      "rows":  9
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/98de6707-f996-4f77-aad9-b0569299efb5.xml",
+                      "rows":  8
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml",
+                      "rows":  6
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml",
+                      "rows":  17
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml",
+                      "rows":  29
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml",
+                      "rows":  13
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml",
+                      "rows":  29
+                  },
+                  {
+                      "part":  "298443e5-40dc-47d4-95bf-46c8fde7d5ae/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml",
+                      "rows":  16
+                  }
+              ],
+    "errors":  [
+
+               ],
+    "verified":  true,
+    "source":  "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-comments-20261105\\I_all_comments.smc2",
+    "sha256":  "7f5c8d85ed8b770849cb284e7725650d6b3c1d2a564fa59ac15da856433e0bdb",
+    "full_application_build":  false,
+    "plc_simulation":  false,
+    "machine_test":  false
+}

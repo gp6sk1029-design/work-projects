@@ -1,0 +1,106 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261104C.smc2",
+  "output": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261104D.smc2",
+  "staged": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\box-x-st-20261104\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261104D.smc2",
+  "source_sha256": "d42d09dde68fa4d0a7159662610c7820982e267f3723ed1a7d1260aae95c9097",
+  "output_sha256": "5f1b272a90c86b6bdaba9d6275ee66c0ae3b2032640e71b0bd021d07c0cf3bc6",
+  "target": "ae62d256-5da6-4995-b63e-7a135575a042/6061835d-1e51-4e92-be1f-d546f44764e3.xml",
+  "row": 27,
+  "row_count": 28,
+  "changed_parts": [
+    "ae62d256-5da6-4995-b63e-7a135575a042/6061835d-1e51-4e92-be1f-d546f44764e3.xml",
+    "ae62d256-5da6-4995-b63e-7a135575a042/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml"
+  ],
+  "preserved_parts": 208,
+  "ladder_counts": {
+    "ae62d256-5da6-4995-b63e-7a135575a042/5ede16be-2114-46c3-84df-a79badb6e32e.xml": 1,
+    "ae62d256-5da6-4995-b63e-7a135575a042/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml": 29,
+    "ae62d256-5da6-4995-b63e-7a135575a042/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml": 1,
+    "ae62d256-5da6-4995-b63e-7a135575a042/13f086b3-1a09-467f-8cff-eea83144ff00.xml": 4,
+    "ae62d256-5da6-4995-b63e-7a135575a042/056f39b5-2372-4d32-b892-634336899ec4.xml": 1,
+    "ae62d256-5da6-4995-b63e-7a135575a042/49a83d1d-d863-4a09-a86a-4797edc14a57.xml": 1,
+    "ae62d256-5da6-4995-b63e-7a135575a042/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml": 41,
+    "ae62d256-5da6-4995-b63e-7a135575a042/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml": 13,
+    "ae62d256-5da6-4995-b63e-7a135575a042/02fa0618-20f0-422f-b44d-3aba0838a381.xml": 16,
+    "ae62d256-5da6-4995-b63e-7a135575a042/08c19951-3bae-402d-a637-be66c221f71b.xml": 6,
+    "ae62d256-5da6-4995-b63e-7a135575a042/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml": 9,
+    "ae62d256-5da6-4995-b63e-7a135575a042/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml": 18,
+    "ae62d256-5da6-4995-b63e-7a135575a042/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml": 17,
+    "ae62d256-5da6-4995-b63e-7a135575a042/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml": 6,
+    "ae62d256-5da6-4995-b63e-7a135575a042/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml": 17,
+    "ae62d256-5da6-4995-b63e-7a135575a042/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml": 32,
+    "ae62d256-5da6-4995-b63e-7a135575a042/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml": 21,
+    "ae62d256-5da6-4995-b63e-7a135575a042/6061835d-1e51-4e92-be1f-d546f44764e3.xml": 28,
+    "ae62d256-5da6-4995-b63e-7a135575a042/7b1666c7-ee97-4210-81b2-fed5a6172074.xml": 449,
+    "ae62d256-5da6-4995-b63e-7a135575a042/98de6707-f996-4f77-aad9-b0569299efb5.xml": 8,
+    "ae62d256-5da6-4995-b63e-7a135575a042/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml": 16,
+    "ae62d256-5da6-4995-b63e-7a135575a042/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml": 8,
+    "ae62d256-5da6-4995-b63e-7a135575a042/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml": 132,
+    "ae62d256-5da6-4995-b63e-7a135575a042/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml": 152,
+    "ae62d256-5da6-4995-b63e-7a135575a042/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml": 316
+  },
+  "new_declarations": 0,
+  "new_IST_ID": "2b1e7be3-48e4-4148-865c-4630898e0cc5",
+  "ST": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\box-x-st-20261104\\箱詰めX軸_27行目.st",
+  "native_validation": {
+    "box_section": "TOTAL=28 PARSE_FAIL=0 MODEL_FAIL=0",
+    "connections": "TOTAL_RUNGS=1342 COILS=1552 MISSING=0 PARSE_MODEL_FAIL=0",
+    "row27_nodes": [
+      {
+        "type": "Contact",
+        "input_edges": 1
+      },
+      {
+        "type": "Contact",
+        "input_edges": 1
+      },
+      {
+        "type": "Contact",
+        "input_edges": 1
+      },
+      {
+        "type": "Contact",
+        "input_edges": 1
+      },
+      {
+        "type": "Coil",
+        "input_edges": 1
+      },
+      {
+        "type": "LeftPowerRail",
+        "input_edges": 0
+      },
+      {
+        "type": "RightPowerRail",
+        "input_edges": 2
+      },
+      {
+        "type": "Connection",
+        "input_edges": 2
+      },
+      {
+        "type": "InlineStructuredTextModel",
+        "input_edges": 1
+      },
+      {
+        "type": "Connection",
+        "input_edges": 1
+      }
+    ],
+    "application_build_verified": false
+  },
+  "full_Sysmac_build": "未実施",
+  "PLC_transfer": "未実施",
+  "independent_verification": {
+    "coordinate_cases": 48,
+    "counter_positions": 16,
+    "invalid_count_cases": 8,
+    "gate_truth_table_cases": 16,
+    "other_parts_identical": 208,
+    "row_0_through_26_byte_identical": true,
+    "counter_rows_13_14_unchanged": true,
+    "Y_Z_unchanged": true,
+    "original_unchanged": true
+  },
+  "published": true
+}

@@ -1,0 +1,12 @@
+{
+  "changed_parts": 6,
+  "unchanged_parts": 206,
+  "box_coils_sequential_1_to_49": true,
+  "original_ST_exact": true,
+  "b_control_preserved_with_renumbering": true,
+  "initial_X1003_at_transfer_only": true,
+  "new_nonretained_bool_variables": 2,
+  "rcon1_and_rcon2_1_and_output_unmodified": true,
+  "rcon2_permission_values_unchanged": true,
+  "existing_100ms_preserved": true
+}

@@ -1,0 +1,202 @@
+{
+  "git_errors": [
+    {
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-25940-t0-i1-011317-0.log",
+      "line": 25,
+      "fields": {
+        "aborted": "true",
+        "durationMs": "32",
+        "exitCode": "null"
+      },
+      "tail": "abbrev\",\"--numstat\",\"-z\",\"--\",\":(literal)MEMORY.md\"] cwd=C:\\Users\\SEIGI-N13\\work-projects durationMs=32 exitCode=null failureReason=canceled hostId=local id=ab92629e isRemote=false outputLimitExceeded=false outputLimitMaxBytes=null outputLimitStream=null requestKind=review-summary source=review_model startTimeMs=1793582917082 stderrBytes=0 stdoutBytes=0 subcommand=diff success=false timedOut=false"
+    },
+    {
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-25940-t0-i1-011317-0.log",
+      "line": 26,
+      "fields": {
+        "aborted": "true",
+        "durationMs": "106",
+        "exitCode": "null"
+      },
+      "tail": "(literal)tmp/work-report-202610/フリーズ検証・振り返り.txt\"] cwd=C:\\Users\\SEIGI-N13\\work-projects durationMs=106 exitCode=null failureReason=canceled hostId=local id=f2fd2e11 isRemote=false outputLimitExceeded=false outputLimitMaxBytes=null outputLimitStream=null requestKind=review-summary source=review_model startTimeMs=1793582928309 stderrBytes=893 stdoutBytes=0 subcommand=diff success=false timedOut=false"
+    },
+    {
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-25940-t0-i1-011317-0.log",
+      "line": 27,
+      "fields": {
+        "aborted": "true",
+        "durationMs": "118",
+        "exitCode": "null"
+      },
+      "tail": "762557255241776\",\"--no-renames\",\"--name-only\",\"-z\"] cwd=C:\\Users\\SEIGI-N13\\work-projects durationMs=118 exitCode=null failureReason=canceled hostId=local id=8b8f7d4d isRemote=false outputLimitExceeded=false outputLimitMaxBytes=null outputLimitStream=null requestKind=review-summary source=review_model startTimeMs=1793582928697 stderrBytes=0 stdoutBytes=0 subcommand=diff success=false timedOut=false"
+    },
+    {
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-25940-t0-i1-011317-0.log",
+      "line": 28,
+      "fields": {
+        "aborted": "true",
+        "durationMs": "38",
+        "exitCode": "null"
+      },
+      "tail": "arning [git] git.command.complete aborted=true allowedNonZeroExitCodes=null argsCount=5 durationMs=38 exitCode=null failureReason=canceled hostId=local id=efebe51f isRemote=false outputLimitExceeded=false outputLimitMaxBytes=null outputLimitStream=null requestKind=review-summary source=review_model startTimeMs=1793582929836 stderrBytes=0 stdoutBytes=0 subcommand=status success=false timedOut=false"
+    },
+    {
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-25940-t0-i1-011317-0.log",
+      "line": 29,
+      "fields": {
+        "aborted": "true",
+        "durationMs": "90",
+        "exitCode": "null"
+      },
+      "tail": ",\":(literal)tmp/work-report-202610/フリーズ検証・振り返り.txt\"] cwd=C:\\Users\\SEIGI-N13\\work-projects durationMs=90 exitCode=null failureReason=canceled hostId=local id=415b0305 isRemote=false outputLimitExceeded=false outputLimitMaxBytes=null outputLimitStream=null requestKind=review-summary source=review_model startTimeMs=1793582932123 stderrBytes=0 stdoutBytes=0 subcommand=diff success=false timedOut=false"
+    },
+    {
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-25940-t0-i1-011317-0.log",
+      "line": 30,
+      "fields": {
+        "aborted": "true",
+        "durationMs": "62",
+        "exitCode": "null"
+      },
+      "tail": "abbrev\",\"--numstat\",\"-z\",\"--\",\":(literal)MEMORY.md\"] cwd=C:\\Users\\SEIGI-N13\\work-projects durationMs=62 exitCode=null failureReason=canceled hostId=local id=34278885 isRemote=false outputLimitExceeded=false outputLimitMaxBytes=null outputLimitStream=null requestKind=review-summary source=review_model startTimeMs=1793582934312 stderrBytes=0 stdoutBytes=0 subcommand=diff success=false timedOut=false"
+    },
+    {
+      "file": "codex-desktop-df40ce0d-4117-477e-a394-cd85bdd60566-19496-t0-i1-001325-0.log",
+      "line": 4,
+      "fields": {
+        "aborted": "true",
+        "durationMs": "525",
+        "exitCode": "null"
+      },
+      "tail": "eral)tools/revise_gt2_manual_measurement.py\"] cwd=C:\\Users\\SEIGI-N13\\work-projects durationMs=525 exitCode=null failureReason=canceled hostId=local id=c84bf5fb isRemote=false outputLimitExceeded=false outputLimitMaxBytes=null outputLimitStream=null requestKind=review-summary source=review_model startTimeMs=1793578412069 stderrBytes=102 stdoutBytes=40960 subcommand=diff success=false timedOut=false"
+    },
+    {
+      "file": "codex-desktop-df40ce0d-4117-477e-a394-cd85bdd60566-19496-t0-i1-001325-0.log",
+      "line": 10,
+      "fields": {
+        "aborted": "true",
+        "durationMs": "1411",
+        "exitCode": "null"
+      },
+      "tail": "-file=-\",\"--pathspec-file-nul\"] cwd=C:\\Users\\SEIGI-N13\\work-projects durationMs=1411 exitCode=null failureReason=canceled hostId=local id=9764d335 isRemote=false outputLimitExceeded=false outputLimitMaxBytes=null outputLimitStream=null requestKind=turn-diff-capture-start source=turn_diff_analytics startTimeMs=1793578574004 stderrBytes=11027 stdoutBytes=0 subcommand=add success=false timedOut=false"
+    },
+    {
+      "file": "codex-desktop-df40ce0d-4117-477e-a394-cd85bdd60566-19496-t0-i1-001325-0.log",
+      "line": 12,
+      "fields": {
+        "aborted": "true",
+        "durationMs": "69",
+        "exitCode": "null"
+      },
+      "tail": " warning [git] git.command.complete aborted=true allowedNonZeroExitCodes=0,1 argsCount=11 durationMs=69 exitCode=null failureReason=canceled hostId=local id=40ebc045 isRemote=false outputLimitExceeded=false outputLimitMaxBytes=null outputLimitStream=null requestKind=review-summary source=review_model startTimeMs=1793578636659 stderrBytes=0 stdoutBytes=0 subcommand=diff success=false timedOut=false"
+    },
+    {
+      "file": "codex-desktop-df40ce0d-4117-477e-a394-cd85bdd60566-19496-t0-i1-001325-0.log",
+      "line": 14,
+      "fields": {
+        "aborted": "true",
+        "durationMs": "1287",
+        "exitCode": "null"
+      },
+      "tail": "-file=-\",\"--pathspec-file-nul\"] cwd=C:\\Users\\SEIGI-N13\\work-projects durationMs=1287 exitCode=null failureReason=canceled hostId=local id=ae3e8775 isRemote=false outputLimitExceeded=false outputLimitMaxBytes=null outputLimitStream=null requestKind=turn-diff-capture-start source=turn_diff_analytics startTimeMs=1793578824647 stderrBytes=17015 stdoutBytes=0 subcommand=add success=false timedOut=false"
+    }
+  ],
+  "request_failures": [
+    {
+      "file": "codex-desktop-5371e537-a2a7-4be3-afe4-bfeb7e60a2d9-29264-t0-i1-000027-0.log",
+      "line": 40,
+      "time": "2026-11-02T00:08:10.926Z",
+      "event": "app_server_connection.closed",
+      "fields": {
+        "reason": "\"{\\\"timestamp\\\":\\\"2026-11-01T23:47:12.605262Z\\\",\\\"level\\\":\\\"WARN\\\",\\\"fields\\\":{\\\"message\\\":\\\"ignoring interface.defaultPrompt[0]: prompt must be at most 128 characters\\\",\\\"path\\\":\\\"file:///C:/Users/SEIGI-N13/.codex/.tmp/plugins/plugins/ngs-analysis/.codex-plug"
+      }
+    },
+    {
+      "file": "codex-desktop-5371e537-a2a7-4be3-afe4-bfeb7e60a2d9-29264-t0-i1-000027-0.log",
+      "line": 41,
+      "time": "2026-11-02T00:08:10.926Z",
+      "event": "app_server_connection.state_changed",
+      "fields": {}
+    },
+    {
+      "file": "codex-desktop-5371e537-a2a7-4be3-afe4-bfeb7e60a2d9-29264-t0-i1-000027-0.log",
+      "line": 144,
+      "time": "2026-11-02T00:08:12.170Z",
+      "event": "sa_server_request_failed",
+      "fields": {
+        "errorMessage": "\"Authenticated workspace changed\"",
+        "errorCode": "undefined",
+        "errorName": "Error"
+      }
+    },
+    {
+      "file": "codex-desktop-5371e537-a2a7-4be3-afe4-bfeb7e60a2d9-29264-t0-i1-000027-0.log",
+      "line": 145,
+      "time": "2026-11-02T00:08:12.232Z",
+      "event": "sa_server_request_failed",
+      "fields": {
+        "errorMessage": "\"Authenticated workspace changed\"",
+        "errorCode": "undefined",
+        "errorName": "Error"
+      }
+    },
+    {
+      "file": "codex-desktop-5371e537-a2a7-4be3-afe4-bfeb7e60a2d9-29264-t0-i1-000027-0.log",
+      "line": 146,
+      "time": "2026-11-02T00:08:12.233Z",
+      "event": "sa_server_request_failed",
+      "fields": {
+        "errorMessage": "\"Authenticated workspace changed\"",
+        "errorCode": "undefined",
+        "errorName": "Error"
+      }
+    },
+    {
+      "file": "codex-desktop-5371e537-a2a7-4be3-afe4-bfeb7e60a2d9-29264-t0-i1-000027-0.log",
+      "line": 192,
+      "time": "2026-11-02T00:08:19.866Z",
+      "event": "Local",
+      "fields": {
+        "reason": "unexpected_startup_failure"
+      }
+    },
+    {
+      "file": "codex-desktop-ce579598-3d70-43e7-9063-a8c75b04fa6a-11008-t0-i1-000828-0.log",
+      "line": 362,
+      "time": "2026-11-02T00:08:53.808Z",
+      "event": "Local",
+      "fields": {
+        "reason": "unexpected_startup_failure"
+      }
+    },
+    {
+      "file": "codex-desktop-ce579598-3d70-43e7-9063-a8c75b04fa6a-11008-t0-i1-000828-0.log",
+      "line": 560,
+      "time": "2026-11-02T00:11:06.642Z",
+      "event": "Local",
+      "fields": {
+        "reason": "exit_1073807364"
+      }
+    }
+  ],
+  "closed": [
+    {
+      "time": "2026-11-02T00:08:10.926Z",
+      "reason_tail": "{\"timestamp\":\"2026-11-01T23:47:12.605262Z\",\"level\":\"WARN\",\"fields\":{\"message\":\"ignoring interface.defaultPrompt[0]: prompt must be at most 128 characters\",\"path\":\"file:///C:/Users/SEIGI-N13/.codex/.tmp/plugins/plugins/ngs-analysis/.codex-plugin/plugin.json\"},\"target\":\"codex_core_plugins::manifest\"}"
+    }
+  ],
+  "hook_records": [
+    {
+      "time": "2026-11-02T01:04:16.341Z",
+      "prefix": "2026-11-02T01:04:16.341Z warning [git] git.command.complete aborted=true allowedNonZeroExitCodes=0,1 argsCount=309 command=\"git -c diff.mnemonicPrefix=false -c diff.noprefix=false -c core.quotePath=fa"
+    },
+    {
+      "time": "2026-11-02T01:28:17.889Z",
+      "prefix": "2026-11-02T01:28:17.889Z info [host-app-server-manager] Reasoning summary item completed itemId=rs_03688adc0241da28016ae7e72834a08191a87176ab9398abfb summary=[\"**Checking hook configuration**\",\"**Chec"
+    },
+    {
+      "time": "2026-11-02T00:13:32.594Z",
+      "prefix": "2026-11-02T00:13:32.594Z warning [git] git.command.complete aborted=true allowedNonZeroExitCodes=0,1 argsCount=309 command=\"git -c diff.mnemonicPrefix=false -c diff.noprefix=false -c core.quotePath=fa"
+    }
+  ]
+}

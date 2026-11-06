@@ -187,6 +187,7 @@ MEMORY.md（学習・経験の蓄積）
 |---|---|---|
 | 注文書作成 | 「見積書から注文書を作って」「図面フォルダの分を注文書に」「注文書と見積書を照合して」 | `.agents/skills/purchase-order/SKILL.md` |
 | 図面DXF変換 | 「DXFに変換して」「取引先に支給するDXFを作って」 | `.agents/skills/drawing-dxf/SKILL.md` |
+| Sysmac Studio編集 | 「SMC2を編集して」「ラダーを分析して」「プロジェクトへ反映して」「コメントや番号を直して」 | `.agents/skills/sysmac-studio/SKILL.md` |
 
 使い方の概要は `.agents/skills/README.md`。
 スキルを編集したら **`python tools/sync_skills.py` を実行**して `.claude` と `.agents` を揃えること。

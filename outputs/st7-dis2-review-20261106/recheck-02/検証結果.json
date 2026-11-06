@@ -1,0 +1,35 @@
+{
+  "solution": "3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105J",
+  "saved_date": "2026-11-06T08:55:08.2706103+09:00",
+  "sha256": "be2074fba67262e997ff5812b96c993b800345ab9666ba4ac747e256b8914f41",
+  "unchanged_since_previous_review": true,
+  "source_unchanged_during_read": true,
+  "project_modified": false,
+  "diagrams": [
+    {
+      "path": "C:\\Users\\SEIGI-N13\\work-projects\\outputs\\st7-dis2-review-20261106\\recheck-02\\01-OK品の送り完了待ち.png",
+      "size": [
+        1740,
+        1050
+      ],
+      "visually_inspected": true
+    },
+    {
+      "path": "C:\\Users\\SEIGI-N13\\work-projects\\outputs\\st7-dis2-review-20261106\\recheck-02\\02-上下軸の要求番号を分離.png",
+      "size": [
+        1740,
+        1060
+      ],
+      "visually_inspected": true
+    },
+    {
+      "path": "C:\\Users\\SEIGI-N13\\work-projects\\outputs\\st7-dis2-review-20261106\\recheck-02\\03-空ワーク完了と次周期解除.png",
+      "size": [
+        1740,
+        1300
+      ],
+      "visually_inspected": true
+    }
+  ],
+  "scope": "保存済みラダーの静的照合と、同一SHAでの既存局所検算。新しい実機/全体ビルド試験なし。"
+}

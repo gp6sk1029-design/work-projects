@@ -1,0 +1,1672 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261104A.smc2",
+  "sha256": "fbeab173e1469f512ed40794290747f83636ea4af8b479748213574e176efd6c",
+  "parts": 210,
+  "sections": [
+    {
+      "name": "Initial_初期化処理",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/5ede16be-2114-46c3-84df-a79badb6e32e.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "Origin_原点復帰",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "DummyCheck_ダミーチェック",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "AutoMode_自動運転",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/13f086b3-1a09-467f-8cff-eea83144ff00.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "Manual_手動運転",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/056f39b5-2372-4d32-b892-634336899ec4.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "Setting_設定",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/49a83d1d-d863-4a09-a86a-4797edc14a57.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "Error_エラー処理",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "Ins_A_Cv_左検査Cv",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "ST0_A_Sup_左供給",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/02fa0618-20f0-422f-b44d-3aba0838a381.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "ST1_A_Ca1_左Ca1検査",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/08c19951-3bae-402d-a637-be66c221f71b.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "ST2_A_Hgt_左高さ検査",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "ST3_A_Dis1_左NG1排出",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "ST4_A_Rev1_左反転1",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "ST5_A_Ca2_左Ca2検査",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "ST6_A_Rev2_左反転2",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "ST7_A_Dis2_左SF排出",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "Destacker_段バラシ",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "BoxPacking_箱詰め",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/6061835d-1e51-4e92-be1f-d546f44764e3.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "RCON_IAI",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/7b1666c7-ee97-4210-81b2-fed5a6172074.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "DLEP1_GT2",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/98de6707-f996-4f77-aad9-b0569299efb5.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "FH_5552_10",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "CV2A_KED",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "HMI",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "Input_入力",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml",
+      "subtype": "Ladder"
+    },
+    {
+      "name": "Output_出力",
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml",
+      "subtype": "Ladder"
+    }
+  ],
+  "target": {
+    "name": "ST7_A_Dis2_左SF排出",
+    "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+    "subtype": "Ladder"
+  },
+  "row_count": 31,
+  "view": [
+    {
+      "row": 3,
+      "comment": "RCON1_5 SF/NG2 ①上昇(セイフティ)\r\n目標位置データ 転送",
+      "elements": [
+        {
+          "__type": "LD",
+          "Var": "ST7_A_Dis2_M[2]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Out_CYw_Disc_Chk_A_H_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "ST7_A_Dis2_M[3]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Not": true,
+          "Var": "Retry[12]",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "ST7_A_Dis2_M[4]",
+          "X": 3
+        },
+        {
+          "__type": "F",
+          "Ix": 8,
+          "Name": "MOVE",
+          "X": 4,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON1_5_OUT_TargetPos[1]"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON1_5_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "ST7_A_Dis2_M[3]",
+          "X": 5
+        }
+      ]
+    },
+    {
+      "row": 9,
+      "comment": "#コンベアワーク回収\r\nRCON1_5 SF/NG2 ②降下(コンベア)\r\n目標位置データ 転送",
+      "elements": [
+        {
+          "__type": "LD",
+          "Var": "ST7_A_Dis2_M[8]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "ST7_A_Dis2_M[9]",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "ST7_A_Dis2_M[12]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Not": true,
+          "Var": "Retry[12]",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "ST7_A_Dis2_M[13]",
+          "X": 3
+        },
+        {
+          "__type": "F",
+          "Ix": 8,
+          "Name": "MOVE",
+          "X": 4,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON1_5_OUT_TargetPos[2]"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON1_5_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "ST7_A_Dis2_M[12]",
+          "X": 5
+        }
+      ]
+    },
+    {
+      "row": 12,
+      "comment": "RCON1_5 SF/NG2 ①上昇(セイフティ)\r\n目標位置データ 転送",
+      "elements": [
+        {
+          "__type": "LD",
+          "Var": "ST7_A_Dis2_M[14]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Disc_Chk_A_F_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "ST7_A_Dis2_M[15]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Not": true,
+          "Var": "Retry[12]",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "ST7_A_Dis2_M[16]",
+          "X": 3
+        },
+        {
+          "__type": "F",
+          "Ix": 8,
+          "Name": "MOVE",
+          "X": 4,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON1_5_OUT_TargetPos[1]"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON1_5_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "ST7_A_Dis2_M[15]",
+          "X": 5
+        }
+      ]
+    },
+    {
+      "row": 14,
+      "comment": "#仕分け判定\r\nRCON1_3 SF/NG2 (左右)\r\n・OK判定：②ストックフォルダ位置\r\n・NG判定(キズ)：③NG2ストッカー1\r\n・NG判定(姿)：④NG2ストッカー2\r\n目標位置データ 転送",
+      "elements": [
+        {
+          "__type": "LD",
+          "Var": "ST7_A_Dis2_M[16]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "RCON1_5_MoveDone",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "ST7_A_Dis2_M[17]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Not": true,
+          "Var": "Retry[12]",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "ST7_A_Dis2_M[22]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "ST7_A_Dis2_M[17]",
+          "X": 4
+        },
+        {
+          "__type": "F",
+          "Ix": 33,
+          "Name": "=",
+          "X": 4,
+          "Y": 1,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "Station_A_Data[7].Total_Judge"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "INT#1"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 28,
+          "Name": "MOVE",
+          "X": 5,
+          "Y": 1,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON1_3_OUT_TargetPos[2]"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON1_3_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Ix": 6,
+          "Var": "ST7_A_Dis2_M[18]",
+          "X": 6,
+          "Y": 1
+        },
+        {
+          "__type": "F",
+          "Ix": 36,
+          "Name": "Up",
+          "X": 6,
+          "Y": 2,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 37,
+          "Name": "+",
+          "X": 7,
+          "Y": 2,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Type": "ANY_NUM, STRING",
+              "Var": "A_SF_CT"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Type": "ANY_NUM, STRING",
+              "Var": "INT#1"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "",
+              "Type": "ANY_NUM, STRING",
+              "Var": "A_SF_CT"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 34,
+          "Name": "=",
+          "X": 4,
+          "Y": 3,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "Station_A_Data[7].Total_Judge"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "INT#9"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 29,
+          "Name": "=",
+          "X": 5,
+          "Y": 3,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "Station_A_Data[7].Judgment_Details"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "INT#4"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 30,
+          "Name": "MOVE",
+          "X": 6,
+          "Y": 3,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON1_3_OUT_TargetPos[3]"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON1_3_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Ix": 7,
+          "Var": "ST7_A_Dis2_M[19]",
+          "X": 7,
+          "Y": 3
+        },
+        {
+          "__type": "F",
+          "Ix": 35,
+          "Name": "=",
+          "X": 4,
+          "Y": 4,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "Station_A_Data[7].Total_Judge"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "INT#9"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 31,
+          "Name": "=",
+          "X": 5,
+          "Y": 4,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "Station_A_Data[7].Judgment_Details"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "INT#5"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 32,
+          "Name": "MOVE",
+          "X": 6,
+          "Y": 4,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON1_3_OUT_TargetPos[4]"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON1_3_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Ix": 8,
+          "Var": "ST7_A_Dis2_M[20]",
+          "X": 7,
+          "Y": 4
+        },
+        {
+          "__type": "HL",
+          "X": 5
+        },
+        {
+          "__type": "HL",
+          "X": 6
+        },
+        {
+          "__type": "HL",
+          "X": 7
+        },
+        {
+          "__type": "HL",
+          "X": 7,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "row": 17,
+      "comment": "RCON1_5 SF/NG2 降下\r\n\r\n・OK判定：②ストックフォルダ位置1段目\r\n・OK判定：③ストックフォルダ位置2段目\r\n・OK判定：④ストックフォルダ位置3段目\r\n・OK判定：⑤ストックフォルダ位置4段目\r\n・OK判定：⑥ストックフォルダ位置5段目\r\n\r\n・NG判定(キズ)：⓻NG2ストッカー1\r\n・NG判定(姿)：⑧NG2ストッカー2\r\n目標位置データ 転送",
+      "elements": [
+        {
+          "__type": "LD",
+          "Var": "ST7_A_Dis2_M[22]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "RCON1_3_MoveDone",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "ST7_A_Dis2_M[23]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Not": true,
+          "Var": "Retry[12]",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "ST7_A_Dis2_M[27]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 6,
+          "Var": "ST7_A_Dis2_M[23]",
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Not": true,
+          "Var": "TimerQ_In_Sen_SH_B_Ent",
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "__type": "F",
+          "Ix": 44,
+          "Name": "=",
+          "X": 5,
+          "Y": 1,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "Station_A_Data[7].Total_Judge"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "INT#1"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 51,
+          "Name": "=",
+          "X": 6,
+          "Y": 1,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "A_SF_CT"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "INT#1"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 52,
+          "Name": "MOVE",
+          "X": 7,
+          "Y": 1,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON1_5_OUT_TargetPos[2]"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON1_5_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 53,
+          "Name": "=",
+          "X": 6,
+          "Y": 2,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "A_SF_CT"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "INT#2"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 54,
+          "Name": "MOVE",
+          "X": 7,
+          "Y": 2,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON1_5_OUT_TargetPos[3]"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON1_5_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 55,
+          "Name": "=",
+          "X": 6,
+          "Y": 3,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "A_SF_CT"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "INT#3"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 56,
+          "Name": "MOVE",
+          "X": 7,
+          "Y": 3,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON1_5_OUT_TargetPos[4]"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON1_5_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 57,
+          "Name": "=",
+          "X": 6,
+          "Y": 4,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "A_SF_CT"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "INT#4"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 58,
+          "Name": "MOVE",
+          "X": 7,
+          "Y": 4,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON1_5_OUT_TargetPos[5]"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON1_5_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 59,
+          "Name": "=",
+          "X": 6,
+          "Y": 5,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "A_SF_CT"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "INT#5"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 60,
+          "Name": "MOVE",
+          "X": 7,
+          "Y": 5,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON1_5_OUT_TargetPos[6]"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON1_5_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Ix": 7,
+          "Var": "ST7_A_Dis2_M[24]",
+          "X": 8,
+          "Y": 1
+        },
+        {
+          "__type": "F",
+          "Ix": 45,
+          "Name": "=",
+          "X": 4,
+          "Y": 6,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "Station_A_Data[7].Total_Judge"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "INT#9"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 46,
+          "Name": "=",
+          "X": 5,
+          "Y": 6,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "Station_A_Data[7].Judgment_Details"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "INT#4"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 47,
+          "Name": "MOVE",
+          "X": 6,
+          "Y": 6,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON1_5_OUT_TargetPos[7]"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON1_5_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Ix": 8,
+          "Var": "ST7_A_Dis2_M[25]",
+          "X": 7,
+          "Y": 6
+        },
+        {
+          "__type": "F",
+          "Ix": 48,
+          "Name": "=",
+          "X": 4,
+          "Y": 7,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "Station_A_Data[7].Total_Judge"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "INT#9"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 49,
+          "Name": "=",
+          "X": 5,
+          "Y": 7,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "Station_A_Data[7].Judgment_Details"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "INT#5"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 50,
+          "Name": "MOVE",
+          "X": 6,
+          "Y": 7,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON1_5_OUT_TargetPos[8]"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON1_5_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "ST7_A_Dis2_M[26]",
+          "X": 7,
+          "Y": 7
+        },
+        {
+          "__type": "HL",
+          "X": 5
+        },
+        {
+          "__type": "HL",
+          "X": 6
+        },
+        {
+          "__type": "HL",
+          "X": 7
+        },
+        {
+          "__type": "HL",
+          "X": 8
+        },
+        {
+          "__type": "HL",
+          "X": 8,
+          "Y": 6
+        },
+        {
+          "__type": "HL",
+          "X": 8,
+          "Y": 7
+        }
+      ]
+    },
+    {
+      "row": 20,
+      "comment": "#ワーク解放後 原点位置移動\r\nRCON1_5 SF/NG2 ①上昇(セイフティ)\r\n目標位置データ 転送",
+      "elements": [
+        {
+          "__type": "LD",
+          "Var": "ST7_A_Dis2_M[28]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Disc_Chk_A_H_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "ST7_A_Dis2_M[29]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Not": true,
+          "Var": "Retry[12]",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Not": true,
+          "Var": "ST7_A_Dis2_M[30]",
+          "X": 3
+        },
+        {
+          "__type": "F",
+          "Ix": 21,
+          "Name": "MOVE",
+          "X": 4,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON1_5_OUT_TargetPos[1]"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON1_5_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "ST7_A_Dis2_M[29]",
+          "X": 5
+        },
+        {
+          "__type": "F",
+          "Ix": 20,
+          "Name": "Up",
+          "X": 4,
+          "Y": 1,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 17,
+          "Name": "=",
+          "X": 5,
+          "Y": 1,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "Station_A_Data[7].Total_Judge"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "INT#1"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 18,
+          "Name": "=",
+          "X": 6,
+          "Y": 1,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "A_SF_CT"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "INT#5"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 22,
+          "Name": "+",
+          "X": 7,
+          "Y": 1,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Type": "ANY_NUM, STRING",
+              "Var": ""
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Type": "ANY_NUM, STRING",
+              "Var": ""
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "",
+              "Type": "ANY_NUM, STRING",
+              "Var": ""
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Ix": 19,
+          "Name": "MOVE",
+          "X": 8,
+          "Y": 1,
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "INT#0"
+            }
+          ],
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "A_SF_CT"
+            }
+          ]
+        },
+        {
+          "__type": "HL",
+          "X": 6
+        },
+        {
+          "__type": "HL",
+          "X": 7
+        },
+        {
+          "__type": "HL",
+          "X": 8
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=ARRAY[0..99] OF LREAL\tN=HMI_RCON1_5_OUT_TargetPos\tG=VAR_EXTERNAL\tCom=RCON1_5 目標位置 [mm]："
+    },
+    {
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=INT\tN=A_SF_CT\tG=VAR_EXTERNAL\tCom=A(左側) ストックフォルダカウント"
+    },
+    {
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=LREAL\tN=RCON1_5_OUT_TargetPos_mm\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "definition": "++D=LREAL\tN=RCON1_5_OUT_TargetPos_mm\tG=VAR_EXTERNAL\tCom=目標位置 [mm]"
+    },
+    {
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=LREAL\tN=RCON1_5_OUT_TargetPos_mm\tG=VAR_GLOBAL\tCom=目標位置 [mm]"
+    },
+    {
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=ARRAY[0..99] OF LREAL\tN=HMI_RCON1_5_OUT_TargetPos\tR=1\tG=VAR_GLOBAL\tCom=RCON1_5 SF/NG2排出(上下) 目標位置 [mm]：\tEC=<ECs><EC EK=\"[1]\" C=\"①上昇(セイフティ)\" /><EC EK=\"[2]\" C=\"OK判定：②ストックフォルダ位置1段目\" /><EC EK=\"[3]\" C=\"OK判定：③ストックフォルダ位置2段目\" /><EC EK=\"[4]\" C=\"OK判定：④ストックフォルダ位置3段目\" /><EC EK=\"[5]\" C=\"OK判定：⑤ストックフォルダ位置4段目\" /><EC EK=\"[6]\" C=\"OK判定：⑥ストックフォルダ位置5段目\" /><EC EK=\"[7]\" C=\"NG判定(キズ)：⓻NG2ストッカー1\" /><EC EK=\"[8]\" C=\"NG判定(姿)：⑧NG2ストッカー2\" /></ECs>"
+    },
+    {
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=INT\tN=A_SF_CT\tR=1\tG=VAR_GLOBAL\tCom=A(左側) ストックフォルダカウント"
+    }
+  ],
+  "related_counter": [],
+  "other_position_data": [
+    {
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/20a6b651-4c34-401a-965e-db3e18414d5c.xml",
+      "sample": "sReadOnly=\"false\" IsConstant=\"false\" Group=\"VAR_GLOBAL\" InitialValueArrayLength=\"\" UpdateRate=\"500\" />\r\n    <Variable DataTypeName=\"Double(99)\" Name=\"HMI_RCON1_5_OUT_TargetPos\" Address=\"new_Controller_0.HMI_RCON1_5_OUT_TargetPos\" Length=\"\" Retained=\"false\" InitialValue=\"\" Comment=\"RCON1_5 SF/NG2排出(上下) 目標位置 [mm]：\" NetworkPublication=\"NoPublication\" IsReadOnlyNetwork=\"false\" Edge=\"NoEdge\" Id=\"ba68f38f-1d0b-46bb-9eca-3b0f48aa660f\" Order=\"\" IsControllerVariable=\"false\" IsRea"
+    },
+    {
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/20a6b651-4c34-401a-965e-db3e18414d5c.xml",
+      "sample": "L\" InitialValueArrayLength=\"\" UpdateRate=\"500\" />\r\n    <Variable DataTypeName=\"Double(99)\" Name=\"HMI_RCON1_5_OUT_TargetPos\" Address=\"new_Controller_0.HMI_RCON1_5_OUT_TargetPos\" Length=\"\" Retained=\"false\" InitialValue=\"\" Comment=\"RCON1_5 SF/NG2排出(上下) 目標位置 [mm]：\" NetworkPublication=\"NoPublication\" IsReadOnlyNetwork=\"false\" Edge=\"NoEdge\" Id=\"ba68f38f-1d0b-46bb-9eca-3b0f48aa660f\" Order=\"\" IsControllerVariable=\"false\" IsReadOnly=\"false\" IsConstant=\"false\" Group=\"VAR_GLOBAL\" I"
+    },
+    {
+      "part": "97ac0aed-b229-441b-92ea-aa099dcb7938/5e9126d6-8f87-494e-bf44-c84712e3509e.NexBuildVerifierGroup",
+      "sample": ":Key>E001_Out_OUT49_2003_32</a:Key><a:Value>7X8zKfDyeXc6Ik3zPXedLw==</a:Value></a:KeyValueOfstringbase64Binary><a:KeyValueOfstringbase64Binary><a:Key>HMI_RCON1_5_OUT_TargetPos</a:Key><a:Value>cKxbzRMjlXyMYJu+xIk8Mw==</a:Value></a:KeyValueOfstringbase64Binary><a:KeyValueOfstringbase64Binary><a:Key>RCON1_2_OUT_PushLimit_pct</a:Key><a:Value>jqH/MGmzqM89A15wwE1GLQ==</a:Value></a:KeyValueOfstringbase64Binary><a:KeyValueOfstringbase64Binary><a:Key>Out_CYw_Sply_Slide_A_H_Done</"
+    }
+  ]
+}

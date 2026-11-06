@@ -1,0 +1,21 @@
+{
+  "file": "C:\\Users\\SEIGI-N13\\work-projects\\outputs\\encoder-360-20261102\\1029_1332エンコーダ基準_修正版.xlsx",
+  "original_nonempty_cells_preserved_outside_target": 87976,
+  "original_formulas_preserved_outside_target": 51471,
+  "sheet_count_including_charts": 13,
+  "missing_original_values": 0,
+  "target_count": 360,
+  "all_target_values_match": true,
+  "all_target_numbers_in_order": true,
+  "all_XML_parts_parse": true,
+  "row_cell_address_mismatch": 0,
+  "changed_entries": [
+    "[Content_Types].xml",
+    "xl/workbook.xml",
+    "xl/_rels/workbook.xml.rels",
+    "xl/worksheets/sheet8.xml",
+    "xl/calcChain.xml"
+  ],
+  "native_excel_warning_check": "未完了：画面操作ツールの位置認識エラー。利用者も今は確認できないと回答（2026-11-02）",
+  "native_excel_verification_not_claimed": true
+}

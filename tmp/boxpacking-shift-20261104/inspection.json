@@ -1,0 +1,1296 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261104B.smc2",
+  "sha256": "0f54fc754dfd2fa643dc2cfeaeb844ddab0d2be338930389402f33189bab3adc",
+  "parts": 210,
+  "target": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/6061835d-1e51-4e92-be1f-d546f44764e3.xml",
+  "row_count": 28,
+  "coils": [
+    "BoxPacking_M[1]",
+    "BoxPacking_M[2]",
+    "BoxPacking_M[3]",
+    "BoxPacking_M[4]",
+    "BoxPacking_M[5]",
+    "BoxPacking_M[6]",
+    "BoxPacking_M[7]",
+    "BoxPacking_M[8]",
+    "BoxPacking_M[9]",
+    "BoxPacking_M[10]",
+    "BoxPacking_M[11]",
+    "BoxPacking_M[12]",
+    "BoxPacking_M[13]",
+    "BoxPacking_M[14]",
+    "BoxPacking_M[14]",
+    "BoxPacking_M[15]",
+    "BoxPacking_M[16]",
+    "BoxPacking_M[17]",
+    "BoxPacking_M[18]",
+    "BoxPacking_M[19]",
+    "BoxPacking_M[20]",
+    "BoxPacking_M[21]",
+    "BoxPacking_M[22]",
+    "BoxPacking_M[23]",
+    "BoxPacking_M[24]",
+    "BoxPacking_M[25]",
+    "BoxPacking_M[26]",
+    "BoxPacking_M[27]",
+    "BoxPacking_M[28]",
+    "BoxPacking_M[29]",
+    "BoxPacking_M[30]",
+    "BoxPacking_M[31]"
+  ],
+  "view": [
+    {
+      "row": 0,
+      "comment": "",
+      "coils": [
+        "BoxPacking_M[1]"
+      ],
+      "references": [
+        {
+          "path": [
+            0,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "BoxPacking_M[1]",
+          "Y": 1
+        },
+        {
+          "path": [
+            0,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "BoxPacking_M[2]",
+          "X": 1
+        },
+        {
+          "path": [
+            0,
+            "CLs",
+            3
+          ],
+          "__type": "ST",
+          "Ix": 3,
+          "Var": "BoxPacking_M[1]",
+          "X": 2
+        }
+      ]
+    },
+    {
+      "row": 1,
+      "comment": "#自動運転 初回動作\r\n\r\nコンテナ状態 判定\r\n①コンテナ設置可能\r\n②コンテナ設置\r\n③コンテナ排出",
+      "coils": [
+        "BoxPacking_M[2]",
+        "BoxPacking_M[3]",
+        "BoxPacking_M[4]",
+        "BoxPacking_M[5]"
+      ],
+      "references": [
+        {
+          "path": [
+            1,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[1]"
+        },
+        {
+          "path": [
+            1,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "BoxPacking_M[2]",
+          "Y": 1
+        },
+        {
+          "path": [
+            1,
+            "CLs",
+            5
+          ],
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "BoxPacking_M[2]",
+          "X": 3
+        },
+        {
+          "path": [
+            1,
+            "CLs",
+            8
+          ],
+          "__type": "ST",
+          "Ix": 6,
+          "Var": "BoxPacking_M[3]",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "path": [
+            1,
+            "CLs",
+            10
+          ],
+          "__type": "ST",
+          "Ix": 7,
+          "Var": "BoxPacking_M[4]",
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "path": [
+            1,
+            "CLs",
+            12
+          ],
+          "__type": "ST",
+          "Ix": 8,
+          "Var": "BoxPacking_M[5]",
+          "X": 4,
+          "Y": 3
+        }
+      ]
+    },
+    {
+      "row": 2,
+      "comment": "①コンテナ設置可能\r\n【Y1204】コンテナ排出 戻",
+      "coils": [
+        "BoxPacking_M[6]"
+      ],
+      "references": [
+        {
+          "path": [
+            2,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[2]"
+        },
+        {
+          "path": [
+            2,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "BoxPacking_M[3]",
+          "X": 1
+        },
+        {
+          "path": [
+            2,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "BoxPacking_M[6]",
+          "Y": 1
+        },
+        {
+          "path": [
+            2,
+            "CLs",
+            5
+          ],
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "BoxPacking_M[6]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "row": 3,
+      "comment": "RCON2_5\r\nコンテナ設置 Pos移動",
+      "coils": [
+        "BoxPacking_M[7]"
+      ],
+      "references": [
+        {
+          "path": [
+            3,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[2]"
+        },
+        {
+          "path": [
+            3,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "BoxPacking_M[7]",
+          "Y": 1
+        },
+        {
+          "path": [
+            3,
+            "CLs",
+            6
+          ],
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "BoxPacking_M[7]",
+          "X": 4
+        }
+      ]
+    },
+    {
+      "row": 4,
+      "comment": "コンテナトレイ方向 判定\r\n①方向OK \r\n②方向NG ",
+      "coils": [
+        "BoxPacking_M[8]",
+        "BoxPacking_M[9]"
+      ],
+      "references": [
+        {
+          "path": [
+            4,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[7]"
+        },
+        {
+          "path": [
+            4,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "BoxPacking_M[8]",
+          "Y": 1
+        },
+        {
+          "path": [
+            4,
+            "CLs",
+            5
+          ],
+          "__type": "ST",
+          "Ix": 6,
+          "Var": "BoxPacking_M[8]",
+          "X": 3
+        },
+        {
+          "path": [
+            4,
+            "CLs",
+            7
+          ],
+          "__type": "ST",
+          "Ix": 8,
+          "Var": "BoxPacking_M[9]",
+          "X": 4,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "row": 5,
+      "comment": "RCON2_5\r\nコンテナ排出 Pos移動",
+      "coils": [
+        "BoxPacking_M[10]"
+      ],
+      "references": [
+        {
+          "path": [
+            5,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[8]"
+        },
+        {
+          "path": [
+            5,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "BoxPacking_M[10]",
+          "Y": 1
+        },
+        {
+          "path": [
+            5,
+            "CLs",
+            6
+          ],
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "BoxPacking_M[10]",
+          "X": 4
+        }
+      ]
+    },
+    {
+      "row": 6,
+      "comment": "【Y1205】コンテナ排出 行",
+      "coils": [
+        "BoxPacking_M[11]"
+      ],
+      "references": [
+        {
+          "path": [
+            6,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[10]"
+        },
+        {
+          "path": [
+            6,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "BoxPacking_M[11]",
+          "Y": 1
+        },
+        {
+          "path": [
+            6,
+            "CLs",
+            5
+          ],
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "BoxPacking_M[11]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "row": 7,
+      "comment": "自動運転 初回動作コンテナ排出完了",
+      "coils": [
+        "BoxPacking_M[12]"
+      ],
+      "references": [
+        {
+          "path": [
+            7,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[11]"
+        },
+        {
+          "path": [
+            7,
+            "CLs",
+            3
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "BoxPacking_M[12]",
+          "Y": 1
+        },
+        {
+          "path": [
+            7,
+            "CLs",
+            7
+          ],
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "BoxPacking_M[12]",
+          "X": 4
+        }
+      ]
+    },
+    {
+      "row": 8,
+      "comment": "#箱詰め 連続動作\r\n\r\nコンテナ設置開始\r\n【Y1204】コンテナ排出 戻",
+      "coils": [
+        "BoxPacking_M[13]"
+      ],
+      "references": [
+        {
+          "path": [
+            8,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[12]"
+        },
+        {
+          "path": [
+            8,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "BoxPacking_M[13]",
+          "Y": 1
+        },
+        {
+          "path": [
+            8,
+            "CLs",
+            5
+          ],
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "BoxPacking_M[13]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "row": 9,
+      "comment": "【Y1206】箱入れチャック 戻 ",
+      "coils": [
+        "BoxPacking_M[14]"
+      ],
+      "references": [
+        {
+          "path": [
+            9,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[13]"
+        },
+        {
+          "path": [
+            9,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "BoxPacking_M[14]",
+          "Y": 1
+        },
+        {
+          "path": [
+            9,
+            "CLs",
+            5
+          ],
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "BoxPacking_M[14]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "row": 10,
+      "comment": "RCON2_5\r\nコンテナ設置 Pos移動",
+      "coils": [
+        "BoxPacking_M[14]"
+      ],
+      "references": [
+        {
+          "path": [
+            10,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[13]"
+        },
+        {
+          "path": [
+            10,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "BoxPacking_M[14]",
+          "Y": 1
+        },
+        {
+          "path": [
+            10,
+            "CLs",
+            6
+          ],
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "BoxPacking_M[14]",
+          "X": 4
+        }
+      ]
+    },
+    {
+      "row": 11,
+      "comment": "コンテナ設置完了",
+      "coils": [
+        "BoxPacking_M[15]"
+      ],
+      "references": [
+        {
+          "path": [
+            11,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[14]"
+        },
+        {
+          "path": [
+            11,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "BoxPacking_M[15]",
+          "Y": 1
+        },
+        {
+          "path": [
+            11,
+            "CLs",
+            5
+          ],
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "BoxPacking_M[15]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "row": 12,
+      "comment": "ストックフォルダ 取出し順 判定",
+      "coils": [
+        "BoxPacking_M[16]",
+        "BoxPacking_M[17]",
+        "BoxPacking_M[18]"
+      ],
+      "references": [
+        {
+          "path": [
+            12,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[15]"
+        },
+        {
+          "path": [
+            12,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "BoxPacking_M[9]",
+          "Y": 1
+        },
+        {
+          "path": [
+            12,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "BoxPacking_M[16]",
+          "Y": 2
+        },
+        {
+          "path": [
+            12,
+            "CLs",
+            4
+          ],
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "BoxPacking_M[16]",
+          "X": 2
+        },
+        {
+          "path": [
+            12,
+            "CLs",
+            7
+          ],
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "BoxPacking_M[17]",
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "path": [
+            12,
+            "CLs",
+            11
+          ],
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "BoxPacking_M[18]",
+          "X": 5,
+          "Y": 2
+        }
+      ]
+    },
+    {
+      "row": 13,
+      "comment": "",
+      "coils": [],
+      "references": [
+        {
+          "path": [
+            13,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[16]"
+        },
+        {
+          "path": [
+            13,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "BoxPacking_M[17]",
+          "X": 1
+        }
+      ]
+    },
+    {
+      "row": 14,
+      "comment": "",
+      "coils": [],
+      "references": [
+        {
+          "path": [
+            14,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[16]"
+        },
+        {
+          "path": [
+            14,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "BoxPacking_M[18]",
+          "X": 1
+        }
+      ]
+    },
+    {
+      "row": 15,
+      "comment": "ストックフォルダ 取出し開始\r\nRCON2_4：箱詰めZ\r\nセイフティ 上昇 Pos移動",
+      "coils": [
+        "BoxPacking_M[19]"
+      ],
+      "references": [
+        {
+          "path": [
+            15,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "BoxPacking_M[17]"
+        },
+        {
+          "path": [
+            15,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[19]",
+          "Y": 1
+        },
+        {
+          "path": [
+            15,
+            "CLs",
+            4
+          ],
+          "__type": "ST",
+          "Ix": 3,
+          "Var": "BoxPacking_M[19]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "row": 16,
+      "comment": "A(左側) ストックフォルダ\r\n\r\nRCON2_2：箱詰めX\r\nRCON2_3：箱詰めY\r\nA(左側)フォルダストック 取出し Pos移動",
+      "coils": [
+        "BoxPacking_M[20]"
+      ],
+      "references": [
+        {
+          "path": [
+            16,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[19]"
+        },
+        {
+          "path": [
+            16,
+            "CLs",
+            3
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "BoxPacking_M[20]",
+          "Y": 1
+        },
+        {
+          "path": [
+            16,
+            "CLs",
+            9
+          ],
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "BoxPacking_M[20]",
+          "X": 5
+        }
+      ]
+    },
+    {
+      "row": 17,
+      "comment": "",
+      "coils": [
+        "BoxPacking_M[21]"
+      ],
+      "references": [
+        {
+          "path": [
+            17,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[20]"
+        },
+        {
+          "path": [
+            17,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "BoxPacking_M[21]",
+          "Y": 1
+        },
+        {
+          "path": [
+            17,
+            "CLs",
+            5
+          ],
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "BoxPacking_M[21]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "row": 18,
+      "comment": "",
+      "coils": [
+        "BoxPacking_M[22]"
+      ],
+      "references": [
+        {
+          "path": [
+            18,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[20]"
+        },
+        {
+          "path": [
+            18,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "BoxPacking_M[22]",
+          "Y": 1
+        },
+        {
+          "path": [
+            18,
+            "CLs",
+            5
+          ],
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "BoxPacking_M[22]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "row": 19,
+      "comment": "",
+      "coils": [
+        "BoxPacking_M[23]"
+      ],
+      "references": [
+        {
+          "path": [
+            19,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "BoxPacking_M[20]"
+        },
+        {
+          "path": [
+            19,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "BoxPacking_M[21]",
+          "X": 1
+        },
+        {
+          "path": [
+            19,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[22]",
+          "X": 2
+        },
+        {
+          "path": [
+            19,
+            "CLs",
+            3
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "BoxPacking_M[23]",
+          "Y": 1
+        },
+        {
+          "path": [
+            19,
+            "CLs",
+            7
+          ],
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "BoxPacking_M[23]",
+          "X": 4
+        }
+      ]
+    },
+    {
+      "row": 20,
+      "comment": "B(右側) ストックフォルダ\r\n\r\nRCON2_2：箱詰めX\r\nRCON2_3：箱詰めY\r\nA(左側)フォルダストック 取出し Pos移動",
+      "coils": [
+        "BoxPacking_M[24]"
+      ],
+      "references": [
+        {
+          "path": [
+            20,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[19]"
+        },
+        {
+          "path": [
+            20,
+            "CLs",
+            3
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "BoxPacking_M[20]",
+          "Y": 1
+        },
+        {
+          "path": [
+            20,
+            "CLs",
+            9
+          ],
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "BoxPacking_M[24]",
+          "X": 5
+        }
+      ]
+    },
+    {
+      "row": 21,
+      "comment": "",
+      "coils": [
+        "BoxPacking_M[25]"
+      ],
+      "references": [
+        {
+          "path": [
+            21,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[20]"
+        },
+        {
+          "path": [
+            21,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "BoxPacking_M[25]",
+          "Y": 1
+        },
+        {
+          "path": [
+            21,
+            "CLs",
+            5
+          ],
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "BoxPacking_M[25]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "row": 22,
+      "comment": "",
+      "coils": [
+        "BoxPacking_M[26]"
+      ],
+      "references": [
+        {
+          "path": [
+            22,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[20]"
+        },
+        {
+          "path": [
+            22,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "BoxPacking_M[26]",
+          "Y": 1
+        },
+        {
+          "path": [
+            22,
+            "CLs",
+            5
+          ],
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "BoxPacking_M[26]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "row": 23,
+      "comment": "",
+      "coils": [
+        "BoxPacking_M[27]"
+      ],
+      "references": [
+        {
+          "path": [
+            23,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "BoxPacking_M[20]"
+        },
+        {
+          "path": [
+            23,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "BoxPacking_M[21]",
+          "X": 1
+        },
+        {
+          "path": [
+            23,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[22]",
+          "X": 2
+        },
+        {
+          "path": [
+            23,
+            "CLs",
+            3
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "BoxPacking_M[27]",
+          "Y": 1
+        },
+        {
+          "path": [
+            23,
+            "CLs",
+            7
+          ],
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "BoxPacking_M[27]",
+          "X": 4
+        }
+      ]
+    },
+    {
+      "row": 24,
+      "comment": "ストックフォルダ 取出し開始\r\nRCON2_4：箱詰めZ\r\nフォルダストック 取出し降下Pos",
+      "coils": [
+        "BoxPacking_M[28]"
+      ],
+      "references": [
+        {
+          "path": [
+            24,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "BoxPacking_M[23]"
+        },
+        {
+          "path": [
+            24,
+            "CLs",
+            1
+          ],
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "BoxPacking_M[27]",
+          "Y": 1
+        },
+        {
+          "path": [
+            24,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[28]",
+          "Y": 2
+        },
+        {
+          "path": [
+            24,
+            "CLs",
+            5
+          ],
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "BoxPacking_M[28]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "row": 25,
+      "comment": "",
+      "coils": [
+        "BoxPacking_M[29]"
+      ],
+      "references": [
+        {
+          "path": [
+            25,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[28]"
+        },
+        {
+          "path": [
+            25,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "BoxPacking_M[29]",
+          "Y": 1
+        },
+        {
+          "path": [
+            25,
+            "CLs",
+            5
+          ],
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "BoxPacking_M[29]",
+          "X": 3
+        }
+      ]
+    },
+    {
+      "row": 26,
+      "comment": "",
+      "coils": [
+        "BoxPacking_M[30]"
+      ],
+      "references": [
+        {
+          "path": [
+            26,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[29]"
+        },
+        {
+          "path": [
+            26,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "BoxPacking_M[30]",
+          "Y": 1
+        },
+        {
+          "path": [
+            26,
+            "CLs",
+            6
+          ],
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "BoxPacking_M[30]",
+          "X": 4
+        }
+      ]
+    },
+    {
+      "row": 27,
+      "comment": "",
+      "coils": [
+        "BoxPacking_M[31]"
+      ],
+      "references": [
+        {
+          "path": [
+            27,
+            "CLs",
+            0
+          ],
+          "__type": "LD",
+          "Var": "BoxPacking_M[30]"
+        },
+        {
+          "path": [
+            27,
+            "CLs",
+            2
+          ],
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "BoxPacking_M[31]",
+          "Y": 1
+        },
+        {
+          "path": [
+            27,
+            "CLs",
+            6
+          ],
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "BoxPacking_M[31]",
+          "X": 4
+        }
+      ]
+    }
+  ],
+  "outside_references": []
+}

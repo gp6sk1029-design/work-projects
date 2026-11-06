@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-06",
+  "selected": "3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105J",
+  "versions": [
+    {
+      "name": "3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105J",
+      "sha256": "465a630dd6be6c76e3d34090bcb305cf6dc4df079c78f68963431357d88ead36",
+      "unchanged": true
+    },
+    {
+      "name": "3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I",
+      "sha256": "b39252a91cecd5d3bcfbbfa6e0c4783201884e6f3c8617feb6a15b541505fe80",
+      "unchanged": true
+    }
+  ],
+  "target_rows": 32,
+  "step_coils": "M1～33各1個",
+  "checked_conditions": 12,
+  "proposed_end_boolean_cases": 32,
+  "empty_end_release_trace_passed": true,
+  "request_count": 15,
+  "actual_project_modified": false,
+  "full_application_build": false,
+  "plc_simulation": false,
+  "machine_test": false,
+  "pending_questions": [
+    "X215の検出対象と回転時の信号遷移"
+  ],
+  "user_confirmed": {
+    "X214": "5個そろった状態を検出",
+    "NG_Y719": "NG排出時は送り行を使用しない"
+  },
+  "corrected_findings": {
+    "16行": "NGの送りDone迂回は仕様どおり",
+    "15行": "送り行開始をOK選択M18に限定する案",
+    "21行": "回転前カウント0戻し単独では不具合と断定しない",
+    "27行": "X214の5個検出で回転開始を判断でき、CT=5追加は必須ではない"
+  }
+}

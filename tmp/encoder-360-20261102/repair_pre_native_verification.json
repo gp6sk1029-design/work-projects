@@ -1,0 +1,13 @@
+{
+  "output": "C:\\Users\\SEIGI-N13\\work-projects\\outputs\\encoder-360-20261102\\1029_1332エンコーダ基準_修正版.xlsx",
+  "backup_cells": 9515,
+  "fixed_cells": 9836,
+  "missing_original_cells": 0,
+  "unchanged_original_cells_outside_G5_G364": 9476,
+  "row_addresses_and_column_order_valid": true,
+  "G_values_verified": 360,
+  "restored_previous_missing_cells": 36,
+  "calc_chain_removed_for_native_rebuild": true,
+  "before_native_sha256": "5d94ce5cdce3649a2e230eac2590d675e90131e1545c612e4739744146765128",
+  "desktop_original_untouched": true
+}

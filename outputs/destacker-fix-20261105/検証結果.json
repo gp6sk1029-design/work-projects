@@ -1,0 +1,370 @@
+{
+  "output": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I.smc2",
+  "sha256": "1a69caa301b435e05785041f91f759e216faf10cef691512bfe49f7c4cb0d06c",
+  "project_name": "3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I",
+  "internal_H_unchanged": true,
+  "internal_H_sha256": "2a6f972bd8e4ef957c34a1b2fca2778f3798f04e3ddcfe0d63541434eb753458",
+  "previous_external_archived": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\履歴\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105H_20261105T105119Z_0fd18e.smc2",
+  "user_updates_preserved": true,
+  "existing_step_numbers_preserved": "Destacker_M[1]～[25]",
+  "added_step_elements": "[26]初回済み、[27]～[32]各移動の前完了解除確認",
+  "new_variable": {
+    "D": "BOOL",
+    "N": "Destacker_Init_Busy",
+    "G": "VAR",
+    "R": "0",
+    "Const": "0",
+    "RO": "0"
+  },
+  "rows_before": 21,
+  "rows_after": 29,
+  "all_other_24_sections_identical": true,
+  "existing_declarations_unchanged": true,
+  "native": {
+    "rows": 1375,
+    "coils": 1599,
+    "parse_fail": 0,
+    "model_fail": 0,
+    "missing_connections": 0,
+    "parts": [
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/02fa0618-20f0-422f-b44d-3aba0838a381.xml",
+        "rows": 16
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/056f39b5-2372-4d32-b892-634336899ec4.xml",
+        "rows": 1
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/08c19951-3bae-402d-a637-be66c221f71b.xml",
+        "rows": 6
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml",
+        "rows": 316
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/13f086b3-1a09-467f-8cff-eea83144ff00.xml",
+        "rows": 4
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml",
+        "rows": 32
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/281f52aa-7828-40bc-9b12-baa5848a3b7a.xml",
+        "rows": 18
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/2b857527-a5b5-49c0-9233-e70f3ae89ba1.xml",
+        "rows": 132
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/349c35e0-3c7b-4393-8d2c-13adafb2adc0.xml",
+        "rows": 1
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/49a83d1d-d863-4a09-a86a-4797edc14a57.xml",
+        "rows": 1
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/4a05531b-6bae-4cd7-9d4d-e3d6f875d1dc.xml",
+        "rows": 17
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/4bc99ae0-7ace-4891-a17a-c3fe2079278d.xml",
+        "rows": 8
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml",
+        "rows": 152
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/5ede16be-2114-46c3-84df-a79badb6e32e.xml",
+        "rows": 1
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/6061835d-1e51-4e92-be1f-d546f44764e3.xml",
+        "rows": 45
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/78e4916a-67ab-4f3b-bfbd-e0ecf92fccf4.xml",
+        "rows": 41
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/7b1666c7-ee97-4210-81b2-fed5a6172074.xml",
+        "rows": 457
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/910f90f5-80d6-4e6f-ba4f-5e9862fd5171.xml",
+        "rows": 9
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/98de6707-f996-4f77-aad9-b0569299efb5.xml",
+        "rows": 8
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/9d70f8e1-594f-4023-b6ae-7d63d464a215.xml",
+        "rows": 6
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/a21ed85c-6215-4d9f-82fa-9123c6fd7db3.xml",
+        "rows": 17
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/a6a85ff3-f6aa-4c8c-a49b-ae9f1e045ba8.xml",
+        "rows": 29
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/cc6ea326-2efd-437a-a0b6-6d1b9340d3f7.xml",
+        "rows": 13
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml",
+        "rows": 29
+      },
+      {
+        "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/fdce7b3c-0b49-4708-9024-8a98fe6b24b5.xml",
+        "rows": 16
+      }
+    ],
+    "errors": [],
+    "verified": true,
+    "source": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-fix-20261105\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I.smc2",
+    "sha256": "1a69caa301b435e05785041f91f759e216faf10cef691512bfe49f7c4cb0d06c",
+    "full_application_build": false,
+    "plc_simulation": false,
+    "machine_test": false
+  },
+  "conditions": {
+    "candidate_sha": "1a69caa301b435e05785041f91f759e216faf10cef691512bfe49f7c4cb0d06c",
+    "results": [
+      {
+        "test": "6移動のDone OFF確認と完了待ち・自己保持",
+        "cases": 288
+      },
+      {
+        "test": "初回開始のBusy/完了共通条件",
+        "cases": 32
+      },
+      {
+        "test": "初回Busyの保持と解除",
+        "cases": 8
+      },
+      {
+        "test": "初回から通常への受渡し後に初回済みを保持",
+        "cases": 16
+      },
+      {
+        "test": "初回済みで開始・爪保持・判定を解除",
+        "cases": 3
+      },
+      {
+        "test": "既存工程番号保持・ユーザー修正12行保全・他24節不変・M1～32各1コイル",
+        "cases": 1
+      },
+      {
+        "test": "初回1回→段バラシ3サイクル→次入口の条件モデル",
+        "cases": 16,
+        "scope": "全29行。軸・シリンダの完了とセンサー変化は外部供給。RCON受け側・Output駆動・通信・実機の結合モデルではない。"
+      }
+    ],
+    "runs": [
+      {
+        "initial_position": 0,
+        "two_stages": false,
+        "axis_delay": 3,
+        "cyl_delay": 5,
+        "done_hold": 1,
+        "initial_wait": 0,
+        "model_scans": 92,
+        "initial_runs": 1,
+        "ends": 3,
+        "entries": 4
+      },
+      {
+        "initial_position": 0,
+        "two_stages": false,
+        "axis_delay": 3,
+        "cyl_delay": 5,
+        "done_hold": 1,
+        "initial_wait": 5,
+        "model_scans": 97,
+        "initial_runs": 1,
+        "ends": 3,
+        "entries": 4
+      },
+      {
+        "initial_position": 0,
+        "two_stages": false,
+        "axis_delay": 3,
+        "cyl_delay": 5,
+        "done_hold": 10,
+        "initial_wait": 0,
+        "model_scans": 102,
+        "initial_runs": 1,
+        "ends": 3,
+        "entries": 4
+      },
+      {
+        "initial_position": 0,
+        "two_stages": false,
+        "axis_delay": 3,
+        "cyl_delay": 5,
+        "done_hold": 10,
+        "initial_wait": 5,
+        "model_scans": 107,
+        "initial_runs": 1,
+        "ends": 3,
+        "entries": 4
+      },
+      {
+        "initial_position": 0,
+        "two_stages": true,
+        "axis_delay": 3,
+        "cyl_delay": 5,
+        "done_hold": 1,
+        "initial_wait": 0,
+        "model_scans": 116,
+        "initial_runs": 1,
+        "ends": 3,
+        "entries": 4
+      },
+      {
+        "initial_position": 0,
+        "two_stages": true,
+        "axis_delay": 3,
+        "cyl_delay": 5,
+        "done_hold": 1,
+        "initial_wait": 5,
+        "model_scans": 121,
+        "initial_runs": 1,
+        "ends": 3,
+        "entries": 4
+      },
+      {
+        "initial_position": 0,
+        "two_stages": true,
+        "axis_delay": 3,
+        "cyl_delay": 5,
+        "done_hold": 10,
+        "initial_wait": 0,
+        "model_scans": 141,
+        "initial_runs": 1,
+        "ends": 3,
+        "entries": 4
+      },
+      {
+        "initial_position": 0,
+        "two_stages": true,
+        "axis_delay": 3,
+        "cyl_delay": 5,
+        "done_hold": 10,
+        "initial_wait": 5,
+        "model_scans": 146,
+        "initial_runs": 1,
+        "ends": 3,
+        "entries": 4
+      },
+      {
+        "initial_position": 50,
+        "two_stages": false,
+        "axis_delay": 3,
+        "cyl_delay": 5,
+        "done_hold": 1,
+        "initial_wait": 0,
+        "model_scans": 112,
+        "initial_runs": 1,
+        "ends": 3,
+        "entries": 4
+      },
+      {
+        "initial_position": 50,
+        "two_stages": false,
+        "axis_delay": 3,
+        "cyl_delay": 5,
+        "done_hold": 1,
+        "initial_wait": 5,
+        "model_scans": 117,
+        "initial_runs": 1,
+        "ends": 3,
+        "entries": 4
+      },
+      {
+        "initial_position": 50,
+        "two_stages": false,
+        "axis_delay": 3,
+        "cyl_delay": 5,
+        "done_hold": 10,
+        "initial_wait": 0,
+        "model_scans": 141,
+        "initial_runs": 1,
+        "ends": 3,
+        "entries": 4
+      },
+      {
+        "initial_position": 50,
+        "two_stages": false,
+        "axis_delay": 3,
+        "cyl_delay": 5,
+        "done_hold": 10,
+        "initial_wait": 5,
+        "model_scans": 146,
+        "initial_runs": 1,
+        "ends": 3,
+        "entries": 4
+      },
+      {
+        "initial_position": 50,
+        "two_stages": true,
+        "axis_delay": 3,
+        "cyl_delay": 5,
+        "done_hold": 1,
+        "initial_wait": 0,
+        "model_scans": 136,
+        "initial_runs": 1,
+        "ends": 3,
+        "entries": 4
+      },
+      {
+        "initial_position": 50,
+        "two_stages": true,
+        "axis_delay": 3,
+        "cyl_delay": 5,
+        "done_hold": 1,
+        "initial_wait": 5,
+        "model_scans": 141,
+        "initial_runs": 1,
+        "ends": 3,
+        "entries": 4
+      },
+      {
+        "initial_position": 50,
+        "two_stages": true,
+        "axis_delay": 3,
+        "cyl_delay": 5,
+        "done_hold": 10,
+        "initial_wait": 0,
+        "model_scans": 180,
+        "initial_runs": 1,
+        "ends": 3,
+        "entries": 4
+      },
+      {
+        "initial_position": 50,
+        "two_stages": true,
+        "axis_delay": 3,
+        "cyl_delay": 5,
+        "done_hold": 10,
+        "initial_wait": 5,
+        "model_scans": 185,
+        "initial_runs": 1,
+        "ends": 3,
+        "entries": 4
+      }
+    ],
+    "full_application_build": false,
+    "plc_simulation": false,
+    "machine_test": false
+  }
+}

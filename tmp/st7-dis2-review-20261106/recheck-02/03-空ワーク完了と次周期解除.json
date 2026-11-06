@@ -1,0 +1,561 @@
+{
+  "width": 1740,
+  "height": 1300,
+  "elements": [
+    {
+      "type": "text",
+      "x": 60,
+      "y": 28,
+      "text": "③ ST7完了：空ワークも完了させ、次サイクルで解除",
+      "size": 34,
+      "color": "ink",
+      "width": 1580
+    },
+    {
+      "type": "text",
+      "x": 60,
+      "y": 90,
+      "text": "J版・8行／26行｜青：追加する枝・解除条件｜自己保持の合流位置を示す",
+      "size": 24,
+      "color": "ink",
+      "width": 1580
+    },
+    {
+      "type": "text",
+      "x": 80,
+      "y": 155,
+      "text": "現状：ワークなしM10の合流がなく、EndはNextで解除されない。",
+      "size": 26,
+      "color": "ink",
+      "width": 1580
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          60,
+          180
+        ],
+        [
+          60,
+          420
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1680,
+          180
+        ],
+        [
+          1680,
+          420
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          60,
+          275
+        ],
+        [
+          100,
+          275
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 100,
+      "y": 275,
+      "width": 160,
+      "label": "M33",
+      "nc": false,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          260,
+          275
+        ],
+        [
+          400,
+          275
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 400,
+      "y": 275,
+      "width": 220,
+      "label": "送り戻Done",
+      "nc": false,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          620,
+          275
+        ],
+        [
+          900,
+          275
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          60,
+          385
+        ],
+        [
+          100,
+          385
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 100,
+      "y": 385,
+      "width": 160,
+      "label": "End",
+      "nc": false,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          260,
+          385
+        ],
+        [
+          900,
+          385
+        ],
+        [
+          900,
+          275
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          900,
+          275
+        ],
+        [
+          970,
+          275
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 970,
+      "y": 275,
+      "width": 180,
+      "label": "Retry[12]",
+      "nc": true,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1150,
+          275
+        ],
+        [
+          1230,
+          275
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1230,
+          275
+        ],
+        [
+          1410,
+          275
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1410,
+          275
+        ],
+        [
+          1510,
+          275
+        ]
+      ]
+    },
+    {
+      "type": "coil",
+      "x": 1510,
+      "y": 275,
+      "width": 130,
+      "label": "End",
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1640,
+          275
+        ],
+        [
+          1680,
+          275
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "x": 80,
+      "y": 485,
+      "text": "対策案：空ワークの正常完了枝を追加し、Nextで全枝を共通解除する。",
+      "size": 26,
+      "color": "change",
+      "width": 1580
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          60,
+          520
+        ],
+        [
+          60,
+          860
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1680,
+          520
+        ],
+        [
+          1680,
+          860
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          60,
+          615
+        ],
+        [
+          100,
+          615
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 100,
+      "y": 615,
+      "width": 160,
+      "label": "M33",
+      "nc": false,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          260,
+          615
+        ],
+        [
+          400,
+          615
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 400,
+      "y": 615,
+      "width": 220,
+      "label": "送り戻Done",
+      "nc": false,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          620,
+          615
+        ],
+        [
+          900,
+          615
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          60,
+          725
+        ],
+        [
+          100,
+          725
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 100,
+      "y": 725,
+      "width": 160,
+      "label": "M8",
+      "nc": false,
+      "color": "change"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          260,
+          725
+        ],
+        [
+          400,
+          725
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 400,
+      "y": 725,
+      "width": 220,
+      "label": "M10：なし",
+      "nc": false,
+      "color": "change"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          620,
+          725
+        ],
+        [
+          900,
+          725
+        ],
+        [
+          900,
+          615
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          60,
+          835
+        ],
+        [
+          100,
+          835
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 100,
+      "y": 835,
+      "width": 160,
+      "label": "End",
+      "nc": false,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          260,
+          835
+        ],
+        [
+          900,
+          835
+        ],
+        [
+          900,
+          615
+        ]
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          900,
+          615
+        ],
+        [
+          970,
+          615
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 970,
+      "y": 615,
+      "width": 180,
+      "label": "Retry[12]",
+      "nc": true,
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1150,
+          615
+        ],
+        [
+          1230,
+          615
+        ]
+      ]
+    },
+    {
+      "type": "contact",
+      "x": 1230,
+      "y": 615,
+      "width": 180,
+      "label": "Next",
+      "nc": true,
+      "color": "change"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1410,
+          615
+        ],
+        [
+          1510,
+          615
+        ]
+      ]
+    },
+    {
+      "type": "coil",
+      "x": 1510,
+      "y": 615,
+      "width": 130,
+      "label": "End",
+      "color": "ink"
+    },
+    {
+      "type": "wire",
+      "points": [
+        [
+          1640,
+          615
+        ],
+        [
+          1680,
+          615
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "x": 80,
+      "y": 922,
+      "text": "M8＝有無判定中／M10＝実物もデータもなし／M33＝最後の送り戻工程",
+      "size": 24,
+      "color": "ink",
+      "width": 1580
+    },
+    {
+      "type": "text",
+      "x": 80,
+      "y": 977,
+      "text": "End＝ST7_A_Dis2_End／Next＝Ins_A_Next_Cycle／M＝ST7_A_Dis2_M",
+      "size": 24,
+      "color": "ink",
+      "width": 1580
+    },
+    {
+      "type": "text",
+      "x": 80,
+      "y": 1032,
+      "text": "送り戻Done＝Out_CYw_Ejc_Hldr_Feed_A_H_Done",
+      "size": 24,
+      "color": "ink",
+      "width": 1580
+    },
+    {
+      "type": "text",
+      "x": 80,
+      "y": 1090,
+      "text": "併せて8行の判定保持もEndで解除。空ワーク枝をNG満杯待ちへ巻き込まない。",
+      "size": 25,
+      "color": "change",
+      "width": 1580
+    },
+    {
+      "type": "text",
+      "x": 80,
+      "y": 1150,
+      "text": "実ワークの送り戻要求[3]は受け接点がないため、25行を既存接続済み[2]へ直す案。",
+      "size": 24,
+      "color": "ink",
+      "width": 1580
+    },
+    {
+      "type": "text",
+      "x": 80,
+      "y": 1240,
+      "text": "提案・未反映｜Endの32条件を確認。戻りDoneの今回性・全工程・実機は別途確認。",
+      "size": 22,
+      "color": "ink",
+      "width": 1580
+    }
+  ]
+}

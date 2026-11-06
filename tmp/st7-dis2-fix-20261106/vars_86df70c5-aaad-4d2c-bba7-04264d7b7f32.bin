@@ -1,0 +1,273 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=Mo_M	G=VAR
+++D=ARRAY[0..99] OF Bool	N=ST0_A_Sup_M	G=VAR	EC=<ECs><EC EK="[4]" C="原点位置移動完了" /></ECs>
+++D=BOOL	N=ST1_Ins_Cv_Rdy	G=VAR
+++D=BOOL	N=ST2_Ins_Cv_Rdy	G=VAR
+++D=BOOL	N=ST3_Ins_Cv_Rdy	G=VAR
+++D=BOOL	N=ST4_Ins_Cv_Rdy	G=VAR
+++D=BOOL	N=ST5_Ins_Cv_Rdy	G=VAR
+++D=BOOL	N=ST6_Ins_Cv_Rdy	G=VAR
+++D=BOOL	N=ST7_Ins_Cv_Rdy	G=VAR
+++D=ARRAY[0..99] OF TON	N=Ins_A_Cv_T	G=VAR
+++D=BOOL	N=ST1_A_Ca1_Rdy	G=VAR
+++D=DATE_AND_TIME	N=GT2_A_Inspection_GetTime	G=VAR
+++D=STRING[256]	N=GT2_A_Inspection_GetTime_ST	G=VAR
+++D=STRING[20]	N=GT2_A_Inspection_GetTime_ST_Del	G=VAR
+++D=BOOL	N=ST4_A_Rev1_Busy	G=VAR	Com=ST4 A 動作中
+++D=BOOL	N=ST6_A_Rev2_Busy	G=VAR	Com=A(左側) ST6 反転2動作中
+++D=BOOL	N=ST7_A_Dis2_Busy	G=VAR	Com=ST7動作中
+++D=ARRAY[0..99] OF Bool	N=ST7_A_SF_M	G=VAR	EC=<ECs><EC EK="[2]" C="フォルダ回転中" /><EC EK="[1]" C="フォルダ回転開始" /><EC EK="[3]" C="ターン戻要求" /><EC EK="[4]" C="ターン行要求" /><EC EK="[5]" C="回転端位置正常" /></ECs>
+++D=BOOL	N=ST7_A_SF_Busy	G=VAR
+++D=ARRAY[0..99] OF TON	N=Destacker_TON	G=VAR
+++D=ARRAY[0..99] OF Bool	N=BoxPacking_M	G=VAR	Com=箱詰め工程	EC=<ECs><EC EK="[1]" C="初回確認開始"/><EC EK="[2]" C="初回確認完了"/><EC EK="[3]" C="初回コンテナ状態判定"/><EC EK="[4]" C="受渡位置・コンテナ到着"/><EC EK="[5]" C="コンテナ設置位置状態"/><EC EK="[6]" C="コンテナ排出位置状態"/><EC EK="[7]" C="コンテナ軸位置未確定"/><EC EK="[8]" C="Y1204 コンテナ排出戻"/><EC EK="[9]" C="コンテナ軸 初回設置移動"/><EC EK="[10]" C="コンテナ方向判定"/><EC EK="[11]" C="コンテナ方向OK"/><EC EK="[12]" C="方向NGコンテナ 排出移動"/><EC EK="[13]" C="初回コンテナ排出"/><EC EK="[14]" C="初回コンテナ通過確認"/><EC EK="[15]" C="コンテナ軸 受渡位置移動"/><EC EK="[16]" C="受渡位置・到着確認"/><EC EK="[17]" C="Y1206 箱入れチャック戻"/><EC EK="[18]" C="コンテナ軸 設置位置移動"/><EC EK="[19]" C="コンテナ設置完了"/><EC EK="[20]" C="取出し先判定中"/><EC EK="[21]" C="A側取出し選択"/><EC EK="[22]" C="B側取出し選択"/><EC EK="[23]" C="箱詰めZ 取出し準備上昇"/><EC EK="[24]" C="A側取出しXY移動"/><EC EK="[25]" C="A側取出しX完了"/><EC EK="[26]" C="A側取出しY完了"/><EC EK="[27]" C="A側取出しXY完了"/><EC EK="[28]" C="B側取出しXY移動"/><EC EK="[29]" C="B側取出しX完了"/><EC EK="[30]" C="B側取出しY完了"/><EC EK="[31]" C="B側取出しXY完了"/><EC EK="[32]" C="箱詰めZ 取出し下降"/><EC EK="[33]" C="Y1207 取出しチャック行"/><EC EK="[34]" C="箱詰めZ 取出し後上昇"/><EC EK="[35]" C="箱内X位置選択・移動"/><EC EK="[36]" C="箱内Y位置選択・移動"/><EC EK="[37]" C="箱内X移動完了"/><EC EK="[38]" C="箱内Y移動完了"/><EC EK="[39]" C="箱内XY移動完了"/><EC EK="[40]" C="箱詰めZ 箱内下降"/><EC EK="[41]" C="Y1206 箱内チャック戻"/><EC EK="[42]" C="箱詰めZ 箱内配置後上昇"/><EC EK="[43]" C="コンテナ入数判定"/><EC EK="[44]" C="80個未満・次取出し"/><EC EK="[45]" C="80個・満杯排出"/><EC EK="[46]" C="コンテナ軸 満杯排出移動"/><EC EK="[47]" C="Y1205 満杯コンテナ排出行"/><EC EK="[48]" C="Y1204 満杯排出後戻"/><EC EK="[49]" C="コンテナ軸 排出後受渡戻"/></ECs>
+++D=ARRAY[0..99] OF LREAL	N=HMI_RCON2_2_OUT_TargetPos	G=VAR	Com=RCON2_2 箱詰めX位置 [mm]	EC=<ECs><EC EK="[1]" C="A(左側)フォルダストック 取出しPos" /><EC EK="[2]" C="B(右側)フォルダストック 取出しPos" /><EC EK="[3]" C="箱内X開始位置 [mm]：5個積みの1列目（設定値を入力）" /></ECs>
+++D=ARRAY[0..99] OF LREAL	N=HMI_RCON2_5_OUT_TargetPos	G=VAR	Com=RCON2_5 コンテナ軸位置 [mm]	EC=<ECs><EC EK="[2]" C="コンテナ設置Pos" /><EC EK="[3]" C="コンテナ排出Pos" /><EC EK="[1]" C="コンテナ受渡可能・セイフティ" /></ECs>
+++D=BOOL	N=BoxPacking_Error	G=VAR	Com=コンテナトレイ方向NG
+++D=ARRAY[0..99] OF TON	N=BoxPacking_TON	G=VAR
+++D=LREAL	N=A_SF_StackStepOffset	G=VAR	Com=積み段数－1
+++D=LREAL	N=A_SF_StackDelta_mm	G=VAR	Com=ピッチ×段数補正 [mm]
+++D=LREAL	N=A_SF_StackTarget_mm	G=VAR	Com=基準[3]＋積みピッチ補正 [mm]
+++D=ARRAY[0..99] OF LREAL	N=HMI_RCON2_3_OUT_TargetPos	G=VAR	Com=RCON2_3 箱詰めY位置 [mm]	EC=<ECs><EC EK="[1]" C="A(左側)フォルダストック 取出しPos"/><EC EK="[2]" C="B(右側)フォルダストック 取出しPos"/><EC EK="[3]" C="箱内Y開始位置 [mm]：4列×4行の1行目（設定値を入力）"/></ECs>
+++D=BOOL	N=BoxPacking_A_Busy	G=VAR	Com=A側取出し・箱内配置中
+++D=BOOL	N=BoxPacking_B_Busy	G=VAR	Com=B側 ストックフォルダ取出し中
+++D=BOOL	N=BoxPacking_End	G=VAR	Com=満杯排出・軸戻り完了
+++D=BOOL	N=BoxPacking_Init_Busy	G=VAR	R=0	Const=0	RO=0	Com=初回コンテナ確認中
+++D=BOOL	N=BoxPacking_A_Pickup_Done	G=VAR	R=0	Const=0	RO=0	Com=A側取出し・Z退避完了
+++D=BOOL	N=Destacker_Init_Busy	G=VAR	R=0	Const=0	RO=0	Com=初回処理中
+++D=TON	N=ST7_A_SF_Watch_TON	G=VAR	R=0	Const=0	RO=0	Com=フォルダ回転10秒監視
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=ST0_Sup_Start	G=VAR_EXTERNAL	Com=ST0_動作開始
+++D=BOOL	N=M9999	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Pick_A_H_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sply_Pick_A_H_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Slide_A_H_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sply_Slide_A_H_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sup_Chuck_A_Cl_H_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sup_Chuck_A_Cl_H_Done	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Accum_CV_A_Arrival	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Work_A_Pos_00	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Pick_A_F_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sply_Pick_A_F_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sup_Chuck_A_Cl_F_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sup_Chuck_A_Cl_F_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sply_Slide_A_F_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sply_Slide_A_F_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..8] OF sData	N=Station_A_Data	G=VAR_EXTERNAL
+++D=ARRAY[0..8] OF sData	N=Cv_A_Data	G=VAR_EXTERNAL
+++D=BOOL	N=ST0_A_Sup_End	G=VAR_EXTERNAL	Com=ST0 検査コンベア運転可
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_01_Stopper_B_H_Auto	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_02_Stopper_B_H_Auto	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_03_Stopper_B_H_Auto	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_04_Stopper_B_H_Auto	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_05_Stopper_B_H_Auto	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_06_Stopper_B_H_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Pos_01_Stopper_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Pos_02_Stopper_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Pos_03_Stopper_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Pos_04_Stopper_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Pos_05_Stopper_A_H	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Pos_06_Stopper_A_H	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_Insp_Cv_A_Run_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Work_A_Pos_01	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Work_A_Pos_02	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Bool	N=Pause	G=VAR_EXTERNAL	EC=<ECs><EC EK="[3]" C="FH A(左側) ST1" /><EC EK="[9]" C="FH A(左側) ST5" /><EC EK="[10]" C="FH B(右側) ST1" /><EC EK="[11]" C="FH B(右側) ST5" /><EC EK="[12]" C="A(左側) ST6 反転2 ワーク不一致" /></ECs>
+++D=BOOL	N=TimerQ_In_Sen_Work_A_Pos_03	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Work_A_Pos_04	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Work_A_Pos_05	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Work_A_Pos_06	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Work_A_Pos_07	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_01_Stopper_A_H_Auto	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_02_Stopper_A_H_Auto	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_03_Stopper_A_H_Auto	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_04_Stopper_A_H_Auto	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_05_Stopper_A_H_Auto	G=VAR_EXTERNAL	EC=<ECs><EC EK="[2]" C="A(左側) ST5 カメラ2検査開始" /></ECs>
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_06_Stopper_A_H_Auto	G=VAR_EXTERNAL	EC=<ECs><EC EK="[1]" C="A(左側)検査完了後" /><EC EK="[2]" C="A(左側) ST6 原点位置移動" /></ECs>
+++D=ARRAY[0..99] OF Bool	N=Ins_A_Cv_M	G=VAR_EXTERNAL
+++D=BOOL	N=Ins_A_Cv_Error	G=VAR_EXTERNAL	Com=検査コンベア ワーク不一致エラー
+++D=BOOL	N=TimerQ_In_Sen_Work_A_Pos_00	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_01_Stopper_A_F_Auto	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_02_Stopper_A_F_Auto	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_03_Stopper_A_F_Auto	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_04_Stopper_A_F_Auto	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_05_Stopper_A_F_Auto	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYS_Pos_06_Stopper_A_F_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Ins_A_Next_Cycle	G=VAR_EXTERNAL	Com=A(左側)検査コンベア 動作完了
+++D=BOOL	N=ST0_A_Sup_Busy	G=VAR_EXTERNAL	Com=ST0 稼働中
+++D=BOOL	N=Ins_A_End	G=VAR_EXTERNAL	Com=検査完了 コンベア運転可能
+++D=BOOL	N=Auto_A_Start	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYS_Pos_01_Stopper_A_H_Done	G=VAR_EXTERNAL
+++D=BOOL	N=FH_A_ST1_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=FH_A_ST1_Done	G=VAR_EXTERNAL
+++D=BOOL	N=ST1_A_Ca1_Busy	G=VAR_EXTERNAL	Com=ST1 A検査中
+++D=BOOL	N=ST1_A_Ca1_End	G=VAR_EXTERNAL	Com=ST1 A 動作完了
+++D=BOOL	N=ST2_A_Hgt_Busy	G=VAR_EXTERNAL	Com=ST2 A 動作中
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_HgtInsp_Clp_A_H_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_HgtInsp_Clp_A_H_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_HgtInsp_Lf_A_H_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_HgtInsp_Lf_A_H_Done	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYS_Pos_02_Stopper_A_H_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_HgtInsp_Clp_A_F_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_HgtInsp_Clp_A_F_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_HgtInsp_Lf_A_F_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_HgtInsp_Lf_A_F_Done	G=VAR_EXTERNAL
+++D=BOOL	N=DLEP1_GT2_A_Auto	G=VAR_EXTERNAL
+++D=LREAL	N=Hgt_A_ComputedValueData	G=VAR_EXTERNAL
+++D=LREAL	N=Hight_LowerLimit	G=VAR_EXTERNAL	Com=高さ検査 下限値
+++D=LREAL	N=Hight_UpperLimit	G=VAR_EXTERNAL	Com=高さ検査 上限値
+++D=BOOL	N=ST2_A_Hgt_End	G=VAR_EXTERNAL	Com=高さ検査完了
+++D=BOOL	N=ST3_A_Dis1_Busy	G=VAR_EXTERNAL	Com=ST3 A 動作中
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Srt_A_H_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_NG1_Srt_A_H_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Pick_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y710】A(左側)ST4 反転1ピックアップ戻：
+++D=BOOL	N=Out_CYw_Rev_01_Pick_A_H_Done	G=VAR_EXTERNAL	Com=【Y710】A(左側)ST4 反転1ピックアップ戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Pick_A_H_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_NG1_Pick_A_H_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Chk_A_H_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_NG1_Chk_A_H_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Bool	N=RCON1_1_Auto	G=VAR_EXTERNAL	Com=自動移動要求	EC=<ECs><EC EK="[1]" C="原点位置移動" /><EC EK="[2]" C="NG仕分け" /><EC EK="[3]" C="動作完了後 原点位置移動" /></ECs>
+++D=LREAL	N=RCON1_1_OUT_TargetPos_mm	G=VAR_EXTERNAL	Com=目標位置 [mm]
+++D=ARRAY[0..99] OF LREAL	N=HMI_RCON1_1_OUT_TargetPos	G=VAR_EXTERNAL	Com=HMI設定位置 [mm]	EC=<ECs><EC EK="[1]" C="原点位置" /><EC EK="[3]" C="高さNG位置" /><EC EK="[4]" C="カメラ キズNG位置" /><EC EK="[5]" C="カメラ 姿NG位置" /></ECs>
+++D=ARRAY[0..99] OF BOOL	N=RCON1_1_M	G=VAR_EXTERNAL	Com=#A(左側) RCON1_1 NG1排出(上下)	EC=<ECs><EC EK="[1]" C="開始指令保持" /><EC EK="[2]" C="予備" /></ECs>
+++D=BOOL	N=RCON1_1_MoveDone	G=VAR_EXTERNAL	Com=動作完了
+++D=ARRAY[0..99] OF Bool	N=Error_M	G=VAR_EXTERNAL	EC=<ECs><EC EK="[3]" C="未使用：Error_ST1_A_M[0]へ移行" /><EC EK="[9]" C="未使用：Error_ST5_A_M[0]へ移行" /><EC EK="[10]" C="未使用：Error_ST1_B_M[0]へ移行" /><EC EK="[11]" C="未使用：Error_ST5_B_M[0]へ移行" /><EC EK="[12]" C="未使用：Error_ST6_A_M[0]へ移行" /></ECs>
+++D=ARRAY[0..99] OF Bool	N=ST1_A_Ca1_M	G=VAR_EXTERNAL	EC=<ECs><EC EK="[1]" C="ST1 A カメラ1 検査開始" /><EC EK="[2]" C="【Y720】A(左側) 位置1ストッパー 戻" /><EC EK="[3]" C="ワーク有無 判定" /><EC EK="[4]" C="ST1 A ワーク有" /><EC EK="[5]" C="ST1 A ワーク無" /><EC EK="[6]" C="A(左側) ST1 検査前ワーク不一致" /><EC EK="[7]" C="ST1 FH測定開始" /></ECs>
+++D=ARRAY[0..99] OF Bool	N=ST2_A_Hgt_M	G=VAR_EXTERNAL	EC=<ECs><EC EK="[4]" C="【Y721】A(左側) 位置2ストッパー戻" /><EC EK="[6]" C="ST1 A ワーク有" /><EC EK="[7]" C="ST1 A ワーク無" /><EC EK="[5]" C="ワーク有無 判定" /><EC EK="[9]" C="【Y703】A(左側) 高さ検査持上行" /><EC EK="[10]" C="【Y701】A(左側) 高さ検査押え行" /><EC EK="[11]" C="A(左側) 高さ検査OK判定" /><EC EK="[12]" C="A(左側) 高さ検査NG判定" /><EC EK="[2]" C="【Y701】A(左側) 高さ検査押え行" /><EC EK="[8]" C="ST3 検査前ワーク不一致エラー" /></ECs>
+++D=BOOL	N=Out_CYS_Pos_03_Stopper_A_H_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Pick_A_F_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_NG1_Pick_A_F_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Chk_A_F_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_NG1_Chk_A_F_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_NG1_Srt_A_F_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_NG1_Srt_A_F_Done	G=VAR_EXTERNAL
+++D=BOOL	N=ST3_A_Dis1_End	G=VAR_EXTERNAL	Com=左NG1排出 完了
+++D=ARRAY[0..99] OF Bool	N=ST3_A_Dis1_M	G=VAR_EXTERNAL	EC=<ECs><EC EK="[7]" C="原点位置 移動開始" /><EC EK="[6]" C="原点位置移動 データ転送" /><EC EK="[5]" C="【Y722】A(左側) 位置3ストッパー戻" /><EC EK="[4]" C="【Y706】A(左側) NG1チャック戻" /><EC EK="[8]" C="ワーク有無 / 検査前ワーク不一致 判定" /><EC EK="[9]" C="S3 A ワーク有 工程NG" /><EC EK="[10]" C="S3 A ワーク無  前工程OK" /><EC EK="[14]" C="【Y704】A(左側) NG1ピックアップ戻 " /><EC EK="[24]" C="仕分け完了" /></ECs>
+++D=ARRAY[0..99] OF Bool	N=ST4_A_Rev1_M	G=VAR_EXTERNAL	EC=<ECs><EC EK="[2]" C="ワーク有無 / 検査前ワーク不一致 判定" /><EC EK="[3]" C="【Y723】A(左側) 位置4ストッパー戻" /><EC EK="[4]" C="ST4 A ワーク有" /><EC EK="[5]" C="ST4 A ワーク無 / 前工程NG" /><EC EK="[6]" C="ST4 検査前ワーク不一致エラー" /><EC EK="[10]" C="A(左側) ST4 ワーク不一致エラー" /><EC EK="[12]" C="【Y708】A(左側) ST4 反転1チャック閉" /></ECs>
+++D=LREAL	N=Stm_A_Rev_Axis000_MovePos_Degree	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF LREAL	N=HMI_Stm_A_Rev_Axis000_MovePos_Degree	G=VAR_EXTERNAL	Com=A(左側)ステッピングモータ000 回転角度
+++D=ARRAY[0..99] OF Bool	N=Stm_A_Rev_Axis000_Auto	G=VAR_EXTERNAL	EC=<ECs><EC EK="[1]" C="原点位置移動 開始" /></ECs>
+++D=BOOL	N=Stm_A_Rev_Axis000_MoveAbsoluteDone	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Pick_A_F_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Rev_01_Pick_A_F_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Disc_Chk_A_H_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Disc_Chk_A_H_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Chk_A_H_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Rev_02_Chk_A_H_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Chk_A_F_Auto	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Chk_A_F_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Rev_01_Chk_A_F_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Bool	N=ST5_A_Ca2_M	G=VAR_EXTERNAL	Com=A(左側) ST5 カメラ2工程	EC=<ECs><EC EK="[1]" C="A(左側) ST5 カメラ2検査開始" /><EC EK="[2]" C="【Y724】A(左側) ST5 ストッパー戻" /><EC EK="[3]" C="A(左側) ST5 ワーク有無判定" /><EC EK="[4]" C="A(左側) ST5 ワーク有" /><EC EK="[5]" C="A(左側) ST5 ワーク無" /><EC EK="[6]" C="A(左側) ST5 検査前ワーク不一致" /><EC EK="[7]" C="A(左側) ST5 FH測定開始" /></ECs>
+++D=BOOL	N=ST5_A_Ca2_Busy	G=VAR_EXTERNAL	Com=A(左側) ST5 カメラ2検査中
+++D=BOOL	N=ST5_A_Ca2_End	G=VAR_EXTERNAL	Com=A(左側) ST5 カメラ2動作完了
+++D=BOOL	N=FH_A_ST5_Auto	G=VAR_EXTERNAL	Com=A(左側) ST5 FH自動測定
+++D=BOOL	N=FH_A_ST5_Done	G=VAR_EXTERNAL	Com=A(左側) ST5 画像検査完了
+++D=BOOL	N=Out_CYS_Pos_05_Stopper_A_H_Done	G=VAR_EXTERNAL	Com=【Y724】A(左側) 位置5ストッパー戻 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_01_Chk_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y708】A(左側)ST4 反転1チャック閉：
+++D=BOOL	N=Out_CYw_Rev_01_Chk_A_H_Done	G=VAR_EXTERNAL	Com=【Y708】A(左側)ST4 反転1チャック閉 動作完了
+++D=ARRAY[0..99] OF LREAL	N=HMI_Stm_A_Rev_Axis001_MovePos_Degree	G=VAR_EXTERNAL	Com=A(左側) ST6 反転2設定角度	EC=<ECs><EC EK="[1]" C="A(左側) ST6 原点位置設定角度" /><EC EK="[2]" C="A(左側) ST6 反転位置設定角度" /></ECs>
+++D=BOOL	N=Out_CYw_Rev_02_Chk_A_F_Done	G=VAR_EXTERNAL	Com=【Y713】A(左側)ST6 反転2チャック開 行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Pick_A_F_Auto	G=VAR_EXTERNAL	Com=自動【Y715】A(左側)ST6 反転2ピックアップ行 ：	EC=<ECs><EC EK="[1]" C="A(左側) ST6 反転前行" /><EC EK="[2]" C="A(左側) ST6 設置行" /></ECs>
+++D=BOOL	N=Out_CYw_Rev_02_Pick_A_F_Done	G=VAR_EXTERNAL	Com=【Y715】A(左側)ST6 反転2ピックアップ行 動作完了
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Rev_02_Pick_A_H_Auto	G=VAR_EXTERNAL	Com=自動【Y714】A(左側)ST6 反転2ピックアップ戻 ：	EC=<ECs><EC EK="[1]" C="A(左側) ST6 反転前戻" /><EC EK="[2]" C="A(左側) ST6 設置後戻" /></ECs>
+++D=BOOL	N=Out_CYw_Rev_02_Pick_A_H_Done	G=VAR_EXTERNAL	Com=【Y714】A(左側)ST6 反転2ピックアップ戻 動作完了
+++D=ARRAY[0..99] OF Bool	N=Stm_A_Rev_Axis001_Auto	G=VAR_EXTERNAL	Com=A(左側) ST6 反転2自動指令	EC=<ECs><EC EK="[1]" C="A(左側) ST6 原点位置移動開始" /></ECs>
+++D=BOOL	N=Stm_A_Rev_Axis001_MoveAbsoluteDone	G=VAR_EXTERNAL	Com=A(左側) ST6 反転2位置決め完了
+++D=LREAL	N=Stm_A_Rev_Axis001_MovePos_Degree	G=VAR_EXTERNAL	Com=A(左側) ST6 反転2指令角度
+++D=ARRAY[0..99] OF Bool	N=ST6_A_Rev2_M	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Bool	N=RCON1_5_Auto	G=VAR_EXTERNAL	Com=自動移動要求	EC=<ECs><EC EK="[1]" C="初期安全上昇" /><EC EK="[2]" C="コンベア回収下降" /><EC EK="[3]" C="保持後安全上昇" /><EC EK="[4]" C="仕分け先へ下降" /><EC EK="[5]" C="解放後安全上昇" /></ECs>
+++D=ARRAY[0..99] OF LREAL	N=HMI_RCON1_5_OUT_TargetPos	G=VAR_EXTERNAL	Com=RCON1_5 目標位置 [mm]：	EC=<ECs><EC EK="[1]" C="安全上昇位置" /><EC EK="[2]" C="コンベア回収下降位置" /><EC EK="[3]" C="OK積み1段目の基準" /><EC EK="[4]" C="旧段別位置4：現在未使用" /><EC EK="[5]" C="旧段別位置5：現在未使用" /><EC EK="[6]" C="旧段別位置6：現在未使用" /><EC EK="[7]" C="キズNG下降位置" /><EC EK="[8]" C="姿NG下降位置" /></ECs>
+++D=BOOL	N=RCON1_5_MoveDone	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Ejc_Hldr_Feed_A_H_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Ejc_Hldr_Feed_A_H_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF LREAL	N=HMI_RCON1_3_OUT_TargetPos	G=VAR_EXTERNAL	Com=RCON1_3 SF/NG2仕分け(左右) 目標位置 [mm]：
+++D=ARRAY[0..99] OF Bool	N=RCON1_3_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=RCON1_3_MoveDone	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Bool	N=ST7_A_Dis2_M	G=VAR_EXTERNAL	EC=<ECs><EC EK="[9]" C="ワーク有" /><EC EK="[10]" C="ワーク無" /><EC EK="[11]" C="有無・NG満杯異常" /><EC EK="[12]" C="回収下降位置転送" /><EC EK="[13]" C="回収下降要求" /><EC EK="[14]" C="ワーク保持" /><EC EK="[15]" C="保持後上昇位置転送" /><EC EK="[16]" C="保持後上昇要求" /><EC EK="[17]" C="仕分け位置選択" /><EC EK="[18]" C="OK選択" /><EC EK="[19]" C="キズNG選択" /><EC EK="[20]" C="姿NG選択" /><EC EK="[21]" C="OK送り行開始" /><EC EK="[22]" C="仕分け左右移動中" /><EC EK="[23]" C="下降位置選択" /><EC EK="[24]" C="OK積み位置" /><EC EK="[25]" C="キズNG下降位置" /><EC EK="[26]" C="姿NG下降位置" /><EC EK="[27]" C="配置下降要求" /><EC EK="[28]" C="ワーク解放" /><EC EK="[29]" C="解放後上昇位置転送" /><EC EK="[30]" C="解放後上昇要求" /><EC EK="[31]" C="左右原点位置転送" /><EC EK="[32]" C="左右原点移動要求" /><EC EK="[33]" C="最後の送り戻" /><EC EK="[1]" C="排出動作開始" /><EC EK="[2]" C="初期チャック戻" /><EC EK="[3]" C="初期上昇位置転送" /><EC EK="[4]" C="初期上昇要求" /><EC EK="[5]" C="初期左右位置転送" /><EC EK="[6]" C="初期左右移動要求" /><EC EK="[7]" C="初期送り戻" /><EC EK="[8]" C="ワーク有無判定" /><EC EK="[42]" C="今回ワーク加算済み" /><EC EK="[43]" C="積み設定・判定異常" /><EC EK="[44]" C="フォルダ回転異常" /><EC EK="[45]" C="ワーク回収開始許可" /><EC EK="[46]" C="今回の初期位置確認済み" /><EC EK="[34]" C="初期上昇 前完了解除" /><EC EK="[35]" C="初期左右 前完了解除" /><EC EK="[36]" C="回収下降 前完了解除" /><EC EK="[37]" C="保持後上昇 前完了解除" /><EC EK="[38]" C="仕分け左右 前完了解除" /><EC EK="[39]" C="配置下降 前完了解除" /><EC EK="[40]" C="解放後上昇 前完了解除" /><EC EK="[41]" C="左右戻り 前完了解除" /></ECs>
+++D=LREAL	N=RCON1_3_OUT_TargetPos_mm	G=VAR_EXTERNAL
+++D=INT	N=A_SF_CT	G=VAR_EXTERNAL	Com=A(左側) ストックフォルダカウント
+++D=BOOL	N=TimerQ_In_Sen_SH_B_Ent	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_SH_B_Ext	G=VAR_EXTERNAL
+++D=LREAL	N=RCON1_5_ActualPos_mm	G=VAR_EXTERNAL
+++D=LREAL	N=RCON1_5_SafePos_mm	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_SH_A_Turn_F_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_SH_A_Turn_F	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_SH_A_Turn_H_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_SH_A_Turn_H	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_SH_A_Turn_H_Done	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_SH_A_Turn_F_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Ejc_Hldr_Feed_A_F_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Ejc_Hldr_Feed_A_F_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Disc_Chk_A_F_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Disc_Chk_A_F_Done	G=VAR_EXTERNAL
+++D=LREAL	N=RCON1_5_OUT_TargetPos_mm	G=VAR_EXTERNAL
+++D=BOOL	N=ST7_A_Dis2_End	G=VAR_EXTERNAL	Com=ST7 A 動作完了
+++D=BOOL	N=In_Sen_NG2_Tray_B_Full	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_NG2_Tray_B_Full	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_NG1_Tray_B_Full	G=VAR_EXTERNAL
+++D=BOOL	N=ST7_A_SF_Wait_Pickup	G=VAR_EXTERNAL	Com=フォルダストック取出し待ち
+++D=ARRAY[0..4] OF BOOL	N=Error_ST7_A_Source_M	G=VAR_EXTERNAL	Com=#A(左側) ST7 発生理由（内部保持）	EC=<ECs><EC EK="[3]" C="ワーク不一致" /><EC EK="[4]" C="満杯（既存B側入力）" /></ECs>
+++D=ARRAY[0..99] OF BOOL	N=Retry	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_NG2_Tray_A_Full	G=VAR_EXTERNAL
+++D=BOOL	N=ST6_A_Rev2_End	G=VAR_EXTERNAL	Com=A(左側) ST6 反転2動作完了
+++D=BOOL	N=ST4_A_Rev_End	G=VAR_EXTERNAL
+++D=BOOL	N=Auto_Com_Start	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Bool	N=Destacker_M	G=VAR_EXTERNAL	Com=段バラシ工程	EC=<ECs><EC EK="[26]" C="初回確認済み" /><EC EK="[27]" C="初回安全 前完了解除" /><EC EK="[28]" C="初回1段 前完了解除" /><EC EK="[29]" C="初回戻り 前完了解除" /><EC EK="[30]" C="1段目 前完了解除" /><EC EK="[31]" C="2段目 前完了解除" /><EC EK="[32]" C="排出 前完了解除" /><EC EK="[1]" C="初回確認開始" /><EC EK="[2]" C="初回の爪保持" /><EC EK="[3]" C="初回の位置判定" /><EC EK="[4]" C="初回安全位置あり" /><EC EK="[5]" C="初回安全位置なし" /><EC EK="[6]" C="初回の爪戻し" /><EC EK="[7]" C="初回安全位置移動" /><EC EK="[8]" C="初回1段目移動" /><EC EK="[9]" C="初回コンテナ保持" /><EC EK="[10]" C="初回安全位置戻り" /><EC EK="[11]" C="初回の送り戻し" /><EC EK="[12]" C="通常サイクル開始" /><EC EK="[13]" C="送り戻り待ち" /><EC EK="[14]" C="コンテナ確認中" /><EC EK="[15]" C="コンテナ確認OK" /><EC EK="[16]" C="1段目位置へ移動" /><EC EK="[17]" C="コンテナ切り離し" /><EC EK="[18]" C="段積み判定" /><EC EK="[19]" C="2段以上" /><EC EK="[20]" C="1段のみ" /><EC EK="[21]" C="2段目位置へ移動" /><EC EK="[22]" C="上段コンテナ保持" /><EC EK="[23]" C="安全・排出位置移動" /><EC EK="[24]" C="送り行待ち" /><EC EK="[25]" C="送り戻り待ち" /></ECs>
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sep_Claw_F_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sep_Claw_F_Done	G=VAR_EXTERNAL
+++D=LREAL	N=RCON2_1_OUT_TargetPos_mm	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF LREAL	N=HMI_RCON2_1_OUT_TargetPos	G=VAR_EXTERNAL	Com=段バラシ 目標位置 [mm]
+++D=ARRAY[0..99] OF Bool	N=RCON2_1_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Supply_Container_Exist	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Empty_Container_CY_H	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Destacker_Stage_01_Exist	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Destacker_Stage_02_Exist	G=VAR_EXTERNAL
+++D=BOOL	N=BoxPacking_Busy	G=VAR_EXTERNAL	Com=箱詰め動作中
+++D=BOOL	N=RCON2_1_MoveDone	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Container_Direction_Check	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Sep_Claw_H_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Sep_Claw_H_Done	G=VAR_EXTERNAL
+++D=BOOL	N=Destacker_End	G=VAR_EXTERNAL	Com=1サイクル完了
+++D=LREAL	N=RCON2_1_ActualPos_mm	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Ejc_Cont_F_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Ejc_Cont_F_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Ejc_Cont_H_Auto	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Empty_Container_CY_H_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Empty_Container_CY_H_Done	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_SenCY_Empty_Container_CY_F	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Empty_Container_CY_F_Auto	G=VAR_EXTERNAL
+++D=LREAL	N=RCON2_2_ActualPos_mm	G=VAR_EXTERNAL
+++D=LREAL	N=RCON2_5_ActualPos_mm	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Empty_Container_CY_F_Done	G=VAR_EXTERNAL
+++D=BOOL	N=In_Sen_Container_Arrival	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Container_Arrival	G=VAR_EXTERNAL
+++D=BOOL	N=Destacker_Error	G=VAR_EXTERNAL	Com=方向・1段目確認異常
+++D=LREAL	N=RCON2_5_OUT_TargetPos_mm	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Bool	N=RCON2_5_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=RCON2_5_MoveDone	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Tray_Direction_Check	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Ejc_Cont_H_Done	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_Container_Pass	G=VAR_EXTERNAL
+++D=BOOL	N=ST7_B_SF_Wait_Pickup	G=VAR_EXTERNAL	Com=フォルダストックB取出し待ち
+++D=LREAL	N=RCON2_4_OUT_TargetPos_mm	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Bool	N=RCON2_4_Auto	G=VAR_EXTERNAL
+++D=LREAL	N=HMI_A_SF_StackPitch_mm	G=VAR_EXTERNAL	Com=左SF積みピッチ [mm]
+++D=INT	N=A_Total_CT	G=VAR_EXTERNAL	Com=A(左側)生産数
+++D=ARRAY[0..99] OF LREAL	N=HMI_RCON2_4_OUT_TargetPos	G=VAR_EXTERNAL	Com=RCON2_4 箱詰めZ位置 [mm]	EC=<ECs><EC EK="[1]" C="セイフティPos" /></ECs>
+++D=LREAL	N=RCON2_2_OUT_TargetPos_mm	G=VAR_EXTERNAL
+++D=LREAL	N=RCON2_3_OUT_TargetPos_mm	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Bool	N=RCON2_2_Auto	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Bool	N=RCON2_3_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=RCON2_2_MoveDone	G=VAR_EXTERNAL
+++D=BOOL	N=RCON2_3_MoveDone	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Box_Chuck_F_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Box_Chuck_F_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF Bool	N=Out_CYw_Box_Chuck_H_Auto	G=VAR_EXTERNAL
+++D=BOOL	N=Out_CYw_Box_Chuck_H_Done	G=VAR_EXTERNAL
+++D=INT	N=Box_Total_CT	G=VAR_EXTERNAL	Com=コンテナ入数
+++D=LREAL	N=HMI_Box_X_Pitch_mm	G=VAR_EXTERNAL	Com=箱詰めX方向の1ピッチ [mm]：符号付き。正=座標増、負=座標減。使用前に設定。
+++D=LREAL	N=HMI_Box_Y_Pitch_mm	G=VAR_EXTERNAL	Com=箱詰めY方向の1ピッチ [mm]：符号付き。正=座標増、負=座標減。使用前に設定。
+++D=BOOL	N=RCON2_4_MoveDone	G=VAR_EXTERNAL
+++D=BOOL	N=TimerQ_In_Sen_SH_A_Ent	G=VAR_EXTERNAL	Com=【X214】：A側積み側5個有
+++D=BOOL	N=TimerQ_In_Sen_SH_A_Ext	G=VAR_EXTERNAL	Com=【X215】：A側取出し側5個有
+++D=BOOL	N=In_Sw_RESET	G=VAR_EXTERNAL	Com=リセットSW

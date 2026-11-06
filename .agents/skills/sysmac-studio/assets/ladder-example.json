@@ -1,0 +1,32 @@
+{
+  "width": 1740,
+  "height": 1050,
+  "elements": [
+    {"type":"text","x":60,"y":32,"text":"ラダー図の標準見本：自己保持と共通解除","size":36},
+    {"type":"text","x":60,"y":96,"text":"説明用の仮変数｜白背景・黒線／青：変更する接点｜実機用回路ではありません","size":24},
+    {"type":"text","x":80,"y":160,"text":"開始条件の一部だけを変更し、自己保持と解除条件の位置を明示する","size":26,"color":"change"},
+    {"type":"wire","points":[[60,220],[60,710]]},
+    {"type":"wire","points":[[1680,220],[1680,710]]},
+    {"type":"wire","points":[[60,320],[120,320]]},
+    {"type":"block","x":120,"y":320,"width":230,"height":82,"label":"開始要求\n条件の要約"},
+    {"type":"wire","points":[[350,320],[430,320]]},
+    {"type":"contact","x":430,"y":320,"width":190,"label":"準備確認","color":"change"},
+    {"type":"wire","points":[[620,320],[720,320]]},
+    {"type":"block","x":720,"y":320,"width":170,"height":82,"label":"TON\n100ms"},
+    {"type":"wire","points":[[890,320],[940,320]]},
+    {"type":"block","x":940,"y":320,"width":120,"height":82,"label":"Up"},
+    {"type":"wire","points":[[1060,320],[1170,320]]},
+    {"type":"wire","points":[[60,500],[120,500]]},
+    {"type":"contact","x":120,"y":500,"width":180,"label":"M1"},
+    {"type":"wire","points":[[300,500],[1170,500],[1170,320]]},
+    {"type":"contact","x":1170,"y":320,"width":180,"label":"解除条件","nc":true},
+    {"type":"wire","points":[[1350,320],[1510,320]]},
+    {"type":"coil","x":1510,"y":320,"width":130,"label":"M1"},
+    {"type":"wire","points":[[1640,320],[1680,320]]},
+    {"type":"text","x":80,"y":600,"text":"自己保持のM1は、開始要求・準備確認・TON・Upを迂回する。","size":26,"color":"change"},
+    {"type":"text","x":80,"y":654,"text":"解除条件は合流後に置き、開始枝と自己保持枝の両方へ効かせる。","size":26,"color":"change"},
+    {"type":"text","x":80,"y":770,"text":"M1＝説明用の動作中記憶。実際の図では、対象の完全な変数名をここに記載する。","size":24,"width":1560},
+    {"type":"text","x":80,"y":830,"text":"開始条件の要約はブロック、個別のON条件はNO接点、OFF条件はNC接点で表示。","size":24,"width":1560},
+    {"type":"text","x":80,"y":960,"text":"書式見本・未反映｜図の生成は制御の検証や、実プロジェクトへの変更を意味しません。","size":22}
+  ]
+}

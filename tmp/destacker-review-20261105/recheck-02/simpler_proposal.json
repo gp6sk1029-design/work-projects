@@ -1,0 +1,431 @@
+{
+  "request": {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "RCON2_2_Auto[1]",
+        "Ix": 0
+      },
+      {
+        "__type": "LD",
+        "Var": "RCON2_2_Auto[2]",
+        "Y": 1,
+        "Ix": 1
+      },
+      {
+        "__type": "LD",
+        "Var": "RCON2_2_Auto[3]",
+        "Y": 2,
+        "Ix": 2
+      },
+      {
+        "__type": "LD",
+        "Var": "RCON2_2_Ready",
+        "X": 1,
+        "Ix": 3
+      },
+      {
+        "__type": "LD",
+        "Var": "RCON2_2_M[3]",
+        "X": 2,
+        "Ix": 4
+      },
+      {
+        "__type": "LD",
+        "Var": "RCON2_2_MoveDone",
+        "X": 3,
+        "Not": true,
+        "Ix": 5
+      },
+      {
+        "__type": "FB",
+        "In": [
+          {
+            "__type": "PF",
+            "Arg": "In"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "PT",
+            "Ix": 7,
+            "Type": "TIME",
+            "Var": "T#100ms"
+          }
+        ],
+        "Ix": 6,
+        "Name": "TON",
+        "Out": [
+          {
+            "__type": "PF",
+            "Arg": "Q"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "ET",
+            "Ix": 8,
+            "Type": "TIME",
+            "Var": ""
+          }
+        ],
+        "X": 5,
+        "Var": "RCON2_2_TON[1]"
+      },
+      {
+        "__type": "F",
+        "In": [
+          {
+            "__type": "PF",
+            "Arg": "In"
+          }
+        ],
+        "Ix": 9,
+        "Name": "Up",
+        "Out": [
+          {
+            "__type": "PF",
+            "Arg": ""
+          }
+        ],
+        "X": 6,
+        "Id": "1195d0f1-b586-4d7b-b96e-17e897b04aa8"
+      },
+      {
+        "__type": "LD",
+        "Var": "RCON2_2_M[1]",
+        "Y": 3,
+        "Ix": 10
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 3
+      },
+      {
+        "__type": "HL",
+        "X": 2,
+        "Y": 3
+      },
+      {
+        "__type": "HL",
+        "X": 3,
+        "Y": 3
+      },
+      {
+        "__type": "HL",
+        "X": 5,
+        "Y": 3
+      },
+      {
+        "__type": "HL",
+        "X": 6,
+        "Y": 3
+      },
+      {
+        "__type": "LD",
+        "Var": "RCON2_2_M[3]",
+        "X": 7,
+        "Ix": 11
+      },
+      {
+        "__type": "LD",
+        "Var": "RCON2_2_MoveDone",
+        "X": 8,
+        "Not": true,
+        "Ix": 12
+      },
+      {
+        "__type": "ST",
+        "Var": "RCON2_2_M[1]",
+        "X": 9,
+        "Ix": 13
+      },
+      {
+        "__type": "LD",
+        "X": 4,
+        "Y": 0,
+        "Var": "RCON2_2_IN_PositionDone",
+        "Id": "proposal-pend-ready"
+      },
+      {
+        "__type": "HL",
+        "X": 4,
+        "Y": 3
+      }
+    ],
+    "VLs": [
+      {
+        "X": 1,
+        "Y": 0,
+        "Ix": 16
+      },
+      {
+        "X": 1,
+        "Y": 1,
+        "Ix": 17
+      },
+      {
+        "X": 7,
+        "Y": 0,
+        "Ix": 18
+      },
+      {
+        "X": 7,
+        "Y": 1,
+        "Ix": 19
+      },
+      {
+        "X": 7,
+        "Y": 2,
+        "Ix": 20
+      }
+    ],
+    "CMT": "【自動要求の受付・開始保持】\r\nRCON2_2：箱詰めX軸\r\n要求[1]～[3]を並列で受付\r\n\r\n前回完了の100ms保持中は待機\r\n完了解除後、既存TONで確認",
+    "LRI": 14,
+    "RRI": 15
+  },
+  "completion": {
+    "CLs": [
+      {
+        "__type": "LD",
+        "Var": "RCON2_2_M[1]",
+        "Ix": 0,
+        "X": 2
+      },
+      {
+        "__type": "LD",
+        "Ix": 1,
+        "Var": "RCON2_2_IN_PositionDone",
+        "X": 0
+      },
+      {
+        "__type": "F",
+        "In": [
+          {
+            "__type": "PF",
+            "Arg": "In"
+          }
+        ],
+        "Ix": 2,
+        "Name": "Up",
+        "Out": [
+          {
+            "__type": "PF",
+            "Arg": ""
+          }
+        ],
+        "X": 1,
+        "Id": "bd7e4251-d0f3-4677-838a-83817d427151"
+      },
+      {
+        "__type": "LD",
+        "Ix": 3,
+        "Var": "RCON2_2_MoveDone",
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 2,
+        "Y": 1
+      },
+      {
+        "__type": "LD",
+        "Ix": 4,
+        "Not": true,
+        "Var": "RCON2_2_TON[2].Q",
+        "X": 3
+      },
+      {
+        "__type": "ST",
+        "Ix": 5,
+        "Var": "RCON2_2_MoveDone",
+        "X": 4
+      },
+      {
+        "__type": "FB",
+        "In": [
+          {
+            "__type": "PF",
+            "Arg": "In"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "PT",
+            "Ix": 7,
+            "Type": "TIME",
+            "Var": "T#100ms"
+          }
+        ],
+        "Ix": 6,
+        "Name": "TON",
+        "Out": [
+          {
+            "__type": "PF",
+            "Arg": "Q"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "ET",
+            "Ix": 8,
+            "Type": "TIME",
+            "Var": ""
+          }
+        ],
+        "X": 4,
+        "Y": 1,
+        "Var": "RCON2_2_TON[2]"
+      },
+      {
+        "__type": "HL",
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "__type": "HL",
+        "X": 2,
+        "Y": 1
+      }
+    ],
+    "CMT": "【移動完了】\r\nRCON2_2：箱詰めX軸\r\n\r\n今回受付済み ＋ PEND ONで完了\r\n既存TONで100ms保持",
+    "LRI": 10,
+    "RRI": 11,
+    "VLs": [
+      {
+        "Ix": 12,
+        "X": 3
+      },
+      {
+        "Ix": 13,
+        "X": 4
+      }
+    ]
+  },
+  "report": {
+    "source_sha": "03503f0a22b52c46cbc5929e18c3fb6208bc22f67416b82f2d1ed6cc1be0adb3",
+    "source_unchanged": true,
+    "runs": [
+      {
+        "initial_pend": true,
+        "wait_pend_at": null,
+        "off_delay": 1,
+        "on_delay": 15,
+        "never_off": false,
+        "start_ticks": [
+          10,
+          46
+        ],
+        "done_ticks": [
+          25,
+          61
+        ]
+      },
+      {
+        "initial_pend": false,
+        "wait_pend_at": 30,
+        "off_delay": 1,
+        "on_delay": 15,
+        "never_off": false,
+        "start_ticks": [
+          40,
+          76
+        ],
+        "done_ticks": [
+          55,
+          91
+        ]
+      },
+      {
+        "initial_pend": true,
+        "wait_pend_at": null,
+        "off_delay": 2,
+        "on_delay": 18,
+        "never_off": false,
+        "start_ticks": [
+          10,
+          49
+        ],
+        "done_ticks": [
+          28,
+          67
+        ]
+      },
+      {
+        "initial_pend": false,
+        "wait_pend_at": 30,
+        "off_delay": 2,
+        "on_delay": 18,
+        "never_off": false,
+        "start_ticks": [
+          40,
+          79
+        ],
+        "done_ticks": [
+          58,
+          97
+        ]
+      },
+      {
+        "initial_pend": true,
+        "wait_pend_at": null,
+        "off_delay": 5,
+        "on_delay": 25,
+        "never_off": false,
+        "start_ticks": [
+          10,
+          56
+        ],
+        "done_ticks": [
+          35,
+          81
+        ]
+      },
+      {
+        "initial_pend": false,
+        "wait_pend_at": 30,
+        "off_delay": 5,
+        "on_delay": 25,
+        "never_off": false,
+        "start_ticks": [
+          40,
+          86
+        ],
+        "done_ticks": [
+          65,
+          111
+        ]
+      },
+      {
+        "initial_pend": false,
+        "wait_pend_at": null,
+        "off_delay": 2,
+        "on_delay": 18,
+        "never_off": false,
+        "start_ticks": [],
+        "done_ticks": []
+      },
+      {
+        "initial_pend": true,
+        "wait_pend_at": null,
+        "off_delay": 2,
+        "on_delay": 18,
+        "never_off": true,
+        "start_ticks": [
+          10
+        ],
+        "done_ticks": []
+      }
+    ],
+    "additional_case": "受付中PEND OFFでTONリセット、再ON直後にはM1/Doneを出さない",
+    "assumptions": [
+      "PEND ONを100ms確認してから新規受付する運転に限定",
+      "完了判定行はM1 OFF時も毎走査実行し、UpをPEND単独へ接続",
+      "起動/再開時のM1とDoneはOFFへ初期化",
+      "通信とPENDの実機応答は未確認"
+    ],
+    "scope": "X軸の受付/Start/完了の限定モデル。通信・全体ビルド・実機未検証。実プロジェクト変更なし。"
+  }
+}

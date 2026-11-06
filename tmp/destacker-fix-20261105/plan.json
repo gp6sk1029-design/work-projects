@@ -1,0 +1,29 @@
+{
+  "source_sha256": "6361aef586c488d9c56729460cefcd37af8df7c08452798e3801152eb0716e02",
+  "operations": [
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml",
+      "expected_sha256": "3d0f4b12a07b03925c492a05e1052ae102549da0d0435f5717fe85a8526e9ffb",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-fix-20261105\\destacker.bin"
+    },
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "expected_sha256": "c1c80505305013ec75d5dee9c0e3bb986e8d3065b829d0c788af7fa399f37e1e",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-fix-20261105\\vars_86df70c5-aaad-4d2c-bba7-04264d7b7f32.bin"
+    },
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "expected_sha256": "53e1efe5d4c3394996a4d18c2edd8dd85a0ccb337f2ca4b4c64862903c521fe4",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-fix-20261105\\vars_f07dd06c-505c-431b-b9fc-098949805b4e.bin"
+    },
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/298443e5-40dc-47d4-95bf-46c8fde7d5ae.oem",
+      "expected_sha256": "b901ceecbd14ce2225b7fa75b84b67959dbedd6b6ac5022cf277254d7a93324d",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-fix-20261105\\oem_name.bin"
+    }
+  ]
+}

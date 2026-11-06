@@ -1,0 +1,23 @@
+{
+  "source_sha256": "2194920a612d61b00576dad35f8c9a26e276510b5a289a1f70ade9d385abc1bb",
+  "operations": [
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "expected_sha256": "d0835678e22e366d54271f617fb86127e9dc996f172734021941773b74ed91dc",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-comments-20261105\\names_b530d740-9d69-41c3-974a-97c06e823eb2.xml"
+    },
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "expected_sha256": "7e92b8e5617b861c8a2d81361e3287318492a3dc0ebb3bed4486fde8e94bd869",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-comments-20261105\\names_86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml"
+    },
+    {
+      "op": "replace-part",
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "expected_sha256": "b963e4f49cbe39746fe001c69bf65ed336270ec4828c0abb08753804334531ab",
+      "file": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-comments-20261105\\names_f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+    }
+  ]
+}

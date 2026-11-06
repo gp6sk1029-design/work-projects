@@ -1,0 +1,1197 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105B.smc2",
+  "output": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105C.smc2",
+  "archive": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\履歴\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105B.smc2",
+  "staged": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\box-shift15-20261105\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105C.smc2",
+  "source_sha256": "a428b0b7fa3ba276dfdb45aac6291e6fc7da8ae55abced28c9d8d4d212eda398",
+  "output_sha256": "76f4df18b37c18271c9364118cefa4c893bd4493aca36b3b6dadf4fe5ac083a3",
+  "target": "921a8dcb-33d9-470e-81f9-ea54d3b57793/6061835d-1e51-4e92-be1f-d546f44764e3.xml",
+  "row_count": 42,
+  "unchanged_rows": [
+    0,
+    9
+  ],
+  "preserved_predecessor_contact": [
+    10,
+    "CLs",
+    0,
+    "Var"
+  ],
+  "changed_refs": 104,
+  "changes": [
+    {
+      "row": 10,
+      "path": [
+        10,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[15]",
+      "new": "BoxPacking_M[16]"
+    },
+    {
+      "row": 10,
+      "path": [
+        10,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[15]",
+      "new": "BoxPacking_M[16]"
+    },
+    {
+      "row": 11,
+      "path": [
+        11,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[16]",
+      "new": "BoxPacking_M[17]"
+    },
+    {
+      "row": 11,
+      "path": [
+        11,
+        "CLs",
+        6,
+        "Var"
+      ],
+      "old": "BoxPacking_M[16]",
+      "new": "BoxPacking_M[17]"
+    },
+    {
+      "row": 12,
+      "path": [
+        12,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[16]",
+      "new": "BoxPacking_M[17]"
+    },
+    {
+      "row": 12,
+      "path": [
+        12,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[17]",
+      "new": "BoxPacking_M[18]"
+    },
+    {
+      "row": 12,
+      "path": [
+        12,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[17]",
+      "new": "BoxPacking_M[18]"
+    },
+    {
+      "row": 13,
+      "path": [
+        13,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[17]",
+      "new": "BoxPacking_M[18]"
+    },
+    {
+      "row": 13,
+      "path": [
+        13,
+        "CLs",
+        3,
+        "Var"
+      ],
+      "old": "BoxPacking_M[18]",
+      "new": "BoxPacking_M[19]"
+    },
+    {
+      "row": 13,
+      "path": [
+        13,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[18]",
+      "new": "BoxPacking_M[19]"
+    },
+    {
+      "row": 13,
+      "path": [
+        13,
+        "CLs",
+        8,
+        "Var"
+      ],
+      "old": "BoxPacking_M[19]",
+      "new": "BoxPacking_M[20]"
+    },
+    {
+      "row": 13,
+      "path": [
+        13,
+        "CLs",
+        12,
+        "Var"
+      ],
+      "old": "BoxPacking_M[20]",
+      "new": "BoxPacking_M[21]"
+    },
+    {
+      "row": 14,
+      "path": [
+        14,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[18]",
+      "new": "BoxPacking_M[19]"
+    },
+    {
+      "row": 14,
+      "path": [
+        14,
+        "CLs",
+        1,
+        "Var"
+      ],
+      "old": "BoxPacking_M[19]",
+      "new": "BoxPacking_M[20]"
+    },
+    {
+      "row": 15,
+      "path": [
+        15,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[18]",
+      "new": "BoxPacking_M[19]"
+    },
+    {
+      "row": 15,
+      "path": [
+        15,
+        "CLs",
+        1,
+        "Var"
+      ],
+      "old": "BoxPacking_M[20]",
+      "new": "BoxPacking_M[21]"
+    },
+    {
+      "row": 16,
+      "path": [
+        16,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[19]",
+      "new": "BoxPacking_M[20]"
+    },
+    {
+      "row": 16,
+      "path": [
+        16,
+        "CLs",
+        1,
+        "Var"
+      ],
+      "old": "BoxPacking_M[21]",
+      "new": "BoxPacking_M[22]"
+    },
+    {
+      "row": 16,
+      "path": [
+        16,
+        "CLs",
+        4,
+        "Var"
+      ],
+      "old": "BoxPacking_M[21]",
+      "new": "BoxPacking_M[22]"
+    },
+    {
+      "row": 17,
+      "path": [
+        17,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[21]",
+      "new": "BoxPacking_M[22]"
+    },
+    {
+      "row": 17,
+      "path": [
+        17,
+        "CLs",
+        3,
+        "Var"
+      ],
+      "old": "BoxPacking_M[22]",
+      "new": "BoxPacking_M[23]"
+    },
+    {
+      "row": 17,
+      "path": [
+        17,
+        "CLs",
+        9,
+        "Var"
+      ],
+      "old": "BoxPacking_M[22]",
+      "new": "BoxPacking_M[23]"
+    },
+    {
+      "row": 18,
+      "path": [
+        18,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[22]",
+      "new": "BoxPacking_M[23]"
+    },
+    {
+      "row": 18,
+      "path": [
+        18,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[23]",
+      "new": "BoxPacking_M[24]"
+    },
+    {
+      "row": 18,
+      "path": [
+        18,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[23]",
+      "new": "BoxPacking_M[24]"
+    },
+    {
+      "row": 19,
+      "path": [
+        19,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[22]",
+      "new": "BoxPacking_M[23]"
+    },
+    {
+      "row": 19,
+      "path": [
+        19,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[24]",
+      "new": "BoxPacking_M[25]"
+    },
+    {
+      "row": 19,
+      "path": [
+        19,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[24]",
+      "new": "BoxPacking_M[25]"
+    },
+    {
+      "row": 20,
+      "path": [
+        20,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[22]",
+      "new": "BoxPacking_M[23]"
+    },
+    {
+      "row": 20,
+      "path": [
+        20,
+        "CLs",
+        1,
+        "Var"
+      ],
+      "old": "BoxPacking_M[23]",
+      "new": "BoxPacking_M[24]"
+    },
+    {
+      "row": 20,
+      "path": [
+        20,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[24]",
+      "new": "BoxPacking_M[25]"
+    },
+    {
+      "row": 20,
+      "path": [
+        20,
+        "CLs",
+        3,
+        "Var"
+      ],
+      "old": "BoxPacking_M[25]",
+      "new": "BoxPacking_M[26]"
+    },
+    {
+      "row": 20,
+      "path": [
+        20,
+        "CLs",
+        7,
+        "Var"
+      ],
+      "old": "BoxPacking_M[25]",
+      "new": "BoxPacking_M[26]"
+    },
+    {
+      "row": 21,
+      "path": [
+        21,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[21]",
+      "new": "BoxPacking_M[22]"
+    },
+    {
+      "row": 21,
+      "path": [
+        21,
+        "CLs",
+        3,
+        "Var"
+      ],
+      "old": "BoxPacking_M[22]",
+      "new": "BoxPacking_M[23]"
+    },
+    {
+      "row": 21,
+      "path": [
+        21,
+        "CLs",
+        9,
+        "Var"
+      ],
+      "old": "BoxPacking_M[26]",
+      "new": "BoxPacking_M[27]"
+    },
+    {
+      "row": 22,
+      "path": [
+        22,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[22]",
+      "new": "BoxPacking_M[23]"
+    },
+    {
+      "row": 22,
+      "path": [
+        22,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[27]",
+      "new": "BoxPacking_M[28]"
+    },
+    {
+      "row": 22,
+      "path": [
+        22,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[27]",
+      "new": "BoxPacking_M[28]"
+    },
+    {
+      "row": 23,
+      "path": [
+        23,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[22]",
+      "new": "BoxPacking_M[23]"
+    },
+    {
+      "row": 23,
+      "path": [
+        23,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[28]",
+      "new": "BoxPacking_M[29]"
+    },
+    {
+      "row": 23,
+      "path": [
+        23,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[28]",
+      "new": "BoxPacking_M[29]"
+    },
+    {
+      "row": 24,
+      "path": [
+        24,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[22]",
+      "new": "BoxPacking_M[23]"
+    },
+    {
+      "row": 24,
+      "path": [
+        24,
+        "CLs",
+        1,
+        "Var"
+      ],
+      "old": "BoxPacking_M[23]",
+      "new": "BoxPacking_M[24]"
+    },
+    {
+      "row": 24,
+      "path": [
+        24,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[24]",
+      "new": "BoxPacking_M[25]"
+    },
+    {
+      "row": 24,
+      "path": [
+        24,
+        "CLs",
+        3,
+        "Var"
+      ],
+      "old": "BoxPacking_M[29]",
+      "new": "BoxPacking_M[30]"
+    },
+    {
+      "row": 24,
+      "path": [
+        24,
+        "CLs",
+        7,
+        "Var"
+      ],
+      "old": "BoxPacking_M[29]",
+      "new": "BoxPacking_M[30]"
+    },
+    {
+      "row": 25,
+      "path": [
+        25,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[25]",
+      "new": "BoxPacking_M[26]"
+    },
+    {
+      "row": 25,
+      "path": [
+        25,
+        "CLs",
+        1,
+        "Var"
+      ],
+      "old": "BoxPacking_M[29]",
+      "new": "BoxPacking_M[30]"
+    },
+    {
+      "row": 25,
+      "path": [
+        25,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[30]",
+      "new": "BoxPacking_M[31]"
+    },
+    {
+      "row": 25,
+      "path": [
+        25,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[30]",
+      "new": "BoxPacking_M[31]"
+    },
+    {
+      "row": 26,
+      "path": [
+        26,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[30]",
+      "new": "BoxPacking_M[31]"
+    },
+    {
+      "row": 26,
+      "path": [
+        26,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[31]",
+      "new": "BoxPacking_M[32]"
+    },
+    {
+      "row": 26,
+      "path": [
+        26,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[31]",
+      "new": "BoxPacking_M[32]"
+    },
+    {
+      "row": 27,
+      "path": [
+        27,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[31]",
+      "new": "BoxPacking_M[32]"
+    },
+    {
+      "row": 27,
+      "path": [
+        27,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[32]",
+      "new": "BoxPacking_M[33]"
+    },
+    {
+      "row": 27,
+      "path": [
+        27,
+        "CLs",
+        6,
+        "Var"
+      ],
+      "old": "BoxPacking_M[32]",
+      "new": "BoxPacking_M[33]"
+    },
+    {
+      "row": 28,
+      "path": [
+        28,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[32]",
+      "new": "BoxPacking_M[33]"
+    },
+    {
+      "row": 28,
+      "path": [
+        28,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[33]",
+      "new": "BoxPacking_M[34]"
+    },
+    {
+      "row": 28,
+      "path": [
+        28,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[33]",
+      "new": "BoxPacking_M[34]"
+    },
+    {
+      "row": 29,
+      "path": [
+        29,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[32]",
+      "new": "BoxPacking_M[33]"
+    },
+    {
+      "row": 29,
+      "path": [
+        29,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[34]",
+      "new": "BoxPacking_M[35]"
+    },
+    {
+      "row": 29,
+      "path": [
+        29,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[34]",
+      "new": "BoxPacking_M[35]"
+    },
+    {
+      "row": 30,
+      "path": [
+        30,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[33]",
+      "new": "BoxPacking_M[34]"
+    },
+    {
+      "row": 30,
+      "path": [
+        30,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[35]",
+      "new": "BoxPacking_M[36]"
+    },
+    {
+      "row": 30,
+      "path": [
+        30,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[35]",
+      "new": "BoxPacking_M[36]"
+    },
+    {
+      "row": 31,
+      "path": [
+        31,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[34]",
+      "new": "BoxPacking_M[35]"
+    },
+    {
+      "row": 31,
+      "path": [
+        31,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[37]",
+      "new": "BoxPacking_M[38]"
+    },
+    {
+      "row": 31,
+      "path": [
+        31,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[36]",
+      "new": "BoxPacking_M[37]"
+    },
+    {
+      "row": 32,
+      "path": [
+        32,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[32]",
+      "new": "BoxPacking_M[33]"
+    },
+    {
+      "row": 32,
+      "path": [
+        32,
+        "CLs",
+        1,
+        "Var"
+      ],
+      "old": "BoxPacking_M[35]",
+      "new": "BoxPacking_M[36]"
+    },
+    {
+      "row": 32,
+      "path": [
+        32,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[36]",
+      "new": "BoxPacking_M[37]"
+    },
+    {
+      "row": 32,
+      "path": [
+        32,
+        "CLs",
+        3,
+        "Var"
+      ],
+      "old": "BoxPacking_M[37]",
+      "new": "BoxPacking_M[38]"
+    },
+    {
+      "row": 32,
+      "path": [
+        32,
+        "CLs",
+        7,
+        "Var"
+      ],
+      "old": "BoxPacking_M[37]",
+      "new": "BoxPacking_M[38]"
+    },
+    {
+      "row": 33,
+      "path": [
+        33,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[37]",
+      "new": "BoxPacking_M[38]"
+    },
+    {
+      "row": 33,
+      "path": [
+        33,
+        "CLs",
+        1,
+        "Var"
+      ],
+      "old": "BoxPacking_M[38]",
+      "new": "BoxPacking_M[39]"
+    },
+    {
+      "row": 33,
+      "path": [
+        33,
+        "CLs",
+        4,
+        "Var"
+      ],
+      "old": "BoxPacking_M[38]",
+      "new": "BoxPacking_M[39]"
+    },
+    {
+      "row": 34,
+      "path": [
+        34,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[38]",
+      "new": "BoxPacking_M[39]"
+    },
+    {
+      "row": 34,
+      "path": [
+        34,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[39]",
+      "new": "BoxPacking_M[40]"
+    },
+    {
+      "row": 34,
+      "path": [
+        34,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[39]",
+      "new": "BoxPacking_M[40]"
+    },
+    {
+      "row": 35,
+      "path": [
+        35,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[38]",
+      "new": "BoxPacking_M[39]"
+    },
+    {
+      "row": 35,
+      "path": [
+        35,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[40]",
+      "new": "BoxPacking_M[41]"
+    },
+    {
+      "row": 35,
+      "path": [
+        35,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[40]",
+      "new": "BoxPacking_M[41]"
+    },
+    {
+      "row": 36,
+      "path": [
+        36,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[40]",
+      "new": "BoxPacking_M[41]"
+    },
+    {
+      "row": 36,
+      "path": [
+        36,
+        "CLs",
+        1,
+        "Var"
+      ],
+      "old": "BoxPacking_M[41]",
+      "new": "BoxPacking_M[42]"
+    },
+    {
+      "row": 36,
+      "path": [
+        36,
+        "CLs",
+        4,
+        "Var"
+      ],
+      "old": "BoxPacking_M[41]",
+      "new": "BoxPacking_M[42]"
+    },
+    {
+      "row": 37,
+      "path": [
+        37,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[41]",
+      "new": "BoxPacking_M[42]"
+    },
+    {
+      "row": 37,
+      "path": [
+        37,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[42]",
+      "new": "BoxPacking_M[43]"
+    },
+    {
+      "row": 37,
+      "path": [
+        37,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[42]",
+      "new": "BoxPacking_M[43]"
+    },
+    {
+      "row": 37,
+      "path": [
+        37,
+        "CLs",
+        7,
+        "Var"
+      ],
+      "old": "BoxPacking_M[43]",
+      "new": "BoxPacking_M[44]"
+    },
+    {
+      "row": 37,
+      "path": [
+        37,
+        "CLs",
+        9,
+        "Var"
+      ],
+      "old": "BoxPacking_M[44]",
+      "new": "BoxPacking_M[45]"
+    },
+    {
+      "row": 38,
+      "path": [
+        38,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[42]",
+      "new": "BoxPacking_M[43]"
+    },
+    {
+      "row": 38,
+      "path": [
+        38,
+        "CLs",
+        1,
+        "Var"
+      ],
+      "old": "BoxPacking_M[44]",
+      "new": "BoxPacking_M[45]"
+    },
+    {
+      "row": 38,
+      "path": [
+        38,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[45]",
+      "new": "BoxPacking_M[46]"
+    },
+    {
+      "row": 38,
+      "path": [
+        38,
+        "CLs",
+        6,
+        "Var"
+      ],
+      "old": "BoxPacking_M[45]",
+      "new": "BoxPacking_M[46]"
+    },
+    {
+      "row": 39,
+      "path": [
+        39,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[45]",
+      "new": "BoxPacking_M[46]"
+    },
+    {
+      "row": 39,
+      "path": [
+        39,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[46]",
+      "new": "BoxPacking_M[47]"
+    },
+    {
+      "row": 39,
+      "path": [
+        39,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[46]",
+      "new": "BoxPacking_M[47]"
+    },
+    {
+      "row": 40,
+      "path": [
+        40,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[46]",
+      "new": "BoxPacking_M[47]"
+    },
+    {
+      "row": 40,
+      "path": [
+        40,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[47]",
+      "new": "BoxPacking_M[48]"
+    },
+    {
+      "row": 40,
+      "path": [
+        40,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[47]",
+      "new": "BoxPacking_M[48]"
+    },
+    {
+      "row": 41,
+      "path": [
+        41,
+        "CLs",
+        0,
+        "Var"
+      ],
+      "old": "BoxPacking_M[47]",
+      "new": "BoxPacking_M[48]"
+    },
+    {
+      "row": 41,
+      "path": [
+        41,
+        "CLs",
+        2,
+        "Var"
+      ],
+      "old": "BoxPacking_M[48]",
+      "new": "BoxPacking_M[49]"
+    },
+    {
+      "row": 41,
+      "path": [
+        41,
+        "CLs",
+        5,
+        "Var"
+      ],
+      "old": "BoxPacking_M[48]",
+      "new": "BoxPacking_M[49]"
+    }
+  ],
+  "coil_range_after": [
+    1,
+    49
+  ],
+  "changed_parts": [
+    "921a8dcb-33d9-470e-81f9-ea54d3b57793/6061835d-1e51-4e92-be1f-d546f44764e3.xml"
+  ],
+  "preserved_parts": 211,
+  "native_validation": {
+    "box_section": "TOTAL=42 PARSE_FAIL=0 MODEL_FAIL=0",
+    "application_build_verified": false
+  },
+  "published": true,
+  "archived": true,
+  "full_Sysmac_build": "未実施",
+  "independent_verification": {
+    "reverse_mapping_matches_source": true,
+    "changed_refs": 104,
+    "coil_range": [
+      1,
+      49
+    ],
+    "duplicates": 0,
+    "gaps": 0,
+    "first_10_rows_byte_identical": true,
+    "boundary_predecessor_contact_preserved": true,
+    "other_parts_identical": 211,
+    "ST_text_unchanged": true,
+    "source_archived_byte_identical": true
+  }
+}

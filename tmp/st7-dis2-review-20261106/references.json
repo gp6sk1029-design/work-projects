@@ -1,0 +1,5297 @@
+[
+  {
+    "section": "Error_エラー処理",
+    "row": 31,
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "ST7_A_Dis2_M[11]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Error_ST7_A_M[0]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Not": true,
+          "Var": "In_Sw_RESET",
+          "X": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 3,
+          "Var": "Error_ST7_A_M[0]",
+          "X": 2
+        }
+      ],
+      "CMT": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n#【A(左側) ST7 SF排出】\r\n\r\n\r\n再試行：Retry[11]\r\n# 目的：原因別の異常保持と停止を処理する\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\nエラー発生条件（RESETで解除）\r\n①検査前ワーク不一致エラー\r\n②NGストッカー満杯",
+      "LRI": 4,
+      "RRI": 5,
+      "VLs": [
+        {
+          "Ix": 6,
+          "X": 1
+        }
+      ]
+    },
+    "compact": {
+      "cells": [
+        {
+          "__type": "LD",
+          "Var": "ST7_A_Dis2_M[11]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Error_ST7_A_M[0]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "In_Sw_RESET",
+          "Not": true,
+          "X": 1
+        },
+        {
+          "__type": "ST",
+          "Var": "Error_ST7_A_M[0]",
+          "X": 2
+        }
+      ],
+      "VLs": [
+        {
+          "Ix": 6,
+          "X": 1
+        }
+      ]
+    }
+  },
+  {
+    "section": "Ins_A_Cv_左検査Cv",
+    "row": 0,
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Auto_A_Start"
+        },
+        {
+          "__type": "LD",
+          "Ix": 7,
+          "Var": "ST0_A_Sup_End",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "ST1_A_Ca1_End",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "ST2_A_Hgt_End",
+          "X": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "ST3_A_Dis1_End",
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 10,
+          "Var": "ST4_A_Rev_End",
+          "X": 5
+        },
+        {
+          "__type": "LD",
+          "Ix": 9,
+          "Var": "ST5_A_Ca2_End",
+          "X": 6
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "ST6_A_Rev2_End",
+          "X": 7
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "ST7_A_Dis2_End",
+          "X": 8
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Var": "Ins_A_End",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 2,
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 6,
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 7,
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 8,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 8,
+          "Not": true,
+          "Var": "Ins_A_Cv_M[3]",
+          "X": 9
+        },
+        {
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Ins_A_End",
+          "X": 10
+        }
+      ],
+      "CMT": "#A(左側)全ST 動作完了確認",
+      "LRI": 12,
+      "RRI": 13,
+      "VLs": [
+        {
+          "Ix": 14,
+          "X": 9
+        }
+      ]
+    },
+    "compact": {
+      "cells": [
+        {
+          "__type": "LD",
+          "Var": "Auto_A_Start"
+        },
+        {
+          "__type": "LD",
+          "Var": "ST0_A_Sup_End",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "ST1_A_Ca1_End",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "ST2_A_Hgt_End",
+          "X": 3
+        },
+        {
+          "__type": "LD",
+          "Var": "ST3_A_Dis1_End",
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Var": "ST4_A_Rev_End",
+          "X": 5
+        },
+        {
+          "__type": "LD",
+          "Var": "ST5_A_Ca2_End",
+          "X": 6
+        },
+        {
+          "__type": "LD",
+          "Var": "ST6_A_Rev2_End",
+          "X": 7
+        },
+        {
+          "__type": "LD",
+          "Var": "ST7_A_Dis2_End",
+          "X": 8
+        },
+        {
+          "__type": "LD",
+          "Var": "Ins_A_End",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Ins_A_Cv_M[3]",
+          "Not": true,
+          "X": 9
+        },
+        {
+          "__type": "ST",
+          "Var": "Ins_A_End",
+          "X": 10
+        }
+      ],
+      "VLs": [
+        {
+          "Ix": 14,
+          "X": 9
+        }
+      ]
+    }
+  },
+  {
+    "section": "Ins_A_Cv_左検査Cv",
+    "row": 3,
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Ins_A_Cv_M[2]"
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 18,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 1,
+          "Id": "a764152e-fdcd-412c-b1cc-15c3000015f3"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Ins_A_Cv_M[3]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Ins_A_Next_Cycle",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 3,
+          "Var": "Ins_A_Cv_M[3]",
+          "X": 3
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 26,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 3,
+          "Y": 1,
+          "Id": "a764152e-fdcd-412c-b1cc-15c300001619"
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Ix": 4,
+              "Type": "ANY",
+              "Var": "Station_A_Data[6]"
+            }
+          ],
+          "Ix": 19,
+          "Name": "MOVE",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Ix": 5,
+              "Type": "ANY",
+              "Var": "Station_A_Data[7]"
+            }
+          ],
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Ix": 6,
+              "Type": "ANY",
+              "Var": "Station_A_Data[5]"
+            }
+          ],
+          "Ix": 20,
+          "Name": "MOVE",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Ix": 7,
+              "Type": "ANY",
+              "Var": "Station_A_Data[6]"
+            }
+          ],
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Ix": 8,
+              "Type": "ANY",
+              "Var": "Station_A_Data[4]"
+            }
+          ],
+          "Ix": 21,
+          "Name": "MOVE",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Ix": 9,
+              "Type": "ANY",
+              "Var": "Station_A_Data[5]"
+            }
+          ],
+          "X": 6,
+          "Y": 1
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Ix": 10,
+              "Type": "ANY",
+              "Var": "Station_A_Data[3]"
+            }
+          ],
+          "Ix": 22,
+          "Name": "MOVE",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Ix": 11,
+              "Type": "ANY",
+              "Var": "Station_A_Data[4]"
+            }
+          ],
+          "X": 7,
+          "Y": 1
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Ix": 12,
+              "Type": "ANY",
+              "Var": "Station_A_Data[2]"
+            }
+          ],
+          "Ix": 23,
+          "Name": "MOVE",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Ix": 13,
+              "Type": "ANY",
+              "Var": "Station_A_Data[3]"
+            }
+          ],
+          "X": 8,
+          "Y": 1
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Ix": 14,
+              "Type": "ANY",
+              "Var": "Station_A_Data[1]"
+            }
+          ],
+          "Ix": 24,
+          "Name": "MOVE",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Ix": 15,
+              "Type": "ANY",
+              "Var": "Station_A_Data[2]"
+            }
+          ],
+          "X": 9,
+          "Y": 1
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Ix": 16,
+              "Type": "ANY",
+              "Var": "Station_A_Data[0]"
+            }
+          ],
+          "Ix": 25,
+          "Name": "MOVE",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Ix": 17,
+              "Type": "ANY",
+              "Var": "Station_A_Data[1]"
+            }
+          ],
+          "X": 10,
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 4
+        },
+        {
+          "__type": "HL",
+          "X": 5
+        },
+        {
+          "__type": "HL",
+          "X": 6
+        },
+        {
+          "__type": "HL",
+          "X": 7
+        },
+        {
+          "__type": "HL",
+          "X": 8
+        },
+        {
+          "__type": "HL",
+          "X": 9
+        },
+        {
+          "__type": "HL",
+          "X": 10
+        }
+      ],
+      "CMT": "#A(左側)Cvデータ⇨STデータへ移動",
+      "LRI": 27,
+      "RRI": 28,
+      "VLs": [
+        {
+          "Ix": 29,
+          "X": 2
+        },
+        {
+          "Ix": 30,
+          "X": 3
+        }
+      ]
+    },
+    "compact": {
+      "cells": [
+        {
+          "__type": "LD",
+          "Var": "Ins_A_Cv_M[2]"
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 1,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "LD",
+          "Var": "Ins_A_Cv_M[3]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Ins_A_Next_Cycle",
+          "Not": true,
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Var": "Ins_A_Cv_M[3]",
+          "X": 3
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 3,
+          "Y": 1,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "MOVE",
+          "X": 4,
+          "Y": 1,
+          "In": [
+            {
+              "Arg": "EN",
+              "__type": "PF"
+            },
+            {
+              "Arg": "In",
+              "Var": "Station_A_Data[6]",
+              "__type": "PRM"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "ENO",
+              "__type": "PF"
+            },
+            {
+              "Arg": "Out",
+              "Var": "Station_A_Data[7]",
+              "__type": "PRM"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "MOVE",
+          "X": 5,
+          "Y": 1,
+          "In": [
+            {
+              "Arg": "EN",
+              "__type": "PF"
+            },
+            {
+              "Arg": "In",
+              "Var": "Station_A_Data[5]",
+              "__type": "PRM"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "ENO",
+              "__type": "PF"
+            },
+            {
+              "Arg": "Out",
+              "Var": "Station_A_Data[6]",
+              "__type": "PRM"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "MOVE",
+          "X": 6,
+          "Y": 1,
+          "In": [
+            {
+              "Arg": "EN",
+              "__type": "PF"
+            },
+            {
+              "Arg": "In",
+              "Var": "Station_A_Data[4]",
+              "__type": "PRM"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "ENO",
+              "__type": "PF"
+            },
+            {
+              "Arg": "Out",
+              "Var": "Station_A_Data[5]",
+              "__type": "PRM"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "MOVE",
+          "X": 7,
+          "Y": 1,
+          "In": [
+            {
+              "Arg": "EN",
+              "__type": "PF"
+            },
+            {
+              "Arg": "In",
+              "Var": "Station_A_Data[3]",
+              "__type": "PRM"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "ENO",
+              "__type": "PF"
+            },
+            {
+              "Arg": "Out",
+              "Var": "Station_A_Data[4]",
+              "__type": "PRM"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "MOVE",
+          "X": 8,
+          "Y": 1,
+          "In": [
+            {
+              "Arg": "EN",
+              "__type": "PF"
+            },
+            {
+              "Arg": "In",
+              "Var": "Station_A_Data[2]",
+              "__type": "PRM"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "ENO",
+              "__type": "PF"
+            },
+            {
+              "Arg": "Out",
+              "Var": "Station_A_Data[3]",
+              "__type": "PRM"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "MOVE",
+          "X": 9,
+          "Y": 1,
+          "In": [
+            {
+              "Arg": "EN",
+              "__type": "PF"
+            },
+            {
+              "Arg": "In",
+              "Var": "Station_A_Data[1]",
+              "__type": "PRM"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "ENO",
+              "__type": "PF"
+            },
+            {
+              "Arg": "Out",
+              "Var": "Station_A_Data[2]",
+              "__type": "PRM"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "MOVE",
+          "X": 10,
+          "Y": 1,
+          "In": [
+            {
+              "Arg": "EN",
+              "__type": "PF"
+            },
+            {
+              "Arg": "In",
+              "Var": "Station_A_Data[0]",
+              "__type": "PRM"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "ENO",
+              "__type": "PF"
+            },
+            {
+              "Arg": "Out",
+              "Var": "Station_A_Data[1]",
+              "__type": "PRM"
+            }
+          ]
+        }
+      ],
+      "VLs": [
+        {
+          "Ix": 29,
+          "X": 2
+        },
+        {
+          "Ix": 30,
+          "X": 3
+        }
+      ]
+    }
+  },
+  {
+    "section": "BoxPacking_箱詰め",
+    "row": 15,
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_M[19]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 10,
+          "Not": true,
+          "Var": "BoxPacking_A_Busy",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 11,
+          "Not": true,
+          "Var": "BoxPacking_B_Busy",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 9,
+          "Var": "BoxPacking_M[5]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 12,
+          "Not": true,
+          "Var": "BoxPacking_A_Busy",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 13,
+          "Not": true,
+          "Var": "BoxPacking_B_Busy",
+          "X": 2,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "BoxPacking_M[11]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 14,
+          "Not": true,
+          "Var": "BoxPacking_A_Busy",
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 15,
+          "Not": true,
+          "Var": "BoxPacking_B_Busy",
+          "X": 2,
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 17,
+          "Var": "BoxPacking_M[44]",
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "BoxPacking_M[20]",
+          "Y": 4
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 2,
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 4
+        },
+        {
+          "__type": "HL",
+          "X": 2,
+          "Y": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "BoxPacking_A_Busy",
+          "X": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 16,
+          "Not": true,
+          "Var": "BoxPacking_B_Busy",
+          "X": 4
+        },
+        {
+          "__type": "ST",
+          "Ix": 18,
+          "Var": "BoxPacking_M[20]",
+          "X": 5
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "ST7_A_SF_Wait_Pickup",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 8,
+          "Not": true,
+          "Var": "BoxPacking_B_Busy",
+          "X": 6,
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 19,
+          "Var": "BoxPacking_M[21]",
+          "X": 7,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Not": true,
+          "Var": "ST7_A_SF_Wait_Pickup",
+          "X": 5,
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "ST7_B_SF_Wait_Pickup",
+          "X": 6,
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 7,
+          "Not": true,
+          "Var": "BoxPacking_A_Busy",
+          "X": 7,
+          "Y": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 20,
+          "Var": "BoxPacking_M[22]",
+          "X": 8,
+          "Y": 2
+        },
+        {
+          "__type": "HL",
+          "X": 6
+        },
+        {
+          "__type": "HL",
+          "X": 7
+        },
+        {
+          "__type": "HL",
+          "X": 8
+        },
+        {
+          "__type": "HL",
+          "X": 8,
+          "Y": 1
+        }
+      ],
+      "CMT": "#【03 ワーク取出し】\r\n\r\n【取出し先の選択】\r\nST7の取出し待ちを確認し、A側を優先\r\nBusy成立まで、判定・選択を保持\r\n\r\n合流元\r\n・3／6／14行：コンテナ準備完了\r\n・39行：80個未満で繰返し\r\n\r\nA側選択 →16行：A側Busy\r\nB側選択 →17行：B側Busy",
+      "LRI": 21,
+      "RRI": 22,
+      "VLs": [
+        {
+          "Ix": 23,
+          "X": 3
+        },
+        {
+          "Ix": 23,
+          "X": 3,
+          "Y": 1
+        },
+        {
+          "Ix": 23,
+          "X": 3,
+          "Y": 2
+        },
+        {
+          "Ix": 23,
+          "X": 3,
+          "Y": 3
+        },
+        {
+          "Ix": 24,
+          "X": 5
+        },
+        {
+          "Ix": 24,
+          "X": 5,
+          "Y": 1
+        }
+      ]
+    },
+    "compact": {
+      "cells": [
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_M[19]"
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_A_Busy",
+          "Not": true,
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_B_Busy",
+          "Not": true,
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_M[5]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_A_Busy",
+          "Not": true,
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_B_Busy",
+          "Not": true,
+          "X": 2,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_M[11]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_A_Busy",
+          "Not": true,
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_B_Busy",
+          "Not": true,
+          "X": 2,
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_M[44]",
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_M[20]",
+          "Y": 4
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_A_Busy",
+          "Not": true,
+          "X": 3
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_B_Busy",
+          "Not": true,
+          "X": 4
+        },
+        {
+          "__type": "ST",
+          "Var": "BoxPacking_M[20]",
+          "X": 5
+        },
+        {
+          "__type": "LD",
+          "Var": "ST7_A_SF_Wait_Pickup",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_B_Busy",
+          "Not": true,
+          "X": 6,
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Var": "BoxPacking_M[21]",
+          "X": 7,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "ST7_A_SF_Wait_Pickup",
+          "Not": true,
+          "X": 5,
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "ST7_B_SF_Wait_Pickup",
+          "X": 6,
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_A_Busy",
+          "Not": true,
+          "X": 7,
+          "Y": 2
+        },
+        {
+          "__type": "ST",
+          "Var": "BoxPacking_M[22]",
+          "X": 8,
+          "Y": 2
+        }
+      ],
+      "VLs": [
+        {
+          "Ix": 23,
+          "X": 3
+        },
+        {
+          "Ix": 23,
+          "X": 3,
+          "Y": 1
+        },
+        {
+          "Ix": 23,
+          "X": 3,
+          "Y": 2
+        },
+        {
+          "Ix": 23,
+          "X": 3,
+          "Y": 3
+        },
+        {
+          "Ix": 24,
+          "X": 5
+        },
+        {
+          "Ix": 24,
+          "X": 5,
+          "Y": 1
+        }
+      ]
+    }
+  },
+  {
+    "section": "RCON_IAI",
+    "row": 120,
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "RCON1_3_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "RCON1_3_Auto[2]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "RCON1_3_Auto[3]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "RCON1_3_Ready",
+          "X": 1
+        },
+        {
+          "__type": "FB",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "PT",
+              "Ix": 8,
+              "Type": "TIME",
+              "Var": "T#100ms"
+            }
+          ],
+          "Ix": 10,
+          "Name": "TON",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "Q"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "ET",
+              "Ix": 9,
+              "Type": "TIME",
+              "Var": ""
+            }
+          ],
+          "X": 2,
+          "Var": "RCON1_3_TON[1]"
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 11,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 3,
+          "Id": "e136ac34-3757-4133-8d0d-53ea48eac964"
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "RCON1_3_M[1]",
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 2,
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Not": true,
+          "Var": "Retry[12]",
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "RCON1_3_MoveDone",
+          "X": 5
+        },
+        {
+          "__type": "ST",
+          "Ix": 7,
+          "Var": "RCON1_3_M[1]",
+          "X": 6
+        }
+      ],
+      "CMT": "開始指令保持",
+      "LRI": 12,
+      "RRI": 13,
+      "VLs": [
+        {
+          "Ix": 14,
+          "X": 4
+        },
+        {
+          "Ix": 14,
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "Ix": 14,
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "Ix": 15,
+          "X": 1
+        },
+        {
+          "Ix": 15,
+          "X": 1,
+          "Y": 1
+        }
+      ]
+    },
+    "compact": {
+      "cells": [
+        {
+          "__type": "LD",
+          "Var": "RCON1_3_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Var": "RCON1_3_Auto[2]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "RCON1_3_Auto[3]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "RCON1_3_Ready",
+          "X": 1
+        },
+        {
+          "__type": "FB",
+          "Var": "RCON1_3_TON[1]",
+          "Name": "TON",
+          "X": 2,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            },
+            {
+              "Arg": "PT",
+              "Var": "T#100ms",
+              "__type": "PRM"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "Q",
+              "__type": "PF"
+            },
+            {
+              "Arg": "ET",
+              "Var": "",
+              "__type": "PRM"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 3,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "LD",
+          "Var": "RCON1_3_M[1]",
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Var": "Retry[12]",
+          "Not": true,
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Var": "RCON1_3_MoveDone",
+          "Not": true,
+          "X": 5
+        },
+        {
+          "__type": "ST",
+          "Var": "RCON1_3_M[1]",
+          "X": 6
+        }
+      ],
+      "VLs": [
+        {
+          "Ix": 14,
+          "X": 4
+        },
+        {
+          "Ix": 14,
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "Ix": 14,
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "Ix": 15,
+          "X": 1
+        },
+        {
+          "Ix": 15,
+          "X": 1,
+          "Y": 1
+        }
+      ]
+    }
+  },
+  {
+    "section": "RCON_IAI",
+    "row": 201,
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "RCON1_5_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "RCON1_5_Auto[2]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "RCON1_5_Auto[3]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Var": "RCON1_5_Auto[4]",
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "RCON1_5_Ready",
+          "X": 1
+        },
+        {
+          "__type": "FB",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "PT",
+              "Ix": 9,
+              "Type": "TIME",
+              "Var": "T#100ms"
+            }
+          ],
+          "Ix": 11,
+          "Name": "TON",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "Q"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "ET",
+              "Ix": 10,
+              "Type": "TIME",
+              "Var": ""
+            }
+          ],
+          "X": 2,
+          "Var": "RCON1_5_TON[1]"
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 12,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 3,
+          "Id": "ee43a57b-726a-4a78-87f9-d7be8d4fa2b8"
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "RCON1_5_M[1]",
+          "Y": 4
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 4
+        },
+        {
+          "__type": "HL",
+          "X": 2,
+          "Y": 4
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 7,
+          "Not": true,
+          "Var": "Retry[12]",
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "RCON1_5_MoveDone",
+          "X": 5
+        },
+        {
+          "__type": "ST",
+          "Ix": 8,
+          "Var": "RCON1_5_M[1]",
+          "X": 6
+        }
+      ],
+      "CMT": "開始指令保持",
+      "LRI": 13,
+      "RRI": 14,
+      "VLs": [
+        {
+          "Ix": 15,
+          "X": 4
+        },
+        {
+          "Ix": 15,
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "Ix": 15,
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "Ix": 15,
+          "X": 4,
+          "Y": 3
+        },
+        {
+          "Ix": 16,
+          "X": 1
+        },
+        {
+          "Ix": 16,
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "Ix": 16,
+          "X": 1,
+          "Y": 2
+        }
+      ]
+    },
+    "compact": {
+      "cells": [
+        {
+          "__type": "LD",
+          "Var": "RCON1_5_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Var": "RCON1_5_Auto[2]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "RCON1_5_Auto[3]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "RCON1_5_Auto[4]",
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Var": "RCON1_5_Ready",
+          "X": 1
+        },
+        {
+          "__type": "FB",
+          "Var": "RCON1_5_TON[1]",
+          "Name": "TON",
+          "X": 2,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            },
+            {
+              "Arg": "PT",
+              "Var": "T#100ms",
+              "__type": "PRM"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "Q",
+              "__type": "PF"
+            },
+            {
+              "Arg": "ET",
+              "Var": "",
+              "__type": "PRM"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 3,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "LD",
+          "Var": "RCON1_5_M[1]",
+          "Y": 4
+        },
+        {
+          "__type": "LD",
+          "Var": "Retry[12]",
+          "Not": true,
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Var": "RCON1_5_MoveDone",
+          "Not": true,
+          "X": 5
+        },
+        {
+          "__type": "ST",
+          "Var": "RCON1_5_M[1]",
+          "X": 6
+        }
+      ],
+      "VLs": [
+        {
+          "Ix": 15,
+          "X": 4
+        },
+        {
+          "Ix": 15,
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "Ix": 15,
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "Ix": 15,
+          "X": 4,
+          "Y": 3
+        },
+        {
+          "Ix": 16,
+          "X": 1
+        },
+        {
+          "Ix": 16,
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "Ix": 16,
+          "X": 1,
+          "Y": 2
+        }
+      ]
+    }
+  },
+  {
+    "section": "Output_出力",
+    "row": 100,
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Ix": 8,
+          "Var": "Out_CYw_Disc_Chk_A_H_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 9,
+          "Var": "Out_CYw_Disc_Chk_A_H_Auto[2]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 12,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 3,
+          "Id": "640d86b8-d211-4768-9d8d-44ca00002e06"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Disc_Chk_A_H_Manual[1]",
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "ManualMode",
+          "X": 1,
+          "Y": 3
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 13,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 2,
+          "Y": 3,
+          "Id": "640d86b8-d211-4768-9d8d-44ca00002e09"
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Output_A_M[23]",
+          "Y": 4
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 4
+        },
+        {
+          "__type": "HL",
+          "X": 2,
+          "Y": 4
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "M9999",
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 7,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 5
+        },
+        {
+          "__type": "LD",
+          "Ix": 19,
+          "Var": "ManualMode",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Not": true,
+          "Var": "Output_A_Reset_TON[23].Q",
+          "X": 6
+        },
+        {
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_Disc_Chk_A_H",
+          "X": 7
+        },
+        {
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Output_A_M[23]",
+          "X": 7,
+          "Y": 2
+        }
+      ],
+      "CMT": "【Y716】A(左側) 排出チャック閉 戻",
+      "LRI": 14,
+      "RRI": 15,
+      "VLs": [
+        {
+          "Ix": 16,
+          "X": 4
+        },
+        {
+          "Ix": 16,
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "Ix": 16,
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "Ix": 16,
+          "X": 4,
+          "Y": 3
+        },
+        {
+          "Ix": 17,
+          "X": 7
+        },
+        {
+          "Ix": 17,
+          "X": 7,
+          "Y": 1
+        },
+        {
+          "Ix": 18,
+          "X": 1
+        },
+        {
+          "Ix": 18,
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "Ix": 20,
+          "X": 5
+        },
+        {
+          "Ix": 21,
+          "X": 6
+        }
+      ]
+    },
+    "compact": {
+      "cells": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Disc_Chk_A_H_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Disc_Chk_A_H_Auto[2]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Pause[1]",
+          "Not": true,
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 3,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Disc_Chk_A_H_Manual[1]",
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Var": "ManualMode",
+          "X": 1,
+          "Y": 3
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 2,
+          "Y": 3,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "LD",
+          "Var": "Output_A_M[23]",
+          "Y": 4
+        },
+        {
+          "__type": "LD",
+          "Var": "M9999",
+          "Not": true,
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Var": "Pause[1]",
+          "Not": true,
+          "X": 5
+        },
+        {
+          "__type": "LD",
+          "Var": "ManualMode",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Output_A_Reset_TON[23].Q",
+          "Not": true,
+          "X": 6
+        },
+        {
+          "__type": "ST",
+          "Var": "Out_CYw_Disc_Chk_A_H",
+          "X": 7
+        },
+        {
+          "__type": "ST",
+          "Var": "Output_A_M[23]",
+          "X": 7,
+          "Y": 2
+        }
+      ],
+      "VLs": [
+        {
+          "Ix": 16,
+          "X": 4
+        },
+        {
+          "Ix": 16,
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "Ix": 16,
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "Ix": 16,
+          "X": 4,
+          "Y": 3
+        },
+        {
+          "Ix": 17,
+          "X": 7
+        },
+        {
+          "Ix": 17,
+          "X": 7,
+          "Y": 1
+        },
+        {
+          "Ix": 18,
+          "X": 1
+        },
+        {
+          "Ix": 18,
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "Ix": 20,
+          "X": 5
+        },
+        {
+          "Ix": 21,
+          "X": 6
+        }
+      ]
+    }
+  },
+  {
+    "section": "Output_出力",
+    "row": 102,
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Disc_Chk_A_H_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 13,
+          "Var": "Out_CYw_Disc_Chk_A_H_Auto[2]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_Disc_Chk_A_H",
+          "X": 3
+        },
+        {
+          "__type": "FB",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "PT",
+              "Ix": 5,
+              "Type": "TIME",
+              "Var": "T#10s"
+            }
+          ],
+          "Ix": 4,
+          "Name": "TON",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "Q"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "ET",
+              "Ix": 6,
+              "Type": "TIME",
+              "Var": ""
+            }
+          ],
+          "X": 4,
+          "Var": "Output_A_Error_TON[23]"
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 7,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 5,
+          "Id": "640d86b8-d211-4768-9d8d-44ca00014d65"
+        },
+        {
+          "__type": "ST",
+          "Ix": 8,
+          "S": true,
+          "Var": "Output_A_Error_M[23]",
+          "X": 6
+        },
+        {
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "HMI_Message_Request[29]",
+          "X": 6,
+          "Y": 1
+        }
+      ],
+      "CMT": "異常監視（自動指令・到達待ち10秒）",
+      "LRI": 10,
+      "RRI": 11,
+      "VLs": [
+        {
+          "Ix": 12,
+          "X": 6
+        },
+        {
+          "Ix": 14,
+          "X": 1
+        }
+      ]
+    },
+    "compact": {
+      "cells": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Disc_Chk_A_H_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Disc_Chk_A_H_Auto[2]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Pause[1]",
+          "Not": true,
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "TimerQ_In_SenCY_Disc_Chk_A_H",
+          "Not": true,
+          "X": 3
+        },
+        {
+          "__type": "FB",
+          "Var": "Output_A_Error_TON[23]",
+          "Name": "TON",
+          "X": 4,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            },
+            {
+              "Arg": "PT",
+              "Var": "T#10s",
+              "__type": "PRM"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "Q",
+              "__type": "PF"
+            },
+            {
+              "Arg": "ET",
+              "Var": "",
+              "__type": "PRM"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 5,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Var": "Output_A_Error_M[23]",
+          "X": 6
+        },
+        {
+          "__type": "ST",
+          "Var": "HMI_Message_Request[29]",
+          "X": 6,
+          "Y": 1
+        }
+      ],
+      "VLs": [
+        {
+          "Ix": 12,
+          "X": 6
+        },
+        {
+          "Ix": 14,
+          "X": 1
+        }
+      ]
+    }
+  },
+  {
+    "section": "Output_出力",
+    "row": 103,
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Disc_Chk_A_F_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 11,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 3,
+          "Id": "640d86b8-d211-4768-9d8d-44ca00003512"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Disc_Chk_A_F_Manual[1]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "ManualMode",
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 12,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 2,
+          "Y": 2,
+          "Id": "640d86b8-d211-4768-9d8d-44ca00003515"
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "Output_A_M[24]",
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 2
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 2,
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "M9999",
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 8,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 5
+        },
+        {
+          "__type": "LD",
+          "Ix": 17,
+          "Var": "ManualMode",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 7,
+          "Not": true,
+          "Var": "Output_A_Reset_TON[24].Q",
+          "X": 6
+        },
+        {
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_Disc_Chk_A_F",
+          "X": 7
+        },
+        {
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Output_A_M[24]",
+          "X": 7,
+          "Y": 2
+        }
+      ],
+      "CMT": "【Y717】A(左側) 排出チャック開 行",
+      "LRI": 13,
+      "RRI": 14,
+      "VLs": [
+        {
+          "Ix": 15,
+          "X": 4
+        },
+        {
+          "Ix": 15,
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "Ix": 15,
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "Ix": 16,
+          "X": 7
+        },
+        {
+          "Ix": 16,
+          "X": 7,
+          "Y": 1
+        },
+        {
+          "Ix": 18,
+          "X": 5
+        },
+        {
+          "Ix": 19,
+          "X": 6
+        }
+      ]
+    },
+    "compact": {
+      "cells": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Disc_Chk_A_F_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Pause[1]",
+          "Not": true,
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 3,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Disc_Chk_A_F_Manual[1]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "ManualMode",
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 2,
+          "Y": 2,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "LD",
+          "Var": "Output_A_M[24]",
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Var": "M9999",
+          "Not": true,
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Var": "Pause[1]",
+          "Not": true,
+          "X": 5
+        },
+        {
+          "__type": "LD",
+          "Var": "ManualMode",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Output_A_Reset_TON[24].Q",
+          "Not": true,
+          "X": 6
+        },
+        {
+          "__type": "ST",
+          "Var": "Out_CYw_Disc_Chk_A_F",
+          "X": 7
+        },
+        {
+          "__type": "ST",
+          "Var": "Output_A_M[24]",
+          "X": 7,
+          "Y": 2
+        }
+      ],
+      "VLs": [
+        {
+          "Ix": 15,
+          "X": 4
+        },
+        {
+          "Ix": 15,
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "Ix": 15,
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "Ix": 16,
+          "X": 7
+        },
+        {
+          "Ix": 16,
+          "X": 7,
+          "Y": 1
+        },
+        {
+          "Ix": 18,
+          "X": 5
+        },
+        {
+          "Ix": 19,
+          "X": 6
+        }
+      ]
+    }
+  },
+  {
+    "section": "Output_出力",
+    "row": 105,
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Disc_Chk_A_F_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_Disc_Chk_A_F",
+          "X": 3
+        },
+        {
+          "__type": "FB",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "PT",
+              "Ix": 5,
+              "Type": "TIME",
+              "Var": "T#10s"
+            }
+          ],
+          "Ix": 4,
+          "Name": "TON",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "Q"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "ET",
+              "Ix": 6,
+              "Type": "TIME",
+              "Var": ""
+            }
+          ],
+          "X": 4,
+          "Var": "Output_A_Error_TON[24]"
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 7,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 5,
+          "Id": "640d86b8-d211-4768-9d8d-44ca00015044"
+        },
+        {
+          "__type": "ST",
+          "Ix": 8,
+          "S": true,
+          "Var": "Output_A_Error_M[24]",
+          "X": 6
+        },
+        {
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "HMI_Message_Request[30]",
+          "X": 6,
+          "Y": 1
+        }
+      ],
+      "CMT": "異常監視（自動指令・到達待ち10秒）",
+      "LRI": 10,
+      "RRI": 11,
+      "VLs": [
+        {
+          "Ix": 12,
+          "X": 6
+        }
+      ]
+    },
+    "compact": {
+      "cells": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Disc_Chk_A_F_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Pause[1]",
+          "Not": true,
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "TimerQ_In_SenCY_Disc_Chk_A_F",
+          "Not": true,
+          "X": 3
+        },
+        {
+          "__type": "FB",
+          "Var": "Output_A_Error_TON[24]",
+          "Name": "TON",
+          "X": 4,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            },
+            {
+              "Arg": "PT",
+              "Var": "T#10s",
+              "__type": "PRM"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "Q",
+              "__type": "PF"
+            },
+            {
+              "Arg": "ET",
+              "Var": "",
+              "__type": "PRM"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 5,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Var": "Output_A_Error_M[24]",
+          "X": 6
+        },
+        {
+          "__type": "ST",
+          "Var": "HMI_Message_Request[30]",
+          "X": 6,
+          "Y": 1
+        }
+      ],
+      "VLs": [
+        {
+          "Ix": 12,
+          "X": 6
+        }
+      ]
+    }
+  },
+  {
+    "section": "Output_出力",
+    "row": 106,
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 10,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[2]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 13,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 3,
+          "Id": "640d86b8-d211-4768-9d8d-44ca00004660"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Manual[1]",
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "ManualMode",
+          "X": 1,
+          "Y": 3
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 14,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 2,
+          "Y": 3,
+          "Id": "640d86b8-d211-4768-9d8d-44ca00004663"
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "Output_A_M[25]",
+          "Y": 4
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 4
+        },
+        {
+          "__type": "HL",
+          "X": 2,
+          "Y": 4
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "M9999",
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 9,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 5
+        },
+        {
+          "__type": "LD",
+          "Ix": 20,
+          "Var": "ManualMode",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 8,
+          "Not": true,
+          "Var": "Output_A_Reset_TON[25].Q",
+          "X": 6
+        },
+        {
+          "__type": "LD",
+          "Ix": 7,
+          "Not": true,
+          "Var": "IAI_In_Sample_Busy_MOVE",
+          "X": 7
+        },
+        {
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_H",
+          "X": 8
+        },
+        {
+          "__type": "ST",
+          "Ix": 12,
+          "Var": "Output_A_M[25]",
+          "X": 8,
+          "Y": 2
+        }
+      ],
+      "CMT": "【Y718】A(左側) 排出フォルダ送り戻",
+      "LRI": 15,
+      "RRI": 16,
+      "VLs": [
+        {
+          "Ix": 17,
+          "X": 4
+        },
+        {
+          "Ix": 17,
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "Ix": 17,
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "Ix": 17,
+          "X": 4,
+          "Y": 3
+        },
+        {
+          "Ix": 18,
+          "X": 8
+        },
+        {
+          "Ix": 18,
+          "X": 8,
+          "Y": 1
+        },
+        {
+          "Ix": 19,
+          "X": 1
+        },
+        {
+          "Ix": 19,
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "Ix": 21,
+          "X": 5
+        },
+        {
+          "Ix": 22,
+          "X": 6
+        }
+      ]
+    },
+    "compact": {
+      "cells": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[2]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Pause[1]",
+          "Not": true,
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 3,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Manual[1]",
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Var": "ManualMode",
+          "X": 1,
+          "Y": 3
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 2,
+          "Y": 3,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "LD",
+          "Var": "Output_A_M[25]",
+          "Y": 4
+        },
+        {
+          "__type": "LD",
+          "Var": "M9999",
+          "Not": true,
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Var": "Pause[1]",
+          "Not": true,
+          "X": 5
+        },
+        {
+          "__type": "LD",
+          "Var": "ManualMode",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Output_A_Reset_TON[25].Q",
+          "Not": true,
+          "X": 6
+        },
+        {
+          "__type": "LD",
+          "Var": "IAI_In_Sample_Busy_MOVE",
+          "Not": true,
+          "X": 7
+        },
+        {
+          "__type": "ST",
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_H",
+          "X": 8
+        },
+        {
+          "__type": "ST",
+          "Var": "Output_A_M[25]",
+          "X": 8,
+          "Y": 2
+        }
+      ],
+      "VLs": [
+        {
+          "Ix": 17,
+          "X": 4
+        },
+        {
+          "Ix": 17,
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "Ix": 17,
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "Ix": 17,
+          "X": 4,
+          "Y": 3
+        },
+        {
+          "Ix": 18,
+          "X": 8
+        },
+        {
+          "Ix": 18,
+          "X": 8,
+          "Y": 1
+        },
+        {
+          "Ix": 19,
+          "X": 1
+        },
+        {
+          "Ix": 19,
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "Ix": 21,
+          "X": 5
+        },
+        {
+          "Ix": 22,
+          "X": 6
+        }
+      ]
+    }
+  },
+  {
+    "section": "Output_出力",
+    "row": 108,
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 13,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[2]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_Ejc_SH_Feed_A_H",
+          "X": 3
+        },
+        {
+          "__type": "FB",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "PT",
+              "Ix": 5,
+              "Type": "TIME",
+              "Var": "T#10s"
+            }
+          ],
+          "Ix": 4,
+          "Name": "TON",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "Q"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "ET",
+              "Ix": 6,
+              "Type": "TIME",
+              "Var": ""
+            }
+          ],
+          "X": 4,
+          "Var": "Output_A_Error_TON[25]"
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 7,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 5,
+          "Id": "640d86b8-d211-4768-9d8d-44ca0000488a"
+        },
+        {
+          "__type": "ST",
+          "Ix": 8,
+          "S": true,
+          "Var": "Output_A_Error_M[25]",
+          "X": 6
+        },
+        {
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "HMI_Message_Request[31]",
+          "X": 6,
+          "Y": 1
+        }
+      ],
+      "CMT": "異常監視（自動指令・到達待ち10秒）",
+      "LRI": 10,
+      "RRI": 11,
+      "VLs": [
+        {
+          "Ix": 12,
+          "X": 6
+        },
+        {
+          "Ix": 14,
+          "X": 1
+        }
+      ]
+    },
+    "compact": {
+      "cells": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[2]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Pause[1]",
+          "Not": true,
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "TimerQ_In_SenCY_Ejc_SH_Feed_A_H",
+          "Not": true,
+          "X": 3
+        },
+        {
+          "__type": "FB",
+          "Var": "Output_A_Error_TON[25]",
+          "Name": "TON",
+          "X": 4,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            },
+            {
+              "Arg": "PT",
+              "Var": "T#10s",
+              "__type": "PRM"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "Q",
+              "__type": "PF"
+            },
+            {
+              "Arg": "ET",
+              "Var": "",
+              "__type": "PRM"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 5,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Var": "Output_A_Error_M[25]",
+          "X": 6
+        },
+        {
+          "__type": "ST",
+          "Var": "HMI_Message_Request[31]",
+          "X": 6,
+          "Y": 1
+        }
+      ],
+      "VLs": [
+        {
+          "Ix": 12,
+          "X": 6
+        },
+        {
+          "Ix": 14,
+          "X": 1
+        }
+      ]
+    }
+  },
+  {
+    "section": "Output_出力",
+    "row": 109,
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_F_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 12,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 3,
+          "Id": "640d86b8-d211-4768-9d8d-44ca00005942"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_F_Manual[1]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "ManualMode",
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 13,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 2,
+          "Y": 2,
+          "Id": "640d86b8-d211-4768-9d8d-44ca00005945"
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "Output_A_M[26]",
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 2
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 2,
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "M9999",
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 9,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 5
+        },
+        {
+          "__type": "LD",
+          "Ix": 18,
+          "Var": "ManualMode",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 8,
+          "Not": true,
+          "Var": "Output_A_Reset_TON[26].Q",
+          "X": 6
+        },
+        {
+          "__type": "LD",
+          "Ix": 7,
+          "Not": true,
+          "Var": "IAI_In_Sample_Busy_MOVE",
+          "X": 7
+        },
+        {
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_F",
+          "X": 8
+        },
+        {
+          "__type": "ST",
+          "Ix": 11,
+          "Var": "Output_A_M[26]",
+          "X": 8,
+          "Y": 2
+        }
+      ],
+      "CMT": "【Y719】A(左側) 排出フォルダ送り行",
+      "LRI": 14,
+      "RRI": 15,
+      "VLs": [
+        {
+          "Ix": 16,
+          "X": 4
+        },
+        {
+          "Ix": 16,
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "Ix": 16,
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "Ix": 17,
+          "X": 8
+        },
+        {
+          "Ix": 17,
+          "X": 8,
+          "Y": 1
+        },
+        {
+          "Ix": 19,
+          "X": 5
+        },
+        {
+          "Ix": 20,
+          "X": 6
+        }
+      ]
+    },
+    "compact": {
+      "cells": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_F_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Pause[1]",
+          "Not": true,
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 3,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_F_Manual[1]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "ManualMode",
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 2,
+          "Y": 2,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "LD",
+          "Var": "Output_A_M[26]",
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Var": "M9999",
+          "Not": true,
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Var": "Pause[1]",
+          "Not": true,
+          "X": 5
+        },
+        {
+          "__type": "LD",
+          "Var": "ManualMode",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Output_A_Reset_TON[26].Q",
+          "Not": true,
+          "X": 6
+        },
+        {
+          "__type": "LD",
+          "Var": "IAI_In_Sample_Busy_MOVE",
+          "Not": true,
+          "X": 7
+        },
+        {
+          "__type": "ST",
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_F",
+          "X": 8
+        },
+        {
+          "__type": "ST",
+          "Var": "Output_A_M[26]",
+          "X": 8,
+          "Y": 2
+        }
+      ],
+      "VLs": [
+        {
+          "Ix": 16,
+          "X": 4
+        },
+        {
+          "Ix": 16,
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "Ix": 16,
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "Ix": 17,
+          "X": 8
+        },
+        {
+          "Ix": 17,
+          "X": 8,
+          "Y": 1
+        },
+        {
+          "Ix": 19,
+          "X": 5
+        },
+        {
+          "Ix": 20,
+          "X": 6
+        }
+      ]
+    }
+  },
+  {
+    "section": "Output_出力",
+    "row": 111,
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_F_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_Ejc_SH_Feed_A_F",
+          "X": 3
+        },
+        {
+          "__type": "FB",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "PT",
+              "Ix": 5,
+              "Type": "TIME",
+              "Var": "T#10s"
+            }
+          ],
+          "Ix": 4,
+          "Name": "TON",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "Q"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "ET",
+              "Ix": 6,
+              "Type": "TIME",
+              "Var": ""
+            }
+          ],
+          "X": 4,
+          "Var": "Output_A_Error_TON[26]"
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 7,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 5,
+          "Id": "640d86b8-d211-4768-9d8d-44ca00005b6c"
+        },
+        {
+          "__type": "ST",
+          "Ix": 8,
+          "S": true,
+          "Var": "Output_A_Error_M[26]",
+          "X": 6
+        },
+        {
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "HMI_Message_Request[32]",
+          "X": 6,
+          "Y": 1
+        }
+      ],
+      "CMT": "異常監視（自動指令・到達待ち10秒）",
+      "LRI": 10,
+      "RRI": 11,
+      "VLs": [
+        {
+          "Ix": 12,
+          "X": 6
+        }
+      ]
+    },
+    "compact": {
+      "cells": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Ejc_Hldr_Feed_A_F_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Pause[1]",
+          "Not": true,
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "TimerQ_In_SenCY_Ejc_SH_Feed_A_F",
+          "Not": true,
+          "X": 3
+        },
+        {
+          "__type": "FB",
+          "Var": "Output_A_Error_TON[26]",
+          "Name": "TON",
+          "X": 4,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            },
+            {
+              "Arg": "PT",
+              "Var": "T#10s",
+              "__type": "PRM"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "Q",
+              "__type": "PF"
+            },
+            {
+              "Arg": "ET",
+              "Var": "",
+              "__type": "PRM"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 5,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Var": "Output_A_Error_M[26]",
+          "X": 6
+        },
+        {
+          "__type": "ST",
+          "Var": "HMI_Message_Request[32]",
+          "X": 6,
+          "Y": 1
+        }
+      ],
+      "VLs": [
+        {
+          "Ix": 12,
+          "X": 6
+        }
+      ]
+    }
+  },
+  {
+    "section": "Output_出力",
+    "row": 148,
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_SH_A_Turn_H_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Ix": 11,
+              "Type": "ANY_ELEMENTARY(except BOOL)",
+              "Var": "RCON1_5_ActualPos_mm"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Ix": 12,
+              "Type": "ANY_ELEMENTARY(except BOOL)",
+              "Var": "RCON1_5_SafePos_mm"
+            }
+          ],
+          "Ix": 17,
+          "Name": "<",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 3,
+          "PL": true
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 15,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 4,
+          "Id": "640d86b8-d211-4768-9d8d-44ca0001ac8e"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_SH_A_Turn_H_Manual[1]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "ManualMode",
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Ix": 13,
+              "Type": "ANY_ELEMENTARY(except BOOL)",
+              "Var": "RCON1_5_ActualPos_mm"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Ix": 14,
+              "Type": "ANY_ELEMENTARY(except BOOL)",
+              "Var": "RCON1_5_SafePos_mm"
+            }
+          ],
+          "Ix": 18,
+          "Name": "<",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 2,
+          "Y": 2,
+          "PL": true
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 16,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 3,
+          "Y": 2,
+          "Id": "640d86b8-d211-4768-9d8d-44ca0001ac91"
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "Output_A_M[39]",
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 2,
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 4,
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "M9999",
+          "X": 5
+        },
+        {
+          "__type": "LD",
+          "Ix": 8,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 6
+        },
+        {
+          "__type": "LD",
+          "Ix": 23,
+          "Var": "ManualMode",
+          "X": 6,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 7,
+          "Not": true,
+          "Var": "Output_A_Reset_TON[39].Q",
+          "X": 7
+        },
+        {
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_SH_A_Turn_H",
+          "X": 8
+        },
+        {
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Output_A_M[39]",
+          "X": 8,
+          "Y": 2
+        }
+      ],
+      "CMT": "【Y726】A(左側) ストックフォルダターン戻",
+      "LRI": 19,
+      "RRI": 20,
+      "VLs": [
+        {
+          "Ix": 21,
+          "X": 5
+        },
+        {
+          "Ix": 21,
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "Ix": 21,
+          "X": 5,
+          "Y": 2
+        },
+        {
+          "Ix": 22,
+          "X": 8
+        },
+        {
+          "Ix": 22,
+          "X": 8,
+          "Y": 1
+        },
+        {
+          "Ix": 24,
+          "X": 6
+        },
+        {
+          "Ix": 25,
+          "X": 7
+        }
+      ]
+    },
+    "compact": {
+      "cells": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_SH_A_Turn_H_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Pause[1]",
+          "Not": true,
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "Name": "<",
+          "X": 3,
+          "In": [
+            {
+              "Arg": "EN",
+              "__type": "PF"
+            },
+            {
+              "Arg": "In1",
+              "Var": "RCON1_5_ActualPos_mm",
+              "__type": "PRM"
+            },
+            {
+              "Arg": "In2",
+              "Var": "RCON1_5_SafePos_mm",
+              "__type": "PRM"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 4,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_SH_A_Turn_H_Manual[1]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "ManualMode",
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "__type": "F",
+          "Name": "<",
+          "X": 2,
+          "Y": 2,
+          "In": [
+            {
+              "Arg": "EN",
+              "__type": "PF"
+            },
+            {
+              "Arg": "In1",
+              "Var": "RCON1_5_ActualPos_mm",
+              "__type": "PRM"
+            },
+            {
+              "Arg": "In2",
+              "Var": "RCON1_5_SafePos_mm",
+              "__type": "PRM"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 3,
+          "Y": 2,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "LD",
+          "Var": "Output_A_M[39]",
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Var": "M9999",
+          "Not": true,
+          "X": 5
+        },
+        {
+          "__type": "LD",
+          "Var": "Pause[1]",
+          "Not": true,
+          "X": 6
+        },
+        {
+          "__type": "LD",
+          "Var": "ManualMode",
+          "X": 6,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Output_A_Reset_TON[39].Q",
+          "Not": true,
+          "X": 7
+        },
+        {
+          "__type": "ST",
+          "Var": "Out_CYw_SH_A_Turn_H",
+          "X": 8
+        },
+        {
+          "__type": "ST",
+          "Var": "Output_A_M[39]",
+          "X": 8,
+          "Y": 2
+        }
+      ],
+      "VLs": [
+        {
+          "Ix": 21,
+          "X": 5
+        },
+        {
+          "Ix": 21,
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "Ix": 21,
+          "X": 5,
+          "Y": 2
+        },
+        {
+          "Ix": 22,
+          "X": 8
+        },
+        {
+          "Ix": 22,
+          "X": 8,
+          "Y": 1
+        },
+        {
+          "Ix": 24,
+          "X": 6
+        },
+        {
+          "Ix": 25,
+          "X": 7
+        }
+      ]
+    }
+  },
+  {
+    "section": "Output_出力",
+    "row": 150,
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_SH_A_Turn_H_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_SH_A_Turn_H",
+          "X": 3
+        },
+        {
+          "__type": "FB",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "PT",
+              "Ix": 5,
+              "Type": "TIME",
+              "Var": "T#10s"
+            }
+          ],
+          "Ix": 4,
+          "Name": "TON",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "Q"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "ET",
+              "Ix": 6,
+              "Type": "TIME",
+              "Var": ""
+            }
+          ],
+          "X": 4,
+          "Var": "Output_A_Error_TON[39]"
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 7,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 5,
+          "Id": "640d86b8-d211-4768-9d8d-44ca0001adba"
+        },
+        {
+          "__type": "ST",
+          "Ix": 8,
+          "S": true,
+          "Var": "Output_A_Error_M[39]",
+          "X": 6
+        },
+        {
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "HMI_Message_Request[45]",
+          "X": 6,
+          "Y": 1
+        }
+      ],
+      "CMT": "異常監視（自動指令・到達待ち10秒）",
+      "LRI": 10,
+      "RRI": 11,
+      "VLs": [
+        {
+          "Ix": 12,
+          "X": 6
+        }
+      ]
+    },
+    "compact": {
+      "cells": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_SH_A_Turn_H_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Pause[1]",
+          "Not": true,
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "TimerQ_In_SenCY_SH_A_Turn_H",
+          "Not": true,
+          "X": 3
+        },
+        {
+          "__type": "FB",
+          "Var": "Output_A_Error_TON[39]",
+          "Name": "TON",
+          "X": 4,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            },
+            {
+              "Arg": "PT",
+              "Var": "T#10s",
+              "__type": "PRM"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "Q",
+              "__type": "PF"
+            },
+            {
+              "Arg": "ET",
+              "Var": "",
+              "__type": "PRM"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 5,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Var": "Output_A_Error_M[39]",
+          "X": 6
+        },
+        {
+          "__type": "ST",
+          "Var": "HMI_Message_Request[45]",
+          "X": 6,
+          "Y": 1
+        }
+      ],
+      "VLs": [
+        {
+          "Ix": 12,
+          "X": 6
+        }
+      ]
+    }
+  },
+  {
+    "section": "Output_出力",
+    "row": 151,
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Out_CYw_SH_A_Turn_F_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Ix": 11,
+              "Type": "ANY_ELEMENTARY(except BOOL)",
+              "Var": "RCON1_5_ActualPos_mm"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Ix": 12,
+              "Type": "ANY_ELEMENTARY(except BOOL)",
+              "Var": "RCON1_5_SafePos_mm"
+            }
+          ],
+          "Ix": 17,
+          "Name": "<",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 3,
+          "PL": true
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 15,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 4,
+          "Id": "640d86b8-d211-4768-9d8d-44ca0001b4e8"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_SH_A_Turn_F_Manual[1]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "ManualMode",
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Ix": 13,
+              "Type": "ANY_ELEMENTARY(except BOOL)",
+              "Var": "RCON1_5_ActualPos_mm"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Ix": 14,
+              "Type": "ANY_ELEMENTARY(except BOOL)",
+              "Var": "RCON1_5_SafePos_mm"
+            }
+          ],
+          "Ix": 18,
+          "Name": "<",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 2,
+          "Y": 2,
+          "PL": true
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 16,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 3,
+          "Y": 2,
+          "Id": "640d86b8-d211-4768-9d8d-44ca0001b4eb"
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "Output_A_M[40]",
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 2,
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 3,
+          "Y": 3
+        },
+        {
+          "__type": "HL",
+          "X": 4,
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "M9999",
+          "X": 5
+        },
+        {
+          "__type": "LD",
+          "Ix": 8,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 6
+        },
+        {
+          "__type": "LD",
+          "Ix": 23,
+          "Var": "ManualMode",
+          "X": 6,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 7,
+          "Not": true,
+          "Var": "Output_A_Reset_TON[40].Q",
+          "X": 7
+        },
+        {
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Out_CYw_SH_A_Turn_F",
+          "X": 8
+        },
+        {
+          "__type": "ST",
+          "Ix": 10,
+          "Var": "Output_A_M[40]",
+          "X": 8,
+          "Y": 2
+        }
+      ],
+      "CMT": "【Y727】A(左側) ストックフォルダターン行",
+      "LRI": 19,
+      "RRI": 20,
+      "VLs": [
+        {
+          "Ix": 21,
+          "X": 5
+        },
+        {
+          "Ix": 21,
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "Ix": 21,
+          "X": 5,
+          "Y": 2
+        },
+        {
+          "Ix": 22,
+          "X": 8
+        },
+        {
+          "Ix": 22,
+          "X": 8,
+          "Y": 1
+        },
+        {
+          "Ix": 24,
+          "X": 6
+        },
+        {
+          "Ix": 25,
+          "X": 7
+        }
+      ]
+    },
+    "compact": {
+      "cells": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_SH_A_Turn_F_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Pause[1]",
+          "Not": true,
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "Name": "<",
+          "X": 3,
+          "In": [
+            {
+              "Arg": "EN",
+              "__type": "PF"
+            },
+            {
+              "Arg": "In1",
+              "Var": "RCON1_5_ActualPos_mm",
+              "__type": "PRM"
+            },
+            {
+              "Arg": "In2",
+              "Var": "RCON1_5_SafePos_mm",
+              "__type": "PRM"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 4,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_SH_A_Turn_F_Manual[1]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "ManualMode",
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "__type": "F",
+          "Name": "<",
+          "X": 2,
+          "Y": 2,
+          "In": [
+            {
+              "Arg": "EN",
+              "__type": "PF"
+            },
+            {
+              "Arg": "In1",
+              "Var": "RCON1_5_ActualPos_mm",
+              "__type": "PRM"
+            },
+            {
+              "Arg": "In2",
+              "Var": "RCON1_5_SafePos_mm",
+              "__type": "PRM"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 3,
+          "Y": 2,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "LD",
+          "Var": "Output_A_M[40]",
+          "Y": 3
+        },
+        {
+          "__type": "LD",
+          "Var": "M9999",
+          "Not": true,
+          "X": 5
+        },
+        {
+          "__type": "LD",
+          "Var": "Pause[1]",
+          "Not": true,
+          "X": 6
+        },
+        {
+          "__type": "LD",
+          "Var": "ManualMode",
+          "X": 6,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Output_A_Reset_TON[40].Q",
+          "Not": true,
+          "X": 7
+        },
+        {
+          "__type": "ST",
+          "Var": "Out_CYw_SH_A_Turn_F",
+          "X": 8
+        },
+        {
+          "__type": "ST",
+          "Var": "Output_A_M[40]",
+          "X": 8,
+          "Y": 2
+        }
+      ],
+      "VLs": [
+        {
+          "Ix": 21,
+          "X": 5
+        },
+        {
+          "Ix": 21,
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "Ix": 21,
+          "X": 5,
+          "Y": 2
+        },
+        {
+          "Ix": 22,
+          "X": 8
+        },
+        {
+          "Ix": 22,
+          "X": 8,
+          "Y": 1
+        },
+        {
+          "Ix": 24,
+          "X": 6
+        },
+        {
+          "Ix": 25,
+          "X": 7
+        }
+      ]
+    }
+  },
+  {
+    "section": "Output_出力",
+    "row": 153,
+    "rung": {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_SH_A_Turn_F_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Pause[1]",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_SH_A_Turn_F",
+          "X": 3
+        },
+        {
+          "__type": "FB",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "PT",
+              "Ix": 5,
+              "Type": "TIME",
+              "Var": "T#10s"
+            }
+          ],
+          "Ix": 4,
+          "Name": "TON",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "Q"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "ET",
+              "Ix": 6,
+              "Type": "TIME",
+              "Var": ""
+            }
+          ],
+          "X": 4,
+          "Var": "Output_A_Error_TON[40]"
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 7,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 5,
+          "Id": "640d86b8-d211-4768-9d8d-44ca0001b614"
+        },
+        {
+          "__type": "ST",
+          "Ix": 8,
+          "S": true,
+          "Var": "Output_A_Error_M[40]",
+          "X": 6
+        },
+        {
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "HMI_Message_Request[46]",
+          "X": 6,
+          "Y": 1
+        }
+      ],
+      "CMT": "異常監視（自動指令・到達待ち10秒）",
+      "LRI": 10,
+      "RRI": 11,
+      "VLs": [
+        {
+          "Ix": 12,
+          "X": 6
+        }
+      ]
+    },
+    "compact": {
+      "cells": [
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_SH_A_Turn_F_Auto[1]"
+        },
+        {
+          "__type": "LD",
+          "Var": "AutoMode",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Pause[1]",
+          "Not": true,
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "TimerQ_In_SenCY_SH_A_Turn_F",
+          "Not": true,
+          "X": 3
+        },
+        {
+          "__type": "FB",
+          "Var": "Output_A_Error_TON[40]",
+          "Name": "TON",
+          "X": 4,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            },
+            {
+              "Arg": "PT",
+              "Var": "T#10s",
+              "__type": "PRM"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "Q",
+              "__type": "PF"
+            },
+            {
+              "Arg": "ET",
+              "Var": "",
+              "__type": "PRM"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "Up",
+          "X": 5,
+          "In": [
+            {
+              "Arg": "In",
+              "__type": "PF"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "",
+              "__type": "PF"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Var": "Output_A_Error_M[40]",
+          "X": 6
+        },
+        {
+          "__type": "ST",
+          "Var": "HMI_Message_Request[46]",
+          "X": 6,
+          "Y": 1
+        }
+      ],
+      "VLs": [
+        {
+          "Ix": 12,
+          "X": 6
+        }
+      ]
+    }
+  }
+]

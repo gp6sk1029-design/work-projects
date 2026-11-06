@@ -1,0 +1,2383 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261103C.smc2",
+  "sha256": "6082d233dddb22c45cfea4157f5c7937dcb7c0b51270a0786545d167ffb939b3",
+  "sections": {
+    "Destacker_段バラシ": "d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml",
+    "RCON_IAI": "d12ff733-4f31-46ee-8e8a-659eb8891990/7b1666c7-ee97-4210-81b2-fed5a6172074.xml",
+    "Output_出力": "d12ff733-4f31-46ee-8e8a-659eb8891990/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml"
+  },
+  "destacker": [
+    {
+      "row": 0,
+      "comment": null,
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Auto_Com_Start"
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[1]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "Destacker_M[2]",
+          "X": 1
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[1]",
+          "X": 2
+        }
+      ]
+    },
+    {
+      "row": 1,
+      "comment": "#初動動作\r\n\r\n\r\n【Y1203】段バラシ爪 ",
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[1]"
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "TimerQ_In_Sen_Supply_Container_Exist",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[2]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "Destacker_M[3]",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[2]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Var": "Out_CYw_Sep_Claw_F_Auto[1]",
+          "X": 3,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "row": 2,
+      "comment": "初動 判定\r\n①初動 段バラシセイフティPos  有\r\n②初動 段バラシセイフティPos  無",
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[2]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Sep_Claw_F_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[3]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[3]",
+          "X": 3
+        },
+        {
+          "__type": "PRM",
+          "Arg": "In1",
+          "Var": "RCON2_1_ActualPos_mm"
+        },
+        {
+          "__type": "PRM",
+          "Arg": "In2",
+          "Var": "HMI_RCON2_1_OUT_TargetPos[1]"
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[4]",
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "__type": "PRM",
+          "Arg": "In1",
+          "Var": "RCON2_1_ActualPos_mm"
+        },
+        {
+          "__type": "PRM",
+          "Arg": "In2",
+          "Var": "HMI_RCON2_1_OUT_TargetPos[1]"
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[5]",
+          "X": 4,
+          "Y": 2
+        }
+      ]
+    },
+    {
+      "row": 3,
+      "comment": "②初動 段バラシセイフティPos  無\r\n【Y1202】段バラシ爪 戻 コンテナ切り離し",
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[3]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[5]",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[6]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[6]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Var": "Out_CYw_Sep_Claw_H_Auto[1]",
+          "X": 3,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "row": 4,
+      "comment": "RCON2_1 \r\nセイフティPos移動",
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[6]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Sep_Claw_H_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[7]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "PRM",
+          "Arg": "In",
+          "Var": "HMI_RCON2_1_OUT_TargetPos[1]"
+        },
+        {
+          "__type": "PRM",
+          "Arg": "Out",
+          "Var": "RCON2_1_OUT_TargetPos_mm"
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[7]",
+          "X": 4
+        },
+        {
+          "__type": "ST",
+          "Var": "RCON2_1_Auto[1]",
+          "X": 4,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "row": 5,
+      "comment": "RCON2_1 \r\n1段目 Pos移動",
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[7]"
+        },
+        {
+          "__type": "LD",
+          "Var": "RCON2_1_MoveDone",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[8]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "PRM",
+          "Arg": "In",
+          "Var": "HMI_RCON2_1_OUT_TargetPos[2]"
+        },
+        {
+          "__type": "PRM",
+          "Arg": "Out",
+          "Var": "RCON2_1_OUT_TargetPos_mm"
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[8]",
+          "X": 4
+        },
+        {
+          "__type": "ST",
+          "Var": "RCON2_1_Auto[2]",
+          "X": 4,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "row": 6,
+      "comment": "【Y1203】段バラシ爪 行 コンテナ保持",
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[8]"
+        },
+        {
+          "__type": "LD",
+          "Var": "RCON2_1_MoveDone",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[9]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[9]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Var": "Out_CYw_Sep_Claw_F_Auto[2]",
+          "X": 3,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "row": 7,
+      "comment": "RCON2_1 \r\nセイフティPos移動",
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[9]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Sep_Claw_F_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[10]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[10]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Var": "RCON2_1_Auto[3]",
+          "X": 3,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "row": 8,
+      "comment": "初動動作完了\r\n【Y1200】空コンテナ送り 戻",
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[10]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[4]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[11]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 1
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[11]",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Var": "Out_CYw_Empty_Container_CY_H_Auto[1]",
+          "X": 2,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "row": 9,
+      "comment": "#段バラシ動作 \r\n\r\n①初動動作 完了後\r\n②繰返し動作\r\n【Y1203】段バラシ爪 行",
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[11]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Empty_Container_CY_H_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_End",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "TimerQ_In_Sen_Supply_Container_Exist",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_Empty_Container_CY_H",
+          "X": 2,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[12]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[12]",
+          "X": 4
+        },
+        {
+          "__type": "ST",
+          "Var": "Out_CYw_Sep_Claw_F_Auto[4]",
+          "X": 4,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "row": 10,
+      "comment": "【Y1200】空コンテナ送り 戻",
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[12]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Sep_Claw_F_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[13]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[13]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Var": "Out_CYw_Empty_Container_CY_H_Auto[2]",
+          "X": 3,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "row": 11,
+      "comment": "コンテナ有無・方向確認",
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[13]"
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "TimerQ_In_Sen_Supply_Container_Exist",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "TimerQ_In_SenCY_Empty_Container_CY_H",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "TimerQ_In_Sen_Container_Direction_Check",
+          "X": 3
+        },
+        {
+          "__type": "LD",
+          "Var": "TimerQ_In_Sen_Destacker_Stage_01_Exist",
+          "X": 4
+        },
+        {
+          "__type": "FB",
+          "X": 5,
+          "Var": "Destacker_TON[1]"
+        },
+        {
+          "__type": "PRM",
+          "Arg": "PT",
+          "Var": "T#5s"
+        },
+        {
+          "__type": "PRM",
+          "Arg": "ET",
+          "Var": ""
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 6
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[14]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 7
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 8
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[14]",
+          "X": 9
+        }
+      ]
+    },
+    {
+      "row": 12,
+      "comment": "RCON2_1 \r\n1段目 Pos移動",
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[14]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[15]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 1
+        },
+        {
+          "__type": "PRM",
+          "Arg": "In",
+          "Var": "HMI_RCON2_1_OUT_TargetPos[2]"
+        },
+        {
+          "__type": "PRM",
+          "Arg": "Out",
+          "Var": "RCON2_1_OUT_TargetPos_mm"
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[15]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Var": "RCON2_1_Auto[5]",
+          "X": 3,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "row": 13,
+      "comment": "コンテナ切り離し\r\n【Y1202】段バラシ爪 戻",
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[15]"
+        },
+        {
+          "__type": "LD",
+          "Var": "RCON2_1_MoveDone",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[16]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[16]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Var": "Out_CYw_Sep_Claw_H_Auto[2]",
+          "X": 3,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "row": 14,
+      "comment": "コンテナ段積み確認\r\n①段積み2段以上\r\n②段積み1段のみ",
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[16]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Sep_Claw_H_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[17]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[17]",
+          "X": 3
+        },
+        {
+          "__type": "LD",
+          "Var": "TimerQ_In_Sen_Destacker_Stage_02_Exist",
+          "X": 3,
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[18]",
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "TimerQ_In_Sen_Destacker_Stage_02_Exist",
+          "X": 3,
+          "Y": 2
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[19]",
+          "X": 4,
+          "Y": 2
+        }
+      ]
+    },
+    {
+      "row": 15,
+      "comment": "①段積み2段以上\r\nRCON2_1 \r\n2段目 Pos移動",
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[17]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[18]",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[20]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "PRM",
+          "Arg": "In",
+          "Var": "HMI_RCON2_1_OUT_TargetPos[3]"
+        },
+        {
+          "__type": "PRM",
+          "Arg": "Out",
+          "Var": "RCON2_1_OUT_TargetPos_mm"
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[20]",
+          "X": 4
+        },
+        {
+          "__type": "ST",
+          "Var": "RCON2_1_Auto[6]",
+          "X": 4,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "row": 16,
+      "comment": "コンテナ保持\r\n【Y1203】段バラシ爪 行",
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[20]"
+        },
+        {
+          "__type": "LD",
+          "Var": "RCON2_1_MoveDone",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[21]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[21]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Var": "Out_CYw_Sep_Claw_F_Auto[3]",
+          "X": 3,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "row": 17,
+      "comment": "#コンテナ排出動作",
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[21]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Sep_Claw_F_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[19]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[22]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "PRM",
+          "Arg": "In",
+          "Var": "HMI_RCON2_1_OUT_TargetPos[1]"
+        },
+        {
+          "__type": "PRM",
+          "Arg": "Out",
+          "Var": "RCON2_1_OUT_TargetPos_mm"
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[22]",
+          "X": 4
+        },
+        {
+          "__type": "ST",
+          "Var": "RCON2_1_Auto[4]",
+          "X": 4,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "row": 18,
+      "comment": "RCON2_5 コンテナ設置位置 確認後\r\n【Y1201】空コンテナ送り 行",
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[22]"
+        },
+        {
+          "__type": "LD",
+          "Var": "RCON2_1_MoveDone",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[23]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[23]",
+          "X": 3
+        },
+        {
+          "__type": "LD",
+          "Var": "TimerQ_In_Sen_Supply_Container_Exist",
+          "X": 3,
+          "Y": 1
+        },
+        {
+          "__type": "PRM",
+          "Arg": "In1",
+          "Var": "RCON2_5_ActualPos_mm"
+        },
+        {
+          "__type": "PRM",
+          "Arg": "In2",
+          "Var": "HMI_RCON2_5_OUT_TargetPos[1]"
+        },
+        {
+          "__type": "ST",
+          "Var": "Out_CYw_Empty_Container_CY_F_Auto[1]",
+          "X": 5,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "row": 19,
+      "comment": null,
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[23]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Empty_Container_CY_F_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[24]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_M[24]",
+          "X": 3
+        },
+        {
+          "__type": "LD",
+          "Var": "TimerQ_In_Sen_Container_Arrival",
+          "X": 3,
+          "Y": 1
+        },
+        {
+          "__type": "PRM",
+          "Arg": "In1",
+          "Var": "RCON2_5_ActualPos_mm"
+        },
+        {
+          "__type": "PRM",
+          "Arg": "In2",
+          "Var": "HMI_RCON2_5_OUT_TargetPos[1]"
+        },
+        {
+          "__type": "ST",
+          "Var": "Out_CYw_Empty_Container_CY_H_Auto[3]",
+          "X": 5,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "row": 20,
+      "comment": null,
+      "variables": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[24]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Empty_Container_CY_H_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_End",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Var": "Destacker_End",
+          "X": 3
+        }
+      ]
+    }
+  ],
+  "receivers": {
+    "RCON_IAI": [
+      {
+        "row": 266,
+        "comment": "異常コード（未接続）",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "P_Off"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In",
+            "Var": "RCON2_IN[1].AlarmCode"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "Out",
+            "Var": "RCON2_1_AlarmCode"
+          }
+        ]
+      },
+      {
+        "row": 267,
+        "comment": "入力有効（未接続）",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "P_Off"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "In",
+            "Var": "RCON2_IN[1].DataValid"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "Out",
+            "Var": "RCON2_1_DataValid"
+          }
+        ]
+      },
+      {
+        "row": 268,
+        "comment": "【入力信号】\r\n位置決め完了",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "RCON2_IN[1].Status.PositionDone"
+          },
+          {
+            "__type": "ST",
+            "Var": "RCON2_1_IN_PositionDone",
+            "X": 1
+          }
+        ]
+      },
+      {
+        "row": 269,
+        "comment": "原点復帰完了",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "RCON2_IN[1].Status.HomeDone"
+          },
+          {
+            "__type": "ST",
+            "Var": "RCON2_1_IN_HomeDone",
+            "X": 1
+          }
+        ]
+      },
+      {
+        "row": 270,
+        "comment": "移動中",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "RCON2_IN[1].Status.Moving"
+          },
+          {
+            "__type": "ST",
+            "Var": "RCON2_1_IN_Moving",
+            "X": 1
+          }
+        ]
+      },
+      {
+        "row": 271,
+        "comment": "軸異常",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "RCON2_IN[1].Status.Alarm"
+          },
+          {
+            "__type": "ST",
+            "Var": "RCON2_1_IN_Alarm",
+            "X": 1
+          }
+        ]
+      },
+      {
+        "row": 272,
+        "comment": "サーボON状態",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "RCON2_IN[1].Status.ServoReady"
+          },
+          {
+            "__type": "ST",
+            "Var": "RCON2_1_IN_ServoReady",
+            "X": 1
+          }
+        ]
+      },
+      {
+        "row": 273,
+        "comment": "押付け空振り（未使用）",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "P_Off"
+          },
+          {
+            "__type": "LD",
+            "Var": "RCON2_IN[1].Status.PushMiss",
+            "X": 1
+          },
+          {
+            "__type": "ST",
+            "Var": "RCON2_1_IN_PushMiss",
+            "X": 2
+          }
+        ]
+      },
+      {
+        "row": 274,
+        "comment": "過負荷警告",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "RCON2_IN[1].Status.OverloadWarning"
+          },
+          {
+            "__type": "ST",
+            "Var": "RCON2_1_IN_OverloadWarning",
+            "X": 1
+          }
+        ]
+      },
+      {
+        "row": 275,
+        "comment": "指令完了",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "RCON2_IN[1].Status.CommandDone"
+          },
+          {
+            "__type": "ST",
+            "Var": "RCON2_1_IN_CommandDone",
+            "X": 1
+          }
+        ]
+      },
+      {
+        "row": 276,
+        "comment": "ゾーン1内",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "RCON2_IN[1].Status.Zone1"
+          },
+          {
+            "__type": "ST",
+            "Var": "RCON2_1_IN_Zone1",
+            "X": 1
+          }
+        ]
+      },
+      {
+        "row": 277,
+        "comment": "ゾーン2内",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "RCON2_IN[1].Status.Zone2"
+          },
+          {
+            "__type": "ST",
+            "Var": "RCON2_1_IN_Zone2",
+            "X": 1
+          }
+        ]
+      },
+      {
+        "row": 278,
+        "comment": "準備完了",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "RCON2_IN[1].Status.ControllerReady"
+          },
+          {
+            "__type": "ST",
+            "Var": "RCON2_1_IN_ControllerReady",
+            "X": 1
+          }
+        ]
+      },
+      {
+        "row": 279,
+        "comment": "非常停止状態（監視）",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "RCON2_IN[1].Status.EmergencyStop"
+          },
+          {
+            "__type": "ST",
+            "Var": "RCON2_1_IN_EmergencyStop",
+            "X": 1
+          }
+        ]
+      },
+      {
+        "row": 280,
+        "comment": "【動作管理】\r\n動作準備（安全許可とは別）",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "RCON2_1_IN_ControllerReady"
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "RCON2_IN[1].Status.Alarm",
+            "X": 1
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "RCON2_1_IN_EmergencyStop",
+            "X": 2
+          },
+          {
+            "__type": "LD",
+            "Var": "RCON2_1_IN_ServoReady",
+            "X": 3
+          },
+          {
+            "__type": "ST",
+            "Var": "RCON2_1_Ready",
+            "X": 4
+          }
+        ]
+      },
+      {
+        "row": 281,
+        "comment": "開始指令保持",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "RCON2_1_Auto[1]"
+          },
+          {
+            "__type": "LD",
+            "Var": "RCON2_1_Auto[2]",
+            "Y": 1
+          },
+          {
+            "__type": "LD",
+            "Var": "RCON2_1_Auto[3]",
+            "Y": 2
+          },
+          {
+            "__type": "LD",
+            "Var": "RCON2_1_Auto[4]",
+            "Y": 3
+          },
+          {
+            "__type": "LD",
+            "Var": "RCON2_1_Auto[5]",
+            "Y": 4
+          },
+          {
+            "__type": "LD",
+            "Var": "RCON2_1_Auto[6]",
+            "Y": 5
+          },
+          {
+            "__type": "LD",
+            "Var": "RCON2_1_Ready",
+            "X": 1
+          },
+          {
+            "__type": "FB",
+            "X": 2,
+            "Var": "RCON2_1_TON[1]"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "PT",
+            "Var": "T#100ms"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "ET",
+            "Var": ""
+          },
+          {
+            "__type": "LD",
+            "Var": "RCON2_1_M[1]",
+            "Y": 6
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "RCON2_1_MoveDone",
+            "X": 4
+          },
+          {
+            "__type": "ST",
+            "Var": "RCON2_1_M[1]",
+            "X": 5
+          }
+        ]
+      },
+      {
+        "row": 282,
+        "comment": "動作完了（100ms保持）",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "RCON2_1_M[1]"
+          },
+          {
+            "__type": "LD",
+            "Var": "RCON2_1_IN_PositionDone",
+            "X": 1
+          },
+          {
+            "__type": "LD",
+            "Var": "RCON2_1_MoveDone",
+            "Y": 1
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "RCON2_1_TON[2].Q",
+            "X": 3
+          },
+          {
+            "__type": "ST",
+            "Var": "RCON2_1_MoveDone",
+            "X": 4
+          },
+          {
+            "__type": "FB",
+            "X": 4,
+            "Y": 1,
+            "Var": "RCON2_1_TON[2]"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "PT",
+            "Var": "T#100ms"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "ET",
+            "Var": ""
+          }
+        ]
+      }
+    ],
+    "Output_出力": [
+      {
+        "row": 268,
+        "comment": "# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n# 【共通 コンテナ部｜シリンダ】\r\n#\r\n# 目的：出力・完了判定・異常監視を出力ごとに配置\r\n# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n【Y1200】空コンテナ送り 戻",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Empty_Container_CY_H_Auto[1]"
+          },
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Empty_Container_CY_H_Auto[2]",
+            "Y": 1
+          },
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Empty_Container_CY_H_Auto[3]",
+            "Y": 2
+          },
+          {
+            "__type": "LD",
+            "Var": "AutoMode",
+            "X": 1
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "Pause[1]",
+            "X": 2
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "TimerQ_In_Sen_Supply_Container_Exist",
+            "X": 3
+          },
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Empty_Container_CY_H_Manual[1]",
+            "Y": 3
+          },
+          {
+            "__type": "LD",
+            "Var": "ManualMode",
+            "X": 1,
+            "Y": 3
+          },
+          {
+            "__type": "LD",
+            "Var": "Output_Share_M[1]",
+            "Y": 4
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "M9999",
+            "X": 5
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "Pause[1]",
+            "X": 6
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "Output_Share_Reset_TON[1].Q",
+            "X": 7
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "TimerQ_In_Sen_Supply_Container_Exist",
+            "X": 8
+          },
+          {
+            "__type": "ST",
+            "Var": "Out_CYw_Empty_Container_CY_H",
+            "X": 9
+          },
+          {
+            "__type": "ST",
+            "Var": "Output_Share_M[1]",
+            "X": 9,
+            "Y": 1
+          }
+        ]
+      },
+      {
+        "row": 269,
+        "comment": null,
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "Output_Share_M[1]"
+          },
+          {
+            "__type": "LD",
+            "Var": "TimerQ_In_SenCY_Empty_Container_CY_H",
+            "X": 1
+          },
+          {
+            "__type": "ST",
+            "Var": "Out_CYw_Empty_Container_CY_H_Done",
+            "X": 2
+          },
+          {
+            "__type": "FB",
+            "X": 2,
+            "Y": 1,
+            "Var": "Output_Share_Reset_TON[1]"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "PT",
+            "Var": "T#1s"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "ET",
+            "Var": ""
+          }
+        ]
+      },
+      {
+        "row": 270,
+        "comment": "異常監視（自動指令・到達待ち10秒）",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Empty_Container_CY_H_Auto[1]"
+          },
+          {
+            "__type": "LD",
+            "Var": "AutoMode",
+            "X": 1
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "Pause[1]",
+            "X": 2
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "TimerQ_In_SenCY_Empty_Container_CY_H",
+            "X": 3
+          },
+          {
+            "__type": "FB",
+            "X": 4,
+            "Var": "Output_Share_Error_TON[1]"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "PT",
+            "Var": "T#10s"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "ET",
+            "Var": ""
+          },
+          {
+            "__type": "ST",
+            "S": true,
+            "Var": "Output_Share_Error_M[1]",
+            "X": 6
+          },
+          {
+            "__type": "ST",
+            "Var": "HMI_Message_Request[85]",
+            "X": 6,
+            "Y": 1
+          }
+        ]
+      },
+      {
+        "row": 271,
+        "comment": "【Y1201】空コンテナ送り 行",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Empty_Container_CY_F_Auto[1]"
+          },
+          {
+            "__type": "LD",
+            "Var": "AutoMode",
+            "X": 1
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "Pause[1]",
+            "X": 2
+          },
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Empty_Container_CY_F_Manual[1]",
+            "Y": 1
+          },
+          {
+            "__type": "LD",
+            "Var": "ManualMode",
+            "X": 1,
+            "Y": 1
+          },
+          {
+            "__type": "LD",
+            "Var": "Output_Share_M[2]",
+            "Y": 2
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "M9999",
+            "X": 4
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "Pause[1]",
+            "X": 5
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "Output_Share_Reset_TON[2].Q",
+            "X": 6
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "IAI_In_Sample_Busy_MOVE",
+            "X": 7
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "In_Sen_Container_Arrival",
+            "X": 8
+          },
+          {
+            "__type": "ST",
+            "Var": "Out_CYw_Empty_Container_CY_F",
+            "X": 9
+          },
+          {
+            "__type": "ST",
+            "Var": "Output_Share_M[2]",
+            "X": 9,
+            "Y": 1
+          }
+        ]
+      },
+      {
+        "row": 272,
+        "comment": null,
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "Output_Share_M[2]"
+          },
+          {
+            "__type": "LD",
+            "Var": "TimerQ_In_SenCY_Empty_Container_CY_F",
+            "X": 1
+          },
+          {
+            "__type": "ST",
+            "Var": "Out_CYw_Empty_Container_CY_F_Done",
+            "X": 2
+          },
+          {
+            "__type": "FB",
+            "X": 2,
+            "Y": 1,
+            "Var": "Output_Share_Reset_TON[2]"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "PT",
+            "Var": "T#1s"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "ET",
+            "Var": ""
+          }
+        ]
+      },
+      {
+        "row": 273,
+        "comment": "異常監視（自動指令・到達待ち10秒）",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Empty_Container_CY_F_Auto[1]"
+          },
+          {
+            "__type": "LD",
+            "Var": "AutoMode",
+            "X": 1
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "Pause[1]",
+            "X": 2
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "TimerQ_In_SenCY_Empty_Container_CY_F",
+            "X": 3
+          },
+          {
+            "__type": "FB",
+            "X": 4,
+            "Var": "Output_Share_Error_TON[2]"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "PT",
+            "Var": "T#10s"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "ET",
+            "Var": ""
+          },
+          {
+            "__type": "ST",
+            "S": true,
+            "Var": "Output_Share_Error_M[2]",
+            "X": 6
+          },
+          {
+            "__type": "ST",
+            "Var": "HMI_Message_Request[86]",
+            "X": 6,
+            "Y": 1
+          }
+        ]
+      },
+      {
+        "row": 274,
+        "comment": "【Y1202】段バラシ爪 戻",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Sep_Claw_H_Auto[1]"
+          },
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Sep_Claw_H_Auto[2]",
+            "Y": 1
+          },
+          {
+            "__type": "LD",
+            "Var": "AutoMode",
+            "X": 1
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "Pause[1]",
+            "X": 2
+          },
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Sep_Claw_H_Manual[1]",
+            "Y": 2
+          },
+          {
+            "__type": "LD",
+            "Var": "ManualMode",
+            "X": 1,
+            "Y": 2
+          },
+          {
+            "__type": "LD",
+            "Var": "Output_Share_M[3]",
+            "Y": 3
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "M9999",
+            "X": 4
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "Pause[1]",
+            "X": 5
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "Output_Share_Reset_TON[3].Q",
+            "X": 6
+          },
+          {
+            "__type": "ST",
+            "Var": "Out_CYw_Sep_Claw_H",
+            "X": 7
+          },
+          {
+            "__type": "ST",
+            "Var": "Output_Share_M[3]",
+            "X": 7,
+            "Y": 1
+          }
+        ]
+      },
+      {
+        "row": 275,
+        "comment": null,
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "Output_Share_M[3]"
+          },
+          {
+            "__type": "LD",
+            "Var": "TimerQ_In_SenCY_Sep_Claw1_H",
+            "X": 1
+          },
+          {
+            "__type": "LD",
+            "Var": "TimerQ_In_SenCY_Sep_Claw2_H",
+            "X": 2
+          },
+          {
+            "__type": "ST",
+            "Var": "Out_CYw_Sep_Claw_H_Done",
+            "X": 3
+          },
+          {
+            "__type": "FB",
+            "X": 3,
+            "Y": 1,
+            "Var": "Output_Share_Reset_TON[3]"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "PT",
+            "Var": "T#1s"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "ET",
+            "Var": ""
+          }
+        ]
+      },
+      {
+        "row": 276,
+        "comment": "異常監視（自動指令・到達待ち10秒）",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Sep_Claw_H_Auto[1]"
+          },
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Sep_Claw_H_Auto[2]",
+            "Y": 1
+          },
+          {
+            "__type": "LD",
+            "Var": "AutoMode",
+            "X": 1
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "Pause[1]",
+            "X": 2
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "TimerQ_In_SenCY_Sep_Claw1_H",
+            "X": 3
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "TimerQ_In_SenCY_Sep_Claw2_H",
+            "X": 4
+          },
+          {
+            "__type": "LD",
+            "Var": "TimerQ_In_SenCY_Sep_Claw1_H",
+            "X": 3,
+            "Y": 1
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "TimerQ_In_SenCY_Sep_Claw2_H",
+            "X": 4,
+            "Y": 1
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "TimerQ_In_SenCY_Sep_Claw1_H",
+            "X": 3,
+            "Y": 2
+          },
+          {
+            "__type": "LD",
+            "Var": "TimerQ_In_SenCY_Sep_Claw2_H",
+            "X": 4,
+            "Y": 2
+          },
+          {
+            "__type": "FB",
+            "X": 5,
+            "Var": "Output_Share_Error_TON[3]"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "PT",
+            "Var": "T#10s"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "ET",
+            "Var": ""
+          },
+          {
+            "__type": "ST",
+            "S": true,
+            "Var": "Output_Share_Error_M[3]",
+            "X": 7
+          },
+          {
+            "__type": "ST",
+            "Var": "HMI_Message_Request[87]",
+            "X": 7,
+            "Y": 1
+          }
+        ]
+      },
+      {
+        "row": 277,
+        "comment": "【Y1203】段バラシ爪 行",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Sep_Claw_F_Auto[1]"
+          },
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Sep_Claw_F_Auto[2]",
+            "Y": 1
+          },
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Sep_Claw_F_Auto[3]",
+            "Y": 2
+          },
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Sep_Claw_F_Auto[4]",
+            "Y": 3
+          },
+          {
+            "__type": "LD",
+            "Var": "AutoMode",
+            "X": 1
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "Pause[1]",
+            "X": 2
+          },
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Sep_Claw_F_Manual[1]",
+            "Y": 4
+          },
+          {
+            "__type": "LD",
+            "Var": "ManualMode",
+            "X": 1,
+            "Y": 4
+          },
+          {
+            "__type": "LD",
+            "Var": "Output_Share_M[4]",
+            "Y": 5
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "M9999",
+            "X": 4
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "Pause[1]",
+            "X": 5
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "Output_Share_Reset_TON[4].Q",
+            "X": 6
+          },
+          {
+            "__type": "ST",
+            "Var": "Out_CYw_Sep_Claw_F",
+            "X": 7
+          },
+          {
+            "__type": "ST",
+            "Var": "Output_Share_M[4]",
+            "X": 7,
+            "Y": 1
+          }
+        ]
+      },
+      {
+        "row": 278,
+        "comment": null,
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "Output_Share_M[4]"
+          },
+          {
+            "__type": "LD",
+            "Var": "TimerQ_In_SenCY_Sep_Claw1_F",
+            "X": 1
+          },
+          {
+            "__type": "LD",
+            "Var": "TimerQ_In_SenCY_Sep_Claw2_F",
+            "X": 2
+          },
+          {
+            "__type": "ST",
+            "Var": "Out_CYw_Sep_Claw_F_Done",
+            "X": 3
+          },
+          {
+            "__type": "FB",
+            "X": 3,
+            "Y": 1,
+            "Var": "Output_Share_Reset_TON[4]"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "PT",
+            "Var": "T#1s"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "ET",
+            "Var": ""
+          }
+        ]
+      },
+      {
+        "row": 279,
+        "comment": "異常監視（自動指令・到達待ち10秒）",
+        "variables": [
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Sep_Claw_F_Auto[1]"
+          },
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Sep_Claw_F_Auto[2]",
+            "Y": 1
+          },
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Sep_Claw_F_Auto[3]",
+            "Y": 2
+          },
+          {
+            "__type": "LD",
+            "Var": "Out_CYw_Sep_Claw_F_Auto[4]",
+            "Y": 3
+          },
+          {
+            "__type": "LD",
+            "Var": "AutoMode",
+            "X": 1
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "Pause[1]",
+            "X": 2
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "TimerQ_In_SenCY_Sep_Claw1_F",
+            "X": 3
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "TimerQ_In_SenCY_Sep_Claw2_F",
+            "X": 4
+          },
+          {
+            "__type": "LD",
+            "Var": "TimerQ_In_SenCY_Sep_Claw1_F",
+            "X": 3,
+            "Y": 1
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "TimerQ_In_SenCY_Sep_Claw2_F",
+            "X": 4,
+            "Y": 1
+          },
+          {
+            "__type": "LD",
+            "Not": true,
+            "Var": "TimerQ_In_SenCY_Sep_Claw1_F",
+            "X": 3,
+            "Y": 2
+          },
+          {
+            "__type": "LD",
+            "Var": "TimerQ_In_SenCY_Sep_Claw2_F",
+            "X": 4,
+            "Y": 2
+          },
+          {
+            "__type": "FB",
+            "X": 5,
+            "Var": "Output_Share_Error_TON[4]"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "PT",
+            "Var": "T#10s"
+          },
+          {
+            "__type": "PRM",
+            "Arg": "ET",
+            "Var": ""
+          },
+          {
+            "__type": "ST",
+            "S": true,
+            "Var": "Output_Share_Error_M[4]",
+            "X": 7
+          },
+          {
+            "__type": "ST",
+            "Var": "HMI_Message_Request[88]",
+            "X": 7,
+            "Y": 1
+          }
+        ]
+      }
+    ]
+  },
+  "definitions": [
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=ARRAY[0..99] OF TON\tN=Destacker_TON\tG=VAR"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=LREAL\tN=HMI_RCON2_5_OUT_TargetPos\tG=VAR"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=BOOL\tN=Auto_Com_Start\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=ARRAY[0..99] OF Bool\tN=Destacker_M\tG=VAR_EXTERNAL\tCom=段バラシ："
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Sep_Claw_F_Auto\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=BOOL\tN=Out_CYw_Sep_Claw_F_Done\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=LREAL\tN=RCON2_1_OUT_TargetPos_mm\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=ARRAY[0..99] OF LREAL\tN=HMI_RCON2_1_OUT_TargetPos\tG=VAR_EXTERNAL\tCom=段バラシ 目標位置 [mm]"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=ARRAY[0..99] OF Bool\tN=RCON2_1_Auto\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=BOOL\tN=TimerQ_In_Sen_Supply_Container_Exist\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=BOOL\tN=TimerQ_In_SenCY_Empty_Container_CY_H\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=BOOL\tN=TimerQ_In_Sen_Destacker_Stage_01_Exist\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=BOOL\tN=TimerQ_In_Sen_Destacker_Stage_02_Exist\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=BOOL\tN=RCON2_1_MoveDone\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=BOOL\tN=TimerQ_In_Sen_Container_Direction_Check\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Sep_Claw_H_Auto\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=BOOL\tN=Out_CYw_Sep_Claw_H_Done\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=BOOL\tN=Destacker_End\tG=VAR_EXTERNAL\tCom=段バラシ完了"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=LREAL\tN=RCON2_1_ActualPos_mm\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Empty_Container_CY_H_Auto\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=BOOL\tN=Out_CYw_Empty_Container_CY_H_Done\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Empty_Container_CY_F_Auto\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=LREAL\tN=RCON2_5_ActualPos_mm\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=BOOL\tN=Out_CYw_Empty_Container_CY_F_Done\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "line": "++D=BOOL\tN=TimerQ_In_Sen_Container_Arrival\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "line": "++D=BOOL\tN=TimerQ_In_Sen_Supply_Container_Exist\tG=VAR_EXTERNAL\tCom=【X1000】供給部コンテナ有"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "line": "++D=BOOL\tN=TimerQ_In_Sen_Destacker_Stage_01_Exist\tG=VAR_EXTERNAL\tCom=【X1001】段バラシ1段目有"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "line": "++D=BOOL\tN=TimerQ_In_Sen_Destacker_Stage_02_Exist\tG=VAR_EXTERNAL\tCom=【X1002】段バラシ2段目有"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "line": "++D=BOOL\tN=TimerQ_In_Sen_Container_Arrival\tG=VAR_EXTERNAL\tCom=【X1003】コンテナ到着"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "line": "++D=BOOL\tN=TimerQ_In_Sen_Container_Direction_Check\tG=VAR_EXTERNAL\tCom=【X1004】コンテナ方向確認"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "line": "++D=BOOL\tN=TimerQ_In_SenCY_Empty_Container_CY_H\tG=VAR_EXTERNAL\tCom=【X1010】空コンテナ送り 戻"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "line": "++D=BOOL\tN=Out_CYw_Empty_Container_CY_F_Done\tG=VAR_EXTERNAL\tCom=【Y1201】空コンテナ送り 行 動作完了"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "line": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Sep_Claw_H_Auto\tG=VAR_EXTERNAL\tCom=自動【Y1202】段バラシ爪 戻："
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "line": "++D=BOOL\tN=Out_CYw_Sep_Claw_H_Done\tG=VAR_EXTERNAL\tCom=【Y1202】段バラシ爪 戻 動作完了"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "line": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Sep_Claw_F_Auto\tG=VAR_EXTERNAL\tCom=自動【Y1203】段バラシ爪 行："
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "line": "++D=BOOL\tN=Out_CYw_Sep_Claw_F_Done\tG=VAR_EXTERNAL\tCom=【Y1203】段バラシ爪 行 動作完了"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "line": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Empty_Container_CY_H_Auto\tG=VAR_EXTERNAL\tCom=自動【Y1200】空コンテナ送り 戻："
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "line": "++D=BOOL\tN=Out_CYw_Empty_Container_CY_H_Done\tG=VAR_EXTERNAL\tCom=【Y1200】空コンテナ送り 戻 動作完了"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "line": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Empty_Container_CY_F_Auto\tG=VAR_EXTERNAL\tCom=自動【Y1201】空コンテナ送り 行："
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "line": "++D=BOOL\tN=RCON2_1_MoveDone\tG=VAR_EXTERNAL\tCom=動作完了\tConst=0\tRO=0"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "line": "++D=LREAL\tN=RCON2_1_OUT_TargetPos_mm\tG=VAR_EXTERNAL\tCom=目標位置 [mm]\tConst=0\tRO=0"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "line": "++D=LREAL\tN=RCON2_1_ActualPos_mm\tG=VAR_EXTERNAL\tCom=現在位置 [mm]\tConst=0\tRO=0"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "line": "++D=ARRAY[0..99] OF Bool\tN=RCON2_1_Auto\tG=VAR_EXTERNAL\tCom=自動移動要求\tEC=<ECs><EC EK=\"[1]\" C=\"自動要求1（未接続）\" /><EC EK=\"[2]\" C=\"自動要求2（未接続）\" /><EC EK=\"[3]\" C=\"自動要求3（未接続）\" /></ECs>\tConst=0\tRO=0"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "line": "++D=LREAL\tN=RCON2_5_ActualPos_mm\tG=VAR_EXTERNAL\tCom=現在位置 [mm]\tConst=0\tRO=0"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "line": "++D=BOOL\tN=Auto_Com_Start\tG=VAR_EXTERNAL\tCom=共通ユニット自動運転開始"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=BOOL\tN=TimerQ_In_Sen_Supply_Container_Exist\tG=VAR_GLOBAL\tCom=【X1000】供給部コンテナ有"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=BOOL\tN=TimerQ_In_Sen_Destacker_Stage_01_Exist\tG=VAR_GLOBAL\tCom=【X1001】段バラシ1段目有"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=BOOL\tN=TimerQ_In_Sen_Destacker_Stage_02_Exist\tG=VAR_GLOBAL\tCom=【X1002】段バラシ2段目有"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=BOOL\tN=TimerQ_In_Sen_Container_Arrival\tG=VAR_GLOBAL\tCom=【X1003】コンテナ到着"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=BOOL\tN=TimerQ_In_Sen_Container_Direction_Check\tG=VAR_GLOBAL\tCom=【X1004】コンテナ方向確認"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=BOOL\tN=TimerQ_In_SenCY_Empty_Container_CY_H\tG=VAR_GLOBAL\tCom=【X1010】空コンテナ送り 戻"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=BOOL\tN=Out_CYw_Empty_Container_CY_F_Done\tG=VAR_GLOBAL\tCom=【Y1201】空コンテナ送り 行 動作完了"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Sep_Claw_H_Auto\tG=VAR_GLOBAL\tCom=自動【Y1202】段バラシ爪 戻：\tEC=<ECs><EC EK=\"[1]\" C=\"コンテナ切り離し\" /></ECs>"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=BOOL\tN=Out_CYw_Sep_Claw_H_Done\tG=VAR_GLOBAL\tCom=【Y1202】段バラシ爪 戻 動作完了"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Sep_Claw_F_Auto\tG=VAR_GLOBAL\tCom=自動【Y1203】段バラシ爪 行：\tEC=<ECs><EC EK=\"[1]\" C=\"初動 段バラシ\" /><EC EK=\"[2]\" C=\"コンテナ保持\" /><EC EK=\"[3]\" C=\"2段目以上保持\" /></ECs>"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=BOOL\tN=Out_CYw_Sep_Claw_F_Done\tG=VAR_GLOBAL\tCom=【Y1203】段バラシ爪 行 動作完了"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Empty_Container_CY_H_Auto\tG=VAR_GLOBAL\tCom=自動【Y1200】空コンテナ送り 戻："
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=BOOL\tN=Out_CYw_Empty_Container_CY_H_Done\tG=VAR_GLOBAL\tCom=【Y1200】空コンテナ送り 戻 動作完了"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Empty_Container_CY_F_Auto\tG=VAR_GLOBAL\tCom=自動【Y1201】空コンテナ送り 行："
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=BOOL\tN=RCON2_1_MoveDone\tG=VAR_GLOBAL\tCom=動作完了"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=LREAL\tN=RCON2_1_OUT_TargetPos_mm\tG=VAR_GLOBAL\tCom=目標位置 [mm]"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=LREAL\tN=RCON2_1_ActualPos_mm\tG=VAR_GLOBAL\tCom=現在位置 [mm]"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=ARRAY[0..99] OF Bool\tN=RCON2_1_Auto\tG=VAR_GLOBAL\tCom=自動移動要求\tEC=<ECs><EC EK=\"[1]\" C=\"初期動作① セイフティ\" /><EC EK=\"[2]\" C=\"1段目 Pos\" /><EC EK=\"[3]\" C=\"初期動作② セイフティ\" /><EC EK=\"[4]\" C=\"コンテナ排出\" /></ECs>"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=LREAL\tN=RCON2_5_ActualPos_mm\tG=VAR_GLOBAL\tCom=現在位置 [mm]"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=BOOL\tN=Auto_Com_Start\tG=VAR_GLOBAL\tCom=共通ユニット自動運転開始"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=ARRAY[0..99] OF Bool\tN=Destacker_M\tG=VAR_GLOBAL\tCom=段バラシ：\tEC=<ECs><EC EK=\"[5]\" C=\"②初動 段バラシセイフティPos  無\" /><EC EK=\"[4]\" C=\"①初動 段バラシセイフティPos  有\" /></ECs>"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=ARRAY[0..99] OF LREAL\tN=HMI_RCON2_1_OUT_TargetPos\tG=VAR_GLOBAL\tCom=段バラシ 目標位置 [mm]\tEC=<ECs><EC EK=\"[1]\" C=\"①④セイフティ・排出 Pos\" /><EC EK=\"[2]\" C=\"②1段目 Pos\" /><EC EK=\"[3]\" C=\"③2段目 Pos\" /></ECs>"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "line": "++D=BOOL\tN=Destacker_End\tG=VAR_GLOBAL\tCom=段バラシ完了"
+    }
+  ]
+}

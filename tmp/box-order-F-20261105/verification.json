@@ -1,0 +1,89 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105F.smc2",
+  "staged": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\box-order-F-20261105\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105F.smc2",
+  "backup": "C:\\Users\\SEIGI-N13\\work-projects\\outputs\\box-order-F-20261105\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105F_番号整列前.smc2",
+  "source_sha256": "9f8ed9c5d0adb97e62e6c65a3bbda3f53cbc25f25ee1443491801ef73623fac8",
+  "output_sha256": "2eb307ad8c1063d65e2ca8e77864f51c429af8843e06a93a2cda1fae0d6770eb",
+  "box_part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/6061835d-1e51-4e92-be1f-d546f44764e3.xml",
+  "groups": {
+    "RCON2_5_Auto": [
+      [
+        3,
+        1
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        11,
+        4
+      ],
+      [
+        37,
+        5
+      ],
+      [
+        40,
+        6
+      ]
+    ],
+    "RCON2_4_Auto": [
+      [
+        16,
+        1
+      ],
+      [
+        25,
+        2
+      ],
+      [
+        27,
+        3
+      ],
+      [
+        33,
+        4
+      ],
+      [
+        35,
+        5
+      ]
+    ],
+    "RCON2_2_Auto": [
+      [
+        17,
+        1
+      ],
+      [
+        21,
+        2
+      ],
+      [
+        28,
+        3
+      ]
+    ],
+    "RCON2_3_Auto": [
+      [
+        17,
+        1
+      ],
+      [
+        21,
+        2
+      ],
+      [
+        29,
+        3
+      ]
+    ]
+  },
+  "changed_refs": 8,
+  "other_parts_unchanged": 211,
+  "published": true
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "root": "C:\\Users\\SEIGI-N13\\work-projects\\.claude\\skills\\sysmac-studio",
+    "files": {
+      "SKILL.md": "02bfca43e53344fe7dd8876178c0ee45ee6daf97ad4d6a5c357dfdf5483f3b27",
+      "agents/openai.yaml": "09df79f0d0caaa836fca2d6b6a5b095519e99c2c18ea60536224cd766b3539fe",
+      "references/commands.md": "a0e260a09e19b4868bc2bdb596ae57801716260471b80b3123db4c4e9c6abc51",
+      "references/file-editing.md": "63fd65aa34eb3fb4ad58ac0743d6f5b372ef515c4d518544fc397bff204dae19",
+      "references/internal-projects.md": "7c9edceca84ac0a6c7c9688f6b525b0a5873d3e1e4ffe5726bbca535a7e70f72",
+      "references/ladder-review.md": "2acdcdf9bf2d94c891cbc10a52c09fbd9829e0486f94d7d30b471bf372d9a328",
+      "scripts/NativeRead.cs": "7502c93c7ffb622445ef2df46ff75aa275fcaa19339f5196b8110f4767b66c31",
+      "scripts/native_check.ps1": "499603209e65c93b7614a077fcf8ee9991bf611a2dc4f4e678a282539800d05d",
+      "scripts/self_test.py": "bf174a18e103cc432bf6f4f4129f22dea5570ecdb5b6657ce32450e8ba490539",
+      "scripts/sysmac.py": "8c0261efd0207b20ba4c0fe8f46c47929cd9c30e4fa4e1f7ed20d436bb71dfd4"
+    }
+  },
+  {
+    "root": "C:\\Users\\SEIGI-N13\\work-projects\\.agents\\skills\\sysmac-studio",
+    "files": {
+      "SKILL.md": "02bfca43e53344fe7dd8876178c0ee45ee6daf97ad4d6a5c357dfdf5483f3b27",
+      "agents/openai.yaml": "09df79f0d0caaa836fca2d6b6a5b095519e99c2c18ea60536224cd766b3539fe",
+      "references/commands.md": "a0e260a09e19b4868bc2bdb596ae57801716260471b80b3123db4c4e9c6abc51",
+      "references/file-editing.md": "63fd65aa34eb3fb4ad58ac0743d6f5b372ef515c4d518544fc397bff204dae19",
+      "references/internal-projects.md": "7c9edceca84ac0a6c7c9688f6b525b0a5873d3e1e4ffe5726bbca535a7e70f72",
+      "references/ladder-review.md": "2acdcdf9bf2d94c891cbc10a52c09fbd9829e0486f94d7d30b471bf372d9a328",
+      "scripts/NativeRead.cs": "7502c93c7ffb622445ef2df46ff75aa275fcaa19339f5196b8110f4767b66c31",
+      "scripts/native_check.ps1": "499603209e65c93b7614a077fcf8ee9991bf611a2dc4f4e678a282539800d05d",
+      "scripts/self_test.py": "bf174a18e103cc432bf6f4f4129f22dea5570ecdb5b6657ce32450e8ba490539",
+      "scripts/sysmac.py": "8c0261efd0207b20ba4c0fe8f46c47929cd9c30e4fa4e1f7ed20d436bb71dfd4"
+    }
+  },
+  {
+    "root": "C:\\Users\\SEIGI-N13\\.codex\\skills\\sysmac-studio",
+    "files": {
+      "SKILL.md": "02bfca43e53344fe7dd8876178c0ee45ee6daf97ad4d6a5c357dfdf5483f3b27",
+      "agents/openai.yaml": "09df79f0d0caaa836fca2d6b6a5b095519e99c2c18ea60536224cd766b3539fe",
+      "references/commands.md": "a0e260a09e19b4868bc2bdb596ae57801716260471b80b3123db4c4e9c6abc51",
+      "references/file-editing.md": "63fd65aa34eb3fb4ad58ac0743d6f5b372ef515c4d518544fc397bff204dae19",
+      "references/internal-projects.md": "7c9edceca84ac0a6c7c9688f6b525b0a5873d3e1e4ffe5726bbca535a7e70f72",
+      "references/ladder-review.md": "2acdcdf9bf2d94c891cbc10a52c09fbd9829e0486f94d7d30b471bf372d9a328",
+      "scripts/NativeRead.cs": "7502c93c7ffb622445ef2df46ff75aa275fcaa19339f5196b8110f4767b66c31",
+      "scripts/native_check.ps1": "499603209e65c93b7614a077fcf8ee9991bf611a2dc4f4e678a282539800d05d",
+      "scripts/self_test.py": "bf174a18e103cc432bf6f4f4129f22dea5570ecdb5b6657ce32450e8ba490539",
+      "scripts/sysmac.py": "8c0261efd0207b20ba4c0fe8f46c47929cd9c30e4fa4e1f7ed20d436bb71dfd4"
+    }
+  }
+]

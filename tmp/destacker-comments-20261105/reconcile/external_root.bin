@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <SolutionModel>
+      <DateCreated>2026-11-05T08:11:08.4752703+09:00</DateCreated>
+      <DateModified>2026-11-05T20:30:13.766787+09:00</DateModified>
+      <Author>SEIGI-N13</Author>
+      <Customer></Customer>
+      <Project>3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I</Project>
+      <ShortDescription>Retry[12]を編集中_20261029Q
+イーサキャット設定完了_20261023I
+ST0 供給_20261009A
+AutoMode作成_20261008A
+IOプログラム作成_20261007B
+IOプログラム作成_20261006A
+IOプログラム作成_20261005A
+IOプログラム作成_20261002A
+オリエンタルモータ設定_20261001A
+IO設定_20260930A
+PLC設定_20260807A</ShortDescription>
+      <Version></Version>
+      <Password></Password>
+      <ProjectType>StandardProject</ProjectType>
+      <EnableReferredLibrariesExport>true</EnableReferredLibrariesExport>
+      <PL>ja-JP</PL>
+    </SolutionModel>
+  </data>
+</data>

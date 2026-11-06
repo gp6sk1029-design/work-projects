@@ -1,0 +1,27 @@
+{
+  "solution": "3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I",
+  "project": "C:\\OMRON\\Data\\Solution\\6cb83995-6d0c-45b5-ace2-b96278ba04c8",
+  "closed_state": "Sky画像でプロジェクト一覧を直前確認",
+  "backup": "C:\\Users\\SEIGI-N13\\work-projects\\outputs\\destacker-comments-20261105\\reconcile\\internal-metadata-before_20261105T113232Z_385038.zip",
+  "backup_files": 423,
+  "before_sha": "d6291985f5ff3fdf6ea130bc88f8131bc731951a2be0573b3ae4fbd1f0c065a0",
+  "after_sha": "b39252a91cecd5d3bcfbbfa6e0c4783201884e6f3c8617feb6a15b541505fe80",
+  "changed": [
+    {
+      "part": "6cb83995-6d0c-45b5-ace2-b96278ba04c8.oem",
+      "before_sha": "84cc3bf2cc16d226a5c1764bd3ccd8d3e7122222d4006df7be29ea689a69298b",
+      "after_sha": "9f382096d3cdbd633f3b6cb68a173a1db3f9dc56371f729fd94045613ac65f2d"
+    },
+    {
+      "part": "6cb83995-6d0c-45b5-ace2-b96278ba04c8.xml",
+      "before_sha": "ad1627834f9439088248e0a144f252fc19fc46dba47903256d527a9c87eb1bdf",
+      "after_sha": "f27d809ce05340355d80dc74b705f9c35e48d3d761b931178797db0b88388f95"
+    }
+  ],
+  "all_other_files_unchanged": true,
+  "comments_control_declarations_unchanged": true,
+  "comment_display_user_verified": true,
+  "list_timestamp_display_verified": false,
+  "DateModified": "2026-11-05T20:30:13.766787+09:00",
+  "official_application_save": false
+}

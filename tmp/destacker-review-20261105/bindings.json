@@ -1,0 +1,591 @@
+{
+  "Auto_Com_Start": [
+    {
+      "part": "b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "Auto_Com_Start",
+        "G": "VAR_EXTERNAL",
+        "Com": "共通ユニット自動運転開始"
+      }
+    },
+    {
+      "part": "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "Auto_Com_Start",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "Auto_Com_Start",
+        "G": "VAR_GLOBAL",
+        "Com": "共通ユニット自動運転開始"
+      }
+    }
+  ],
+  "Destacker_End": [
+    {
+      "part": "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "Destacker_End",
+        "G": "VAR_EXTERNAL",
+        "Com": "段バラシ完了"
+      }
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "Destacker_End",
+        "G": "VAR_GLOBAL",
+        "Com": "段バラシ完了"
+      }
+    }
+  ],
+  "Destacker_Error": [
+    {
+      "part": "b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "Destacker_Error",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "part": "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "Destacker_Error",
+        "G": "VAR_EXTERNAL",
+        "Com": "コンテナ方向確認"
+      }
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "Destacker_Error",
+        "G": "VAR_GLOBAL",
+        "Com": "コンテナ方向確認"
+      }
+    }
+  ],
+  "Destacker_M": [
+    {
+      "part": "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "fields": {
+        "D": "ARRAY[0..99] OF Bool",
+        "N": "Destacker_M",
+        "G": "VAR_EXTERNAL",
+        "Com": "段バラシ："
+      }
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "fields": {
+        "D": "ARRAY[0..99] OF Bool",
+        "N": "Destacker_M",
+        "G": "VAR_GLOBAL",
+        "Com": "段バラシ：",
+        "EC": "<ECs><EC EK=\"[5]\" C=\"②初動 段バラシセイフティPos  無\" /><EC EK=\"[4]\" C=\"①初動 段バラシセイフティPos  有\" /><EC EK=\"[2]\" C=\"【Y1203】段バラシ爪 \" /><EC EK=\"[3]\" C=\"初動 判定\" /><EC EK=\"[6]\" C=\"初動 段バラシセイフティPos  無\" /></ECs>"
+      }
+    }
+  ],
+  "HMI_RCON2_1_OUT_TargetPos": [
+    {
+      "part": "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "fields": {
+        "D": "ARRAY[0..99] OF LREAL",
+        "N": "HMI_RCON2_1_OUT_TargetPos",
+        "G": "VAR_EXTERNAL",
+        "Com": "段バラシ 目標位置 [mm]"
+      }
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "fields": {
+        "D": "ARRAY[0..99] OF LREAL",
+        "N": "HMI_RCON2_1_OUT_TargetPos",
+        "G": "VAR_GLOBAL",
+        "Com": "段バラシ 目標位置 [mm]",
+        "EC": "<ECs><EC EK=\"[1]\" C=\"①④セイフティ・排出 Pos\" /><EC EK=\"[2]\" C=\"②1段目 Pos\" /><EC EK=\"[3]\" C=\"③2段目 Pos\" /></ECs>"
+      }
+    }
+  ],
+  "In_SenCY_Empty_Container_CY_H": [
+    {
+      "part": "9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "In_SenCY_Empty_Container_CY_H",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "In_SenCY_Empty_Container_CY_H",
+        "AT": "ECAT://node#6/Read input 1st word/In Bit10",
+        "G": "VAR_GLOBAL",
+        "Com": "【X1010】空コンテナ送り 戻"
+      }
+    }
+  ],
+  "In_Sen_Container_Arrival": [
+    {
+      "part": "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "In_Sen_Container_Arrival",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "part": "9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "In_Sen_Container_Arrival",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "In_Sen_Container_Arrival",
+        "AT": "ECAT://node#6/Read input 1st word/In Bit03",
+        "G": "VAR_GLOBAL",
+        "Com": "【X1003】コンテナ到着"
+      }
+    }
+  ],
+  "In_Sen_Container_Direction_Check": [
+    {
+      "part": "9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "In_Sen_Container_Direction_Check",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "In_Sen_Container_Direction_Check",
+        "AT": "ECAT://node#6/Read input 1st word/In Bit04",
+        "G": "VAR_GLOBAL",
+        "Com": "【X1004】コンテナ方向確認"
+      }
+    }
+  ],
+  "In_Sen_Destacker_Stage_01_Exist": [
+    {
+      "part": "9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "In_Sen_Destacker_Stage_01_Exist",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "In_Sen_Destacker_Stage_01_Exist",
+        "AT": "ECAT://node#6/Read input 1st word/In Bit01",
+        "G": "VAR_GLOBAL",
+        "Com": "【X1001】段バラシ1段目有"
+      }
+    }
+  ],
+  "In_Sen_Destacker_Stage_02_Exist": [
+    {
+      "part": "9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "In_Sen_Destacker_Stage_02_Exist",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "In_Sen_Destacker_Stage_02_Exist",
+        "AT": "ECAT://node#6/Read input 1st word/In Bit02",
+        "G": "VAR_GLOBAL",
+        "Com": "【X1002】段バラシ2段目有"
+      }
+    }
+  ],
+  "In_Sen_Supply_Container_Exist": [
+    {
+      "part": "9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "In_Sen_Supply_Container_Exist",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "In_Sen_Supply_Container_Exist",
+        "AT": "ECAT://node#6/Read input 1st word/In Bit00",
+        "G": "VAR_GLOBAL",
+        "Com": "【X1000】供給部コンテナ有"
+      }
+    }
+  ],
+  "Pause": [
+    {
+      "part": "b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "fields": {
+        "D": "ARRAY[0..99] OF Bool",
+        "N": "Pause",
+        "G": "VAR_EXTERNAL",
+        "EC": "<ECs><EC EK=\"[3]\" C=\"FH A(左側) ST1\" /><EC EK=\"[9]\" C=\"FH A(左側) ST5\" /><EC EK=\"[10]\" C=\"FH B(右側) ST1\" /><EC EK=\"[11]\" C=\"FH B(右側) ST5\" /><EC EK=\"[12]\" C=\"A(左側) ST6 反転2 ワーク不一致\" /></ECs>"
+      }
+    },
+    {
+      "part": "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "fields": {
+        "D": "ARRAY[0..99] OF Bool",
+        "N": "Pause",
+        "G": "VAR_EXTERNAL",
+        "EC": "<ECs><EC EK=\"[3]\" C=\"FH A(左側) ST1\" /><EC EK=\"[9]\" C=\"FH A(左側) ST5\" /><EC EK=\"[10]\" C=\"FH B(右側) ST1\" /><EC EK=\"[11]\" C=\"FH B(右側) ST5\" /><EC EK=\"[12]\" C=\"A(左側) ST6 反転2 ワーク不一致\" /></ECs>"
+      }
+    },
+    {
+      "part": "a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "fields": {
+        "D": "ARRAY[0..99] OF Bool",
+        "N": "Pause",
+        "G": "VAR_EXTERNAL",
+        "EC": "<ECs><EC EK=\"[3]\" C=\"FH A(左側) ST1\" /><EC EK=\"[9]\" C=\"FH A(左側) ST5\" /><EC EK=\"[10]\" C=\"FH B(右側) ST1\" /><EC EK=\"[11]\" C=\"FH B(右側) ST5\" /><EC EK=\"[12]\" C=\"A(左側) ST6 反転2 ワーク不一致\" /></ECs>"
+      }
+    },
+    {
+      "part": "9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "fields": {
+        "D": "ARRAY[0..99] OF Bool",
+        "N": "Pause",
+        "G": "VAR_EXTERNAL",
+        "Com": "一時停止",
+        "EC": "<ECs><EC EK=\"[3]\" C=\"FH A(左側) ST1\" /><EC EK=\"[9]\" C=\"FH A(左側) ST5\" /><EC EK=\"[10]\" C=\"FH B(右側) ST1\" /><EC EK=\"[11]\" C=\"FH B(右側) ST5\" /><EC EK=\"[12]\" C=\"A(左側) ST6 反転2 ワーク不一致\" /></ECs>"
+      }
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "fields": {
+        "D": "ARRAY[0..99] OF Bool",
+        "N": "Pause",
+        "G": "VAR_GLOBAL",
+        "Com": "一時停止：",
+        "EC": "<ECs><EC EK=\"[1]\" C=\"全体\" /><EC EK=\"[2]\" C=\"コンベア＆ドアセンサ\" /><EC EK=\"[3]\" C=\"FH A(左側) ST1\" /><EC EK=\"[4]\" C=\"A(左側)検査コンベア ワーク不一致\" /><EC EK=\"[5]\" C=\"PCON1 1\" /><EC EK=\"[6]\" C=\"GT2 エラー\" /><EC EK=\"[7]\" C=\"NG1仕分けエラー\" /><EC EK=\"[8]\" C=\"反転1エラー\" /><EC EK=\"[9]\" C=\"FH A(左側) ST5\" /><EC EK=\"[10]\" C=\"FH B(右側) ST1\" /><EC EK=\"[11]\" C=\"FH B(右側) ST5\" /><EC EK=\"[12]\" C=\"A(左側) ST6 反転2 ワーク不一致\" /><EC EK=\"[13]\" C=\"ST7 排出前ワーク不一致エラー\" /></ECs>"
+      }
+    }
+  ],
+  "RCON2_1_ActualPos_mm": [
+    {
+      "part": "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "fields": {
+        "D": "LREAL",
+        "N": "RCON2_1_ActualPos_mm",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "part": "a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "fields": {
+        "D": "LREAL",
+        "N": "RCON2_1_ActualPos_mm",
+        "G": "VAR_EXTERNAL",
+        "Com": "現在位置 [mm]",
+        "Const": "0",
+        "RO": "0"
+      }
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "fields": {
+        "D": "LREAL",
+        "N": "RCON2_1_ActualPos_mm",
+        "G": "VAR_GLOBAL",
+        "Com": "現在位置 [mm]"
+      }
+    }
+  ],
+  "Retry": [
+    {
+      "part": "b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+      "fields": {
+        "D": "ARRAY[0..99] OF BOOL",
+        "N": "Retry",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "part": "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "fields": {
+        "D": "ARRAY[0..99] OF BOOL",
+        "N": "Retry",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "part": "a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "fields": {
+        "D": "ARRAY[0..99] OF BOOL",
+        "N": "Retry",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "fields": {
+        "D": "ARRAY[0..99] OF BOOL",
+        "N": "Retry",
+        "G": "VAR_GLOBAL",
+        "Com": "再試行：",
+        "EC": "<ECs><EC EK=\"[1]\" C=\"データ移動前 ワーク確\" /><EC EK=\"[4]\" C=\"ST3 検査前ワーク不一致エラー\" /><EC EK=\"[5]\" C=\"RCON1_1 機器異常\" /><EC EK=\"[6]\" C=\"A(左側) ST4 ワーク不一致エラー\" /><EC EK=\"[7]\" C=\"Stm A Axis000 絶対値位置決め エラー\" /><EC EK=\"[9]\" C=\"A(左側) ST6 ワーク不一致エラー\" /><EC EK=\"[10]\" C=\"Stm A Axis001 絶対値位置決め エラー\" /><EC EK=\"[12]\" C=\"RCON1_3 or 5機器異常\" /></ECs>"
+      }
+    }
+  ],
+  "TimerQ_In_SenCY_Empty_Container_CY_H": [
+    {
+      "part": "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "TimerQ_In_SenCY_Empty_Container_CY_H",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "part": "9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "TimerQ_In_SenCY_Empty_Container_CY_H",
+        "G": "VAR_EXTERNAL",
+        "Com": "【X1010】空コンテナ送り 戻"
+      }
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "TimerQ_In_SenCY_Empty_Container_CY_H",
+        "G": "VAR_GLOBAL",
+        "Com": "【X1010】空コンテナ送り 戻"
+      }
+    }
+  ],
+  "TimerQ_In_Sen_Container_Arrival": [
+    {
+      "part": "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "TimerQ_In_Sen_Container_Arrival",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "part": "9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "TimerQ_In_Sen_Container_Arrival",
+        "G": "VAR_EXTERNAL",
+        "Com": "【X1003】コンテナ到着"
+      }
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "TimerQ_In_Sen_Container_Arrival",
+        "G": "VAR_GLOBAL",
+        "Com": "【X1003】コンテナ到着"
+      }
+    }
+  ],
+  "TimerQ_In_Sen_Container_Direction_Check": [
+    {
+      "part": "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "TimerQ_In_Sen_Container_Direction_Check",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "part": "9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "TimerQ_In_Sen_Container_Direction_Check",
+        "G": "VAR_EXTERNAL",
+        "Com": "【X1004】コンテナ方向確認"
+      }
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "TimerQ_In_Sen_Container_Direction_Check",
+        "G": "VAR_GLOBAL",
+        "Com": "【X1004】コンテナ方向確認"
+      }
+    }
+  ],
+  "TimerQ_In_Sen_Destacker_Stage_01_Exist": [
+    {
+      "part": "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "TimerQ_In_Sen_Destacker_Stage_01_Exist",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "part": "9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "TimerQ_In_Sen_Destacker_Stage_01_Exist",
+        "G": "VAR_EXTERNAL",
+        "Com": "【X1001】段バラシ1段目有"
+      }
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "TimerQ_In_Sen_Destacker_Stage_01_Exist",
+        "G": "VAR_GLOBAL",
+        "Com": "【X1001】段バラシ1段目有"
+      }
+    }
+  ],
+  "TimerQ_In_Sen_Destacker_Stage_02_Exist": [
+    {
+      "part": "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "TimerQ_In_Sen_Destacker_Stage_02_Exist",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "part": "9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "TimerQ_In_Sen_Destacker_Stage_02_Exist",
+        "G": "VAR_EXTERNAL",
+        "Com": "【X1002】段バラシ2段目有"
+      }
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "TimerQ_In_Sen_Destacker_Stage_02_Exist",
+        "G": "VAR_GLOBAL",
+        "Com": "【X1002】段バラシ2段目有"
+      }
+    }
+  ],
+  "TimerQ_In_Sen_Supply_Container_Exist": [
+    {
+      "part": "86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "TimerQ_In_Sen_Supply_Container_Exist",
+        "G": "VAR_EXTERNAL"
+      }
+    },
+    {
+      "part": "9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "TimerQ_In_Sen_Supply_Container_Exist",
+        "G": "VAR_EXTERNAL",
+        "Com": "【X1000】供給部コンテナ有"
+      }
+    },
+    {
+      "part": "f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "fields": {
+        "D": "BOOL",
+        "N": "TimerQ_In_Sen_Supply_Container_Exist",
+        "G": "VAR_GLOBAL",
+        "Com": "【X1000】供給部コンテナ有"
+      }
+    }
+  ],
+  "Timer_In_SenCY_Empty_Container_CY_H": [
+    {
+      "part": "9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "fields": {
+        "D": "TON",
+        "N": "Timer_In_SenCY_Empty_Container_CY_H",
+        "G": "VAR"
+      }
+    }
+  ],
+  "Timer_In_Sen_Container_Arrival": [
+    {
+      "part": "9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "fields": {
+        "D": "TON",
+        "N": "Timer_In_Sen_Container_Arrival",
+        "G": "VAR"
+      }
+    }
+  ],
+  "Timer_In_Sen_Container_Direction_Check": [
+    {
+      "part": "9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "fields": {
+        "D": "TON",
+        "N": "Timer_In_Sen_Container_Direction_Check",
+        "G": "VAR"
+      }
+    }
+  ],
+  "Timer_In_Sen_Destacker_Stage_01_Exist": [
+    {
+      "part": "9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "fields": {
+        "D": "TON",
+        "N": "Timer_In_Sen_Destacker_Stage_01_Exist",
+        "G": "VAR"
+      }
+    }
+  ],
+  "Timer_In_Sen_Destacker_Stage_02_Exist": [
+    {
+      "part": "9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "fields": {
+        "D": "TON",
+        "N": "Timer_In_Sen_Destacker_Stage_02_Exist",
+        "G": "VAR"
+      }
+    }
+  ],
+  "Timer_In_Sen_Supply_Container_Exist": [
+    {
+      "part": "9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "fields": {
+        "D": "TON",
+        "N": "Timer_In_Sen_Supply_Container_Exist",
+        "G": "VAR"
+      }
+    }
+  ]
+}

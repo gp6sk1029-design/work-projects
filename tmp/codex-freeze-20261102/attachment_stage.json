@@ -1,0 +1,275 @@
+{
+  "matched": 166,
+  "event_counts": {
+    "Failed": 11,
+    "Orbit": 59,
+    "Received": 3,
+    "response_routed": 9,
+    "IAB_LIFECYCLE": 3,
+    "Sending": 80,
+    "Reasoning": 1
+  },
+  "recent": [
+    {
+      "time": "2026-11-02T00:49:38.709Z",
+      "file": "codex-desktop-58ba094a-3461-4cfa-83e0-1ff42843b894-24312-t0-i1-003829-0.log",
+      "line": 2637,
+      "event_name": "Orbit",
+      "fields": {
+        "event": "orbit.messaging.stage",
+        "stage": "client.first_response",
+        "outcome": "timeout",
+        "durationMs": "300000.69999999995",
+        "inputTextCharacters": "6"
+      }
+    },
+    {
+      "time": "2026-11-02T00:49:38.710Z",
+      "file": "codex-desktop-58ba094a-3461-4cfa-83e0-1ff42843b894-24312-t0-i1-003829-0.log",
+      "line": 2638,
+      "event_name": "Orbit",
+      "fields": {
+        "event": "orbit.messaging.stage",
+        "stage": "client.round_trip",
+        "outcome": "timeout",
+        "durationMs": "300000.69999999995",
+        "inputTextCharacters": "6"
+      }
+    },
+    {
+      "time": "2026-11-02T00:50:04.333Z",
+      "file": "codex-desktop-58ba094a-3461-4cfa-83e0-1ff42843b894-24312-t0-i1-003829-0.log",
+      "line": 2750,
+      "event_name": "Orbit",
+      "fields": {
+        "event": "orbit.messaging.stage",
+        "stage": "client.first_response",
+        "outcome": "timeout",
+        "durationMs": "300015.8999999999",
+        "inputTextCharacters": "17"
+      }
+    },
+    {
+      "time": "2026-11-02T00:50:04.334Z",
+      "file": "codex-desktop-58ba094a-3461-4cfa-83e0-1ff42843b894-24312-t0-i1-003829-0.log",
+      "line": 2751,
+      "event_name": "Orbit",
+      "fields": {
+        "event": "orbit.messaging.stage",
+        "stage": "client.round_trip",
+        "outcome": "timeout",
+        "durationMs": "300015.8999999999",
+        "inputTextCharacters": "17"
+      }
+    },
+    {
+      "time": "2026-11-02T00:52:32.929Z",
+      "file": "codex-desktop-58ba094a-3461-4cfa-83e0-1ff42843b894-24312-t0-i1-003829-0.log",
+      "line": 2877,
+      "event_name": "Orbit",
+      "fields": {
+        "event": "orbit.messaging.stage",
+        "stage": "client.first_response",
+        "outcome": "timeout",
+        "durationMs": "300811.6000000001",
+        "inputTextCharacters": "7"
+      }
+    },
+    {
+      "time": "2026-11-02T00:52:32.929Z",
+      "file": "codex-desktop-58ba094a-3461-4cfa-83e0-1ff42843b894-24312-t0-i1-003829-0.log",
+      "line": 2878,
+      "event_name": "Orbit",
+      "fields": {
+        "event": "orbit.messaging.stage",
+        "stage": "client.round_trip",
+        "outcome": "timeout",
+        "durationMs": "300811.6000000001",
+        "inputTextCharacters": "7"
+      }
+    },
+    {
+      "time": "2026-11-02T01:13:16.205Z",
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-34424-t0-i1-011311-0.log",
+      "line": 21,
+      "event_name": "Failed",
+      "fields": {
+        "errorMessage": "\"Codex app-server is not available\"",
+        "errorName": "AppServerTransportNotSentError"
+      }
+    },
+    {
+      "time": "2026-11-02T01:14:52.325Z",
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-34424-t0-i1-011311-0.log",
+      "line": 499,
+      "event_name": "IAB_LIFECYCLE",
+      "fields": {
+        "conversationId": "client-new-thread:e93b6f94-f550-46bd-b5fe-26bd73d3d5db"
+      }
+    },
+    {
+      "time": "2026-11-02T01:14:56.346Z",
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-34424-t0-i1-011311-0.log",
+      "line": 531,
+      "event_name": "response_routed",
+      "fields": {
+        "method": "turn/start",
+        "durationMs": "95",
+        "errorCode": "null",
+        "conversationId": "01a1999f-3c62-7db1-bff0-7c8693d5b1ee"
+      }
+    },
+    {
+      "time": "2026-11-02T01:19:32.476Z",
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-34424-t0-i1-011311-0.log",
+      "line": 955,
+      "event_name": "response_routed",
+      "fields": {
+        "method": "turn/start",
+        "durationMs": "80",
+        "errorCode": "null",
+        "conversationId": "01a1999f-3c62-7db1-bff0-7c8693d5b1ee"
+      }
+    },
+    {
+      "time": "2026-11-02T01:19:41.332Z",
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-34424-t0-i1-011311-0.log",
+      "line": 1002,
+      "event_name": "Sending",
+      "fields": {
+        "success": "true"
+      }
+    },
+    {
+      "time": "2026-11-02T01:25:33.775Z",
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-34424-t0-i1-011311-0.log",
+      "line": 1360,
+      "event_name": "response_routed",
+      "fields": {
+        "method": "turn/start",
+        "durationMs": "65",
+        "errorCode": "null",
+        "conversationId": "01a1999f-3c62-7db1-bff0-7c8693d5b1ee"
+      }
+    },
+    {
+      "time": "2026-11-02T01:28:01.770Z",
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-34424-t0-i1-011311-0.log",
+      "line": 1537,
+      "event_name": "response_routed",
+      "fields": {
+        "method": "turn/start",
+        "durationMs": "50",
+        "errorCode": "null",
+        "conversationId": "01a1999f-3c62-7db1-bff0-7c8693d5b1ee"
+      }
+    },
+    {
+      "time": "2026-11-02T01:31:09.928Z",
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-34424-t0-i1-011311-0.log",
+      "line": 1693,
+      "event_name": "Sending",
+      "fields": {
+        "success": "true"
+      }
+    },
+    {
+      "time": "2026-11-02T01:34:10.845Z",
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-34424-t0-i1-011311-0.log",
+      "line": 1857,
+      "event_name": "Failed",
+      "fields": {
+        "errorMessage": "\"ENOENT: no such file or directory, open 'C:\\\\Users\\\\SEIGI-~1\\\\AppData\\\\Local\\\\Temp\\\\codex-clipboard-f0d52bf9-1c89-4fc5-b0ff-097a61e88e89.png'\"",
+        "errorName": "Error",
+        "errorCode": "ENOENT"
+      }
+    },
+    {
+      "time": "2026-11-02T01:34:51.968Z",
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-34424-t0-i1-011311-0.log",
+      "line": 1927,
+      "event_name": "response_routed",
+      "fields": {
+        "method": "turn/start",
+        "durationMs": "47",
+        "errorCode": "null",
+        "conversationId": "01a1999f-3c62-7db1-bff0-7c8693d5b1ee"
+      }
+    },
+    {
+      "time": "2026-11-02T01:35:06.083Z",
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-34424-t0-i1-011311-0.log",
+      "line": 1955,
+      "event_name": "Sending",
+      "fields": {
+        "success": "true"
+      }
+    },
+    {
+      "time": "2026-11-02T01:35:09.583Z",
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-34424-t0-i1-011311-0.log",
+      "line": 1958,
+      "event_name": "Sending",
+      "fields": {
+        "success": "true"
+      }
+    },
+    {
+      "time": "2026-11-02T01:35:09.611Z",
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-34424-t0-i1-011311-0.log",
+      "line": 1961,
+      "event_name": "Sending",
+      "fields": {
+        "success": "true"
+      }
+    },
+    {
+      "time": "2026-11-02T01:35:09.645Z",
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-34424-t0-i1-011311-0.log",
+      "line": 1964,
+      "event_name": "Sending",
+      "fields": {
+        "success": "true"
+      }
+    },
+    {
+      "time": "2026-11-02T01:35:36.744Z",
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-34424-t0-i1-011311-0.log",
+      "line": 2011,
+      "event_name": "Sending",
+      "fields": {
+        "success": "true"
+      }
+    },
+    {
+      "time": "2026-11-02T01:35:36.858Z",
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-34424-t0-i1-011311-0.log",
+      "line": 2014,
+      "event_name": "Sending",
+      "fields": {
+        "success": "true"
+      }
+    },
+    {
+      "time": "2026-11-02T01:37:11.670Z",
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-34424-t0-i1-011311-0.log",
+      "line": 2203,
+      "event_name": "response_routed",
+      "fields": {
+        "method": "turn/start",
+        "durationMs": "48",
+        "errorCode": "null",
+        "conversationId": "01a1999f-3c62-7db1-bff0-7c8693d5b1ee"
+      }
+    },
+    {
+      "time": "2026-11-02T01:37:20.500Z",
+      "file": "codex-desktop-9b470ae9-4d39-4c3b-bfee-9fff18034fd3-34424-t0-i1-011311-0.log",
+      "line": 2229,
+      "event_name": "Reasoning",
+      "fields": {
+        "threadId": "01a1999f-3c62-7db1-bff0-7c8693d5b1ee"
+      }
+    }
+  ]
+}

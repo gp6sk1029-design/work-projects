@@ -1,0 +1,70 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261102A.smc2",
+  "sha256": "53344be29eb299c1c7e53bb9197cdd3a9646800f072f8292b2fffb7085fecf33",
+  "hits": [
+    {
+      "part": "a171e655-68f3-4650-8b9f-6d33ff2eccf1/20a6b651-4c34-401a-965e-db3e18414d5c.xml",
+      "count": 2,
+      "samples": [
+        "te=\"500\" />\r\n    <Variable DataTypeName=\"Boolean(99)\" Name=\"Destacker_M\" Address=\"new_Controller_0.Destacker_M\" Length=\"\" Retained=\"false\" InitialValue=\"\" Comment=\"段バラシ：\" ",
+        "=\"Boolean(99)\" Name=\"Destacker_M\" Address=\"new_Controller_0.Destacker_M\" Length=\"\" Retained=\"false\" InitialValue=\"\" Comment=\"段バラシ：\" NetworkPublication=\"NoPublication\" IsRe"
+      ]
+    },
+    {
+      "part": "a171e655-68f3-4650-8b9f-6d33ff2eccf1/4d635fff-69bb-41a0-8d26-1fb52a2b1d50.xml",
+      "count": 0,
+      "samples": []
+    },
+    {
+      "part": "a171e655-68f3-4650-8b9f-6d33ff2eccf1/5e9126d6-8f87-494e-bf44-c84712e3509e.NexBuildVerifierGroup",
+      "count": 1,
+      "samples": [
+        "Ofstringbase64Binary><a:KeyValueOfstringbase64Binary><a:Key>Destacker_M</a:Key><a:Value>OpU99ylPRuPGFb3dlVuvBA==</a:Value></a:KeyValueOfstringbase64Binary><a:KeyValueOfstr"
+      ]
+    },
+    {
+      "part": "a171e655-68f3-4650-8b9f-6d33ff2eccf1/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "count": 1,
+      "samples": [
+        "N=Auto_Com_Start\tG=VAR_EXTERNAL\r\n++D=ARRAY[0..99] OF Bool\tN=Destacker_M\tG=VAR_EXTERNAL\tCom=段バラシ：\r\n++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Sep_Claw_F_Auto\tG=VAR_EXTERNAL\r\n++D=BO"
+      ]
+    },
+    {
+      "part": "a171e655-68f3-4650-8b9f-6d33ff2eccf1/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "count": 0,
+      "samples": []
+    },
+    {
+      "part": "a171e655-68f3-4650-8b9f-6d33ff2eccf1/a5955a6c-38d8-4005-8602-2146b1eae66c.xml",
+      "count": 1,
+      "samples": [
+        "ogram_c9b606ca1d0743bb996a98de19ddafa1_0\" ProgramBlockName=\"Destacker_段バラシ_0\" FirstNumber=\"-1\" Count=\"0\" /></CxilDivisionInformation></data>"
+      ]
+    },
+    {
+      "part": "a171e655-68f3-4650-8b9f-6d33ff2eccf1/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "count": 1,
+      "samples": [
+        "t\tG=VAR_GLOBAL\tCom=共通ユニット自動運転開始\r\n++D=ARRAY[0..99] OF Bool\tN=Destacker_M\tG=VAR_GLOBAL\tCom=段バラシ：\tEC=<ECs><EC EK=\"[4]\" C=\"初動 コンテナ無\" /><EC EK=\"[5]\" C=\"初動 コンテナ有\" /></ECs>\r\n++D="
+      ]
+    },
+    {
+      "part": "a171e655-68f3-4650-8b9f-6d33ff2eccf1/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml",
+      "count": 61,
+      "samples": [
+        "\":\"LD\",\"Var\":\"Auto_Com_Start\"},{\"__type\":\"LD\",\"Ix\":1,\"Var\":\"Destacker_M[1]\",\"Y\":1},{\"__type\":\"ST\",\"Ix\":2,\"Var\":\"Destacker_M[1]\",\"X\":1}],\"LRI\":3,\"RRI\":4,\"VLs\":[{\"Ix\":5,\"X\":",
+        ",\"Var\":\"Destacker_M[1]\",\"Y\":1},{\"__type\":\"ST\",\"Ix\":2,\"Var\":\"Destacker_M[1]\",\"X\":1}],\"LRI\":3,\"RRI\":4,\"VLs\":[{\"Ix\":5,\"X\":1}]}\r\n{\"CLs\":[{\"__type\":\"LD\",\"Var\":\"Destacker_M[1]\"}",
+        "I\":4,\"VLs\":[{\"Ix\":5,\"X\":1}]}\r\n{\"CLs\":[{\"__type\":\"LD\",\"Var\":\"Destacker_M[1]\"},{\"__type\":\"LD\",\"Ix\":3,\"Not\":true,\"Var\":\"TimerQ_In_Sen_Supply_Container_Exist\",\"X\":1},{\"__type\"",
+        "Supply_Container_Exist\",\"X\":1},{\"__type\":\"LD\",\"Ix\":1,\"Var\":\"Destacker_M[2]\",\"Y\":1},{\"__type\":\"HL\",\"X\":1,\"Y\":1},{\"__type\":\"LD\",\"Ix\":2,\"Not\":true,\"Var\":\"Destacker_M[3]\",\"X\":"
+      ]
+    },
+    {
+      "part": "a171e655-68f3-4650-8b9f-6d33ff2eccf1/a171e655-68f3-4650-8b9f-6d33ff2eccf1.oem",
+      "count": 2,
+      "samples": [
+        "pe=\"Ladder\" id=\"fb95842e-fdb2-46b7-9a81-473d52d66cbf\" name=\"Destacker_段バラシ\" version=\"0\" dateCreated=\"10/30/2026 11:58:53\" dateLastModified=\"11/02/2026 17:00:47\" trackingId=\"c",
+        "0:47\" trackingId=\"c9b606ca-1d07-43bb-996a-98de19ddafa1\" DN=\"Destacker_段バラシ\">\r\n                        <AccessInfos />\r\n                        <ChildEntities>\r\n              "
+      ]
+    }
+  ]
+}

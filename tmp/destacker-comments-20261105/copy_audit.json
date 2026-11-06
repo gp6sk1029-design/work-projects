@@ -1,0 +1,225 @@
+{
+  "projects": [
+    {
+      "name": "3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I_3",
+      "directory": "C:\\OMRON\\Data\\Solution\\34ab5ff4-5d12-403b-be7a-020dbec4e028",
+      "sha": "1c8a337632e3c25a2d2b7f283d86a66697eed156665a95c4ee4ec6ccbf337b04",
+      "comparison": {
+        "source_sha256": "1c8a337632e3c25a2d2b7f283d86a66697eed156665a95c4ee4ec6ccbf337b04",
+        "target_sha256": "7f5c8d85ed8b770849cb284e7725650d6b3c1d2a564fa59ac15da856433e0bdb",
+        "sections": [
+          {
+            "key": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+            "row_count_changed": false,
+            "logic_rows": [],
+            "comment_rows": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28
+            ]
+          }
+        ],
+        "control_difference": false,
+        "variable_declarations_equal": true,
+        "comment_rows": 29
+      },
+      "first_comment": "#【01 初回確認】\r\n初回未完了・処理中でなければ開始",
+      "check_comment": "コンテナ有無・方向確認",
+      "ladder_mtime": "2026-11-04T14:33:32.001091"
+    },
+    {
+      "name": "3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I",
+      "directory": "C:\\OMRON\\Data\\Solution\\6cb83995-6d0c-45b5-ace2-b96278ba04c8",
+      "sha": "d6291985f5ff3fdf6ea130bc88f8131bc731951a2be0573b3ae4fbd1f0c065a0",
+      "comparison": {
+        "source_sha256": "d6291985f5ff3fdf6ea130bc88f8131bc731951a2be0573b3ae4fbd1f0c065a0",
+        "target_sha256": "7f5c8d85ed8b770849cb284e7725650d6b3c1d2a564fa59ac15da856433e0bdb",
+        "sections": [],
+        "control_difference": false,
+        "variable_declarations_equal": true,
+        "comment_rows": 0
+      },
+      "first_comment": "#【01 初回確認】\r\n\r\n【開始条件】\r\n・初回確認が未完了\r\n・初回処理中でない\r\n\r\nM[1]の自己保持は処理中条件を迂回\r\n開始 → 2行：初回の爪保持",
+      "check_comment": "【コンテナ有無・方向の確認】\r\n15行の送り戻り完了から確認開始\r\nRetry[13]解除時も確認をやり直す\r\n\r\n確認OKの条件\r\n【X1000】：供給部コンテナ有＝OFF\r\n【X1010】：空コンテナ送り戻＝ON\r\n【X1004】：コンテナ方向確認＝ON\r\n【X1001】：段バラシ1段目有＝ON\r\n\r\n確認OK →17行：1段目移動\r\n方向NG／1段目なしが5秒 →確認異常",
+      "ladder_mtime": "2026-11-05T20:05:52.174453"
+    },
+    {
+      "name": "3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I_2",
+      "directory": "C:\\OMRON\\Data\\Solution\\863cb204-7ed9-4586-8de3-8a9a0bba56e8",
+      "sha": "c8ceed34025757803b407372031ba1f023a75bc644cf9986a83e077b429db4d6",
+      "comparison": {
+        "source_sha256": "c8ceed34025757803b407372031ba1f023a75bc644cf9986a83e077b429db4d6",
+        "target_sha256": "7f5c8d85ed8b770849cb284e7725650d6b3c1d2a564fa59ac15da856433e0bdb",
+        "sections": [
+          {
+            "key": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+            "row_count_changed": false,
+            "logic_rows": [],
+            "comment_rows": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28
+            ]
+          }
+        ],
+        "control_difference": false,
+        "variable_declarations_equal": true,
+        "comment_rows": 29
+      },
+      "first_comment": "#【01 初回確認】\r\n初回未完了・処理中でなければ開始",
+      "check_comment": "コンテナ有無・方向確認",
+      "ladder_mtime": "2026-11-04T14:33:32.001091"
+    },
+    {
+      "name": "3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I_1",
+      "directory": "C:\\OMRON\\Data\\Solution\\a5bff498-25fd-4eb4-ac66-a75a1cf1564a",
+      "sha": "35dce991b7afd7e41b6db4c41035382ad2959e7db413b8c9adf190b7affae670",
+      "comparison": {
+        "source_sha256": "35dce991b7afd7e41b6db4c41035382ad2959e7db413b8c9adf190b7affae670",
+        "target_sha256": "7f5c8d85ed8b770849cb284e7725650d6b3c1d2a564fa59ac15da856433e0bdb",
+        "sections": [
+          {
+            "key": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+            "row_count_changed": false,
+            "logic_rows": [],
+            "comment_rows": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28
+            ]
+          }
+        ],
+        "control_difference": false,
+        "variable_declarations_equal": true,
+        "comment_rows": 29
+      },
+      "first_comment": "#【01 初回確認】\r\n初回未完了・処理中でなければ開始",
+      "check_comment": "コンテナ有無・方向確認",
+      "ladder_mtime": "2026-11-04T14:33:32.001091"
+    }
+  ],
+  "external_sha": "1a69caa301b435e05785041f91f759e216faf10cef691512bfe49f7c4cb0d06c",
+  "external_comparison": {
+    "source_sha256": "1a69caa301b435e05785041f91f759e216faf10cef691512bfe49f7c4cb0d06c",
+    "target_sha256": "7f5c8d85ed8b770849cb284e7725650d6b3c1d2a564fa59ac15da856433e0bdb",
+    "sections": [
+      {
+        "key": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+        "row_count_changed": false,
+        "logic_rows": [],
+        "comment_rows": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ]
+      }
+    ],
+    "control_difference": false,
+    "variable_declarations_equal": true,
+    "comment_rows": 29
+  }
+}

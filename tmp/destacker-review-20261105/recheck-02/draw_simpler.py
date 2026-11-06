@@ -1,0 +1,38 @@
+from pathlib import Path
+from PIL import Image,ImageDraw,ImageFont
+out=Path('C:/Users/SEIGI-N13/work-projects/outputs/destacker-recheck-20261105')
+im=Image.new('RGB',(1740,1230),'white');d=ImageDraw.Draw(im);font='C:/Windows/Fonts/meiryo.ttc';ink='#17212b';blue='#0068a8'
+def text(x,y,t,s=24,color=ink,center=False):d.text((x,y),t,font=ImageFont.truetype(font,s),fill=color,anchor='mt' if center else 'lt')
+def wire(x,y,xx,yy):d.line((x,y,xx,yy),fill=ink,width=3)
+def contact(x,y,t,nc=False,w=110,color=ink):
+    a=x+w/2-13;b=x+w/2+13;wire(x,y,a,y);wire(b,y,x+w,y)
+    d.line((a,y-20,a,y+20),fill=color,width=3);d.line((b,y-20,b,y+20),fill=color,width=3)
+    if nc:d.line((a-5,y+22,b+5,y-22),fill=color,width=3)
+    text(x+w/2,y-62,t,24,color,True)
+def box(x,y,t,w=160,color=ink):
+    d.rectangle((x,y-38,x+w,y+38),outline=color,width=3)
+    for i,line in enumerate(t.split('\n')):text(x+w/2,y-29+i*29,line,22,color,True)
+def coil(x,y,t):
+    wire(x,y,x+20,y);wire(x+80,y,x+100,y)
+    d.arc((x+20,y-22,x+58,y+22),90,270,fill=ink,width=3);d.arc((x+42,y-22,x+80,y+22),270,450,fill=ink,width=3)
+    text(x+50,y-64,t,24,ink,True)
+text(60,35,'簡素化案：元の「開始保持＋完了」の2段へ近づける',36)
+text(60,100,'箱詰めX軸の例｜M1＝RCON2_2_M[1]｜青：変更する位置・条件',24)
+wire(60,165,60,945);wire(1680,165,1680,945)
+wire(60,230,90,230);box(90,230,'Auto[1]～[3]\n要求OR',240);wire(330,230,370,230)
+box(370,230,'Ready\nAND 許可',190);wire(560,230,600,230)
+contact(600,230,'Done',True);wire(710,230,750,230);contact(750,230,'PEND',color=blue);wire(860,230,900,230)
+box(900,230,'TON[1]\n100ms',150);wire(1050,230,1090,230);box(1090,230,'Up',95);wire(1185,230,1230,230)
+wire(60,350,90,350);contact(90,350,'M1');wire(200,350,1230,350);wire(1230,230,1230,350)
+wire(1230,230,1250,230);contact(1250,230,'許可',w=100);wire(1350,230,1370,230);contact(1370,230,'Done',True,w=100);wire(1470,230,1540,230);coil(1540,230,'M1');wire(1640,230,1680,230)
+text(80,420,'受付する前にPEND ONを既存TONで確認。M1の自己保持はPEND接点を迂回する。',25,blue)
+text(80,505,'完了側：PEND → Up → M1 の順にする。Upの前にM1を置かない。',27,blue)
+wire(60,645,100,645);contact(100,645,'PEND',w=150,color=blue);wire(250,645,350,645);box(350,645,'Up',120,blue);wire(470,645,600,645);contact(600,645,'M1',w=150,color=blue);wire(750,645,910,645)
+wire(60,775,100,775);contact(100,775,'Done',w=150);wire(250,775,910,775);wire(910,645,910,775)
+wire(910,645,1040,645);contact(1040,645,'TON[2].Q',True,w=180);wire(1220,645,1540,645);coil(1540,645,'Done');wire(1640,645,1680,645)
+wire(1380,645,1380,905);wire(1380,905,1470,905);box(1470,905,'TON[2]\n100ms',170)
+text(80,985,'PEND＝RCON2_2_IN_PositionDone／Done＝RCON2_2_MoveDone',24)
+text(80,1035,'許可＝既存RCON2_2_M[3]。283行の未確定な通信・許可条件は、この案では削除しない。',24)
+text(80,1085,'M2の保持行と完了側M2接点を省略。新規変数・新規タイマー・ST追加なし。',24)
+text(80,1160,'提案・未反映｜PEND ON待機から開始、常時実行、起動時M1/Done OFFが前提。実機未検証。',22,color='#445565')
+im.save(out/'05-simpler-proposal.png');print(out/'05-simpler-proposal.png')

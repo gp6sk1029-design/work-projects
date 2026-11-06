@@ -1,0 +1,14 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-comments-20261105\\I_comments.smc2",
+  "source_sha256": "2194920a612d61b00576dad35f8c9a26e276510b5a289a1f70ade9d385abc1bb",
+  "candidate": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-comments-20261105\\I_all_comments.smc2",
+  "candidate_sha256": "7f5c8d85ed8b770849cb284e7725650d6b3c1d2a564fa59ac15da856433e0bdb",
+  "changed_parts": [
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+  ],
+  "unchanged_parts": 209,
+  "comment_only": false,
+  "published": false
+}

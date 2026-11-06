@@ -1,0 +1,104 @@
+{
+  "checks": [
+    {
+      "case": "7行目の安全位置転送",
+      "result": "修正を確認"
+    },
+    {
+      "case": "9行目のX1010 ONで通常入口成立",
+      "result": "修正を確認"
+    },
+    {
+      "case": "11行目M14の保持は移動工程M16で解除",
+      "result": "変更を確認"
+    },
+    {
+      "case": "12行目は確認OKなしでも移動要求",
+      "result": "未対策"
+    },
+    {
+      "case": "8行目の軸完了待ち",
+      "result": "未対策"
+    },
+    {
+      "case": "5→6行で旧完了を流用",
+      "result": "未対策"
+    },
+    {
+      "case": "通常工程中の初回再進入",
+      "result": "未対策"
+    },
+    {
+      "case": "11行目の確認OKがX1010 OFFを要求",
+      "result": "未対策"
+    },
+    {
+      "case": "提案：12行目開始をM15に変更",
+      "result": "OKの2通りで期待一致"
+    },
+    {
+      "case": "提案：11→12行の共通戻り端と確認OK",
+      "result": "4入力の全16組でOKと移動要求が期待一致"
+    },
+    {
+      "case": "提案：6移動の旧Done除外",
+      "result": "各6状態、計36例で期待一致"
+    },
+    {
+      "case": "提案：初回BusyとM26完了保持",
+      "result": "初回待ち保持・初動中再開始禁止・完了後再開始禁止で期待一致"
+    },
+    {
+      "case": "提案：要求ORが切れない2連続移動",
+      "result": "受付2回・新しいPEND OFF→ON後の完了2回"
+    },
+    {
+      "case": "提案：PENDが最初からONのまま",
+      "result": "完了を誤生成しない"
+    }
+  ],
+  "guards": [
+    {
+      "step": 7,
+      "guard": 27,
+      "transition_row": 5
+    },
+    {
+      "step": 8,
+      "guard": 28,
+      "transition_row": 6
+    },
+    {
+      "step": 10,
+      "guard": 29,
+      "transition_row": 8
+    },
+    {
+      "step": 16,
+      "guard": 30,
+      "transition_row": 13
+    },
+    {
+      "step": 21,
+      "guard": 31,
+      "transition_row": 16
+    },
+    {
+      "step": 23,
+      "guard": 32,
+      "transition_row": 18
+    }
+  ],
+  "receiver_model": {
+    "starts": [
+      9,
+      37
+    ],
+    "dones": [
+      17,
+      45
+    ],
+    "dt_ms": 10
+  },
+  "scope": "保存配線の静的条件と提案の限定モデル。実プロジェクト未変更。Start実出力・通信・実機・全工程モデルではない。"
+}

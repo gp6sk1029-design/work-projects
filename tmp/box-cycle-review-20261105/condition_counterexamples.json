@@ -1,0 +1,162 @@
+[
+  {
+    "side": "A",
+    "count": 5,
+    "next_pickup_stalls_without_other_start_origin": true,
+    "frames": [
+      {
+        "BoxPacking_M[19]": true,
+        "BoxPacking_M[20]": true,
+        "BoxPacking_M[21]": false,
+        "BoxPacking_M[43]": false,
+        "BoxPacking_A_Busy": false,
+        "BoxPacking_B_Busy": false
+      },
+      {
+        "BoxPacking_M[19]": false,
+        "BoxPacking_M[20]": false,
+        "BoxPacking_M[21]": false,
+        "BoxPacking_M[43]": false,
+        "BoxPacking_A_Busy": false,
+        "BoxPacking_B_Busy": false
+      },
+      {
+        "BoxPacking_M[19]": false,
+        "BoxPacking_M[20]": false,
+        "BoxPacking_M[21]": false,
+        "BoxPacking_M[43]": false,
+        "BoxPacking_A_Busy": false,
+        "BoxPacking_B_Busy": false
+      },
+      {
+        "BoxPacking_M[19]": false,
+        "BoxPacking_M[20]": false,
+        "BoxPacking_M[21]": false,
+        "BoxPacking_M[43]": false,
+        "BoxPacking_A_Busy": false,
+        "BoxPacking_B_Busy": false
+      }
+    ]
+  },
+  {
+    "side": "A",
+    "count": 75,
+    "next_pickup_stalls_without_other_start_origin": true,
+    "frames": [
+      {
+        "BoxPacking_M[19]": true,
+        "BoxPacking_M[20]": true,
+        "BoxPacking_M[21]": false,
+        "BoxPacking_M[43]": false,
+        "BoxPacking_A_Busy": false,
+        "BoxPacking_B_Busy": false
+      },
+      {
+        "BoxPacking_M[19]": false,
+        "BoxPacking_M[20]": false,
+        "BoxPacking_M[21]": false,
+        "BoxPacking_M[43]": false,
+        "BoxPacking_A_Busy": false,
+        "BoxPacking_B_Busy": false
+      },
+      {
+        "BoxPacking_M[19]": false,
+        "BoxPacking_M[20]": false,
+        "BoxPacking_M[21]": false,
+        "BoxPacking_M[43]": false,
+        "BoxPacking_A_Busy": false,
+        "BoxPacking_B_Busy": false
+      },
+      {
+        "BoxPacking_M[19]": false,
+        "BoxPacking_M[20]": false,
+        "BoxPacking_M[21]": false,
+        "BoxPacking_M[43]": false,
+        "BoxPacking_A_Busy": false,
+        "BoxPacking_B_Busy": false
+      }
+    ]
+  },
+  {
+    "side": "B",
+    "count": 5,
+    "next_pickup_stalls_without_other_start_origin": true,
+    "frames": [
+      {
+        "BoxPacking_M[19]": true,
+        "BoxPacking_M[20]": false,
+        "BoxPacking_M[21]": true,
+        "BoxPacking_M[43]": false,
+        "BoxPacking_A_Busy": false,
+        "BoxPacking_B_Busy": false
+      },
+      {
+        "BoxPacking_M[19]": false,
+        "BoxPacking_M[20]": false,
+        "BoxPacking_M[21]": false,
+        "BoxPacking_M[43]": false,
+        "BoxPacking_A_Busy": false,
+        "BoxPacking_B_Busy": false
+      },
+      {
+        "BoxPacking_M[19]": false,
+        "BoxPacking_M[20]": false,
+        "BoxPacking_M[21]": false,
+        "BoxPacking_M[43]": false,
+        "BoxPacking_A_Busy": false,
+        "BoxPacking_B_Busy": false
+      },
+      {
+        "BoxPacking_M[19]": false,
+        "BoxPacking_M[20]": false,
+        "BoxPacking_M[21]": false,
+        "BoxPacking_M[43]": false,
+        "BoxPacking_A_Busy": false,
+        "BoxPacking_B_Busy": false
+      }
+    ]
+  },
+  {
+    "side": "B",
+    "count": 75,
+    "next_pickup_stalls_without_other_start_origin": true,
+    "frames": [
+      {
+        "BoxPacking_M[19]": true,
+        "BoxPacking_M[20]": false,
+        "BoxPacking_M[21]": true,
+        "BoxPacking_M[43]": false,
+        "BoxPacking_A_Busy": false,
+        "BoxPacking_B_Busy": false
+      },
+      {
+        "BoxPacking_M[19]": false,
+        "BoxPacking_M[20]": false,
+        "BoxPacking_M[21]": false,
+        "BoxPacking_M[43]": false,
+        "BoxPacking_A_Busy": false,
+        "BoxPacking_B_Busy": false
+      },
+      {
+        "BoxPacking_M[19]": false,
+        "BoxPacking_M[20]": false,
+        "BoxPacking_M[21]": false,
+        "BoxPacking_M[43]": false,
+        "BoxPacking_A_Busy": false,
+        "BoxPacking_B_Busy": false
+      },
+      {
+        "BoxPacking_M[19]": false,
+        "BoxPacking_M[20]": false,
+        "BoxPacking_M[21]": false,
+        "BoxPacking_M[43]": false,
+        "BoxPacking_A_Busy": false,
+        "BoxPacking_B_Busy": false
+      }
+    ]
+  },
+  {
+    "initial_entry_possible_with_Auto_Com_Start_held": true,
+    "preconditions": "M2/M7/M12/M14/M18=OFF、X1010のTimerQ=OFF"
+  }
+]

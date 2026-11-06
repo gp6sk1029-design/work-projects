@@ -1,0 +1,102 @@
+{
+  "writers": [
+    {
+      "section": "Destacker_段バラシ",
+      "row": 1,
+      "var": "Out_CYw_Sep_Claw_F_Auto[1]"
+    },
+    {
+      "section": "Destacker_段バラシ",
+      "row": 3,
+      "var": "Out_CYw_Sep_Claw_H_Auto[1]"
+    },
+    {
+      "section": "Destacker_段バラシ",
+      "row": 4,
+      "var": "RCON2_1_Auto[1]"
+    },
+    {
+      "section": "Destacker_段バラシ",
+      "row": 5,
+      "var": "RCON2_1_Auto[2]"
+    },
+    {
+      "section": "Destacker_段バラシ",
+      "row": 6,
+      "var": "Out_CYw_Sep_Claw_F_Auto[2]"
+    },
+    {
+      "section": "Destacker_段バラシ",
+      "row": 7,
+      "var": "RCON2_1_Auto[3]"
+    },
+    {
+      "section": "Destacker_段バラシ",
+      "row": 9,
+      "var": "Out_CYw_Sep_Claw_F_Auto[2]"
+    },
+    {
+      "section": "Destacker_段バラシ",
+      "row": 12,
+      "var": "RCON2_1_Auto[2]"
+    },
+    {
+      "section": "Destacker_段バラシ",
+      "row": 13,
+      "var": "Out_CYw_Sep_Claw_H_Auto[1]"
+    },
+    {
+      "section": "Destacker_段バラシ",
+      "row": 15,
+      "var": "RCON2_1_Auto[3]"
+    },
+    {
+      "section": "Destacker_段バラシ",
+      "row": 16,
+      "var": "Out_CYw_Sep_Claw_F_Auto[3]"
+    },
+    {
+      "section": "Destacker_段バラシ",
+      "row": 17,
+      "var": "RCON2_1_Auto[4]"
+    }
+  ],
+  "definitions": [
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Sep_Claw_F_Auto\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=ARRAY[0..99] OF Bool\tN=RCON2_1_Auto\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Sep_Claw_H_Auto\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "definition": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Sep_Claw_H_Auto\tG=VAR_EXTERNAL\tCom=自動【Y1202】段バラシ爪 戻："
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "definition": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Sep_Claw_F_Auto\tG=VAR_EXTERNAL\tCom=自動【Y1203】段バラシ爪 行："
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "definition": "++D=ARRAY[0..99] OF Bool\tN=RCON2_1_Auto\tG=VAR_EXTERNAL\tCom=自動移動要求\tEC=<ECs><EC EK=\"[1]\" C=\"自動要求1（未接続）\" /><EC EK=\"[2]\" C=\"自動要求2（未接続）\" /><EC EK=\"[3]\" C=\"自動要求3（未接続）\" /></ECs>\tConst=0\tRO=0"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Sep_Claw_H_Auto\tG=VAR_GLOBAL\tCom=自動【Y1202】段バラシ爪 戻：\tEC=<ECs><EC EK=\"[1]\" C=\"コンテナ切り離し\" /></ECs>"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Sep_Claw_F_Auto\tG=VAR_GLOBAL\tCom=自動【Y1203】段バラシ爪 行：\tEC=<ECs><EC EK=\"[1]\" C=\"初動 段バラシ\" /><EC EK=\"[2]\" C=\"コンテナ保持\" /><EC EK=\"[3]\" C=\"2段目以上保持\" /></ECs>"
+    },
+    {
+      "part": "d12ff733-4f31-46ee-8e8a-659eb8891990/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=ARRAY[0..99] OF Bool\tN=RCON2_1_Auto\tG=VAR_GLOBAL\tCom=自動移動要求\tEC=<ECs><EC EK=\"[1]\" C=\"初期動作① セイフティ\" /><EC EK=\"[2]\" C=\"1段目 Pos\" /><EC EK=\"[3]\" C=\"初期動作② セイフティ\" /><EC EK=\"[4]\" C=\"コンテナ排出\" /></ECs>"
+    }
+  ]
+}

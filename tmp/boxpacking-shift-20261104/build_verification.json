@@ -1,0 +1,815 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261104B.smc2",
+  "output": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261104C.smc2",
+  "source_sha256": "0f54fc754dfd2fa643dc2cfeaeb844ddab0d2be338930389402f33189bab3adc",
+  "output_sha256": "7eff9e409610d791c10e182d68ebff31055d0b854ea0532b016fbd1087b648ee",
+  "target": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/6061835d-1e51-4e92-be1f-d546f44764e3.xml",
+  "changed_references": 58,
+  "coil_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "unchanged_rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "preserved_parts": 209,
+  "ZIP_CRC": "正常",
+  "SysmacStudio全体再ビルド": "未実施",
+  "PLC接続と転送": "未実施",
+  "seconds": 0.469,
+  "changes": [
+    {
+      "表示行": 10,
+      "命令": "LD",
+      "要素番号": 3,
+      "旧": "BoxPacking_M[14]",
+      "新": "BoxPacking_M[15]",
+      "path": [
+        10,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 10,
+      "命令": "ST",
+      "要素番号": 4,
+      "旧": "BoxPacking_M[14]",
+      "新": "BoxPacking_M[15]",
+      "path": [
+        10,
+        "CLs",
+        6,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 11,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "BoxPacking_M[14]",
+      "新": "BoxPacking_M[15]",
+      "path": [
+        11,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 11,
+      "命令": "LD",
+      "要素番号": 3,
+      "旧": "BoxPacking_M[15]",
+      "新": "BoxPacking_M[16]",
+      "path": [
+        11,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 11,
+      "命令": "ST",
+      "要素番号": 4,
+      "旧": "BoxPacking_M[15]",
+      "新": "BoxPacking_M[16]",
+      "path": [
+        11,
+        "CLs",
+        5,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 12,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "BoxPacking_M[15]",
+      "新": "BoxPacking_M[16]",
+      "path": [
+        12,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 12,
+      "命令": "LD",
+      "要素番号": 1,
+      "旧": "BoxPacking_M[16]",
+      "新": "BoxPacking_M[17]",
+      "path": [
+        12,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 12,
+      "命令": "ST",
+      "要素番号": 9,
+      "旧": "BoxPacking_M[16]",
+      "新": "BoxPacking_M[17]",
+      "path": [
+        12,
+        "CLs",
+        4,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 12,
+      "命令": "ST",
+      "要素番号": 10,
+      "旧": "BoxPacking_M[17]",
+      "新": "BoxPacking_M[18]",
+      "path": [
+        12,
+        "CLs",
+        7,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 12,
+      "命令": "ST",
+      "要素番号": 11,
+      "旧": "BoxPacking_M[18]",
+      "新": "BoxPacking_M[19]",
+      "path": [
+        12,
+        "CLs",
+        11,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 13,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "BoxPacking_M[16]",
+      "新": "BoxPacking_M[17]",
+      "path": [
+        13,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 13,
+      "命令": "LD",
+      "要素番号": 1,
+      "旧": "BoxPacking_M[17]",
+      "新": "BoxPacking_M[18]",
+      "path": [
+        13,
+        "CLs",
+        1,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 14,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "BoxPacking_M[16]",
+      "新": "BoxPacking_M[17]",
+      "path": [
+        14,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 14,
+      "命令": "LD",
+      "要素番号": 1,
+      "旧": "BoxPacking_M[18]",
+      "新": "BoxPacking_M[19]",
+      "path": [
+        14,
+        "CLs",
+        1,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 15,
+      "命令": "LD",
+      "要素番号": 2,
+      "旧": "BoxPacking_M[17]",
+      "新": "BoxPacking_M[18]",
+      "path": [
+        15,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 15,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "BoxPacking_M[19]",
+      "新": "BoxPacking_M[20]",
+      "path": [
+        15,
+        "CLs",
+        1,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 15,
+      "命令": "ST",
+      "要素番号": 3,
+      "旧": "BoxPacking_M[19]",
+      "新": "BoxPacking_M[20]",
+      "path": [
+        15,
+        "CLs",
+        4,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 16,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "BoxPacking_M[19]",
+      "新": "BoxPacking_M[20]",
+      "path": [
+        16,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 16,
+      "命令": "LD",
+      "要素番号": 3,
+      "旧": "BoxPacking_M[20]",
+      "新": "BoxPacking_M[21]",
+      "path": [
+        16,
+        "CLs",
+        3,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 16,
+      "命令": "ST",
+      "要素番号": 5,
+      "旧": "BoxPacking_M[20]",
+      "新": "BoxPacking_M[21]",
+      "path": [
+        16,
+        "CLs",
+        9,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 17,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "BoxPacking_M[20]",
+      "新": "BoxPacking_M[21]",
+      "path": [
+        17,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 17,
+      "命令": "LD",
+      "要素番号": 3,
+      "旧": "BoxPacking_M[21]",
+      "新": "BoxPacking_M[22]",
+      "path": [
+        17,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 17,
+      "命令": "ST",
+      "要素番号": 4,
+      "旧": "BoxPacking_M[21]",
+      "新": "BoxPacking_M[22]",
+      "path": [
+        17,
+        "CLs",
+        5,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 18,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "BoxPacking_M[20]",
+      "新": "BoxPacking_M[21]",
+      "path": [
+        18,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 18,
+      "命令": "LD",
+      "要素番号": 3,
+      "旧": "BoxPacking_M[22]",
+      "新": "BoxPacking_M[23]",
+      "path": [
+        18,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 18,
+      "命令": "ST",
+      "要素番号": 4,
+      "旧": "BoxPacking_M[22]",
+      "新": "BoxPacking_M[23]",
+      "path": [
+        18,
+        "CLs",
+        5,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 19,
+      "命令": "LD",
+      "要素番号": 4,
+      "旧": "BoxPacking_M[20]",
+      "新": "BoxPacking_M[21]",
+      "path": [
+        19,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 19,
+      "命令": "LD",
+      "要素番号": 1,
+      "旧": "BoxPacking_M[21]",
+      "新": "BoxPacking_M[22]",
+      "path": [
+        19,
+        "CLs",
+        1,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 19,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "BoxPacking_M[22]",
+      "新": "BoxPacking_M[23]",
+      "path": [
+        19,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 19,
+      "命令": "LD",
+      "要素番号": 3,
+      "旧": "BoxPacking_M[23]",
+      "新": "BoxPacking_M[24]",
+      "path": [
+        19,
+        "CLs",
+        3,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 19,
+      "命令": "ST",
+      "要素番号": 5,
+      "旧": "BoxPacking_M[23]",
+      "新": "BoxPacking_M[24]",
+      "path": [
+        19,
+        "CLs",
+        7,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 20,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "BoxPacking_M[19]",
+      "新": "BoxPacking_M[20]",
+      "path": [
+        20,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 20,
+      "命令": "LD",
+      "要素番号": 3,
+      "旧": "BoxPacking_M[20]",
+      "新": "BoxPacking_M[21]",
+      "path": [
+        20,
+        "CLs",
+        3,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 20,
+      "命令": "ST",
+      "要素番号": 5,
+      "旧": "BoxPacking_M[24]",
+      "新": "BoxPacking_M[25]",
+      "path": [
+        20,
+        "CLs",
+        9,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 21,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "BoxPacking_M[20]",
+      "新": "BoxPacking_M[21]",
+      "path": [
+        21,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 21,
+      "命令": "LD",
+      "要素番号": 3,
+      "旧": "BoxPacking_M[25]",
+      "新": "BoxPacking_M[26]",
+      "path": [
+        21,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 21,
+      "命令": "ST",
+      "要素番号": 4,
+      "旧": "BoxPacking_M[25]",
+      "新": "BoxPacking_M[26]",
+      "path": [
+        21,
+        "CLs",
+        5,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 22,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "BoxPacking_M[20]",
+      "新": "BoxPacking_M[21]",
+      "path": [
+        22,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 22,
+      "命令": "LD",
+      "要素番号": 3,
+      "旧": "BoxPacking_M[26]",
+      "新": "BoxPacking_M[27]",
+      "path": [
+        22,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 22,
+      "命令": "ST",
+      "要素番号": 4,
+      "旧": "BoxPacking_M[26]",
+      "新": "BoxPacking_M[27]",
+      "path": [
+        22,
+        "CLs",
+        5,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 23,
+      "命令": "LD",
+      "要素番号": 4,
+      "旧": "BoxPacking_M[20]",
+      "新": "BoxPacking_M[21]",
+      "path": [
+        23,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 23,
+      "命令": "LD",
+      "要素番号": 1,
+      "旧": "BoxPacking_M[21]",
+      "新": "BoxPacking_M[22]",
+      "path": [
+        23,
+        "CLs",
+        1,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 23,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "BoxPacking_M[22]",
+      "新": "BoxPacking_M[23]",
+      "path": [
+        23,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 23,
+      "命令": "LD",
+      "要素番号": 3,
+      "旧": "BoxPacking_M[27]",
+      "新": "BoxPacking_M[28]",
+      "path": [
+        23,
+        "CLs",
+        3,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 23,
+      "命令": "ST",
+      "要素番号": 5,
+      "旧": "BoxPacking_M[27]",
+      "新": "BoxPacking_M[28]",
+      "path": [
+        23,
+        "CLs",
+        7,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 24,
+      "命令": "LD",
+      "要素番号": 1,
+      "旧": "BoxPacking_M[23]",
+      "新": "BoxPacking_M[24]",
+      "path": [
+        24,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 24,
+      "命令": "LD",
+      "要素番号": 2,
+      "旧": "BoxPacking_M[27]",
+      "新": "BoxPacking_M[28]",
+      "path": [
+        24,
+        "CLs",
+        1,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 24,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "BoxPacking_M[28]",
+      "新": "BoxPacking_M[29]",
+      "path": [
+        24,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 24,
+      "命令": "ST",
+      "要素番号": 4,
+      "旧": "BoxPacking_M[28]",
+      "新": "BoxPacking_M[29]",
+      "path": [
+        24,
+        "CLs",
+        5,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 25,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "BoxPacking_M[28]",
+      "新": "BoxPacking_M[29]",
+      "path": [
+        25,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 25,
+      "命令": "LD",
+      "要素番号": 2,
+      "旧": "BoxPacking_M[29]",
+      "新": "BoxPacking_M[30]",
+      "path": [
+        25,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 25,
+      "命令": "ST",
+      "要素番号": 4,
+      "旧": "BoxPacking_M[29]",
+      "新": "BoxPacking_M[30]",
+      "path": [
+        25,
+        "CLs",
+        5,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 26,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "BoxPacking_M[29]",
+      "新": "BoxPacking_M[30]",
+      "path": [
+        26,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 26,
+      "命令": "LD",
+      "要素番号": 3,
+      "旧": "BoxPacking_M[30]",
+      "新": "BoxPacking_M[31]",
+      "path": [
+        26,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 26,
+      "命令": "ST",
+      "要素番号": 4,
+      "旧": "BoxPacking_M[30]",
+      "新": "BoxPacking_M[31]",
+      "path": [
+        26,
+        "CLs",
+        6,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 27,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "BoxPacking_M[30]",
+      "新": "BoxPacking_M[31]",
+      "path": [
+        27,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 27,
+      "命令": "LD",
+      "要素番号": 3,
+      "旧": "BoxPacking_M[31]",
+      "新": "BoxPacking_M[32]",
+      "path": [
+        27,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 27,
+      "命令": "ST",
+      "要素番号": 4,
+      "旧": "BoxPacking_M[31]",
+      "新": "BoxPacking_M[32]",
+      "path": [
+        27,
+        "CLs",
+        6,
+        "Var"
+      ]
+    }
+  ]
+}

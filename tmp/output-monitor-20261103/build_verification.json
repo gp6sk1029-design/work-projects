@@ -1,0 +1,424 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261103D.smc2",
+  "output": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261103E.smc2",
+  "source_sha256": "75201e9ff85577f0b2e60ea9e568a3d822815747f35be401d810a0affe41089c",
+  "output_sha256": "e19ec47a6132f11f0f0610813166874c3e9aeb1e41a022efcfdfda03dcbb6e77",
+  "target": "7c15e655-c2eb-4a0d-a923-d08fae0d8a43/09c1f70b-b9ac-4e5d-884f-9779e69a597a.xml",
+  "checked_pairs": 100,
+  "changed_monitor_rows": 23,
+  "added_contacts": 22,
+  "replaced_wrong_contacts": 4,
+  "remaining_mismatches": 0,
+  "preserved_parts": 209,
+  "ZIP_CRC": "正常",
+  "native_Sysmac_build": "未実施",
+  "seconds": 0.485,
+  "changes": [
+    {
+      "駆動行": 16,
+      "異常監視行": 18,
+      "出力区分": "A",
+      "出力番号": 1,
+      "修正前Auto": [
+        "Out_CYw_Sply_Slide_A_H_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYw_Sply_Slide_A_H_Auto[1]",
+        "Out_CYw_Sply_Slide_A_H_Auto[2]"
+      ],
+      "追加接点": [
+        "Out_CYw_Sply_Slide_A_H_Auto[2]"
+      ],
+      "変数修正": []
+    },
+    {
+      "駆動行": 22,
+      "異常監視行": 24,
+      "出力区分": "A",
+      "出力番号": 3,
+      "修正前Auto": [
+        "Out_CYw_Sply_Pick_A_H_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYw_Sply_Pick_A_H_Auto[1]",
+        "Out_CYw_Sply_Pick_A_H_Auto[2]",
+        "Out_CYw_Sply_Pick_A_H_Auto[3]"
+      ],
+      "追加接点": [
+        "Out_CYw_Sply_Pick_A_H_Auto[2]",
+        "Out_CYw_Sply_Pick_A_H_Auto[3]"
+      ],
+      "変数修正": []
+    },
+    {
+      "駆動行": 25,
+      "異常監視行": 27,
+      "出力区分": "A",
+      "出力番号": 4,
+      "修正前Auto": [
+        "Out_CYw_Sply_Pick_A_F_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYw_Sply_Pick_A_F_Auto[1]",
+        "Out_CYw_Sply_Pick_A_F_Auto[2]"
+      ],
+      "追加接点": [
+        "Out_CYw_Sply_Pick_A_F_Auto[2]"
+      ],
+      "変数修正": []
+    },
+    {
+      "駆動行": 64,
+      "異常監視行": 66,
+      "出力区分": "A",
+      "出力番号": 11,
+      "修正前Auto": [
+        "Out_CYw_HgtInsp_Lf_A_H_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYw_NG1_Pick_A_H_Auto[1]",
+        "Out_CYw_NG1_Pick_A_H_Auto[2]"
+      ],
+      "追加接点": [
+        "Out_CYw_NG1_Pick_A_H_Auto[2]"
+      ],
+      "変数修正": [
+        [
+          "Out_CYw_HgtInsp_Lf_A_H_Auto[1]",
+          "Out_CYw_NG1_Pick_A_H_Auto[1]"
+        ]
+      ]
+    },
+    {
+      "駆動行": 70,
+      "異常監視行": 72,
+      "出力区分": "A",
+      "出力番号": 13,
+      "修正前Auto": [
+        "Out_CYw_NG1_Chk_A_H_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYw_NG1_Chk_A_H_Auto[1]",
+        "Out_CYw_NG1_Chk_A_H_Auto[2]"
+      ],
+      "追加接点": [
+        "Out_CYw_NG1_Chk_A_H_Auto[2]"
+      ],
+      "変数修正": []
+    },
+    {
+      "駆動行": 82,
+      "異常監視行": 84,
+      "出力区分": "A",
+      "出力番号": 17,
+      "修正前Auto": [
+        "Out_CYw_Rev_01_Pick_A_H_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYw_Rev_01_Pick_A_H_Auto[1]",
+        "Out_CYw_Rev_01_Pick_A_H_Auto[2]"
+      ],
+      "追加接点": [
+        "Out_CYw_Rev_01_Pick_A_H_Auto[2]"
+      ],
+      "変数修正": []
+    },
+    {
+      "駆動行": 85,
+      "異常監視行": 87,
+      "出力区分": "A",
+      "出力番号": 18,
+      "修正前Auto": [
+        "Out_CYw_Rev_01_Pick_A_F_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYw_Rev_01_Pick_A_F_Auto[1]",
+        "Out_CYw_Rev_01_Pick_A_F_Auto[2]"
+      ],
+      "追加接点": [
+        "Out_CYw_Rev_01_Pick_A_F_Auto[2]"
+      ],
+      "変数修正": []
+    },
+    {
+      "駆動行": 94,
+      "異常監視行": 96,
+      "出力区分": "A",
+      "出力番号": 21,
+      "修正前Auto": [
+        "Out_CYw_Rev_02_Pick_A_H_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYw_Rev_02_Pick_A_H_Auto[1]",
+        "Out_CYw_Rev_02_Pick_A_H_Auto[2]"
+      ],
+      "追加接点": [
+        "Out_CYw_Rev_02_Pick_A_H_Auto[2]"
+      ],
+      "変数修正": []
+    },
+    {
+      "駆動行": 97,
+      "異常監視行": 99,
+      "出力区分": "A",
+      "出力番号": 22,
+      "修正前Auto": [
+        "Out_CYw_Rev_02_Pick_A_F_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYw_Rev_02_Pick_A_F_Auto[1]",
+        "Out_CYw_Rev_02_Pick_A_F_Auto[2]"
+      ],
+      "追加接点": [
+        "Out_CYw_Rev_02_Pick_A_F_Auto[2]"
+      ],
+      "変数修正": []
+    },
+    {
+      "駆動行": 100,
+      "異常監視行": 102,
+      "出力区分": "A",
+      "出力番号": 23,
+      "修正前Auto": [
+        "Out_CYw_Disc_Chk_A_H_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYw_Disc_Chk_A_H_Auto[1]",
+        "Out_CYw_Disc_Chk_A_H_Auto[2]"
+      ],
+      "追加接点": [
+        "Out_CYw_Disc_Chk_A_H_Auto[2]"
+      ],
+      "変数修正": []
+    },
+    {
+      "駆動行": 106,
+      "異常監視行": 108,
+      "出力区分": "A",
+      "出力番号": 25,
+      "修正前Auto": [
+        "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[1]",
+        "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[2]"
+      ],
+      "追加接点": [
+        "Out_CYw_Ejc_Hldr_Feed_A_H_Auto[2]"
+      ],
+      "変数修正": []
+    },
+    {
+      "駆動行": 112,
+      "異常監視行": 114,
+      "出力区分": "A",
+      "出力番号": 27,
+      "修正前Auto": [
+        "Out_CYS_Pos_01_Stopper_A_H_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYS_Pos_01_Stopper_A_H_Auto[1]",
+        "Out_CYS_Pos_01_Stopper_A_H_Auto[2]"
+      ],
+      "追加接点": [
+        "Out_CYS_Pos_01_Stopper_A_H_Auto[2]"
+      ],
+      "変数修正": []
+    },
+    {
+      "駆動行": 118,
+      "異常監視行": 120,
+      "出力区分": "A",
+      "出力番号": 29,
+      "修正前Auto": [
+        "Out_CYS_Pos_02_Stopper_A_H_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYS_Pos_02_Stopper_A_H_Auto[1]",
+        "Out_CYS_Pos_02_Stopper_A_H_Auto[2]"
+      ],
+      "追加接点": [
+        "Out_CYS_Pos_02_Stopper_A_H_Auto[2]"
+      ],
+      "変数修正": []
+    },
+    {
+      "駆動行": 121,
+      "異常監視行": 123,
+      "出力区分": "A",
+      "出力番号": 30,
+      "修正前Auto": [
+        "Out_CYS_Pos_02_Stopper_A_H_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYS_Pos_02_Stopper_A_F_Auto[1]"
+      ],
+      "追加接点": [],
+      "変数修正": [
+        [
+          "Out_CYS_Pos_02_Stopper_A_H_Auto[1]",
+          "Out_CYS_Pos_02_Stopper_A_F_Auto[1]"
+        ]
+      ]
+    },
+    {
+      "駆動行": 124,
+      "異常監視行": 126,
+      "出力区分": "A",
+      "出力番号": 31,
+      "修正前Auto": [
+        "Out_CYS_Pos_03_Stopper_A_H_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYS_Pos_03_Stopper_A_H_Auto[1]",
+        "Out_CYS_Pos_03_Stopper_A_H_Auto[2]"
+      ],
+      "追加接点": [
+        "Out_CYS_Pos_03_Stopper_A_H_Auto[2]"
+      ],
+      "変数修正": []
+    },
+    {
+      "駆動行": 130,
+      "異常監視行": 132,
+      "出力区分": "A",
+      "出力番号": 33,
+      "修正前Auto": [
+        "Out_CYS_Pos_04_Stopper_A_H_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYS_Pos_04_Stopper_A_H_Auto[1]",
+        "Out_CYS_Pos_04_Stopper_A_H_Auto[2]"
+      ],
+      "追加接点": [
+        "Out_CYS_Pos_04_Stopper_A_H_Auto[2]"
+      ],
+      "変数修正": []
+    },
+    {
+      "駆動行": 136,
+      "異常監視行": 138,
+      "出力区分": "A",
+      "出力番号": 35,
+      "修正前Auto": [
+        "Out_CYS_Pos_05_Stopper_A_H_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYS_Pos_05_Stopper_A_H_Auto[1]",
+        "Out_CYS_Pos_05_Stopper_A_H_Auto[2]"
+      ],
+      "追加接点": [
+        "Out_CYS_Pos_05_Stopper_A_H_Auto[2]"
+      ],
+      "変数修正": []
+    },
+    {
+      "駆動行": 142,
+      "異常監視行": 144,
+      "出力区分": "A",
+      "出力番号": 37,
+      "修正前Auto": [
+        "Out_CYS_Pos_06_Stopper_A_H_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYS_Pos_06_Stopper_A_H_Auto[1]",
+        "Out_CYS_Pos_06_Stopper_A_H_Auto[2]"
+      ],
+      "追加接点": [
+        "Out_CYS_Pos_06_Stopper_A_H_Auto[2]"
+      ],
+      "変数修正": []
+    },
+    {
+      "駆動行": 154,
+      "異常監視行": 156,
+      "出力区分": "A",
+      "出力番号": 41,
+      "修正前Auto": [
+        "Out_CYw_NG1_Srt_A_H_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYw_NG1_Srt_A_H_Auto[1]",
+        "Out_CYw_NG1_Srt_A_H_Auto[2]"
+      ],
+      "追加接点": [
+        "Out_CYw_NG1_Srt_A_H_Auto[2]"
+      ],
+      "変数修正": []
+    },
+    {
+      "駆動行": 172,
+      "異常監視行": 174,
+      "出力区分": "B",
+      "出力番号": 11,
+      "修正前Auto": [
+        "Out_CYw_HgtInsp_Lf_B_H_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYw_NG1_Pick_B_H_Auto[1]"
+      ],
+      "追加接点": [],
+      "変数修正": [
+        [
+          "Out_CYw_HgtInsp_Lf_B_H_Auto[1]",
+          "Out_CYw_NG1_Pick_B_H_Auto[1]"
+        ]
+      ]
+    },
+    {
+      "駆動行": 229,
+      "異常監視行": 231,
+      "出力区分": "B",
+      "出力番号": 30,
+      "修正前Auto": [
+        "Out_CYS_Pos_02_Stopper_B_H_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYS_Pos_02_Stopper_B_F_Auto[1]"
+      ],
+      "追加接点": [],
+      "変数修正": [
+        [
+          "Out_CYS_Pos_02_Stopper_B_H_Auto[1]",
+          "Out_CYS_Pos_02_Stopper_B_F_Auto[1]"
+        ]
+      ]
+    },
+    {
+      "駆動行": 268,
+      "異常監視行": 270,
+      "出力区分": "Share",
+      "出力番号": 1,
+      "修正前Auto": [
+        "Out_CYw_Empty_Container_CY_H_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYw_Empty_Container_CY_H_Auto[1]",
+        "Out_CYw_Empty_Container_CY_H_Auto[2]",
+        "Out_CYw_Empty_Container_CY_H_Auto[3]"
+      ],
+      "追加接点": [
+        "Out_CYw_Empty_Container_CY_H_Auto[2]",
+        "Out_CYw_Empty_Container_CY_H_Auto[3]"
+      ],
+      "変数修正": []
+    },
+    {
+      "駆動行": 283,
+      "異常監視行": 285,
+      "出力区分": "Share",
+      "出力番号": 6,
+      "修正前Auto": [
+        "Out_CYw_Ejc_Cont_F_Auto[1]"
+      ],
+      "修正後Auto": [
+        "Out_CYw_Ejc_Cont_F_Auto[1]",
+        "Out_CYw_Ejc_Cont_F_Auto[2]"
+      ],
+      "追加接点": [
+        "Out_CYw_Ejc_Cont_F_Auto[2]"
+      ],
+      "変数修正": []
+    }
+  ]
+}

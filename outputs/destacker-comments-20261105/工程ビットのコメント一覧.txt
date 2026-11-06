@@ -1,0 +1,32 @@
+Destacker_M[1]：初回確認開始
+Destacker_M[2]：初回の爪保持
+Destacker_M[3]：初回の位置判定
+Destacker_M[4]：初回安全位置あり
+Destacker_M[5]：初回安全位置なし
+Destacker_M[6]：初回の爪戻し
+Destacker_M[7]：初回安全位置移動
+Destacker_M[8]：初回1段目移動
+Destacker_M[9]：初回コンテナ保持
+Destacker_M[10]：初回安全位置戻り
+Destacker_M[11]：初回の送り戻し
+Destacker_M[12]：通常サイクル開始
+Destacker_M[13]：送り戻り待ち
+Destacker_M[14]：コンテナ確認中
+Destacker_M[15]：コンテナ確認OK
+Destacker_M[16]：1段目位置へ移動
+Destacker_M[17]：コンテナ切り離し
+Destacker_M[18]：段積み判定
+Destacker_M[19]：2段以上
+Destacker_M[20]：1段のみ
+Destacker_M[21]：2段目位置へ移動
+Destacker_M[22]：上段コンテナ保持
+Destacker_M[23]：安全・排出位置移動
+Destacker_M[24]：送り行待ち
+Destacker_M[25]：送り戻り待ち
+Destacker_M[26]：初回確認済み
+Destacker_M[27]：初回安全 前完了解除
+Destacker_M[28]：初回1段 前完了解除
+Destacker_M[29]：初回戻り 前完了解除
+Destacker_M[30]：1段目 前完了解除
+Destacker_M[31]：2段目 前完了解除
+Destacker_M[32]：排出 前完了解除

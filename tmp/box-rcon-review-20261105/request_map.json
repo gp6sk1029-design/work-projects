@@ -1,0 +1,284 @@
+{
+  "RCON2_1_Auto[1]": {
+    "coils": [
+      [
+        "Destacker_段バラシ",
+        4
+      ]
+    ],
+    "contacts": [
+      [
+        "RCON_IAI",
+        281
+      ]
+    ]
+  },
+  "RCON2_1_Auto[2]": {
+    "coils": [
+      [
+        "Destacker_段バラシ",
+        5
+      ]
+    ],
+    "contacts": [
+      [
+        "RCON_IAI",
+        281
+      ]
+    ]
+  },
+  "RCON2_1_Auto[3]": {
+    "coils": [
+      [
+        "Destacker_段バラシ",
+        7
+      ]
+    ],
+    "contacts": [
+      [
+        "RCON_IAI",
+        281
+      ]
+    ]
+  },
+  "RCON2_1_Auto[5]": {
+    "coils": [
+      [
+        "Destacker_段バラシ",
+        12
+      ]
+    ],
+    "contacts": [
+      [
+        "RCON_IAI",
+        281
+      ]
+    ]
+  },
+  "RCON2_1_Auto[6]": {
+    "coils": [
+      [
+        "Destacker_段バラシ",
+        15
+      ]
+    ],
+    "contacts": [
+      [
+        "RCON_IAI",
+        281
+      ]
+    ]
+  },
+  "RCON2_1_Auto[4]": {
+    "coils": [
+      [
+        "Destacker_段バラシ",
+        17
+      ]
+    ],
+    "contacts": [
+      [
+        "RCON_IAI",
+        281
+      ]
+    ]
+  },
+  "RCON2_5_Auto[1]": {
+    "coils": [
+      [
+        "BoxPacking_箱詰め",
+        3
+      ],
+      [
+        "BoxPacking_箱詰め",
+        5
+      ]
+    ],
+    "contacts": [
+      [
+        "RCON_IAI",
+        441
+      ]
+    ]
+  },
+  "RCON2_5_Auto[2]": {
+    "coils": [
+      [
+        "BoxPacking_箱詰め",
+        8
+      ],
+      [
+        "BoxPacking_箱詰め",
+        11
+      ],
+      [
+        "BoxPacking_箱詰め",
+        37
+      ]
+    ],
+    "contacts": [
+      [
+        "RCON_IAI",
+        441
+      ]
+    ]
+  },
+  "RCON2_4_Auto[1]": {
+    "coils": [
+      [
+        "BoxPacking_箱詰め",
+        16
+      ]
+    ],
+    "contacts": [
+      [
+        "RCON_IAI",
+        401
+      ]
+    ]
+  },
+  "RCON2_2_Auto[1]": {
+    "coils": [
+      [
+        "BoxPacking_箱詰め",
+        17
+      ]
+    ],
+    "contacts": [
+      [
+        "RCON_IAI",
+        321
+      ]
+    ]
+  },
+  "RCON2_3_Auto[1]": {
+    "coils": [
+      [
+        "BoxPacking_箱詰め",
+        17
+      ]
+    ],
+    "contacts": [
+      [
+        "RCON_IAI",
+        361
+      ]
+    ]
+  },
+  "RCON2_2_Auto[2]": {
+    "coils": [
+      [
+        "BoxPacking_箱詰め",
+        21
+      ]
+    ],
+    "contacts": [
+      [
+        "RCON_IAI",
+        321
+      ]
+    ]
+  },
+  "RCON2_3_Auto[2]": {
+    "coils": [
+      [
+        "BoxPacking_箱詰め",
+        21
+      ]
+    ],
+    "contacts": [
+      [
+        "RCON_IAI",
+        361
+      ]
+    ]
+  },
+  "RCON2_4_Auto[2]": {
+    "coils": [
+      [
+        "BoxPacking_箱詰め",
+        25
+      ]
+    ],
+    "contacts": [
+      [
+        "RCON_IAI",
+        401
+      ]
+    ]
+  },
+  "RCON2_4_Auto[5]": {
+    "coils": [
+      [
+        "BoxPacking_箱詰め",
+        27
+      ]
+    ],
+    "contacts": []
+  },
+  "RCON2_2_Auto[3]": {
+    "coils": [
+      [
+        "BoxPacking_箱詰め",
+        28
+      ]
+    ],
+    "contacts": [
+      [
+        "RCON_IAI",
+        321
+      ]
+    ]
+  },
+  "RCON2_3_Auto[3]": {
+    "coils": [
+      [
+        "BoxPacking_箱詰め",
+        29
+      ]
+    ],
+    "contacts": [
+      [
+        "RCON_IAI",
+        361
+      ]
+    ]
+  },
+  "RCON2_4_Auto[3]": {
+    "coils": [
+      [
+        "BoxPacking_箱詰め",
+        33
+      ]
+    ],
+    "contacts": [
+      [
+        "RCON_IAI",
+        401
+      ]
+    ]
+  },
+  "RCON2_4_Auto[4]": {
+    "coils": [
+      [
+        "BoxPacking_箱詰め",
+        35
+      ]
+    ],
+    "contacts": []
+  },
+  "RCON2_5_Auto[3]": {
+    "coils": [
+      [
+        "BoxPacking_箱詰め",
+        40
+      ]
+    ],
+    "contacts": [
+      [
+        "RCON_IAI",
+        441
+      ]
+    ]
+  }
+}

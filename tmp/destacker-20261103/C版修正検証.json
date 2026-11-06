@@ -1,0 +1,734 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261103B.smc2",
+  "output": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261103C.smc2",
+  "source_sha256": "2384a14ae61897f265b3671c39d6f5368179e0c439fd143ce80df1f7f4447dcb",
+  "output_sha256": "6d01a10e5ef4744b1d507e1de0867d35b5bb10825d4403f65d8e0c7365a0b40d",
+  "target": "d12ff733-4f31-46ee-8e8a-659eb8891990/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml",
+  "changed_references": 53,
+  "coil_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "missing_coils": [],
+  "duplicate_coils": [],
+  "contacts_without_coils": [],
+  "preserved_parts": 209,
+  "external_command_variables_unchanged": true,
+  "ZIP_CRC": "正常",
+  "Sysmac全体再ビルド": "未実施",
+  "PLC接続と転送": "未実施",
+  "seconds": 0.406,
+  "changes": [
+    {
+      "表示行": 3,
+      "命令": "LD",
+      "要素番号": 3,
+      "旧": "Destacker_M[7]",
+      "新": "Destacker_M[6]",
+      "path": [
+        3,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 3,
+      "命令": "ST",
+      "要素番号": 4,
+      "旧": "Destacker_M[7]",
+      "新": "Destacker_M[6]",
+      "path": [
+        3,
+        "CLs",
+        5,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 4,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "Destacker_M[7]",
+      "新": "Destacker_M[6]",
+      "path": [
+        4,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 4,
+      "命令": "LD",
+      "要素番号": 2,
+      "旧": "Destacker_M[8]",
+      "新": "Destacker_M[7]",
+      "path": [
+        4,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 4,
+      "命令": "ST",
+      "要素番号": 4,
+      "旧": "Destacker_M[8]",
+      "新": "Destacker_M[7]",
+      "path": [
+        4,
+        "CLs",
+        6,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 5,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "Destacker_M[8]",
+      "新": "Destacker_M[7]",
+      "path": [
+        5,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 6,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "Destacker_M[9]",
+      "新": "Destacker_M[8]",
+      "path": [
+        6,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 6,
+      "命令": "LD",
+      "要素番号": 3,
+      "旧": "Destacker_M[10]",
+      "新": "Destacker_M[9]",
+      "path": [
+        6,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 6,
+      "命令": "ST",
+      "要素番号": 4,
+      "旧": "Destacker_M[10]",
+      "新": "Destacker_M[9]",
+      "path": [
+        6,
+        "CLs",
+        5,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 7,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "Destacker_M[10]",
+      "新": "Destacker_M[9]",
+      "path": [
+        7,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 7,
+      "命令": "LD",
+      "要素番号": 2,
+      "旧": "Destacker_M[11]",
+      "新": "Destacker_M[10]",
+      "path": [
+        7,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 7,
+      "命令": "ST",
+      "要素番号": 4,
+      "旧": "Destacker_M[11]",
+      "新": "Destacker_M[10]",
+      "path": [
+        7,
+        "CLs",
+        5,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 8,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "Destacker_M[11]",
+      "新": "Destacker_M[10]",
+      "path": [
+        8,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 8,
+      "命令": "LD",
+      "要素番号": 1,
+      "旧": "Destacker_M[12]",
+      "新": "Destacker_M[11]",
+      "path": [
+        8,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 8,
+      "命令": "ST",
+      "要素番号": 4,
+      "旧": "Destacker_M[12]",
+      "新": "Destacker_M[11]",
+      "path": [
+        8,
+        "CLs",
+        4,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 9,
+      "命令": "LD",
+      "要素番号": 2,
+      "旧": "Destacker_M[12]",
+      "新": "Destacker_M[11]",
+      "path": [
+        9,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 9,
+      "命令": "LD",
+      "要素番号": 1,
+      "旧": "Destacker_M[13]",
+      "新": "Destacker_M[12]",
+      "path": [
+        9,
+        "CLs",
+        5,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 9,
+      "命令": "ST",
+      "要素番号": 7,
+      "旧": "Destacker_M[13]",
+      "新": "Destacker_M[12]",
+      "path": [
+        9,
+        "CLs",
+        10,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 10,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "Destacker_M[13]",
+      "新": "Destacker_M[12]",
+      "path": [
+        10,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 10,
+      "命令": "LD",
+      "要素番号": 3,
+      "旧": "Destacker_M[14]",
+      "新": "Destacker_M[13]",
+      "path": [
+        10,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 10,
+      "命令": "ST",
+      "要素番号": 4,
+      "旧": "Destacker_M[14]",
+      "新": "Destacker_M[13]",
+      "path": [
+        10,
+        "CLs",
+        5,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 11,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "Destacker_M[14]",
+      "新": "Destacker_M[13]",
+      "path": [
+        11,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 11,
+      "命令": "LD",
+      "要素番号": 2,
+      "旧": "Destacker_M[15]",
+      "新": "Destacker_M[14]",
+      "path": [
+        11,
+        "CLs",
+        7,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 11,
+      "命令": "ST",
+      "要素番号": 9,
+      "旧": "Destacker_M[15]",
+      "新": "Destacker_M[14]",
+      "path": [
+        11,
+        "CLs",
+        16,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 12,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "Destacker_M[15]",
+      "新": "Destacker_M[14]",
+      "path": [
+        12,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 12,
+      "命令": "LD",
+      "要素番号": 1,
+      "旧": "Destacker_M[16]",
+      "新": "Destacker_M[15]",
+      "path": [
+        12,
+        "CLs",
+        1,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 12,
+      "命令": "ST",
+      "要素番号": 3,
+      "旧": "Destacker_M[16]",
+      "新": "Destacker_M[15]",
+      "path": [
+        12,
+        "CLs",
+        4,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 13,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "Destacker_M[16]",
+      "新": "Destacker_M[15]",
+      "path": [
+        13,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 13,
+      "命令": "LD",
+      "要素番号": 3,
+      "旧": "Destacker_M[17]",
+      "新": "Destacker_M[16]",
+      "path": [
+        13,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 13,
+      "命令": "ST",
+      "要素番号": 4,
+      "旧": "Destacker_M[17]",
+      "新": "Destacker_M[16]",
+      "path": [
+        13,
+        "CLs",
+        5,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 14,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "Destacker_M[17]",
+      "新": "Destacker_M[16]",
+      "path": [
+        14,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 14,
+      "命令": "LD",
+      "要素番号": 3,
+      "旧": "Destacker_M[18]",
+      "新": "Destacker_M[17]",
+      "path": [
+        14,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 14,
+      "命令": "ST",
+      "要素番号": 6,
+      "旧": "Destacker_M[18]",
+      "新": "Destacker_M[17]",
+      "path": [
+        14,
+        "CLs",
+        5,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 14,
+      "命令": "ST",
+      "要素番号": 7,
+      "旧": "Destacker_M[19]",
+      "新": "Destacker_M[18]",
+      "path": [
+        14,
+        "CLs",
+        7,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 14,
+      "命令": "ST",
+      "要素番号": 8,
+      "旧": "Destacker_M[20]",
+      "新": "Destacker_M[19]",
+      "path": [
+        14,
+        "CLs",
+        9,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 15,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "Destacker_M[18]",
+      "新": "Destacker_M[17]",
+      "path": [
+        15,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 15,
+      "命令": "LD",
+      "要素番号": 2,
+      "旧": "Destacker_M[19]",
+      "新": "Destacker_M[18]",
+      "path": [
+        15,
+        "CLs",
+        1,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 15,
+      "命令": "LD",
+      "要素番号": 1,
+      "旧": "Destacker_M[21]",
+      "新": "Destacker_M[20]",
+      "path": [
+        15,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 15,
+      "命令": "ST",
+      "要素番号": 4,
+      "旧": "Destacker_M[21]",
+      "新": "Destacker_M[20]",
+      "path": [
+        15,
+        "CLs",
+        6,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 16,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "Destacker_M[21]",
+      "新": "Destacker_M[20]",
+      "path": [
+        16,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 16,
+      "命令": "LD",
+      "要素番号": 2,
+      "旧": "Destacker_M[22]",
+      "新": "Destacker_M[21]",
+      "path": [
+        16,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 16,
+      "命令": "ST",
+      "要素番号": 4,
+      "旧": "Destacker_M[22]",
+      "新": "Destacker_M[21]",
+      "path": [
+        16,
+        "CLs",
+        5,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 17,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "Destacker_M[22]",
+      "新": "Destacker_M[21]",
+      "path": [
+        17,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 17,
+      "命令": "LD",
+      "要素番号": 4,
+      "旧": "Destacker_M[20]",
+      "新": "Destacker_M[19]",
+      "path": [
+        17,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 17,
+      "命令": "LD",
+      "要素番号": 1,
+      "旧": "Destacker_M[23]",
+      "新": "Destacker_M[22]",
+      "path": [
+        17,
+        "CLs",
+        3,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 17,
+      "命令": "ST",
+      "要素番号": 5,
+      "旧": "Destacker_M[23]",
+      "新": "Destacker_M[22]",
+      "path": [
+        17,
+        "CLs",
+        8,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 18,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "Destacker_M[23]",
+      "新": "Destacker_M[22]",
+      "path": [
+        18,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 18,
+      "命令": "LD",
+      "要素番号": 2,
+      "旧": "Destacker_M[24]",
+      "新": "Destacker_M[23]",
+      "path": [
+        18,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 18,
+      "命令": "ST",
+      "要素番号": 5,
+      "旧": "Destacker_M[24]",
+      "新": "Destacker_M[23]",
+      "path": [
+        18,
+        "CLs",
+        5,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 19,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "Destacker_M[24]",
+      "新": "Destacker_M[23]",
+      "path": [
+        19,
+        "CLs",
+        0,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 19,
+      "命令": "LD",
+      "要素番号": 2,
+      "旧": "Destacker_M[25]",
+      "新": "Destacker_M[24]",
+      "path": [
+        19,
+        "CLs",
+        2,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 19,
+      "命令": "ST",
+      "要素番号": 5,
+      "旧": "Destacker_M[25]",
+      "新": "Destacker_M[24]",
+      "path": [
+        19,
+        "CLs",
+        5,
+        "Var"
+      ]
+    },
+    {
+      "表示行": 20,
+      "命令": "LD",
+      "要素番号": null,
+      "旧": "Destacker_M[25]",
+      "新": "Destacker_M[24]",
+      "path": [
+        20,
+        "CLs",
+        0,
+        "Var"
+      ]
+    }
+  ]
+}

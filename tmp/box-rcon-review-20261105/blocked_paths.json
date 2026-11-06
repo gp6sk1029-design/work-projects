@@ -1,0 +1,82 @@
+[
+  {
+    "section": "RCON_IAI",
+    "row": 283,
+    "contacts": [
+      "P_Off"
+    ],
+    "values": [
+      "RCON2_2_OUT_TargetPos_mm",
+      "RCON2_OUT[2].TargetPos_mm"
+    ]
+  },
+  {
+    "section": "RCON_IAI",
+    "row": 288,
+    "contacts": [
+      "RCON2_2_M[1]",
+      "P_Off"
+    ],
+    "coil": "RCON2_OUT[2].Control.Start"
+  },
+  {
+    "section": "RCON_IAI",
+    "row": 323,
+    "contacts": [
+      "P_Off"
+    ],
+    "values": [
+      "RCON2_3_OUT_TargetPos_mm",
+      "RCON2_OUT[3].TargetPos_mm"
+    ]
+  },
+  {
+    "section": "RCON_IAI",
+    "row": 328,
+    "contacts": [
+      "RCON2_3_M[1]",
+      "P_Off"
+    ],
+    "coil": "RCON2_OUT[3].Control.Start"
+  },
+  {
+    "section": "RCON_IAI",
+    "row": 363,
+    "contacts": [
+      "P_Off"
+    ],
+    "values": [
+      "RCON2_4_OUT_TargetPos_mm",
+      "RCON2_OUT[4].TargetPos_mm"
+    ]
+  },
+  {
+    "section": "RCON_IAI",
+    "row": 368,
+    "contacts": [
+      "RCON2_4_M[1]",
+      "P_Off"
+    ],
+    "coil": "RCON2_OUT[4].Control.Start"
+  },
+  {
+    "section": "RCON_IAI",
+    "row": 403,
+    "contacts": [
+      "P_Off"
+    ],
+    "values": [
+      "RCON2_5_OUT_TargetPos_mm",
+      "RCON2_OUT[5].TargetPos_mm"
+    ]
+  },
+  {
+    "section": "RCON_IAI",
+    "row": 408,
+    "contacts": [
+      "RCON2_5_M[1]",
+      "P_Off"
+    ],
+    "coil": "RCON2_OUT[5].Control.Start"
+  }
+]

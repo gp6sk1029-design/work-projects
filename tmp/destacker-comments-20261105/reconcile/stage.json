@@ -1,0 +1,17 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I.smc2",
+  "source_sha256": "1a69caa301b435e05785041f91f759e216faf10cef691512bfe49f7c4cb0d06c",
+  "candidate": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\destacker-comments-20261105\\reconcile\\I_synced.smc2",
+  "candidate_sha256": "a7df246e967f3cc8b33e9e9aada56801778badd10e9fc152e37fd3b867e5e2ff",
+  "changed_parts": [
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/298443e5-40dc-47d4-95bf-46c8fde7d5ae.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/b530d740-9d69-41c3-974a-97c06e823eb2.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/fb95842e-fdb2-46b7-9a81-473d52d66cbf.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/298443e5-40dc-47d4-95bf-46c8fde7d5ae.oem"
+  ],
+  "unchanged_parts": 206,
+  "comment_only": false,
+  "published": false
+}

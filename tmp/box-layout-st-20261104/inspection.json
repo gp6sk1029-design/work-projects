@@ -1,0 +1,632 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261104C.smc2",
+  "sha256": "7eff9e409610d791c10e182d68ebff31055d0b854ea0532b016fbd1087b648ee",
+  "target": {
+    "name": "BoxPacking_箱詰め",
+    "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/6061835d-1e51-4e92-be1f-d546f44764e3.xml"
+  },
+  "selected": [
+    {
+      "row": 15,
+      "comment": "ストックフォルダ 取出し開始\r\nRCON2_4：箱詰めZ\r\nセイフティ 上昇 Pos移動",
+      "elements": [
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_M[18]"
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_M[20]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 1
+        },
+        {
+          "__type": "F",
+          "Name": "MOVE",
+          "X": 2,
+          "In": [
+            {
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON2_4_OUT_TargetPos[1]"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON2_4_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Var": "BoxPacking_M[20]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Var": "RCON2_4_Auto[1]",
+          "X": 3,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "row": 16,
+      "comment": "A(左側) ストックフォルダ\r\n\r\nRCON2_2：箱詰めX\r\nRCON2_3：箱詰めY\r\nA(左側)フォルダストック 取出し Pos移動",
+      "elements": [
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_M[20]"
+        },
+        {
+          "__type": "LD",
+          "Var": "RCON2_4_MoveDone",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_A_Busy",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_M[21]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 2,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 3
+        },
+        {
+          "__type": "F",
+          "Name": "MOVE",
+          "X": 4,
+          "In": [
+            {
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON2_2_OUT_TargetPos[1]"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON2_2_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "MOVE",
+          "X": 4,
+          "Y": 1,
+          "In": [
+            {
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON2_3_OUT_TargetPos[1]"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON2_3_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Var": "BoxPacking_M[21]",
+          "X": 5
+        },
+        {
+          "__type": "ST",
+          "Var": "RCON2_2_Auto[1]",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Var": "RCON2_3_Auto[1]",
+          "X": 5,
+          "Y": 2
+        }
+      ]
+    },
+    {
+      "row": 20,
+      "comment": "B(右側) ストックフォルダ\r\n\r\nRCON2_2：箱詰めX\r\nRCON2_3：箱詰めY\r\nA(左側)フォルダストック 取出し Pos移動",
+      "elements": [
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_M[20]"
+        },
+        {
+          "__type": "LD",
+          "Var": "RCON2_4_MoveDone",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_B_Busy",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_M[21]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 2,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 3
+        },
+        {
+          "__type": "F",
+          "Name": "MOVE",
+          "X": 4,
+          "In": [
+            {
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON2_2_OUT_TargetPos[2]"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON2_2_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "F",
+          "Name": "MOVE",
+          "X": 4,
+          "Y": 1,
+          "In": [
+            {
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON2_3_OUT_TargetPos[2]"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON2_3_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Var": "BoxPacking_M[25]",
+          "X": 5
+        },
+        {
+          "__type": "ST",
+          "Var": "RCON2_2_Auto[2]",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Var": "RCON2_3_Auto[2]",
+          "X": 5,
+          "Y": 2
+        }
+      ]
+    },
+    {
+      "row": 24,
+      "comment": "ストックフォルダ 取出し開始\r\nRCON2_4：箱詰めZ\r\nフォルダストック 取出し降下Pos",
+      "elements": [
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_M[24]"
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_M[28]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_M[29]",
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 1
+        },
+        {
+          "__type": "F",
+          "Name": "MOVE",
+          "X": 2,
+          "In": [
+            {
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON2_4_OUT_TargetPos[2]"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON2_4_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Var": "BoxPacking_M[29]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Var": "RCON2_4_Auto[2]",
+          "X": 3,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "row": 26,
+      "comment": "",
+      "elements": [
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_M[30]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Out_CYw_Box_Chuck_F_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_M[31]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "Name": "MOVE",
+          "X": 3,
+          "In": [
+            {
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON2_4_OUT_TargetPos[1]"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON2_4_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Var": "BoxPacking_M[31]",
+          "X": 4
+        }
+      ]
+    },
+    {
+      "row": 27,
+      "comment": "",
+      "elements": [
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_M[31]"
+        },
+        {
+          "__type": "LD",
+          "Var": "RCON2_4_MoveDone",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Var": "BoxPacking_M[32]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "",
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "Name": "MOVE",
+          "X": 3,
+          "In": [
+            {
+              "Arg": "In",
+              "Type": "ANY",
+              "Var": "HMI_RCON2_4_OUT_TargetPos[1]"
+            }
+          ],
+          "Out": [
+            {
+              "Arg": "Out",
+              "Type": "ANY",
+              "Var": "RCON2_4_OUT_TargetPos_mm"
+            }
+          ]
+        },
+        {
+          "__type": "ST",
+          "Var": "BoxPacking_M[32]",
+          "X": 4
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=ARRAY[0..99] OF Bool\tN=BoxPacking_M\tG=VAR\tCom=箱詰め："
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=ARRAY[0..99] OF LREAL\tN=HMI_RCON2_2_OUT_TargetPos\tG=VAR\tCom=箱詰めX：\tEC=<ECs><EC EK=\"[1]\" C=\"A(左側)フォルダストック 取出しPos\" /><EC EK=\"[2]\" C=\"B(右側)フォルダストック 取出しPos\" /></ECs>"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=BOOL\tN=BoxPacking_Error\tG=VAR"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=ARRAY[0..99] OF TON\tN=BoxPacking_TON\tG=VAR"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=ARRAY[0..99] OF LREAL\tN=HMI_RCON2_3_OUT_TargetPos\tG=VAR\tCom=箱詰めY：\tEC=<ECs><EC EK=\"[1]\" C=\"B(右側)フォルダストック 取出しPos\" /><EC EK=\"[2]\" C=\"B(右側)フォルダストック 取出しPos\" /></ECs>"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=BOOL\tN=BoxPacking_A_Busy\tG=VAR"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=BOOL\tN=BoxPacking_B_Busy\tG=VAR"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=BOOL\tN=BoxPacking_Busy\tG=VAR_EXTERNAL\tCom=箱詰め動作中"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=LREAL\tN=RCON2_4_OUT_TargetPos_mm\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=LREAL\tN=HMI_A_SF_StackPitch_mm\tG=VAR_EXTERNAL\tCom=左SF積みピッチ [mm]。正=位置増、負=位置減。既定0、使用前に設定。1個目は位置設定[2]。"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=ARRAY[0..99] OF LREAL\tN=HMI_RCON2_4_OUT_TargetPos\tG=VAR_EXTERNAL\tCom=箱詰めZ：\tEC=<ECs><EC EK=\"[1]\" C=\"セイフティPos\" /></ECs>"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=LREAL\tN=RCON2_2_OUT_TargetPos_mm\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=LREAL\tN=RCON2_3_OUT_TargetPos_mm\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Box_Chuck_F_Auto\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=BOOL\tN=Out_CYw_Box_Chuck_F_Done\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Box_Chuck_H_Auto\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+      "definition": "++D=BOOL\tN=Out_CYw_Box_Chuck_H_Done\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "definition": "++D=TON\tN=Timer_In_SenCY_Box_Chk_H\tG=VAR"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "definition": "++D=TON\tN=Timer_In_SenCY_Box_Chk_F\tG=VAR"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "definition": "++D=BOOL\tN=In_SenCY_Box_Chk_H\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "definition": "++D=BOOL\tN=In_SenCY_Box_Chk_F\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "definition": "++D=BOOL\tN=TimerQ_In_SenCY_Box_Chk_H\tG=VAR_EXTERNAL\tCom=【X1020】箱入れチャック 戻"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "definition": "++D=BOOL\tN=TimerQ_In_SenCY_Box_Chk_F\tG=VAR_EXTERNAL\tCom=【X1021】箱入れチャック 行"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "definition": "++D=BOOL\tN=Out_CYw_Box_Chuck_H\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "definition": "++D=BOOL\tN=Out_CYw_Box_Chuck_F\tG=VAR_EXTERNAL"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "definition": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Box_Chuck_H_Auto\tG=VAR_EXTERNAL\tCom=自動【Y1206】箱入れチャック 戻："
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "definition": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Box_Chuck_H_Manual\tG=VAR_EXTERNAL\tCom=手動【Y1206】箱入れチャック 戻："
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "definition": "++D=BOOL\tN=Out_CYw_Box_Chuck_H_Done\tG=VAR_EXTERNAL\tCom=【Y1206】箱入れチャック 戻 動作完了"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "definition": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Box_Chuck_F_Auto\tG=VAR_EXTERNAL\tCom=自動【Y1207】箱入れチャック 行："
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "definition": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Box_Chuck_F_Manual\tG=VAR_EXTERNAL\tCom=手動【Y1207】箱入れチャック 行："
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/9576fedf-9472-4ce6-b9ed-6eda5b4f0514.xml",
+      "definition": "++D=BOOL\tN=Out_CYw_Box_Chuck_F_Done\tG=VAR_EXTERNAL\tCom=【Y1207】箱入れチャック 行 動作完了"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "definition": "++D=LREAL\tN=RCON2_2_OUT_TargetPos_mm\tG=VAR_EXTERNAL\tCom=目標位置 [mm]\tConst=0\tRO=0"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "definition": "++D=LREAL\tN=RCON2_3_OUT_TargetPos_mm\tG=VAR_EXTERNAL\tCom=目標位置 [mm]\tConst=0\tRO=0"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/a763b9a0-9d3c-4bfc-a9be-4018e5fd2a10.xml",
+      "definition": "++D=LREAL\tN=RCON2_4_OUT_TargetPos_mm\tG=VAR_EXTERNAL\tCom=目標位置 [mm]\tConst=0\tRO=0"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=BOOL\tN=In_SenCY_Box_Chk_H\tAT=ECAT://node#7/Read input 1st word/In Bit04\tG=VAR_GLOBAL\tCom=【X1020】箱入れチャック 戻"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=BOOL\tN=In_SenCY_Box_Chk_F\tAT=ECAT://node#7/Read input 1st word/In Bit05\tG=VAR_GLOBAL\tCom=【X1021】箱入れチャック 行"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=BOOL\tN=Out_CYw_Box_Chuck_H\tAT=ECAT://node#8/Write output 1st word/Out Bit06\tG=VAR_GLOBAL\tCom=【Y1206】箱入れチャック 戻"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=BOOL\tN=Out_CYw_Box_Chuck_F\tAT=ECAT://node#8/Write output 1st word/Out Bit07\tG=VAR_GLOBAL\tCom=【Y1207】箱入れチャック 行"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=BOOL\tN=TimerQ_In_SenCY_Box_Chk_H\tG=VAR_GLOBAL\tCom=【X1020】箱入れチャック 戻"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=BOOL\tN=TimerQ_In_SenCY_Box_Chk_F\tG=VAR_GLOBAL\tCom=【X1021】箱入れチャック 行"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Box_Chuck_H_Auto\tG=VAR_GLOBAL\tCom=自動【Y1206】箱入れチャック 戻："
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Box_Chuck_H_Manual\tG=VAR_GLOBAL\tCom=手動【Y1206】箱入れチャック 戻："
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=BOOL\tN=Out_CYw_Box_Chuck_H_Done\tG=VAR_GLOBAL\tCom=【Y1206】箱入れチャック 戻 動作完了"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Box_Chuck_F_Auto\tG=VAR_GLOBAL\tCom=自動【Y1207】箱入れチャック 行："
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=ARRAY[0..10] OF Bool\tN=Out_CYw_Box_Chuck_F_Manual\tG=VAR_GLOBAL\tCom=手動【Y1207】箱入れチャック 行："
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=BOOL\tN=Out_CYw_Box_Chuck_F_Done\tG=VAR_GLOBAL\tCom=【Y1207】箱入れチャック 行 動作完了"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=LREAL\tN=RCON2_2_OUT_TargetPos_mm\tG=VAR_GLOBAL\tCom=目標位置 [mm]"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=LREAL\tN=RCON2_3_OUT_TargetPos_mm\tG=VAR_GLOBAL\tCom=目標位置 [mm]"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=LREAL\tN=RCON2_4_OUT_TargetPos_mm\tG=VAR_GLOBAL\tCom=目標位置 [mm]"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=BOOL\tN=BoxPacking_Busy\tG=VAR_GLOBAL\tCom=箱詰め動作中"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=LREAL\tN=HMI_A_SF_StackPitch_mm\tR=1\tG=VAR_GLOBAL\tCom=左SF積みピッチ [mm]。正=位置増、負=位置減。既定0、使用前に設定。1個目は位置設定[2]。"
+    },
+    {
+      "part": "dac4683e-575e-47d2-bdac-3d83a0ab6fe2/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+      "definition": "++D=ARRAY[0..99] OF LREAL\tN=HMI_RCON2_4_OUT_TargetPos\tG=VAR_GLOBAL\tCom=箱詰めZ：\tEC=<ECs><EC EK=\"[1]\" C=\"セイフティPos\" /><EC EK=\"[2]\" C=\"フォルダストック 取出し降下Pos\" /></ECs>"
+    }
+  ],
+  "counter_rows": []
+}

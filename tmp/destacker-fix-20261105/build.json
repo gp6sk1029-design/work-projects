@@ -1,0 +1,1919 @@
+{
+  "source_external": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105H.smc2",
+  "external_sha": "6361aef586c488d9c56729460cefcd37af8df7c08452798e3801152eb0716e02",
+  "internal": "C:\\OMRON\\Data\\Solution\\fe78558c-1d0e-41d5-9b83-730179a87edb",
+  "internal_sha": "2a6f972bd8e4ef957c34a1b2fca2778f3798f04e3ddcfe0d63541434eb753458",
+  "source_user_rows": [
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Auto_Com_Start"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[1]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Destacker_M[2]",
+          "X": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 3,
+          "Var": "Destacker_M[1]",
+          "X": 2
+        }
+      ],
+      "LRI": 4,
+      "RRI": 5,
+      "VLs": [
+        {
+          "Ix": 6,
+          "X": 1
+        }
+      ]
+    },
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[1]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "TimerQ_In_Sen_Supply_Container_Exist",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[2]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Destacker_M[3]",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[2]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[1]",
+          "X": 3,
+          "Y": 1
+        }
+      ],
+      "CMT": "#電源ON時 初回動作\r\n\r\n\r\n【Y1203】段バラシ爪 ",
+      "LRI": 6,
+      "RRI": 7,
+      "VLs": [
+        {
+          "Ix": 8,
+          "X": 2
+        },
+        {
+          "Ix": 9,
+          "X": 3
+        }
+      ]
+    },
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[2]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Sep_Claw_F_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[3]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Not": true,
+          "Var": "Destacker_M[6]",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Not": true,
+          "Var": "Destacker_M[11]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "Destacker_M[3]",
+          "X": 4
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Ix": 8,
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "RCON2_1_ActualPos_mm"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Ix": 9,
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "HMI_RCON2_1_OUT_TargetPos[1]"
+            }
+          ],
+          "Ix": 12,
+          "Name": "=",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 4,
+          "Y": 1,
+          "PL": true
+        },
+        {
+          "__type": "ST",
+          "Ix": 6,
+          "Var": "Destacker_M[4]",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Ix": 10,
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "RCON2_1_ActualPos_mm"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Ix": 11,
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "HMI_RCON2_1_OUT_TargetPos[1]"
+            }
+          ],
+          "Ix": 13,
+          "Name": "<>",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 7,
+          "Var": "Destacker_M[5]",
+          "X": 5,
+          "Y": 2
+        },
+        {
+          "__type": "HL",
+          "X": 5
+        }
+      ],
+      "CMT": "初動 判定\r\n①初動 段バラシセイフティPos  有\r\n②初動 段バラシセイフティPos  無",
+      "LRI": 14,
+      "RRI": 15,
+      "VLs": [
+        {
+          "Ix": 16,
+          "X": 2
+        },
+        {
+          "Ix": 17,
+          "X": 4
+        },
+        {
+          "Ix": 17,
+          "X": 4,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[3]"
+        },
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[5]",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Destacker_M[6]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Destacker_M[7]",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[6]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "Out_CYw_Sep_Claw_H_Auto[1]",
+          "X": 3,
+          "Y": 1
+        }
+      ],
+      "CMT": "②初動 段バラシセイフティPos  無\r\n【Y1202】段バラシ爪 戻 コンテナ切り離し",
+      "LRI": 6,
+      "RRI": 7,
+      "VLs": [
+        {
+          "Ix": 8,
+          "X": 2
+        },
+        {
+          "Ix": 9,
+          "X": 3
+        }
+      ]
+    },
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[6]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Out_CYw_Sep_Claw_H_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[7]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "Destacker_M[8]",
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Ix": 6,
+              "Type": "ANY",
+              "Var": "HMI_RCON2_1_OUT_TargetPos[1]"
+            }
+          ],
+          "Ix": 8,
+          "Name": "MOVE",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Ix": 7,
+              "Type": "ANY",
+              "Var": "RCON2_1_OUT_TargetPos_mm"
+            }
+          ],
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[7]",
+          "X": 4
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "RCON2_1_Auto[1]",
+          "X": 4,
+          "Y": 1
+        }
+      ],
+      "CMT": "RCON2_1 \r\nセイフティPos移動",
+      "LRI": 9,
+      "RRI": 10,
+      "VLs": [
+        {
+          "Ix": 11,
+          "X": 2
+        },
+        {
+          "Ix": 12,
+          "X": 4
+        }
+      ]
+    },
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[7]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "RCON2_1_MoveDone",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Destacker_M[8]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Destacker_M[9]",
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Ix": 6,
+              "Type": "ANY",
+              "Var": "HMI_RCON2_1_OUT_TargetPos[2]"
+            }
+          ],
+          "Ix": 8,
+          "Name": "MOVE",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Ix": 7,
+              "Type": "ANY",
+              "Var": "RCON2_1_OUT_TargetPos_mm"
+            }
+          ],
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[8]",
+          "X": 4
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "RCON2_1_Auto[2]",
+          "X": 4,
+          "Y": 1
+        }
+      ],
+      "CMT": "RCON2_1 \r\n1段目 Pos移動",
+      "LRI": 9,
+      "RRI": 10,
+      "VLs": [
+        {
+          "Ix": 11,
+          "X": 2
+        },
+        {
+          "Ix": 12,
+          "X": 4
+        }
+      ]
+    },
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[8]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "RCON2_1_MoveDone",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Destacker_M[9]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Destacker_M[10]",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[9]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[2]",
+          "X": 3,
+          "Y": 1
+        }
+      ],
+      "CMT": "【Y1203】段バラシ爪 行 コンテナ保持",
+      "LRI": 6,
+      "RRI": 7,
+      "VLs": [
+        {
+          "Ix": 8,
+          "X": 3
+        },
+        {
+          "Ix": 9,
+          "X": 2
+        }
+      ]
+    },
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[9]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Out_CYw_Sep_Claw_F_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[10]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "Destacker_M[11]",
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Ix": 6,
+              "Type": "ANY",
+              "Var": "HMI_RCON2_1_OUT_TargetPos[1]"
+            }
+          ],
+          "Ix": 8,
+          "Name": "MOVE",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Ix": 7,
+              "Type": "ANY",
+              "Var": "RCON2_1_OUT_TargetPos_mm"
+            }
+          ],
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[10]",
+          "X": 4
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "RCON2_1_Auto[3]",
+          "X": 4,
+          "Y": 1
+        }
+      ],
+      "CMT": "RCON2_1 \r\nセイフティPos移動",
+      "LRI": 9,
+      "RRI": 10,
+      "VLs": [
+        {
+          "Ix": 11,
+          "X": 2
+        },
+        {
+          "Ix": 12,
+          "X": 4
+        }
+      ]
+    },
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[10]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "RCON2_1_MoveDone",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Destacker_M[3]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Destacker_M[4]",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[11]",
+          "Y": 2
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Destacker_M[12]",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 6,
+          "Var": "Destacker_M[11]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 7,
+          "Var": "Out_CYw_Empty_Container_CY_H_Auto[1]",
+          "X": 3,
+          "Y": 1
+        }
+      ],
+      "CMT": "電源ON時 初回動作完了\r\n【Y1200】空コンテナ送り 戻",
+      "LRI": 8,
+      "RRI": 9,
+      "VLs": [
+        {
+          "Ix": 10,
+          "X": 2
+        },
+        {
+          "Ix": 10,
+          "X": 2,
+          "Y": 1
+        },
+        {
+          "Ix": 11,
+          "X": 3
+        }
+      ]
+    },
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[11]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Var": "Out_CYw_Empty_Container_CY_H_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "Destacker_End",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "TimerQ_In_Sen_Supply_Container_Exist",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "TimerQ_In_SenCY_Empty_Container_CY_H",
+          "X": 2,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[12]",
+          "Y": 2
+        },
+        {
+          "__type": "HL",
+          "X": 2
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "__type": "HL",
+          "X": 2,
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Not": true,
+          "Var": "Destacker_M[13]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 7,
+          "Var": "Destacker_M[12]",
+          "X": 4
+        },
+        {
+          "__type": "ST",
+          "Ix": 8,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[4]",
+          "X": 4,
+          "Y": 1
+        }
+      ],
+      "CMT": "#段バラシ 連続動作\r\n\r\n①電源ON時 初回動作完了後\r\n②繰返し動作\r\n【Y1203】段バラシ爪 行",
+      "LRI": 9,
+      "RRI": 10,
+      "VLs": [
+        {
+          "Ix": 11,
+          "X": 3
+        },
+        {
+          "Ix": 11,
+          "X": 3,
+          "Y": 1
+        },
+        {
+          "Ix": 12,
+          "X": 4
+        }
+      ]
+    },
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[12]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Out_CYw_Sep_Claw_F_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Destacker_M[13]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Destacker_M[15]",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[13]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "Out_CYw_Empty_Container_CY_H_Auto[2]",
+          "X": 3,
+          "Y": 1
+        }
+      ],
+      "CMT": "【Y1200】空コンテナ送り 戻",
+      "LRI": 6,
+      "RRI": 7,
+      "VLs": [
+        {
+          "Ix": 8,
+          "X": 2
+        },
+        {
+          "Ix": 9,
+          "X": 3
+        }
+      ]
+    },
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[13]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 10,
+          "Var": "Out_CYw_Empty_Container_CY_H_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 11,
+          "Not": true,
+          "Var": "Retry[13]",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            }
+          ],
+          "Ix": 19,
+          "Name": "Up",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 2,
+          "Y": 1,
+          "Id": "57244d62-133e-4025-b50c-ba2800000299"
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[14]",
+          "Y": 2
+        },
+        {
+          "__type": "HL",
+          "X": 2
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "__type": "HL",
+          "X": 2,
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "Retry[13]",
+          "X": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Not": true,
+          "Var": "Destacker_M[16]",
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 12,
+          "Var": "TimerQ_In_SenCY_Empty_Container_CY_H",
+          "X": 5
+        },
+        {
+          "__type": "ST",
+          "Ix": 13,
+          "Var": "Destacker_M[14]",
+          "X": 6
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Not": true,
+          "Var": "TimerQ_In_Sen_Supply_Container_Exist",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Var": "TimerQ_In_SenCY_Empty_Container_CY_H",
+          "X": 6,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Var": "TimerQ_In_Sen_Container_Direction_Check",
+          "X": 7,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 7,
+          "Var": "TimerQ_In_Sen_Destacker_Stage_01_Exist",
+          "X": 8,
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 15,
+          "Var": "Destacker_M[15]",
+          "X": 9,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 8,
+          "Not": true,
+          "Var": "TimerQ_In_Sen_Container_Direction_Check",
+          "X": 7,
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 9,
+          "Not": true,
+          "Var": "TimerQ_In_Sen_Destacker_Stage_01_Exist",
+          "X": 7,
+          "Y": 3
+        },
+        {
+          "__type": "FB",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "In"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "PT",
+              "Ix": 16,
+              "Type": "TIME",
+              "Var": "T#5s"
+            }
+          ],
+          "Ix": 18,
+          "Name": "TON",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "Q"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "ET",
+              "Ix": 17,
+              "Type": "TIME",
+              "Var": ""
+            }
+          ],
+          "X": 8,
+          "Y": 2,
+          "Var": "Destacker_TON[1]"
+        },
+        {
+          "__type": "ST",
+          "Ix": 14,
+          "Var": "Destacker_Error",
+          "X": 9,
+          "Y": 2
+        },
+        {
+          "__type": "HL",
+          "X": 7
+        },
+        {
+          "__type": "HL",
+          "X": 8
+        },
+        {
+          "__type": "HL",
+          "X": 9
+        }
+      ],
+      "CMT": "コンテナ有無・方向確認",
+      "LRI": 20,
+      "RRI": 21,
+      "VLs": [
+        {
+          "Ix": 22,
+          "X": 3
+        },
+        {
+          "Ix": 22,
+          "X": 3,
+          "Y": 1
+        },
+        {
+          "Ix": 23,
+          "X": 5
+        },
+        {
+          "Ix": 24,
+          "X": 8,
+          "Y": 2
+        },
+        {
+          "Ix": 25,
+          "X": 1
+        },
+        {
+          "Ix": 26,
+          "X": 7,
+          "Y": 1
+        },
+        {
+          "Ix": 26,
+          "X": 7,
+          "Y": 2
+        }
+      ]
+    },
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[15]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[16]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Destacker_M[17]",
+          "X": 1
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Ix": 5,
+              "Type": "ANY",
+              "Var": "HMI_RCON2_1_OUT_TargetPos[2]"
+            }
+          ],
+          "Ix": 7,
+          "Name": "MOVE",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Ix": 6,
+              "Type": "ANY",
+              "Var": "RCON2_1_OUT_TargetPos_mm"
+            }
+          ],
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 3,
+          "Var": "Destacker_M[16]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "RCON2_1_Auto[5]",
+          "X": 3,
+          "Y": 1
+        }
+      ],
+      "CMT": "RCON2_1 \r\n1段目 Pos移動",
+      "LRI": 8,
+      "RRI": 9,
+      "VLs": [
+        {
+          "Ix": 10,
+          "X": 1
+        },
+        {
+          "Ix": 11,
+          "X": 3
+        }
+      ]
+    },
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[16]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "RCON2_1_MoveDone",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Destacker_M[17]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Destacker_M[18]",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[17]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "Out_CYw_Sep_Claw_H_Auto[2]",
+          "X": 3,
+          "Y": 1
+        }
+      ],
+      "CMT": "コンテナ切り離し\r\n【Y1202】段バラシ爪 戻",
+      "LRI": 6,
+      "RRI": 7,
+      "VLs": [
+        {
+          "Ix": 8,
+          "X": 2
+        },
+        {
+          "Ix": 9,
+          "X": 3
+        }
+      ]
+    },
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[17]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Out_CYw_Sep_Claw_H_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Destacker_M[18]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Destacker_M[21]",
+          "X": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 6,
+          "Not": true,
+          "Var": "Destacker_M[23]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 7,
+          "Var": "Destacker_M[18]",
+          "X": 4
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "TimerQ_In_Sen_Destacker_Stage_02_Exist",
+          "X": 4,
+          "Y": 1
+        },
+        {
+          "__type": "ST",
+          "Ix": 8,
+          "Var": "Destacker_M[19]",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 5,
+          "Not": true,
+          "Var": "TimerQ_In_Sen_Destacker_Stage_02_Exist",
+          "X": 4,
+          "Y": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 9,
+          "Var": "Destacker_M[20]",
+          "X": 5,
+          "Y": 2
+        },
+        {
+          "__type": "HL",
+          "X": 5
+        }
+      ],
+      "CMT": "コンテナ段積み確認\r\n①段積み2段以上\r\n②段積み1段のみ",
+      "LRI": 10,
+      "RRI": 11,
+      "VLs": [
+        {
+          "Ix": 12,
+          "X": 2
+        },
+        {
+          "Ix": 13,
+          "X": 4
+        },
+        {
+          "Ix": 13,
+          "X": 4,
+          "Y": 1
+        }
+      ]
+    },
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[18]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[19]",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[21]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "Destacker_M[22]",
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Ix": 6,
+              "Type": "ANY",
+              "Var": "HMI_RCON2_1_OUT_TargetPos[3]"
+            }
+          ],
+          "Ix": 8,
+          "Name": "MOVE",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Ix": 7,
+              "Type": "ANY",
+              "Var": "RCON2_1_OUT_TargetPos_mm"
+            }
+          ],
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[21]",
+          "X": 4
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "RCON2_1_Auto[6]",
+          "X": 4,
+          "Y": 1
+        }
+      ],
+      "CMT": "①段積み2段以上\r\nRCON2_1 \r\n2段目 Pos移動",
+      "LRI": 9,
+      "RRI": 10,
+      "VLs": [
+        {
+          "Ix": 11,
+          "X": 2
+        },
+        {
+          "Ix": 12,
+          "X": 4
+        }
+      ]
+    },
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[21]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "RCON2_1_MoveDone",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[22]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "Destacker_M[23]",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_M[22]",
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "Out_CYw_Sep_Claw_F_Auto[3]",
+          "X": 3,
+          "Y": 1
+        }
+      ],
+      "CMT": "コンテナ保持\r\n【Y1203】段バラシ爪 行",
+      "LRI": 6,
+      "RRI": 7,
+      "VLs": [
+        {
+          "Ix": 8,
+          "X": 2
+        },
+        {
+          "Ix": 9,
+          "X": 3
+        }
+      ]
+    },
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[22]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Out_CYw_Sep_Claw_F_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "Destacker_M[20]",
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_M[23]",
+          "Y": 2
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 2
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "Destacker_M[24]",
+          "X": 2
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In",
+              "Ix": 7,
+              "Type": "ANY",
+              "Var": "HMI_RCON2_1_OUT_TargetPos[1]"
+            }
+          ],
+          "Ix": 9,
+          "Name": "MOVE",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": "ENO"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "Out",
+              "Ix": 8,
+              "Type": "ANY",
+              "Var": "RCON2_1_OUT_TargetPos_mm"
+            }
+          ],
+          "X": 3
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "Destacker_M[23]",
+          "X": 4
+        },
+        {
+          "__type": "ST",
+          "Ix": 6,
+          "Var": "RCON2_1_Auto[4]",
+          "X": 4,
+          "Y": 1
+        }
+      ],
+      "CMT": "#コンテナ排出動作",
+      "LRI": 10,
+      "RRI": 11,
+      "VLs": [
+        {
+          "Ix": 12,
+          "X": 2
+        },
+        {
+          "Ix": 12,
+          "X": 2,
+          "Y": 1
+        },
+        {
+          "Ix": 13,
+          "X": 4
+        }
+      ]
+    },
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[23]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "RCON2_1_MoveDone",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[24]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "Destacker_M[25]",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "Destacker_M[24]",
+          "X": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "TimerQ_In_Sen_Supply_Container_Exist",
+          "X": 3,
+          "Y": 1
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Ix": 7,
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "RCON2_5_ActualPos_mm"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Ix": 8,
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "HMI_RCON2_5_OUT_TargetPos[1]"
+            }
+          ],
+          "Ix": 9,
+          "Name": "=",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 4,
+          "Y": 1,
+          "PL": true
+        },
+        {
+          "__type": "ST",
+          "Ix": 6,
+          "Var": "Out_CYw_Empty_Container_CY_F_Auto[1]",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 4
+        },
+        {
+          "__type": "HL",
+          "X": 5
+        }
+      ],
+      "CMT": "RCON2_5 コンテナ設置位置 確認後\r\n【Y1201】空コンテナ送り 行",
+      "LRI": 10,
+      "RRI": 11,
+      "VLs": [
+        {
+          "Ix": 12,
+          "X": 2
+        },
+        {
+          "Ix": 13,
+          "X": 3
+        }
+      ]
+    },
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[24]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Out_CYw_Empty_Container_CY_F_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Var": "Destacker_M[25]",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Not": true,
+          "Var": "Destacker_End",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 5,
+          "Var": "Destacker_M[25]",
+          "X": 3
+        },
+        {
+          "__type": "LD",
+          "Ix": 4,
+          "Var": "TimerQ_In_Sen_Container_Arrival",
+          "X": 3,
+          "Y": 1
+        },
+        {
+          "__type": "F",
+          "In": [
+            {
+              "__type": "PF",
+              "Arg": "EN"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In1",
+              "Ix": 7,
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "RCON2_5_ActualPos_mm"
+            },
+            {
+              "__type": "PRM",
+              "Arg": "In2",
+              "Ix": 8,
+              "Type": "ANY_ELEMENTARY, ENUM",
+              "Var": "HMI_RCON2_5_OUT_TargetPos[1]"
+            }
+          ],
+          "Ix": 9,
+          "Name": "=",
+          "Out": [
+            {
+              "__type": "PF",
+              "Arg": ""
+            }
+          ],
+          "X": 4,
+          "Y": 1,
+          "PL": true
+        },
+        {
+          "__type": "ST",
+          "Ix": 6,
+          "Var": "Out_CYw_Empty_Container_CY_H_Auto[3]",
+          "X": 5,
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 4
+        },
+        {
+          "__type": "HL",
+          "X": 5
+        }
+      ],
+      "CMT": "【Y1200】空コンテナ送り 戻",
+      "LRI": 10,
+      "RRI": 11,
+      "VLs": [
+        {
+          "Ix": 12,
+          "X": 2
+        },
+        {
+          "Ix": 13,
+          "X": 3
+        }
+      ]
+    },
+    {
+      "CLs": [
+        {
+          "__type": "LD",
+          "Var": "Destacker_M[25]"
+        },
+        {
+          "__type": "LD",
+          "Ix": 3,
+          "Var": "Out_CYw_Empty_Container_CY_H_Done",
+          "X": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 1,
+          "Var": "Destacker_End",
+          "Y": 1
+        },
+        {
+          "__type": "HL",
+          "X": 1,
+          "Y": 1
+        },
+        {
+          "__type": "LD",
+          "Ix": 2,
+          "Not": true,
+          "Var": "Destacker_M[12]",
+          "X": 2
+        },
+        {
+          "__type": "ST",
+          "Ix": 4,
+          "Var": "Destacker_End",
+          "X": 3
+        }
+      ],
+      "LRI": 5,
+      "RRI": 6,
+      "VLs": [
+        {
+          "Ix": 7,
+          "X": 2
+        }
+      ]
+    }
+  ],
+  "old_to_new": {
+    "0": 0,
+    "1": 2,
+    "2": 3,
+    "3": 4,
+    "4": 5,
+    "5": 7,
+    "6": 9,
+    "7": 10,
+    "8": 12,
+    "9": 13,
+    "10": 15,
+    "11": 16,
+    "12": 17,
+    "13": 19,
+    "14": 20,
+    "15": 21,
+    "16": 23,
+    "17": 24,
+    "18": 26,
+    "19": 27,
+    "20": 28
+  },
+  "guard_rows": {
+    "5": 6,
+    "6": 8,
+    "8": 11,
+    "13": 18,
+    "16": 22,
+    "18": 25
+  },
+  "spec": [
+    [
+      7,
+      27,
+      5,
+      "初回 安全位置"
+    ],
+    [
+      8,
+      28,
+      6,
+      "初回 1段目"
+    ],
+    [
+      10,
+      29,
+      8,
+      "初回 安全戻り"
+    ],
+    [
+      16,
+      30,
+      13,
+      "通常 1段目"
+    ],
+    [
+      21,
+      31,
+      16,
+      "通常 2段目"
+    ],
+    [
+      23,
+      32,
+      18,
+      "排出位置"
+    ]
+  ],
+  "busy_row": 1,
+  "done_row": 14,
+  "corrected_done_contacts": 0,
+  "variable_parts": [
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+  ],
+  "solution_name": "3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I",
+  "target": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105I.smc2",
+  "row_count": 29
+}

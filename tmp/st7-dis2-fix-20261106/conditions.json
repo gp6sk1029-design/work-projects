@@ -1,0 +1,66 @@
+{
+  "candidate_sha": "b68d69fca590668fdf1aaad81000e0499ea5eb936db99e890b756faf51e2db0c",
+  "results": [
+    {
+      "test": "OKだけ送り行・NGは送り不要、OKだけ送り完了待ち",
+      "cases": 6,
+      "passed": true
+    },
+    {
+      "test": "OK/キズNG/姿NGの下降要求",
+      "cases": 3,
+      "passed": true
+    },
+    {
+      "test": "上下軸5要求各1コイル",
+      "cases": 5,
+      "passed": true
+    },
+    {
+      "test": "A側有無・満杯・空ワーク完了",
+      "cases": 8,
+      "passed": true
+    },
+    {
+      "test": "8移動のDone OFF記憶・保持・工程終了で解除",
+      "cases": 32,
+      "passed": true
+    },
+    {
+      "test": "全下降枝の設定異常/回転中禁止",
+      "cases": 12,
+      "passed": true
+    },
+    {
+      "test": "初回と再試行の段数許可",
+      "cases": 4,
+      "passed": true
+    },
+    {
+      "test": "同一ワークRetryでも加算1回",
+      "cases": 4,
+      "passed": true
+    },
+    {
+      "test": "基準3とピッチ計算",
+      "cases": 7,
+      "passed": true
+    },
+    {
+      "test": "End保持とNext解除",
+      "cases": 8,
+      "passed": true
+    },
+    {
+      "test": "RCON2軸の今回PEND OFF/ON確認",
+      "cases": 2,
+      "passed": true
+    },
+    {
+      "test": "要求ORが連続でも2移動を再受付",
+      "cases": 2,
+      "passed": true
+    }
+  ],
+  "scope": "局所条件モデル。10msは仮刻み。実出力P_Offは維持したまま内部受付を検算。全体ビルド/実機ではない。"
+}

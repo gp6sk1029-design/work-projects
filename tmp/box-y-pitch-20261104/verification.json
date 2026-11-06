@@ -1,0 +1,53 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261104D.smc2",
+  "output": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261104D.smc2",
+  "backup": "C:\\Users\\SEIGI-N13\\work-projects\\outputs\\box-y-pitch-20261104\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261104D_Y軸追加前.smc2",
+  "staged": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\box-y-pitch-20261104\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261104D.smc2",
+  "source_sha256": "f5cef13bba8ae06196817c05f0d671ac916211a334b7ee03b9fb851b7de561a8",
+  "output_sha256": "e159b3841a58b973b3ae01fc6cf68e8c95ee26da9ce97ed86b817f22ef39ec3b",
+  "target": "ae62d256-5da6-4995-b63e-7a135575a042/6061835d-1e51-4e92-be1f-d546f44764e3.xml",
+  "localpart": "ae62d256-5da6-4995-b63e-7a135575a042/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+  "globalpart": "ae62d256-5da6-4995-b63e-7a135575a042/f07dd06c-505c-431b-b9fc-098949805b4e.xml",
+  "pitch": "HMI_Box_Y_Pitch_mm",
+  "ST": "C:\\Users\\SEIGI-N13\\work-projects\\outputs\\box-y-pitch-20261104\\箱詰めXY軸_27行目.st",
+  "changed_parts": [
+    "ae62d256-5da6-4995-b63e-7a135575a042/6061835d-1e51-4e92-be1f-d546f44764e3.xml",
+    "ae62d256-5da6-4995-b63e-7a135575a042/86df70c5-aaad-4d2c-bba7-04264d7b7f32.xml",
+    "ae62d256-5da6-4995-b63e-7a135575a042/f07dd06c-505c-431b-b9fc-098949805b4e.xml"
+  ],
+  "preserved_parts": 207,
+  "native_validation": {
+    "box_section": "TOTAL=28 PARSE_FAIL=0 MODEL_FAIL=0",
+    "variables": [
+      {
+        "name": "HMI_Box_Y_Pitch_mm",
+        "type": "LREAL",
+        "scope": "VAR_EXTERNAL",
+        "retain": null,
+        "constant": false,
+        "readonly": false
+      },
+      {
+        "name": "HMI_Box_Y_Pitch_mm",
+        "type": "LREAL",
+        "scope": "VAR_GLOBAL",
+        "retain": "1",
+        "constant": false,
+        "readonly": false
+      }
+    ],
+    "application_build_verified": false
+  },
+  "published": true,
+  "full_Sysmac_build": "未実施",
+  "independent_verification": {
+    "coordinate_cases": 128,
+    "unique_XY_positions": 16,
+    "invalid_counts_tested_per_axis": 8,
+    "X_ST_unchanged": true,
+    "rung_topology_unchanged": true,
+    "other_parts_identical": 207,
+    "backup_verified": true,
+    "same_name_D_overwritten": true
+  }
+}

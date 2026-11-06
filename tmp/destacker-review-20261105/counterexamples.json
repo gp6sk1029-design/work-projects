@@ -1,0 +1,315 @@
+{
+  "scope": "保存済みHのラダー配線条件をモデル化した反例検算。PLC走査時間の実測、Sysmacシミュレータ、物理機器、通信は含まない。",
+  "cases": [
+    {
+      "case": "判定OKがOFFでも12行目で移動要求",
+      "observed": {
+        "Destacker_M[14]": true,
+        "Destacker_M[15]": false,
+        "Destacker_M[16]": true,
+        "RCON2_1_Auto[5]": true,
+        "RCON2_1_OUT_TargetPos_mm": 123.0
+      },
+      "limit": ""
+    },
+    {
+      "case": "7→8行目は軸完了OFFでも初回完了へ進む",
+      "observed": {
+        "Destacker_M[10]": true,
+        "Destacker_M[11]": true,
+        "RCON2_1_Auto[3]": true,
+        "RCON2_1_MoveDone": false,
+        "RCON2_1_OUT_TargetPos_mm": 123.0
+      },
+      "limit": ""
+    },
+    {
+      "case": "次走査でAuto3は解除",
+      "observed": {
+        "RCON2_1_Auto[3]": false
+      },
+      "limit": "RCON受け側の100ms連続ONに達しない1走査の要求になり得る"
+    },
+    {
+      "case": "5→6行目が同じ旧完了ONで連続成立",
+      "observed": {
+        "Destacker_M[8]": true,
+        "Destacker_M[9]": true,
+        "RCON2_1_Auto[2]": true,
+        "Out_CYw_Sep_Claw_F_Auto[2]": true
+      },
+      "limit": "次指令の実到着ではなく、直前指令の100ms保持完了を使用する条件例"
+    },
+    {
+      "case": "20→9行目の繰返し入口が戻りセンサONで不成立",
+      "observed": {
+        "Out_CYw_Empty_Container_CY_H_Done": true,
+        "TimerQ_In_SenCY_Empty_Container_CY_H": true,
+        "Destacker_End": true,
+        "Destacker_M[12]": false
+      },
+      "limit": "外部からX1010をOFFにする動作が別途ない条件。初回枝はこの例ではOFF"
+    },
+    {
+      "case": "通常の爪戻り工程中でも初回枝が再成立",
+      "observed": {
+        "Destacker_M[17]": true,
+        "Destacker_M[1]": true,
+        "Destacker_M[2]": true,
+        "Out_CYw_Sep_Claw_F_Auto[1]": true
+      },
+      "limit": "Auto_Com_StartがONで初回M2/M3がOFFの場合。物理出力は受け側条件で別途制限"
+    },
+    {
+      "case": "11行目は両方の戻りDoneがOFFでもM14成立",
+      "observed": {
+        "Destacker_M[13]": true,
+        "Destacker_M[14]": true,
+        "Out_CYw_Sep_Claw_H_Done": false,
+        "Out_CYw_Empty_Container_CY_H_Done": false
+      },
+      "limit": "Retry[13]の否定接点＋Upによる初回迂回枝"
+    },
+    {
+      "case": "11行目確認OKとX1010=False",
+      "observed": {
+        "Destacker_M[14]": true,
+        "Destacker_M[15]": true,
+        "TimerQ_In_SenCY_Empty_Container_CY_H": false
+      },
+      "limit": ""
+    },
+    {
+      "case": "11行目確認OKとX1010=True",
+      "observed": {
+        "Destacker_M[14]": true,
+        "Destacker_M[15]": false,
+        "TimerQ_In_SenCY_Empty_Container_CY_H": true
+      },
+      "limit": ""
+    },
+    {
+      "case": "Auto1からAuto2への連続切替を受け側が再受付しない",
+      "observed": {
+        "RCON2_1_Auto[1]": false,
+        "RCON2_1_Auto[2]": true,
+        "RCON2_1_TON[1].Q": true,
+        "RCON2_1_M[1]": false
+      },
+      "limit": "RCON_IAI281行目のOR全体が途中でOFFにならない条件。P_Off解除とは独立した問題"
+    }
+  ],
+  "request_consumers": [
+    {
+      "tag": "Out_CYw_Sep_Claw_F_Auto[1]",
+      "consumer_rows": [
+        [
+          "Output_出力",
+          277
+        ],
+        [
+          "Output_出力",
+          279
+        ]
+      ]
+    },
+    {
+      "tag": "Out_CYw_Sep_Claw_H_Auto[1]",
+      "consumer_rows": [
+        [
+          "Output_出力",
+          274
+        ],
+        [
+          "Output_出力",
+          276
+        ]
+      ]
+    },
+    {
+      "tag": "RCON2_1_Auto[1]",
+      "consumer_rows": [
+        [
+          "RCON_IAI",
+          281
+        ]
+      ]
+    },
+    {
+      "tag": "RCON2_1_Auto[2]",
+      "consumer_rows": [
+        [
+          "RCON_IAI",
+          281
+        ]
+      ]
+    },
+    {
+      "tag": "Out_CYw_Sep_Claw_F_Auto[2]",
+      "consumer_rows": [
+        [
+          "Output_出力",
+          277
+        ],
+        [
+          "Output_出力",
+          279
+        ]
+      ]
+    },
+    {
+      "tag": "RCON2_1_Auto[3]",
+      "consumer_rows": [
+        [
+          "RCON_IAI",
+          281
+        ]
+      ]
+    },
+    {
+      "tag": "Out_CYw_Empty_Container_CY_H_Auto[1]",
+      "consumer_rows": [
+        [
+          "Output_出力",
+          268
+        ],
+        [
+          "Output_出力",
+          270
+        ]
+      ]
+    },
+    {
+      "tag": "Out_CYw_Sep_Claw_F_Auto[4]",
+      "consumer_rows": [
+        [
+          "Output_出力",
+          277
+        ],
+        [
+          "Output_出力",
+          279
+        ]
+      ]
+    },
+    {
+      "tag": "Out_CYw_Empty_Container_CY_H_Auto[2]",
+      "consumer_rows": [
+        [
+          "Output_出力",
+          268
+        ],
+        [
+          "Output_出力",
+          270
+        ]
+      ]
+    },
+    {
+      "tag": "RCON2_1_Auto[5]",
+      "consumer_rows": [
+        [
+          "RCON_IAI",
+          281
+        ]
+      ]
+    },
+    {
+      "tag": "Out_CYw_Sep_Claw_H_Auto[2]",
+      "consumer_rows": [
+        [
+          "Output_出力",
+          274
+        ],
+        [
+          "Output_出力",
+          276
+        ]
+      ]
+    },
+    {
+      "tag": "RCON2_1_Auto[6]",
+      "consumer_rows": [
+        [
+          "RCON_IAI",
+          281
+        ]
+      ]
+    },
+    {
+      "tag": "Out_CYw_Sep_Claw_F_Auto[3]",
+      "consumer_rows": [
+        [
+          "Output_出力",
+          277
+        ],
+        [
+          "Output_出力",
+          279
+        ]
+      ]
+    },
+    {
+      "tag": "RCON2_1_Auto[4]",
+      "consumer_rows": [
+        [
+          "RCON_IAI",
+          281
+        ]
+      ]
+    },
+    {
+      "tag": "Out_CYw_Empty_Container_CY_F_Auto[1]",
+      "consumer_rows": [
+        [
+          "Output_出力",
+          271
+        ],
+        [
+          "Output_出力",
+          273
+        ]
+      ]
+    },
+    {
+      "tag": "Out_CYw_Empty_Container_CY_H_Auto[3]",
+      "consumer_rows": [
+        [
+          "Output_出力",
+          268
+        ],
+        [
+          "Output_出力",
+          270
+        ]
+      ]
+    }
+  ],
+  "step_coils": [
+    "Destacker_M[1]",
+    "Destacker_M[2]",
+    "Destacker_M[3]",
+    "Destacker_M[4]",
+    "Destacker_M[5]",
+    "Destacker_M[6]",
+    "Destacker_M[7]",
+    "Destacker_M[8]",
+    "Destacker_M[9]",
+    "Destacker_M[10]",
+    "Destacker_M[11]",
+    "Destacker_M[12]",
+    "Destacker_M[13]",
+    "Destacker_M[14]",
+    "Destacker_M[15]",
+    "Destacker_M[16]",
+    "Destacker_M[17]",
+    "Destacker_M[18]",
+    "Destacker_M[19]",
+    "Destacker_M[20]",
+    "Destacker_M[21]",
+    "Destacker_M[22]",
+    "Destacker_M[23]",
+    "Destacker_M[24]",
+    "Destacker_M[25]"
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "source_sha256": "1a69caa301b435e05785041f91f759e216faf10cef691512bfe49f7c4cb0d06c",
+  "operations": [
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 0,
+      "expected": "#【01 初回確認】\r\n初回未完了・処理中でなければ開始",
+      "text": "#【01 初回確認】\n\n【開始条件】\n・初回確認が未完了\n・初回処理中でない\n\nM[1]の自己保持は処理中条件を迂回\n開始 → 2行：初回の爪保持"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 1,
+      "expected": "【初回処理中】\r\n開始から初回確認済みまで保持",
+      "text": "【初回処理中の保持】\n0行の開始で初回Busyを保持\n14行の初回確認済みで解除\n\n初回動作中の再開始を防ぐ"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 2,
+      "expected": "【初回の爪保持】\r\n【Y1203】：段バラシ爪 行\r\n初回確認済みでは動作しない",
+      "text": "【初回：爪を行位置へ】\n【Y1203】：段バラシ爪 行\n\n【X1000】：供給部コンテナ有\n上記入力がOFFなら開始\n\n爪行完了 → 3行：軸位置判定"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 3,
+      "expected": "【初回の位置判定】\r\nRCON2_1：段バラシ軸\r\n安全位置にいるか判定",
+      "text": "【初回：安全位置の判定】\nRCON2_1：段バラシ軸\n位置設定[1]：安全・排出位置\n\n安全位置にいる →12行：送り戻りへ合流\n安全位置にいない →4行：爪戻し"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 4,
+      "expected": "②初動 段バラシセイフティPos  無\r\n【Y1202】段バラシ爪 戻 コンテナ切り離し",
+      "text": "【初回：爪を戻して切り離す】\n【Y1202】：段バラシ爪 戻\n\n合流元：3行の安全位置なし\n爪戻り完了 →5行：安全位置へ移動"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 5,
+      "expected": "RCON2_1 \r\nセイフティPos移動",
+      "text": "【初回：安全位置へ移動】\nRCON2_1：段バラシ軸\n位置設定[1]：安全・排出位置\n\n移動要求：Auto[1]\n完了待ち →6・7行"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 6,
+      "expected": "【初回 安全位置 完了待ちの準備】\r\n今回工程でDone OFFを確認して保持\r\n工程終了で解除",
+      "text": "【初回安全位置：前の完了を解除確認】\nM[7]の工程中にMoveDone OFFを確認\n確認結果をM[27]へ保持\n\n次の完了ONを7行で使用\nM[7]がOFFで記憶を解除"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 7,
+      "expected": "RCON2_1 \r\n1段目 Pos移動\r\n今回工程のDone OFF確認後、完了ONを待つ",
+      "text": "【初回：1段目位置へ移動】\nRCON2_1：段バラシ軸\n位置設定[2]：1段目位置\n\n5行の移動完了をM[27]で確認して開始\n移動要求：Auto[2]\n完了待ち →8・9行"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 8,
+      "expected": "【初回 1段目 完了待ちの準備】\r\n今回工程でDone OFFを確認して保持\r\n工程終了で解除",
+      "text": "【初回1段目：前の完了を解除確認】\nM[8]の工程中にMoveDone OFFを確認\n確認結果をM[28]へ保持\n\n次の完了ONを9行で使用\nM[8]がOFFで記憶を解除"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 9,
+      "expected": "【Y1203】段バラシ爪 行 コンテナ保持\r\n今回工程のDone OFF確認後、完了ONを待つ",
+      "text": "【初回：コンテナを保持】\n【Y1203】：段バラシ爪 行\n\n7行の1段目移動完了をM[28]で確認\n爪行完了 →10行：安全位置へ戻る"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 10,
+      "expected": "RCON2_1 \r\nセイフティPos移動",
+      "text": "【初回：安全位置へ戻る】\nRCON2_1：段バラシ軸\n位置設定[1]：安全・排出位置\n\n9行の爪行完了から開始\n移動要求：Auto[3]\n完了待ち →11・12行"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 11,
+      "expected": "【初回 安全戻り 完了待ちの準備】\r\n今回工程でDone OFFを確認して保持\r\n工程終了で解除",
+      "text": "【初回安全戻り：前の完了を解除確認】\nM[10]の工程中にMoveDone OFFを確認\n確認結果をM[29]へ保持\n\n次の完了ONを12行で使用\nM[10]がOFFで記憶を解除"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 12,
+      "expected": "電源ON時 初回動作完了\r\n【Y1200】空コンテナ送り 戻\r\n今回工程のDone OFF確認後、完了ONを待つ",
+      "text": "【初回：空コンテナ送りを戻す】\n【Y1200】：空コンテナ送り 戻\n\n合流元\n・3行：初めから安全位置にいる\n・10行：安全位置への移動完了\n  後者はM[29]で今回完了を確認\n\n送り戻り完了 →13行：通常入口"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 13,
+      "expected": "#段バラシ 連続動作\r\n\r\n①電源ON時 初回動作完了後\r\n②繰返し動作\r\n【Y1203】段バラシ爪 行",
+      "text": "#【02 通常サイクル開始】\n\n【段バラシ爪を行位置へ】\n【Y1203】：段バラシ爪 行\n\n合流元\n・12行：初回の送り戻り完了\n・28行：前サイクル完了\n\n28行からの開始条件\n【X1000】：供給部コンテナ有＝OFF\n【X1010】：空コンテナ送り戻＝ON\n\n爪行完了 →15行：送り戻り確認"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 14,
+      "expected": "【初回確認済み】\r\n初回側から通常入口への受渡しで保持\r\n通常サイクルでは解除しない",
+      "text": "【初回確認済みの保持】\n12行から13行へ受渡した時に成立\n送り戻り完了も確認してM[26]を保持\n\n通常サイクルでは解除しない\n0～3行の初回再進入を防ぐ"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 15,
+      "expected": "【Y1200】空コンテナ送り 戻",
+      "text": "【通常：空コンテナ送りを戻す】\n【Y1200】：空コンテナ送り 戻\n\n13行の爪行完了から開始\n送り戻り完了 →16行：コンテナ確認"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 16,
+      "expected": "コンテナ有無・方向確認",
+      "text": "【コンテナ有無・方向の確認】\n15行の送り戻り完了から確認開始\nRetry[13]解除時も確認をやり直す\n\n確認OKの条件\n【X1000】：供給部コンテナ有＝OFF\n【X1010】：空コンテナ送り戻＝ON\n【X1004】：コンテナ方向確認＝ON\n【X1001】：段バラシ1段目有＝ON\n\n確認OK →17行：1段目移動\n方向NG／1段目なしが5秒 →確認異常"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 17,
+      "expected": "RCON2_1 \r\n1段目 Pos移動",
+      "text": "#【03 コンテナの切り離し】\n\n【1段目位置へ移動】\nRCON2_1：段バラシ軸\n位置設定[2]：1段目位置\n\n16行の確認OKから開始\n移動要求：Auto[5]\n完了待ち →18・19行"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 18,
+      "expected": "【通常 1段目 完了待ちの準備】\r\n今回工程でDone OFFを確認して保持\r\n工程終了で解除",
+      "text": "【1段目移動：前の完了を解除確認】\nM[16]の工程中にMoveDone OFFを確認\n確認結果をM[30]へ保持\n\n次の完了ONを19行で使用\nM[16]がOFFで記憶を解除"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 19,
+      "expected": "コンテナ切り離し\r\n【Y1202】段バラシ爪 戻\r\n今回工程のDone OFF確認後、完了ONを待つ",
+      "text": "【爪を戻してコンテナを切り離す】\n【Y1202】：段バラシ爪 戻\n\n17行の1段目移動完了をM[30]で確認\n爪戻り完了 →20行：段積み判定"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 20,
+      "expected": "コンテナ段積み確認\r\n①段積み2段以上\r\n②段積み1段のみ",
+      "text": "【段積みの分岐】\n【X1002】：段バラシ2段目有\n\nON：2段以上 →21行：2段目へ移動\nOFF：1段のみ →24行：排出位置へ合流"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 21,
+      "expected": "①段積み2段以上\r\nRCON2_1 \r\n2段目 Pos移動",
+      "text": "【2段以上：2段目位置へ移動】\nRCON2_1：段バラシ軸\n位置設定[3]：2段目位置\n\n20行の2段以上から開始\n移動要求：Auto[6]\n完了待ち →22・23行"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 22,
+      "expected": "【通常 2段目 完了待ちの準備】\r\n今回工程でDone OFFを確認して保持\r\n工程終了で解除",
+      "text": "【2段目移動：前の完了を解除確認】\nM[21]の工程中にMoveDone OFFを確認\n確認結果をM[31]へ保持\n\n次の完了ONを23行で使用\nM[21]がOFFで記憶を解除"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 23,
+      "expected": "コンテナ保持\r\n【Y1203】段バラシ爪 行\r\n今回工程のDone OFF確認後、完了ONを待つ",
+      "text": "【2段以上：上段コンテナを保持】\n【Y1203】：段バラシ爪 行\n\n21行の2段目移動完了をM[31]で確認\n爪行完了 →24行：排出位置へ合流"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 24,
+      "expected": "#コンテナ排出動作",
+      "text": "#【04 コンテナ受渡し】\n\n【安全・排出位置へ移動】\nRCON2_1：段バラシ軸\n位置設定[1]：安全・排出位置\n\n合流元\n・20行：1段のみ\n・23行：上段コンテナの保持完了\n\n移動要求：Auto[4]\n完了待ち →25・26行"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 25,
+      "expected": "【排出位置 完了待ちの準備】\r\n今回工程でDone OFFを確認して保持\r\n工程終了で解除",
+      "text": "【排出位置移動：前の完了を解除確認】\nM[23]の工程中にMoveDone OFFを確認\n確認結果をM[32]へ保持\n\n次の完了ONを26行で使用\nM[23]がOFFで記憶を解除"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 26,
+      "expected": "RCON2_5 コンテナ設置位置 確認後\r\n【Y1201】空コンテナ送り 行\r\n今回工程のDone OFF確認後、完了ONを待つ",
+      "text": "【空コンテナ送りを行位置へ】\n【Y1201】：空コンテナ送り 行\n\n24行の移動完了をM[32]で確認\n下記の条件で送り行要求\n【X1000】：供給部コンテナ有＝ON\n\nRCON2_5：コンテナ設置・排出軸\n位置設定[1]：受渡位置にいる\n\n送り行完了 →27行：送り戻りへ"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 27,
+      "expected": "【Y1200】空コンテナ送り 戻",
+      "text": "【到着を確認して送りを戻す】\n【Y1200】：空コンテナ送り 戻\n\n26行の送り行完了から開始\n下記の条件で送り戻り要求\n【X1003】：コンテナ到着＝ON\n\nRCON2_5：コンテナ設置・排出軸\n位置設定[1]：受渡位置にいる\n\n送り戻り完了 →28行：サイクル完了"
+    },
+    {
+      "op": "comment",
+      "section": "new_Controller_0/POU/プログラム/Movements_動作/Destacker_段バラシ",
+      "row": 28,
+      "expected": "",
+      "text": "#【05 サイクル完了・繰返し】\n\n27行の送り戻り完了でEndを保持\n次の開始条件を満たせば13行へ戻る\n\n【X1000】：供給部コンテナ有＝OFF\n【X1010】：空コンテナ送り戻＝ON\n\n13行のM[12]成立でEndを解除"
+    }
+  ]
+}

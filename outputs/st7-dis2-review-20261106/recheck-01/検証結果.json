@@ -1,0 +1,99 @@
+{
+  "solution": "3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105J",
+  "saved_date": "2026-11-06T08:55:08.2706103+09:00",
+  "sha256": "be2074fba67262e997ff5812b96c993b800345ab9666ba4ac747e256b8914f41",
+  "original_unchanged_during_review": true,
+  "actual_project_modified": false,
+  "results": [
+    {
+      "item": "15行OK限定の開始・保持・解除",
+      "cases": 32,
+      "passed": true
+    },
+    {
+      "item": "15→16行：OKだけ送り指令を出すが、完了OFFでも同一走査で横移動",
+      "evidence": [
+        {
+          "choice": 18,
+          "Y719_request": true,
+          "feed_done": false,
+          "horizontal_request": true
+        },
+        {
+          "choice": 19,
+          "Y719_request": false,
+          "feed_done": false,
+          "horizontal_request": true
+        },
+        {
+          "choice": 20,
+          "Y719_request": false,
+          "feed_done": false,
+          "horizontal_request": true
+        }
+      ]
+    },
+    {
+      "item": "16行1接点差替案：OKだけ完了待ち、NGは迂回を維持",
+      "cases": 6,
+      "passed": true,
+      "evidence": [
+        {
+          "choice": 18,
+          "feed_done": false,
+          "horizontal_request": false
+        },
+        {
+          "choice": 18,
+          "feed_done": true,
+          "horizontal_request": true
+        },
+        {
+          "choice": 19,
+          "feed_done": false,
+          "horizontal_request": true
+        },
+        {
+          "choice": 19,
+          "feed_done": true,
+          "horizontal_request": true
+        },
+        {
+          "choice": 20,
+          "feed_done": false,
+          "horizontal_request": true
+        },
+        {
+          "choice": 20,
+          "feed_done": true,
+          "horizontal_request": true
+        }
+      ]
+    },
+    {
+      "item": "31行は接続・論理同一、Ix整理のみ",
+      "cases": 64,
+      "passed": true
+    },
+    {
+      "item": "10/19行Auto2重複は残存",
+      "after_10": true,
+      "after_19": false
+    },
+    {
+      "item": "26行EndのNextCycle解除なしは残存",
+      "End": true
+    },
+    {
+      "item": "8行無ワークM10から完了経路なしは残存",
+      "M10": true,
+      "End": false
+    },
+    {
+      "item": "25行戻要求Auto3の受け接点なしは残存",
+      "receivers": []
+    }
+  ],
+  "full_application_build": false,
+  "machine_test": false
+}

@@ -1,0 +1,109 @@
+{
+  "source": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105G.smc2",
+  "source_sha256": "8a53676bc04b41d143be56f888eff3de127c6301b672996e01e3560984a7df53",
+  "previous_G_sha256": "8a53676bc04b41d143be56f888eff3de127c6301b672996e01e3560984a7df53",
+  "source_updated_since_previous": false,
+  "staged": "C:\\Users\\SEIGI-N13\\work-projects\\tmp\\box-comment-layout-20261105\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105H.smc2",
+  "output": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105H.smc2",
+  "output_sha256": "f6e4c6200654110b749d0791d3f4e5dda0bef90a57710d757f64f78cce8618db",
+  "comment_only": true,
+  "sections": [
+    {
+      "section": "BoxPacking_箱詰め",
+      "changed_rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        22,
+        23,
+        26,
+        27,
+        30,
+        31,
+        32,
+        35,
+        39,
+        40,
+        44
+      ],
+      "count": 27,
+      "row_count": 45,
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/6061835d-1e51-4e92-be1f-d546f44764e3.xml"
+    },
+    {
+      "section": "RCON_IAI",
+      "changed_rows": [
+        283,
+        284,
+        289,
+        304,
+        322,
+        323,
+        324,
+        325,
+        326,
+        331,
+        346,
+        364,
+        365,
+        366,
+        367,
+        368,
+        373,
+        388,
+        406,
+        407,
+        408,
+        409,
+        410,
+        415,
+        430,
+        448,
+        449,
+        450
+      ],
+      "count": 28,
+      "row_count": 457,
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/7b1666c7-ee97-4210-81b2-fed5a6172074.xml"
+    },
+    {
+      "section": "ST7_A_Dis2_左SF排出",
+      "changed_rows": [
+        31
+      ],
+      "count": 1,
+      "row_count": 32,
+      "part": "298443e5-40dc-47d4-95bf-46c8fde7d5ae/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml"
+    }
+  ],
+  "changed_comment_rows": 56,
+  "changed_parts": [
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/6061835d-1e51-4e92-be1f-d546f44764e3.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/7b1666c7-ee97-4210-81b2-fed5a6172074.xml",
+    "298443e5-40dc-47d4-95bf-46c8fde7d5ae/1c62506a-fffa-4120-bf30-bcfd518c76f9.xml"
+  ],
+  "unchanged_parts": 209,
+  "published": true,
+  "native_read": {
+    "BoxPacking_箱詰め": "TOTAL=45 PARSE_FAIL=0 MODEL_FAIL=0",
+    "RCON_IAI": "TOTAL=457 PARSE_FAIL=0 MODEL_FAIL=0",
+    "ST7_A_Dis2_左SF排出": "TOTAL=32 PARSE_FAIL=0 MODEL_FAIL=0"
+  },
+  "archived": true,
+  "archive": "C:\\Users\\SEIGI-N13\\Desktop\\3089-2603A 検査箱詰め装置(CORE SUB)\\0.DLデータ\\OMRON\\Codex編集用\\履歴\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105G.smc2",
+  "backup": "C:\\Users\\SEIGI-N13\\work-projects\\outputs\\box-comment-layout-20261105\\3089-2603A_検査箱詰め装置_CORE_SUB_PIP-02F02NX_20261105G_行間コメント変更前.smc2",
+  "non_comment_fields_identical": true
+}

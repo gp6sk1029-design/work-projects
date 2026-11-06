@@ -1,0 +1,66 @@
+{
+  "axes": [
+    {
+      "axis": 2,
+      "permission_checks": 17,
+      "receipt_cases": 8,
+      "start_ticks_10ms": [
+        10,
+        49
+      ],
+      "completion_ticks_10ms": [
+        28,
+        67
+      ],
+      "request_switch_while_OR_on": "pass",
+      "pause_cuts_internal_start": "pass"
+    },
+    {
+      "axis": 3,
+      "permission_checks": 17,
+      "receipt_cases": 8,
+      "start_ticks_10ms": [
+        10,
+        49
+      ],
+      "completion_ticks_10ms": [
+        28,
+        67
+      ],
+      "request_switch_while_OR_on": "pass",
+      "pause_cuts_internal_start": "pass"
+    },
+    {
+      "axis": 4,
+      "permission_checks": 17,
+      "receipt_cases": 8,
+      "start_ticks_10ms": [
+        10,
+        49
+      ],
+      "completion_ticks_10ms": [
+        28,
+        67
+      ],
+      "request_switch_while_OR_on": "pass",
+      "pause_cuts_internal_start": "pass"
+    },
+    {
+      "axis": 5,
+      "permission_checks": 17,
+      "receipt_cases": 8,
+      "start_ticks_10ms": [
+        10,
+        49
+      ],
+      "completion_ticks_10ms": [
+        28,
+        67
+      ],
+      "request_switch_while_OR_on": "pass",
+      "pause_cuts_internal_start": "pass"
+    }
+  ],
+  "source": "生成したRCONラダー",
+  "scope": "10ms刻みのTON/TOF・接点条件モデル。実PLC命令・実通信・PEND波形・実機は未検証。既存100msはそのまま。"
+}
